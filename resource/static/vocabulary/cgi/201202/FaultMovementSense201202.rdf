@@ -1,0 +1,599 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY cgi "http://resource.geosciml.org/classifierscheme/cgi/201202/" >
+    <!ENTITY faultmovementsense "http://resource.geosciml.org/classifier/cgi/faultmovementsense/" >
+]>
+
+
+<rdf:RDF xmlns="&cgi;faultmovementsense#"
+     xml:base="&cgi;faultmovementsense"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:cgi="http://resource.geosciml.org/classifierscheme/cgi/201202/"
+     xmlns:faultmovementsense="http://resource.geosciml.org/classifier/cgi/faultmovementsense/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="&cgi;faultmovementsense">
+        <dc:format>application/rdf-xml</dc:format>
+        <dc:language>en</dc:language>
+        <dc:identifier>http://resource.geosciml.org/classifierscheme/cgi/201202/faultmovementsense</dc:identifier>
+        <dc:title xml:lang="en">CGI Fault Movement Sense Term Vocabulary</dc:title>
+        <dc:creator>Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:publisher>Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:publisher>
+        <owl:versionInfo>201202</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;source"/>
+    <owl:AnnotationProperty rdf:about="&dc;publisher"/>
+    <owl:AnnotationProperty rdf:about="&dc;identifier"/>
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    <owl:AnnotationProperty rdf:about="&dc;format"/>
+    <owl:AnnotationProperty rdf:about="&dc;language"/>
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+    <owl:ObjectProperty rdf:about="&rdf;value">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:ObjectProperty rdf:about="&skos;broader">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
+
+    <owl:ObjectProperty rdf:about="&skos;changeNote">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:ObjectProperty rdf:about="&skos;definition">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:ObjectProperty rdf:about="&skos;exactMatch"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+    <owl:ObjectProperty rdf:about="&skos;historyNote">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+        <rdfs:domain rdf:resource="&skos;Concept"/>
+        <rdfs:domain rdf:resource="&skos;ConceptScheme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:ObjectProperty rdf:about="&skos;inScheme">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+    <owl:ObjectProperty rdf:about="&skos;narrower">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <owl:inverseOf rdf:resource="&skos;broader"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:ObjectProperty rdf:about="&skos;notation">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:ObjectProperty rdf:about="&skos;prefLabel">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#related -->
+
+    <owl:ObjectProperty rdf:about="&skos;related">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+    <owl:ObjectProperty rdf:about="&skos;topConceptOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+    <owl:DatatypeProperty rdf:about="&rdf;value"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
+
+    <owl:DatatypeProperty rdf:about="&skos;changeNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:DatatypeProperty rdf:about="&skos;definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+    <owl:DatatypeProperty rdf:about="&skos;historyNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:DatatypeProperty rdf:about="&skos;notation"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:DatatypeProperty rdf:about="&skos;prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="&skos;Concept">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="&skos;ConceptScheme">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/0001 -->
+
+    <owl:NamedIndividual rdf:about="&faultmovementsense;0001"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/0002 -->
+
+    <owl:NamedIndividual rdf:about="&faultmovementsense;0002"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/0003 -->
+
+    <owl:NamedIndividual rdf:about="&faultmovementsense;0003"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/0004 -->
+
+    <owl:NamedIndividual rdf:about="&faultmovementsense;0004"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/0005 -->
+
+    <owl:NamedIndividual rdf:about="&faultmovementsense;0005"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/0006 -->
+
+    <owl:NamedIndividual rdf:about="&faultmovementsense;0006"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/0007 -->
+
+    <owl:NamedIndividual rdf:about="&faultmovementsense;0007"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/0008 -->
+
+    <owl:NamedIndividual rdf:about="&faultmovementsense;0008"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/0009 -->
+
+    <owl:NamedIndividual rdf:about="&faultmovementsense;0009"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/0010 -->
+
+    <owl:NamedIndividual rdf:about="&faultmovementsense;0010"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/0011 -->
+
+    <owl:NamedIndividual rdf:about="&faultmovementsense;0011"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/0012 -->
+
+    <owl:NamedIndividual rdf:about="&faultmovementsense;0012"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/0013 -->
+
+    <owl:NamedIndividual rdf:about="&faultmovementsense;0013"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/detachment -->
+
+    <skos:Concept rdf:about="&faultmovementsense;detachment">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition>A regional-scale low-angle normal fault.</skos:definition>
+        <dc:source>GGIC vocabularies working group (Australia)</dc:source>
+        <skos:prefLabel xml:lang="en">detachment</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&faultmovementsense;0001"/>
+        <skos:broader rdf:resource="&faultmovementsense;normal"/>
+        <skos:inScheme rdf:resource="&cgi;faultmovementsense"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/dextral -->
+
+    <skos:Concept rdf:about="&faultmovementsense;dextral">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition>Right-lateral separation sense; in plan view, the side opposite the observer appears displaced to the right.</skos:definition>
+        <dc:source>GGIC vocabularies working group (Australia)</dc:source>
+        <skos:prefLabel xml:lang="en">dextral</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&faultmovementsense;0002"/>
+        <skos:related rdf:resource="&faultmovementsense;normal_dextral"/>
+        <skos:related rdf:resource="&faultmovementsense;reverse_dextral"/>
+        <skos:topConceptOf rdf:resource="&cgi;faultmovementsense"/>
+        <skos:inScheme rdf:resource="&cgi;faultmovementsense"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/generic_decollement -->
+
+    <skos:Concept rdf:about="&faultmovementsense;generic_decollement">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>Neuendorf et al. 2005</dc:source>
+        <skos:definition>A large-displacement (kilometers or tens of kilometers) shallowly dipping to subhorizontal fault or shear zone.</skos:definition>
+        <skos:prefLabel xml:lang="en">generic decollement</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&faultmovementsense;0003"/>
+        <skos:inScheme rdf:resource="&cgi;faultmovementsense"/>
+        <skos:topConceptOf rdf:resource="&cgi;faultmovementsense"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/no_movement_sense -->
+
+    <skos:Concept rdf:about="&faultmovementsense;no_movement_sense">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition>The fault-parallel displacement is effectively zero, as in an extraction fault.</skos:definition>
+        <dc:source>Froitzheim, N., Pleuger, J. &amp; Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395.</dc:source>
+        <skos:prefLabel xml:lang="en">no movement sense</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&faultmovementsense;0004"/>
+        <skos:topConceptOf rdf:resource="&cgi;faultmovementsense"/>
+        <skos:inScheme rdf:resource="&cgi;faultmovementsense"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal -->
+
+    <skos:Concept rdf:about="&faultmovementsense;normal">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>GGIC vocabularies working group (Australia)</dc:source>
+        <skos:definition>The hanging wall appears to have moved down relative to the footwall; dip of fault usually 45-90 degrees.</skos:definition>
+        <skos:prefLabel xml:lang="en">normal</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&faultmovementsense;0005"/>
+        <skos:narrower rdf:resource="&faultmovementsense;detachment"/>
+        <skos:related rdf:resource="&faultmovementsense;normal_dextral"/>
+        <skos:related rdf:resource="&faultmovementsense;normal_sinistral"/>
+        <skos:inScheme rdf:resource="&cgi;faultmovementsense"/>
+        <skos:topConceptOf rdf:resource="&cgi;faultmovementsense"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_dextral -->
+
+    <skos:Concept rdf:about="&faultmovementsense;normal_dextral">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>GGIC vocabularies working group (Australia)</dc:source>
+        <skos:definition>The movement sense includes both normal and dextral components.</skos:definition>
+        <skos:prefLabel xml:lang="en">normal dextral</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&faultmovementsense;0006"/>
+        <skos:related rdf:resource="&faultmovementsense;dextral"/>
+        <skos:related rdf:resource="&faultmovementsense;normal"/>
+        <skos:topConceptOf rdf:resource="&cgi;faultmovementsense"/>
+        <skos:inScheme rdf:resource="&cgi;faultmovementsense"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_sinistral -->
+
+    <skos:Concept rdf:about="&faultmovementsense;normal_sinistral">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition>The movement sense includes both normal and sinistral components.</skos:definition>
+        <dc:source>GGIC vocabularies working group (Australia)</dc:source>
+        <skos:prefLabel xml:lang="en">normal sinistral</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&faultmovementsense;0007"/>
+        <skos:related rdf:resource="&faultmovementsense;normal"/>
+        <skos:related rdf:resource="&faultmovementsense;sinistral"/>
+        <skos:inScheme rdf:resource="&cgi;faultmovementsense"/>
+        <skos:topConceptOf rdf:resource="&cgi;faultmovementsense"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse -->
+
+    <skos:Concept rdf:about="&faultmovementsense;reverse">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>GGIC vocabularies working group (Australia)</dc:source>
+        <skos:definition>The hanging wall appears to have moved down relative to the footwall; dip of fault usually greater than 45 degrees.</skos:definition>
+        <skos:prefLabel xml:lang="en">reverse</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&faultmovementsense;0008"/>
+        <skos:related rdf:resource="&faultmovementsense;reverse_dextral"/>
+        <skos:related rdf:resource="&faultmovementsense;reverse_sinistral"/>
+        <skos:narrower rdf:resource="&faultmovementsense;thrust"/>
+        <skos:inScheme rdf:resource="&cgi;faultmovementsense"/>
+        <skos:topConceptOf rdf:resource="&cgi;faultmovementsense"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_dextral -->
+
+    <skos:Concept rdf:about="&faultmovementsense;reverse_dextral">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>GGIC vocabularies working group (Australia)</dc:source>
+        <skos:definition>The movement sense includes both reverse and dextral components.</skos:definition>
+        <skos:prefLabel xml:lang="en">reverse dextral</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&faultmovementsense;0009"/>
+        <skos:related rdf:resource="&faultmovementsense;dextral"/>
+        <skos:related rdf:resource="&faultmovementsense;reverse"/>
+        <skos:topConceptOf rdf:resource="&cgi;faultmovementsense"/>
+        <skos:inScheme rdf:resource="&cgi;faultmovementsense"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_sinistral -->
+
+    <skos:Concept rdf:about="&faultmovementsense;reverse_sinistral">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>GGIC vocabularies working group (Australia)</dc:source>
+        <skos:definition>The movement sense includes both reverse and sinistral components.</skos:definition>
+        <skos:prefLabel xml:lang="en">reverse sinistral</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&faultmovementsense;0010"/>
+        <skos:related rdf:resource="&faultmovementsense;reverse"/>
+        <skos:related rdf:resource="&faultmovementsense;sinistral"/>
+        <skos:inScheme rdf:resource="&cgi;faultmovementsense"/>
+        <skos:topConceptOf rdf:resource="&cgi;faultmovementsense"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/sinistral -->
+
+    <skos:Concept rdf:about="&faultmovementsense;sinistral">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition>Left-lateral separation sense; in plan view, the side opposite the observer appears displaced to the left.</skos:definition>
+        <skos:historyNote xml:lang="en">2010-02-08 SMR add related links between dextral, sinistral, normal, reverse and oblique slip types</skos:historyNote>
+        <dc:source>GGIC vocabularies working group (Australia)</dc:source>
+        <skos:prefLabel xml:lang="en">sinistral</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&faultmovementsense;0011"/>
+        <skos:related rdf:resource="&faultmovementsense;normal_sinistral"/>
+        <skos:related rdf:resource="&faultmovementsense;reverse_sinistral"/>
+        <skos:topConceptOf rdf:resource="&cgi;faultmovementsense"/>
+        <skos:inScheme rdf:resource="&cgi;faultmovementsense"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/thrust -->
+
+    <skos:Concept rdf:about="&faultmovementsense;thrust">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>GGIC vocabularies working group (Australia)</dc:source>
+        <skos:definition>Reverse fault with dip typically less than 45 degrees; horizontal compression, rather than vertical displacement is characteristic.</skos:definition>
+        <skos:prefLabel xml:lang="en">thrust</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&faultmovementsense;0012"/>
+        <skos:broader rdf:resource="&faultmovementsense;reverse"/>
+        <skos:narrower rdf:resource="&faultmovementsense;thrust_decollement"/>
+        <skos:inScheme rdf:resource="&cgi;faultmovementsense"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/faultmovementsense/thrust_decollement -->
+
+    <skos:Concept rdf:about="&faultmovementsense;thrust_decollement">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition>A regional-scale low-angle thrust fault.</skos:definition>
+        <dc:source>GeoScience Victoria and others</dc:source>
+        <skos:prefLabel xml:lang="en">thrust decollement</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&faultmovementsense;0013"/>
+        <skos:broader rdf:resource="&faultmovementsense;thrust"/>
+        <skos:inScheme rdf:resource="&cgi;faultmovementsense"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifierscheme/cgi/201202/faultmovementsense -->
+
+    <skos:ConceptScheme rdf:about="&cgi;faultmovementsense">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:historyNote xml:lang="en">2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet.</skos:historyNote>
+        <skos:changeNote xml:lang="en">2009-12-07 SMR Update metadata properties for version, creator, title, and format.  Change skos:HistoryNote to dc:source for information on origin of terms and definitions.</skos:changeNote>
+        <skos:historyNote xml:lang="en">2010-02-08. SMR Clean up namespace declarations so concept URI&#39;s follow CGI URN scheme; concepts have URN, are not document fragments.</skos:historyNote>
+        <skos:historyNote xml:lang="en">2010-02-13 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using &#39;file/Export inferred axioms as ontology&#39; in Protege.</skos:historyNote>
+        <skos:historyNote xml:lang="en">2010-11-27 SMR replace URN identifiers with http URI according to CGI URI scheme</skos:historyNote>
+        <skos:historyNote xml:lang="en">2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme.</skos:historyNote>
+        <skos:historyNote xml:lang="en">2012-02-27 SMR add skos:exactMatch triples to map URIs for concepts in this vocabulary to number-token URIs in 201012 version of same concepts.</skos:historyNote>
+        <skos:prefLabel xml:lang="en">CGI Fault Movement Sense Term Vocabulary</skos:prefLabel>
+        <skos:definition xml:lang="en">This file contains the CGI Fault Movement Sense vocabulary. Terms to specify the relative direction of movement of bodies of rock across a fault (GeoSciML ShearDisplacementStructure) surface. Examples include &#39;sinistral&#39;, &#39;dextral&#39;, &#39;normal&#39;, &#39;reverse&#39;.</skos:definition>
+    </skos:ConceptScheme>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,3114 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY cgi "http://resource.geosciml.org/classifierscheme/cgi/201012/" >
+    <!ENTITY eventenvironment "http://resource.geosciml.org/classifierscheme/cgi/201012/eventenvironment#" >
+]>
+
+
+<rdf:RDF xmlns="&cgi;eventenvironment#"
+     xml:base="&cgi;eventenvironment"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:cgi="http://resource.geosciml.org/classifierscheme/cgi/201012/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:eventenvironment="&cgi;eventenvironment#">
+    <owl:Ontology rdf:about="">
+        <dc:title xml:lang="en"
+            >CGI Event environment vocabulary</dc:title>
+        <rdfs:comment xml:lang="en"
+            >Version 201001.1. Edit preferred labels (English) for consistent usage of &#39;setting&#39; for all concept labels. 2010-04-14 SMR</rdfs:comment>
+        <dc:language>en</dc:language>
+        <dc:format
+            >application/rdf+xml</dc:format>
+        <dc:identifier
+            >http://resource.geosciml.org/classifierscheme/cgi/201012/eventenvironment</dc:identifier>
+        <owl:versionInfo>201012</owl:versionInfo>
+        <dc:publisher xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:publisher>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <rdfs:comment xml:lang="en"
+            >Throughout this vocabulary, the term &#39;setting&#39; is used in the English-language perferred labels to indicate that the terms denote environments defined based on geoscientific criteria</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;source"/>
+    <owl:AnnotationProperty rdf:about="&dc;publisher"/>
+    <owl:AnnotationProperty rdf:about="&dc;identifier"/>
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    <owl:AnnotationProperty rdf:about="&dc;language"/>
+    <owl:AnnotationProperty rdf:about="&dc;format"/>
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+    <owl:ObjectProperty rdf:about="&rdf;value">
+        <owl:subObjectPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:ObjectProperty rdf:about="&skos;altLabel">
+        <owl:subObjectPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:ObjectProperty rdf:about="&skos;broader">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
+
+    <owl:ObjectProperty rdf:about="&skos;changeNote">
+        <owl:subObjectPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:ObjectProperty rdf:about="&skos;definition">
+        <owl:subObjectPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+    <owl:ObjectProperty rdf:about="&skos;hasTopConcept">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+    <owl:ObjectProperty rdf:about="&skos;historyNote">
+        <owl:subObjectPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:ObjectProperty rdf:about="&skos;inScheme">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+    <owl:ObjectProperty rdf:about="&skos;narrower">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <owl:inverseOf rdf:resource="&skos;broader"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:ObjectProperty rdf:about="&skos;prefLabel">
+        <owl:subObjectPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#related -->
+
+    <owl:ObjectProperty rdf:about="&skos;related">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+    <owl:ObjectProperty rdf:about="&skos;topConceptOf">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+    <owl:DatatypeProperty rdf:about="&rdf;value"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:DatatypeProperty rdf:about="&skos;altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
+
+    <owl:DatatypeProperty rdf:about="&skos;changeNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:DatatypeProperty rdf:about="&skos;definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+    <owl:DatatypeProperty rdf:about="&skos;historyNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:DatatypeProperty rdf:about="&skos;prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="&skos;Concept">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="&skos;ConceptScheme">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0001 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0001">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:definition xml:lang="en"
+            >A drainage channel along which runoff no longer occurs, as on an alluvial fan</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Abandoned river channel setting</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0115"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0002 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0002">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en"
+            >Above carbonate compensation depth setting</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Marine environment in which carbonate sediment does not dissolve before reaching the sea floor and can accumulate.</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0090"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0003 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0003">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en">Abyssal setting</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:definition xml:lang="en"
+            >The ocean environment at water depths between 3,500 and 6,000 metres</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0090"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0004 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0004">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en"
+            >Active continental margin setting</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Plate margin setting on continental crust.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0106"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0005 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0005">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en"
+            >Active spreading center setting</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Divergent plate margin at which new oceanic crust is being formed</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0054"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0092"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0106"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0107"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0121"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0006 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0006">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en"
+            >Aeolian process setting</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Sedimentary setting in which wind is the dominant process producing, transporting, and depositing sediment. Typically has low-relief plain or piedmont slope physiography.</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0044"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0117"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0123"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0007 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0007">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >http://www.audubonofflorida.org/main/wetlands/chp3.htm; Reading, 1978</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Algal flat setting</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Modern &quot;algal flats are found on rock or mud in areas flooded only by the highest tides and are often subject to high evaporation rates. Algal flats survive only when an area is salty enough to eliminate snails and other herbivorous animals that eat algae, yet is not so salty that the algae cannot survive. The most common species of algae found on algal flats are blue-green algae of the genera Scytonema and Schizothrix. These algae can tolerate the daily extremes in temperature and oxygen that typify conditions on the flats. Other plants sometimes found on algal flats include one-celled green algae, flagellates, diatoms, bacteria, and isolated scrubby red and black mangroves, as well as patches of saltwort. Animals include false cerith, cerion snails, fiddler crabs, and great land crabs. Flats with well developed algal mats are restricted for the most part to the Keys, with Sugarloaf and Crane Keys offering prime examples of algal flat habitat.&quot; (Audubon, 1991)</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0080"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0134"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0008 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0008">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >A low, outspread, relatively flat to gently sloping mass of loose rock material, shaped like an open fan or a segment of a cone, deposited by a stream (esp. in a semiarid region) at the place where it issues from a narrow mountain valley upon a plain or broad valley, or where a tributary stream is near or at its junction with the main stream, or wherever a constriction in a valley abruptly ceases or the gradient of the stream suddenly decreases; it is steepest near the mouth of the valley where its apex points upstream, and it slopes gently and convexly outward with gradually decreasing gradient</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Alluvial fan setting</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0105"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0009 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0009">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en"
+            >Alluvial plain setting</skos:prefLabel>
+        <dc:source
+            >North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:  science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/;</dc:source>
+        <skos:definition xml:lang="en"
+            >An assemblage landforms produced by alluvial and fluvial processes (braided streams, terraces, etc.,) that form low gradient, regional ramps along the flanks of mountains and extend great distances from their sources (e.g., High Plains of North America). (NRCS GLOSSARY OF LANDFORM AND GEOLOGIC TERMS). A level or gently sloping tract or a slightly undulating land surface produced by extensive deposition of alluvium... Synonym-- wash plain;...river plain; aggraded valley plain;... (Jackson, 1997, p. 17). May include one or more River plain systems.</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0105"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0010 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0010">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Anoxic setting</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Setting depleted in oxygen, typically subaqueous.</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0046"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0011 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0011">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en"
+            >Arid or Semi Arid environment setting</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source xml:lang="en"
+            >North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:  science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/;</dc:source>
+        <skos:definition xml:lang="en"
+            >Setting characterized by mean annual precipitation of 10 inches (25 cm) or less. (Jackson, 1997, p. 172). Equivalent to SLTT &#39;Desert setting&#39;, but use &#39;Arid&#39; to emphasize climatic nature of setting definition.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0046"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0059"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0088"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0108"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0117"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0012 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0012">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en"
+            >Back arc setting</skos:prefLabel>
+        <dc:source>this vocabulary</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Tectonic setting adjacent to a volcanic arc formed above a subduction zone. The back arc setting is on the opposite side of the volcanic arc from the trench at which oceanic crust is consumed in a subduction zone. Back arc setting includes terrane that is affected by plate margin and arc-related processes.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0131"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0013 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0013">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en"
+            >Backreef setting</skos:prefLabel>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:definition xml:lang="en"
+            >The landward side of a reef. The term is often used adjectivally to refer to deposits within the restricted lagoon behind a barrier reef, such as the &quot;back-reef facies&quot; of lagoonal deposits. In some places, as on a platform-edge reef tract, &quot;back reef&quot; refers to the side of the reef away from the open sea, even though no land may be nearby</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0022"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0014 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0014">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:definition xml:lang="en"
+            >A narrow, elongate sand or gravel ridge rising slightly above the high-tide level and extending generally parallel with the shore, but separated from it by a lagoon (Shepard, 1954, p.1904), estuary, or marsh; it is extended by longshore transport and is rarely more than several kilometers long.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Barrier beach setting</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0015"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0020"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0015 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0015">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en"
+            >Barrier island coastline setting</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >setting meant to include all the various geographic elements typically associated with a barrier island coastline, including the barrier islands, and geomorphic/geographic elements that are linked by processes associated with the presence of the island (e.g. wash over fans, inlet channel, back barrier lagoon).</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0014"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0016"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0119"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0016 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0016">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en"
+            >Barrier lagoon setting</skos:prefLabel>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:definition xml:lang="en"
+            >A lagoon that is roughly parallel to the coast and is separated from the open ocean by a strip of land or by a barrier reef. Tidal influence is typically restricted and the lagoon is commonly hypersaline.</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0015"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0079"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0124"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0017 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0017">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source xml:lang="en"
+            >1-GE WP3, &#160;Neuendorf et al.  (2005); p. 451</dc:source>
+        <skos:definition xml:lang="en"
+            >An ombrotrophic or ombrogene peat/bog whose nutrient supply is exclusively from rain water (including snow and atmospheric fallout) therefore making nutrients extremely oligotrophic</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Basin bog setting</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0024"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0018 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0018">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >Bates &amp; Jackson, 1987; Heezen &amp; Laughton, 1963; Reading, 1978, p. 390</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Basin plain setting</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Near flat areas of ocean floor, slope less than 1:1000; generally receive only distal turbidite and pelagic sediments.</skos:definition>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0076"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0090"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0100"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0019 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0019">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en">Bathyal setting</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:definition xml:lang="en"
+            >The ocean environment at water depths between 200 and 3500 metres</skos:definition>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0082"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0090"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0094"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0140"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0020 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0020">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:prefLabel xml:lang="en">Beach setting</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >The unconsolidated material at the shoreline that covers a gently sloping zone, typically with a concave profile, extending landward from the low-water line to the place where there is a definite change in material or physiographic form (such as a cliff), or to the line of permanent vegetation (usually the effective limit of the highest storm waves); at the shore of a body of water, formed and washed by waves or tides, usually covered by sand or gravel, and lacking a bare rocky surface.</skos:definition>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0014"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0119"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0021 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0021">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en"
+            >Below carbonate compensation depth setting</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Marine environment in which water is deep enough that carbonate sediment goes into solution before it can accumulate on the sea floor.</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0090"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0022 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0022">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:definition xml:lang="en"
+            >A ridgelike or moundlike structure, layered or massive, built by sedentary calcareous organisms, esp. corals, and consisting mostly of their remains; it is wave-resistant and stands topographically above the surrounding contemporaneously deposited sediment.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Biological reef setting</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0013"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0058"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0090"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0112"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0023 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0023">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en"
+            >1-GE WP3, &#160;Neuendorf et al.  (2005); p. 675</dc:source>
+        <skos:prefLabel xml:lang="en">Blanket bog</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Topogeneous bog/peat whose moisture content is largely dependent on surface water. It is relatively rich in plant nutrients, nitrogen, and mineral matter, is mildly acidic to nearly neutral, and contains little or no cellulose; forms in topographic depressions with essential stagnat or non-moving minerotrophic water supply</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0024"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0024 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0024">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Bog setting</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source
+            >Jackson, 1997; North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:  science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/;</dc:source>
+        <skos:definition xml:lang="en"
+            >Waterlogged, spongy ground, consisting primarily of mosses, containing acidic, decaying vegetation that may develop into peat.</skos:definition>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0017"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0023"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0132"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0146"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0025 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0025">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >A stream that divides into or follows an interlacing or tangled network of several small branching and reuniting shallow channels separated from each other by ephemeral branch islands or channel bars, resembling in plan the strands of a complex braid. Such a stream is generally believed to indicate an inability to carry all of its load, such as an overloaded and aggrading stream flowing in a wide channel on a floodplain</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Braided river channel setting</skos:prefLabel>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0114"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0026 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0026">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >A shoreline setting in which terrigenous input is minor compared to local carbonate sediment production. Constructional biogenic activity is an important element in geomorphic development.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Carbonate dominated shoreline setting</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0119"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0027 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0027">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >A natural underground open space; it generally has a connection to the surface, is large enough for a person to enter, and extends into darkness. The most common type of cave is formed in limestone by dissolution.</skos:definition>
+        <skos:prefLabel xml:lang="en">Cave setting</skos:prefLabel>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0046"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0028 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0028">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:definition xml:lang="en"
+            >A dune field on low-lying land recently abandoned or built up by the sea; the dunes may ascend a cliff and travel inland.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Coastal dune field setting</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0044"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0029 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0029">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >based on Neuendorf et al, 2005, p. 125</dc:source>
+        <skos:definition xml:lang="en"
+            >A low relief plain bordering a water body extending inland to the nearest elevated land, sloping very gently towards the water body. Distinguished from alluvial plain by presence of relict shoreline-related deposits or morphology.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Coastal plain setting</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0119"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0123"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0132"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0030 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0030">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en"
+            >Collisional setting</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Tectonic setting in which two continental crustal plates impact and are sutured together after intervening oceanic crust is entirely consumed at a subduction zone separating the plates. Such collision typically involves major mountain forming events, exemplified by the modern Alpine and Himalayan mountain chains.</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0033"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0131"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0031 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0031">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Contact metamorphic setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Metamorphism of country rock at the contact of an igneous body.</skos:definition>
+        <dc:source
+            >NADM metamorphic rock vocabulary SLTTm1.0, 2004</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0045"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0032 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0032">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >&quot;An area of the continental margin between the shoreline and the continental slope that is topographically more complex than the continental shelf. It is characterized by ridges and basins, some of which are below the depth of the continental shelf. An example is the southern California continental borderland;....&quot; (Jackson, 1997, p. 138)..</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Continental borderland setting</skos:prefLabel>
+        <dc:source
+            >North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:  science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0090"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0033 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0033">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Continental-crustal setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >That type of the Earth&#39;s crust which underlies the continents and the continental shelves; it is equivalent to the sial and continental sima and ranges in thickness from about 25 km to more than 70 km under mountain ranges, averaging ~40 km. The density of the continental crust averages ~2.8 g/cm3 and is ~2.7 g.cm3 in the upper layer. The velocities of compressional seismic waves through it average ~6.5 km/s and are less than ~7.0 km/sec.</skos:definition>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0030"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0036"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0057"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0067"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0083"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0095"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0141"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0034 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0034">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Continental rift setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Extended terrane in a zone of continental breakup, may include incipient oceanic crust. Examples include Red Sea, East Africa Rift, Salton Trough</skos:definition>
+        <rdfs:seeAlso xml:lang="en">aulacogen</rdfs:seeAlso>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0052"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0035 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0035">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:  science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/</dc:source>
+        <skos:definition xml:lang="en"
+            >&quot;That part of the ocean floor that is between the shoreline and the continental slope (or, when there is no noticeable continental slope, a depth of 200 m). It is characterized by its gentle slope of 0.1 degree&quot; (Jackson, 1997, p. 138). Continental shelves have a classic shoreline-shelf-slope profile termed &#39;clinoform&#39;.</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Continental shelf setting</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0090"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0103"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0036 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0036">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:prefLabel xml:lang="en">Crustal setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >The outermost layer or shell of the Earth, defined according to various criteria, including seismic velocity, density and composition; that part of the Earth above the Mohorovicic discontinuity, made up of the sial and the sima.</skos:definition>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0033"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0045"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0100"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0131"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0138"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0037 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0037">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Cutoff meander setting</skos:prefLabel>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:definition xml:lang="en"
+            >The abandoned, bow- or horseshoe-shaped channel of a former meander, left when the stream formed a cutoff across a narrow meander neck. Note that these are typically lakes, thus also lacustrine.</skos:definition>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0078"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0115"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0124"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0038 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0038">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source>Reading 1978</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Deep ocean basin with steep (average 10 degrees) slope toward land, more gentle slope (average 5 degrees) towards the sea, and abundant seismic activity on landward side of trench. Does not denote water depth, but may be very deep.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Deep sea trench setting</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0090"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0125"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0039 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0039">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >A narrow zone where deposition in deltas is most active, consisting of a continuous sheet of sand, and occurring within the effective depth of wave erosion (10 m or less). It is the zone separating the prodelta from the delta plain, and it may or may not be steep&quot;</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Delta front setting</skos:prefLabel>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0041"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0040 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0040">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Delta plain setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >The level or nearly level surface composing the landward part of a large or compound delta; strictly, an alluvial plain characterized by repeated channel bifurcation and divergence, multiple distributary channels, and interdistributary flood basins</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0041"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0084"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0142"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0041 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0041">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source
+            >North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:  science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Deltaic system setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Environments at the mouth of a river or stream that enters a standing body of water (ocean or lake). The delta forms a triangular or fan-shaped plain of considerable area. Subaerial parts of the delta are crossed by many distributaries of the main river, and commonly extend beyond the general trend of the coast. Subaqueous parts of the delta merge with the adjacent basin floor, and are progressively influenced by non-fluvial processes. Deltas result from the accumulation of sediment supplied by the river in such quantities that it is not removed by tides, waves, and currents. Adapted from the Glossary of Geology definition for delta (Jackson, 1997, p. 167).</skos:definition>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0039"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0040"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0042"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0043"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0046"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0049"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0074"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0077"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0110"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0119"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0042 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0042">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >A divergent stream flowing away from the main stream and not returning to it, as in a delta or on an alluvial plain</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Delta distributary channel setting</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0041"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0043 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0043">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Delta distributary mouth setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >The mouth of a delta distributary channel where fluvial discharge moves from confined to unconfined flow conditions</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0041"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0044 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0044">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Dunefield setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Extensive deposits on sand in an area where the supply is abundant. As a characteristic, individual dunes somewhat resemble barchans but are highly irregular in shape and crowded; erg areas of the Sahara are an example.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0006"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0011"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0028"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0045 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0045">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Earth interior setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Geologic environments within the solid Earth.</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0031"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0036"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0065"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0071"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0081"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0087"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0113"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0139"/>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0046 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0046">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Earth surface setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Geologic environments on the surface of the solid Earth. Hierarchy presented here is based on assumption that a particular setting may be specified by a combination of a climatic setting with one or more process or geomorphically defined settings..</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0010"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0011"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0027"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0041"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0062"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0066"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0069"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0070"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0109"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0119"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0123"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0124"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0132"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0146"/>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0047 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0047">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Contained, embedded, or carried within the body of a glacier or ice sheet; said of meltwater streams, till, drift, moraine</skos:definition>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Englacial setting</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0062"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0048 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0048">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:  science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Epicontinental marine setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Marine setting situated within the interior of the continent, rather than at the edge of a continent.</skos:definition>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0033"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0090"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0049 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0049">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >A delta that has filled, or is in the process of filling, an estuary</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Estuarine delta setting</skos:prefLabel>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0041"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0051"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0050 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0050">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >A lagoon produced by the temporary sealing of a river estuary by a storm barrier. Such lagoons are usually seasonal and exist until the river breaches the barrier; they occur in regions of low or spasmodic rainfall</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Estuarine lagoon setting</skos:prefLabel>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0051"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0079"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0051 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0051">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Environments at the seaward end or the widened funnel-shaped tidal mouth of a river valley where fresh water comes into contact with seawater and where tidal effects are evident (adapted from Glossary of Geology, Jackson, 1997, p. 217).</skos:definition>
+        <skos:prefLabel xml:lang="en">Estuary setting</skos:prefLabel>
+        <dc:source xml:lang="en"
+            >North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:  science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0049"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0050"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0119"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0052 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0052">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Extended terrane setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Tectonic setting characterized by extension of the upper crust,  manifested by formation of rift valleys or basin and range physiography, with arrays of low to high angle normal faults. Modern examples include the North Sea, East Africa, and the Basin and Range of the North American Cordillera. Typically applied in continental crustal settings.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0034"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0131"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0053 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0053">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >Neuendorf et al 2005;</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Extra-terrestrial setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Material originated outside of the Earth or its atmosphere.</skos:definition>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0054 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0054">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>Macdonald 1982</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Fast spreading center setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Spreading center at which the opening rate is greater than 100 mm per year.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0005"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0055 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0055">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Floodplain setting</skos:prefLabel>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:definition xml:lang="en"
+            >The surface or strip of relatively smooth land adjacent to a river channel, constructed by the present river in its existing regimen and covered with water when the river overflows its banks. It is built of alluvium carried by the river during floods and deposited in the sluggish water beyond the influence of the swiftest current. A river has one floodplain and may have one or more terraces representing abandoned floodplains</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0115"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0123"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0056 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0056">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en"
+            >1-GE WP3, Neuendorf et al.  (2005); p. 249</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en">Forearc setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Tectonic setting between a subduction-related trench and a volcanic arc</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0106"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0057 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0057">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en"
+            >1-GE WP3, Neuendorf et al.  (2005); p. 250</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Foreland setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >The exterior area of an orogenic belt where deformation occurs without significant metamorphism. Generally the foreland is closer to the continental interior than other portions of the orogenic belt are.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0033"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0131"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0058 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0058">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Forereef setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >The seaward side of a reef; the slope covered with deposits of coarse reef talus</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0022"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0059 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0059">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:definition xml:lang="en"
+            >A desert plain strewn with wind-abraded pebbles, or gibbers; a gravelly desert.</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Gibber plain setting</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0011"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0123"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0132"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0060 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0060">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Areas adjacent to glacial front dominated by sediment and water supplied by glacial melting.</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source
+            >North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:  science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Glacial outwash plain setting</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0062"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0132"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0061 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0061">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Glacier lateral setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Settings adjacent to edges of confined glacier.</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0062"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0062 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0062">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Earth surface setting with geography defined by spatial relationship to glaciers (e.g. on top of a glacier, next to a glacier, in front of a glacier...). Processes related to moving ice dominate sediment transport and deposition and landform development. Includes subaqueous, shoreline, and terrestrial settings that are impacted by the presence of glaciers. Considered a geographically defined setting in that a glacier is a geographic feature.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Glacier related setting</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0046"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0047"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0060"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0061"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0109"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0111"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0126"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0128"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0063 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0063">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en"
+            >Glacier terminus setting</skos:prefLabel>
+        <dc:source
+            >NADM SLTTs, 2004</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Region of sediment deposition due to melting of glacier ice. ablation and flow till setting.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0111"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0064 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0064">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en">Hadal setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >The deepest oceanic environment, i.e., over 6,000 m in depth. Always in deep sea trench.</skos:definition>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0038"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0090"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0065 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0065">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >High pressure environment characterized by geothermal gradient significantly lower than standard continental geotherm; enviornment in which blueschist facies metamorphic rocks form. Typically associated with subduction zones.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >High pressure low temperature Earth interior setting</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0045"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0066 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0066">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source
+            >North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:  science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/; Hawley, J.W., and Parsons, R.B. 1980. Glossary of selected geomorphic and geologic terms. Mimeo. USDA Soil Conservation Service, West National Technical Center, Portland, OR. 30 p.</dc:source>
+        <skos:definition xml:lang="en"
+            >Earth surface setting characterized by surface slope angles high enough that gravity alone becomes a significant factor in geomorphic development, as well as base-of-slope areas influenced by hillslope processes. Hillslope activities include creep, sliding, slumping, falling, and other downslope movements caused by slope collapse induced by gravitational influence on earth materials. May be subaerial or subaqueous.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Hillslope setting</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0046"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0067 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0067">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Hinterland tectonic setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Tectonic setting in the internal part of an orogenic belt, characterized by plastic deformation of rocks accompanied by significant metamorphism, typically involving crystalline basement rocks. Typically denotes the most structurally thickened part of an orogenic belt, between a magmatic arc or collision zone and a more &#39;external&#39; foreland setting.</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0033"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0131"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0068 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0068">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Hot spot setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Setting in a zone of high heat flow from the mantle. Typically identified in intraplate settings, but hot spot may also interact with active plate margins (Iceland...). Includes surface manifestations like volcanic center, but also includes crust and mantle manifestations as well.</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0076"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0131"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0069 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0069">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en"
+            >Cleland, D.T.; Avers, P.E.; McNab, W.H.; Jensen, M.E.; Bailey, R.G., King, T.; Russell, W.E. 1997. National Hierarchical Framework of Ecological Units, in Boyce, M. S.; Haney, A., ed., Ecosystem Management Applications for Sustainable Forest and Wildlife  Resources: Yale University Press, New Haven, CT. pp. 181-200.</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Humid temperate climatic setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Setting with seasonal climate having hot to cold or humid to arid seasons.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0046"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0070 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0070">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source xml:lang="en"
+            >Cleland, D.T.; Avers, P.E.; McNab, W.H.; Jensen, M.E.; Bailey, R.G., King, T.; Russell, W.E. 1997. National Hierarchical Framework of Ecological Units, in Boyce, M. S.; Haney, A., ed., Ecosystem Management Applications for Sustainable Forest and Wildlife  Resources: Yale University Press, New Haven, CT. pp. 181-200.</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Humid tropical climatic setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Setting with hot, humid climate influenced by equatorial air masses, no winter season.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0046"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0071 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0071">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Hypabyssal setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Igneous environment close to the Earth&#39;s surface, characterized by more rapid cooling than plutonic setting to produce generally fine-grained intrusive igneous rock that is commonly associated with co-magmatic volcanic rocks.</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0045"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0072 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0072">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Inactive spreading center setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Setting on oceanic crust formed at a spreading center that has been abandoned.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0076"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0107"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0073 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0073">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Inner neritic setting</skos:prefLabel>
+        <skos:altLabel xml:lang="en"
+            >Subtidal setting</skos:altLabel>
+        <skos:definition xml:lang="en"
+            >The ocean environment at depths between low tide level and 30 metres</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0098"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0074 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0074">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:definition xml:lang="en"
+            >A pronounced indentation of the delta front between advancing stream distributaries, occupied by shallow water, and either open to the sea or partly enclosed by minor distributaries</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Interdistributary bay setting</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0041"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0124"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0075 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0075">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Intertidal setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Pertaining to the benthic ocean environment or depth zone between high water and low water; also, pertaining to the organisms of that environment</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0124"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0136"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0076 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0076">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Intraplate tectonic setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Tectonically stable setting far from any active plate margins.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0072"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0118"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0131"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0077 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0077">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Lacustrine delta setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >The low, nearly flat, alluvial tract of land at or near the mouth of a river, commonly forming a triangular or fan-shaped plain of considerable area, crossed by many distributaries of the main river, perhaps extending beyond the general trend of the lake shore, resulting from the accumulation of sediment supplied by the river in such quantities that it is not removed by waves or currents. Most deltas are partly subaerial and partly below water.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0041"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0078"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0123"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0124"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0078 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0078">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Lacustrine setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Setting associated with a lake. Always overlaps with terrestrial, may overlap with subaerial, subaqueous, or shoreline.</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0077"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0124"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0132"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0079 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0079">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >A shallow stretch of salt or brackish water, partly or completely separated from a sea or lake by an offshore reef, barrier island, sand or spit (Jackson, 1997). Water is shallow, tidal and wave-produced effects on sediments; strong light reaches sediment..</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Lagoonal setting</skos:prefLabel>
+        <dc:source
+            >generalize from Jackson 1997 and North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:  science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0016"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0050"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0119"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0124"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0080 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0080">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Low energy shoreline setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Settings characterized by very low surface slope and proximity to shoreline. Generally within peritidal setting, but characterized by low surface gradients and generally low-energy sedimentary processes.</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0007"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0088"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0097"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0119"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0134"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0081 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0081">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Low pressure high temperature setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Setting characterized by temperatures significantly higher that those associated with normal continental geothermal gradient.</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0045"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0082 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0082">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Neuendorf, K.K.E., Mehl, J.P. &amp; Jackson, J.A. (eds), 2005. Glossary of geology, 5th Edition. American Geological Institute, Alexandria, 779 p.; Berggren, W.A. &amp; Miller, K.G., 1989. Cenozoic bathyal and abyssal calcareous benthic foraminiferal zonation. Micropalaeontology 35, 308-320</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Lower bathyal setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >The ocean environment at depths between 1000 and 3500 metres</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0019"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0083 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0083">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Continental crustal setting characterized by upper amphibolite to granulite facies metamorphism, insitu melting, residual anhydrous metamorphic rocks, and ductile flow of rock bodies.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Lower continental-crustal setting</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0033"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0084 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0084">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source
+            >Reading, H.G. &amp; Collinson, J.D., 1996. Clastic coasts. 154-231 in Reading, H.G. (ed.), Sedimentary Environments: Processses, Facies and Stratigraphy, third edition. Blackwell Science, Oxford</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Lower delta plain setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >The part of a delta plain which is penetrated by saline water and is subject to tidal processes</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0040"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0136"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0085 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0085">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Lower mantle setting</skos:prefLabel>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:definition xml:lang="en"
+            >That part of the mantle that lies below a depth of about 660 km. With increasing depth, density increases from ~4.4 g/cm3-to ~5.6 g/cm3, and velocity of compressional seismic waves increases from ~10.7 km/s to ~13.7 km/s (Dziewonski and Anderson, 1981).</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0087"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0086 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0086">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Lower oceanic-crustal setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Setting characterized by dominantly intrusive mafic rocks, with sheeted dike complexes in upper part and gabbroic to ultramafic intrusive or metamorphic rocks in lower part.</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0100"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0087 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0087">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en">Mantle setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >The zone of the Earth below the crust and above the core, which is divided into the upper mantle and the lower mantle, with a transition zone separating them.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0045"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0085"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0131"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0143"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0088 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0088">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:  science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/; based on Jackson 1997; Neuendorf et al. 2005</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Marginal marine sabkha setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Setting characterized by arid to semi-arid conditions on restricted coastal plains mostly above normal high tide level, with evaporite-saline mineral, tidal-flood, and eolian deposits. Boundaries with intertidal setting and non-tidal terrestrial setting are gradational. (Jackson, 1997, p. 561).</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0011"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0080"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0123"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0124"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0134"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0089 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0089">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >A shallow submerged plateau separated from continental landmasses, on which high biological carbonate production rates produce enough sediment to maintain the platform surface near sea level. Grades into atoll as area becomes smaller and ringing coral reefs become more prominent part of the setting.</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Marine carbonate platform setting</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0090"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0099"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0090 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0090">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:  science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/; Webster&#39;s Encyclopedic Unabridged Dictionary of the English Language, 2001, p. 1894.</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en">Marine setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Setting characterized by location under the surface of the sea.</skos:definition>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0002"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0003"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0018"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0019"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0021"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0022"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0032"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0035"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0038"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0048"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0064"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0089"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0098"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0099"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0100"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0120"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0124"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0127"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0091 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0091">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Meandering river channel setting</skos:prefLabel>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:definition xml:lang="en"
+            >Produced by a mature stream swinging from side to side as it flows across its floodplain or shifts its course laterally toward the convex side of an original curve</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0114"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0092 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0092">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source>Macdonald 1982</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Medium-rate spreading center setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Spreading center at which the opening rate is between 50 and 100 mm per year.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0005"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0093 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0093">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Mid ocean ridge setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Ocean highland associated with a divergent continental margin (spreading center). Setting is characterized by active volcanism, locally steep relief, hydrothermal activity, and pelagic sedimentation.</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0099"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0107"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0094 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0094">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Berggren, W.A. &amp; Miller, K.G., 1989. Cenozoic bathyal and abyssal calcareous benthic foraminiferal zonation. Micropalaeontology 35, 308-320</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Middle bathyal setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >The ocean environment at water depths between 600 and 1000 metres</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0019"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0095 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0095">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Continental crustal setting characterized by greenschist to upper amphibolite facies metamorphism, plutonic igneous rocks, and ductile deformation.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Middle continental crust setting</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0033"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0096 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0096">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Middle neritic setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >The ocean environment at depths between 30 and 100 metres</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0098"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0097 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0097">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:  science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/; Jackson, 1997</dc:source>
+        <skos:definition xml:lang="en"
+            >A relatively level area of fine grained material (e.g. silt) along a shore (as in a sheltered estuary or chenier-plain) or around an island, alternately covered and uncovered by the tide or covered by shallow water, and barren of vegetation. Includes most tidal flats, but lacks denotation of tidal influence..</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Mud flat setting</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0080"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0134"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0098 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0098">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Neritic setting</skos:prefLabel>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >The ocean environment at depths between low-tide level and 200 metres, or between low-tide level and approximately the edge of the continental shelf</skos:definition>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0035"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0073"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0090"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0096"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0102"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0099 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0099">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Broad category for subaqueous marine settings characterized by significant relief above adjacent sea floor.</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Ocean highland setting</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0090"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0093"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0100"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0101"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0118"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0100 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0100">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Oceanic-crustal setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >That type of the Earth&#39;s crust which underlies the ocean basins. The oceanic crust is 5-10 km thick; it has a density of 2.9 g/cm3, and compressional seismic-wave velocities travelling through it at 4-7.2 km/sec. Setting in crust produced by submarine volcanism at a mid ocean ridge.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0036"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0086"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0144"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0101 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0101">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Oceanic plateau setting</skos:prefLabel>
+        <dc:source xml:lang="en">Reading 1978</dc:source>
+        <skos:definition xml:lang="en"
+            >Region of elevated ocean crust that commonly rises to within 2-3 km of the surface above an abyssal sea floor that lies several km deeper. Climate and water depths are such that a marine carbonate platform does not develop.</skos:definition>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0076"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0099"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0102 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0102">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Outer neritic setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >The ocean environment at depths between 100 and 200 metres or between low-tide level and approximately the edge of the continental shelf</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0098"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0103 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0103">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Boundary of continental crust into oceanic crust of an oceanic basin that is not a subduction zone or transform fault system. Generally is rifted margin formed when ocean basin was initially formed.</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Passive continental margin setting</skos:prefLabel>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0131"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0104 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0104">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:  science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/; NRCS, 2001</dc:source>
+        <skos:definition xml:lang="en"
+            >A gently sloping erosional surface developed at the foot of a receding hill or mountain slope. The surface may be essentially bare, exposing earth material that extends beneath adjacent uplands; or it may be thinly mantled with alluvium and colluvium, ultimately in transit from upland front to basin or valley lowland. In hill-foot slope terrain the mantle is designated &quot;pedisediment.&quot; The term has been used in several geomorphic contexts: Pediments may be classed with respect to (a) landscape positions, for example, intermontane-basin piedmont or valley-border footslope surfaces (respectively, apron and terrace pediments (Cooke and Warren, 1973)); (b) type of material eroded, bedrock or regolith; or (c) combinations of the above. Compare - Piedmont slope..</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Pediment setting</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0105"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0105 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0105">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source
+            >Hawley and Parsons, 1980+F98</dc:source>
+        <skos:definition xml:lang="en"
+            >Location on gentle slope at the foot of a mountain; generally used in terms of intermontane-basin terrain. Main components include: (a) An erosional surface on bedrock adjacent to the receding mountain front (pediment, rock pediment); (b) A constructional surface comprising individual alluvial fans and interfan valleys, also near the mountain front; and (c) A distal complex of coalescent fans (bajada), and alluvial slopes without fan form. Piedmont slopes grade to basin-floor depressions with alluvial and temporary lake plains or to surfaces associated with through drainage.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Piedmont slope system setting</skos:prefLabel>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0008"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0009"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0104"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0123"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0106 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0106">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Plate margin setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Tectonic setting at the boundary between two tectonic plates.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0004"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0005"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0056"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0125"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0131"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0137"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0145"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0107 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0107">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Plate spreading center setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Tectonic setting where new oceanic crust is being or has been formed at a divergent plate boundary. Includes active and inactive spreading centers.</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0005"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0072"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0131"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0108 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0108">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Based on Hawley and Parsons, 1980</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en">Playa setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >The usually dry and nearly level plain that occupies the lowest parts of closed depressions, such as those occurring on intermontane basin floors. Temporary flooding occurs primarily in response to precipitation-runoff events.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0011"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0123"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0132"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0109 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0109">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source xml:lang="en"
+            >Cleland, D.T.; Avers, P.E.; McNab, W.H.; Jensen, M.E.; Bailey, R.G., King, T.; Russell, W.E. 1997. National Hierarchical Framework of Ecological Units, in Boyce, M. S.; Haney, A., ed., Ecosystem Management Applications for Sustainable Forest and Wildlife  Resources: Yale University Press, New Haven, CT. pp. 181-200.</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Polar climatic setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Setting with climate dominated by temperatures below the freezing temperature of water. Includes polar deserts because precipitation is generally scant at high latitude. Climate controlled by arctic air masses, cold dry environment with short summer.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0046"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0062"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0110 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0110">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Prodelta setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >The part of a delta that is below the effective depth of wave erosion, lying beyond the delta front, and sloping gently down to the floor of the basin into which the delta is advancing and where clastic river sediment ceases to be a significant part of the basin-floor deposits; it is entirely below the water level</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0041"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0124"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0111 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0111">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Immediately in front of or just beyond the outer limits of a glacier or ice sheet, generally at or near its lower end; said of lakes, streams, deposits, and other features produced by or derived from the glacier ice</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Proglacial setting</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0062"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0063"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0112 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0112">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:definition xml:lang="en"
+            >A stony platform of</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Reef flat setting</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0022"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0113 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0113">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >NADM metamorphic rock vocabulary SLTTm1.0, 2004</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Metamorphism not obviously localized along contacts of igneous bodies; includes burial metamorphism and ocean ridge metamorphism</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Regional metamorphic setting</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0045"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0114 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0114">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >River channel setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >The bed where a natural body of surface water flows or may flow; a natural passageway or depression of perceptible extent containing continuously or periodically flowing water, or forming a connecting link between two bodies of water; a watercourse</skos:definition>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0025"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0091"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0115"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0124"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0115 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0115">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Geologic setting dominated by a river system; river plains may occur in any climatic setting. Includes active channels, abandoned channels, levees, oxbow lakes, flood plain. May be part of an alluvial plain that includes terraces composed of abandoned river plain deposits.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >River plain system setting</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0001"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0037"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0055"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0114"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0123"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0132"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0116 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0116">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source
+            >North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:  science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Rocky coast setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Shoreline with significant relief and abundant rock outcrop.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0119"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0117 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0117">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >A sand-covered plain dominated by aeolian processes.</skos:definition>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Sand plain setting</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0006"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0011"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0123"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0132"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0118 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0118">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source>Reading 1978</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Seamount setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Setting that consists of a conical mountain on the ocean floor (guyot). Typically characterized by active volcanism, pelagic sedimentation. If the mountain is high enough to reach the photic zone, carbonate production may result in reef building to produce a carbonate platform or atoll setting.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0076"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0099"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0119 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0119">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >based on Neuendorf et al, 2005</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Geologic settings characterized by location adjacent to the ocean or a lake. A zone of indefinite width (may be many kilometers), bordering a body of water that extends from the water line inland to the first major change in landform features. Includes settings that may be subaerial, intermittently subaqueous, or shallow subaqueous, but are intrinsically associated with the interface between land areas and water bodies.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Shoreline settings</skos:prefLabel>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0015"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0020"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0026"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0029"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0041"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0046"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0051"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0079"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0080"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0116"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0122"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0129"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0136"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0120 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0120">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source
+            >based on NADM SLTTs, 2004</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Slope-rise setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >The part of a subaqueous basin that is between a bordering shelf setting, which separate the basin from an adjacent landmass, and a very low-relief basin plain setting.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0090"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0138"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0121 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0121">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>Macdonald 1982</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Slow spreading center setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Spreading center at which the opening rate is less than 50 mm per year.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0005"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0122 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0122">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >based on Jackson 1997, p. 626</dc:source>
+        <skos:definition xml:lang="en"
+            >A prograded shore built seaward by waves and currents, and continuous for some distance along the coast. It is characterized by subparallel beach ridges and swales, in places with associated dunes.</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Strandplain setting</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0119"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0123"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0132"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0123 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0123">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:definition xml:lang="en"
+            >Setting at the interface between the solid earth and the atmosphere, includes some shallow subaqueous settings in river channels and playas. Characterized by conditions and processes, such as erosion, that exist or operate in the open air on or immediately adjacent to the land surface</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Subaerial setting</skos:prefLabel>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0006"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0029"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0046"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0055"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0059"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0105"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0108"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0117"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0122"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0129"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0132"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0124 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0124">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >based on North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:  science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/;</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Setting situated in or under permanent, standing water. Used for marine and lacustrine settings, but not for fluvial settings.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Subaqueous setting</skos:prefLabel>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0016"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0046"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0074"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0075"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0079"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0090"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0110"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0133"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0125 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0125">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Subduction zone setting</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Tectonic setting at which a tectonic plate, usually oceanic, is moving down into the mantle beneath another overriding plate.</skos:definition>
+        <rdfs:comment xml:lang="en">This vocabulary</rdfs:comment>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0106"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0126 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0126">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Formed or accumulated in or by the bottom parts of a glacier or ice sheet; said of meltwater streams, till, moraine, etc.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Subglacial setting</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0062"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0127 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0127">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Large fan-shaped cones of sediment on the ocean floor, generally associated with submarine canyons that provide sediment supply to build the fan..</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Submarine fan setting</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0090"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0128 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0128">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >&quot;Carried upon, deposited from, or pertaining to the top surface of a glacier or ice sheet; said of meltwater streams, till, drift, etc. &quot; (Jackson, 1997, p. 639). Dreimanis (1988, p. 39) recommendation that &quot;supraglacial&quot; supersede &quot;superglacial&quot; is followed.</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source
+            >North American Geologic-map Data Model Science Language Technical Team, 2004, Sedimentary materials:  science language for their classification, description, and interpretation in digital geologic-map databases, Version 1.0 (12/18/2004): U.S. Geological Survey Open-File Report 2004-1451 appendix C, 595 p., accessed at http://pubs.usgs.gov/of/2004/1451/sltt/appendixC/</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Supraglacial setting</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0062"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0129 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0129">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Pertaining to the shore area marginal to the littoral zone, just above high-tide level</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Supratidal setting</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0119"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0123"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0130 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0130">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >Neuendorf et al 2005; Soil Science Society of America, 1997.</dc:source>
+        <skos:definition xml:lang="en"
+            >A water-saturated, periodically wet or continually flooded area with the surface not deeply submerged, essentially without the formation of peat. Marshes are characterized by sedges, cattails, rushes, or other aquatic and grasslike vegetation. Swamps are characterized by tree and brush vegetation.</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Swamp or marsh setting</skos:prefLabel>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0124"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0135"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0146"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0131 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0131">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Setting defined by relationships to tectonic plates on or in the Earth.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Tectonically defined setting</skos:prefLabel>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0012"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0030"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0036"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0052"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0057"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0067"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0068"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0076"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0087"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0103"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0106"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0107"/>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0132 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0132">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Setting characterized by absence of direct marine influence. Most of the subaerial settings are also terrestrial, but lacustrine settings, while terrestrial, are not subaerial, so the subaerial settings are not included as subcategories.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Terrestrial setting</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0024"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0033"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0046"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0059"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0060"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0078"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0108"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0115"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0117"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0142"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0133 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0133">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:definition xml:lang="en"
+            >A major channel followed by the tidal currents, extending from offshore into a tidal marsh or a tidal flat.</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Tidal channel setting</skos:prefLabel>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0090"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0124"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0134"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0134 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0134">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >An extensive, nearly horizontal, barren tract of land that is alternately covered and uncovered by the tide, and consisting of unconsolidated sediment (mostly mud and sand). It may form the top surface of a deltaic deposit.</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Tidal flat setting</skos:prefLabel>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0080"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0133"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0135"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0136"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0135 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0135">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >A marsh bordering a coast (as in a shallow lagoon or sheltered bay), formed of mud and of the resistant mat of roots of salt-tolerant plants, and regularly inundated during high tides; a marshy tidal flat.</skos:definition>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Tidal marsh setting</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0130"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0134"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0136 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0136">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Setting subject to tidal processes</skos:definition>
+        <skos:prefLabel xml:lang="en">Tidal setting</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0075"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0084"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0119"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0134"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0137 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0137">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Plate boundary at which the adjacent plates are moving laterally relative to each other.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Transform plate boundary setting</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0106"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0138 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0138">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Crust formed in the transition zone between continental and oceanic crust, during the history of continental rifting that culminates in the formation of a new ocean.</skos:definition>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Transitional-crustal setting</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0036"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0139 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0139">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Setting characterized by pressures characteristic of upper mantle, but indicated by mineral assemblage in crustal composition rocks.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Ultra high pressure crustal setting</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0045"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0140 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0140">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >Berggren, W.A. &amp; Miller, K.G., 1989. Cenozoic bathyal and abyssal calcareous benthic foraminiferal zonation. Micropalaeontology 35, 308-320</dc:source>
+        <skos:definition xml:lang="en"
+            >The ocean environment at water depths between 200 and 600 metres</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Upper bathyal setting</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0019"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0141 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0141">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Continental crustal setting dominated by non metamorphosed to low greenschist facies metamorphic rocks, and brittle deformation.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Upper continental crustal setting</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0033"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0142 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0142">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source
+            >Reading, H.G. &amp; Collinson, J.D., 1996. Clastic coasts. 154-231 in Reading, H.G. (ed.), Sedimentary Environments: Processses, Facies and Stratigraphy, third edition. Blackwell Science, Oxford</dc:source>
+        <skos:definition xml:lang="en"
+            >The part of a delta plain essentially unaffected by basinal processes. They do not differ substantially from alluvial environments except that areas of swamp, marsh and lakes are usually more widespread and channels may bifurcate downstream</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Upper delta plain setting</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0040"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0132"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0143 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0143">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source
+            >Neuendorf et al., 2005</dc:source>
+        <skos:definition xml:lang="en"
+            >That part of the mantle which lies above a depth of about 660 km and has a density of 3.4 g/cm3 to 4.0 g/cm3 with increasing depth. Similarly, P-wave velocity increases from about 8 to 11 km/sec with depth and S wave velocity increases from about 4.5 to 6 km/sec with depth. It is presumed to be peridotitic in composition. It includes the subcrustal lithosphere the asthenosphere and the transition zone;</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Upper mantle setting</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0087"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0144 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0144">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Oceanic crustal setting dominated by extrusive rocks, abyssal oceanic sediment, with increasing mafic intrusive rock in lower part.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Upper oceanic crustal setting</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0100"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0145 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0145">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source xml:lang="en"
+            >1-GE WP3, Neuendorf et al.  (2005); p. 710</dc:source>
+        <skos:definition xml:lang="en"
+            >A generally curvillinear belt of volcanoes above a subduction zone.</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Volcanic arc setting</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0106"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/eventenvironment/0146 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/eventenvironment/0146">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Setting characterized by gentle surface slope, and at least intermittent presence of standing water, which may be fresh, brackish, or saline. Wetland may be terrestrial setting or shoreline setting.</skos:definition>
+        <skos:prefLabel xml:lang="en">Wetland setting</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0024"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0046"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0119"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0124"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0130"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0132"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifierscheme/cgi/201012/eventenvironment -->
+
+    <skos:ConceptScheme rdf:about="">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:changeNote xml:lang="en"
+            >2009-12-07 SMR Update metadata properties for version, creator, title, and format.  Change skos:HistoryNote to dc:source for information on origin of terms and definitions.</skos:changeNote>
+        <skos:historyNote xml:lang="en"
+            >2010 11 27 SMR change identifiers from URN to http URI following CGI URI scheme</skos:historyNote>
+        <skos:historyNote xml:lang="en"
+            >2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using &#39;file/Export inferred axioms as ontology&#39; in Protege.</skos:historyNote>
+        <skos:prefLabel xml:lang="en"
+            >EventEnvironment</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >This file contains the CGI Event Environment vocabulary. Vocabulary for populating event environment properties in GeoSciML documents. The physical setting within which a GeologicEvent takes place. GeologicEnvironment is construed broadly to include physical settings on the Earth surface specified by climate, tectonics, physiography or geography, and settings in the Earth&#8217;s interior specified by pressure, temperature, chemical environment, or tectonics. Environments are places.</skos:definition>
+        <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0045"/>
+        <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0046"/>
+        <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0053"/>
+        <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/eventenvironment/0131"/>
+    </skos:ConceptScheme>
+    
+
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,563 @@
+@prefix cgi: <http://resource.geosciml.org/classifierscheme/cgi/201202/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix featureobservationmethod: <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/> .
+@prefix : <http://resource.geosciml.org/classifierscheme/cgi/201202/featureobservationmethod#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://resource.geosciml.org/classifierscheme/cgi/201202/featureobservationmethod> .
+
+<http://resource.geosciml.org/classifierscheme/cgi/201202/featureobservationmethod> rdf:type owl:Ontology ;
+         
+         skos:historyNote "2010-02-04 SMR Updated from 2010 01 version by adding broader categories for 'digital conversion...', Direct observation, indirect method, and 'synthesis....'"@en ,
+           "2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en ,
+           "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en ;
+         
+         dc:format "application/rdf+xml" ;
+         
+         dc:language "en" ;
+         
+         dc:identifier "http://resource.geosciml.org/classifierscheme/cgi/201202/featureobservationmethod" ;
+         
+         owl:versionInfo "201202" ;
+         
+         rdfs:comment "2010-02-04  SMR Start file produced from excel spreadsheet version of FeatureObservationMethod200811, using P. Golodonic xl2xml."@en ;
+         
+         skos:historyNote "2010-11-28 SMR replace URN with http URI identifiers according to CGI URI scheme"@en ;
+         
+         dc:title "CGI Feature observation method terms"@en ;
+         
+         dc:publisher "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+         
+         dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+
+dc:publisher rdf:type owl:AnnotationProperty .
+
+
+
+dc:language rdf:type owl:AnnotationProperty .
+
+
+
+dc:identifier rdf:type owl:AnnotationProperty .
+
+
+
+dc:date rdf:type owl:AnnotationProperty .
+
+
+
+dc:source rdf:type owl:AnnotationProperty .
+
+
+
+skos:historyNote rdf:type owl:AnnotationProperty .
+
+
+
+dc:format rdf:type owl:AnnotationProperty .
+
+
+
+dc:title rdf:type owl:AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+
+owl:topObjectProperty rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+
+skos:broader rdf:type owl:ObjectProperty ;
+             
+             rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+
+skos:inScheme rdf:type owl:ObjectProperty ;
+              
+              rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#narrower
+
+skos:narrower rdf:type owl:ObjectProperty ;
+              
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              
+              owl:inverseOf skos:broader .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#topConceptOf
+
+skos:topConceptOf rdf:type owl:ObjectProperty ;
+   
+   rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+
+rdf:value rdf:type owl:DatatypeProperty ;
+          
+          rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.w3.org/2002/07/owl#topDataProperty
+
+owl:topDataProperty rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+
+skos:definition rdf:type owl:DatatypeProperty ;
+ 
+ rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#historyNote
+
+skos:historyNote rdf:type owl:DatatypeProperty ;
+  
+  rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+
+skos:prefLabel rdf:type owl:DatatypeProperty ;
+
+rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+
+owl:Thing rdf:type owl:Class .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+
+skos:Concept rdf:type owl:Class ;
+             
+             rdfs:subClassOf owl:Thing .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+
+skos:ConceptScheme rdf:type owl:Class ;
+    
+    rdfs:subClassOf owl:Thing .
+
+
+
+
+
+#################################################################
+#
+#    ExactMatch
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_of_multiple_published_descriptions> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0016>.
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_of_multiple_outcrop_observations> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0015>.
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/digital_conversion_from_published_source> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0004>.
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation_estimated_values> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0007>.
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/data_from_single_published_description> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0003>.
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation_measured_values> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0008>.
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/borehole_geophysical_log_measurements> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0002>.
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation_estimated_values> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0011>.
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation_measured_values> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0012>.
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_from_multiple_sources> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0014>.
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/borehole_cuttings_observation> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0001>.
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0006>.
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/remotely_sensed_data> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0013>.
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0010>.
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/direct_observation> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0005>.
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/indirect_method> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0009>.
+
+#
+#################################################################
+
+
+###  http://resource.geosciml.org/classifier/cgi/featureobservationmethod/borehole_cuttings_observation
+
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/borehole_cuttings_observation> rdf:type owl:NamedIndividual ,
+     owl:Thing ,
+     skos:Concept ;
+           
+           skos:prefLabel "Borehole cuttings observation"@en ;
+           
+           skos:definition "Data based on interpretation of borehole cuttings"@en ;
+           
+           dc:source "this vocabulary"@en ;
+           
+           skos:broader <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/direct_observation> ;
+           
+           skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/featureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/featureobservationmethod/borehole_geophysical_log_measurements
+
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/borehole_geophysical_log_measurements> rdf:type owl:NamedIndividual ,
+             owl:Thing ,
+             skos:Concept ;
+    
+    skos:prefLabel "Borehole geophysical log measurements"@en ;
+    
+    skos:definition "Data based on interpretation of geophysical measurement obtained by borehole logging tools."@en ;
+    
+    dc:source "this vocabulary"@en ;
+    
+    skos:broader <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/indirect_method> ;
+    
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/featureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/featureobservationmethod/data_from_single_published_description
+
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/data_from_single_published_description> rdf:type owl:NamedIndividual ,
+              owl:Thing ,
+              skos:Concept ;
+     
+     skos:definition "Data are extracted from a publised description of the feature"@en ;
+     
+     skos:prefLabel "Data from single published description"@en ;
+     
+     dc:source "this vocabulary"@en ;
+     
+     skos:broader <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/digital_conversion_from_published_source> ;
+     
+     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/featureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/featureobservationmethod/digital_conversion_from_published_source
+
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/digital_conversion_from_published_source> rdf:type owl:NamedIndividual ,
+ owl:Thing ,
+ skos:Concept ;
+       
+       skos:prefLabel "Digital conversion from published source"@en ;
+       
+       skos:definition "Feature observation is based on published information, converted to a digital representation for database application"@en ;
+       
+       dc:source "This vocabulary"@en ;
+       
+       skos:narrower <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/data_from_single_published_description> ,
+      <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_of_multiple_published_descriptions> ;
+       
+       skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/201202/featureobservationmethod> ;
+       
+       skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/featureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/featureobservationmethod/direct_observation
+
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/direct_observation> rdf:type owl:NamedIndividual ,
+         owl:Thing ,
+         skos:Concept ;
+
+skos:prefLabel "Direct observation"@en ;
+
+skos:definition "Feature observation is result of direct visual observation by a geologist"@en ;
+
+dc:source "this vocabulary"@en ;
+
+skos:narrower <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/borehole_cuttings_observation> ,
+              <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation> ,
+              <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation> ;
+
+skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/featureobservationmethod> ;
+
+skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/201202/featureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation
+
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation> rdf:type owl:NamedIndividual ,
+             owl:Thing ,
+             skos:Concept ;
+    
+    skos:definition "Data collected through observation of a single drill core interval."@en ;
+    
+    skos:prefLabel "Drill core observation"@en ;
+    
+    dc:source "this vocabulary"@en ;
+    
+    skos:broader <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/direct_observation> ;
+    
+    skos:narrower <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation_estimated_values> ,
+   <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation_measured_values> ;
+    
+    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/featureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation_estimated_values
+
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation_estimated_values> rdf:type owl:NamedIndividual ,
+owl:Thing ,
+skos:Concept ;
+      
+      skos:prefLabel "Drill core observation, estimated values"@en ;
+      
+      skos:definition "Values for properties are estimated by observer."@en ;
+      
+      dc:source "this vocabulary"@en ;
+      
+      skos:broader <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation> ;
+      
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/featureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation_measured_values
+
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation_measured_values> rdf:type owl:NamedIndividual ,
+              owl:Thing ,
+              skos:Concept ;
+     
+     skos:prefLabel "Drill core observation, measured values"@en ;
+     
+     skos:definition "Values for properties are measured using a device (compass, jacob staff, scintillometer, clinometer, ruler…)"@en ;
+     
+     dc:source "this vocabulary"@en ;
+     
+     skos:broader <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation> ;
+     
+     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/featureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/featureobservationmethod/indirect_method
+
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/indirect_method> rdf:type owl:NamedIndividual ,
+      owl:Thing ,
+      skos:Concept ;
+            
+            skos:definition "Feature observation based on inference from proxy observation"@en ;
+            
+            skos:prefLabel "Indirect method"@en ;
+            
+            dc:source "this vocabulary"@en ;
+            
+            skos:narrower <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/borehole_geophysical_log_measurements> ,
+           <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/remotely_sensed_data> ;
+            
+            skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/featureobservationmethod> ;
+            
+            skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/201202/featureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation
+
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation> rdf:type owl:NamedIndividual ,
+          owl:Thing ,
+          skos:Concept ;
+ 
+ skos:definition "Data collected in field through direct observation of a single outcrop. Observer defines scope of 'single outcrop'--may be one point location, or averaged over an extended but connected) area, e.g. a single polygon on a map. Direct observation may include observation using a remote camera (e.g. downhole viewer, submarine camera)"@en ;
+ 
+ skos:prefLabel "Outcrop observation"@en ;
+ 
+ dc:source "this vocabulary"@en ;
+ 
+ skos:broader <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/direct_observation> ;
+ 
+ skos:narrower <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation_estimated_values> ,
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation_measured_values> ;
+ 
+ skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/featureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation_estimated_values
+
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation_estimated_values> rdf:type owl:NamedIndividual ,
+            owl:Thing ,
+            skos:Concept ;
+   
+   skos:prefLabel "Outcrop observation, estimated values"@en ;
+   
+   skos:definition "Values for properties are estimated by observer."@en ;
+   
+   dc:source "this vocabulary"@en ;
+   
+   skos:broader <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation> ;
+   
+   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/featureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation_measured_values
+
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation_measured_values> rdf:type owl:NamedIndividual ,
+           owl:Thing ,
+           skos:Concept ;
+  
+  skos:prefLabel "Outcrop observation, measured values"@en ;
+  
+  skos:definition "Values for properties are measured using a device (compass, jacob staff, scintillometer, clinometer, ruler…)"@en ;
+  
+  dc:source "this vocabulary"@en ;
+  
+  skos:broader <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation> ;
+  
+  skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/featureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/featureobservationmethod/remotely_sensed_data
+
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/remotely_sensed_data> rdf:type owl:NamedIndividual ,
+           owl:Thing ,
+           skos:Concept ;
+  
+  skos:definition "Geologic unit or structure characterized based on remotely sensed data."@en ;
+  
+  skos:prefLabel "Remotely sensed data"@en ;
+  
+  dc:source "this vocabulary"@en ;
+  
+  skos:broader <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/indirect_method> ;
+  
+  skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/featureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_from_multiple_sources
+
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_from_multiple_sources> rdf:type owl:NamedIndividual ,
+       owl:Thing ,
+       skos:Concept ;
+             
+             skos:definition "Feature observation is based on a synthesis of other observations by some compiler. The compiler may be the same individual that made the source observations."@en ;
+             
+             skos:prefLabel "Synthesis from multiple sources"@en ;
+             
+             dc:source "this vocabulary"@en ;
+             
+             skos:narrower <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_of_multiple_outcrop_observations> ,
+            <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_of_multiple_published_descriptions> ;
+             
+             skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/201202/featureobservationmethod> ;
+             
+             skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/featureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_of_multiple_outcrop_observations
+
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_of_multiple_outcrop_observations> rdf:type owl:NamedIndividual ,
+   owl:Thing ,
+   skos:Concept ;
+         
+         skos:definition "Data are the result of synthesis from multiple direct observations, posibly by more than one observer"@en ;
+         
+         skos:prefLabel "Synthesis of multiple outcrop observations"@en ;
+         
+         dc:source "this vocabulary"@en ;
+         
+         skos:broader <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_from_multiple_sources> ;
+         
+         skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/featureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_of_multiple_published_descriptions
+
+<http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_of_multiple_published_descriptions> rdf:type owl:NamedIndividual ,
+     owl:Thing ,
+     skos:Concept ;
+           
+           skos:definition "Data are the result of synthesis from multiple published descriptions"@en ;
+           
+           skos:prefLabel "Synthesis of multiple published descriptions"@en ;
+           
+           dc:source "this vocabulary"@en ;
+           
+           skos:broader <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/digital_conversion_from_published_source> ,
+         <http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_from_multiple_sources> ;
+           
+           skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/featureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifierscheme/cgi/201202/featureobservationmethod
+
+<http://resource.geosciml.org/classifierscheme/cgi/201202/featureobservationmethod> rdf:type owl:NamedIndividual ,
+   owl:Thing ,
+   skos:ConceptScheme ;
+         
+         skos:prefLabel "CGI Feature observation method"@en ;
+         
+         skos:definition "This classifier scheme contains the CGI Feature Observation Method vocabulary, used to specify the approach to acquiring the collection of attribute value assignments that constitute an individual feature instance. Observation method is a convienence property that provides a quick and dirty approach to shortcut use of more comprehensive observation and measurement construct when data are reported using a feature view (as opposed to observation view)."@en .
+
+
+###  Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net

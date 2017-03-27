@@ -1,0 +1,652 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY cgi "http://resource.geosciml.org/classifierscheme/cgi/201012/" >
+    <!ENTITY AlterationType "http://resource.geosciml.org/classifier/cgi/alterationtype/" >
+]>
+
+
+<rdf:RDF xmlns="&cgi;alterationtype"
+     xml:base="&cgi;alterationtype"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:cgi="http://resource.geosciml.org/classifierscheme/cgi/201012/"
+     xmlns:AlterationType="http://resource.geosciml.org/classifier/cgi/alterationtype/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="">
+        <owl:versionInfo>201012</owl:versionInfo>
+        <dc:identifier
+            >http://resource.geosciml.org/classifierscheme/cgi/201012/alterationtype</dc:identifier>
+        <dc:title xml:lang="en"
+            >CGI alteration type categories</dc:title>
+        <dc:publisher xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:publisher>
+        <dc:format
+            >application/rdf+xml</dc:format>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:language xml:lang="en">en</dc:language>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;date"/>
+    <owl:AnnotationProperty rdf:about="&dc;source"/>
+    <owl:AnnotationProperty rdf:about="&dc;identifier"/>
+    <owl:AnnotationProperty rdf:about="&dc;publisher"/>
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    <owl:AnnotationProperty rdf:about="&dc;language"/>
+    <owl:AnnotationProperty rdf:about="&dc;format"/>
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:ObjectProperty rdf:about="&skos;broader">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:ObjectProperty rdf:about="&skos;inScheme">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+    <owl:ObjectProperty rdf:about="&skos;narrower">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <owl:inverseOf rdf:resource="&skos;broader"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+    <owl:ObjectProperty rdf:about="&skos;topConceptOf">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+    <owl:DatatypeProperty rdf:about="&rdf;value">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:DatatypeProperty rdf:about="&skos;definition">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#editorialNote -->
+
+    <owl:DatatypeProperty rdf:about="&skos;editorialNote">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+    <owl:DatatypeProperty rdf:about="&skos;historyNote">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:DatatypeProperty rdf:about="&skos;prefLabel">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="&skos;Concept">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="&skos;ConceptScheme">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype/0001 -->
+
+    <skos:Concept rdf:about="&AlterationType;0001">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"></skos:definition>
+        <dc:source>this vocabulary</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >advanced argillic alteration</skos:prefLabel>
+        <skos:broader rdf:resource="&AlterationType;0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype/0002 -->
+
+    <skos:Concept rdf:about="&AlterationType;0002">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>this vocabulary</dc:source>
+        <skos:definition xml:lang="en"></skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >albitic alteration</skos:prefLabel>
+        <skos:broader rdf:resource="&AlterationType;0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype/0003 -->
+
+    <owl:Thing rdf:about="&AlterationType;0003">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Rock is altered, but type not specified. Any alteration type allowed.</skos:definition>
+        <dc:source>this vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >alteration type not specified</skos:prefLabel>
+        <skos:narrower rdf:resource="&AlterationType;0001"/>
+        <skos:narrower rdf:resource="&AlterationType;0002"/>
+        <skos:narrower rdf:resource="&AlterationType;0004"/>
+        <skos:narrower rdf:resource="&AlterationType;0005"/>
+        <skos:narrower rdf:resource="&AlterationType;0006"/>
+        <skos:narrower rdf:resource="&AlterationType;0007"/>
+        <skos:narrower rdf:resource="&AlterationType;0008"/>
+        <skos:narrower rdf:resource="&AlterationType;0009"/>
+        <skos:narrower rdf:resource="&AlterationType;0010"/>
+        <skos:narrower rdf:resource="&AlterationType;0011"/>
+        <skos:narrower rdf:resource="&AlterationType;0012"/>
+        <skos:narrower rdf:resource="&AlterationType;0013"/>
+        <skos:narrower rdf:resource="&AlterationType;0015"/>
+        <skos:narrower rdf:resource="&AlterationType;0016"/>
+        <skos:narrower rdf:resource="&AlterationType;0017"/>
+        <skos:narrower rdf:resource="&AlterationType;0018"/>
+        <skos:narrower rdf:resource="&AlterationType;0019"/>
+        <skos:narrower rdf:resource="&AlterationType;0020"/>
+        <skos:narrower rdf:resource="&AlterationType;0021"/>
+        <skos:narrower rdf:resource="&AlterationType;0022"/>
+        <skos:narrower rdf:resource="&AlterationType;0024"/>
+        <skos:narrower rdf:resource="&AlterationType;0025"/>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype/0004 -->
+
+    <owl:Thing rdf:about="&AlterationType;0004">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source>this vocabulary</dc:source>
+        <skos:definition xml:lang="en"></skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >alunitic alteration</skos:prefLabel>
+        <skos:broader rdf:resource="&AlterationType;0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype/0005 -->
+
+    <owl:Thing rdf:about="&AlterationType;0005">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source>this vocabulary</dc:source>
+        <skos:definition xml:lang="en"></skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >argillic alteration</skos:prefLabel>
+        <skos:broader rdf:resource="&AlterationType;0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype/0006 -->
+
+    <skos:Concept rdf:about="&AlterationType;0006">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"></skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >calcsilicate alteration</skos:prefLabel>
+        <dc:source>this vocabulary</dc:source>
+        <skos:broader rdf:resource="&AlterationType;0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype/0007 -->
+
+    <owl:Thing rdf:about="&AlterationType;0007">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source>this vocabulary</dc:source>
+        <skos:definition xml:lang="en"></skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >carbonate alteration</skos:prefLabel>
+        <skos:broader rdf:resource="&AlterationType;0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype/0008 -->
+
+    <skos:Concept rdf:about="&AlterationType;0008">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"></skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source>this vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >chloritic alteration</skos:prefLabel>
+        <skos:broader rdf:resource="&AlterationType;0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype/0009 -->
+
+    <owl:Thing rdf:about="&AlterationType;0009">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source>this vocabulary</dc:source>
+        <skos:definition xml:lang="en"></skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >deuteric alteration</skos:prefLabel>
+        <skos:broader rdf:resource="&AlterationType;0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype/0010 -->
+
+    <owl:Thing rdf:about="&AlterationType;0010">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source>this vocabulary</dc:source>
+        <skos:definition xml:lang="en"></skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >epidote alteration</skos:prefLabel>
+        <skos:broader rdf:resource="&AlterationType;0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype/0011 -->
+
+    <owl:Thing rdf:about="&AlterationType;0011">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"></skos:definition>
+        <dc:source>this vocabulary</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en">greisen</skos:prefLabel>
+        <skos:broader rdf:resource="&AlterationType;0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype/0012 -->
+
+    <skos:Concept rdf:about="&AlterationType;0012">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>this vocabulary</dc:source>
+        <skos:definition xml:lang="en"></skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >hematitic alteration</skos:prefLabel>
+        <skos:broader rdf:resource="&AlterationType;0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype/0013 -->
+
+    <skos:Concept rdf:about="&AlterationType;0013">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"></skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >kaolinitic alteration</skos:prefLabel>
+        <dc:source>this vocabulary</dc:source>
+        <skos:broader rdf:resource="&AlterationType;0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype/0014 -->
+
+    <owl:Thing rdf:about="&AlterationType;0014">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source>This Vocabulary</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Rock or sediment not altered.</skos:definition>
+        <skos:prefLabel xml:lang="en">not altered</skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype/0015 -->
+
+    <skos:Concept rdf:about="&AlterationType;0015">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>this vocabulary</dc:source>
+        <skos:definition xml:lang="en"></skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >potassic alteration</skos:prefLabel>
+        <skos:broader rdf:resource="&AlterationType;0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype/0016 -->
+
+    <owl:Thing rdf:about="&AlterationType;0016">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source>this vocabulary</dc:source>
+        <skos:definition xml:lang="en"></skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >propylitic alteration</skos:prefLabel>
+        <skos:broader rdf:resource="&AlterationType;0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype/0017 -->
+
+    <owl:Thing rdf:about="&AlterationType;0017">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source>this vocabulary</dc:source>
+        <skos:definition xml:lang="en"></skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >pyritic alteration</skos:prefLabel>
+        <skos:broader rdf:resource="&AlterationType;0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype/0018 -->
+
+    <owl:Thing rdf:about="&AlterationType;0018">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"></skos:definition>
+        <dc:source>this vocabulary</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >red rock alteration</skos:prefLabel>
+        <skos:broader rdf:resource="&AlterationType;0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype/0019 -->
+
+    <skos:Concept rdf:about="&AlterationType;0019">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"></skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source>this vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">saussuritised</skos:prefLabel>
+        <skos:broader rdf:resource="&AlterationType;0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype/0020 -->
+
+    <skos:Concept rdf:about="&AlterationType;0020">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>this vocabulary</dc:source>
+        <skos:definition xml:lang="en"></skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >sericitic alteration</skos:prefLabel>
+        <skos:broader rdf:resource="&AlterationType;0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype/0021 -->
+
+    <skos:Concept rdf:about="&AlterationType;0021">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>this vocabulary</dc:source>
+        <skos:definition xml:lang="en"></skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >serpentinisation</skos:prefLabel>
+        <skos:broader rdf:resource="&AlterationType;0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype/0022 -->
+
+    <skos:Concept rdf:about="&AlterationType;0022">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>this vocabulary</dc:source>
+        <skos:definition xml:lang="en"></skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en">silicification</skos:prefLabel>
+        <skos:broader rdf:resource="&AlterationType;0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype/0023 -->
+
+    <owl:Thing rdf:about="&AlterationType;0023">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source>this vocabulary</dc:source>
+        <skos:definition xml:lang="en"></skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >unknown alteration</skos:prefLabel>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype/0024 -->
+
+    <owl:Thing rdf:about="&AlterationType;0024">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source>this vocabulary</dc:source>
+        <skos:definition xml:lang="en"></skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en">uralitisation</skos:prefLabel>
+        <skos:broader rdf:resource="&AlterationType;0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/alterationtype/0025 -->
+
+    <skos:Concept rdf:about="&AlterationType;0025">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"></skos:definition>
+        <dc:source>this vocabulary</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >zeolitic alteration</skos:prefLabel>
+        <skos:broader rdf:resource="&AlterationType;0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifierscheme/cgi/201012/alterationtype -->
+
+    <skos:ConceptScheme rdf:about="">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:historyNote xml:lang="en"
+            >2010 11 27 SMR convert URN to http URI using CGI URI scheme to make the 201012 version.</skos:historyNote>
+        <skos:historyNote xml:lang="en"
+            >2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using &#39;file/Export inferred axioms as ontology&#39; in Protege.</skos:historyNote>
+        <skos:prefLabel xml:lang="en"
+            >CGI Alteration type Categories</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >This file contains the 201012 version of CGI Alteration type vocabulary. Vocabulary for populating alteration type property in GeoSciML alterationDescription elements.</skos:definition>
+    </skos:ConceptScheme>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

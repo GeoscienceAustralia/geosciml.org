@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#">
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm">
+      <dcterms:title xml:lang="en">Proportion Term</dcterms:title>
+      <dcterms:description xml:lang="en">This file contains the CGI Proportion Term vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. This vocabulary provides terms that may be used to qualitatively express abundance of composition parts in a geologic unit or earth material description. Quantity that specifies the fraction of the geologic unit composed of the compound material. This vocabulary is used for GeologicUnit.GeologicUnitPart.proportion, GeologicUnit.compositionPart.proportion, and for compoundMaterial.ConsituentPart.proportion. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme.</dcterms:description>
+      <skos:editorialNote xml:lang="en">This file contains the 2016 SKOS-RDF version of the CGI Proportion Term vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt</skos:editorialNote>
+      <skos:changeNote xml:lang="en">2009-12-07 SMR Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2010-09-26 SMR work on rearranging hierarchy to recognize that the top concept is 'present', all others are entailed by this property. Also recognize inconsistent labeling of major-minor and dominant-subordinate. Proposal in this is 'more than half', 'less than half', and change 'dominant' label to 'major' to parallel usage of 'minor'. Awaiting comment...</skos:changeNote>
+      <skos:changeNote xml:lang="en">2010-11-28 SMR replace URN with http URI according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)</skos:changeNote>
+      <skos:changeNote xml:lang="en">2011-07-07. GD Clean up remaining namespace declarations so no URN is present in the ontology. Removed empty concepts with genid.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2012-02-27 SMR add skos:exactMatch relating URI in this vocabulary to URI in 201012 version using numeric tokens. Update the vocabulary definition text.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2013-02-04 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types. Add missing for missing definitions.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2016-11-25 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to 2012 concepts.</skos:changeNote>
+      <dcterms:date>2016-11-25</dcterms:date>
+      <dcterms:creator>CGI Geoscience Terminology Working Group</dcterms:creator>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/proportionterm/all">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm"/>
+      <skos:definition xml:lang="en">Component constitutes effectively 100 percent of the volume of the described entity.</skos:definition>
+      <skos:prefLabel xml:lang="en">all</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/proportionterm/dominant"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/proportionterm/dominant">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm"/>
+      <skos:definition xml:lang="en">Component constitutes greater than 75 percent of the volume of the described entity. This concept is intended to reflect absolute abundance (ie, considerably more than half) rather than relative abundance (ie, predominant component). Note there is a mismatch between the URI name and the preferred label for this concept.</skos:definition>
+      <skos:prefLabel xml:lang="en">major</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/proportionterm/major"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/proportionterm/all"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/proportionterm/rare">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm"/>
+      <skos:definition xml:lang="en">Component constitutes less than 5 percent of the volume of the described entity.</skos:definition>
+      <skos:prefLabel xml:lang="en">rare</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/proportionterm/minor"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/proportionterm/trace"/>
+      <dcterms:source xml:lang="en">this vocabulary, follows Neuendorf et al 2005 usage scoped to coal description</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/proportionterm/major">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm"/>
+      <skos:definition xml:lang="en">Component constitutes greater than 50 percent of the volume of the described entity.</skos:definition>
+      <skos:prefLabel xml:lang="en">more than half</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/proportionterm/present"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/proportionterm/dominant"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/proportionterm/predominant">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm"/>
+      <skos:definition xml:lang="en">Constituent forms more of the described entity than any other constituent. (ie, relative abundance)</skos:definition>
+      <skos:prefLabel xml:lang="en">most abundant</skos:prefLabel>
+      <skos:altLabel xml:lang="en">predominant</skos:altLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/proportionterm/present"/>
+      <dcterms:source xml:lang="en">17-12-2009 Added based on reviews for OneGeology Europe</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/proportionterm/subordinate">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm"/>
+      <skos:definition xml:lang="en">Component constitutes less than 50 percent of the volume of the described entity.</skos:definition>
+      <skos:prefLabel xml:lang="en">less than half</skos:prefLabel>
+      <skos:altLabel xml:lang="en">subordinate</skos:altLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/proportionterm/present"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/proportionterm/minor"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/proportionterm/variable">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm"/>
+      <skos:definition xml:lang="en">Component varies in proportion throughout the described entity.</skos:definition>
+      <skos:prefLabel xml:lang="en">variable</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/proportionterm/present"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/proportionterm/trace">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm"/>
+      <skos:definition xml:lang="en">Component constitutes less than approximately 1 percent of the volume of the described entity. Presence is detectable but too small for accurate determination.</skos:definition>
+      <skos:prefLabel xml:lang="en">trace</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/proportionterm/rare"/>
+      <dcterms:source xml:lang="en">this vocabulary, Neuendorf et al 2005</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/proportionterm/minor">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm"/>
+      <skos:definition xml:lang="en">Component constitutes less than 25 percent of the volume of the described entity.</skos:definition>
+      <skos:prefLabel xml:lang="en">minor</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/proportionterm/subordinate"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/proportionterm/rare"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/proportionterm/present"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/proportionterm/present">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm"/>
+      <skos:definition xml:lang="en">Component is present, but proportion is unknown</skos:definition>
+      <skos:prefLabel xml:lang="en">present</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/proportionterm/major"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/proportionterm/predominant"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/proportionterm/subordinate"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/proportionterm/variable"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Collection rdf:about="http://resource.geosciml.org/classifier/cgi/proportionterm">
+      <dcterms:title xml:lang="en">Proportion Term - All Concepts</dcterms:title>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/proportionterm/all"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/proportionterm/dominant"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/proportionterm/rare"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/proportionterm/major"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/proportionterm/predominant"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/proportionterm/subordinate"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/proportionterm/variable"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/proportionterm/trace"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/proportionterm/minor"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/proportionterm/present"/></skos:member>
+   </skos:Collection>
+</rdf:RDF>

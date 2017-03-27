@@ -1,0 +1,1469 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY cgi "http://resource.geosciml.org/classifierscheme/cgi/201012/" >
+]>
+
+
+<rdf:RDF xmlns="&cgi;geologicunitmorphology#"
+     xml:base="&cgi;geologicunitmorphology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:cgi="http://resource.geosciml.org/classifierscheme/cgi/201012/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="">
+        <dc:publisher
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:publisher>
+        <dc:identifier
+            >http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunitmorphology</dc:identifier>
+        <owl:versionInfo>201012</owl:versionInfo>
+        <dc:format
+            >application/rdf+xml</dc:format>
+        <dc:title xml:lang="en"
+            >CGI Geologic unit morphology vocabulary</dc:title>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:language>en</dc:language>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;source"/>
+    <owl:AnnotationProperty rdf:about="&dc;identifier"/>
+    <owl:AnnotationProperty rdf:about="&dc;publisher"/>
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    <owl:AnnotationProperty rdf:about="&dc;language"/>
+    <owl:AnnotationProperty rdf:about="&dc;format"/>
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:ObjectProperty rdf:about="&skos;broader">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
+
+    <owl:ObjectProperty rdf:about="&skos;changeNote">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+    <owl:ObjectProperty rdf:about="&skos;hasTopConcept">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:ObjectProperty rdf:about="&skos;inScheme">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+    <owl:ObjectProperty rdf:about="&skos;narrower">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <owl:inverseOf rdf:resource="&skos;broader"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#related -->
+
+    <owl:ObjectProperty rdf:about="&skos;related">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+    <owl:ObjectProperty rdf:about="&skos;topConceptOf">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:DatatypeProperty rdf:about="&skos;altLabel">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:DatatypeProperty rdf:about="&skos;definition">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+    <owl:DatatypeProperty rdf:about="&skos;historyNote">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:DatatypeProperty rdf:about="&skos;prefLabel">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="&skos;Concept">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="&skos;ConceptScheme">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0001 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0001">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >a raised elongate body, morphologically equivalent to upside down channel</skos:definition>
+        <skos:prefLabel xml:lang="en">arch morphology</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0044"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0002 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0002">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:definition
+            >sheet in which one of L or W is a curved arc</skos:definition>
+        <skos:prefLabel xml:lang="en">arcuate sheet</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0063"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0003 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0003">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Geometric analog is convex down discoid, term generally connotes a kilometer-scale feature. Map view may be circular, elliptical, or irregular; characteristic feature is thickening from the edges towards the center.  Typically used to describe a body of sedimentary rock deposited in a low area in the Earth&#39;s crust, in which case there is an implication that the top is (or was) a surface of deposition.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">basin shape</skos:prefLabel>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0023"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0038"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0004 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0004">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >a thin, widespread body with width to thickness ratio greater than 1000 to 1 that covers an underlying substrate. A layer of known great lateral extent. Morphology equivalent to bed or layer, but implies that body forms the top of some unit, instead of occurring within a body.</skos:definition>
+        <skos:prefLabel xml:lang="en">blanket shape</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0063"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0005 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0005">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition
+            >Body with smooth surface, broadly equant shape, irregular protuberances, no symmetry axes, and a boundary that can not be separated into sides.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">blob</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0074"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0006 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0006">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition
+            >Equant polygonal cylinder, L=W=H, definable edges separate bounding surfaces. Grades to tabular prism as one horizontal dimension becomes distinctly longer than the other, and tablet or polygonal cylinder as one vertical axis becomes distinctly shorter or longer than the horizontal axes.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">block</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0055"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0007 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0007">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Layer or bed of rock deformed into sausage-shaped segments (boudins), either separated or joined by pinched connections. Morphology generally defined in a profile view, third dimension is not denoted; use of term also implies that the body is not isolated, but is related to an original body elongate on some dimension that has been stretched and separated into separate bodies</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">boudin shape</skos:prefLabel>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0008"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0008 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0008">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition
+            >Ellipsoid with L 10 times W or H</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >bread loaf ellipsoid</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0027"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0009 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0009">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >a strongly elongate lens or ribbon with a convex downward lower surface, near planar upper surface.  Morphology is equivalent to upside down arch.</skos:definition>
+        <skos:prefLabel xml:lang="en">channel shape</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0044"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0058"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0010 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0010">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition
+            >Elliptical cylinder that has circular symmetry about long axis; distinct side surfaces are not defined. Cross section is circular</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >circular cylinder</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0017"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0011 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0011">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en"
+            >circular profile</skos:prefLabel>
+        <skos:definition
+            >equant profile with arcuate boundary</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0032"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0012 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0012">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Cylindrical body, equant cross section, long in direction normal to equant cross section. Morphology equivalent to pipe, without denotation of transport function.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">column shape</skos:prefLabel>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0010"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0055"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0013 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0013">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">cone shape</skos:prefLabel>
+        <skos:definition
+            >discus with one planar side, and circular symmetry on axis; geologic cones typically have height &lt;(&lt;) diameter</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0023"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0014 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0014">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition
+            >Body that is section of a cone formed by splitting the cone along a surface parallel to the cone axis, that interesect approximately along the axis.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">cone segment</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0074"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0015 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0015">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition
+            >sheet that conforms to surface of a cone.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">conical sheet</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0063"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0016 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0016">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >a large upward projection of the roof of an igneous intrusion into the country rock above. A possibly irregular dome like or columnar body rooted in a larger body.</skos:definition>
+        <skos:prefLabel xml:lang="en">cupola</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0038"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0017 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0017">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition
+            >Body defined by translation of a generating plane figure with approximately equant cross section (circle, ellipsoid, polygon) along a straight axial line. H&gt;=W=L. Axis is direction normal to generating plane figure, which forms parallel top and bottom bounding surface.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">cylinder</skos:prefLabel>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0010"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0021"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0028"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0055"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0057"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0062"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0074"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0018 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0018">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition
+            >Ellipsoid with L more than 50 times W or H</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">dart ellipsoid</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0027"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0019 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0019">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Broadly inverted tear drop morphology. Body of magmatic or mobile sedimentary material intruded into overlying rocks</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">diapir</skos:prefLabel>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0010"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0020 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0020">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >A generally sheet-like intrusive rock body that cuts across bedding or foliation in the host rock, or intrudes massive host rock.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">dike</skos:prefLabel>
+        <skos:altLabel xml:lang="en">dyke</skos:altLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0063"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0021 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0021">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition
+            >Cylinder with height less than diameter. L=W&gt;H; edges separates side from top and bottom. Grades to oblate ellipsoid as edges lose definition.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">disc</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0017"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0022 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0022">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition
+            >Cone with central part removed along cylindrical volume approximately along the cone axis</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">discoid anulus</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0074"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0023 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0023">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition
+            >Body with two sides that converge to define an edge that is circular in profile; edge separates definable top and bottom. L=W&gt;H. Grades to oblate ellipsoid as edge separating sides loses definition, cone as one side becomes distinctly planar.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">discus</skos:prefLabel>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0013"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0030"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0074"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0024 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0024">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Steep-sided disk-like body, for example and accumulation of high viscosity lava above and around a volcanic vent. A structure in which the top of the body dips gently away in all directions e.g. salt dome, extrusion dome</skos:definition>
+        <skos:prefLabel xml:lang="en">dome</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0023"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0038"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0025 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0025">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en">dome sheet</skos:prefLabel>
+        <skos:definition
+            >sheet in which L and W are curved arcs.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0063"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0026 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0026">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Concordant intrusion, teardrop-shaped in cross section.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">ductolith</skos:prefLabel>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0019"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0073"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0027 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0027">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition
+            >Body that contains three orthogonal axes defining three surfaces of reflection symmetry, profiles along the surfaces are elliptical. Boundary can not be separated into sides (no edges). Becomes cylinder or disc when bounding surface can be considered parallel to one of the axis. L&gt;=W&gt;=H</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">ellipsoid</skos:prefLabel>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0008"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0018"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0035"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0047"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0049"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0064"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0069"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0074"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0028 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0028">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition
+            >Cylinder that has elliptical cross section; distinct side surfaces are not defined.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >elliptical cylinder</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0017"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0029 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0029">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition
+            >Profile approximates an ellipse; ratio of long axis to short axis is greater than 1.4</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >elliptical profile</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0051"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0030 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0030">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition
+            >discus for which the profile defined by the bounding edge is longer in one direction than other. L&gt;W&gt;&gt;H</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">elongate discus</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0023"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0031 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0031">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition
+            >equant profile with boundary that can be divided into distinct straight sides separated by higher curvature corners.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >equant polygonal profile</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0032"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0032 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0032">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">equant profile</skos:prefLabel>
+        <skos:definition
+            >profile for which the ratio of length of longest chord to shortest chord is less than 1.4.</skos:definition>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0011"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0031"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0051"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0033 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0033">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >discordant, funnel-shaped intrusion, tapers downward</skos:definition>
+        <skos:prefLabel xml:lang="en">ethmolith</skos:prefLabel>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0013"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0034 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0034">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >A cone segment, generally applied to surface morphology of sedimentary deposit with a gentle surface slope, radiating from a localized sediment source.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">fan</skos:prefLabel>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0014"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0035 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0035">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition
+            >Ellipsoid with L 2 to 5 times W or H</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >football ellipsoid</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0027"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >A 3 dimensional body defined based on geometric shape, with some geologic connotation or denotation.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">geologic body</skos:prefLabel>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0001"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0003"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0004"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0007"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0009"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0012"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0016"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0019"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0020"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0024"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0026"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0033"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0034"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0037"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0040"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0041"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0042"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0045"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0046"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0048"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0054"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0059"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0067"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0068"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0074"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0075"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0037 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0037">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >an elongate body bounded on both sides by normal faults that dip toward each other</skos:definition>
+        <skos:prefLabel xml:lang="en">graben shape</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0072"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0038 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0038">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Section of a spheroid formed by removing everything on the smaller volume side of a surface that intersects the spheroid. Grades to cone as suface generator (line rotated about axis to generate volume above lower planar boundary) becomes straight.</skos:definition>
+        <rdfs:comment xml:lang="en">This vocabulary</rdfs:comment>
+        <skos:prefLabel xml:lang="en">hemispheroid</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0074"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0039 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0039">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >irregular profile</skos:prefLabel>
+        <skos:definition
+            >profile does not conform to any of the regular geometries associated with other categories in the vocabulary.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0051"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0040 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0040">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >A tabular or lenticular igneous body whose long dimensions parallel layering in the host rock, and which as a convex-up roof and a known or assumed flat floor</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">laccolith</skos:prefLabel>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0023"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0064"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0041 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0041">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Body geometry characterized by generally thin character relative to the lateral extent of the body (on order of 1:100). Thin bodies of lesser extent are lenses. Connotes a non-intrusive body; equivalent intrusive body would be dike (or sill). Denotes that body is in a sequence of similar sheet-like bodies between other rock bodies</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">layer shape</skos:prefLabel>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0004"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0067"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0042 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0042">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >A body bounded by converging surfaces (at least one of which is curved), thick in the middle and thinning out toward the edges, resembling a convex lens.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">lens</skos:prefLabel>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0023"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0043 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0043">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition
+            >profile with ratio of long axis length to short axis length greater than 5 with sides that taper to a point, shaped like the profile of an optical lense.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >lenticular profile</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0051"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0044 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0044">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition
+            >Body that is section of a circular or elliptical cylinder formed by a splitting the cylinder along a surface approximately parallel to its long axis. L&gt;&gt;W&gt;H.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <rdfs:comment xml:lang="en"
+            >long axis may be curved as in meandering channel</rdfs:comment>
+        <skos:prefLabel xml:lang="en"
+            >longitudinal section of cylinder</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0074"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0045 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0045">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >a large, concordant, typically layered igneous intrusion whose floor is convex-down and whose roof may be convex-down or flat.</skos:definition>
+        <skos:prefLabel xml:lang="en">lopolith</skos:prefLabel>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0023"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0064"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0046 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0046">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Lense like body of rock, lateral extent less than 100m, generally flat at bottom, with stratigraphic pinch out of beds (onlap) along upper sides.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">mound</skos:prefLabel>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0023"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0047 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0047">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition
+            >Ellipsoid with H on order of .01 of L or W</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >pancake ellipsoid</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0027"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0048 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0048">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >concordant, lenticular intrusion, emplaced along a fold axis</skos:definition>
+        <skos:prefLabel xml:lang="en">phacolith</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0044"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0049 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0049">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition
+            >Ellipsoid with H on order of 0.1 of L or W</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >pillow ellipsoid</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0027"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0050 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0050">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel>pipe</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0050"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0050"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0051 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0051">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">planar profile</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >shape is defined by intersection of body with some surface, generally either a cross section or map view</skos:definition>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0029"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0032"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0039"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0043"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0056"/>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0052 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0052">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">planar sheet</skos:prefLabel>
+        <skos:definition
+            >sheet in which L and W axes are straight lines</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0063"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0053 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0053">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">planar vein</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >vein with length and width significantly greater than its thickness, giving the vein a tabular form</skos:definition>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0020"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0041"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0076"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0054 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0054">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >a small intrusion of elongate or lenticular form</skos:definition>
+        <skos:prefLabel xml:lang="en">pod</skos:prefLabel>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0005"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0055 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0055">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition
+            >Cylinder in which the edges bounding side surfaces are parallel or subparallel to cylinder axis. Cross section is polygon. Length of axis may be called height or thickness, and is typically in the vertical direction (distinguishing polygonal cylinder from tabular prism and wedge).</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >polygonal cylinder</skos:prefLabel>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0006"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0017"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0071"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0077"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0056 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0056">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition
+            >Profile for which the ratio of length of longest chord to shortest chord is greater than 1.4.profile and a boundary that can be divided into distinct straight sides separated by higher curvature corners.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >polygonal profile</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0051"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0070"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0057 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0057">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Body of material that is long in one dimension, and thins rapidly in a perpendicular direction. A long narrow wedge-shaped body that has a width to thickness ratio  greater than 5 to 1 but less than 50 to 1 (Krynine, 1948). Similar to wedge, but profile may be variable</skos:definition>
+        <dc:source xml:lang="en"
+            >This vocabulary; Krynine 1948</dc:source>
+        <skos:prefLabel xml:lang="en">prism</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0017"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0077"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0058 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0058">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition
+            >Body that is very thin relative to width and and length. Long axis may be curved. L&gt;(&gt;&gt;)W&gt;&gt;&gt;H. H is typically in vertical direction.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">ribbon</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0074"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0059 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0059">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >an arcuate or subcircular dyke, generally associated with a volcanic centre.</skos:definition>
+        <skos:prefLabel xml:lang="en">ring dike</skos:prefLabel>
+        <skos:altLabel xml:lang="en">ring dyke</skos:altLabel>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0002"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0060 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0060">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition
+            >Rock body geometry is irregular and can not be characterized using terminology.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >rock body geometry irregular</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0074"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0061 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0061">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition
+            >Rock body geometry is not specified. Use in normative descriptions where any morphology is allowed.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >rock body geometry not specified</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0074"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0062 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0062">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition
+            >Cylinder with very long axis, generally circular or elliptical cross section (generating figure). H&gt;&gt;&gt;W=L. Long axis may be in any orientation, and may be curved.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">rod</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0017"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0063 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0063">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Body that is very thin relative to lateral extent, so thin that is considered to consist of two bounding surfaces joined at an edge. Aspect ratio is L=W&gt;&gt;&gt;H. The geometry of the edge joining the surfaces is not specified in the definition. If the geometry of the edge comes into play in the definition, becomes ribbon, disc or tablet(?). Includes dike, vein, sill and bed-shaped geologic units.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">sheet</skos:prefLabel>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0002"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0015"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0020"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0025"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0041"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0052"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0065"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0067"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0074"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0076"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0064 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0064">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition
+            >Ellipsoid with one axis much smaller than others H on order of .001 of L or W</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">sheet ellipsoid</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0027"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0065 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0065">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:definition
+            >sheet with &#39;s&#39; curvature of L or W direction</skos:definition>
+        <skos:prefLabel xml:lang="en">sigmoid sheet</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0063"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0066 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0066">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">sigmoidal vein</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >vein curved so as to resemble the letter S in section</skos:definition>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0065"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0076"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0076"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0067 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0067">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >a tabular intrusive igneous body with long dimensions parallel to bedding or foliation of  sedimentary or metamorphic host rock.</skos:definition>
+        <skos:prefLabel xml:lang="en">sill form</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0041"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0063"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0064"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0068 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0068">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">sphenolith</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >wedge-like intrusion, partly concordant, partly discordant.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0057"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0077"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0069 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0069">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition
+            >Ellipsoid with L, W, H all approximately equal</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">spheroid</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0027"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0070 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0070">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:definition
+            >polygonal profile that approximates a square</skos:definition>
+        <skos:prefLabel xml:lang="en">square profile</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0056"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0071 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0071">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition
+            >Polygonal cylinder with height less than length or width, disc with edges separating side into multiple segments.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">tablet</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0055"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0072 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0072">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition
+            >Body defined by pairs of parallel, approximately planar surfaces separated by definable edges. Grades to ellipsoid as edges lose definition, to block as axial ratios approach 1, to polygonal cylinder as L approaches W. L&gt;&gt;W&gt;H. H is in vertical direction, L is horizontal.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">tabular prism</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0074"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0073 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0073">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition
+            >Body bounded by hemispheroid on one side, cone on other, with circular symmetry around cone axis</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">tear drop</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0074"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0074 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0074">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <rdfs:comment xml:lang="en"
+            >This vocabulary is constructed as a collection of purely geometric concepts to specify the geometry of bodies. These geometric forms are abstracted in terms of edges that separate boundary surfaces. Smooth forms have no edges.</rdfs:comment>
+        <skos:definition
+            >any three dimensional body</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >three dimensional body</skos:prefLabel>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0005"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0014"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0017"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0022"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0023"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0027"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0038"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0044"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0058"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0060"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0061"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0063"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0072"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0073"/>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0075 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0075">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >shape of a body of sedimentary rock deposited in an elongate depression filled with sediment. large size distinguishes from channel</skos:definition>
+        <skos:prefLabel xml:lang="en">trough shape</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0036"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0044"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0076 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0076">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >a tabular or sheetlike epigenetic mineral filling of a fault or fracture</skos:definition>
+        <skos:prefLabel xml:lang="en">vein-shape</skos:prefLabel>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0053"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0063"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0066"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0066"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0077 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0077">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition
+            >Body defined by translation of trangle with W &gt;&gt; H along a horizontal axis. A polygonal cylinder with wedge-like triangular generating surface and horizontal axis. Body changes thickness (H) in W direction, approaching 0 thickness on one side. L&gt;&gt;W&gt;H.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">wedge</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0055"/>
+        <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0057"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunitmorphology -->
+
+    <skos:ConceptScheme rdf:about="">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:historyNote xml:lang="en"
+            >2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using &#39;file/Export inferred axioms as ontology&#39; in Protege.</skos:historyNote>
+        <skos:historyNote xml:lang="en"
+            >2010-11-28 SMR replace URN with http URI according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices) to make versionn 201012</skos:historyNote>
+        <skos:prefLabel xml:lang="en"
+            >CGI Geologic Unit Morphology terms</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >This file contains the CGI Geologic Unit Morphology vocabulary. Use to specify the geometry or form of a GeologicUnit. Examples include: dike, cone, fan, sheet, etc. Morphology is independent of the substance (EarthMaterial) that composes the GeologicUnit.</skos:definition>
+        <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0051"/>
+        <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/0074"/>
+    </skos:ConceptScheme>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,257 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY xlink "http://www.w3.org/1999/xlink" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY cgi "http://resource.geosciml.org/classifierscheme/cgi/201012/" >
+    <!ENTITY DescriptionPurpose "http://resource.geosciml.org/classifier/cgi/descriptionpurpose/" >
+]>
+
+
+<rdf:RDF xmlns="&cgi;descriptionpurpose"
+     xml:base="&cgi;descriptionpurpose"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:cgi="http://resource.geosciml.org/classifierscheme/cgi/201012/"
+     xmlns:DescriptionPurpose="http://resource.geosciml.org/classifier/cgi/descriptionpurpose/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="">
+        <owl:versionInfo>201012</owl:versionInfo>
+        <dc:language>en</dc:language>
+        <dc:identifier
+            >http://resource.geosciml.org/classifierscheme/cgi/201012/descriptionpurpose</dc:identifier>
+        <dc:title xml:lang="en"
+            >CGI Description purpose vocabulary</dc:title>
+        <dc:creator
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:publisher
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:publisher>
+        <dc:format
+            >application/rdf+xml</dc:format>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;date"/>
+    <owl:AnnotationProperty rdf:about="&dc;source"/>
+    <owl:AnnotationProperty rdf:about="&dc;publisher"/>
+    <owl:AnnotationProperty rdf:about="&dc;identifier"/>
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    <owl:AnnotationProperty rdf:about="&dc;description"/>
+    <owl:AnnotationProperty rdf:about="&dc;language"/>
+    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    <owl:AnnotationProperty rdf:about="&dc;format"/>
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:ObjectProperty rdf:about="&skos;broader">
+        <owl:inverseOf rdf:resource="&skos;narrower"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
+
+    <owl:ObjectProperty rdf:about="&skos;changeNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:ObjectProperty rdf:about="&skos;inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+    <owl:ObjectProperty rdf:about="&skos;narrower"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+    <owl:DatatypeProperty rdf:about="&rdf;value"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
+
+    <owl:DatatypeProperty rdf:about="&skos;changeNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:DatatypeProperty rdf:about="&skos;definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+    <owl:DatatypeProperty rdf:about="&skos;historyNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:DatatypeProperty rdf:about="&skos;notation"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:DatatypeProperty rdf:about="&skos;prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="&skos;Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="&skos;ConceptScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/descriptionpurpose/0001 -->
+
+    <owl:Thing rdf:about="&DescriptionPurpose;0001">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition
+            >A description that specifies properties sufficient to identify a new occurrence as belonging to the class represented by the description. Basically these are the &#39;sufficient conditions&#39; for class membership. Used when presented with a query &#39;I have an outcrop with these properties; which geologic unit should I assign to the outcrop?&#39; DefiningNorm has to do with the intension of a ControlledConcept.</skos:definition>
+        <dc:source
+            >GeoSciML UML model scope notes</dc:source>
+        <skos:prefLabel xml:lang="en">definingNorm</skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/descriptionpurpose/0002 -->
+
+    <owl:Thing rdf:about="&DescriptionPurpose;0002">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition
+            >A description that is specific to a particular observed occurrence. This is &#39;raw data&#39;, and its classification may start out as very general. There are kinds of narrowly defined ControlledConcepts that might not allow &#39;instances&#39; that are different from the DefiningNorm. It might be worth considering a different relationship between MappedFeature and an Instance GeologicEntity, with the GeologicEntity role being &#39;description&#39;.</skos:definition>
+        <dc:source
+            >GeoSciML UML model scope notes</dc:source>
+        <skos:prefLabel xml:lang="en">instance</skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/descriptionpurpose/0003 -->
+
+    <owl:Thing rdf:about="&DescriptionPurpose;0003">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition
+            >A description that specifies properties to be expected of some occurrence associated with the GeologicEntity. This description may include many properties that are not part of the DefiningNorm. For example, the fact that granite is typically light-colored is not a defining property, but is certainly a useful typical property. These kinds of descriptions would be used to address queries like &#39;This area is within a polygon classified as Podunk Formation; what sort of lithology am I most likely to encounter when I start digging?&#39; The Podunk Formation may be defined by the presence of a certain ammonite... TypicalNorm description would be constructed as a summary over many Instance descriptions.</skos:definition>
+        <dc:source
+            >GeoSciML UML model scope notes</dc:source>
+        <skos:prefLabel xml:lang="en">typicalNorm</skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifierscheme/cgi/201012/descriptionpurpose -->
+
+    <skos:ConceptScheme rdf:about="">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:historyNote xml:lang="en"
+            >2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet.</skos:historyNote>
+        <skos:changeNote xml:lang="en"
+            >2009-12-07 SMR Update metadata properties for version, creator, title, and format.  Change skos:HistoryNote to dc:source for information on origin of terms and definitions.</skos:changeNote>
+        <skos:historyNote xml:lang="en"
+            >2010-02-08. SMR Clean up namespace declarations so concept URI&#39;s follow CGI URN scheme; concepts have URN, are not document fragments.</skos:historyNote>
+        <skos:historyNote xml:lang="en"
+            >2010-11-27 SMR update URN to http URI, create version 201012</skos:historyNote>
+        <skos:prefLabel xml:lang="en"
+            >CGI Description Purpose vocabulary</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >This file contains the 201012 version of CGI Description Purpose codelist. Codes used for the specification of the intended purpose/level of abstraction for a given feature or object instance, ie the reason for the existence of the GeologicFeature. Values: Instance, TypicalNorm, IdentifyingNorm.</skos:definition>
+    </skos:ConceptScheme>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

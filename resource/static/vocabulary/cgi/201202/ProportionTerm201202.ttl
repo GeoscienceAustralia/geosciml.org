@@ -1,0 +1,1369 @@
+@prefix cgi: <http://resource.geosciml.org/classifierscheme/cgi/201202/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix : <http://resource.geosciml.org/classifierscheme/cgi/201202/proportionterm#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix p1: <#> .
+@base <http://resource.geosciml.org/classifierscheme/cgi/201202/proportionterm> .
+
+<http://resource.geosciml.org/classifierscheme/cgi/201202/proportionterm> rdf:type owl:Ontology ;
+                                                                          
+                                                                          owl:versionInfo "201202" ;
+                                                                          
+                                                                          dc:format "text/turtle" ;
+                                                                          
+                                                                          dc:publisher "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)" ;
+                                                                          
+                                                                          dc:identifier "http://resource.geosciml.org/classifierscheme/cgi/201202/proportionterm" ;
+                                                                          
+                                                                          skos:historyNote "2010-09-26 SMR work on rearranging hierarchy to recognize that the top concept is 'present', all others are entailed by this property. Also recognize inconsistent labeling of major-minor and dominant-subordinate. Proposal in this is 'more than half', 'less than half', and change 'dominant' label to 'major' to parallel usage of 'minor'. Awaiting comment..."@en ,
+                                                                                           "2010-11-28 SMR replace URN with http URI according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)"@en ,
+                                                                                           "2011-07-07. GD Clean up remaining namespace declarations so no URN is present in the ontology. Removed empty concepts with genid."@en ,
+                                                                                           "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en ;
+                                                                          
+                                                                          dc:title "CGI Proportion Term Vocabulary"@en ;
+                                                                          
+                                                                          dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                          
+                                                                          dc:language "en" ;
+                                                                          
+                                                                          skos:historyNote "2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+
+dc:publisher rdf:type owl:AnnotationProperty .
+
+
+
+skos:historyNote rdf:type owl:AnnotationProperty .
+
+
+
+dc:language rdf:type owl:AnnotationProperty .
+
+
+
+dc:identifier rdf:type owl:AnnotationProperty .
+
+
+
+dc:source rdf:type owl:AnnotationProperty .
+
+
+
+dc:format rdf:type owl:AnnotationProperty .
+
+
+
+dc:title rdf:type owl:AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+
+owl:topObjectProperty rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#broadMatch
+
+skos:broadMatch rdf:type owl:ObjectProperty ;
+                
+                rdfs:label "broader match"@en ;
+                
+                rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                
+                rdfs:subPropertyOf skos:broader ,
+                                   skos:mappingRelation .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+
+skos:broader rdf:type owl:ObjectProperty ;
+             
+             rdfs:label "has broader"@en ;
+             
+             rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+             
+             rdfs:comment """Broader concepts are typically rendered as parents in a concept
+      hierarchy (tree)."""@en ,
+                          """By convention, skos:broader is only used to assert an immediate
+      (i.e. direct) hierarchical link between two conceptual resources."""@en ;
+             
+             rdfs:subPropertyOf skos:broaderTransitive ;
+             
+             owl:inverseOf skos:narrower .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#broaderTransitive
+
+skos:broaderTransitive rdf:type owl:ObjectProperty ,
+                                owl:TransitiveProperty ;
+                       
+                       rdfs:label "broader transitive"@en ;
+                       
+                       rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                       
+                       rdfs:comment """By convention, skos:broaderTransitive is not used to make
+      assertions. Rather, the properties can be used to draw inferences about the transitive closure
+      of the hierarchical relation, which is useful e.g. when implementing a simple query expansion
+      algorithm in a search application."""@en ;
+                       
+                       owl:inverseOf skos:narrowerTransitive ;
+                       
+                       rdfs:subPropertyOf skos:semanticRelation .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#changeNote
+
+skos:changeNote rdf:type owl:ObjectProperty ;
+                
+                rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#closeMatch
+
+skos:closeMatch rdf:type owl:ObjectProperty ,
+                         owl:SymmetricProperty ;
+                
+                rdfs:label "close match"@en ;
+                
+                rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                
+                owl:inverseOf skos:closeMatch ;
+                
+                rdfs:subPropertyOf skos:mappingRelation .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#exactMatch
+
+skos:exactMatch rdf:type owl:ObjectProperty ,
+                         owl:SymmetricProperty ,
+                         owl:TransitiveProperty ;
+                
+                rdfs:label "exact match"@en ;
+                
+                rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                
+                rdfs:comment """skos:exactMatch is disjoint with each of the properties
+      skos:broadMatch and skos:relatedMatch."""@en ;
+                
+                rdfs:subPropertyOf skos:closeMatch ;
+                
+                owl:inverseOf skos:exactMatch .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#hasTopConcept
+
+skos:hasTopConcept rdf:type owl:AsymmetricProperty ,
+                            owl:IrreflexiveProperty ,
+                            owl:ObjectProperty ,
+                            owl:TransitiveProperty ;
+                   
+                   rdfs:label "has top concept"@en ;
+                   
+                   rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                   
+                   rdfs:range skos:Concept ;
+                   
+                   rdfs:domain skos:ConceptScheme .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+
+skos:inScheme rdf:type owl:ObjectProperty ;
+              
+              rdfs:label "in scheme"@en ;
+              
+              rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+              
+              rdfs:comment "A concept may be a member of more than one concept scheme."@en ;
+              
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              
+              rdfs:range skos:ConceptScheme .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#mappingRelation
+
+skos:mappingRelation rdf:type owl:ObjectProperty ;
+                     
+                     rdfs:label "mapping relation"@en ;
+                     
+                     rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                     
+                     rdfs:comment """These concept mapping relations mirror semantic relations, and the
+      data model defined below is similar (with the exception of skos:exactMatch) to the data model
+      defined for semantic relations. A distinct vocabulary is provided for concept mapping
+      relations, to provide a convenient way to differentiate links within a concept scheme from
+      links between concept schemes. However, this pattern of usage is not a formal requirement of
+      the SKOS data model, and relies on informal definitions of best practice."""@en ;
+                     
+                     rdfs:subPropertyOf skos:semanticRelation .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#member
+
+skos:member rdf:type owl:ObjectProperty ;
+            
+            rdfs:label "member"@en ;
+            
+            rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+            
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            
+            rdfs:domain skos:Collection ;
+            
+            rdfs:range [ rdf:type owl:Class ;
+                         owl:unionOf ( skos:Collection
+                                       skos:Concept
+                                     )
+                       ] .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#memberList
+
+skos:memberList rdf:type owl:FunctionalProperty ,
+                         owl:ObjectProperty ;
+                
+                rdfs:label "member list"@en ;
+                
+                rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                
+                rdfs:comment """For any resource, every item in the list given as the value of the
+      skos:memberList property is also a value of the skos:member property."""@en ;
+                
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                
+                rdfs:domain skos:OrderedCollection .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#narrowMatch
+
+skos:narrowMatch rdf:type owl:ObjectProperty ;
+                 
+                 rdfs:label "narrower match"@en ;
+                 
+                 rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                 
+                 owl:inverseOf skos:broadMatch ;
+                 
+                 rdfs:subPropertyOf skos:mappingRelation ,
+                                    skos:narrower .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#narrower
+
+skos:narrower rdf:type owl:ObjectProperty ;
+              
+              rdfs:label "has narrower"@en ;
+              
+              rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+              
+              rdfs:comment """By convention, skos:broader is only used to assert an immediate
+      (i.e. direct) hierarchical link between two conceptual resources."""@en ,
+                           """Narrower concepts are typically rendered as children in a concept
+      hierarchy (tree)."""@en ;
+              
+              rdfs:subPropertyOf skos:narrowerTransitive .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#narrowerTransitive
+
+skos:narrowerTransitive rdf:type owl:ObjectProperty ,
+                                 owl:TransitiveProperty ;
+                        
+                        rdfs:label "narrower transitive"@en ;
+                        
+                        rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                        
+                        rdfs:comment """By convention, skos:narrowerTransitive is not used to make
+      assertions. Rather, the properties can be used to draw inferences about the transitive closure
+      of the hierarchical relation, which is useful e.g. when implementing a simple query expansion
+      algorithm in a search application."""@en ;
+                        
+                        rdfs:subPropertyOf skos:semanticRelation .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#related
+
+skos:related rdf:type owl:ObjectProperty ,
+                      owl:SymmetricProperty ;
+             
+             rdfs:label "related to"@en ;
+             
+             rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+             
+             rdfs:comment "skos:related is disjoint with skos:broaderTransitive"@en ;
+             
+             owl:inverseOf skos:related ;
+             
+             rdfs:subPropertyOf skos:semanticRelation .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#relatedMatch
+
+skos:relatedMatch rdf:type owl:ObjectProperty ,
+                           owl:SymmetricProperty ;
+                  
+                  rdfs:label "related match"@en ;
+                  
+                  rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                  
+                  rdfs:subPropertyOf skos:mappingRelation ,
+                                     skos:related ;
+                  
+                  owl:inverseOf skos:relatedMatch .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#semanticRelation
+
+skos:semanticRelation rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:label "semantic relation"@en ;
+                      
+                      rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                      
+                      rdfs:comment """This property should not be used directly, but as a super-property
+      for all properties denoting a relationship of meaning between concepts."""@en ;
+                      
+                      rdfs:subPropertyOf owl:topObjectProperty ;
+                      
+                      rdfs:domain skos:Concept ;
+                      
+                      rdfs:range skos:Concept .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#topConceptOf
+
+skos:topConceptOf rdf:type owl:ObjectProperty ;
+                  
+                  rdfs:label "top concept in scheme"@en ;
+                  
+                  rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                  
+                  owl:inverseOf skos:hasTopConcept ;
+                  
+                  rdfs:subPropertyOf skos:inScheme .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+
+rdf:value rdf:type owl:DatatypeProperty ;
+          
+          rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.w3.org/2002/07/owl#topDataProperty
+
+owl:topDataProperty rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#changeNote
+
+skos:changeNote rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+
+skos:definition rdf:type owl:DatatypeProperty ;
+                
+                rdfs:label "definition"@en ;
+                
+                rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                
+                rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#historyNote
+
+skos:historyNote rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+
+skos:notation rdf:type owl:DatatypeProperty ;
+              
+              rdfs:label "notation"@en ;
+              
+              rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+              
+              rdfs:comment """By convention, skos:notation is used with a typed literal in the
+      object position of the triple."""@en ;
+              
+              rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+
+skos:prefLabel rdf:type owl:DatatypeProperty ;
+               
+               rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+
+owl:Thing rdf:type owl:Class .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#Collection
+
+skos:Collection rdf:type owl:Class ;
+                
+                rdfs:label "Collection"@en ;
+                
+                rdfs:subClassOf owl:Thing ;
+                
+                owl:disjointWith skos:Concept ,
+                                 skos:ConceptScheme ;
+                
+                rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                
+                rdfs:comment """Labelled collections can be used with collectable semantic relation
+      properties e.g. skos:narrower, where you would like a set of concepts to be displayed under a
+      'node label' in the hierarchy."""@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+
+skos:Concept rdf:type owl:Class ;
+             
+             rdfs:label "Concept"@en ;
+             
+             rdfs:subClassOf owl:Thing ;
+             
+             owl:disjointWith skos:ConceptScheme ,
+                              skos:OrderedCollection ;
+             
+             rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+
+skos:ConceptScheme rdf:type owl:Class ;
+                   
+                   rdfs:label "Concept Scheme"@en ;
+                   
+                   rdfs:subClassOf owl:Thing ;
+                   
+                   owl:disjointWith skos:OrderedCollection ;
+                   
+                   rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                   
+                   rdfs:comment """A concept scheme may be defined to include concepts from different
+      sources."""@en ,
+                                """Thesauri, classification schemes, subject heading lists, taxonomies,
+      'folksonomies', and other types of controlled vocabulary are all examples of concept schemes.
+      Concept schemes are also embedded in glossaries and terminologies."""@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#OrderedCollection
+
+skos:OrderedCollection rdf:type owl:Class ;
+                       
+                       rdfs:label "Ordered Collection"@en ;
+                       
+                       rdfs:subClassOf skos:Collection ;
+                       
+                       rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                       
+                       rdfs:comment "Ordered collections can be used where you would like a set of concepts to be displayed in a specific order, and optionally under a 'node label'."@en .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://resource.geosciml.org/classifier/cgi/proportionterm/0001
+
+<http://resource.geosciml.org/classifier/cgi/proportionterm/0001> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/proportionterm/0002
+
+<http://resource.geosciml.org/classifier/cgi/proportionterm/0002> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/proportionterm/0003
+
+<http://resource.geosciml.org/classifier/cgi/proportionterm/0003> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/proportionterm/0004
+
+<http://resource.geosciml.org/classifier/cgi/proportionterm/0004> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/proportionterm/0005
+
+<http://resource.geosciml.org/classifier/cgi/proportionterm/0005> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/proportionterm/0006
+
+<http://resource.geosciml.org/classifier/cgi/proportionterm/0006> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/proportionterm/0007
+
+<http://resource.geosciml.org/classifier/cgi/proportionterm/0007> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/proportionterm/0008
+
+<http://resource.geosciml.org/classifier/cgi/proportionterm/0008> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/proportionterm/0009
+
+<http://resource.geosciml.org/classifier/cgi/proportionterm/0009> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/proportionterm/0010
+
+<http://resource.geosciml.org/classifier/cgi/proportionterm/0010> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/proportionterm/all
+
+<http://resource.geosciml.org/classifier/cgi/proportionterm/all> rdf:type owl:NamedIndividual ,
+                                                                          owl:Thing ,
+                                                                          skos:Concept ;
+                                                                 
+                                                                 skos:definition "Component constitutes effectively 100 percent of the volume of the described entity."@en ;
+                                                                 
+                                                                 skos:prefLabel "all"@en ;
+                                                                 
+                                                                 dc:source "this vocabulary"@en ;
+                                                                 
+                                                                 skos:exactMatch <http://resource.geosciml.org/classifier/cgi/proportionterm/0001> ;
+                                                                 
+                                                                 skos:broader <http://resource.geosciml.org/classifier/cgi/proportionterm/dominant> ;
+                                                                 
+                                                                 skos:broaderTransitive <http://resource.geosciml.org/classifier/cgi/proportionterm/major> ,
+                                                                                        <http://resource.geosciml.org/classifier/cgi/proportionterm/present> ;
+                                                                 
+                                                                 skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/proportionterm> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/proportionterm/dominant
+
+<http://resource.geosciml.org/classifier/cgi/proportionterm/dominant> rdf:type owl:NamedIndividual ,
+                                                                               owl:Thing ,
+                                                                               skos:Concept ;
+                                                                      
+                                                                      skos:definition "Component constitutes greater than 75 percent of the volume of the described entity."@en ;
+                                                                      
+                                                                      skos:prefLabel "major"@en ;
+                                                                      
+                                                                      dc:source "this vocabulary"@en ;
+                                                                      
+                                                                      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/proportionterm/0002> ;
+                                                                      
+                                                                      skos:narrower <http://resource.geosciml.org/classifier/cgi/proportionterm/all> ;
+                                                                      
+                                                                      skos:broader <http://resource.geosciml.org/classifier/cgi/proportionterm/major> ;
+                                                                      
+                                                                      skos:broaderTransitive <http://resource.geosciml.org/classifier/cgi/proportionterm/present> ;
+                                                                      
+                                                                      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/proportionterm> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/proportionterm/major
+
+<http://resource.geosciml.org/classifier/cgi/proportionterm/major> rdf:type owl:NamedIndividual ,
+                                                                            owl:Thing ,
+                                                                            skos:Concept ;
+                                                                   
+                                                                   skos:definition "Component constitutes greater than 50 percent of the volume of the described entity."@en ;
+                                                                   
+                                                                   skos:prefLabel "more than half"@en ;
+                                                                   
+                                                                   dc:source "this vocabulary"@en ;
+                                                                   
+                                                                   skos:exactMatch <http://resource.geosciml.org/classifier/cgi/proportionterm/0003> ;
+                                                                   
+                                                                   skos:narrowerTransitive <http://resource.geosciml.org/classifier/cgi/proportionterm/all> ;
+                                                                   
+                                                                   skos:narrower <http://resource.geosciml.org/classifier/cgi/proportionterm/dominant> ;
+                                                                   
+                                                                   skos:broader <http://resource.geosciml.org/classifier/cgi/proportionterm/present> ;
+                                                                   
+                                                                   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/proportionterm> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/proportionterm/minor
+
+<http://resource.geosciml.org/classifier/cgi/proportionterm/minor> rdf:type owl:NamedIndividual ,
+                                                                            owl:Thing ,
+                                                                            skos:Concept ;
+                                                                   
+                                                                   skos:definition "component constitutes less than 25 percent of the volume of the described entity."@en ;
+                                                                   
+                                                                   skos:prefLabel "minor"@en ;
+                                                                   
+                                                                   dc:source "this vocabulary"@en ;
+                                                                   
+                                                                   skos:exactMatch <http://resource.geosciml.org/classifier/cgi/proportionterm/0004> ;
+                                                                   
+                                                                   skos:broaderTransitive <http://resource.geosciml.org/classifier/cgi/proportionterm/present> ;
+                                                                   
+                                                                   skos:narrower <http://resource.geosciml.org/classifier/cgi/proportionterm/rare> ;
+                                                                   
+                                                                   skos:broader <http://resource.geosciml.org/classifier/cgi/proportionterm/subordinate> ;
+                                                                   
+                                                                   skos:narrowerTransitive <http://resource.geosciml.org/classifier/cgi/proportionterm/trace> ;
+                                                                   
+                                                                   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/proportionterm> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/proportionterm/predominant
+
+<http://resource.geosciml.org/classifier/cgi/proportionterm/predominant> rdf:type owl:NamedIndividual ,
+                                                                                  owl:Thing ,
+                                                                                  skos:Concept ;
+                                                                         
+                                                                         dc:source "17-12-2009 Added based on reviews for OneGeology Europe"@en ;
+                                                                         
+                                                                         skos:definition "Constituent forms more of the described entity than any other constituent."@en ;
+                                                                         
+                                                                         skos:prefLabel "most abundant"@en ;
+                                                                         
+                                                                         skos:exactMatch <http://resource.geosciml.org/classifier/cgi/proportionterm/0005> ;
+                                                                         
+                                                                         skos:broader <http://resource.geosciml.org/classifier/cgi/proportionterm/present> ;
+                                                                         
+                                                                         skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/proportionterm> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/proportionterm/present
+
+<http://resource.geosciml.org/classifier/cgi/proportionterm/present> rdf:type owl:NamedIndividual ,
+                                                                              owl:Thing ,
+                                                                              skos:Concept ;
+                                                                     
+                                                                     skos:definition "Component is present, but proportion is unknown"@en ;
+                                                                     
+                                                                     skos:prefLabel "present"@en ;
+                                                                     
+                                                                     dc:source "this vocabulary"@en ;
+                                                                     
+                                                                     skos:exactMatch <http://resource.geosciml.org/classifier/cgi/proportionterm/0006> ;
+                                                                     
+                                                                     skos:narrowerTransitive <http://resource.geosciml.org/classifier/cgi/proportionterm/all> ,
+                                                                                             <http://resource.geosciml.org/classifier/cgi/proportionterm/dominant> ;
+                                                                     
+                                                                     skos:narrower <http://resource.geosciml.org/classifier/cgi/proportionterm/major> ;
+                                                                     
+                                                                     skos:narrowerTransitive <http://resource.geosciml.org/classifier/cgi/proportionterm/major> ,
+                                                                                             <http://resource.geosciml.org/classifier/cgi/proportionterm/minor> ;
+                                                                     
+                                                                     skos:narrower <http://resource.geosciml.org/classifier/cgi/proportionterm/predominant> ;
+                                                                     
+                                                                     skos:narrowerTransitive <http://resource.geosciml.org/classifier/cgi/proportionterm/rare> ;
+                                                                     
+                                                                     skos:narrower <http://resource.geosciml.org/classifier/cgi/proportionterm/subordinate> ;
+                                                                     
+                                                                     skos:narrowerTransitive <http://resource.geosciml.org/classifier/cgi/proportionterm/trace> ;
+                                                                     
+                                                                     skos:narrower <http://resource.geosciml.org/classifier/cgi/proportionterm/variable> ;
+                                                                     
+                                                                     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/proportionterm> ;
+                                                                     
+                                                                     skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/201202/proportionterm> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/proportionterm/rare
+
+<http://resource.geosciml.org/classifier/cgi/proportionterm/rare> rdf:type owl:NamedIndividual ,
+                                                                           owl:Thing ,
+                                                                           skos:Concept ;
+                                                                  
+                                                                  skos:definition "Component constitutes less than 5 percent of the volume of the described entity."@en ;
+                                                                  
+                                                                  skos:prefLabel "rare"@en ;
+                                                                  
+                                                                  dc:source "this vocabulary; follows Neuendorf et al 2005 usage scoped to coal description"@en ;
+                                                                  
+                                                                  skos:exactMatch <http://resource.geosciml.org/classifier/cgi/proportionterm/0007> ;
+                                                                  
+                                                                  skos:semanticRelation <http://resource.geosciml.org/classifier/cgi/proportionterm/minor> ;
+                                                                  
+                                                                  skos:broaderTransitive <http://resource.geosciml.org/classifier/cgi/proportionterm/minor> ;
+                                                                  
+                                                                  skos:broader <http://resource.geosciml.org/classifier/cgi/proportionterm/minor> ;
+                                                                  
+                                                                  skos:semanticRelation <http://resource.geosciml.org/classifier/cgi/proportionterm/present> ;
+                                                                  
+                                                                  skos:broaderTransitive <http://resource.geosciml.org/classifier/cgi/proportionterm/present> ,
+                                                                                         <http://resource.geosciml.org/classifier/cgi/proportionterm/subordinate> ;
+                                                                  
+                                                                  skos:semanticRelation <http://resource.geosciml.org/classifier/cgi/proportionterm/subordinate> ,
+                                                                                        <http://resource.geosciml.org/classifier/cgi/proportionterm/trace> ;
+                                                                  
+                                                                  skos:narrowerTransitive <http://resource.geosciml.org/classifier/cgi/proportionterm/trace> ;
+                                                                  
+                                                                  skos:narrower <http://resource.geosciml.org/classifier/cgi/proportionterm/trace> ;
+                                                                  
+                                                                  skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/proportionterm> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/proportionterm/subordinate
+
+<http://resource.geosciml.org/classifier/cgi/proportionterm/subordinate> rdf:type owl:NamedIndividual ,
+                                                                                  owl:Thing ,
+                                                                                  skos:Concept ;
+                                                                         
+                                                                         skos:definition "Component constitutes less than 50 percent of the volume of the described entity."@en ;
+                                                                         
+                                                                         skos:prefLabel "less than half"@en ;
+                                                                         
+                                                                         dc:source "this vocabulary"@en ;
+                                                                         
+                                                                         skos:exactMatch <http://resource.geosciml.org/classifier/cgi/proportionterm/0008> ;
+                                                                         
+                                                                         skos:narrower <http://resource.geosciml.org/classifier/cgi/proportionterm/minor> ;
+                                                                         
+                                                                         skos:broader <http://resource.geosciml.org/classifier/cgi/proportionterm/present> ;
+                                                                         
+                                                                         skos:narrowerTransitive <http://resource.geosciml.org/classifier/cgi/proportionterm/rare> ,
+                                                                                                 <http://resource.geosciml.org/classifier/cgi/proportionterm/trace> ;
+                                                                         
+                                                                         skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/proportionterm> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/proportionterm/trace
+
+<http://resource.geosciml.org/classifier/cgi/proportionterm/trace> rdf:type owl:NamedIndividual ,
+                                                                            owl:Thing ,
+                                                                            skos:Concept ;
+                                                                   
+                                                                   skos:definition "Component constitutes less than approximately 1 percent of the volume of the described entity. Presence is detectable but too small for accurate determination."@en ;
+                                                                   
+                                                                   dc:source "this vocabulary; Neuendorf et al 2005"@en ;
+                                                                   
+                                                                   skos:prefLabel "trace"@en ;
+                                                                   
+                                                                   skos:exactMatch <http://resource.geosciml.org/classifier/cgi/proportionterm/0009> ;
+                                                                   
+                                                                   skos:broaderTransitive <http://resource.geosciml.org/classifier/cgi/proportionterm/minor> ,
+                                                                                          <http://resource.geosciml.org/classifier/cgi/proportionterm/present> ;
+                                                                   
+                                                                   skos:broader <http://resource.geosciml.org/classifier/cgi/proportionterm/rare> ;
+                                                                   
+                                                                   skos:broaderTransitive <http://resource.geosciml.org/classifier/cgi/proportionterm/subordinate> ;
+                                                                   
+                                                                   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/proportionterm> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/proportionterm/variable
+
+<http://resource.geosciml.org/classifier/cgi/proportionterm/variable> rdf:type owl:NamedIndividual ,
+                                                                               owl:Thing ,
+                                                                               skos:Concept ;
+                                                                      
+                                                                      skos:definition "Component varies in proportion throughout the described entity."@en ;
+                                                                      
+                                                                      dc:source "this vocabulary"@en ;
+                                                                      
+                                                                      skos:prefLabel "variable"@en ;
+                                                                      
+                                                                      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/proportionterm/0010> ;
+                                                                      
+                                                                      skos:broader <http://resource.geosciml.org/classifier/cgi/proportionterm/present> ;
+                                                                      
+                                                                      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/proportionterm> .
+
+
+
+###  http://resource.geosciml.org/classifierscheme/cgi/201202/proportionterm
+
+<http://resource.geosciml.org/classifierscheme/cgi/201202/proportionterm> rdf:type owl:NamedIndividual ,
+                                                                                   owl:Thing ,
+                                                                                   skos:ConceptScheme ;
+                                                                          
+                                                                          skos:changeNote "2009-12-07 SMR Update metadata properties for version, creator, title, and format.  Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en ;
+                                                                          
+                                                                          skos:historyNote "2012-02-27 SMR add skos:exactMatch relating URI in this vocabulary to URI in 201012 version using numeric tokens.  Update the vocabulary definition text."@en ;
+                                                                          
+                                                                          skos:prefLabel "CGI Proportion Term Vocabulary"@en ;
+                                                                          
+                                                                          skos:definition "This file contains the CGI Proportion term vocabulary. This vocabulary provides terms that may be used to qualitatively express abundance of composition parts in a geologic unit or earth material description. Quantity that specifies the fraction of the geologic unit composed of the compound material. This vocabulary is used for GeologicUnit.GeologicUnitPart.proportion, GeologicUnit.CompositionPart.proportion, and for CompoundMaterial.ConsituentPart.proportion."@en ;
+                                                                          
+                                                                          skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/proportionterm/present> .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#Collection
+
+skos:Collection rdf:type owl:NamedIndividual ,
+                         owl:Thing ;
+                
+                rdfs:label "Collection"@en ;
+                
+                rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                
+                skos:definition "A meaningful collection of concepts."@en ;
+                
+                rdfs:comment """Labelled collections can be used with collectable semantic relation
+      properties e.g. skos:narrower, where you would like a set of concepts to be displayed under a
+      'node label' in the hierarchy."""@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+
+skos:Concept rdf:type owl:NamedIndividual ,
+                      owl:Thing ;
+             
+             rdfs:label "Concept"@en ;
+             
+             rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+             
+             skos:definition "An abstract idea or notion; a unit of thought."@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+
+skos:ConceptScheme rdf:type owl:NamedIndividual ,
+                            owl:Thing ;
+                   
+                   rdfs:label "Concept Scheme"@en ;
+                   
+                   rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                   
+                   rdfs:comment """A concept scheme may be defined to include concepts from different
+      sources."""@en ;
+                   
+                   skos:definition """A set of concepts, optionally including statements about semantic
+      relationships between those concepts."""@en ,
+                                   "A set of concepts, optionally including statements about semanticn      relationships between those concepts."@en ;
+                   
+                   rdfs:comment """Thesauri, classification schemes, subject heading lists, taxonomies,
+      'folksonomies', and other types of controlled vocabulary are all examples of concept schemes.
+      Concept schemes are also embedded in glossaries and terminologies."""@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#OrderedCollection
+
+skos:OrderedCollection rdf:type owl:NamedIndividual ,
+                                owl:Thing ;
+                       
+                       rdfs:label "Ordered Collection"@en ;
+                       
+                       rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                       
+                       skos:definition """An ordered collection of concepts, where both the grouping and
+      the ordering are meaningful."""@en ,
+                                       "An ordered collection of concepts, where both the grouping andn      the ordering are meaningful."@en ;
+                       
+                       rdfs:comment "Ordered collections can be used where you would like a set of concepts to be displayed in a specific order, and optionally under a 'node label'."@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+
+skos:altLabel rdf:type owl:NamedIndividual ,
+                       owl:Thing ;
+              
+              skos:definition "An alternative lexical label for a resource."@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#broadMatch
+
+skos:broadMatch rdf:type owl:NamedIndividual ,
+                         owl:Thing ;
+                
+                rdfs:label "broader match"@en ;
+                
+                rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                
+                skos:definition """skos:broadMatch is used to state a hierarchical mapping link
+      between two conceptual resources in different concept schemes."""@en ,
+                                "skos:broadMatch is used to state a hierarchical mapping linkn      between two conceptual resources in different concept schemes."@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+
+skos:broader rdf:type owl:NamedIndividual ,
+                      owl:Thing ;
+             
+             rdfs:label "has broader"@en ;
+             
+             rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+             
+             skos:definition "A concept that is more general in meaning."@en ;
+             
+             rdfs:comment """Broader concepts are typically rendered as parents in a concept
+      hierarchy (tree)."""@en ,
+                          """By convention, skos:broader is only used to assert an immediate
+      (i.e. direct) hierarchical link between two conceptual resources."""@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#broaderTransitive
+
+skos:broaderTransitive rdf:type owl:NamedIndividual ,
+                                owl:Thing ;
+                       
+                       rdfs:label "broader transitive"@en ;
+                       
+                       rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                       
+                       rdfs:comment """By convention, skos:broaderTransitive is not used to make
+      assertions. Rather, the properties can be used to draw inferences about the transitive closure
+      of the hierarchical relation, which is useful e.g. when implementing a simple query expansion
+      algorithm in a search application."""@en ;
+                       
+                       skos:definition "skos:broaderTransitive is a transitive superproperty of skos:broader." .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#changeNote
+
+skos:changeNote rdf:type owl:NamedIndividual ,
+                         owl:Thing ;
+                
+                skos:definition "A note about a modification to a concept."@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#closeMatch
+
+skos:closeMatch rdf:type owl:NamedIndividual ,
+                         owl:Thing ;
+                
+                rdfs:label "close match"@en ;
+                
+                rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                
+                skos:definition """skos:closeMatch is used to link two concepts that are
+      sufficiently similar that they can be used interchangeably in some information retrieval
+      applications. In order to avoid the possibility of \"compound errors\" when combining mappings
+      across more than two concept schemes, skos:closeMatch is not declared to be a transitive
+      property."""@en .
+                              
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+
+skos:definition rdf:type owl:NamedIndividual ,
+                         owl:Thing ;
+                
+                rdfs:label "definition"@en ;
+                
+                rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                
+                skos:definition "A statement or formal explanation of the meaning of a concept."@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#editorialNote
+
+skos:editorialNote rdf:type owl:NamedIndividual ,
+                            owl:Thing ;
+                   
+                   skos:definition "A note for an editor, translator or maintainer of the vocabulary."@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#exactMatch
+
+skos:exactMatch rdf:type owl:NamedIndividual ,
+                         owl:Thing ;
+                
+                rdfs:label "exact match"@en ;
+                
+                rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                
+                rdfs:comment """skos:exactMatch is disjoint with each of the properties
+      skos:broadMatch and skos:relatedMatch."""@en ;
+                
+                skos:definition """skos:exactMatch is used to link two concepts, indicating a high
+      degree of confidence that the concepts can be used interchangeably across a wide range of
+      information retrieval applications. skos:exactMatch is a transitive property, and is a
+      sub-property of skos:closeMatch."""@en ,
+                                "skos:exactMatch is used to link two concepts, indicating a highn      degree of confidence that the concepts can be used interchangeably across a wide range ofn      information retrieval applications. skos:exactMatch is a transitive property, and is an      sub-property of skos:closeMatch."@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+
+skos:example rdf:type owl:NamedIndividual ,
+                      owl:Thing ;
+             
+             skos:definition "An example of the use of a concept."@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#hasTopConcept
+
+skos:hasTopConcept rdf:type owl:NamedIndividual ,
+                            owl:Thing ;
+                   
+                   rdfs:label "has top concept"@en ;
+                   
+                   rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                   
+                   skos:definition "A top level concept in the concept scheme."@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#hiddenLabel
+
+skos:hiddenLabel rdf:type owl:NamedIndividual ,
+                          owl:Thing ;
+                 
+                 skos:definition """A lexical label for a resource that should be hidden when
+      generating visual displays of the resource, but should still be accessible to free text search
+      operations."""@en ,
+                                 "A lexical label for a resource that should be hidden whenn      generating visual displays of the resource, but should still be accessible to free text searchn      operations."@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#historyNote
+
+skos:historyNote rdf:type owl:NamedIndividual ,
+                          owl:Thing ;
+                 
+                 skos:definition "A note about the past state/use/meaning of a concept."@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+
+skos:inScheme rdf:type owl:NamedIndividual ,
+                       owl:Thing ;
+              
+              rdfs:label "in scheme"@en ;
+              
+              rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+              
+              rdfs:comment "A concept may be a member of more than one concept scheme."@en ;
+              
+              skos:definition "A concept scheme in which the concept is included."@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#mappingRelation
+
+skos:mappingRelation rdf:type owl:NamedIndividual ,
+                              owl:Thing ;
+                     
+                     rdfs:label "mapping relation"@en ;
+                     
+                     rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                     
+                     skos:definition "Definition"@en ;
+                     
+                     rdfs:comment """These concept mapping relations mirror semantic relations, and the
+      data model defined below is similar (with the exception of skos:exactMatch) to the data model
+      defined for semantic relations. A distinct vocabulary is provided for concept mapping
+      relations, to provide a convenient way to differentiate links within a concept scheme from
+      links between concept schemes. However, this pattern of usage is not a formal requirement of
+      the SKOS data model, and relies on informal definitions of best practice."""@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#member
+
+skos:member rdf:type owl:NamedIndividual ,
+                     owl:Thing ;
+            
+            rdfs:label "member"@en ;
+            
+            rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+            
+            skos:definition "A member of a collection."@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#memberList
+
+skos:memberList rdf:type owl:NamedIndividual ,
+                         owl:Thing ;
+                
+                rdfs:label "member list"@en ;
+                
+                rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                
+                skos:definition "An RDF list containing the members of an ordered collection."@en ;
+                
+                rdfs:comment """For any resource, every item in the list given as the value of the
+      skos:memberList property is also a value of the skos:member property."""@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#narrowMatch
+
+skos:narrowMatch rdf:type owl:NamedIndividual ,
+                          owl:Thing ;
+                 
+                 rdfs:label "narrower match"@en ;
+                 
+                 rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                 
+                 skos:definition """skos:narrowMatch is used to state a hierarchical mapping link
+      between two conceptual resources in different concept schemes."""@en ,
+                                 "skos:narrowMatch is used to state a hierarchical mapping linkn      between two conceptual resources in different concept schemes."@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#narrower
+
+skos:narrower rdf:type owl:NamedIndividual ,
+                       owl:Thing ;
+              
+              rdfs:label "has narrower"@en ;
+              
+              rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+              
+              skos:definition "A concept that is more specific in meaning."@en ;
+              
+              rdfs:comment """By convention, skos:broader is only used to assert an immediate
+      (i.e. direct) hierarchical link between two conceptual resources."""@en ,
+                           """Narrower concepts are typically rendered as children in a concept
+      hierarchy (tree)."""@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#narrowerTransitive
+
+skos:narrowerTransitive rdf:type owl:NamedIndividual ,
+                                 owl:Thing ;
+                        
+                        rdfs:label "narrower transitive"@en ;
+                        
+                        rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                        
+                        rdfs:comment """By convention, skos:narrowerTransitive is not used to make
+      assertions. Rather, the properties can be used to draw inferences about the transitive closure
+      of the hierarchical relation, which is useful e.g. when implementing a simple query expansion
+      algorithm in a search application."""@en ;
+                        
+                        skos:definition "skos:narrowerTransitive is a transitive superproperty of skos:broader. Byn      convention, skos:narrowerTransitive is not intended to be used in assertions, but provides an      mechanism whereby the transitive closure of skos:narrower can be queried." ,
+                                        """skos:narrowerTransitive is a transitive superproperty of skos:broader. By
+      convention, skos:narrowerTransitive is not intended to be used in assertions, but provides a
+      mechanism whereby the transitive closure of skos:narrower can be queried.""" .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+
+skos:notation rdf:type owl:NamedIndividual ,
+                       owl:Thing ;
+              
+              rdfs:label "notation"@en ;
+              
+              rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+              
+              skos:definition """A notation, also known as classification code, is a string of
+      characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope
+      of a given concept scheme."""@en ;
+                             
+              rdfs:comment """By convention, skos:notation is used with a typed literal in the
+      object position of the triple."""@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#note
+
+skos:note rdf:type owl:NamedIndividual ,
+                   owl:Thing ;
+          
+          skos:definition "A general note, for any purpose."@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+
+skos:prefLabel rdf:type owl:NamedIndividual ,
+                        owl:Thing ;
+               
+               skos:definition "The preferred lexical label for a resource, in a given language."@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#related
+
+skos:related rdf:type owl:NamedIndividual ,
+                      owl:Thing ;
+             
+             rdfs:label "related to"@en ;
+             
+             rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+             
+             skos:definition """A concept with which there is an associative semantic
+      relationship."""@en ;
+             
+             rdfs:comment "skos:related is disjoint with skos:broaderTransitive"@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#relatedMatch
+
+skos:relatedMatch rdf:type owl:NamedIndividual ,
+                           owl:Thing ;
+                  
+                  rdfs:label "related match"@en ;
+                  
+                  rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                  
+                  skos:definition """skos:relatedMatch is used to state an associative mapping link
+      between two conceptual resources in different concept schemes."""@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+
+skos:scopeNote rdf:type owl:NamedIndividual ,
+                        owl:Thing ;
+               
+               skos:definition "A note that helps to clarify the meaning of a concept."@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#semanticRelation
+
+skos:semanticRelation rdf:type owl:NamedIndividual ,
+                               owl:Thing ;
+                      
+                      rdfs:label "semantic relation"@en ;
+                      
+                      rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                      
+                      skos:definition "A concept related by meaning."@en ;
+                      
+                      rdfs:comment """This property should not be used directly, but as a super-property
+      for all properties denoting a relationship of meaning between concepts."""@en .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#topConceptOf
+
+skos:topConceptOf rdf:type owl:NamedIndividual ,
+                           owl:Thing ;
+                  
+                  rdfs:label "top concept in scheme"@en ;
+                  
+                  rdfs:isDefinedBy "http://www.w3.org/2004/02/skos/core"^^xsd:anyURI ;
+                  
+                  skos:definition """Relates a concept to the concept scheme that it is a top level
+      concept of."""@en .
+
+
+
+
+###  Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net
+

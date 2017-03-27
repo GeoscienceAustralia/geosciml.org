@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:cgi="http://resource.geosciml.org/classifierscheme/cgi/201211/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:fltmovtyp="http://resource.geosciml.org/classifier/cgi/faultmovementtype/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:void="http://rdfs.org/ns/void#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">fault movement type concepts</rdfs:label>
+	<skos:definition xml:lang="en">This resource defines the concept space for fault movement type concepts by extension; it includes all concepts in this conceptScheme, as well as concepts in previous versions of the scheme.</skos:definition>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_slip"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_separation_sense"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/transcurrent"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/scissor"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/horizontal"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/oblique_slip"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/pure_extraction"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/mixed_extraction"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/transtensional"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/transpressional"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_separation_sense"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/wrench"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/transform"/>
+	<skos:prefLabel xml:lang="en">CGI Fault Movement Type</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_separation_sense">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source>GGIC vocabularies working group (Australia)</dc:source>
+	<skos:definition>A fault along which there is some separation parallel to the dip of the fault.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/0001"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/faultmovementtype"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_slip"/>
+	<skos:prefLabel xml:lang="en">dip separation sense</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/faultmovementtype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_slip">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source>GGIC vocabularies working group (Australia)</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_separation_sense"/>
+	<skos:definition>The net slip of the fault lies in the dip direction of the fault.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/0002"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/faultmovementtype"/>
+	<skos:prefLabel xml:lang="en">dip slip</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source>Froitzheim, N., Pleuger, J. &amp; Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395.</dc:source>
+	<skos:definition>A fault whose two sides have approached each other substantially in the direction perpendicular to the fault.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/0003"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/faultmovementtype"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/mixed_extraction"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/pure_extraction"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201211/faultmovementtype">extraction</skos:notation>
+	<skos:prefLabel xml:lang="en">extraction</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/faultmovementtype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/horizontal">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source>GGIC vocabularies working group (Australia)</dc:source>
+	<skos:definition>The fault is horizontal.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/0004"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/faultmovementtype"/>
+	<skos:prefLabel xml:lang="en">horizontal</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/faultmovementtype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/mixed_extraction">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source>Froitzheim, N., Pleuger, J. &amp; Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395.</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction"/>
+	<skos:definition>An extraction fault with some displacement within the fault plane.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/0005"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/faultmovementtype"/>
+	<skos:prefLabel xml:lang="en">mixed extraction</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/oblique_slip">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source>GGIC vocabularies working group (Australia); SMR</dc:source>
+	<skos:definition>The net slip of the fault lies between the strike and dip directions of the fault; the slip vector rakes between 10 and 80 degrees in the plane of the fault.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/0006"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/faultmovementtype"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/transtensional"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/transpressional"/>
+	<skos:prefLabel xml:lang="en">oblique slip</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/faultmovementtype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/pure_extraction">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source>Froitzheim, N., Pleuger, J. &amp; Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395.</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction"/>
+	<skos:definition>An extraction fault with no discernible displacement within the fault plane.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/0007"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/faultmovementtype"/>
+	<skos:prefLabel xml:lang="en">pure extraction</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/scissor">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source>Neuendorf et al 2005</dc:source>
+	<skos:definition>A fault on which there is increasing offset or separation along the strike from an initial point of no offset, with reverse offset in the opposite direction.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/0008"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/faultmovementtype"/>
+	<skos:prefLabel xml:lang="en">scissor</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/faultmovementtype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_separation_sense">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source>GGIC vocabularies working group (Australia)</dc:source>
+	<skos:definition>A fault along which there is some separation parallel to the strike of the fault.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/0009"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/faultmovementtype"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip"/>
+	<skos:prefLabel xml:lang="en">strike separation sense</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/faultmovementtype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source>GGIC vocabularies working group (Australia); SMR</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_separation_sense"/>
+	<skos:definition>The net slip of the fault (slip vector) is parallel to the strike of the fault.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/0010"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/faultmovementtype"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/wrench"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/transcurrent"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/transform"/>
+	<skos:prefLabel xml:lang="en">strike slip</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/transcurrent">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source>GGIC vocabularies working group (Australia)</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip"/>
+	<skos:definition>A large scale strike-slip fault in which the fault surface is steeply inclined.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/0011"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/faultmovementtype"/>
+	<skos:prefLabel xml:lang="en">transcurrent</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/transform">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source>GGIC vocabularies working group (Australia)</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip"/>
+	<skos:definition>A variety of strike-slip fault along which the displacement suddenly stops or changes form; typically associated with mid-ocean ridges.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/0012"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/faultmovementtype"/>
+	<skos:prefLabel xml:lang="en">transform</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/transpressional">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source>GGIC vocabularies working group (Australia)</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/oblique_slip"/>
+	<skos:definition>A fault along which strike-slip deformation is accompanied by a component of shortening transverse to the fault.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/0013"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/faultmovementtype"/>
+	<skos:prefLabel xml:lang="en">transpressional</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/transtensional">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source>GGIC vocabularies working group (Australia)</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/oblique_slip"/>
+	<skos:definition>A fault along which strike-slip deformation is accompanied by a component of extension transverse to the fault.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/0014"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/faultmovementtype"/>
+	<skos:prefLabel xml:lang="en">transtensional</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementtype/wrench">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source>GGIC vocabularies working group (Australia)</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip"/>
+	<skos:definition>A strike slip fault in which the faut plane is more or less vertical.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementtype/0015"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/faultmovementtype"/>
+	<skos:prefLabel xml:lang="en">wrench</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifierscheme/cgi/201211/faultmovementtype">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+	<dc:creator>Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:format>application/rdf+xml</dc:format>
+	<dc:identifier>http://resource.geosciml.org/classifierscheme/cgi/201211/faultmovementtype</dc:identifier>
+	<dc:language>en</dc:language>
+	<dc:publisher>Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:publisher>
+	<dc:title xml:lang="en">CGI Fault movement type vocabulary</dc:title>
+	<owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+	<owl:imports rdf:resource="http://rdfs.org/ns/void"/>
+	<owl:versionInfo>201211</owl:versionInfo>
+	<skos:definition xml:lang="en">This file contains the CGI Fault movement type vocabulary. Includes terms used to define the type of movement (eg dip-slip, strike-slip) for a DisplacementValue on a ShearDisplacementStructure.</skos:definition>
+	<skos:historyNote xml:lang="en">2010-02-08. SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments.</skos:historyNote>
+	<skos:historyNote xml:lang="en">2013-02-04 SMR Check update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types. Add missing for missing definitions.</skos:historyNote>
+	<skos:historyNote xml:lang="en">2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet.</skos:historyNote>
+	<skos:historyNote xml:lang="en">2010-02-14 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege.</skos:historyNote>
+	<skos:historyNote xml:lang="en">2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme.</skos:historyNote>
+	<skos:historyNote xml:lang="en">2009-12-07 SMR Update metadata properties for version, creator, title, and format.  Change skos:HistoryNote to dc:source for information on origin of terms and definitions.</skos:historyNote>
+	<skos:historyNote xml:lang="en">2010-11-27 SMR replace URN with http URI according to CGI URI scheme.</skos:historyNote>
+	<skos:prefLabel xml:lang="en">CGI Fault Movement Type vocabulary</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/vocabulary/cgi/201211/faultmovementtype">
+	<rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fault movement type vocabulary</rdfs:label>
+</rdf:Description>
+
+</rdf:RDF>

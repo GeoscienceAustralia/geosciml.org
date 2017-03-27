@@ -1,0 +1,11 @@
+URI	prefLabel	Definition	Source
+http://resource.geosciml.org/classifier/cgi/proportionterm/all	all	Component constitutes effectively 100 percent of the volume of the described entity.	this vocabulary
+http://resource.geosciml.org/classifier/cgi/proportionterm/dominant	major	Component constitutes greater than 75 percent of the volume of the described entity.	this vocabulary
+http://resource.geosciml.org/classifier/cgi/proportionterm/major	more thanhalf	Component constitutes greater than 50 percent of the volume of the described entity.	this vocabulary
+http://resource.geosciml.org/classifier/cgi/proportionterm/minor	minor	component constitutes less than 25 percent of the volume of the described entity.	this vocabulary
+http://resource.geosciml.org/classifier/cgi/proportionterm/predominant	most abundant	Constituent forms more of the described entity than any other constituent.	17-12-2009 Added based on reviews for OneGeology Europe
+http://resource.geosciml.org/classifier/cgi/proportionterm/present	present	"Component is present, but proportion is unknown"	this vocabulary
+http://resource.geosciml.org/classifier/cgi/proportionterm/rare	rare	Component constitutes less than 5 percent of the volume of the described entity.	"this vocabulary, follows Neuendorf et al 2005 usage scoped to coal description"
+http://resource.geosciml.org/classifier/cgi/proportionterm/subordinate	less thanhalf	Component constitutes less than 50 percent of the volume of the described entity.	this vocabulary
+http://resource.geosciml.org/classifier/cgi/proportionterm/trace	trace	Component constitutes less than approximately 1 percent of the volume of the described entity. Presence is detectable but too small for accurate determination.	"this vocabulary, Neuendorf et al 2005"
+http://resource.geosciml.org/classifier/cgi/proportionterm/variable	variable	Component varies in proportion throughout the described entity.	this vocabulary

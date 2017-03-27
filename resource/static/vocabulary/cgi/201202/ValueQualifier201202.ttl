@@ -1,0 +1,575 @@
+@prefix cgi: <http://resource.geosciml.org/classifierscheme/cgi/201202/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix : <http://resource.geosciml.org/classifierscheme/cgi/201202/valuequalifier#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://resource.geosciml.org/classifierscheme/cgi/201202/valuequalifier> .
+
+<http://resource.geosciml.org/classifierscheme/cgi/201202/valuequalifier> rdf:type owl:Ontology ;
+                                                                          
+                                                                          owl:versionInfo "201202" ;
+                                                                          
+                                                                          dc:publisher "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)" ;
+                                                                          
+                                                                          dc:language "en" ;
+                                                                          
+                                                                          dc:title "CGI Value Qualifier Terms Vocabulary"@en ;
+                                                                          
+                                                                          dc:format "text/turtle" ;
+                                                                          
+                                                                          dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)" ;
+                                                                          
+                                                                          dc:identifier "http://resource.geosciml.org/classifierscheme/cgi/201202/valuequalifier" .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+
+dc:publisher rdf:type owl:AnnotationProperty .
+
+
+
+dc:language rdf:type owl:AnnotationProperty .
+
+
+
+dc:identifier rdf:type owl:AnnotationProperty .
+
+
+
+dc:source rdf:type owl:AnnotationProperty .
+
+
+
+dc:format rdf:type owl:AnnotationProperty .
+
+
+
+dc:title rdf:type owl:AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+
+skos:broader rdf:type owl:ObjectProperty ;
+             
+             owl:inverseOf skos:narrower .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#changeNote
+
+skos:changeNote rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#exactMatch
+
+skos:exactMatch rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+
+skos:inScheme rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#narrower
+
+skos:narrower rdf:type owl:ObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+
+rdf:value rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#changeNote
+
+skos:changeNote rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+
+skos:definition rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#historyNote
+
+skos:historyNote rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+
+skos:notation rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+
+skos:prefLabel rdf:type owl:DatatypeProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+
+owl:Thing rdf:type owl:Class .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+
+skos:Concept rdf:type owl:Class .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+
+skos:ConceptScheme rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/0001
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/0001> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/0002
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/0002> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/0003
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/0003> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/0004
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/0004> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/0005
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/0005> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/0006
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/0006> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/0007
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/0007> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/0008
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/0008> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/0009
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/0009> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/0010
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/0010> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/0011
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/0011> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/0012
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/0012> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/0013
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/0013> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/0014
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/0014> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/0015
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/0015> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/0016
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/0016> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/0017
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/0017> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/0018
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/0018> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/0019
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/0019> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/always
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/always> rdf:type owl:NamedIndividual ,
+                                                                             owl:Thing ,
+                                                                             skos:Concept ;
+                                                                    
+                                                                    dc:source "GeoSciML UML model; definition this vocabulary" ;
+                                                                    
+                                                                    skos:definition "all instances of the observed entity have this property value" ;
+                                                                    
+                                                                    skos:prefLabel "always"@en ;
+                                                                    
+                                                                    skos:exactMatch <http://resource.geosciml.org/classifier/cgi/valuequalifier/0001> ;
+                                                                    
+                                                                    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/valuequalifier> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/approximate
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/approximate> rdf:type owl:NamedIndividual ,
+                                                                                  owl:Thing ,
+                                                                                  skos:Concept ;
+                                                                         
+                                                                         dc:source "GeoSciML UML model; definition this vocabulary" ;
+                                                                         
+                                                                         skos:prefLabel "approximate"@en ;
+                                                                         
+                                                                         skos:definition "specified value is approximate" ;
+                                                                         
+                                                                         skos:exactMatch <http://resource.geosciml.org/classifier/cgi/valuequalifier/0002> ;
+                                                                         
+                                                                         skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/valuequalifier> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/arithmetic_mean
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/arithmetic_mean> rdf:type owl:NamedIndividual ;
+                                                                             
+                                                                             skos:exactMatch <http://resource.geosciml.org/classifier/cgi/valuequalifier/0003> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/common
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/common> rdf:type owl:NamedIndividual ,
+                                                                             owl:Thing ,
+                                                                             skos:Concept ;
+                                                                    
+                                                                    skos:definition "reported property value is commonly observered" ;
+                                                                    
+                                                                    dc:source "GeoSciML UML model; definition this vocabulary" ;
+                                                                    
+                                                                    skos:prefLabel "common"@en ;
+                                                                    
+                                                                    skos:exactMatch <http://resource.geosciml.org/classifier/cgi/valuequalifier/0004> ;
+                                                                    
+                                                                    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/valuequalifier> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/equalTo
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/equalTo> rdf:type owl:NamedIndividual ,
+                                                                              owl:Thing ,
+                                                                              skos:Concept ;
+                                                                     
+                                                                     dc:source "GeoSciML UML model; definition this vocabulary" ;
+                                                                     
+                                                                     skos:definition "reported property value is the observered value" ;
+                                                                     
+                                                                     skos:prefLabel "equalTo"@en ;
+                                                                     
+                                                                     skos:exactMatch <http://resource.geosciml.org/classifier/cgi/valuequalifier/0005> ;
+                                                                     
+                                                                     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/valuequalifier> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/geometric_mean
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/geometric_mean> rdf:type owl:NamedIndividual ;
+                                                                            
+                                                                            skos:exactMatch <http://resource.geosciml.org/classifier/cgi/valuequalifier/0006> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/greaterThan
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/greaterThan> rdf:type owl:NamedIndividual ,
+                                                                                  owl:Thing ,
+                                                                                  skos:Concept ;
+                                                                         
+                                                                         dc:source "GeoSciML UML model; definition this vocabulary" ;
+                                                                         
+                                                                         skos:prefLabel "greaterThan"@en ;
+                                                                         
+                                                                         skos:definition "reported property value is lower bound" ;
+                                                                         
+                                                                         skos:exactMatch <http://resource.geosciml.org/classifier/cgi/valuequalifier/0007> ;
+                                                                         
+                                                                         skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/valuequalifier> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/harmonic_mean
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/harmonic_mean> rdf:type owl:NamedIndividual ;
+                                                                           
+                                                                           skos:exactMatch <http://resource.geosciml.org/classifier/cgi/valuequalifier/0008> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/lessThan
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/lessThan> rdf:type owl:NamedIndividual ,
+                                                                               owl:Thing ,
+                                                                               skos:Concept ;
+                                                                      
+                                                                      skos:definition "reported property value is upper bound" ;
+                                                                      
+                                                                      dc:source "GeoSciML UML model; definition this vocabulary" ;
+                                                                      
+                                                                      skos:prefLabel "lessThan"@en ;
+                                                                      
+                                                                      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/valuequalifier/0009> ;
+                                                                      
+                                                                      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/valuequalifier> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/median
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/median> rdf:type owl:NamedIndividual ;
+                                                                    
+                                                                    skos:exactMatch <http://resource.geosciml.org/classifier/cgi/valuequalifier/0010> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/mode
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/mode> rdf:type owl:NamedIndividual ;
+                                                                  
+                                                                  skos:exactMatch <http://resource.geosciml.org/classifier/cgi/valuequalifier/0011> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/never
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/never> rdf:type owl:NamedIndividual ,
+                                                                            owl:Thing ,
+                                                                            skos:Concept ;
+                                                                   
+                                                                   dc:source "GeoSciML UML model; definition this vocabulary" ;
+                                                                   
+                                                                   skos:definition "reported property value is never observed" ;
+                                                                   
+                                                                   skos:prefLabel "never"@en ;
+                                                                   
+                                                                   skos:exactMatch <http://resource.geosciml.org/classifier/cgi/valuequalifier/0012> ;
+                                                                   
+                                                                   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/valuequalifier> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/nil_inapplicable
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/nil_inapplicable> rdf:type owl:NamedIndividual ;
+                                                                              
+                                                                              skos:exactMatch <http://resource.geosciml.org/classifier/cgi/valuequalifier/0013> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/nil_missing
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/nil_missing> rdf:type owl:NamedIndividual ;
+                                                                         
+                                                                         skos:exactMatch <http://resource.geosciml.org/classifier/cgi/valuequalifier/0014> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/nil_unknown
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/nil_unknown> rdf:type owl:NamedIndividual ;
+                                                                         
+                                                                         skos:exactMatch <http://resource.geosciml.org/classifier/cgi/valuequalifier/0015> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/nil_withheld
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/nil_withheld> rdf:type owl:NamedIndividual ;
+                                                                          
+                                                                          skos:exactMatch <http://resource.geosciml.org/classifier/cgi/valuequalifier/0016> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/quadratic_mean
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/quadratic_mean> rdf:type owl:NamedIndividual ;
+                                                                            
+                                                                            skos:exactMatch <http://resource.geosciml.org/classifier/cgi/valuequalifier/0017> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/rare
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/rare> rdf:type owl:NamedIndividual ,
+                                                                           owl:Thing ,
+                                                                           skos:Concept ;
+                                                                  
+                                                                  skos:definition "reported property value is rarely observed." ;
+                                                                  
+                                                                  dc:source "GeoSciML UML model; definition this vocabulary" ;
+                                                                  
+                                                                  skos:prefLabel "rare"@en ;
+                                                                  
+                                                                  skos:exactMatch <http://resource.geosciml.org/classifier/cgi/valuequalifier/0018> ;
+                                                                  
+                                                                  skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/valuequalifier> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/valuequalifier/sometimes
+
+<http://resource.geosciml.org/classifier/cgi/valuequalifier/sometimes> rdf:type owl:NamedIndividual ,
+                                                                                owl:Thing ,
+                                                                                skos:Concept ;
+                                                                       
+                                                                       skos:definition "reported property value is observed occasionally" ;
+                                                                       
+                                                                       dc:source "GeoSciML UML model; definition this vocabulary" ;
+                                                                       
+                                                                       skos:prefLabel "sometimes"@en ;
+                                                                       
+                                                                       skos:exactMatch <http://resource.geosciml.org/classifier/cgi/valuequalifier/0019> ;
+                                                                       
+                                                                       skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/valuequalifier> .
+
+
+
+###  http://resource.geosciml.org/classifierscheme/cgi/201202/valuequalifier
+
+<http://resource.geosciml.org/classifierscheme/cgi/201202/valuequalifier> rdf:type owl:NamedIndividual ,
+                                                                                   owl:Thing ,
+                                                                                   skos:ConceptScheme ;
+                                                                          
+                                                                          skos:historyNote "2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet."@en ;
+                                                                          
+                                                                          skos:changeNote "2009-12-07 SMR Update metadata properties for version, creator, title, and format.  Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en ;
+                                                                          
+                                                                          skos:historyNote "2010-02-08. SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments."@en ,
+                                                                                           "2010-11-28 SMR remove terms deprecated for use in GeoSciML V3. Replace URN identifiers with http URI identifiers following CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)"@en ,
+                                                                                           "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en ,
+                                                                                           "2012-02-27 SMR add skos:exactMatch triples to relate URI for concept in this vocabulary to URI in 201012 vocabulary"@en ;
+                                                                          
+                                                                          skos:prefLabel "CGI Value Qualifier Term Vocabulary"@en ;
+                                                                          
+                                                                          skos:definition "This file contains the CGI Value Qualifier code vocabulary. These terms are taken from the enumeration for values that may be assigned as the valueQualifier on CGI_Value. Definitions are proposed. This codelist includes qualifiers of several sorts: 1. frequence of occurrence--qualifiers that indicate how many occurrences of a described feature are expected to have a reported value. E.g. 'commonly red, sometimes brown'; 2. kinds of statistical procedure used to determine a single value to report based on a collection of observed values, e.g. mean, median, mode.; 3. kinds of nil values; 4. kind of value--a limiting value or the actual estimated value."@en .
+
+
+
+
+###  Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net
+

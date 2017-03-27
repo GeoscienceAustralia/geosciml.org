@@ -1,0 +1,1314 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY cgi "http://resource.geosciml.org/classifierscheme/cgi/201202/" >
+    <!ENTITY stratigraphicrank "http://resource.geosciml.org/classifier/cgi/stratigraphicrank/" >
+]>
+
+
+<rdf:RDF xmlns="&cgi;stratigraphicrank#"
+     xml:base="&cgi;stratigraphicrank"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:cgi="http://resource.geosciml.org/classifierscheme/cgi/201202/"
+     xmlns:stratigraphicrank="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="&cgi;stratigraphicrank">
+        <skos:historyNote xml:lang="en">2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet.</skos:historyNote>
+        <skos:historyNote xml:lang="en">2010-02-08. SMR Clean up namespace declarations so concept URI&#39;s follow CGI URN scheme; concepts have URN, are not document fragments.</skos:historyNote>
+        <skos:historyNote xml:lang="en">2010-11-28 SMR replace URN with http URI constructed according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)</skos:historyNote>
+        <owl:versionInfo>201202</owl:versionInfo>
+        <dc:publisher>Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:publisher>
+        <dc:identifier>http://resource.geosciml.org/classifierscheme/cgi/201202/stratigraphicrank</dc:identifier>
+        <skos:historyNote xml:lang="en">2011-02-16 SMR Add broader/narrower relations according to stratigraphic code. These are not meant to be formal isA or PartOf relations, rather should be read something like &#39;broader in local intention&#39; or &#39;may be part of&#39;. Add term &#39;Complex&#39; to vocabulary</skos:historyNote>
+        <dc:creator>Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:format>application/rdf-xml</dc:format>
+        <skos:historyNote xml:lang="en">2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme.</skos:historyNote>
+        <skos:historyNote xml:lang="en">2012-02-27 SMR add skos:exactMatch triples to map URIs for concepts in this vocabulary to number-token URIs in 201012 version of same concepts.</skos:historyNote>
+        <dc:title xml:lang="en">CGI Stratigraphic Rank Term Vocabulary</dc:title>
+        <dc:language>en</dc:language>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;identifier"/>
+    <owl:AnnotationProperty rdf:about="&dc;language"/>
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    <owl:AnnotationProperty rdf:about="&dc;source"/>
+    <owl:AnnotationProperty rdf:about="&dc;publisher"/>
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    <owl:AnnotationProperty rdf:about="&dc;format"/>
+    <owl:AnnotationProperty rdf:about="&skos;historyNote"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://resource.geosciml.org/classifierscheme/cgi/201202/stratigraphicrank -->
+
+    <rdfs:Datatype rdf:about="&cgi;stratigraphicrank"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+    <owl:ObjectProperty rdf:about="&rdf;value">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broadMatch -->
+
+    <owl:ObjectProperty rdf:about="&skos;broadMatch">
+        <rdfs:label xml:lang="en">broader match</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:subPropertyOf rdf:resource="&skos;broader"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;mappingRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:ObjectProperty rdf:about="&skos;broader">
+        <rdfs:label xml:lang="en">has broader</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">Broader concepts are typically rendered as parents in a concept
+      hierarchy (tree).</rdfs:comment>
+        <rdfs:comment xml:lang="en">By convention, skos:broader is only used to assert an immediate
+      (i.e. direct) hierarchical link between two conceptual resources.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&skos;broaderTransitive"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broaderTransitive -->
+
+    <owl:ObjectProperty rdf:about="&skos;broaderTransitive">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">broader transitive</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">By convention, skos:broaderTransitive is not used to make
+      assertions. Rather, the properties can be used to draw inferences about the transitive closure
+      of the hierarchical relation, which is useful e.g. when implementing a simple query expansion
+      algorithm in a search application.</rdfs:comment>
+        <owl:inverseOf rdf:resource="&skos;narrowerTransitive"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;semanticRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
+
+    <owl:ObjectProperty rdf:about="&skos;changeNote">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:ObjectProperty rdf:about="&skos;closeMatch">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">close match</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <owl:inverseOf rdf:resource="&skos;closeMatch"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;mappingRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:ObjectProperty rdf:about="&skos;definition">
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:ObjectProperty rdf:about="&skos;exactMatch">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">exact match</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">skos:exactMatch is disjoint with each of the properties
+      skos:broadMatch and skos:relatedMatch.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&skos;closeMatch"/>
+        <owl:inverseOf rdf:resource="&skos;exactMatch"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+    <owl:ObjectProperty rdf:about="&skos;hasTopConcept">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:label xml:lang="en">has top concept</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:range rdf:resource="&skos;Concept"/>
+        <rdfs:domain rdf:resource="&skos;ConceptScheme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+    <owl:ObjectProperty rdf:about="&skos;historyNote">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:ObjectProperty rdf:about="&skos;inScheme">
+        <rdfs:label xml:lang="en">in scheme</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">A concept may be a member of more than one concept scheme.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:range rdf:resource="&skos;ConceptScheme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#mappingRelation -->
+
+    <owl:ObjectProperty rdf:about="&skos;mappingRelation">
+        <rdfs:label xml:lang="en">mapping relation</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">These concept mapping relations mirror semantic relations, and the
+      data model defined below is similar (with the exception of skos:exactMatch) to the data model
+      defined for semantic relations. A distinct vocabulary is provided for concept mapping
+      relations, to provide a convenient way to differentiate links within a concept scheme from
+      links between concept schemes. However, this pattern of usage is not a formal requirement of
+      the SKOS data model, and relies on informal definitions of best practice.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&skos;semanticRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#member -->
+
+    <owl:ObjectProperty rdf:about="&skos;member">
+        <rdfs:label xml:lang="en">member</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:domain rdf:resource="&skos;Collection"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&skos;Collection"/>
+                    <rdf:Description rdf:about="&skos;Concept"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#memberList -->
+
+    <owl:ObjectProperty rdf:about="&skos;memberList">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">member list</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">For any resource, every item in the list given as the value of the
+      skos:memberList property is also a value of the skos:member property.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:domain rdf:resource="&skos;OrderedCollection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrowMatch -->
+
+    <owl:ObjectProperty rdf:about="&skos;narrowMatch">
+        <rdfs:label xml:lang="en">narrower match</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <owl:inverseOf rdf:resource="&skos;broadMatch"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;mappingRelation"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;narrower"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+    <owl:ObjectProperty rdf:about="&skos;narrower">
+        <rdfs:label xml:lang="en">has narrower</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">By convention, skos:broader is only used to assert an immediate
+      (i.e. direct) hierarchical link between two conceptual resources.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Narrower concepts are typically rendered as children in a concept
+      hierarchy (tree).</rdfs:comment>
+        <owl:inverseOf rdf:resource="&skos;broader"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;narrowerTransitive"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrowerTransitive -->
+
+    <owl:ObjectProperty rdf:about="&skos;narrowerTransitive">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">narrower transitive</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">By convention, skos:narrowerTransitive is not used to make
+      assertions. Rather, the properties can be used to draw inferences about the transitive closure
+      of the hierarchical relation, which is useful e.g. when implementing a simple query expansion
+      algorithm in a search application.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&skos;semanticRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:ObjectProperty rdf:about="&skos;notation">
+        <rdfs:label xml:lang="en">notation</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">By convention, skos:notation is used with a typed literal in the
+      object position of the triple.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:ObjectProperty rdf:about="&skos;prefLabel">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#related -->
+
+    <owl:ObjectProperty rdf:about="&skos;related">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">related to</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">skos:related is disjoint with skos:broaderTransitive</rdfs:comment>
+        <owl:inverseOf rdf:resource="&skos;related"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;semanticRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#relatedMatch -->
+
+    <owl:ObjectProperty rdf:about="&skos;relatedMatch">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">related match</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:subPropertyOf rdf:resource="&skos;mappingRelation"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;related"/>
+        <owl:inverseOf rdf:resource="&skos;relatedMatch"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#semanticRelation -->
+
+    <owl:ObjectProperty rdf:about="&skos;semanticRelation">
+        <rdfs:label xml:lang="en">semantic relation</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">This property should not be used directly, but as a super-property
+      for all properties denoting a relationship of meaning between concepts.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:domain rdf:resource="&skos;Concept"/>
+        <rdfs:range rdf:resource="&skos;Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+    <owl:ObjectProperty rdf:about="&skos;topConceptOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:label xml:lang="en">top concept in scheme</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <owl:inverseOf rdf:resource="&skos;hasTopConcept"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;inScheme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+    <owl:DatatypeProperty rdf:about="&rdf;value"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
+
+    <owl:DatatypeProperty rdf:about="&skos;changeNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:DatatypeProperty rdf:about="&skos;definition">
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+    <owl:DatatypeProperty rdf:about="&skos;historyNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:DatatypeProperty rdf:about="&skos;notation">
+        <rdfs:label xml:lang="en">notation</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">By convention, skos:notation is used with a typed literal in the
+      object position of the triple.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:DatatypeProperty rdf:about="&skos;prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Collection -->
+
+    <owl:Class rdf:about="&skos;Collection">
+        <rdfs:label xml:lang="en">Collection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith rdf:resource="&skos;Concept"/>
+        <owl:disjointWith rdf:resource="&skos;ConceptScheme"/>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">Labelled collections can be used with collectable semantic relation
+      properties e.g. skos:narrower, where you would like a set of concepts to be displayed under a
+      &#39;node label&#39; in the hierarchy.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="&skos;Concept">
+        <rdfs:label xml:lang="en">Concept</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith rdf:resource="&skos;ConceptScheme"/>
+        <owl:disjointWith rdf:resource="&skos;OrderedCollection"/>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="&skos;ConceptScheme">
+        <rdfs:label xml:lang="en">Concept Scheme</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith rdf:resource="&skos;OrderedCollection"/>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">A concept scheme may be defined to include concepts from different
+      sources.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Thesauri, classification schemes, subject heading lists, taxonomies,
+      &#39;folksonomies&#39;, and other types of controlled vocabulary are all examples of concept schemes.
+      Concept schemes are also embedded in glossaries and terminologies.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#OrderedCollection -->
+
+    <owl:Class rdf:about="&skos;OrderedCollection">
+        <rdfs:label xml:lang="en">Ordered Collection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&skos;Collection"/>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">Ordered collections can be used where you would like a set of concepts to be displayed in a specific order, and optionally under a &#39;node label&#39;.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/0001 -->
+
+    <owl:NamedIndividual rdf:about="&stratigraphicrank;0001"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/0002 -->
+
+    <owl:NamedIndividual rdf:about="&stratigraphicrank;0002"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/0003 -->
+
+    <owl:NamedIndividual rdf:about="&stratigraphicrank;0003"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/0004 -->
+
+    <owl:NamedIndividual rdf:about="&stratigraphicrank;0004"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/0005 -->
+
+    <owl:NamedIndividual rdf:about="&stratigraphicrank;0005"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/0006 -->
+
+    <owl:NamedIndividual rdf:about="&stratigraphicrank;0006"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/0007 -->
+
+    <owl:NamedIndividual rdf:about="&stratigraphicrank;0007"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/0008 -->
+
+    <owl:NamedIndividual rdf:about="&stratigraphicrank;0008"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/0009 -->
+
+    <owl:NamedIndividual rdf:about="&stratigraphicrank;0009"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/0010 -->
+
+    <owl:NamedIndividual rdf:about="&stratigraphicrank;0010"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/0011 -->
+
+    <owl:NamedIndividual rdf:about="&stratigraphicrank;0011"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/0012 -->
+
+    <owl:NamedIndividual rdf:about="&stratigraphicrank;0012"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/0013 -->
+
+    <owl:NamedIndividual rdf:about="&stratigraphicrank;0013"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/0014 -->
+
+    <owl:NamedIndividual rdf:about="&stratigraphicrank;0014"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/0015 -->
+
+    <owl:NamedIndividual rdf:about="&stratigraphicrank;0015"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/bed -->
+
+    <skos:Concept rdf:about="&stratigraphicrank;bed">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>North American Commission on Stratigraphic Nomenclature, 2005; Salvador, 1994</dc:source>
+        <skos:definition>The smallest formal lithostratigraphic unit, usually a distinctive lithic entity which can be distinguished from adjacent rocks by one or more physical characteristics.</skos:definition>
+        <skos:prefLabel xml:lang="en">Bed</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&stratigraphicrank;0001"/>
+        <skos:broaderTransitive rdf:resource="&stratigraphicrank;formation"/>
+        <skos:broader rdf:resource="&stratigraphicrank;member"/>
+        <skos:inScheme rdf:resource="&cgi;stratigraphicrank"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/beds -->
+
+    <owl:NamedIndividual rdf:about="&stratigraphicrank;beds">
+        <skos:exactMatch rdf:resource="&stratigraphicrank;0002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/complex -->
+
+    <skos:Concept rdf:about="&stratigraphicrank;complex">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en">A lithostratigraphic unit composed of diverse types of any class or classes of rock (sedimentary, igneous, metamorphic), and characterized by irregularly mixed lithology or by hightly complicated structure relations to the extent that the original sequence of the component rocks may be obscured and the individual rocks or rock sequence cannot be readily mapped.</skos:definition>
+        <dc:source>Salvador, A., ed. 1994. International Stratigraphic Guide: International Union of Geological Sciences, Trondheim, NO, 214 p.</dc:source>
+        <skos:prefLabel xml:lang="en">Complex</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&stratigraphicrank;0015"/>
+        <skos:related rdf:resource="&stratigraphicrank;lithodeme"/>
+        <skos:inScheme rdf:resource="&cgi;stratigraphicrank"/>
+        <skos:topConceptOf rdf:resource="&cgi;stratigraphicrank"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/formation -->
+
+    <skos:Concept rdf:about="&stratigraphicrank;formation">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>North American Commission on Stratigraphic Nomenclature, 2005; Salvador, 1994</dc:source>
+        <skos:definition>A body of rock identified by lithic characteristics and stratigraphic position; it is usually but not necessarily tabular and is mappable at the Earth&#39;s surface or traceable in the subsurface.</skos:definition>
+        <skos:prefLabel xml:lang="en">Formation</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&stratigraphicrank;0003"/>
+        <skos:narrowerTransitive rdf:resource="&stratigraphicrank;bed"/>
+        <skos:broader rdf:resource="&stratigraphicrank;group"/>
+        <skos:related rdf:resource="&stratigraphicrank;lithodeme"/>
+        <skos:narrower rdf:resource="&stratigraphicrank;member"/>
+        <skos:broader rdf:resource="&stratigraphicrank;subgroup"/>
+        <skos:broaderTransitive rdf:resource="&stratigraphicrank;supergroup"/>
+        <skos:inScheme rdf:resource="&cgi;stratigraphicrank"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/group -->
+
+    <skos:Concept rdf:about="&stratigraphicrank;group">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>North American Commission on Stratigraphic Nomenclature, 2005;  Salvador, 1994</dc:source>
+        <skos:definition>A group is the lithostratigraphic unit next higher in rank to either subgroup or formation. A groups may consist of two or more subgroups or two or more formations or a combination of both.</skos:definition>
+        <skos:prefLabel xml:lang="en">Group</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&stratigraphicrank;0004"/>
+        <skos:narrower rdf:resource="&stratigraphicrank;formation"/>
+        <skos:narrower rdf:resource="&stratigraphicrank;subgroup"/>
+        <skos:related rdf:resource="&stratigraphicrank;suite"/>
+        <skos:broader rdf:resource="&stratigraphicrank;supergroup"/>
+        <skos:inScheme rdf:resource="&cgi;stratigraphicrank"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/lithodeme -->
+
+    <skos:Concept rdf:about="&stratigraphicrank;lithodeme">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition>A body of predominantly intrusive, highly deformed and/or highly metamorphosed rock, distinguished and delimited on the basis of rock characteristics.</skos:definition>
+        <skos:prefLabel xml:lang="en">Lithodeme</skos:prefLabel>
+        <dc:source>North American Commission on Stratigraphic Nomenclature, 2005</dc:source>
+        <skos:exactMatch rdf:resource="&stratigraphicrank;0005"/>
+        <skos:related rdf:resource="&stratigraphicrank;complex"/>
+        <skos:related rdf:resource="&stratigraphicrank;formation"/>
+        <skos:related rdf:resource="&stratigraphicrank;sequence"/>
+        <skos:broader rdf:resource="&stratigraphicrank;suite"/>
+        <skos:broaderTransitive rdf:resource="&stratigraphicrank;supersuite"/>
+        <skos:inScheme rdf:resource="&cgi;stratigraphicrank"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/megasequence -->
+
+    <skos:Concept rdf:about="&stratigraphicrank;megasequence">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en">A succession of strata comprising two or more supersequences. A large-scale sequence-stratigraphic unit deposited during one distinct phase of basin evolution, separated by major unconformities that mark a change in fundamental basin-controlling processes.</skos:definition>
+        <dc:source xml:lang="en">Haq, B.U., Hardenbol, J., and Vail, P.R., 1988, Mesozoic and Cenozoic chronostratigraphy an dcycles of sea-level changes, in Wilgus, C.K., et al., eds, Sea-level Changes: an Integrated Approach: Society of Sedimentary Geology Special Publication 42, p. 71-108.
+Peel, F., Cole, Gary A, Apps, Gillian M., and Moore, M. G., 2002, Implications of Megasequence Stratigraphy for the Petroleum System of the Ultra Deep Water Gulf of Mexico [abstract], Gulf Coast Association of Geological Societies Meeting October 30 - November 1, 2002, Austin, Texas, accessed at http://www.searchanddiscovery.net/documents/abstracts/gcags/images/peel01.htm, 2011-02-17</dc:source>
+        <skos:prefLabel xml:lang="en">Megasequence</skos:prefLabel>
+        <rdfs:seeAlso>http://www.sepmstrata.org/terminology/seq-strat.html; http://sepmstrata.org/terminology/second-order-cyc.html;
+Heward, A.P., 1978, Alluvial fan sequence and megasequence models: With examples from Westphalian D-Stephanian B coal-fields, northern Spain, in A.D. Miall, ed., fluvial sedimentation: Canadian Society of Petroleum Geologists Memoir 5, p. 59-76.</rdfs:seeAlso>
+        <skos:exactMatch rdf:resource="&stratigraphicrank;0006"/>
+        <skos:narrowerTransitive rdf:resource="&stratigraphicrank;sequence"/>
+        <skos:narrower rdf:resource="&stratigraphicrank;supersequence"/>
+        <skos:related rdf:resource="&stratigraphicrank;supersuite"/>
+        <skos:inScheme rdf:resource="&cgi;stratigraphicrank"/>
+        <skos:topConceptOf rdf:resource="&cgi;stratigraphicrank"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/member -->
+
+    <skos:Concept rdf:about="&stratigraphicrank;member">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>North American Commission on Stratigraphic Nomenclature, 2005; Salvador, 1994</dc:source>
+        <skos:definition>A formal lithostratigraphic unit next in rank below a formation, and always part of a formation. It is a named entity within a formation because it possesses characteristics distinguishing it from adjacent parts of the formation.</skos:definition>
+        <skos:prefLabel xml:lang="en">Member</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&stratigraphicrank;0007"/>
+        <skos:narrower rdf:resource="&stratigraphicrank;bed"/>
+        <skos:broader rdf:resource="&stratigraphicrank;formation"/>
+        <skos:inScheme rdf:resource="&cgi;stratigraphicrank"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/rank_not_specified -->
+
+    <skos:Concept rdf:about="&stratigraphicrank;rank_not_specified">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition>unit is not part of a defined stratigraphic hierarchy.</skos:definition>
+        <skos:prefLabel xml:lang="en">Not specified</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:exactMatch rdf:resource="&stratigraphicrank;0008"/>
+        <skos:topConceptOf rdf:resource="&cgi;stratigraphicrank"/>
+        <skos:inScheme rdf:resource="&cgi;stratigraphicrank"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/sequence -->
+
+    <skos:Concept rdf:about="&stratigraphicrank;sequence">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:notation rdf:datatype="&cgi;stratigraphicrank">sequence</skos:notation>
+        <skos:definition xml:lang="en">A genetically related succession of strata bounded by unconformites or their correlative conformable contacts, and typically having a thickness of 10-100 metres.</skos:definition>
+        <rdfs:seeAlso>http://www.sepmstrata.org/terminology/seq-strat.html</rdfs:seeAlso>
+        <skos:prefLabel xml:lang="en">Sequence</skos:prefLabel>
+        <dc:source xml:lang="en">Van Wagoner, J.C., Posamentier, H.W., Mitchum, R.M., Vail, P.R., Sarg, J.F., Loutit, T.S., Hardenbol, J., 1988, An overview of sequence stratigraphy and key definitions. In: Wilgus, C.K., Hastings, B.S., Kendall, C.G.St.C., Posamentier, H.W., Ross, C.A., Van Wagoner, J.C. (Eds.), Sea Level Changes––An Integrated Approach, vol. 42. SEPM Special Publication, pp. 39–45.</dc:source>
+        <skos:exactMatch rdf:resource="&stratigraphicrank;0009"/>
+        <skos:related rdf:resource="&stratigraphicrank;lithodeme"/>
+        <skos:broaderTransitive rdf:resource="&stratigraphicrank;megasequence"/>
+        <skos:broader rdf:resource="&stratigraphicrank;supersequence"/>
+        <skos:inScheme rdf:resource="&cgi;stratigraphicrank"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/subgroup -->
+
+    <skos:Concept rdf:about="&stratigraphicrank;subgroup">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition>A subgroup is the lithostratigraphic unit next higher in rank to formation. A subgroup usually consists of several formations.</skos:definition>
+        <dc:source xml:lang="en">Salvador, 1994</dc:source>
+        <skos:prefLabel xml:lang="en">Subgroup</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&stratigraphicrank;0010"/>
+        <skos:narrower rdf:resource="&stratigraphicrank;formation"/>
+        <skos:broader rdf:resource="&stratigraphicrank;group"/>
+        <skos:broaderTransitive rdf:resource="&stratigraphicrank;supergroup"/>
+        <skos:inScheme rdf:resource="&cgi;stratigraphicrank"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/suite -->
+
+    <skos:Concept rdf:about="&stratigraphicrank;suite">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition>A formal lithodemic unit next higher in rank to lithodeme. It comprises two or more associated lithodemes of the same class (e.g., plutonic, metamorphic).</skos:definition>
+        <dc:source>North American Commission on Stratigraphic Nomenclature, 2005</dc:source>
+        <skos:prefLabel xml:lang="en">Suite</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&stratigraphicrank;0011"/>
+        <skos:related rdf:resource="&stratigraphicrank;group"/>
+        <skos:narrower rdf:resource="&stratigraphicrank;lithodeme"/>
+        <skos:related rdf:resource="&stratigraphicrank;supersequence"/>
+        <skos:broader rdf:resource="&stratigraphicrank;supersuite"/>
+        <skos:inScheme rdf:resource="&cgi;stratigraphicrank"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supergroup -->
+
+    <skos:Concept rdf:about="&stratigraphicrank;supergroup">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition>A supergroup is a formal assemblage of related or superposed groups or of groups and formations</skos:definition>
+        <dc:source>North American Commission on Stratigraphic Nomenclature, 2005; Salvador, 1994</dc:source>
+        <skos:prefLabel xml:lang="en">Supergroup</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&stratigraphicrank;0012"/>
+        <skos:narrowerTransitive rdf:resource="&stratigraphicrank;formation"/>
+        <skos:narrower rdf:resource="&stratigraphicrank;group"/>
+        <skos:narrowerTransitive rdf:resource="&stratigraphicrank;subgroup"/>
+        <skos:related rdf:resource="&stratigraphicrank;supersuite"/>
+        <skos:inScheme rdf:resource="&cgi;stratigraphicrank"/>
+        <skos:topConceptOf rdf:resource="&cgi;stratigraphicrank"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supersequence -->
+
+    <skos:Concept rdf:about="&stratigraphicrank;supersequence">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>Haq, B.U., Hardenbol, J., and Vail, P.R., 1988, Mesozoic and Cenozoic chronostratigraphy an dcycles of sea-level changes, in Wilgus, C.K., et al., eds, Sea-level Changes: an Integrated Approach: Society of Sedimentary Geology Special Publication 42, p. 71-108.</dc:source>
+        <skos:definition>A succession of strata comprising two or more sequences</skos:definition>
+        <skos:prefLabel xml:lang="en">Supersequence</skos:prefLabel>
+        <rdfs:seeAlso>http://www.sepmstrata.org/terminology/seq-strat.html</rdfs:seeAlso>
+        <skos:exactMatch rdf:resource="&stratigraphicrank;0013"/>
+        <skos:broader rdf:resource="&stratigraphicrank;megasequence"/>
+        <skos:narrower rdf:resource="&stratigraphicrank;sequence"/>
+        <skos:related rdf:resource="&stratigraphicrank;suite"/>
+        <skos:inScheme rdf:resource="&cgi;stratigraphicrank"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supersuite -->
+
+    <skos:Concept rdf:about="&stratigraphicrank;supersuite">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition>A formal lithodemic unit next higher in rank to suite. It comprises two or more suites having a degree of natural relationship to one another</skos:definition>
+        <dc:source>North American Commission on Stratigraphic Nomenclature, 2005</dc:source>
+        <skos:prefLabel xml:lang="en">Supersuite</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&stratigraphicrank;0014"/>
+        <skos:narrowerTransitive rdf:resource="&stratigraphicrank;lithodeme"/>
+        <skos:related rdf:resource="&stratigraphicrank;megasequence"/>
+        <skos:narrower rdf:resource="&stratigraphicrank;suite"/>
+        <skos:related rdf:resource="&stratigraphicrank;supergroup"/>
+        <skos:inScheme rdf:resource="&cgi;stratigraphicrank"/>
+        <skos:topConceptOf rdf:resource="&cgi;stratigraphicrank"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifierscheme/cgi/201202/stratigraphicrank -->
+
+    <skos:ConceptScheme rdf:about="&cgi;stratigraphicrank">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:changeNote xml:lang="en">2009-12-07 SMR Update metadata properties for version, creator, title, and format.  Change skos:HistoryNote to dc:source for information on origin of terms and definitions.</skos:changeNote>
+        <skos:prefLabel xml:lang="en">CGI Stratigraphic Rank Term Vocabulary</skos:prefLabel>
+        <skos:definition xml:lang="en">This file contains the CGI StratigraphicRank vocabulary. This vocabulary contains categories used to classify geologic units in a generalization hierarchy from most local/smallest volume to most regional. Examples: group, subgroup, formation, member. No parent links because relation between e.g. formation and group is not &#39;is a&#39; it is &#39;part of&#39;. All formations are not groups, and a formation is not necessarily part of a group, therefore group is not a broader term than formation.</skos:definition>
+        <skos:hasTopConcept rdf:resource="&stratigraphicrank;complex"/>
+        <skos:hasTopConcept rdf:resource="&stratigraphicrank;megasequence"/>
+        <skos:hasTopConcept rdf:resource="&stratigraphicrank;rank_not_specified"/>
+        <skos:hasTopConcept rdf:resource="&stratigraphicrank;supergroup"/>
+        <skos:hasTopConcept rdf:resource="&stratigraphicrank;supersuite"/>
+    </skos:ConceptScheme>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Collection -->
+
+    <owl:Thing rdf:about="&skos;Collection">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">Collection</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">A meaningful collection of concepts.</skos:definition>
+        <rdfs:comment xml:lang="en">Labelled collections can be used with collectable semantic relation
+      properties e.g. skos:narrower, where you would like a set of concepts to be displayed under a
+      &#39;node label&#39; in the hierarchy.</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Thing rdf:about="&skos;Concept">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">Concept</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">An abstract idea or notion; a unit of thought.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Thing rdf:about="&skos;ConceptScheme">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">Concept Scheme</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">A concept scheme may be defined to include concepts from different
+      sources.</rdfs:comment>
+        <skos:definition xml:lang="en">A set of concepts, optionally including statements about semantic
+      relationships between those concepts.</skos:definition>
+        <skos:definition xml:lang="en">A set of concepts, optionally including statements about semanticn      relationships between those concepts.</skos:definition>
+        <rdfs:comment xml:lang="en">Thesauri, classification schemes, subject heading lists, taxonomies,
+      &#39;folksonomies&#39;, and other types of controlled vocabulary are all examples of concept schemes.
+      Concept schemes are also embedded in glossaries and terminologies.</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#OrderedCollection -->
+
+    <owl:Thing rdf:about="&skos;OrderedCollection">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">Ordered Collection</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">An ordered collection of concepts, where both the grouping and
+      the ordering are meaningful.</skos:definition>
+        <skos:definition xml:lang="en">An ordered collection of concepts, where both the grouping andn      the ordering are meaningful.</skos:definition>
+        <rdfs:comment xml:lang="en">Ordered collections can be used where you would like a set of concepts to be displayed in a specific order, and optionally under a &#39;node label&#39;.</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:Thing rdf:about="&skos;altLabel">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <skos:definition xml:lang="en">An alternative lexical label for a resource.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broadMatch -->
+
+    <owl:Thing rdf:about="&skos;broadMatch">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">broader match</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">skos:broadMatch is used to state a hierarchical mapping link
+      between two conceptual resources in different concept schemes.</skos:definition>
+        <skos:definition xml:lang="en">skos:broadMatch is used to state a hierarchical mapping linkn      between two conceptual resources in different concept schemes.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:Thing rdf:about="&skos;broader">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">has broader</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">A concept that is more general in meaning.</skos:definition>
+        <rdfs:comment xml:lang="en">Broader concepts are typically rendered as parents in a concept
+      hierarchy (tree).</rdfs:comment>
+        <rdfs:comment xml:lang="en">By convention, skos:broader is only used to assert an immediate
+      (i.e. direct) hierarchical link between two conceptual resources.</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broaderTransitive -->
+
+    <owl:Thing rdf:about="&skos;broaderTransitive">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">broader transitive</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition>skos:broaderTransitive is a transitive superproperty of skos:broader.</skos:definition>
+        <rdfs:comment xml:lang="en">By convention, skos:broaderTransitive is not used to make
+      assertions. Rather, the properties can be used to draw inferences about the transitive closure
+      of the hierarchical relation, which is useful e.g. when implementing a simple query expansion
+      algorithm in a search application.</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
+
+    <owl:Thing rdf:about="&skos;changeNote">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <skos:definition xml:lang="en">A note about a modification to a concept.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:Thing rdf:about="&skos;closeMatch">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">close match</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">skos:closeMatch is used to link two concepts that are
+      sufficiently similar that they can be used interchangeably in some information retrieval
+      applications. In order to avoid the possibility of &quot;compound errors&quot; when combining mappings
+      across more than two concept schemes, skos:closeMatch is not declared to be a transitive
+      property.</skos:definition>
+        <skos:definition xml:lang="en">skos:closeMatch is used to link two concepts that aren      sufficiently similar that they can be used interchangeably in some information retrievaln      applications. In order to avoid the possibility of \&quot;compound errors\&quot; when combining mappingsn      across more than two concept schemes, skos:closeMatch is not declared to be a transitiven      property.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:Thing rdf:about="&skos;definition">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">A statement or formal explanation of the meaning of a concept.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#editorialNote -->
+
+    <owl:Thing rdf:about="&skos;editorialNote">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <skos:definition xml:lang="en">A note for an editor, translator or maintainer of the vocabulary.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:Thing rdf:about="&skos;exactMatch">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">exact match</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">skos:exactMatch is disjoint with each of the properties
+      skos:broadMatch and skos:relatedMatch.</rdfs:comment>
+        <skos:definition xml:lang="en">skos:exactMatch is used to link two concepts, indicating a high
+      degree of confidence that the concepts can be used interchangeably across a wide range of
+      information retrieval applications. skos:exactMatch is a transitive property, and is a
+      sub-property of skos:closeMatch.</skos:definition>
+        <skos:definition xml:lang="en">skos:exactMatch is used to link two concepts, indicating a highn      degree of confidence that the concepts can be used interchangeably across a wide range ofn      information retrieval applications. skos:exactMatch is a transitive property, and is an      sub-property of skos:closeMatch.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:Thing rdf:about="&skos;example">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <skos:definition xml:lang="en">An example of the use of a concept.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+    <owl:Thing rdf:about="&skos;hasTopConcept">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">has top concept</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">A top level concept in the concept scheme.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hiddenLabel -->
+
+    <owl:Thing rdf:about="&skos;hiddenLabel">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <skos:definition xml:lang="en">A lexical label for a resource that should be hidden when
+      generating visual displays of the resource, but should still be accessible to free text search
+      operations.</skos:definition>
+        <skos:definition xml:lang="en">A lexical label for a resource that should be hidden whenn      generating visual displays of the resource, but should still be accessible to free text searchn      operations.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+    <owl:Thing rdf:about="&skos;historyNote">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <skos:definition xml:lang="en">A note about the past state/use/meaning of a concept.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:Thing rdf:about="&skos;inScheme">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">in scheme</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">A concept may be a member of more than one concept scheme.</rdfs:comment>
+        <skos:definition xml:lang="en">A concept scheme in which the concept is included.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#mappingRelation -->
+
+    <owl:Thing rdf:about="&skos;mappingRelation">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">mapping relation</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">Definition</skos:definition>
+        <rdfs:comment xml:lang="en">These concept mapping relations mirror semantic relations, and the
+      data model defined below is similar (with the exception of skos:exactMatch) to the data model
+      defined for semantic relations. A distinct vocabulary is provided for concept mapping
+      relations, to provide a convenient way to differentiate links within a concept scheme from
+      links between concept schemes. However, this pattern of usage is not a formal requirement of
+      the SKOS data model, and relies on informal definitions of best practice.</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#member -->
+
+    <owl:Thing rdf:about="&skos;member">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">member</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">A member of a collection.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#memberList -->
+
+    <owl:Thing rdf:about="&skos;memberList">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">member list</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">An RDF list containing the members of an ordered collection.</skos:definition>
+        <rdfs:comment xml:lang="en">For any resource, every item in the list given as the value of the
+      skos:memberList property is also a value of the skos:member property.</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrowMatch -->
+
+    <owl:Thing rdf:about="&skos;narrowMatch">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">narrower match</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">skos:narrowMatch is used to state a hierarchical mapping link
+      between two conceptual resources in different concept schemes.</skos:definition>
+        <skos:definition xml:lang="en">skos:narrowMatch is used to state a hierarchical mapping linkn      between two conceptual resources in different concept schemes.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+    <owl:Thing rdf:about="&skos;narrower">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">has narrower</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">A concept that is more specific in meaning.</skos:definition>
+        <rdfs:comment xml:lang="en">By convention, skos:broader is only used to assert an immediate
+      (i.e. direct) hierarchical link between two conceptual resources.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Narrower concepts are typically rendered as children in a concept
+      hierarchy (tree).</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrowerTransitive -->
+
+    <owl:Thing rdf:about="&skos;narrowerTransitive">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">narrower transitive</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">By convention, skos:narrowerTransitive is not used to make
+      assertions. Rather, the properties can be used to draw inferences about the transitive closure
+      of the hierarchical relation, which is useful e.g. when implementing a simple query expansion
+      algorithm in a search application.</rdfs:comment>
+        <skos:definition>skos:narrowerTransitive is a transitive superproperty of skos:broader. By
+      convention, skos:narrowerTransitive is not intended to be used in assertions, but provides a
+      mechanism whereby the transitive closure of skos:narrower can be queried.</skos:definition>
+        <skos:definition>skos:narrowerTransitive is a transitive superproperty of skos:broader. Byn      convention, skos:narrowerTransitive is not intended to be used in assertions, but provides an      mechanism whereby the transitive closure of skos:narrower can be queried.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:Thing rdf:about="&skos;notation">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">notation</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">A notation, also known as classification code, is a string of
+      characters such as &quot;T58.5&quot; or &quot;303.4833&quot; used to uniquely identify a concept within the scope
+      of a given concept scheme.</skos:definition>
+        <skos:definition xml:lang="en">A notation, also known as classification code, is a string ofn      characters such as \&quot;T58.5\&quot; or \&quot;303.4833\&quot; used to uniquely identify a concept within the scopen      of a given concept scheme.</skos:definition>
+        <rdfs:comment xml:lang="en">By convention, skos:notation is used with a typed literal in the
+      object position of the triple.</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+    <owl:Thing rdf:about="&skos;note">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <skos:definition xml:lang="en">A general note, for any purpose.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:Thing rdf:about="&skos;prefLabel">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <skos:definition xml:lang="en">The preferred lexical label for a resource, in a given language.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#related -->
+
+    <owl:Thing rdf:about="&skos;related">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">related to</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">A concept with which there is an associative semantic
+      relationship.</skos:definition>
+        <skos:definition xml:lang="en">A concept with which there is an associative semanticn      relationship.</skos:definition>
+        <rdfs:comment xml:lang="en">skos:related is disjoint with skos:broaderTransitive</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#relatedMatch -->
+
+    <owl:Thing rdf:about="&skos;relatedMatch">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">related match</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">skos:relatedMatch is used to state an associative mapping link
+      between two conceptual resources in different concept schemes.</skos:definition>
+        <skos:definition xml:lang="en">skos:relatedMatch is used to state an associative mapping linkn      between two conceptual resources in different concept schemes.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
+
+    <owl:Thing rdf:about="&skos;scopeNote">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <skos:definition xml:lang="en">A note that helps to clarify the meaning of a concept.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#semanticRelation -->
+
+    <owl:Thing rdf:about="&skos;semanticRelation">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">semantic relation</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">A concept related by meaning.</skos:definition>
+        <rdfs:comment xml:lang="en">This property should not be used directly, but as a super-property
+      for all properties denoting a relationship of meaning between concepts.</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+    <owl:Thing rdf:about="&skos;topConceptOf">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">top concept in scheme</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">Relates a concept to the concept scheme in which it is a top level concept.</skos:definition>
+    </owl:Thing>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

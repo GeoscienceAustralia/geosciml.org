@@ -1,0 +1,847 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Title: CGI Geologic unit type vocabulary</title>
+	</head>
+	<body>
+		<style type="text/css">
+body { font-size:10pt;
+       font-style: normal;
+	   font-family: Verdana;
+	 }
+
+a {
+  	text-decoration: none;
+}
+	 
+table.ABOUT {
+	border:  1px solid #8A8;
+    margin:  2px;
+    padding: 2px;
+    margin-bottom: 10px;
+    background-color: #EEF
+}
+
+.FIELD-HEADERS {
+}
+
+.FIELD-VALUE {
+    font-weight: bold;
+    background-color: #EEF
+}
+
+.CONCEPT-FIELD {
+    background-color: #FEE;
+	white-space:nowrap;
+}
+
+.SUBHEADER {
+	font-weight: bold;
+	color: brown;
+}
+
+.SN {
+    background-color: #EEF
+}
+
+.PREF {
+    font-weight: bold;
+}
+
+.URI {
+    color: blue;
+}
+
+.conceptURI {
+    color: brown;
+}
+
+.STATUS {
+    color: darkgreen;
+}
+
+.ALT {
+}
+
+.HID {
+   color:grey
+}
+                </style>
+		<h1><a name="top"></a>CGI Geologic unit type vocabulary</h1>
+		<table class="ABOUT">
+			<tbody>
+				<tr>
+					<td class="FIELD-HEADERS">format:</td>
+					<td class="FIELD-VALUE">application/rdf+xml</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">publisher:</td>
+					<td class="FIELD-VALUE">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">title:</td>
+					<td class="FIELD-VALUE">CGI Geologic unit type vocabulary</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">creator:</td>
+					<td class="FIELD-VALUE">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">identifier:</td>
+					<td class="FIELD-VALUE">http://resource.geosciml.org/classifierscheme/cgi/201107/geologicunittype</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">language:</td>
+					<td class="FIELD-VALUE">en</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="ABOUT">
+			<tbody>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet.</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">2009-12-07 SMR Update metadata properties for version, creator, title, and format.  Change skos:HistoryNote to dc:source for information on origin of terms and definitions.</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">changeNote:</td>
+					<td class="FIELD-VALUE">2009-12-07 SMR Update metadata properties for version, creator, title, and format.  Change skos:HistoryNote to dc:source for information on origin of terms and definitions.</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">2009-12-07. SMR add collections for mineralogical and sedimentary petrographic categories, improve annotation and notes on vocabulary.</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">2010-02-13 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege.</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">2010-02-13 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using \'file/Export inferred axioms as ontology\' in Protege.</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">2010-11-28 SMR replace URN with http URI according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">2011-07-01 SMR correct logical inconsistencies in hierarchy; lithostratigraphic is not subtype of lithologic unit; lithogenetic is subtype of lithostratigraphic. Based on review comments from OR, Geoscience Australia</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">prefLabel:</td>
+					<td class="FIELD-VALUE">CGI Geologic unit type vocabulary</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">definition:</td>
+					<td class="FIELD-VALUE">This file contains the CGI Geologic Unit type vocabulary. Unit types are differentiated based on the defining properties.</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">hasTopConcept:</td>
+					<td class="FIELD-VALUE"></td>
+				</tr>
+			</tbody>
+		</table>
+		<ul>
+			<li class="TERM-TOP"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunittype/0008">Top Concept:  -- Geologic Unit -- </a><ul>
+					<li><a href="#http://resource.geosciml.org/classifier/cgi/geologicunittype/0001">  -- Allostratigraphic Unit -- </a></li>
+					<li><a href="#http://resource.geosciml.org/classifier/cgi/geologicunittype/0002">  -- Alteration Unit -- </a></li>
+					<li><a href="#http://resource.geosciml.org/classifier/cgi/geologicunittype/0004">  -- Biostratigraphic Unit -- </a></li>
+					<li><a href="#http://resource.geosciml.org/classifier/cgi/geologicunittype/0005">  -- Chronostratigraphic Unit -- </a></li>
+					<li><a href="#http://resource.geosciml.org/classifier/cgi/geologicunittype/0009">  -- Geomorphologic Unit -- </a></li>
+					<li><a href="#http://resource.geosciml.org/classifier/cgi/geologicunittype/0010">  -- Geophysical Unit -- </a></li>
+					<li><a href="#http://resource.geosciml.org/classifier/cgi/geologicunittype/0012">  -- Lithogenetic Unit -- </a></li>
+					<li><a href="#http://resource.geosciml.org/classifier/cgi/geologicunittype/0013">  -- Lithologic Unit -- </a></li>
+					<li><a href="#http://resource.geosciml.org/classifier/cgi/geologicunittype/0014">  -- Lithostratigraphic Unit -- </a></li>
+					<li><a href="#http://resource.geosciml.org/classifier/cgi/geologicunittype/0015">  -- Lithotectonic Unit -- </a></li>
+					<li><a href="#http://resource.geosciml.org/classifier/cgi/geologicunittype/0018">  -- Pedoderm -- </a></li>
+					<li><a href="#http://resource.geosciml.org/classifier/cgi/geologicunittype/0019">  -- Pedostratigraphic Unit -- </a></li>
+					<li><a href="#http://resource.geosciml.org/classifier/cgi/geologicunittype/0020">  -- Polarity Chronostratigraphic Unit -- </a></li>
+				</ul>
+			</li>
+		</ul><a name="http://resource.geosciml.org/classifier/cgi/geologicunittype/0001"></a><h2><a href="#top">⇑</a> -- Allostratigraphic Unit -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunittype/0001</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Allostratigraphic Unit</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Geologic unit defined by bounding surfaces. Not necessarily stratified. Donovon (2004, IUGS abstract Florence) makes good case for use of a noncommittal term for the bounding surface. “While there may be no agreement that a given stratal boundary is a discontinuity, there is consensus that all the identified boundaries are stratal surfaces.” Includes: 1. Unconformity bounded units (Salvador 1994), defined by bounding stratigraphic discontinuities ('significant unconformities'; unconformity is defined as surface of erosion in Salvador 1994). 2. Sequence stratigraphic unit, an allostratigraphic unit that is used to interpret the depositional origin of sedimentary strata and assumes, though this is not always stated, an implicit connection to base level change. It does this by establishing how the sequence of strata accumulated in order in the sedimentary section over a subdividing framework of surfaces.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Geologic unit defined by bounding surfaces. Not necessarily stratified. Donovon (2004, IUGS abstract Florence) makes good case for use of a noncommittal term for the bounding surface. \°34While there may be no agreement that a given stratal boundary is a discontinuity, there is consensus that all the identified boundaries are stratal surfaces.\°35 Includes: 1. Unconformity bounded units (Salvador 1994), defined by bounding stratigraphic discontinuities (\'significant unconformities\'; unconformity is defined as surface of erosion in Salvador 1994). 2. Sequence stratigraphic unit, an allostratigraphic unit that is used to interpret the depositional origin of sedimentary strata and assumes, though this is not always stated, an implicit connection to base level change. It does this by establishing how the sequence of strata accumulated in order in the sedimentary section over a subdividing framework of surfaces.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">This vocabulary; Salvador, 1994; Donovon 2004 IUGS abstract.</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0008">http://resource.geosciml.org/classifier/cgi/geologicunittype/0008</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunittype/0002"></a><h2><a href="#top">⇑</a> -- Alteration Unit -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunittype/0002</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Alteration Unit</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Geologic unit defined by alteration process.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">This vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0008">http://resource.geosciml.org/classifier/cgi/geologicunittype/0008</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunittype/0003"></a><h2><a href="#top">⇑</a> -- Artificial Ground -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunittype/0003</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Artificial Ground</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Geologic unit defined by genesis involving direct human action to deposit or modify material.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0012">http://resource.geosciml.org/classifier/cgi/geologicunittype/0012</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunittype/0004"></a><h2><a href="#top">⇑</a> -- Biostratigraphic Unit -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunittype/0004</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Biostratigraphic Unit</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Geologic unit defined based on fossil content. Five kinds of biozones are recognized by the revised NACSN (Lenz et al., 2000, Note 64, a recommended complete replacement of Articles 48 through 54 of the North American Stratigraphic Code (NACSN, 1983) accepted for publication 2000.): range biozone, interval biozone, lineage biozone, assemblage biozone, and abundance biozone. These represent different approaches to defining and recognizing biozones.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">Lenz et al., 2000, Note 64 (see AAPG Bulletin, v. 89, no. 11, November 2005); North American Stratigraphic Code, 1983</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0008">http://resource.geosciml.org/classifier/cgi/geologicunittype/0008</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunittype/0005"></a><h2><a href="#top">⇑</a> -- Chronostratigraphic Unit -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunittype/0005</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Chronostratigraphic Unit</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Geologic unit that includes all rocks formed during a specific interval of geologic time</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">Salvador, A., 1994, International Stratigraphic Guide, Second Edition</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0008">http://resource.geosciml.org/classifier/cgi/geologicunittype/0008</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunittype/0006"></a><h2><a href="#top">⇑</a> -- Deformation Unit -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunittype/0006</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Deformation Unit</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Lithotectonic unit defined by deformation style or characteristic geologic structure observable in outcrop.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0015">http://resource.geosciml.org/classifier/cgi/geologicunittype/0015</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunittype/0007"></a><h2><a href="#top">⇑</a> -- Excavation Unit -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunittype/0007</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Excavation Unit</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Geologic unit defined by human-made genesis involving excavation. Not necessarily defined by landform (a hole...), as they could have been subsequently filled/landscaped etc. If the excavation is filled becomes an excavation with artificial ground wholly or partly superimposed on it. This sort of thing can become quite important in urban geology where an excavation can be filled and landscaped.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0012">http://resource.geosciml.org/classifier/cgi/geologicunittype/0012</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunittype/0008"></a><h2><a href="#top">⇑</a> -- Geologic Unit -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunittype/0008</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Geologic Unit</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Type of geologic unit is unknown, unspecified, irrelevant, or some type not included in the vocabulary. Type makes no implication for required properties or cardinalities. This is the root concept for the type hierarchy.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0001">http://resource.geosciml.org/classifier/cgi/geologicunittype/0001</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0002">http://resource.geosciml.org/classifier/cgi/geologicunittype/0002</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0004">http://resource.geosciml.org/classifier/cgi/geologicunittype/0004</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0005">http://resource.geosciml.org/classifier/cgi/geologicunittype/0005</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0009">http://resource.geosciml.org/classifier/cgi/geologicunittype/0009</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0010">http://resource.geosciml.org/classifier/cgi/geologicunittype/0010</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0012">http://resource.geosciml.org/classifier/cgi/geologicunittype/0012</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0013">http://resource.geosciml.org/classifier/cgi/geologicunittype/0013</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0014">http://resource.geosciml.org/classifier/cgi/geologicunittype/0014</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0015">http://resource.geosciml.org/classifier/cgi/geologicunittype/0015</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0018">http://resource.geosciml.org/classifier/cgi/geologicunittype/0018</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0019">http://resource.geosciml.org/classifier/cgi/geologicunittype/0019</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0020">http://resource.geosciml.org/classifier/cgi/geologicunittype/0020</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunittype/0009"></a><h2><a href="#top">⇑</a> -- Geomorphologic Unit -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunittype/0009</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Geomorphologic Unit</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Geologic unit defined by surface landform, e.g. hummocky moraine</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0008">http://resource.geosciml.org/classifier/cgi/geologicunittype/0008</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Comment (en)</td>
+					<td class="SN">This vocabulary</td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunittype/0010"></a><h2><a href="#top">⇑</a> -- Geophysical Unit -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunittype/0010</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Geophysical Unit</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Geologic unit defined by its geophysical characteristics. Denotes that the properties used to define the unit are measured by intrumental techniques, not directly observable by humans, e.g. density, magnetic susceptibility, magnetization, electrical conductivity.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0008">http://resource.geosciml.org/classifier/cgi/geologicunittype/0008</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0016">http://resource.geosciml.org/classifier/cgi/geologicunittype/0016</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunittype/0011"></a><h2><a href="#top">⇑</a> -- Lithodemic Unit -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunittype/0011</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Lithodemic Unit</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Lithostratigraphic unit that lacks stratification</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">North American Commission on Stratigraphic Nomenclature, 1983</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0014">http://resource.geosciml.org/classifier/cgi/geologicunittype/0014</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunittype/0012"></a><h2><a href="#top">⇑</a> -- Lithogenetic Unit -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunittype/0012</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Lithogenetic Unit</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Geologic unit defined by genesis. The genesis is manifested by material properties, but the material is not the defining property. Example-- alluvial deposits, glacial deposits.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0008">http://resource.geosciml.org/classifier/cgi/geologicunittype/0008</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0003">http://resource.geosciml.org/classifier/cgi/geologicunittype/0003</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0007">http://resource.geosciml.org/classifier/cgi/geologicunittype/0007</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0017">http://resource.geosciml.org/classifier/cgi/geologicunittype/0017</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunittype/0013"></a><h2><a href="#top">⇑</a> -- Lithologic Unit -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunittype/0013</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Lithologic Unit</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Geologic unit defined by lithology independent of relationships to other units. Denotes a \'kind\' of rock body characterized by lithology, e.g. basaltic rocks.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Geologic unit defined by lithology independent of relationships to other units. Denotes a 'kind' of rock body characterized by lithology, e.g. basaltic rocks.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0008">http://resource.geosciml.org/classifier/cgi/geologicunittype/0008</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunittype/0014"></a><h2><a href="#top">⇑</a> -- Lithostratigraphic Unit -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunittype/0014</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Lithostratigraphic Unit</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Geologic unit defined on the basis of observable and distinctive lithologic properties or combination of lithologic properties and stratigraphic relationships. Denotes a particular body of rock.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">Salvador, A., 1994, International Stratigraphic Guide, Second Edition</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0008">http://resource.geosciml.org/classifier/cgi/geologicunittype/0008</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0011">http://resource.geosciml.org/classifier/cgi/geologicunittype/0011</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunittype/0015"></a><h2><a href="#top">⇑</a> -- Lithotectonic Unit -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunittype/0015</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Lithotectonic Unit</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Geologic unit defined defined on basis of structural or deformation features, mutual relations, origin or historical evolution. Contained material may be igneous, sedimentary, or metamorphic.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">Neuendorf et al., 2004</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0008">http://resource.geosciml.org/classifier/cgi/geologicunittype/0008</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0006">http://resource.geosciml.org/classifier/cgi/geologicunittype/0006</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunittype/0016"></a><h2><a href="#top">⇑</a> -- Magnetostratigraphic Unit -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunittype/0016</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Magnetostratigraphic Unit</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Geologic unit defined by magnetic characteristics.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">Salvador, A., 1994, International Stratigraphic Guide, Second Edition</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0010">http://resource.geosciml.org/classifier/cgi/geologicunittype/0010</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunittype/0017"></a><h2><a href="#top">⇑</a> -- Mass Movement Unit -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunittype/0017</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Mass Movement Unit</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Geologic unit produced by gravity driven, down-slope displacemnt of material, and characterized by the type of movement giving rise to the deposit, and by how the individual movement types present in the deposit are related in time and space.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0012">http://resource.geosciml.org/classifier/cgi/geologicunittype/0012</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunittype/0018"></a><h2><a href="#top">⇑</a> -- Pedoderm -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunittype/0018</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Pedoderm</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Geologic unit defined based on soil development and character. Pedoderm is not a surface classification unit because soil classification requires knowledge of the soil profile, which always extends some distance beneath the surface.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0008">http://resource.geosciml.org/classifier/cgi/geologicunittype/0008</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunittype/0019"></a><h2><a href="#top">⇑</a> -- Pedostratigraphic Unit -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunittype/0019</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Pedostratigraphic Unit</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Geologic unit that represents a single pedologic horizon in a sequence of strata (consolidated or non-consolidated). The presence of an overlying geologic unit is required, but locally the soil horizon may be at the Earth surface (in which case is may be coincident with a Pedoderm). See discussion at https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PedostratigraphicUnit</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">North American Commission on Stratigraphic Nomenclature, 1983; Morrison, 1995, INQUA/ISSS newsletter, Nov. 1995, http://fadr.msu.ru/inqua/nl-archive/nl-8-11/howcan.html, ISSN 0256-2340.</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0008">http://resource.geosciml.org/classifier/cgi/geologicunittype/0008</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunittype/0020"></a><h2><a href="#top">⇑</a> -- Polarity Chronostratigraphic Unit -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunittype/0020</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Polarity Chronostratigraphic Unit</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Geologic unit defined by primary magnetic-polarity record imposed whien the rock was deposited or crystallized during a specific interval of geolgoic time. Kind of chronostratigraphic unit and kind of geophysical unit.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">North American Commission on Stratigraphic Nomenclature, 1983</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifierscheme/cgi/201012/geologicunittype#http://resource.geosciml.org/classifier/cgi/geologicunittype/0008">http://resource.geosciml.org/classifier/cgi/geologicunittype/0008</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

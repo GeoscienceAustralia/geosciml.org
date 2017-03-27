@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:gtwg="http://resource.geosciml.org/authority/cgi/gtwg"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://resource.geosciml.org/classifierscheme/cgi/201401/mineral-occurrence-type">
+  <owl:Ontology rdf:about="http://resource.geosciml.org/static/vocabulary/earthresourceml/2014/MineralOccurrenceType.rdf">
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <dc:creator>CGI Geoscience Terminology Working Group</dc:creator>
+    <dc:date>2014-01-09T00:00:00.000</dc:date>
+    <skos:editorialNote>This file contains the 201401 version of CGI Mineral Occurrence Type Vocabulary, which defines concepts to categorize the type of mineral occurrence. Examples are prospect, occurrence, mineral deposit, ore deposit, field, district, lode, mineralized zone(?). In the ERML model, a MineralOccurrence is a kind of EarthResource that is categorized by a MineralOccurrenceType (this vocabulary), and has at least one end use potential. </skos:editorialNote>
+    <skos:changeNote>Vocabulary Shepherd: Rachel Heaven/Tim McCormick. Compilation and review in Google doc spreadsheet, converted to MS Excel XML for SKOS generation using GSML_SKOS_from_XLS_2013.xslt; Conversion to SKOS by SM Richard 2014-02-23. </skos:changeNote>
+    <skos:changeNote>Edits to fix typos and remove '201401' from rdf file name. Ollie Raymond 8-Jan-2015</skos:changeNote>
+  </owl:Ontology>
+  <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/201401/mineral-occurrence-type">
+    <skos:definition xml:lang="en">This resource defines the concept space for Mineral occurrrence type vocabulary  concepts by extension; it includes all concepts in this conceptScheme, as well as concepts in previous versions of the scheme.</skos:definition>
+    <skos:prefLabel xml:lang="en">Mineral Occurrrence Type vocabulary</skos:prefLabel>
+    <dc:creator xml:lang="en">CGI Geoscience Terminology Working Group</dc:creator>
+  </skos:ConceptScheme>
+  <skos:Collection rdf:about="http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/">
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/deposit">
+        <dc:source xml:lang="en">this vocabulary, modified from Neuendorf et al., 2005 (AGI Glossary)</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.1..</skos:notation>
+        <skos:broader>
+          <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/occurrence">
+            <dc:source xml:lang="en">this vocabulary, modified from Neuendorf et al., 2005 (AGI Glossary)</dc:source>
+            <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01..</skos:notation>
+            <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mineral-occurrence-type"/>
+            <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/mineral-occurrence-type">occurrence</skos:notation>
+            <skos:altLabel xml:lang="en">showing</skos:altLabel>
+            <skos:prefLabel xml:lang="en">occurrence</skos:prefLabel>
+            <skos:definition>A location at which a mineral or rock that has some potential end use is present in any concentration, in outcrop or float.</skos:definition>
+            <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mineral-occurrence-type"/>
+          </skos:Concept>
+        </skos:broader>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/mineral-occurrence-type">deposit</skos:notation>
+        <skos:prefLabel xml:lang="en">deposit</skos:prefLabel>
+        <skos:definition>A mass of naturally occurring material in the Earth that contains an anomalous concentration of some mineral or rock type that has some potential for human utilization, without regard to mode of origin. Typically is a single, connected, genetically related body of material.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mineral-occurrence-type"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/mineralized-zone">
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">02..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mineral-occurrence-type"/>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/mineral-occurrence-type">mineralized-zone</skos:notation>
+        <skos:prefLabel xml:lang="en">mineralized zone</skos:prefLabel>
+        <skos:definition>A coherent zone of mineralized material within a mineral deposit. This may correspond to a lode, or vein, or orebody, or any similar subdivision of a larger mineral deposit.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mineral-occurrence-type"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/field">
+        <skos:altLabel xml:lang="en">district</skos:altLabel>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">04..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mineral-occurrence-type"/>
+        <skos:definition>An area characterized by one or more mineral occurrences that are geologically related.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mineral-occurrence-type"/>
+        <skos:altLabel xml:lang="en">camp</skos:altLabel>
+        <skos:prefLabel xml:lang="en">field</skos:prefLabel>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/mineral-occurrence-type">field</skos:notation>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/prospect">
+        <dc:source xml:lang="en">this vocabulary, modified from Neuendorf et al., 2005 (AGI Glossary)</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mineral-occurrence-type"/>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/mineral-occurrence-type">prospect</skos:notation>
+        <skos:prefLabel xml:lang="en">prospect</skos:prefLabel>
+        <skos:definition>A location identified as a potential site of a mineral deposit.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mineral-occurrence-type"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/occurrence"/>
+    <rdfs:label xml:lang="en">Mineral Occurrrence Type vocabulary</rdfs:label>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/province">
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">06..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mineral-occurrence-type"/>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/mineral-occurrence-type">province</skos:notation>
+        <skos:altLabel xml:lang="en">metallogenic province</skos:altLabel>
+        <skos:prefLabel xml:lang="en">province</skos:prefLabel>
+        <skos:definition>A regional geological province characterized by mineral occurrences and/or prospects of similar style (eg, related by commodities, mineralization process, environment).</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mineral-occurrence-type"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/project">
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">05..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mineral-occurrence-type"/>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/mineral-occurrence-type">project</skos:notation>
+        <skos:prefLabel xml:lang="en">project</skos:prefLabel>
+        <skos:definition>An informal grouping of mineral deposits that is commonly used by mining or exploration companies in reporting exploration results, resources/reserves, and production figures.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mineral-occurrence-type"/>
+      </skos:Concept>
+    </skos:member>
+  </skos:Collection>
+</rdf:RDF>

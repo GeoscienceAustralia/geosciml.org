@@ -1,0 +1,22 @@
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix dpr: <http://promsns.org/def/dpr#> .
+@prefix gapd: <http://pid.geoscience.gov.au/def/ont/gapd#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<http://resource.geosciml.org/dataset/> a dpr:FederatedRegister;
+	rdfs:label "CGI's Dataset register"@en;
+	rdfs:comment "This is CGI's dataset register. It is a federated register as it contains multiple subregisters. It is not yet a Linked Data reigster but will be soon."@en;
+	dpr:isLDR "false"^^xsd:boolean;
+	reg:subregister <http://resource.geosciml.org/classifier/cgi/>;
+	reg:containedItemClass dcat:Dataset;
+.
+
+

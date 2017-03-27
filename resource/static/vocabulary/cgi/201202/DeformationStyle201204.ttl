@@ -1,0 +1,305 @@
+@prefix cgi: <http://resource.geosciml.org/classifierscheme/cgi/201204/> .
+@prefix deformationstyle: <http://resource.geosciml.org/classifier/cgi/deformationstyle/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix : <http://resource.geosciml.org/classifierscheme/cgi/201204/deformationstyle#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://resource.geosciml.org/classifierscheme/cgi/201204/deformationstyle> .
+
+<http://resource.geosciml.org/classifierscheme/cgi/201204/deformationstyle> rdf:type owl:Ontology ;
+                                                                            
+                                                                            dc:publisher "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)" ;
+                                                                            
+                                                                            owl:versionInfo "201204" ;
+                                                                            
+                                                                            dc:title "CGI deformation style vocabulary"@en ;
+                                                                            
+                                                                            dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)" ;
+                                                                            
+                                                                            dc:identifier "http://resource.geosciml.org/classifierscheme/cgi/201204/deformationstyle" ;
+                                                                            
+                                                                            dc:language "en" ;
+                                                                            
+                                                                            dc:format "text/turtle" ;
+                                                                            
+                                                                            owl:imports <http://www.w3.org/2004/02/skos/core> .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+
+dc:publisher rdf:type owl:AnnotationProperty .
+
+
+
+dc:language rdf:type owl:AnnotationProperty .
+
+
+
+dc:identifier rdf:type owl:AnnotationProperty .
+
+
+
+dc:source rdf:type owl:AnnotationProperty .
+
+
+
+dc:format rdf:type owl:AnnotationProperty .
+
+
+
+skos:exactMatch rdf:type owl:AnnotationProperty .
+
+
+
+dc:title rdf:type owl:AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+
+###  http://resource.geosciml.org/classifierscheme/cgi/201204/deformationstyle
+
+<http://resource.geosciml.org/classifierscheme/cgi/201204/deformationstyle> rdf:type rdfs:Datatype .
+
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+
+owl:topObjectProperty rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+
+skos:broader rdf:type owl:ObjectProperty ;
+             
+             rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#changeNote
+
+skos:changeNote rdf:type owl:ObjectProperty ;
+                
+                rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+
+skos:inScheme rdf:type owl:ObjectProperty ;
+              
+              rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#narrower
+
+skos:narrower rdf:type owl:ObjectProperty ;
+              
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              
+              owl:inverseOf skos:broader .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#topConceptOf
+
+skos:topConceptOf rdf:type owl:ObjectProperty ;
+                  
+                  rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+
+rdf:value rdf:type owl:DatatypeProperty ;
+          
+          rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.w3.org/2002/07/owl#topDataProperty
+
+owl:topDataProperty rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+
+skos:definition rdf:type owl:DatatypeProperty ;
+                
+                rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#historyNote
+
+skos:historyNote rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+
+skos:notation rdf:type owl:DatatypeProperty ;
+              
+              rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+
+skos:prefLabel rdf:type owl:DatatypeProperty ;
+               
+               rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+
+owl:Thing rdf:type owl:Class .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+
+skos:Concept rdf:type owl:Class ;
+             
+             rdfs:subClassOf owl:Thing .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+
+skos:ConceptScheme rdf:type owl:Class ;
+                   
+                   rdfs:subClassOf owl:Thing .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://resource.geosciml.org/classifier/cgi/deformationstyle/brittle
+
+deformationstyle:brittle rdf:type owl:NamedIndividual ,
+                                  owl:Thing ,
+                                  skos:Concept ;
+                         
+                       
+                         
+                         skos:definition "Deformation in fault zone has been accommodated primarily through fracturing and loss of continuity between adjacent rock bodies."@en ;
+                         
+                         skos:prefLabel "brittle deformation"@en ; 
+						                                   dc:source "this vocabulary"@en ;
+ 
+                         
+                         skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/201204/deformationstyle> ;
+                         
+                         skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201204/deformationstyle> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/deformationstyle/ductile
+
+deformationstyle:ductile rdf:type owl:NamedIndividual ,
+                                  owl:Thing ,
+                                  skos:Concept ;
+                         
+                         skos:definition "Displacement across shear displacement structure largely accommodated by plastic deformation of the rock body without loss of macroscopic continuity."@en ;
+                         
+                                                  dc:source "this vocabulary"@en ;
+ 
+                         
+                         skos:prefLabel "ductile deformation style"@en ;
+                         
+                         skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201204/deformationstyle> ;
+                         
+                         skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/201204/deformationstyle> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/deformationstyle/mixed_brittle_ductile
+
+deformationstyle:mixed_brittle_ductile rdf:type owl:NamedIndividual ,
+                                                owl:Thing ,
+                                                skos:Concept ;
+                                       
+                                                                        dc:source "this vocabulary"@en ;
+  
+                                       skos:definition "deformation in fault zone has been accommodated by both fracturing and plastic shape change in rock bodies."@en ;
+                                       
+                                       skos:prefLabel "mixed brittle and ductile"@en ;
+                                       
+                                       skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/201204/deformationstyle> ;
+                                       
+                                       skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201204/deformationstyle> .
+
+
+
+###  http://resource.geosciml.org/classifierscheme/cgi/201204/deformationstyle
+
+<http://resource.geosciml.org/classifierscheme/cgi/201204/deformationstyle> rdf:type owl:NamedIndividual ,
+                                                                                     skos:ConceptScheme .
+
+
+
+
+###  Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net
+

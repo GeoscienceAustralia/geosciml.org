@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+   xmlns:xlink="http://www.w3.org/1999/xlink" 
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#" 
+   xmlns:dc="http://purl.org/dc/elements/1.1/" 
+   xmlns:dcterms="http://purl.org/dc/terms/" 
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+   xmlns:owl="http://www.w3.org/2002/07/owl#">
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression">
+      <dcterms:title xml:lang="en">Earth Resource Expression</dcterms:title>
+      <dcterms:description xml:lang="en">This scheme describes concepts for specifying the kinds of surface expression associated with an Earth Resource, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Designed for use in the "expression" property in EarthResourceML EarthResource elements.</dcterms:description>
+      <skos:editorialNote xml:lang="en">This file contains the 2016 version of CGI Earth Resource Expression Value Vocabulary. Vocabulary Shepherd: Rachel Heaven/Tim McCormick. Compilation and review in Google doc spreadsheet, converted to SKOS-RDF using GSML_SKOS_fromXLS_2016.02.xslt, 2016-07-15.</skos:editorialNote>
+      <skos:changeNote xml:lang="en">2014-02-23 SMR - Original compilation and review in Google doc spreadsheet, converted to MS Excel XML for SKOS generation using GSML_SKOS_from_XLS_2013.xslt; Conversion to SKOS by SM Richard.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2016-07-15 OLR - Reformat SKOS for migration to new vocabulary server</skos:changeNote>
+      <dcterms:date>2014-01-09</dcterms:date>
+      <dcterms:creator>CGI Geoscience Terminology Working Group</dcterms:creator>
+   </skos:ConceptScheme>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/earth-resource-expression/exposed"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-expression/exposed">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression"/>
+      <skos:definition xml:lang="en">The Earth resource is exposed at the Earth's surface.</skos:definition>
+      <skos:prefLabel xml:lang="en">exposed</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">01..</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/earth-resource-expression/gossan"/>
+      <dcterms:source xml:lang="en">Australia/New Zealand Government Geoscience Information Committee (GGIC)</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-expression/gossan">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression"/>
+      <skos:definition xml:lang="en">The surface expression of the Earth Resource is as highly weathered (oxidized) outcrop.</skos:definition>
+      <skos:prefLabel xml:lang="en">gossan</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">01.1..</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/earth-resource-expression/exposed"/>
+      <dcterms:source xml:lang="en">Australia/New Zealand Government Geoscience Information Committee (GGIC)</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/earth-resource-expression/concealed"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-expression/concealed">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression"/>
+      <skos:definition xml:lang="en">The Earth resource is not exposed at the Earth's surface.</skos:definition>
+      <skos:prefLabel xml:lang="en">concealed</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">02..</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression"/>
+      <dcterms:source xml:lang="en">Australia/New Zealand Government Geoscience Information Committee (GGIC)</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/earth-resource-expression/alteration-halo"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-expression/alteration-halo">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression"/>
+      <skos:definition xml:lang="en">The Earth resource, concealed or exposed, has an anomalous rock alteration halo.</skos:definition>
+      <skos:prefLabel xml:lang="en">alteration halo</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">03..</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression"/>
+      <dcterms:source xml:lang="en">Australia/New Zealand Government Geoscience Information Committee (GGIC)</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/earth-resource-expression/geophysical-anomaly"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-expression/geophysical-anomaly">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression"/>
+      <skos:definition xml:lang="en">The Earth resource, concealed or exposed, has an anomalous geophysical signature.</skos:definition>
+      <skos:prefLabel xml:lang="en">geophysical anomaly</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">04..</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression"/>
+      <dcterms:source xml:lang="en">Australia/New Zealand Government Geoscience Information Committee (GGIC)</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/earth-resource-expression/geochemical-anomaly"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-expression/geochemical-anomaly">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression"/>
+      <skos:definition xml:lang="en">The Earth resource, concealed or exposed, has an anomalous geochemical signature.</skos:definition>
+      <skos:prefLabel xml:lang="en">geochemical anomaly</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">05..</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression"/>
+      <dcterms:source xml:lang="en">Australia/New Zealand Government Geoscience Information Committee (GGIC)</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/earth-resource-expression/botanical-anomaly"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-expression/botanical-anomaly">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression"/>
+      <skos:definition xml:lang="en">The Earth resource, concealed or exposed, has an anomalous botanical signature (eg, particular plant growth or absence of plants).</skos:definition>
+      <skos:prefLabel xml:lang="en">botanical anomaly</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">06..</skos:notation>
+      <skos:altLabel xml:lang="en">vegetation anomaly</skos:altLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression"/>
+      <dcterms:source xml:lang="en">Australia/New Zealand Government Geoscience Information Committee (GGIC)</dcterms:source>
+   </skos:Concept>
+   <skos:Collection rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-expression">
+      <dcterms:title xml:lang="en">Earth Resource Expression - All Concepts</dcterms:title>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-expression/exposed"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-expression/gossan"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-expression/concealed"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-expression/alteration-halo"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-expression/geophysical-anomaly"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-expression/geochemical-anomaly"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-expression/botanical-anomaly"/></skos:member>
+   </skos:Collection>
+   </rdf:RDF>

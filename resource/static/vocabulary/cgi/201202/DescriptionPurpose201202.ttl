@@ -1,0 +1,309 @@
+@prefix cgi: <http://resource.geosciml.org/classifierscheme/cgi/201202/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix xlink: <http://www.w3.org/1999/xlink> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix DescriptionPurpose: <http://resource.geosciml.org/classifier/cgi/descriptionpurpose/> .
+@prefix : <http://resource.geosciml.org/classifierscheme/cgi/201202/descriptionpurpose> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://resource.geosciml.org/classifierscheme/cgi/201202/descriptionpurpose> .
+
+<http://resource.geosciml.org/classifierscheme/cgi/201202/descriptionpurpose> rdf:type owl:Ontology ;
+                                                                              
+                                                                              dc:language "en" ;
+                                                                              
+                                                                              dc:format "text/turtle" ;
+                                                                              
+                                                                              dc:title "CGI Description Purpose Terms Vocabulary"@en ;
+                                                                              
+                                                                              dc:publisher "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)" ;
+                                                                              
+                                                                              owl:versionInfo "201202" ;
+                                                                              
+                                                                              dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)" ;
+                                                                              
+                                                                              dc:identifier "http://resource.geosciml.org/classifierscheme/cgi/201202/descriptionpurpose" .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+
+dc:publisher rdf:type owl:AnnotationProperty .
+
+
+
+dc:contributor rdf:type owl:AnnotationProperty .
+
+
+
+dc:language rdf:type owl:AnnotationProperty .
+
+
+
+dc:identifier rdf:type owl:AnnotationProperty .
+
+
+
+dc:date rdf:type owl:AnnotationProperty .
+
+
+
+dc:source rdf:type owl:AnnotationProperty .
+
+
+
+dc:description rdf:type owl:AnnotationProperty .
+
+
+
+dc:format rdf:type owl:AnnotationProperty .
+
+
+
+dc:title rdf:type owl:AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+
+skos:broader rdf:type owl:ObjectProperty ;
+             
+             owl:inverseOf skos:narrower .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#changeNote
+
+skos:changeNote rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#exactMatch
+
+skos:exactMatch rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+
+skos:inScheme rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#narrower
+
+skos:narrower rdf:type owl:ObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+
+rdf:value rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#changeNote
+
+skos:changeNote rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+
+skos:definition rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#historyNote
+
+skos:historyNote rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+
+skos:notation rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+
+skos:prefLabel rdf:type owl:DatatypeProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+
+owl:Thing rdf:type owl:Class .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+
+skos:Concept rdf:type owl:Class .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+
+skos:ConceptScheme rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://resource.geosciml.org/classifier/cgi/descriptionpurpose/0001
+
+<http://resource.geosciml.org/classifier/cgi/descriptionpurpose/0001> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/descriptionpurpose/0002
+
+<http://resource.geosciml.org/classifier/cgi/descriptionpurpose/0002> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/descriptionpurpose/0003
+
+<http://resource.geosciml.org/classifier/cgi/descriptionpurpose/0003> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/descriptionpurpose/defining_norm
+
+DescriptionPurpose:defining_norm rdf:type owl:NamedIndividual ,
+                                          owl:Thing ,
+                                          skos:Concept ;
+                                 
+                                 skos:definition "A description that specifies properties sufficient to identify a new occurrence as belonging to the class represented by the description. Basically these are the 'sufficient conditions' for class membership. Used when presented with a query 'I have an outcrop with these properties; which geologic unit should I assign to the outcrop?' DefiningNorm has to do with the intension of a ControlledConcept." ;
+                                 
+                                 dc:source "GeoSciML UML model scope notes" ;
+                                 
+                                 skos:prefLabel "definingNorm"@en ;
+                                 
+                                 skos:exactMatch <http://resource.geosciml.org/classifier/cgi/descriptionpurpose/0001>  ;
+                                 
+                                 skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/descriptionpurpose> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/descriptionpurpose/instance
+
+DescriptionPurpose:instance rdf:type owl:NamedIndividual ,
+                                     owl:Thing ,
+                                     skos:Concept ;
+                            
+                            skos:definition "A description that is specific to a particular observed occurrence. This is 'raw data', and its classification may start out as very general. There are kinds of narrowly defined ControlledConcepts that might not allow 'instances' that are different from the DefiningNorm. It might be worth considering a different relationship between MappedFeature and an Instance GeologicEntity, with the GeologicEntity role being 'description'." ;
+                            
+                            dc:source "GeoSciML UML model scope notes" ;
+                            
+                            skos:prefLabel "instance"@en ;
+                            
+                            skos:exactMatch <http://resource.geosciml.org/classifier/cgi/descriptionpurpose/0002>  ;
+                            
+                            skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/descriptionpurpose> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/descriptionpurpose/typical_norm
+
+DescriptionPurpose:typical_norm rdf:type owl:NamedIndividual ,
+                                         owl:Thing ,
+                                         skos:Concept ;
+                                
+                                skos:definition "A description that specifies properties to be expected of some occurrence associated with the GeologicEntity. This description may include many properties that are not part of the DefiningNorm. For example, the fact that granite is typically light-colored is not a defining property, but is certainly a useful typical property. These kinds of descriptions would be used to address queries like 'This area is within a polygon classified as Podunk Formation; what sort of lithology am I most likely to encounter when I start digging?' The Podunk Formation may be defined by the presence of a certain ammonite... TypicalNorm description would be constructed as a summary over many Instance descriptions." ;
+                                
+                                dc:source "GeoSciML UML model scope notes" ;
+                                
+                                skos:prefLabel "typicalNorm"@en ;
+                                
+                                skos:exactMatch <http://resource.geosciml.org/classifier/cgi/descriptionpurpose/0003>  ;
+                                
+                                skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/descriptionpurpose> .
+
+
+
+###  http://resource.geosciml.org/classifierscheme/cgi/201202/descriptionpurpose
+
+<http://resource.geosciml.org/classifierscheme/cgi/201202/descriptionpurpose> rdf:type owl:NamedIndividual ,
+                                                                                       owl:Thing ,
+                                                                                       skos:ConceptScheme ;
+                                                                              
+                                                                              skos:historyNote "2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet."@en ;
+                                                                              
+                                                                              skos:changeNote "2009-12-07 SMR Update metadata properties for version, creator, title, and format.  Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en ;
+                                                                              
+                                                                              skos:historyNote "2010-02-08. SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments."@en ,
+                                                                                               "2010-11-27 SMR update URN to http URI, create version 201202"@en ,
+                                                                                               "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en ,
+                                                                                               "2012-02-27 SMR add skos:exactMatch triples to map URIs for concepts in this vocabulary to number-token URIs in 201012 version of same concepts."@en ;
+                                                                              
+                                                                              skos:prefLabel "CGI Description Purpose Terms Vocabulary"@en ;
+                                                                              
+                                                                              skos:definition "This file contains the 201202 version of CGI Description Purpose codelist. Codes used for the specification of the intended purpose/level of abstraction for a given feature or object instance, ie the reason for the existence of the GeologicFeature. Values: Instance, TypicalNorm, IdentifyingNorm."@en .
+
+
+
+
+###  Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net
+

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:rank-30="http://resource.geosciml.org/ontology/timescale/rank-30/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:gts-30="http://resource.geosciml.org/ontology/timescale/gts-30#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://resource.geosciml.org/ontology/timescale/rank-30">
+  <owl:Ontology rdf:about="">
+    <owl:versionIRI rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201401/GeologicTimeScale/rank-30.rdf"/>
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+  </owl:Ontology>
+  <rdfs:Class rdf:about="http://resource.geosciml.org/ontology/timescale/gts-30#GeochronologicEraRank">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Geochronologic Era Rank</rdfs:label>
+    <skos:prefLabel xml:lang="en">Geochronologic Era Rank</skos:prefLabel>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdfs:Class>
+  <gts-30:GeochronologicEraRank rdf:about="http://resource.geosciml.org/ontology/timescale/rank-30/Sub-Period">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Sub-Period</rdfs:label>
+  </gts-30:GeochronologicEraRank>
+  <gts-30:GeochronologicEraRank rdf:about="http://resource.geosciml.org/ontology/timescale/rank-30/Eon">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Eon</rdfs:label>
+  </gts-30:GeochronologicEraRank>
+  <gts-30:GeochronologicEraRank rdf:about="http://resource.geosciml.org/ontology/timescale/rank-30/Age">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Age</rdfs:label>
+  </gts-30:GeochronologicEraRank>
+  <gts-30:GeochronologicEraRank rdf:about="http://resource.geosciml.org/ontology/timescale/rank-30/Era">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Era</rdfs:label>
+  </gts-30:GeochronologicEraRank>
+  <gts-30:GeochronologicEraRank rdf:about="http://resource.geosciml.org/ontology/timescale/rank-30/Epoch">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Epoch</rdfs:label>
+  </gts-30:GeochronologicEraRank>
+  <gts-30:GeochronologicEraRank rdf:about="http://resource.geosciml.org/ontology/timescale/rank-30/Period">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Period</rdfs:label>
+  </gts-30:GeochronologicEraRank>
+  <gts-30:GeochronologicEraRank rdf:about="http://resource.geosciml.org/ontology/timescale/rank-30/Super-Eon">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Super-Eon</rdfs:label>
+  </gts-30:GeochronologicEraRank>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->

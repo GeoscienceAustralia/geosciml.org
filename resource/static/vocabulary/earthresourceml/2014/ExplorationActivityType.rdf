@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type">
+  <owl:Ontology rdf:about="http://resource.geosciml.org/static/vocabulary/earthresourceml/2014/ExplorationActivityType.rdf">
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <dc:creator>CGI Geoscience Terminology Working Group</dc:creator>
+    <dc:date>2014-01-14T00:00:00.000</dc:date>
+    <skos:editorialNote>This file contains the 201401 version of CGI Exploration Activity Type vocabulary, which defines concepts to categorize an exploration activity during some time period. </skos:editorialNote>
+    <skos:changeNote>Vocabulary Shepherd: Mark Rattenbury. Compilation and review in Google doc spreadsheet, converted to MS Excel XML for SKOS generation using GSML_SKOS_from_XLS_2013.xslt; Conversion to SKOS by SM Richard 2014-02-23. </skos:changeNote>
+    <skos:changeNote>Edits to fix typos and remove '201401' from rdf file name. Ollie Raymond 8-Jan-2015</skos:changeNote>
+  </owl:Ontology>
+  <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type:201401">
+    <skos:definition xml:lang="en">This resource defines the concept space for Exploration Activity Type vocabulary concepts by extension; it includes all concepts in this conceptScheme, as well as concepts in previous versions of the scheme.</skos:definition>
+    <skos:prefLabel xml:lang="en">Exploration Activity Type vocabulary</skos:prefLabel>
+    <dc:creator xml:lang="en">CGI Geoscience Terminology Working Group</dc:creator>
+  </skos:ConceptScheme>
+  <skos:Collection rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/">
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/detailed-geophysics">
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">02.3..</skos:notation>
+        <skos:broader>
+          <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/detailed-surface-exploration">
+            <dc:source xml:lang="en">this vocabulary</dc:source>
+            <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">02..</skos:notation>
+            <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+            <skos:prefLabel xml:lang="en">detailed surface exploration</skos:prefLabel>
+            <skos:definition>Exploration over a small area (1-100 km2), commonly identified from reconnaissance exploration, with closely spaced observation and sampling points.</skos:definition>
+            <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+          </skos:Concept>
+        </skos:broader>
+        <skos:prefLabel xml:lang="en">detailed geophysics</skos:prefLabel>
+        <skos:definition>Detailed surveys (often on a grid) with the most appropriate method, in order to confirm and better delineate and characterize rock physical properties or geophysical anomalies identified during the previous phase.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/auger-drilling">
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03.2..</skos:notation>
+        <skos:broader>
+          <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/subsurface-exploration">
+            <dc:source xml:lang="en">this vocabulary</dc:source>
+            <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03..</skos:notation>
+            <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+            <skos:prefLabel xml:lang="en">subsurface exploration</skos:prefLabel>
+            <skos:definition>Initial low cost techniques (trenching, destructive drilling, etc.) to constrain limits of possible in-ground resource.</skos:definition>
+            <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+          </skos:Concept>
+        </skos:broader>
+        <skos:prefLabel xml:lang="en">auger drilling</skos:prefLabel>
+        <skos:definition>Drilling with an auger in order to collect rock or soil samples, or to carry out a physical measurement or a geological observation.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/approximate-resource-calculation">
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">04.5..</skos:notation>
+        <skos:broader>
+          <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/resource-assessment">
+            <dc:source xml:lang="en">this vocabulary</dc:source>
+            <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">04..</skos:notation>
+            <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+            <skos:prefLabel xml:lang="en">resource assessment</skos:prefLabel>
+            <skos:definition>Preliminary delineation of the envelope of an orebody. Logging of cores, sampling of mineralized sections allow to better understand the distinctive features of the deposit, the physical properties of the ore, and an approximate calculation of the resource.</skos:definition>
+            <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+          </skos:Concept>
+        </skos:broader>
+        <skos:prefLabel xml:lang="en">approximate resource calculation</skos:prefLabel>
+        <skos:definition>Rough evaluation of the tonnage and grade essentially based on drill holes information, by correlation and interpolation of intersected mineralized sections.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/detailed-heavy-mineral-sampling">
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">02.4..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/detailed-surface-exploration"/>
+        <skos:prefLabel xml:lang="en">detailed heavy mineral sampling</skos:prefLabel>
+        <skos:definition>Close-spaced sampling and anlysis of the densest mineral fractions of stream sediment that may indicate the presence of a mineralization source upriver or upstream.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/ore-beneficiation-tests">
+        <dc:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor + DC</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">04.4..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/resource-assessment"/>
+        <skos:prefLabel xml:lang="en">ore beneficiation tests</skos:prefLabel>
+        <skos:definition>Technique designed to treat run of mine material. Its aim is to physically separate its constituents in order to produce a marketable product. Can be performed on core samples.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/resource-assessment"/>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/regional-reconnaissance">
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+        <skos:prefLabel xml:lang="en">regional reconnaissance</skos:prefLabel>
+        <skos:definition>Exploration over a large area (100-10000 km2) with widely spaced sampling or observation points.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/detailed-geochemistry">
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">02.2..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/detailed-surface-exploration"/>
+        <skos:prefLabel xml:lang="en">detailed geochemistry</skos:prefLabel>
+        <skos:definition>Close-spaced systematic, commonly grid-based sampling and analysis of rock, soil, stream sediment, water, gas and vegetation for the detection of abnormal concentrations of chemical elements.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/geological-interpretation">
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">04.3..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/resource-assessment"/>
+        <skos:prefLabel xml:lang="en">geological interpretation</skos:prefLabel>
+        <skos:definition>Compilation and synthesis of all the available geological information in order to get an as precise as possible model of the mineral resource including genesis, type, geometry, internal structure, distribution of grades, relationships with host rocks, etc.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/ore-deposit-evaluation">
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">05..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+        <skos:prefLabel xml:lang="en">ore deposit evaluation</skos:prefLabel>
+        <skos:definition>This the final phase of evaluation. Knowledge of the deposit must be as precise as possible, hence systematic core drilling and eventually reconnaissance mining workings. This phase should lead on to a Go/No Go decision (possibly revisable, depending on e.g. prevailing economical conditions) based on a feasibility study report.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/core-drilling">
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03.4..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/subsurface-exploration"/>
+        <skos:prefLabel xml:lang="en">core drilling</skos:prefLabel>
+        <skos:definition>Drilling in order to collect intact rock sample cores, or to carry out a physical measurement or a geological observation. Can confirm results from obtained from percussion drilling.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/feasibility-study">
+        <dc:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">05.4..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/ore-deposit-evaluation"/>
+        <skos:prefLabel xml:lang="en">feasibility study</skos:prefLabel>
+        <skos:definition>Technical economic study aimed at assessing the possibility to launching a mine venture. When data are insufficiently precise, the study is said to be a pre-feasibility study.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/core-drilling-systematic">
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">05.1..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/ore-deposit-evaluation"/>
+        <skos:prefLabel xml:lang="en">core drilling systematic</skos:prefLabel>
+        <skos:definition>Close-spaced systematic drilling in order to collect intact rock sample cores, with the aim to get very detailed information on the whole deposit and first quality samples.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/mine-workings-reconnaissance">
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">05.2..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/ore-deposit-evaluation"/>        
+        <skos:prefLabel xml:lang="en">mine workings reconnaissance</skos:prefLabel>
+        <skos:definition>Reconnaissance workings aimed at getting a better understanding of the deposit, and allowing to get large ore samples for detailed beneficiation tests.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/mining-pilot">
+        <dc:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">06..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+        <skos:prefLabel xml:lang="en">mining pilot</skos:prefLabel>
+        <skos:definition>Intermediate phase between laboratory tests and actual plant. In French, may refer to a stope as well as to a plant.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/percussion-drilling">
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03.3..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/subsurface-exploration"/>
+        <skos:prefLabel xml:lang="en">percussion drilling</skos:prefLabel>
+        <skos:definition>Drilling with a rotary percussion tool in order to collect rock or soil samples, or to carry out a physical measurement or a geological observation.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/geostatistical-estimates">
+        <dc:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">05.3..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/ore-deposit-evaluation"/>
+        <skos:prefLabel xml:lang="en">geostatistical estimates</skos:prefLabel>
+        <skos:definition>Technique based on probability theory that is used to compute regionalized variables, the values of which depend on their position in space, such as the metal content or grade in a deposit.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+      </skos:Concept>
+    </skos:member>
+    <rdfs:label xml:lang="en">Exploration Activity Type vocabulary</rdfs:label>
+    <skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/subsurface-exploration"/>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/regional-heavy-mineral-sampling">
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.4..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/regional-reconnaissance"/>
+        <skos:prefLabel xml:lang="en">regional heavy mineral sampling</skos:prefLabel>
+        <skos:definition>Wide-spaced sampling and analysis of the densest mineral fractions of stream sediment that may indicate the presence of a mineralization source upstream.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/core-drilling-assessment">
+        <skos:definition xml:lang="en">Drilling in order to collect intact rock sample cores, or to carry out a physical measurement or a geological observation. Can confirm results from obtained from percussion drilling.</skos:definition>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">04.2..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/resource-assessment"/>
+        <skos:prefLabel xml:lang="en">core drilling assessment</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/detailed-geology">
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">02.1..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/detailed-surface-exploration"/>
+        <skos:prefLabel xml:lang="en">detailed geology</skos:prefLabel>
+        <skos:definition>Detailed geological mapping of an area of interest which may include sampling of rock outcrops and soil.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/regional-geochemistry">
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.2..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/regional-reconnaissance"/>
+         <skos:prefLabel xml:lang="en">regional geochemistry</skos:prefLabel>
+        <skos:definition>Wide-spaced systematic, commonly grid-based sampling and analysis of rock, soil, stream sediment, water, gas and vegetation for the detection of abnormal concentrations of chemical elements.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/excavation">
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03.1..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/subsurface-exploration"/>
+        <skos:prefLabel xml:lang="en">excavation</skos:prefLabel>
+        <skos:definition>Purposely dug shallow trench or pit from which samples can be taken.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/regional-geophysics">
+        <dc:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.3..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/regional-reconnaissance"/>        
+        <skos:prefLabel xml:lang="en">regional geophysics</skos:prefLabel>
+        <skos:definition>Exploration technique over a wide area, using airborne, ground or ship-based equipment for the measurement of physical properties: electric conductivity, spontaneous or induced polarization, electromagnetism, magnetic intensity susceptibility, stray currents (magnetotelluric currents method), speed of transmission of shockwaves (seismic method), specific weight and gravity (gravimetric method), radioactivity, reflectance at various wave length (infrared, radar).</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/detailed-surface-exploration"/>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/percussion-drilling-assessment">
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">04.1..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/resource-assessment"/>
+        <skos:prefLabel xml:lang="en">percussion drilling assessment</skos:prefLabel>
+        <skos:definition>Drilling with a rotary percussion tool in order to collect rock or soil samples to delineate an orebody.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/regional-geology">
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.1..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/exploration-activity-type/regional-reconnaissance"/>        
+        <skos:prefLabel xml:lang="en">regional geology</skos:prefLabel>
+        <skos:definition>Geological observations that may lead to the compilation of a preliminary geological map of the main rock units, structures and known mineral occurrences.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-activity-type"/>
+      </skos:Concept>
+    </skos:member>
+  </skos:Collection>
+</rdf:RDF>

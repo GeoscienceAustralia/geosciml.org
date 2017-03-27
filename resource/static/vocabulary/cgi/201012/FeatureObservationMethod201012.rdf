@@ -1,0 +1,502 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY cgi "http://resource.geosciml.org/classifierscheme/cgi/201012/" >
+    <!ENTITY featureobservationmethod "http://resource.geosciml.org/classifierscheme/cgi/201012/featureobservationmethod#" >
+]>
+
+
+<rdf:RDF xmlns="&cgi;featureobservationmethod#"
+     xml:base="&cgi;featureobservationmethod"
+     xmlns:featureobservationmethod="&cgi;featureobservationmethod#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:cgi="http://resource.geosciml.org/classifierscheme/cgi/201012/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="">
+        <skos:historyNote xml:lang="en"
+            >2010-02-04 SMR Updated from 2010 01 version by adding broader categories for &#39;digital conversion...&#39;, Direct observation, indirect method, and &#39;synthesis....&#39;</skos:historyNote>
+        <dc:language>en</dc:language>
+        <skos:historyNote xml:lang="en"
+            >2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using &#39;file/Export inferred axioms as ontology&#39; in Protege.</skos:historyNote>
+        <dc:format
+            >application/rdf+xml</dc:format>
+        <dc:identifier
+            >http://resource.geosciml.org/classifierscheme/cgi/201012/featureobservationmethod</dc:identifier>
+        <rdfs:comment xml:lang="en"
+            >2010-02-04  SMR Start file produced from excel spreadsheet version of FeatureObservationMethod200811, using P. Golodonic xl2xml.</rdfs:comment>
+        <owl:versionInfo>201012</owl:versionInfo>
+        <dc:title xml:lang="en"
+            >CGI Feature observation method terms</dc:title>
+        <dc:publisher xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:publisher>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;date"/>
+    <owl:AnnotationProperty rdf:about="&dc;source"/>
+    <owl:AnnotationProperty rdf:about="&dc;identifier"/>
+    <owl:AnnotationProperty rdf:about="&dc;publisher"/>
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    <owl:AnnotationProperty rdf:about="&dc;language"/>
+    <owl:AnnotationProperty rdf:about="&skos;historyNote"/>
+    <owl:AnnotationProperty rdf:about="&dc;format"/>
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:ObjectProperty rdf:about="&skos;broader">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:ObjectProperty rdf:about="&skos;inScheme">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+    <owl:ObjectProperty rdf:about="&skos;narrower">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <owl:inverseOf rdf:resource="&skos;broader"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+    <owl:ObjectProperty rdf:about="&skos;topConceptOf">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+    <owl:DatatypeProperty rdf:about="&rdf;value">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:DatatypeProperty rdf:about="&skos;definition">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+    <owl:DatatypeProperty rdf:about="&skos;historyNote">
+        <rdf:type rdf:resource="&owl;AnnotationProperty"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:DatatypeProperty rdf:about="&skos;prefLabel">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="&skos;Concept">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="&skos;ConceptScheme">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0001 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0001">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en"
+            >Borehole cuttings observation</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Data based on interpretation of borehole cuttings</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0005"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0002 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0002">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en"
+            >Borehole geophysical log measurements</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Data based on interpretation of geophysical measurement obtained by borehole logging tools.</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0009"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0003 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0003">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Data are extracted from a publised description of the feature</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Data from single published description</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0004"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0004 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0004">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en"
+            >Digital conversion from published source</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Feature observation is based on published information, converted to a digital representation for database application</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0003"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0016"/>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0005 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0005">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en"
+            >Direct observation</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Feature observation is result of direct visual observation by a geologist</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0001"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0006"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0010"/>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0006 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0006">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Data collected through observation of a single drill core interval.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Drill core observation</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0005"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0007"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0008"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0007 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0007">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en"
+            >Drill core observation, estimated values</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Values for properties are estimated by observer.</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0006"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0008 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0008">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en"
+            >Drill core observation, measured values</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Values for properties are measured using a device (compass, jacob staff, scintillometer, clinometer, ruler&#8230;)</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0006"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0009 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0009">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Feature observation based on inference from proxy observation</skos:definition>
+        <skos:prefLabel xml:lang="en">Indirect method</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0002"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0013"/>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0010 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0010">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Data collected in field through direct observation of a single outcrop. Observer defines scope of &#39;single outcrop&#39;--may be one point location, or averaged over an extended but connected) area, e.g. a single polygon on a map. Direct observation may include observation using a remote camera (e.g. downhole viewer, submarine camera)</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Outcrop observation</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0005"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0011"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0012"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0011 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0011">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en"
+            >Outcrop observation, estimated values</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Values for properties are estimated by observer.</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0010"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0012 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0012">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en"
+            >Outcrop observation, measured values</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Values for properties are measured using a device (compass, jacob staff, scintillometer, clinometer, ruler&#8230;)</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0010"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0013 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0013">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Geologic unit or structure characterized based on remotely sensed data.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Remotely sensed data</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0009"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0014 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0014">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Feature observation is based on a synthesis of other observations by some compiler. The compiler may be the same individual that made the source observations.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Synthesis from multiple sources</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0015"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0016"/>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0015 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0015">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Data are the result of synthesis from multiple direct observations, posibly by more than one observer</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Synthesis of multiple outcrop observations</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0014"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0016 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0016">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Data are the result of synthesis from multiple published descriptions</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Synthesis of multiple published descriptions</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0004"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0014"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifierscheme/cgi/201012/featureobservationmethod -->
+
+    <skos:ConceptScheme rdf:about="">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:historyNote xml:lang="en"
+            >2010-11-28 SMR replace URN with http URI identifiers according to CGI URI scheme</skos:historyNote>
+        <skos:prefLabel xml:lang="en"
+            >CGI Feature observation method</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >This classifier scheme contains the CGI Feature Observation Method vocabulary, used to specify the approach to acquiring the collection of attribute value assignments that constitute an individual feature instance. Observation method is a convienence property that provides a quick and dirty approach to shortcut use of more comprehensive observation and measurement construct when data are reported using a feature view (as opposed to observation view).</skos:definition>
+    </skos:ConceptScheme>
+    
+
+
+    <!-- http://resource.geosciml.org/classifierscheme/cgi/201012/featureobservationmethod#genid1 -->
+
+    <owl:Thing/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifierscheme/cgi/201012/featureobservationmethod#genid2 -->
+
+    <owl:Thing/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifierscheme/cgi/201012/featureobservationmethod#genid3 -->
+
+    <owl:Thing/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

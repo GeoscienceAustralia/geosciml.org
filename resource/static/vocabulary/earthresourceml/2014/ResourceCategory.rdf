@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:gtwg="http://resource.geosciml.org/authority/cgi/gtwg"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://resource.geosciml.org/classifierscheme/cgi/201403/resource-assessment-category">
+  <owl:Ontology rdf:about="http://resource.geosciml.org/static/vocabulary/earthresourceml/2014/ResourceCategory.rdf">
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <dc:creator>SKOS generated from Excel workbook using GSML_SKOS_from_XLS_2014.xslt; SM Richard</dc:creator>
+    <dc:date>2014-03-19T00:00:00.000</dc:date>
+    <skos:editorialNote>This file contains the 201403 version of CGI Earth resource quantity assessment category vocabulary, use to specify the quality of a resource quantity assessement.</skos:editorialNote>
+    <skos:changeNote>Original SKOS implementation, based on 2013-06 approved vocabulary from GTWG face to face in St. Petersburg, Russia</skos:changeNote>
+    <skos:changeNote>Edits to fix typos and remove '201403' from rdf file name. Ollie Raymond 8-Jan-2015</skos:changeNote>
+  </owl:Ontology>
+  <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/201403/resource-assessment-category">
+    <skos:definition xml:lang="en">This resource defines the concept space for Earth Resource Quantity Assessment Category vocabulary concepts by extension; it includes all concepts in this conceptScheme, as well as concepts in previous versions of the scheme.</skos:definition>
+    <skos:prefLabel xml:lang="en">EarthResource Quantity Assessment Category vocabulary</skos:prefLabel>
+    <dc:creator xml:lang="en">CGI Geoscience Terminology Working Group</dc:creator>
+  </skos:ConceptScheme>
+  <skos:Collection rdf:about="http://resource.geosciml.org/classifier/cgi/resource-assessment-category/">
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/resource-assessment-category/inferred-mineral-resource">
+        <skos:definition xml:lang="en">That part of a Mineral Resource for which tonnage, grade and mineral content can be estimated with a low level of confidence. It is inferred from geological evidence and assumed but not verified geological and/or grade continuity. It is based on information gathered through appropriate techniques from locations such as outcrops, trenches, pits, workings and drill holes which may be limited or of uncertain quality and reliability.</skos:definition>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201403/resource-assessment-category"/>        
+        <skos:prefLabel xml:lang="en">inferred mineral resource</skos:prefLabel>
+        <dc:source xml:lang="en">CRIRSCO Code; JORC 2004</dc:source>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201403/resource-assessment-category"/>
+      </skos:Concept>
+    </skos:member>
+    <rdfs:label xml:lang="en">EarthResource Quantity Assessment Category vocabulary</rdfs:label>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/resource-assessment-category/measured-and-indicated-mineral-resource">
+        <skos:definition xml:lang="en">That part of a Mineral Resource for which tonnage, densities, shape, physical characteristics, grade and mineral content can be estimated in part with a high level of confidence and in part with a reasonable level of confidence. It is based on exploration, sampling and testing information gathered through appropriate techniques from locations such as outcrops, trenches, pits, workings and drill holes. The locations are in places spaced closely enough to confirm geological and grade continuity and in other places too widely or inappropriately spaced to confirm geological and/or grade continuity but are spaced closely enough for continuity to be assumed.</skos:definition>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">04..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201403/resource-assessment-category"/>
+        <skos:prefLabel xml:lang="en">measured and indicated mineral resource</skos:prefLabel>
+        <dc:source xml:lang="en">Australia GGIC</dc:source>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201403/resource-assessment-category"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/resource-assessment-category/indicated-mineral-resource">
+        <skos:definition xml:lang="en">That part of a Mineral Resource for which tonnage, densities, shape, physical characteristics, grade and mineral content can be estimated with a reasonable level of confidence. It is based on exploration, sampling and testing information gathered through appropriate techniques from locations such as outcrops, trenches, pits, workings and drill holes. The locations are too widely or inappropriately spaced to confirm geological and/or grade continuity but are spaced closely enough for continuity to be assumed.</skos:definition>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">02..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201403/resource-assessment-category"/>
+        <skos:prefLabel xml:lang="en">indicated mineral resource</skos:prefLabel>
+        <dc:source xml:lang="en">CRIRSCO Code; JORC 2004</dc:source>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201403/resource-assessment-category"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/resource-assessment-category/measured-indicated-inferred-mineral-resource">
+        <skos:definition xml:lang="en">That part of a Mineral Resource for which tonnage, densities, shape, physical characteristics, grade and mineral content can be estimated in part with a high level of confidence, in part with a reasonable level of confidence and in part with a low level of confidence. It is based on exploration, sampling and testing information gathered through appropriate techniques from locations such as outcrops, trenches, pits, workings and drill holes. The locations are in places spaced closely enough to confirm geological and grade continuity, in other places too widely or inappropriately spaced to confirm geological and/or grade continuity but are spaced closely enough for continuity to be assumed, and in other places of limited or of uncertain quality and reliability.</skos:definition>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">05..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201403/resource-assessment-category"/>
+        <skos:prefLabel xml:lang="en">measured, indicated and inferred mineral resource</skos:prefLabel>
+        <dc:source xml:lang="en">Australia GGIC</dc:source>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201403/resource-assessment-category"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/resource-assessment-category/measured-mineral-resource">
+        <skos:definition xml:lang="en">That part of a Mineral Resource for which tonnage, densities, shape, physical characteristics, grade and mineral content can be estimated with a high level of confidence. It is based on detailed and reliable exploration, sampling and testing information gathered through appropriate techniques from locations such as outcrops, trenches, pits, workings and drill holes. The locations are spaced closely enough to confirm geological and grade continuity.</skos:definition>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201403/resource-assessment-category"/>
+        <skos:prefLabel xml:lang="en">measured mineral resource</skos:prefLabel>
+        <dc:source xml:lang="en">CRIRSCO Code; JORC 2004</dc:source>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201403/resource-assessment-category"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/resource-assessment-category/indicated-and-inferred-mineral-resource">
+        <skos:definition xml:lang="en">That part of a Mineral Resource for which tonnage, densities, shape, physical characteristics, grade and mineral content can be estimated in part with a reasonable level of confidence and in part with a low level of confidence. It is based on exploration, sampling and testing information gathered through appropriate techniques from locations such as outcrops, trenches, pits, workings and drill holes. The locations are in places too widely or inappropriately spaced to confirm geological and/or grade continuity but are spaced closely enough for continuity to be assumed, and in other places of limited or of uncertain quality and reliability.</skos:definition>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">06..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201403/resource-assessment-category"/>
+        <skos:prefLabel xml:lang="en">indicated and inferred mineral resource</skos:prefLabel>
+        <dc:source xml:lang="en">Australia GGIC</dc:source>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201403/resource-assessment-category"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/resource-assessment-category/poorly-estimated-mineral-resource">
+        <skos:definition xml:lang="en">Poorly estimated mineral resource, poorly documented</skos:definition>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">07..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201403/resource-assessment-category"/>
+        <skos:prefLabel xml:lang="en">poorly estimated mineral resource, poorly documented</skos:prefLabel>
+        <dc:source xml:lang="en">Australia GGIC</dc:source>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201403/resource-assessment-category"/>
+      </skos:Concept>
+    </skos:member>
+  </skos:Collection>
+</rdf:RDF>
+

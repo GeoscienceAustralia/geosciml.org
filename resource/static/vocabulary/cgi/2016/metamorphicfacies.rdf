@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#">
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies">
+      <dcterms:title xml:lang="en">Metamorphic Facies</dcterms:title>
+      <dcterms:description xml:lang="en">This file contains the CGI Metamorphic Facies vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. The vocabulary is based on Fettes and Desmons (eds.), 2007, METAMORPHIC ROCKS: A CLASSIFICATION AND GLOSSARY OF TERMS - Recommendations of the International Union of Geological Sciences Subcommission on the Systematics of Metamorphic Rocks. Used to populate metamorphic facies property in metamorphic descriptions. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme.</dcterms:description>
+      <skos:editorialNote xml:lang="en">This file contains the 2016 SKOS-RDF version of the CGI Metamorphic Facies vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt</skos:editorialNote>
+      <skos:changeNote xml:lang="en">2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2010-11-28 SMR Replace URN identifiers with http URI identifiers according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)</skos:changeNote>
+      <skos:changeNote xml:lang="en">2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2012-02-27 SMR add skos:exactMatch triples associating URIs with number token URI in 201012 version.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2012-11-24 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2016-11-21 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. Minor corrections to hierarchy from the previous 2012 version.</skos:changeNote>
+      <dcterms:date>2016-11-22</dcterms:date>
+      <dcterms:creator>CGI Geoscience Terminology Working Group</dcterms:creator>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/amphibolite_metamorphic_facies">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies"/>
+      <skos:definition xml:lang="en">Metamorphic facies characterized in rocks of basaltic composition by hornblende-plagioclase (plagioclase more calcic than An17).</skos:definition>
+      <skos:prefLabel xml:lang="en">amphibolite metamorphic facies</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified"/>
+      <dcterms:source xml:lang="en">Smulikowski et al. 2003; Fettes and Desmons, 2007</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/eclogite_metamorphic_facies">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies"/>
+      <skos:definition xml:lang="en">Omphacite-garnet-quartz (no plagioclase, olivine stable with garnet), assemblage for rocks of basaltic composition</skos:definition>
+      <skos:prefLabel xml:lang="en">eclogite metamorphic facies</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified"/>
+      <dcterms:source xml:lang="en">Fettes and Desmons, 2007</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/epidote_amphibolite_metamorphic_facies">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies"/>
+      <skos:definition xml:lang="en">Hornblende-albite-epidote(-chlorite), assemblage for rocks of basaltic composition</skos:definition>
+      <skos:prefLabel xml:lang="en">epidote amphibolite metamorphic facies</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified"/>
+      <dcterms:source xml:lang="en">Fettes and Desmons, 2007</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/glaucophane_schist_facies">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies"/>
+      <skos:definition xml:lang="en">Metamorphic facies characterized in rocks of basaltic composition by glaucophane-epidote (-garnet), glaucophane-lawsonite, or glaucophane-lawsonite-jadeite.</skos:definition>
+      <skos:prefLabel xml:lang="en">glaucophane schist facies</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified"/>
+      <dcterms:source xml:lang="en">Smulikowski et al. 2003; Fettes and Desmons, 2007</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/granulite_facies">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies"/>
+      <skos:definition xml:lang="en">Metamorphic facies characterized in rocks of basaltic composition by the mineral assemblage clinopyroxene-orthopyroxene-plagioclase (olivine not stable with plagioclase or with garnet), or especially high-temperature varieties or polymorphs of minerals (e</skos:definition>
+      <skos:prefLabel xml:lang="en">granulite facies</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified"/>
+      <dcterms:source xml:lang="en">Smulikowski et al. 2003; Fettes and Desmons, 2007</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/greenschist_metamorphic_facies">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies"/>
+      <skos:definition xml:lang="en">Metamorphic facies characterized in rocks of basaltic composition by actinolite-albite-epidote-chlorite (an epidote group mineral is the diagnostic Ca-Al silicate rather than prehnite or pumpellyite).</skos:definition>
+      <skos:prefLabel xml:lang="en">greenschist metamorphic facies</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified"/>
+      <dcterms:source xml:lang="en">Smulikowski et al. 2003; Fettes and Desmons, 2007</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies"/>
+      <skos:definition xml:lang="en">Metamorphosed, but facies not specified in more detail. For use in normative description to indicate that any metamorphic facies value is valid.</skos:definition>
+      <skos:prefLabel xml:lang="en">metamorphic facies not specified</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/pyroxene_hornfels_metamorphic_facies"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/sanidinite_metamorphic_facies"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/subgreenschist_metamorphic_facies"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/zeolite_metamorphic_facies"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/amphibolite_metamorphic_facies"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/eclogite_metamorphic_facies"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/epidote_amphibolite_metamorphic_facies"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/glaucophane_schist_facies"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/granulite_facies"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/greenschist_metamorphic_facies"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_unknown"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_unknown">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies"/>
+      <skos:definition xml:lang="en">For use in instance descriptions to indicate that no data are available to constrain metamorphic facies. May be metamorphosed or non-metamorphosed.</skos:definition>
+      <skos:prefLabel xml:lang="en">metamorphic facies unknown</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/no_metamorphic_minerals"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/no_metamorphic_minerals">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies"/>
+      <skos:definition xml:lang="en">Corresponds to non-metamorphosed condition, since metamorphic facies classification is based on mineral assemblages, absence of metamorphic minerals means that the classification does not apply.</skos:definition>
+      <skos:prefLabel xml:lang="en">no metamorphic minerals</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/pyroxene_hornfels_metamorphic_facies">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies"/>
+      <skos:definition xml:lang="en">Metamorphic facies characterized in rocks of basaltic composition by clinopyroxene-orthopyroxene-plagioclase (olivine stable with plagioclase).</skos:definition>
+      <skos:prefLabel xml:lang="en">pyroxene hornfels metamorphic facies</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified"/>
+      <dcterms:source xml:lang="en">Smulikowski et al. 2003; Fettes and Desmons, 2007</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/sanidinite_metamorphic_facies">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies"/>
+      <skos:definition xml:lang="en">distinguished from the pyroxene hornfels facies by the occurrence of especially high-temperature varieties and polymorphs of minerals (eg. pigeonite, K-rich labradorite), assemblage for rocks of basaltic composition</skos:definition>
+      <skos:prefLabel xml:lang="en">sanidinite metamorphic facies</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified"/>
+      <dcterms:source xml:lang="en">Fettes and Desmons, 2007</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/subgreenschist_metamorphic_facies">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies"/>
+      <skos:definition xml:lang="en">Metamorphic facies characterized in rocks of basaltic composition by prehnite-pumpellyite, pumpellyite-actinolite, prehnite-actinolite (prehnite and pumpellyite are the diagnostic Ca-Al silicates rather than minerals of the epidote or zeolite groups).</skos:definition>
+      <skos:prefLabel xml:lang="en">subgreenschist metamorphic facies</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified"/>
+      <dcterms:source xml:lang="en">Smulikowski et al. 2003; Fettes and Desmons, 2007</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/zeolite_metamorphic_facies">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies"/>
+      <skos:definition xml:lang="en">Metamorphic facies characterized in rocks of basaltic composition by zeolite minerals such as laumontite and heulandites (in place of other Ca-Al silicates such as prehnite, pumpellyite and epidote).</skos:definition>
+      <skos:prefLabel xml:lang="en">zeolite metamorphic facies</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified"/>
+      <dcterms:source xml:lang="en">Smulikowski et al. 2003; Fettes and Desmons, 2007</dcterms:source>
+   </skos:Concept>
+   <skos:Collection rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies">
+      <dcterms:title xml:lang="en">Metamorphic Facies - All Concepts</dcterms:title>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/amphibolite_metamorphic_facies"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/eclogite_metamorphic_facies"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/epidote_amphibolite_metamorphic_facies"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/glaucophane_schist_facies"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/granulite_facies"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/greenschist_metamorphic_facies"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_unknown"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/no_metamorphic_minerals"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/pyroxene_hornfels_metamorphic_facies"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/sanidinite_metamorphic_facies"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/subgreenschist_metamorphic_facies"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/zeolite_metamorphic_facies"/></skos:member>
+   </skos:Collection>
+   
+</rdf:RDF>

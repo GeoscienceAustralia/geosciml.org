@@ -1,0 +1,772 @@
+@prefix cgi: <http://resource.geosciml.org/classifierscheme/cgi/201202/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix : <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> .
+
+<http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> rdf:type owl:Ontology ;
+             
+             dc:identifier "http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype" ;
+             
+             skos:historyNote "2010-11-27 SMR update URN to http URI, create version 201202"@en ;
+             
+             dc:format "application/rdf+xml" ;
+             
+             dc:language "en" ;
+             
+             skos:historyNote "2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en ;
+             
+             owl:versionInfo "201202" ;
+             
+             skos:historyNote "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en ;
+             
+             rdfs:comment "Although the terms in this vocabulary are in common usage with definitions in standard texts or glossaries like Neuendorf et al. (2005), the definitions here attempt to establish unambiguous criteria to distinguish the categories, and are thus listed with this vocabulary as the source."@en ;
+             
+             dc:title "CGI fault type categories"@en ;
+             
+             dc:publisher "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+             
+             dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+
+dc:publisher rdf:type owl:AnnotationProperty .
+
+
+
+dc:language rdf:type owl:AnnotationProperty .
+
+
+
+dc:identifier rdf:type owl:AnnotationProperty .
+
+
+
+dc:source rdf:type owl:AnnotationProperty .
+
+
+
+skos:historyNote rdf:type owl:AnnotationProperty .
+
+
+
+dc:format rdf:type owl:AnnotationProperty .
+
+
+
+dc:title rdf:type owl:AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+
+owl:topObjectProperty rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+
+skos:broader rdf:type owl:ObjectProperty ;
+             
+             rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+
+skos:inScheme rdf:type owl:ObjectProperty ;
+              
+              rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#narrower
+
+skos:narrower rdf:type owl:ObjectProperty ;
+              
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              
+              owl:inverseOf skos:broader .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#topConceptOf
+
+skos:topConceptOf rdf:type owl:ObjectProperty ;
+                  
+                  rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+
+rdf:value rdf:type owl:DatatypeProperty ;
+          
+          rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.w3.org/2002/07/owl#topDataProperty
+
+owl:topDataProperty rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+
+skos:definition rdf:type owl:DatatypeProperty ;
+                
+                rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+
+skos:prefLabel rdf:type owl:DatatypeProperty ;
+               
+               rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+
+owl:Thing rdf:type owl:Class .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+
+skos:Concept rdf:type owl:Class ;
+             
+             rdfs:subClassOf owl:Thing .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+
+skos:ConceptScheme rdf:type owl:Class ;
+                   
+                   rdfs:subClassOf owl:Thing .
+
+
+
+
+
+#################################################################
+#
+#    ExactMatches
+<http://resource.geosciml.org/classifier/cgi/faulttype/sinistral_strike_slip_fault> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/faulttype/0021>.
+<http://resource.geosciml.org/classifier/cgi/faulttype/dextral_strike_slip_fault> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/faulttype/0002>.
+<http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_normal_fault> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/faulttype/0006>.
+<http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_normal_fault> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/faulttype/0012>.
+<http://resource.geosciml.org/classifier/cgi/faulttype/mixed_extraction_fault> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/faulttype/0013>.
+<http://resource.geosciml.org/classifier/cgi/faulttype/pure_extraction_fault> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/faulttype/0016>.
+<http://resource.geosciml.org/classifier/cgi/faulttype/right_reverse_fault> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/faulttype/0019>.
+<http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_reverse> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/faulttype/0007>.
+<http://resource.geosciml.org/classifier/cgi/faulttype/left_reverse_fault> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/faulttype/0010>.
+<http://resource.geosciml.org/classifier/cgi/faulttype/oblique_slip_fault> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/faulttype/0015>.
+<http://resource.geosciml.org/classifier/cgi/faulttype/right_normal_fault> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/faulttype/0018>.
+<http://resource.geosciml.org/classifier/cgi/faulttype/left_normal_fault> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/faulttype/0009>.
+<http://resource.geosciml.org/classifier/cgi/faulttype/strike_slip_fault> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/faulttype/0022>.
+<http://resource.geosciml.org/classifier/cgi/faulttype/detachment_fault> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/faulttype/0001>.
+<http://resource.geosciml.org/classifier/cgi/faulttype/extraction_fault> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/faulttype/0003>.
+<http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_fault> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/faulttype/0005>.
+<http://resource.geosciml.org/classifier/cgi/faulttype/horizontal_fault> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/faulttype/0008>.
+<http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_fault> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/faulttype/0011>.
+<http://resource.geosciml.org/classifier/cgi/faulttype/reverse_fault> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/faulttype/0017>.
+<http://resource.geosciml.org/classifier/cgi/faulttype/scissor_fault> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/faulttype/0020>.
+<http://resource.geosciml.org/classifier/cgi/faulttype/normal_fault> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/faulttype/0014>.
+<http://resource.geosciml.org/classifier/cgi/faulttype/thrust_fault> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/faulttype/0023>.
+<http://resource.geosciml.org/classifier/cgi/faulttype/wrench_fault> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/faulttype/0024>.
+<http://resource.geosciml.org/classifier/cgi/faulttype/fault> rdf:type owl:Thing, skos:Concept ; skos:exactMatch <http://resource.geosciml.org/classifier/cgi/faulttype/0004>.
+
+#
+#################################################################
+
+
+###  http://resource.geosciml.org/classifier/cgi/faulttype/detachment_fault
+
+<http://resource.geosciml.org/classifier/cgi/faulttype/detachment_fault> rdf:type owl:NamedIndividual ,
+                          owl:Thing ,
+                          skos:Concept ;
+                 
+                 skos:definition "A regional-scale, large displacement, low-angle normal fault."@en ;
+                 
+                 dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                 
+                 skos:prefLabel "Detachment fault"@en ;
+                 
+                 dc:source "this vocabulary"@en ;
+                 
+                 skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_normal_fault> ;
+                 
+                 skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/faulttype/dextral_strike_slip_fault
+
+<http://resource.geosciml.org/classifier/cgi/faulttype/dextral_strike_slip_fault> rdf:type owl:NamedIndividual ,
+       owl:Thing ,
+       skos:Concept ;
+                          
+                          dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                          
+                          skos:prefLabel "Dextral strike slip fault"@en ;
+                          
+                          skos:definition "Fault with right-lateral strike-parallel displacement component of slip vector more than 10 times the dip-parallel component of the slip vector at at least one location along the fault, and right-lateral displacement over more than half the mapped trace of the fault."@en ;
+                          
+                          dc:source "this vocabulary"@en ;
+                          
+                          skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/strike_slip_fault> ;
+                          
+                          skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/faulttype/extraction_fault
+
+<http://resource.geosciml.org/classifier/cgi/faulttype/extraction_fault> rdf:type owl:NamedIndividual ,
+                          owl:Thing ,
+                          skos:Concept ;
+                 
+                 skos:definition "A fault whose two sides have approached each other substantially in the direction perpendicular to the fault." ;
+                 
+                 dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                 
+                 skos:prefLabel "Extraction fault"@en ;
+                 
+                 dc:source "Froitzheim, N., Pleuger, J. & Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395." ;
+                 
+                 skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/fault> ;
+                 
+                 skos:narrower <http://resource.geosciml.org/classifier/cgi/faulttype/mixed_extraction_fault> ,
+   <http://resource.geosciml.org/classifier/cgi/faulttype/pure_extraction_fault> ;
+                 
+                 skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/faulttype/fault
+
+<http://resource.geosciml.org/classifier/cgi/faulttype/fault> rdf:type owl:NamedIndividual ,
+               owl:Thing ,
+               skos:Concept ;
+      
+      skos:definition "A discrete surface, or zone of discrete surfaces, with some thickness, separating two rock masses across which one mass has slid past the other and characterized by brittle deformation."@en ;
+      
+      dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+      
+      skos:prefLabel "Fault"@en ;
+      
+      skos:narrower <http://resource.geosciml.org/classifier/cgi/faulttype/extraction_fault> ,
+                    <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_fault> ,
+                    <http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_fault> ,
+                    <http://resource.geosciml.org/classifier/cgi/faulttype/normal_fault> ,
+                    <http://resource.geosciml.org/classifier/cgi/faulttype/oblique_slip_fault> ,
+                    <http://resource.geosciml.org/classifier/cgi/faulttype/reverse_fault> ,
+                    <http://resource.geosciml.org/classifier/cgi/faulttype/scissor_fault> ,
+                    <http://resource.geosciml.org/classifier/cgi/faulttype/strike_slip_fault> ;
+      
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> ;
+      
+      skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_fault
+
+<http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_fault> rdf:type owl:NamedIndividual ,
+                          owl:Thing ,
+                          skos:Concept ;
+                 
+                 dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                 
+                 skos:definition "Fault that dips at least 45 degrees over more than half of its recognized extent, for which slip or separation is not explicitly specified."@en ;
+                 
+                 skos:prefLabel "High-angle fault"@en ;
+                 
+                 dc:source "this vocabulary"@en ;
+                 
+                 skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/fault> ;
+                 
+                 skos:narrower <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_normal_fault> ,
+   <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_reverse> ,
+   <http://resource.geosciml.org/classifier/cgi/faulttype/wrench_fault> ;
+                 
+                 skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_normal_fault
+
+<http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_normal_fault> rdf:type owl:NamedIndividual ,
+     owl:Thing ,
+     skos:Concept ;
+                        
+                        dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                        
+                        skos:definition "Fault that dips at least 45 degrees over more than half of the recognized extent of the fault with the hanging wall displaced from a structurally higher position relative to footwall rocks."@en ;
+                        
+                        skos:prefLabel "High-angle normal fault"@en ;
+                        
+                        dc:source "this vocabulary"@en ;
+                        
+                        skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_fault> ,
+         <http://resource.geosciml.org/classifier/cgi/faulttype/normal_fault> ;
+                        
+                        skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_reverse
+
+<http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_reverse> rdf:type owl:NamedIndividual ,
+owl:Thing ,
+skos:Concept ;
+                   
+                   dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                   
+                   skos:prefLabel "High angle reverse"@en ;
+                   
+                   skos:definition "Reverse fault that dips at least 45 degrees over more than half of its recognized extent, for which slip or separation is not explicitly specified."@en ;
+                   
+                   dc:source "this vocabulary"@en ;
+                   
+                   skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_fault> ,
+    <http://resource.geosciml.org/classifier/cgi/faulttype/reverse_fault> ;
+                   
+                   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/faulttype/horizontal_fault
+
+<http://resource.geosciml.org/classifier/cgi/faulttype/horizontal_fault> rdf:type owl:NamedIndividual ,
+                          owl:Thing ,
+                          skos:Concept ;
+                 
+                 dc:source "GGIC vocabularies working group (Australia)" ;
+                 
+                 dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                 
+                 skos:definition "Fault that dips less than 10 degrees over more than half the recognized extent of the fault."@en ;
+                 
+                 skos:prefLabel "Horizontal fault"@en ;
+                 
+                 skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_fault> ;
+                 
+                 skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/faulttype/left_normal_fault
+
+<http://resource.geosciml.org/classifier/cgi/faulttype/left_normal_fault> rdf:type owl:NamedIndividual ,
+                           owl:Thing ,
+                           skos:Concept ;
+                  
+                  dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                  
+                  skos:definition "High angle fault with slip vector that has ratio of strike-parallel to dip-parallel displacement between 10 to 1 and 1 to 10 at at least one location along the mapped trace, with left-lateral strike-parallel component and normal dip-parallel component over at least half the mapped trace of the fault."@en ;
+                  
+                  skos:prefLabel "Left normal fault"@en ;
+                  
+                  dc:source "this vocabulary"@en ;
+                  
+                  skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/oblique_slip_fault> ;
+                  
+                  skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/faulttype/left_reverse_fault
+
+<http://resource.geosciml.org/classifier/cgi/faulttype/left_reverse_fault> rdf:type owl:NamedIndividual ,
+owl:Thing ,
+skos:Concept ;
+                   
+                   dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                   
+                   skos:definition "High angle fault with slip vector that has ratio of strike-parallel to dip-parallel displacement between 10 to 1 and 1 to 10 at at least one location along the mapped trace, with left-lateral strike-parallel component and reverse dip-parallel component over at least half the mapped trace of the fault."@en ;
+                   
+                   skos:prefLabel "Left reverse fault"@en ;
+                   
+                   dc:source "this vocabulary"@en ;
+                   
+                   skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/oblique_slip_fault> ;
+                   
+                   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_fault
+
+<http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_fault> rdf:type owl:NamedIndividual ,
+                         owl:Thing ,
+                         skos:Concept ;
+                
+                dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                
+                skos:definition "Fault that dips less than 45 degrees over more than half of the recognized extent of the fault."@en ;
+                
+                skos:prefLabel "Low angle fault"@en ;
+                
+                dc:source "this vocabulary"@en ;
+                
+                skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/fault> ;
+                
+                skos:narrower <http://resource.geosciml.org/classifier/cgi/faulttype/horizontal_fault> ,
+  <http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_normal_fault> ,
+  <http://resource.geosciml.org/classifier/cgi/faulttype/thrust_fault> ;
+                
+                skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_normal_fault
+
+<http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_normal_fault> rdf:type owl:NamedIndividual ,
+    owl:Thing ,
+    skos:Concept ;
+                       
+                       dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                       
+                       skos:definition "Fault that dips less than 45 degrees over more than half of the recognized extent of the fault with the hanging wall displaced from a structurally higher position relative to footwall rocks."@en ;
+                       
+                       skos:prefLabel "Low-angle normal fault"@en ;
+                       
+                       dc:source "this vocabulary"@en ;
+                       
+                       skos:narrower <http://resource.geosciml.org/classifier/cgi/faulttype/detachment_fault> ;
+                       
+                       skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_fault> ,
+        <http://resource.geosciml.org/classifier/cgi/faulttype/normal_fault> ;
+                       
+                       skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/faulttype/mixed_extraction_fault
+
+<http://resource.geosciml.org/classifier/cgi/faulttype/mixed_extraction_fault> rdf:type owl:NamedIndividual ,
+    owl:Thing ,
+    skos:Concept ;
+                       
+                       dc:source "Froitzheim, N., Pleuger, J. & Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395." ;
+                       
+                       skos:definition "An extraction fault with some displacement within the fault plane."@en ;
+                       
+                       dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                       
+                       skos:prefLabel "Mixed extraction fault"@en ;
+                       
+                       skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/extraction_fault> ;
+                       
+                       skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/faulttype/normal_fault
+
+<http://resource.geosciml.org/classifier/cgi/faulttype/normal_fault> rdf:type owl:NamedIndividual ,
+                      owl:Thing ,
+                      skos:Concept ;
+             
+             dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+             
+             skos:definition "Fault with dip-parallel displacement component of slip vector more than 10 times the strike-parallel component of the slip vector over more than half recognized extent of the fault, and for which the fault dips consistently in the same direction, and for which the hanging wall has been displaced down relative to the footwall."@en ;
+             
+             skos:prefLabel "Normal fault"@en ;
+             
+             dc:source "this vocabulary"@en ;
+             
+             skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/fault> ;
+             
+             skos:narrower <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_normal_fault> ,
+                           <http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_normal_fault> ;
+             
+             skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/faulttype/oblique_slip_fault
+
+<http://resource.geosciml.org/classifier/cgi/faulttype/oblique_slip_fault> rdf:type owl:NamedIndividual ,
+owl:Thing ,
+skos:Concept ;
+                   
+                   dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                   
+                   skos:definition "Fault with slip vector that has ratio of strike-parallel to dip-parallel displacement between 10 to 1 and 1 to 10 at at least one location along the mapped trace of the fault."@en ;
+                   
+                   skos:prefLabel "Oblique slip fault"@en ;
+                   
+                   dc:source "this vocabulary"@en ;
+                   
+                   skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/fault> ;
+                   
+                   skos:narrower <http://resource.geosciml.org/classifier/cgi/faulttype/left_normal_fault> ,
+     <http://resource.geosciml.org/classifier/cgi/faulttype/left_reverse_fault> ,
+     <http://resource.geosciml.org/classifier/cgi/faulttype/right_normal_fault> ,
+     <http://resource.geosciml.org/classifier/cgi/faulttype/right_reverse_fault> ;
+                   
+                   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/faulttype/pure_extraction_fault
+
+<http://resource.geosciml.org/classifier/cgi/faulttype/pure_extraction_fault> rdf:type owl:NamedIndividual ,
+   owl:Thing ,
+   skos:Concept ;
+                      
+                      skos:definition "An extraction fault with no discernible displacement within the fault plane."@en ;
+                      
+                      dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                      
+                      dc:source "Froitzheim, N., Pleuger, J. & Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395." ;
+                      
+                      skos:prefLabel "Pure extraction fault"@en ;
+                      
+                      skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/extraction_fault> ;
+                      
+                      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/faulttype/reverse_fault
+
+<http://resource.geosciml.org/classifier/cgi/faulttype/reverse_fault> rdf:type owl:NamedIndividual ,
+                       owl:Thing ,
+                       skos:Concept ;
+              
+              dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+              
+              skos:definition "Fault with dip-parallel displacement component of slip vector more than 10 times the strike-parallel component of the slip vector at at least one location along the mapped trace of the fault, and the fault dips consistently in the same direction with the hanging wall displaced up relative to the footwall over at least half the mapped trace of the fault."@en ;
+              
+              skos:prefLabel "Reverse fault"@en ;
+              
+              dc:source "this vocabulary"@en ;
+              
+              skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/fault> ;
+              
+              skos:narrower <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_reverse> ,
+<http://resource.geosciml.org/classifier/cgi/faulttype/thrust_fault> ;
+              
+              skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/faulttype/right_normal_fault
+
+<http://resource.geosciml.org/classifier/cgi/faulttype/right_normal_fault> rdf:type owl:NamedIndividual ,
+owl:Thing ,
+skos:Concept ;
+                   
+                   dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                   
+                   skos:definition "High angle fault with slip vector that has ratio of strike-parallel to dip-parallel displacement between 10 to 1 and 1 to 10 at at least one location along the mapped trace, with right-lateral strike-parallel component and normal dip-parallel component of slip over at least half the mapped trace of the fault"@en ;
+                   
+                   skos:prefLabel "Right normal fault"@en ;
+                   
+                   dc:source "this vocabulary"@en ;
+                   
+                   skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/oblique_slip_fault> ;
+                   
+                   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/faulttype/right_reverse_fault
+
+<http://resource.geosciml.org/classifier/cgi/faulttype/right_reverse_fault> rdf:type owl:NamedIndividual ,
+ owl:Thing ,
+ skos:Concept ;
+                    
+                    dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                    
+                    skos:definition "High angle fault with slip vector that has ratio of strike-parallel to dip-parallel displacement between 10 to 1 and 1 to 10 at at least one location along the mapped trace, with a right-lateral strike-parallel component and reverse dip-parallel component of slip over at least half the mapped trace of the fault."@en ;
+                    
+                    skos:prefLabel "Right reverse fault"@en ;
+                    
+                    dc:source "this vocabulary"@en ;
+                    
+                    skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/oblique_slip_fault> ;
+                    
+                    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/faulttype/scissor_fault
+
+<http://resource.geosciml.org/classifier/cgi/faulttype/scissor_fault> rdf:type owl:NamedIndividual ,
+                       owl:Thing ,
+                       skos:Concept ;
+              
+              skos:definition "A fault on which there is increasing offset or separation along the strike from an initial point of no offset, with the opposite sense of offset in the opposite direction."@en ;
+              
+              dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+              
+              dc:source "Neuendorf et al 2005" ;
+              
+              skos:prefLabel "Scissor fault"@en ;
+              
+              skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/fault> ;
+              
+              skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/faulttype/sinistral_strike_slip_fault
+
+<http://resource.geosciml.org/classifier/cgi/faulttype/sinistral_strike_slip_fault> rdf:type owl:NamedIndividual ,
+         owl:Thing ,
+         skos:Concept ;
+
+dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+
+skos:definition "Fault with left-lateral strike-parallel displacement component of slip vector more than 10 times the dip-parallel component of the slip vector at at least one location along the fault, and left-lateral displacement over more than half the mapped trace of the fault."@en ;
+
+skos:prefLabel "Sinistral strike slip fault"@en ;
+
+dc:source "this vocabulary"@en ;
+
+skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/strike_slip_fault> ;
+
+skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/faulttype/strike_slip_fault
+
+<http://resource.geosciml.org/classifier/cgi/faulttype/strike_slip_fault> rdf:type owl:NamedIndividual ,
+                           owl:Thing ,
+                           skos:Concept ;
+                  
+                  dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                  
+                  skos:definition "Fault with strike-parallel displacement component of slip vector more than 10 times the dip-parallel component of the slip vector at at least one location along the mapped trace of the fault."@en ;
+                  
+                  skos:prefLabel "Strike slip fault"@en ;
+                  
+                  dc:source "this vocabulary"@en ;
+                  
+                  skos:narrower <http://resource.geosciml.org/classifier/cgi/faulttype/dextral_strike_slip_fault> ;
+                  
+                  skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/fault> ;
+                  
+                  skos:narrower <http://resource.geosciml.org/classifier/cgi/faulttype/sinistral_strike_slip_fault> ,
+    <http://resource.geosciml.org/classifier/cgi/faulttype/wrench_fault> ;
+                  
+                  skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/faulttype/thrust_fault
+
+<http://resource.geosciml.org/classifier/cgi/faulttype/thrust_fault> rdf:type owl:NamedIndividual ,
+                      owl:Thing ,
+                      skos:Concept ;
+             
+             dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+             
+             skos:definition "Fault that dips less than 45 degrees over more than half of the recognized extent of the fault, with a hanging wall displaced from a structurally deeper position relative to footwall rocks."@en ;
+             
+             skos:prefLabel "Thrust fault"@en ;
+             
+             dc:source "this vocabulary"@en ;
+             
+             skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/low_angle_fault> ,
+                          <http://resource.geosciml.org/classifier/cgi/faulttype/reverse_fault> ;
+             
+             skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/faulttype/wrench_fault
+
+<http://resource.geosciml.org/classifier/cgi/faulttype/wrench_fault> rdf:type owl:NamedIndividual ,
+                      owl:Thing ,
+                      skos:Concept ;
+             
+             dc:source "GGIC vocabularies working group (Australia)" ;
+             
+             skos:definition "A strike slip fault in which the fault plane dips at least 45 degrees over more than half of the recognized extent of the fault."@en ;
+             
+             dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+             
+             skos:prefLabel "Wrench fault"@en ;
+             
+             skos:broader <http://resource.geosciml.org/classifier/cgi/faulttype/high_angle_fault> ,
+                          <http://resource.geosciml.org/classifier/cgi/faulttype/strike_slip_fault> ;
+             
+             skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> .
+
+
+
+###  http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype
+
+<http://resource.geosciml.org/classifierscheme/cgi/201202/faulttype> rdf:type owl:NamedIndividual ,
+                      owl:Thing ,
+                      skos:ConceptScheme ;
+             
+             skos:prefLabel "Fault Type Categories"@en .
+
+
+
+
+###  Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net
+

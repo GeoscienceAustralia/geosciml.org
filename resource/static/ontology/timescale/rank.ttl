@@ -1,0 +1,52 @@
+# baseURI: http://resource.geosciml.org/ontology/timescale/rank
+# imports: http://www.w3.org/2004/02/skos/core
+
+@prefix gts:     <http://resource.geosciml.org/ontology/timescale/gts#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rank:    <http://resource.geosciml.org/ontology/timescale/rank/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+gts:GeochronologicEraRank
+      rdf:type rdfs:Class ;
+      rdfs:subClassOf skos:Concept .
+
+<http://resource.geosciml.org/ontology/timescale/rank>
+      rdf:type owl:Ontology ;
+      owl:imports <http://www.w3.org/2004/02/skos/core> ;
+      owl:versionIRI <https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201401/GeologicTimeScale/rank.rdf> .
+
+rank:
+      rdf:type skos:Collection ;
+      rdfs:label "Ranks in the geologic timescale"^^xsd:string ;
+      skos:member rank:Period , rank:Super-Eon , rank:Sub-Period , rank:Era , rank:Age , rank:Epoch , rank:Eon .
+
+rank:Age
+      rdf:type gts:GeochronologicEraRank , skos:Concept ;
+      rdfs:label "Age"^^xsd:string .
+
+rank:Eon
+      rdf:type gts:GeochronologicEraRank , skos:Concept ;
+      rdfs:label "Eon"^^xsd:string .
+
+rank:Epoch
+      rdf:type gts:GeochronologicEraRank , skos:Concept ;
+      rdfs:label "Epoch"^^xsd:string .
+
+rank:Era
+      rdf:type gts:GeochronologicEraRank , skos:Concept ;
+      rdfs:label "Era"^^xsd:string .
+
+rank:Period
+      rdf:type gts:GeochronologicEraRank , skos:Concept ;
+      rdfs:label "Period"^^xsd:string .
+
+rank:Sub-Period
+      rdf:type gts:GeochronologicEraRank , skos:Concept ;
+      rdfs:label "Sub-Period"^^xsd:string .
+
+rank:Super-Eon
+      rdf:type gts:GeochronologicEraRank , skos:Concept ;
+      rdfs:label "Super-Eon"^^xsd:string .

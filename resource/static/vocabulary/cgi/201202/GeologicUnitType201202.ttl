@@ -1,0 +1,824 @@
+@prefix cgi: <http://resource.geosciml.org/classifierscheme/cgi/201202/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix : <http://resource.geosciml.org/classifierscheme/cgi/201107/geologicunittype#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://resource.geosciml.org/classifierscheme/cgi/201107/geologicunittype> .
+
+<http://resource.geosciml.org/classifierscheme/cgi/201107/geologicunittype> rdf:type owl:Ontology ;
+                                                                            
+                                                                            dc:format "text/turtle" ;
+                                                                            
+                                                                            dc:publisher "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)" ;
+                                                                            
+                                                                            owl:versionInfo "201202" ;
+                                                                            
+                                                                            dc:title "CGI Geologic unit type vocabulary"@en ;
+                                                                            
+                                                                            dc:identifier "http://resource.geosciml.org/classifierscheme/cgi/201202/geologicunittype" ;
+                                                                            
+                                                                            dc:language "en" ;
+                                                                            
+                                                                            dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)" .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+
+dc:publisher rdf:type owl:AnnotationProperty .
+
+
+
+dc:language rdf:type owl:AnnotationProperty .
+
+
+
+dc:identifier rdf:type owl:AnnotationProperty .
+
+
+
+dc:source rdf:type owl:AnnotationProperty .
+
+
+
+dc:format rdf:type owl:AnnotationProperty .
+
+
+
+dc:title rdf:type owl:AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+
+owl:topObjectProperty rdf:type owl:ObjectProperty ,
+                               owl:ReflexiveProperty ,
+                               owl:SymmetricProperty ,
+                               owl:TransitiveProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+
+skos:broader rdf:type owl:ObjectProperty ;
+             
+             rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#changeNote
+
+skos:changeNote rdf:type owl:ObjectProperty ;
+                
+                rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#exactMatch
+
+skos:exactMatch rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#hasTopConcept
+
+skos:hasTopConcept rdf:type owl:ObjectProperty ;
+                   
+                   rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+
+skos:inScheme rdf:type owl:ObjectProperty ;
+              
+              rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#narrower
+
+skos:narrower rdf:type owl:ObjectProperty ;
+              
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              
+              owl:inverseOf skos:broader .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#topConceptOf
+
+skos:topConceptOf rdf:type owl:ObjectProperty ;
+                  
+                  rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+
+rdf:value rdf:type owl:DatatypeProperty ;
+          
+          rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.w3.org/2002/07/owl#topDataProperty
+
+owl:topDataProperty rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#changeNote
+
+skos:changeNote rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+
+skos:definition rdf:type owl:DatatypeProperty ;
+                
+                rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#historyNote
+
+skos:historyNote rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+
+skos:notation rdf:type owl:DatatypeProperty ;
+              
+              rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+
+skos:prefLabel rdf:type owl:DatatypeProperty ;
+               
+               rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+
+owl:Thing rdf:type owl:Class .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+
+skos:Concept rdf:type owl:Class ;
+             
+             rdfs:subClassOf owl:Thing .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+
+skos:ConceptScheme rdf:type owl:Class ;
+                   
+                   rdfs:subClassOf owl:Thing .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/0001
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/0001> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/0002
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/0002> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/0003
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/0003> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/0004
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/0004> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/0005
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/0005> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/0006
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/0006> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/0007
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/0007> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/0008
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/0008> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/0009
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/0009> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/0010
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/0010> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/0011
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/0011> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/0012
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/0012> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/0013
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/0013> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/0014
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/0014> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/0015
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/0015> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/0016
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/0016> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/0017
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/0017> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/0018
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/0018> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/0019
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/0019> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/0020
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/0020> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/allostratigraphic_unit
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/allostratigraphic_unit> rdf:type owl:NamedIndividual ,
+                                                                                               owl:Thing ,
+                                                                                               skos:Concept ;
+                                                                                      
+                                                                                      dc:source "This vocabulary; Salvador, 1994; Donovon 2004 IUGS abstract." ;
+                                                                                      
+                                                                                      skos:definition "Geologic unit defined by bounding surfaces. Not necessarily stratified. Donovon (2004, IUGS abstract Florence) makes good case for use of a noncommittal term for the bounding surface. “While there may be no agreement that a given stratal boundary is a discontinuity, there is consensus that all the identified boundaries are stratal surfaces.” Includes: 1. Unconformity bounded units (Salvador 1994), defined by bounding stratigraphic discontinuities ('significant unconformities'; unconformity is defined as surface of erosion in Salvador 1994). 2. Sequence stratigraphic unit, an allostratigraphic unit that is used to interpret the depositional origin of sedimentary strata and assumes, though this is not always stated, an implicit connection to base level change. It does this by establishing how the sequence of strata accumulated in order in the sedimentary section over a subdividing framework of surfaces." ;
+                                                                                      
+                                                                                      skos:prefLabel "Allostratigraphic Unit"@en ;
+                                                                                      
+                                                                                      skos:definition "Geologic unit defined by bounding surfaces. Not necessarily stratified. Donovon (2004, IUGS abstract Florence) makes good case for use of a noncommittal term for the bounding surface. °34While there may be no agreement that a given stratal boundary is a discontinuity, there is consensus that all the identified boundaries are stratal surfaces.°35 Includes: 1. Unconformity bounded units (Salvador 1994), defined by bounding stratigraphic discontinuities ('significant unconformities'; unconformity is defined as surface of erosion in Salvador 1994). 2. Sequence stratigraphic unit, an allostratigraphic unit that is used to interpret the depositional origin of sedimentary strata and assumes, though this is not always stated, an implicit connection to base level change. It does this by establishing how the sequence of strata accumulated in order in the sedimentary section over a subdividing framework of surfaces." ;
+                                                                                      
+                                                                                      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunittype/0001> ;
+                                                                                      
+                                                                                      skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
+                                                                                      
+                                                                                      skos:inScheme cgi:geologicunittype .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/alteration_unit
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/alteration_unit> rdf:type owl:NamedIndividual ,
+                                                                                        owl:Thing ,
+                                                                                        skos:Concept ;
+                                                                               
+                                                                               skos:prefLabel "Alteration Unit"@en ;
+                                                                               
+                                                                               skos:definition "Geologic unit defined by alteration process." ;
+                                                                               
+                                                                               dc:source "This vocabulary"@en ;
+                                                                               
+                                                                               skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunittype/0002> ;
+                                                                               
+                                                                               skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
+                                                                               
+                                                                               skos:inScheme cgi:geologicunittype .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/artificial_ground
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/artificial_ground> rdf:type owl:NamedIndividual ,
+                                                                                          owl:Thing ,
+                                                                                          skos:Concept ;
+                                                                                 
+                                                                                 skos:prefLabel "Artificial Ground"@en ;
+                                                                                 
+                                                                                 skos:definition "Geologic unit defined by genesis involving direct human action to deposit or modify material." ;
+                                                                                 
+                                                                                 dc:source "this vocabulary"@en ;
+                                                                                 
+                                                                                 skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunittype/0003> ;
+                                                                                 
+                                                                                 skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithogenetic_unit> ;
+                                                                                 
+                                                                                 skos:inScheme cgi:geologicunittype .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/biostratigraphic_unit
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/biostratigraphic_unit> rdf:type owl:NamedIndividual ,
+                                                                                              owl:Thing ,
+                                                                                              skos:Concept ;
+                                                                                     
+                                                                                     dc:source "Lenz et al., 2000, Note 64 (see AAPG Bulletin, v. 89, no. 11, November 2005); North American Stratigraphic Code, 1983" ;
+                                                                                     
+                                                                                     skos:prefLabel "Biostratigraphic Unit"@en ;
+                                                                                     
+                                                                                     skos:definition "Geologic unit defined based on fossil content. Five kinds of biozones are recognized by the revised NACSN (Lenz et al., 2000, Note 64, a recommended complete replacement of Articles 48 through 54 of the North American Stratigraphic Code (NACSN, 1983) accepted for publication 2000.): range biozone, interval biozone, lineage biozone, assemblage biozone, and abundance biozone. These represent different approaches to defining and recognizing biozones." ;
+                                                                                     
+                                                                                     skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunittype/0004> ;
+                                                                                     
+                                                                                     skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
+                                                                                     
+                                                                                     skos:inScheme cgi:geologicunittype .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/chronostratigraphic_unit
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/chronostratigraphic_unit> rdf:type owl:NamedIndividual ,
+                                                                                                 owl:Thing ,
+                                                                                                 skos:Concept ;
+                                                                                        
+                                                                                        dc:source "Salvador, A., 1994, International Stratigraphic Guide, Second Edition" ;
+                                                                                        
+                                                                                        skos:definition "Geologic unit that includes all rocks formed during a specific interval of geologic time" ;
+                                                                                        
+                                                                                        skos:prefLabel "Chronostratigraphic Unit"@en ;
+                                                                                        
+                                                                                        skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunittype/0005> ;
+                                                                                        
+                                                                                        skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
+                                                                                        
+                                                                                        skos:inScheme cgi:geologicunittype .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/deformation_unit
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/deformation_unit> rdf:type owl:NamedIndividual ,
+                                                                                         owl:Thing ,
+                                                                                         skos:Concept ;
+                                                                                
+                                                                                skos:definition "Lithotectonic unit defined by deformation style or characteristic geologic structure observable in outcrop." ;
+                                                                                
+                                                                                skos:prefLabel "Deformation Unit"@en ;
+                                                                                
+                                                                                dc:source "this vocabulary"@en ;
+                                                                                
+                                                                                skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunittype/0006> ;
+                                                                                
+                                                                                skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithotectonic_unit> ;
+                                                                                
+                                                                                skos:inScheme cgi:geologicunittype .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/excavation_unit
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/excavation_unit> rdf:type owl:NamedIndividual ,
+                                                                                        owl:Thing ,
+                                                                                        skos:Concept ;
+                                                                               
+                                                                               skos:definition "Geologic unit defined by human-made genesis involving excavation. Not necessarily defined by landform (a hole...), as they could have been subsequently filled/landscaped etc. If the excavation is filled becomes an excavation with artificial ground wholly or partly superimposed on it. This sort of thing can become quite important in urban geology where an excavation can be filled and landscaped." ;
+                                                                               
+                                                                               skos:prefLabel "Excavation Unit"@en ;
+                                                                               
+                                                                               dc:source "this vocabulary"@en ;
+                                                                               
+                                                                               skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunittype/0007> ;
+                                                                               
+                                                                               skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithogenetic_unit> ;
+                                                                               
+                                                                               skos:inScheme cgi:geologicunittype .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> rdf:type owl:NamedIndividual ,
+                                                                                      owl:Thing ,
+                                                                                      skos:Concept ;
+                                                                             
+                                                                             skos:definition "Type of geologic unit is unknown, unspecified, irrelevant, or some type not included in the vocabulary. Type makes no implication for required properties or cardinalities. This is the root concept for the type hierarchy." ;
+                                                                             
+                                                                             skos:prefLabel "Geologic Unit"@en ;
+                                                                             
+                                                                             dc:source "this vocabulary"@en ;
+                                                                             
+                                                                             skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunittype/0008> ;
+                                                                             
+                                                                             skos:narrower <http://resource.geosciml.org/classifier/cgi/geologicunittype/allostratigraphic_unit> ,
+                                                                                           <http://resource.geosciml.org/classifier/cgi/geologicunittype/alteration_unit> ,
+                                                                                           <http://resource.geosciml.org/classifier/cgi/geologicunittype/biostratigraphic_unit> ,
+                                                                                           <http://resource.geosciml.org/classifier/cgi/geologicunittype/chronostratigraphic_unit> ,
+                                                                                           <http://resource.geosciml.org/classifier/cgi/geologicunittype/geomorphologic_unit> ,
+                                                                                           <http://resource.geosciml.org/classifier/cgi/geologicunittype/geophysical_unit> ,
+                                                                                           <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithogenetic_unit> ,
+                                                                                           <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithologic_unit> ,
+                                                                                           <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithostratigraphic_unit> ,
+                                                                                           <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithotectonic_unit> ,
+                                                                                           <http://resource.geosciml.org/classifier/cgi/geologicunittype/pedoderm> ,
+                                                                                           <http://resource.geosciml.org/classifier/cgi/geologicunittype/pedostratigraphic_unit> ,
+                                                                                           <http://resource.geosciml.org/classifier/cgi/geologicunittype/polarity_chronostratigraphic_unit> ;
+                                                                             
+                                                                             skos:inScheme cgi:geologicunittype ;
+                                                                             
+                                                                             skos:topConceptOf cgi:geologicunittype .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/geomorphologic_unit
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/geomorphologic_unit> rdf:type owl:NamedIndividual ,
+                                                                                            owl:Thing ,
+                                                                                            skos:Concept ;
+                                                                                   
+                                                                                   skos:definition "Geologic unit defined by surface landform, e.g. hummocky moraine" ;
+                                                                                   
+                                                                                   skos:prefLabel "Geomorphologic Unit"@en ;
+                                                                                   
+                                                                                   rdfs:comment "This vocabulary"@en ;
+                                                                                   
+                                                                                   skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunittype/0009> ;
+                                                                                   
+                                                                                   skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
+                                                                                   
+                                                                                   skos:inScheme cgi:geologicunittype .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/geophysical_unit
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/geophysical_unit> rdf:type owl:NamedIndividual ,
+                                                                                         owl:Thing ,
+                                                                                         skos:Concept ;
+                                                                                
+                                                                                skos:definition "Geologic unit defined by its geophysical characteristics. Denotes that the properties used to define the unit are measured by intrumental techniques, not directly observable by humans, e.g. density, magnetic susceptibility, magnetization, electrical conductivity." ;
+                                                                                
+                                                                                skos:prefLabel "Geophysical Unit"@en ;
+                                                                                
+                                                                                dc:source "this vocabulary"@en ;
+                                                                                
+                                                                                skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunittype/0010> ;
+                                                                                
+                                                                                skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
+                                                                                
+                                                                                skos:narrower <http://resource.geosciml.org/classifier/cgi/geologicunittype/magnetostratigraphic_unit> ;
+                                                                                
+                                                                                skos:inScheme cgi:geologicunittype .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/lithodemic_unit
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/lithodemic_unit> rdf:type owl:NamedIndividual ,
+                                                                                        owl:Thing ,
+                                                                                        skos:Concept ;
+                                                                               
+                                                                               skos:prefLabel "Lithodemic Unit"@en ;
+                                                                               
+                                                                               dc:source "North American Commission on Stratigraphic Nomenclature, 1983" ;
+                                                                               
+                                                                               skos:definition "Lithostratigraphic unit that lacks stratification" ;
+                                                                               
+                                                                               skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunittype/0011> ;
+                                                                               
+                                                                               skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithostratigraphic_unit> ;
+                                                                               
+                                                                               skos:inScheme cgi:geologicunittype .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/lithogenetic_unit
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/lithogenetic_unit> rdf:type owl:NamedIndividual ,
+                                                                                          owl:Thing ,
+                                                                                          skos:Concept ;
+                                                                                 
+                                                                                 skos:definition "Geologic unit defined by genesis. The genesis is manifested by material properties, but the material is not the defining property. Example-- alluvial deposits, glacial deposits." ;
+                                                                                 
+                                                                                 skos:prefLabel "Lithogenetic Unit"@en ;
+                                                                                 
+                                                                                 dc:source "this vocabulary"@en ;
+                                                                                 
+                                                                                 skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunittype/0012> ;
+                                                                                 
+                                                                                 skos:narrower <http://resource.geosciml.org/classifier/cgi/geologicunittype/artificial_ground> ,
+                                                                                               <http://resource.geosciml.org/classifier/cgi/geologicunittype/excavation_unit> ;
+                                                                                 
+                                                                                 skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
+                                                                                 
+                                                                                 skos:narrower <http://resource.geosciml.org/classifier/cgi/geologicunittype/mass_movement_unit> ;
+                                                                                 
+                                                                                 skos:inScheme cgi:geologicunittype .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/lithologic_unit
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/lithologic_unit> rdf:type owl:NamedIndividual ,
+                                                                                        owl:Thing ,
+                                                                                        skos:Concept ;
+                                                                               
+                                                                               skos:definition "Geologic unit defined by lithology independent of relationships to other units. Denotes a 'kind' of rock body characterized by lithology, e.g. basaltic rocks." ;
+                                                                               
+                                                                               skos:prefLabel "Lithologic Unit"@en ;
+                                                                               
+                                                                               dc:source "this vocabulary"@en ;
+                                                                               
+                                                                               skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunittype/0013> ;
+                                                                               
+                                                                               skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
+                                                                               
+                                                                               skos:inScheme cgi:geologicunittype .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/lithostratigraphic_unit
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/lithostratigraphic_unit> rdf:type owl:NamedIndividual ,
+                                                                                                owl:Thing ,
+                                                                                                skos:Concept ;
+                                                                                       
+                                                                                       skos:definition "Geologic unit defined on the basis of observable and distinctive lithologic properties or combination of lithologic properties and stratigraphic relationships. Denotes a particular body of rock." ;
+                                                                                       
+                                                                                       dc:source "Salvador, A., 1994, International Stratigraphic Guide, Second Edition" ;
+                                                                                       
+                                                                                       skos:prefLabel "Lithostratigraphic Unit"@en ;
+                                                                                       
+                                                                                       skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunittype/0014> ;
+                                                                                       
+                                                                                       skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
+                                                                                       
+                                                                                       skos:narrower <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithodemic_unit> ;
+                                                                                       
+                                                                                       skos:inScheme cgi:geologicunittype .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/lithotectonic_unit
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/lithotectonic_unit> rdf:type owl:NamedIndividual ,
+                                                                                           owl:Thing ,
+                                                                                           skos:Concept ;
+                                                                                  
+                                                                                  skos:definition "Geologic unit defined defined on basis of structural or deformation features, mutual relations, origin or historical evolution. Contained material may be igneous, sedimentary, or metamorphic." ;
+                                                                                  
+                                                                                  skos:prefLabel "Lithotectonic Unit"@en ;
+                                                                                  
+                                                                                  dc:source "Neuendorf et al., 2004" ;
+                                                                                  
+                                                                                  skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunittype/0015> ;
+                                                                                  
+                                                                                  skos:narrower <http://resource.geosciml.org/classifier/cgi/geologicunittype/deformation_unit> ;
+                                                                                  
+                                                                                  skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
+                                                                                  
+                                                                                  skos:inScheme cgi:geologicunittype .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/magnetostratigraphic_unit
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/magnetostratigraphic_unit> rdf:type owl:NamedIndividual ,
+                                                                                                  owl:Thing ,
+                                                                                                  skos:Concept ;
+                                                                                         
+                                                                                         dc:source "Salvador, A., 1994, International Stratigraphic Guide, Second Edition" ;
+                                                                                         
+                                                                                         skos:definition "Geologic unit defined by magnetic characteristics." ;
+                                                                                         
+                                                                                         skos:prefLabel "Magnetostratigraphic Unit"@en ;
+                                                                                         
+                                                                                         skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunittype/0016> ;
+                                                                                         
+                                                                                         skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geophysical_unit> ;
+                                                                                         
+                                                                                         skos:inScheme cgi:geologicunittype .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/mass_movement_unit
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/mass_movement_unit> rdf:type owl:NamedIndividual ,
+                                                                                           owl:Thing ,
+                                                                                           skos:Concept ;
+                                                                                  
+                                                                                  skos:definition "Geologic unit produced by gravity driven, down-slope displacemnt of material, and characterized by the type of movement giving rise to the deposit, and by how the individual movement types present in the deposit are related in time and space." ;
+                                                                                  
+                                                                                  skos:prefLabel "Mass Movement Unit"@en ;
+                                                                                  
+                                                                                  dc:source "this vocabulary"@en ;
+                                                                                  
+                                                                                  skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunittype/0017> ;
+                                                                                  
+                                                                                  skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/lithogenetic_unit> ;
+                                                                                  
+                                                                                  skos:inScheme cgi:geologicunittype .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/pedoderm
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/pedoderm> rdf:type owl:NamedIndividual ,
+                                                                                 owl:Thing ,
+                                                                                 skos:Concept ;
+                                                                        
+                                                                        skos:definition "Geologic unit defined based on soil development and character. Pedoderm is not a surface classification unit because soil classification requires knowledge of the soil profile, which always extends some distance beneath the surface." ;
+                                                                        
+                                                                        skos:prefLabel "Pedoderm"@en ;
+                                                                        
+                                                                        dc:source "this vocabulary"@en ;
+                                                                        
+                                                                        skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunittype/0018> ;
+                                                                        
+                                                                        skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
+                                                                        
+                                                                        skos:inScheme cgi:geologicunittype .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/pedostratigraphic_unit
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/pedostratigraphic_unit> rdf:type owl:NamedIndividual ,
+                                                                                               owl:Thing ,
+                                                                                               skos:Concept ;
+                                                                                      
+                                                                                      dc:source "North American Commission on Stratigraphic Nomenclature, 1983; Morrison, 1995, INQUA/ISSS newsletter, Nov. 1995, http://fadr.msu.ru/inqua/nl-archive/nl-8-11/howcan.html, ISSN 0256-2340." ;
+                                                                                      
+                                                                                      skos:definition "Geologic unit that represents a single pedologic horizon in a sequence of strata (consolidated or non-consolidated). The presence of an overlying geologic unit is required, but locally the soil horizon may be at the Earth surface (in which case is may be coincident with a Pedoderm). See discussion at https://www.seegrid.csiro.au/twiki/bin/view/CGIModel/PedostratigraphicUnit" ;
+                                                                                      
+                                                                                      skos:prefLabel "Pedostratigraphic Unit"@en ;
+                                                                                      
+                                                                                      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunittype/0019> ;
+                                                                                      
+                                                                                      skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
+                                                                                      
+                                                                                      skos:inScheme cgi:geologicunittype .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/geologicunittype/polarity_chronostratigraphic_unit
+
+<http://resource.geosciml.org/classifier/cgi/geologicunittype/polarity_chronostratigraphic_unit> rdf:type owl:NamedIndividual ,
+                                                                                                          owl:Thing ,
+                                                                                                          skos:Concept ;
+                                                                                                 
+                                                                                                 dc:source "North American Commission on Stratigraphic Nomenclature, 1983" ;
+                                                                                                 
+                                                                                                 skos:definition "Geologic unit defined by primary magnetic-polarity record imposed whien the rock was deposited or crystallized during a specific interval of geolgoic time. Kind of chronostratigraphic unit and kind of geophysical unit." ;
+                                                                                                 
+                                                                                                 skos:prefLabel "Polarity Chronostratigraphic Unit"@en ;
+                                                                                                 
+                                                                                                 skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunittype/0020> ;
+                                                                                                 
+                                                                                                 skos:broader <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> ;
+                                                                                                 
+                                                                                                 skos:inScheme cgi:geologicunittype .
+
+
+
+###  http://resource.geosciml.org/classifierscheme/cgi/201202/geologicunittype
+
+cgi:geologicunittype rdf:type owl:NamedIndividual ,
+                              owl:Thing ,
+                              skos:ConceptScheme ;
+                     
+                     skos:historyNote "2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet."@en ;
+                     
+                     skos:changeNote "2009-12-07 SMR Update metadata properties for version, creator, title, and format.  Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en ;
+                     
+                     skos:historyNote "2009-12-07 SMR Update metadata properties for version, creator, title, and format.  Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en ,
+                                      "2009-12-07. SMR add collections for mineralogical and sedimentary petrographic categories, improve annotation and notes on vocabulary."@en ,
+                                      "2010-02-13 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en ,
+                                      "2010-11-28 SMR replace URN with http URI according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)"@en ,
+                                      "2011-07-01 SMR correct logical inconsistencies in hierarchy; lithostratigraphic is not subtype of lithologic unit; lithogenetic is subtype of lithostratigraphic. Based on review comments from OR, Geoscience Australia"@en ,
+                                      "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en ,
+                                      "2012-02-27 SMR add exact match triples relating to URIs in 201012 vocabulary scheme"@en ;
+                     
+                     skos:prefLabel "CGI Geologic unit type vocabulary"@en ;
+                     
+                     skos:definition "This file contains the CGI Geologic Unit type vocabulary. Unit types are differentiated based on the defining properties."@en ;
+                     
+                     skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/geologicunittype/geologic_unit> .
+
+
+
+
+###  Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net
+

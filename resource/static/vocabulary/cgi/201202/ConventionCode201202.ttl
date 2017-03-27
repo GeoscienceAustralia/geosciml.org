@@ -1,0 +1,277 @@
+@prefix cgi: <http://resource.geosciml.org/classifierscheme/cgi/201202/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix xlink: <http://www.w3.org/1999/xlink> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ConventionCode201202: <http://resource.geosciml.org/classifier/cgi/conventioncode/> .
+@prefix : <http://resource.geosciml.org/classifierscheme/cgi/201202/conventioncode> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://resource.geosciml.org/classifierscheme/cgi/201202/conventioncode> .
+
+<http://resource.geosciml.org/classifierscheme/cgi/201202/conventioncode> rdf:type owl:Ontology ;
+                                                                          
+                                                                          owl:versionInfo "201202" ;
+                                                                          
+                                                                          dc:title "CGI Structure Measurement Convention Term Vocabulary"@en ;
+                                                                          
+                                                                          dc:format "text/turtle" ;
+                                                                          
+                                                                          dc:language "en" ;
+                                                                          
+                                                                          dc:identifier "http://resource.geosciml.org/classifierscheme/cgi/201202/conventioncode" ;
+                                                                          
+                                                                          dc:publisher "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)" ;
+                                                                          
+                                                                          dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)" .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+
+dc:publisher rdf:type owl:AnnotationProperty .
+
+
+
+dc:contributor rdf:type owl:AnnotationProperty .
+
+
+
+dc:language rdf:type owl:AnnotationProperty .
+
+
+
+dc:identifier rdf:type owl:AnnotationProperty .
+
+
+
+dc:date rdf:type owl:AnnotationProperty .
+
+
+
+dc:source rdf:type owl:AnnotationProperty .
+
+
+
+dc:description rdf:type owl:AnnotationProperty .
+
+
+
+dc:format rdf:type owl:AnnotationProperty .
+
+
+
+dc:title rdf:type owl:AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+
+skos:broader rdf:type owl:ObjectProperty ;
+             
+             owl:inverseOf skos:narrower .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#changeNote
+
+skos:changeNote rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#exactMatch
+
+skos:exactMatch rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+
+skos:inScheme rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#narrower
+
+skos:narrower rdf:type owl:ObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+
+rdf:value rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+
+skos:definition rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#historyNote
+
+skos:historyNote rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+
+skos:notation rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+
+skos:prefLabel rdf:type owl:DatatypeProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+
+owl:Thing rdf:type owl:Class .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+
+skos:Concept rdf:type owl:Class .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+
+skos:ConceptScheme rdf:type owl:Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://resource.geosciml.org/classifier/cgi/conventioncode/0001
+
+<http://resource.geosciml.org/classifier/cgi/conventioncode/0001> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/conventioncode/0002
+
+<http://resource.geosciml.org/classifier/cgi/conventioncode/0002> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/conventioncode/dip_dip_direction
+
+ConventionCode201202:dip_dip_direction rdf:type owl:NamedIndividual ,
+                                                owl:Thing ,
+                                                skos:Concept ;
+                                       
+                                       dc:source "GeoSciML v.2" ;
+                                       
+                                       skos:definition "The orientation measurement consists of a dip and a dip direction. Dip is the angle that the structural surface (eg bedding, fault plane) makes with the horizontal measured perpendicular to the strike of the structure and in the vertical plane Dip direction is the azimuth perpindicular to the strike of the structure" ;
+                                       
+                                       skos:prefLabel "Dip Dip Direction"@en ;
+                                       
+                                       skos:exactMatch <http://resource.geosciml.org/classifier/cgi/conventioncode/0001> ;
+                                       
+                                       skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/conventioncode> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/conventioncode/strike_dip_rhr
+
+ConventionCode201202:strike_dip_rhr rdf:type owl:NamedIndividual ,
+                                             owl:Thing ,
+                                             skos:Concept ;
+                                    
+                                    dc:source "GeoSciML v2" ;
+                                    
+                                    skos:prefLabel "Strike Dip RHR"@en ;
+                                    
+                                    skos:definition "The strike and dip of planar data is listed according to the ‘right-hand rule’ or, as one looks along the strike direction, the surface dips to the right. Dip is the angle that the structural surface (eg bedding, fault plane) makes with the horizontal measured perpindicular to the strike of the structure and in the vertical plane" ;
+                                    
+                                    skos:exactMatch <http://resource.geosciml.org/classifier/cgi/conventioncode/0002> ;
+                                    
+                                    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/conventioncode> .
+
+
+
+###  http://resource.geosciml.org/classifierscheme/cgi/201202/conventioncode
+
+<http://resource.geosciml.org/classifierscheme/cgi/201202/conventioncode> rdf:type owl:NamedIndividual ,
+                                                                                   owl:Thing ,
+                                                                                   skos:ConceptScheme ;
+                                                                          
+                                                                          skos:historyNote "2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet."@en ,
+                                                                                           "2010-02-08. SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments."@en ,
+                                                                                           "2010-11-27 SMR update URN to http URI create v201202"@en ,
+                                                                                           "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en ,
+                                                                                           "2012-02-27 SMR add skos:exactMatch triples to map URIs for concepts in this vocabulary to number-token URIs in 201012 version of same concepts."@en ,
+                                                                                           "2012-05-01 GD fix URI encoding of matching concepts."@en ;
+                                                                          
+                                                                          skos:prefLabel "CGI Structure Measurement Convention Term Vocabulary"@en ;
+                                                                          
+                                                                          skos:definition "This file contains the 201202 version of CGI Convention Code list; use to specify the convention used for reporting the orientation of a planar feature. Used in CGI_PlanarOrientation, is enumeration in GeoSciML XML schema. This list is for information purposes."@en .
+
+
+
+
+###  Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net
+

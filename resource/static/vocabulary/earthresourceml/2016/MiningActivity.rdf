@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#">
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity">
+      <dcterms:title xml:lang="en">Mining Activity</dcterms:title>
+      <dcterms:description xml:lang="en">This file contains the CGI Mining Activity vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. The vocabulary defines concepts to categorize the type of mining activity (eg Open Cut, Underground Mine, multiple, unspecified) or processing activity (eg Ore Processing) or production. Using activity to distinguish between the extraction, processing and production activities allows distinguishing between ore mined/grade/recovery, ore treated/grade/recovery and produced payable/plant recovery. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme.</dcterms:description>
+      <skos:editorialNote xml:lang="en">This file contains the 2016 SKOS-RDF version of the CGI Mining Activity vocabulary. Vocabulary Shepherd: Rachel Heaven/Tim McCormick. Compilation and review in Google doc spreadsheet; adopted 9/01/2014; converted to MS Excel XML for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt</skos:editorialNote>
+      <skos:changeNote xml:lang="en">2014-02-23 SMR Original conversion to SKOS.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2015-01-08 OLR Edits to fix typos and remove '201401' from rdf file name.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2016-11-29 OLR Regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions.</skos:changeNote>
+      <dcterms:date>2016-11-29</dcterms:date>
+      <dcterms:creator>CGI Geoscience Terminology Working Group</dcterms:creator>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/in-situ-recovery">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity"/>
+      <skos:definition xml:lang="en">The extraction of valuable constituents of an orebody in place from boreholes using thermal, miscible, and chemical methods e.g. by dissolution, leaching, underground gasification</skos:definition>
+      <skos:prefLabel xml:lang="en">in-situ recovery</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">02.02.01.</skos:notation>
+      <skos:altLabel xml:lang="en">chemical mining</skos:altLabel>
+      <skos:altLabel xml:lang="en">solution mining</skos:altLabel>
+      <skos:altLabel xml:lang="en">underground gasification</skos:altLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/borehole-mining"/>
+      <dcterms:source xml:lang="en">Glossary of Geology. 5th Edition, AGI - online, adapted from chemical mining and enhanced oil recovery</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/quarrying">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity"/>
+      <skos:definition xml:lang="en">The extraction of building stone or other valuable nonmetallic constituent from an open or surface mineral working. It is distinguished from a mine because a quarry usually is open at the top and front, and, in ordinary use of the term, by the character of the material extracted.</skos:definition>
+      <skos:prefLabel xml:lang="en">quarrying</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">01.03.01.</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/open-pit-mining"/>
+      <dcterms:source xml:lang="en">Glossary of Geology. 5th Edition, AGI - online</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/underground-mining">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity"/>
+      <skos:definition xml:lang="en">A mineral extraction activity in which ore is extracted from the subsurface via underground mine workings (adits, shafts, drifts, stopes, etc.).</skos:definition>
+      <skos:prefLabel xml:lang="en">underground mining</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">02.01.</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/subsurface-mining"/>
+      <dcterms:source xml:lang="en">Dictionary of Mining, Mineral and Related Terms, 1st edition</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/borehole-mining">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity"/>
+      <skos:definition xml:lang="en">Extraction of a mineral product in the liquid or gaseous state from the Earth's crust by means of boreholes. Boreholes are used for mining petroleum, and for the extraction of liquid solutions of salt, sulfur, etc.</skos:definition>
+      <skos:prefLabel xml:lang="en">borehole mining</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">02.02.</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/subsurface-mining"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/in-situ-recovery"/>
+      <dcterms:source xml:lang="en">Dictionary of Mining, Mineral and Related Terms, 2nd ed, AGI 1997</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/surface-placer-mining">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity"/>
+      <skos:definition xml:lang="en">The extraction of heavy mineral from beach or sand-bank deposits by concentration in running water. It includes ground sluicing, panning, shoveling gravel into a sluice, scraping by power scraper and excavation by dragline, dredge or other mechanized equipment.</skos:definition>
+      <skos:prefLabel xml:lang="en">surface placer mining</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">01.01.</skos:notation>
+      <skos:altLabel xml:lang="en">alluvial mining</skos:altLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/surface-mining"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/placer-dredging"/>
+      <dcterms:source xml:lang="en">Dictionary of Mining, Mineral and Related Terms, 2nd ed, AGI 1997</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/hydraulic-mining">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity"/>
+      <skos:definition xml:lang="en">The recovery of desired material, generally in open pits, by means of strong jets of water</skos:definition>
+      <skos:prefLabel xml:lang="en">hydraulic mining</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">01.20.</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/surface-mining"/>
+      <dcterms:source xml:lang="en">Glossary of Geology. 5th Edition, AGI - online</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/open-pit-mining">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity"/>
+      <skos:definition xml:lang="en">An open-sky excavation for the extraction of mineral resources (eg, open cut, open cast, strip mining)</skos:definition>
+      <skos:prefLabel xml:lang="en">open-pit mining</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">01.03.</skos:notation>
+      <skos:altLabel xml:lang="en">open sky mining</skos:altLabel>
+      <skos:altLabel xml:lang="en">open-cast mining</skos:altLabel>
+      <skos:altLabel xml:lang="en">open cut mining</skos:altLabel>
+      <skos:altLabel xml:lang="en">strip mining</skos:altLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/surface-mining"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/quarrying"/>
+      <dcterms:source xml:lang="en">CGI/ERML 2.0</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/placer-dredging">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity"/>
+      <skos:definition xml:lang="en">The extraction of minerals from an underwater placer deposit by the use of floating equipment for scooping or suction</skos:definition>
+      <skos:prefLabel xml:lang="en">placer dredging</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">01.01.01.</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/surface-placer-mining"/>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/dredge-mining"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/surface-mining"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/surface-mining">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity"/>
+      <skos:definition xml:lang="en">Mining via surface excavations.</skos:definition>
+      <skos:prefLabel xml:lang="en">surface mining</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">01..</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/surface-placer-mining"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/hydraulic-mining"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/open-pit-mining"/>
+      <dcterms:source xml:lang="en">Dictionary of Mining, Mineral and Related Terms, 2nd ed, AGI 1997</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/subsurface-mining"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/subsurface-mining">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity"/>
+      <skos:definition xml:lang="en">Mining beneath the surface of the earth.</skos:definition>
+      <skos:prefLabel xml:lang="en">subsurface mining</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">02..</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/underground-mining"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/borehole-mining"/>
+      <dcterms:source xml:lang="en">Dictionary of Mining, Mineral and Related Terms, 2nd ed, AGI 1997</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/underwater-mining"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/underwater-mining">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity"/>
+      <skos:definition xml:lang="en">Mining of underwater mineral deposits at or close to the sea, lake or river bed. May be from floating or land-based platforms involving dredging or vaccuum pumping or may use remote operated vehicle (submersible).</skos:definition>
+      <skos:prefLabel xml:lang="en">underwater mining</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">03..</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/subaqueous-vacuum-pumping"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/subaqueous-remote-operated-vehicle"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/dredge-mining"/>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/subaqueous-vacuum-pumping">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity"/>
+      <skos:prefLabel xml:lang="en">subaqueous vacuum pumping</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">03.01..</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/underwater-mining"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/subaqueous-remote-operated-vehicle">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity"/>
+      <skos:prefLabel xml:lang="en">subaqueous remote operated vehicle</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">03.02..</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/underwater-mining"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/dredge-mining">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity"/>
+      <skos:definition xml:lang="en">Excavation of underwater mineral resources by floating equipment. Dredging systems are classified as mechanical or hydraulic, depending on the method of material transport.</skos:definition>
+      <skos:prefLabel xml:lang="en">dredge mining</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">03.03..</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/underwater-mining"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-activity/placer-dredging"/>
+      <dcterms:source xml:lang="en">http://www.britannica.com/EBchecked/topic/171297/dredgin; adapted to include all types of mineral resources, not just placer deposits (e.g. could include sulfide deposits, manganese nodules on sea floor)</dcterms:source>
+   </skos:Concept>
+   <skos:Collection rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity">
+      <dcterms:title xml:lang="en">Mining Activity - All Concepts</dcterms:title>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/in-situ-recovery"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/quarrying"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/underground-mining"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/borehole-mining"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/surface-placer-mining"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/hydraulic-mining"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/open-pit-mining"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/placer-dredging"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/surface-mining"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/subsurface-mining"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/underwater-mining"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/subaqueous-vacuum-pumping"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/subaqueous-remote-operated-vehicle"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-activity/dredge-mining"/></skos:member>
+   </skos:Collection>
+</rdf:RDF>

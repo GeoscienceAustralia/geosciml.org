@@ -1,0 +1,1628 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY cgi "http://resource.geosciml.org/classifierscheme/cgi/201012/" >
+]>
+
+
+<rdf:RDF xmlns="&cgi;foliationtype#"
+     xml:base="&cgi;foliationtype"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:cgi="http://resource.geosciml.org/classifierscheme/cgi/201012/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="">
+        <dc:identifier
+            >http://resource.geosciml.org/classifierscheme/cgi/201012/foliationtype</dc:identifier>
+        <dc:contributor
+            >Stephen M Richard</dc:contributor>
+        <owl:versionInfo>201012</owl:versionInfo>
+        <dc:date>2009-11-04</dc:date>
+        <dc:format
+            >application/rdf+xml</dc:format>
+        <dc:title xml:lang="en"
+            >CGI Foliation Type categories</dc:title>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:publisher xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:publisher>
+        <dc:subject xml:lang="en"
+            >Planar fabrics in rocks</dc:subject>
+        <dc:description xml:lang="en"
+            >This file contains the CGI Foliation type vocabulary. Use for soft typing GeoSciML GeologicStructure.Foliation elements. Generated from compilation.</dc:description>
+        <dc:description xml:lang="en"
+            >vocabulary for categories of planar fabric, for use in GeoSciML interchange documents</dc:description>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;date"/>
+    <owl:AnnotationProperty rdf:about="&dc;source"/>
+    <owl:AnnotationProperty rdf:about="&dc;identifier"/>
+    <owl:AnnotationProperty rdf:about="&dc;publisher"/>
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    <owl:AnnotationProperty rdf:about="&dc;description"/>
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    <owl:AnnotationProperty rdf:about="&dc;format"/>
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    <owl:AnnotationProperty rdf:about="&dc;subject"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:ObjectProperty rdf:about="&skos;broader">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:ObjectProperty rdf:about="&skos;inScheme">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+    <owl:ObjectProperty rdf:about="&skos;narrower">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <owl:inverseOf rdf:resource="&skos;broader"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+    <owl:ObjectProperty rdf:about="&skos;topConceptOf">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+    <owl:DatatypeProperty rdf:about="&rdf;value">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:DatatypeProperty rdf:about="&skos;definition">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+    <owl:DatatypeProperty rdf:about="&skos;historyNote">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:DatatypeProperty rdf:about="&skos;notation">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:DatatypeProperty rdf:about="&skos;prefLabel">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="&skos;Concept">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="&skos;ConceptScheme">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0001 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0001">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en"
+            >Anastomosing spaced cleavage</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source
+            >Term from Geological Survey Victoria, Australia</dc:source>
+        <skos:definition xml:lang="en"
+            >spaced cleavage domains branch and rejoin, creating lens-shaped microlithons.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0065"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0002 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0002">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >&gt;Fabric defined by textural or mineralogic variations in sediment produced by depositional processes. May be manifested by lamination structure within the sediment, or by layering in which the individual layers (beds) are bounded by discontinuities related to events in the depositional history.</skos:definition>
+        <skos:prefLabel xml:lang="en">Bedding fabric</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source
+            >SLTTs 2004; this vocabulary</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0003"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0015"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0050"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0054"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0062"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0003 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0003">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >A surface internal to the containing sediment mass defined by textural or mineralogical variation, produced by sediment deposition process, and reflecting the orientation of the original depositional surface. Syn Laminated structure (SLTTs 2004).</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Bedding lamination structure</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source>SLTTs 2004</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0002"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0016"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0025"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0037"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0038"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0051"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0053"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0072"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0074"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0004 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0004">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">C fabric</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Ductile shear banding foliation defined by spaced, discrete planar zones of high strain less than 1mm thick. Commonly associated with a particle flattening (&#39;S&#39;) fabric to form a mylonitic foliation.</skos:definition>
+        <dc:source
+            >Geoscience Victoria, Australia</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0023"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0005 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0005">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >A tectonic foliation in a rock characterized by a tendency for the rock to split along a regular set of parallel or sub-parallel closely spaced surfaces. Cleavage is a more general term than schistosity because schistosity need not be present in order for a rock to display cleavage. Cleavage domains or parting surfaces are not spaced more than 5 cm apart on average (Borradaille et al., 1982)</skos:definition>
+        <dc:source xml:lang="en"
+            >Brodie, Kate, Fettes, Douglas, and Harte, Ben, 2007, Structural terms including fault rock terms, in Fettes, D., and Desmons, J., Metamorphic rocks-A classification and Glossary of Terms: Cambridge, UK, Cam-bridge University Press, p. 24-31.</dc:source>
+        <skos:prefLabel xml:lang="en">Cleavage</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0006"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0007"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0012"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0014"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0021"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0022"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0028"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0058"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0065"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0006 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0006">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en"
+            >Cleavage parallel to bedding</skos:prefLabel>
+        <dc:source>this vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >Composite fabric in which a cleavage is developed parallel to bedding.</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0005"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0010"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0007 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0007">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >Borradaile et al. 1982; This Vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">Close joints</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Foliation defined by parting surfaces (cleavage domains) that have no apparent thickness, are spaced between 5 cm and 25 cm, and do not crenulate an older foliation. Fabric intermediate between typical cleavage and joints. Parting surfaces are regularly spaced, and penetrative on a 1-10 m scale. 5 cm upper limit on spacing of &#39;cleavage domains&#39; in a &#39;cleavage &#39;fabric is suggested by Borradaile et al. [1982].</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0005"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0039"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0008 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0008">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >Neuendorf et al. 2005; this vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">Comb layering</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Layering fabric defined by layers that have internal comb structure. Layer boundaries are the termination surfaces for the constituent crystals.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0043"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0009 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0009">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >this vocabulary, submitted by British Antarctic Survey</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Compositional layering</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Layering fabric defined by layers that have different mineralogic composition.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0043"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0045"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0047"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0048"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0010 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0010">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source>this vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Compound folation</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Foliation that includes fabric elements indicating classification with foliation types of different genetic origin, e.g. cleavage parallel to bedding is a compound fabric with a sedimentary foliation and a tectonic foliation. No connotation of genetic origin of fabric elements.</skos:definition>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0006"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0011"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0028"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0042"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0011 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0011">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>this vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >A compound foliation in which the constituent fabric elements are of metamorphic origin.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Compound metamorphic foliation</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0010"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0012 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0012">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Borradaile et al 1982</dc:source>
+        <skos:definition xml:lang="en"
+            >A cleavage that is statistically homogeneous down to the scale of individual mineral grains.</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Continuous cleavage</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0005"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0013"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0052"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0063"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0013 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0013">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Borradaile et al 1982</dc:source>
+        <skos:definition xml:lang="en"
+            >Cleavage defined by long, thin limbs of crenulation folds of pre-existing foliation, in which the boundaries between cleavage domains and lithons are gradational. Both the crenulation foliation and the crenulated (older) foliation are easily visible. Grades to spaced crenulation cleavage as boundaries of cleavage domains become sharp, and to schistosity or compositional layering as the crenulation foliation obscures the crenulated foliation to become the dominant fabric in the rock. In many rocks with continuous crenulation cleavage, the tendency to part along the cleavage may be weak, thus the rock may not technically meet the definition of &#39;cleavage as used in this vocabulary.</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Continuous crenulation cleavage</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0012"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0014"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0014 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0014">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >Brodie, Kate, Fettes, Douglas, and Harte, Ben, 2007, Structural terms including fault rock terms, in Fettes, D., and Desmons, J., Metamorphic rocks-A classification and Glossary of Terms: Cambridge, UK, Cam-bridge University Press, p. 24-31.</dc:source>
+        <skos:definition xml:lang="en"
+            >Cleavage that is overprinted on an older foliation that is folded to some degree in association with development of the younger cleavage. Cleavage domains commonly associated with long limbs of crenulation folds, and hinge surfaces of folds are roughly parallel. Wavelength of crenulation folds is less than or equal to 1 cm. Cleavage defined by limbs of microfolds coincident with zones of mineral differentiation</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Crenulation cleavage</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0005"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0013"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0019"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0015 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0015">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>this vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >Bedding defined by surfaces that are not distinct, e.g. by gradational grain size variations.</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Crude or indistinct bedding</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0002"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0016 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0016">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Cryptomicrobial lamination</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Fabric defined by fine laminae formed by the trapping of grains and lime precipitation in a microbial mat.</skos:definition>
+        <dc:source
+            >GGIPAC; http://www.brs.gov.au/land&amp;water/groundwater/result.internal_stratification.html</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0003"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0067"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0017 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0017">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >Carmichael et al 1974; Best 1982</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Cumulate layering</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Layering in igneous rocks in which layers are characterized by variation in relative proportion of magmatically crystallized minerals. Typically a pattern of mineralogical variation will be repeated many times in a vertical section with layers of relatively consistent thickness. See photos in Best [1982] p. 176-177. Gravity-stratified layers typically have mafic minerals at the base and plagioclase at the top and are interpreted to form by crystal settling in magma.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0034"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0018 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0018">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Borradaile et al., 1982</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Discrete cleavage</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Spaced cleavage in which cleavage domains have sharply defined edges.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0065"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0019 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0019">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >Borradaile et al 1982</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Crenulation cleavage in which the cleavage domains have discrete boundaries. Amplitude of crenulation folds tends to be small.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Discrete crenulation cleavage</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0014"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0065"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0020 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0020">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Neuendorf et al. 2005; Borradaile et al. 1982.</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Discrete disjunct spaced cleavage</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Disjunct spaced cleavage defined by discrete cleavage surfaces, typically in low-grade clastic rocks. Syn. Fracture cleavage.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0065"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0021 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0021">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Borradaile et al. 1982</dc:source>
+        <skos:definition xml:lang="en"
+            >A spaced cleavage independent of any pre-existing mineral orientation; cleavage in which there is no systematic relationship between a pre-existing preferred orientation and the superimposed cleavage. (Borradaile et al., 1982)</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Disjunctive cleavage</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0005"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0022 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0022">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Domainal cleavage</skos:prefLabel>
+        <dc:source>this vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >Fabric in which domains of more strongly developed (closely spaced) cleavage are separated by lenses of weakly or non-cleaved rock. Typically observed on outcrop scale and used for geologic unit description</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0005"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0023 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0023">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Geoscience Victoria, Australia</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Ductile shear banding foliation</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Foliation defined by regularly spaced ductile shear bands at the scale of descripiton.</skos:definition>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0004"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0028"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0024 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0024">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Neuendorf et al. 2005; this vocabulary</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Eutaxitic foliation</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Foliation defined by flattened pumice clasts or glass shards, aligned elongate lithic fragments, variations in composition, vesicularity, crystallinity, grain size, spherulite and lithophysae abundance, or the degree of devitrification in a welded tuff. This term denotes interpretation that foliation formed during compaction and welding of tuff.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0055"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0025 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0025">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >SLTTs 2004; this vocabulary</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Diffuse to distinct lamination in mudstones and mud, defined by the alignment of clay minerals. Lacks distinct very-fine scale layering and repetition of couplets that characterize varves. Essentially a continuous cleavage parallel to bedding, but considered a sedimentary structure related to sediment compaction during diagenesis.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Fissile lamination</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0026 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0026">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Flaser structure</skos:prefLabel>
+        <dc:source
+            >Neuendorf et al. 2005</dc:source>
+        <skos:definition xml:lang="en"
+            >Tectonic foliation defined by lenses and layers of original or relatively unaltered granular minerals surrounded by a matrix of highly sheared and crushed material. No connotation of metamorphic grade.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0068"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0027 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0027">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en">Flow layering</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Layering produced by flow of magma, lava, or diapiric flow of sedimentary rock. Distinction from eutaxitic foliation may be difficult.</skos:definition>
+        <dc:source>this vocabulary</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0041"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0043"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0028 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0028">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source>Jackson 1997</dc:source>
+        <skos:definition xml:lang="en"
+            >Fabric defined by the planar arrangement of textural or structural features (fabric elements).</skos:definition>
+        <skos:prefLabel xml:lang="en">Foliation</skos:prefLabel>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0005"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0010"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0023"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0031"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0039"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0043"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0044"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0054"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0061"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0068"/>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0029 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0029">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Foliation defined by the shapes of deformed mineral grains or grain aggregates having aspect ratios greater than 1.5:1, greater than 10 percent of the rock is composed of &#39;matrix&#39; showing evidence of tectonic reduction in grain size, and the foliation and matrix are interpreted to be the product of continuous, crystal-plastic deformation processes. Generic class is used when data are insufficient to determine classification to protomylontic, mylonite, or ultramylonitc foliation, or to specify that any sort of mylontic foliation may be present.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Generic mylonitic foliation</skos:prefLabel>
+        <dc:source
+            >NADM metamorphic rock vocabulary SLTTm1.0 2004</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0042"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0049"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0056"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0068"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0071"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0030 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0030">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source>this vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >Compositional layering in a metamorphic rock; syn. gneissic banding</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Gneissic layering</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0046"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0031 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0031">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Foliation defined by the alignment of oblate particles, which may be detrital grains, crystals, or crystalline grain aggregates.</skos:definition>
+        <dc:source>this vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Grain shape foliation</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0028"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0036"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0059"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0032 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0032">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source>this vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >Foliation interpreted to be due to flow in a body of magma or lava. Includes flow banding in lava, and foliation defined by aligned crystals in a phaneritic igneous rock..</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Igneous flow foliation</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0055"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0033 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0033">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source>this vocabulary</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Foliation defined by surfaces of textural or mineralogical variation formed by igneous processes. If the lamination surfaces are regularly spaced, they may be used to define layers.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Igneous lamination</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0034"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0055"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0034 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0034">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Geoscience Victoria, Australia</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Igneous layering</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Layering that is the product of processes operating in magma or lava. syn. magmatic layering</skos:definition>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0017"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0033"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0035"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0041"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0043"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0055"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0057"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0035 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0035">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source>this vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Igneous textural layering</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Layering defined by grain size/ grain shape variations resulting from crystallization processes in igneous rock, most commonly observed in pegmatite/aplite dikes or bodies, and in Laramide leucogranites of Wilderness suite in Arizona.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0034"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0036 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0036">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >based on Neuendorf et al 2005</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Fabric defined by long axis of tabular clasts stacked like shingles to define a surface that makes a small angle with the bedding surface. A depositional fabric formed by disk-shaped or elongate pebbles all tilted in the same direction; flat sides commonly dip upstream</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Imbricated clast fabric</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0031"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0054"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0037 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0037">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Impersistent lamination</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Lamination defined by discontinuous surfaces</skos:definition>
+        <dc:source>this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0038 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0038">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source>this vocabulary</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Irregular lamination</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Lamination fabric in which individual lamina or groups of lamina are warped in an irregular fashion, like a flattened peice of crumpled paper. A crude planar orientation is discernible.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0039 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0039">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Borradaile et al 1982</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Fabric defined by parting surfaces in rock that occur in crudely parallel orientation, spaced greater than 5 cm on average if in a very regular joint set. Spacing is more variable and alignment of surfaces is cruder that cleavage. Typically applies to geologic unit description.</skos:definition>
+        <skos:prefLabel xml:lang="en">Joint fabric</skos:prefLabel>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0007"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0028"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0040 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0040">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Weiss 1972; Borradaile et al 1982; this vocabulary</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Laminated metamorphic layering</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Metamorphic layering in which the layers are less than 1 cm thick. See Weiss, L.E. [1972] plate 36 or Borraidaile et al [1982] plate 137A,B (page 331), plate140A (page 337) for examples.</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0046"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0041 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0041">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >GGIPAC, Australia</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Lava flow banding</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Layering formed by laminar lava flow, defined by variations in composition, vesicularity, crystallinity, grainsize, spherulite and lithophysae abundance, degree of devitrification, colour, and/or parting surfaces; syn. flow lamination, flow banding</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0027"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0034"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0042 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0042">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Compound foliation in which mylonitic foliation is present in rock that has continuous compositional layering. Continuous means individual layers can be traced more than 1 m.</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source>this vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Layered mylonitic foliation</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0010"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0029"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0043"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0043 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0043">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Foliation defined by stacked, differentiable, sheet-like masses of material (layers), with no denotation of the nature (composition, grain size, grain shape...) or origin (igneous, sedimentary, metamorphic) of the layers.</skos:definition>
+        <dc:source>this vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">Layering</skos:prefLabel>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0008"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0009"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0027"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0028"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0034"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0042"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0046"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0062"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0069"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0044 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0044">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>this vocabulary</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Foliation interpreted to be due to flow in a body of rock (typically mudrock, salt, or anhydrite) under low-temperature (non-metamorphic) conditions, typically related to diapirism.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Low-temperature flow foliation</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0028"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0045 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0045">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>this vocabulary</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Layering defined by mineralogical variations in a rock body interpreted to be result of solid-state reactions in rock body (metamorphic segregation).</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Metamorphic differentiation layering</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0009"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0046"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0046 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0046">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source>this vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >Layering of unspecified origin in a metamorphic rock. Compositional or textural variations may be inherited from protolith, or result from metamorphic processes.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Metamorphic layering</skos:prefLabel>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0030"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0040"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0043"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0045"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0047"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0066"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0073"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0047 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0047">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source>this vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >Metamorphic layering in which layer differntiation is relict of compositional variations in the protolith, typically heterogeneous sedimentary or volcanic rock.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Metamorphic layering inherited from protolith</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0009"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0046"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0070"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0048 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0048">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Generic layering defined by variations in mineralogy between individual sheets of material</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Mineralogical layering</skos:prefLabel>
+        <dc:source>this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0009"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0049 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0049">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >SLTTm 2004; Sibson 1977</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Generic mylonitic foliation in which 50-90 percent of rock is matrix due to tectonic grain size reduction processes. Planar fabric is very apparent due to flattening of mineral grains, development of shear surfaces, and alignment of tabular mineral grains. Lineation is typically present and easily observed.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Mylonite foliation</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0029"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0050 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0050">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source>SLTTs 2004</dc:source>
+        <skos:definition xml:lang="en"
+            >Bedding defined by parallel surfaces. Bedding structure may be lamination or layering.</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Parallel bedding</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0002"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0051 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0051">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source>this vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >Bedding lamination structure in which all visible bedding surfaces are parallel.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Parallel bedding lamination</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0052 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0052">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >SLTTm 2004; Geoscience Victoria, Australia</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Continuous cleavage in phyllitic rock; phyllosilicate mineral grains just barely visible, grain size midway between slaty cleavage and schist; typically has a satiny lustre.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Phyllitic cleavage</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0012"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0053 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0053">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source>this vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >Lamination that is defined by planar bedding surfaces at the scale of description.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Planar lamination</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0054 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0054">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Foliation formed during original process of deposition or crystallization of an igneous or sedimentary material.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Primary foliation</skos:prefLabel>
+        <dc:source>this vocabulary</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0002"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0028"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0036"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0055"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0055 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0055">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>this vocabulary</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Foliation interpreted to be the product of igneous processes, formed in the rock while melt was still present..</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Primary igneous foliation</skos:prefLabel>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0024"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0032"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0033"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0034"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0054"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0056 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0056">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Generic mylonitic foliation in which 10-50 percent of rock is matrix due to tectonic grain size reduction processes. Planar aspect of fabric may be quite subtle in weakly deformed rocks.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Protomylonite foliation</skos:prefLabel>
+        <dc:source
+            >SLTTm 2004; Sibson 1977</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0029"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0057 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0057">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source>Jackson 1997</dc:source>
+        <skos:definition xml:lang="en"
+            >Layering in igneous rock defined by repeated gravity-stratified layers of typically mafic minerals at the base and plagioclase at the top; formed by crystal settling</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Rhythmic layering</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0034"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0058 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0058">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Disjunct (Borradaile et al, 1990) cleavage characterized by short, discontinuous clavage surfaces, typically with concentrations of phyllosilicate minerals. Common in micaceous sandstone.</skos:definition>
+        <dc:source
+            >Neuendorf et al. 2005; Borradaile et al, 1990</dc:source>
+        <skos:prefLabel xml:lang="en">Rough cleavage</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0005"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0059 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0059">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >Geoscience Victoria, Australia</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Foliation in mylonite defined by alignment of tabular crystals or deformed mineral grains; often with sigmoid shape, typically curving into an associated ductile shear banding foliation (C fabric) with a consistent sense.</skos:definition>
+        <skos:prefLabel xml:lang="en">S fabric</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0031"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0068"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0060 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0060">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Based on Jackson 1997</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Discrete, anastomosing spaced cleavage characterized by smooth and highly polished/slickensided cleavage surfaces that intersect with one another to form lensoid flakes, scales or chips. Common in pelitic rocks in shear zones, melange, or deformed accretionary complexes.</skos:definition>
+        <skos:prefLabel xml:lang="en">Scaly cleavage</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0065"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0061 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0061">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >A fabric defined the parallel, planar arrangement of mineral grains having a platy, lamellar, or tabular crystallographic habit that are oriented in a continuous planar or rarely a linear fabric. Schistosity is commonly, but not necessarily, a crystalloblastic foliation. Platy mineral grains typically 1 to 10 mm across (Jackson, 1997), at smaller grain size grades into phyllitic cleavage. Schistosity is typically associated with a continuous cleavage due to the tendency to part parallel to the aligned mineral grains.</skos:definition>
+        <dc:source
+            >NADM metamorphic rock vocabulary SLTTm1.0 2004</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en">Schistosity</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0028"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0062 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0062">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Layering resulting from primary sedimentary processes, in which the individual layers (beds) are bounded by discontinuities related to events in the depositional history.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Sedimentary layering</skos:prefLabel>
+        <dc:source>this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0002"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0043"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0063 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0063">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Brodie, Kate, Fettes, Douglas, and Harte, Ben, 2007, Structural terms including fault rock terms, in Fettes, D., and Desmons, J., Metamorphic rocks-A classification and Glossary of Terms: Cambridge, UK, Cam-bridge University Press, p. 24-31.; Jackson 1997</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Continuous cleavage defined by aligned fine to very-fine grained phylosilicate mineral grains. The individual grains defining the fabric are too small to be seen by the unaided eye. Grades into phyllitic cleavage as grain size increases. Cleavage domains typically less than 100 micrometres wide; rock easily splits into slabs and thin plates.</skos:definition>
+        <skos:prefLabel xml:lang="en">Slaty cleavage</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0012"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0064 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0064">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Geoscience Victoria, Australia</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Solution cleavage</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Spaced cleavage forming an array of parallel to anastomosing, stylolitic to smooth, fracture-like partings formed by rock dissolution. Dissolution is indicated by discontinuity and offset of primary features that intersect cleavage surfaces, and typically by accumulation of insoluble residue along cleavage surface. Syn. stylolitic cleavage, pressure solution cleavage</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0065"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0065 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0065">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Borradaile et al. 1982</dc:source>
+        <skos:definition xml:lang="en"
+            >Cleavage in which cleavage domains are spaced at finite intervals as the scale of description. Microlithons of uncleaved rock separate cleavage domains.</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en">Spaced cleavage</skos:prefLabel>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0001"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0005"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0018"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0019"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0020"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0060"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0064"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0066 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0066">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >Weiss 1972; Borradaile et al 1982; Neuendorf et al. 2005</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Stromatic layering</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Tectonic layering in which variations that distinguish the layers are the result of melt segregation during high-grade metamorphism; some layers have magmatic/igneous mineralogy. Plates 143 and 144, Borradaile et al [1982] (page 344-347) Syn. Migmatitic layering, lit-par-lit layering</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0046"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0067 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0067">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >Based on Neuendorf et al 2005</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Lamination produced by sediment trapping, binding and or precipitation by cyanophytes (blue-green algae)</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Stromatolitic lamination</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0016"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0068 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0068">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source>this vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >Foliation in a rock body defined by physical components related to deformation subsequent to solidification of the rock.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Tectonic foliation</skos:prefLabel>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0026"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0028"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0029"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0059"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0069"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0069 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0069">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >Weiss 1972; Borradaile et al 1982; this vocabulary</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Layering defined by mineralogical or textural variations in a rock body that are interpreted to be related to deformation or metamorphism, commonly associated with layers that have sharp boundaries. Also known as gneissic foliation. See plates 142-145 (p. 342-349) in Borradaile et al [1982] and plate 46A to 49A in Weiss [1972].</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Tectonic layering</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0043"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0068"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0070 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0070">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Layering interpreted to have originated as sedimentary bedding that has been transposed as a result of metamorphism and deformation.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Transposed bedding layering</skos:prefLabel>
+        <dc:source>this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0047"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0071 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0071">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >SLTTm 2004; Sibson 1977</dc:source>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Mylonitic foliation in which greater than 90 percent of rock is matrix due to tectonic grain size reduction processes. Typically rock is very-fine grained to aphanitic, with sparse porphyroclasts, and vague to prominent lamination on a mm scale.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Ultramylonite foliation</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0029"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0072 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0072">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Gently curviplanar or wavy bedding lamination structure</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Undulating lamination</skos:prefLabel>
+        <dc:source>this vocabulary</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0073 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0073">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source
+            >Weiss 1972;Borradaile et al 1982; this vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >Metamorphic layering of uncertain origin, defined by subtle mineralogical or textural variations, with gradational layer boundaries. See plate 142 in Borradaile et al [1982].</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Vague metamorphic layering</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0046"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/foliationtype/0074 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/0074">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >SLTTs 2004; Jackson 1997</dc:source>
+        <skos:definition xml:lang="en"
+            >Bedding defined by distinct, parallel laminae (layers less than 1 cm thick), typically occurring in sequences of distinct couplets (e.g. dark and light color). Generally interpreted as deposited from suspension in still water, with each lamina thought to be an annual sedimentation unit. Typically consists of mud-size sediment.</skos:definition>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Varve lamination</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/0003"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifierscheme/cgi/201012/foliationtype -->
+
+    <owl:Thing rdf:about="">
+        <rdf:type rdf:resource="&skos;ConceptScheme"/>
+        <skos:historyNote xml:lang="en"
+            >2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using &#39;file/Export inferred axioms as ontology&#39; in Protege.</skos:historyNote>
+        <skos:historyNote xml:lang="en"
+            >2010-11-28 SMR Replace URN with http URI according to CGI URI scheme (https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices#Identifier_value)</skos:historyNote>
+        <skos:prefLabel xml:lang="en">FoliationType</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >This file contains the CGI Foliation type vocabulary. Use for soft typing GeoSciML GeologicStructure.Foliation elements.</skos:definition>
+    </owl:Thing>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

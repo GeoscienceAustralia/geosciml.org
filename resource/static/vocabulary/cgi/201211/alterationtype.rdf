@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:alterattyp="http://resource.geosciml.org/classifier/cgi/alterationtype/"
+	xmlns:cgi="http://resource.geosciml.org/classifierscheme/cgi/201211/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:void="http://rdfs.org/ns/void#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype/">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">geologic alteration type concepts</rdfs:label>
+	<skos:definition xml:lang="en">This resource defines the concept space for geologic alteration type concepts by extension; it includes all concepts in this conceptScheme, as well as concepts in previous versions of the scheme.</skos:definition>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/kaolinitic_alteration"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/not_altered"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/chloritic_alteration"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/greisen"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/alunitic_alteration"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/argillic_alteration"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/deuteric_alteration"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/carbonate_alteration"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/hematitic_alteration"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/propylitic_alteration"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/saussuritised"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/silicification"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/potassic_alteration"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/zeolitic_alteration"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/red_rock_alteration"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/epidote_alteration"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/serpentinisation"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/pyritic_alteration"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/albitic_alteration"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/uralitisation"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/sericitic_alteration"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/calcsilicate_alteration"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/unknown_alteration"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/advanced_argillic_alteration"/>
+	<skos:prefLabel xml:lang="en">CGI Alteration Type</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype/advanced_argillic_alteration">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:creator xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:source>this vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified"/>
+	<skos:definition xml:lang="en">missing</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/0001"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+	<skos:prefLabel xml:lang="en">advanced argillic alteration</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype/albitic_alteration">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:creator xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:source>this vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified"/>
+	<skos:definition xml:lang="en">missing</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/0002"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+	<skos:prefLabel xml:lang="en">albitic alteration</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:creator xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:source>this vocabulary</dc:source>
+	<skos:definition xml:lang="en">Rock is altered, but type not specified. Any alteration type allowed.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/0003"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/hematitic_alteration"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/carbonate_alteration"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/sericitic_alteration"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/albitic_alteration"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/propylitic_alteration"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/red_rock_alteration"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/saussuritised"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/alunitic_alteration"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/argillic_alteration"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/pyritic_alteration"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/zeolitic_alteration"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/epidote_alteration"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/serpentinisation"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/potassic_alteration"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/kaolinitic_alteration"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/greisen"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/calcsilicate_alteration"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/uralitisation"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/silicification"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/advanced_argillic_alteration"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/deuteric_alteration"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/chloritic_alteration"/>
+	<skos:prefLabel xml:lang="en">alteration type not specified</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype/alunitic_alteration">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:creator xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:source>this vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified"/>
+	<skos:definition xml:lang="en">missing</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/0004"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+	<skos:prefLabel xml:lang="en">alunitic alteration</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype/argillic_alteration">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:creator xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:source>this vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified"/>
+	<skos:definition xml:lang="en">missing</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/0005"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+	<skos:prefLabel xml:lang="en">argillic alteration</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype/calcsilicate_alteration">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:creator xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:source>this vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified"/>
+	<skos:definition xml:lang="en">missing</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/0006"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+	<skos:prefLabel xml:lang="en">calcsilicate alteration</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype/carbonate_alteration">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:creator xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:source>this vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified"/>
+	<skos:definition xml:lang="en">missing</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/0007"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+	<skos:prefLabel xml:lang="en">carbonate alteration</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype/chloritic_alteration">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:creator xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:source>this vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified"/>
+	<skos:definition xml:lang="en">missing</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/0008"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+	<skos:prefLabel xml:lang="en">chloritic alteration</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype/deuteric_alteration">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:creator xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:source>this vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified"/>
+	<skos:definition xml:lang="en">missing</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/0009"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+	<skos:prefLabel xml:lang="en">deuteric alteration</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype/epidote_alteration">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:creator xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:source>this vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified"/>
+	<skos:definition xml:lang="en">missing</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/0010"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+	<skos:prefLabel xml:lang="en">epidote alteration</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype/greisen">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:creator xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:source>this vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified"/>
+	<skos:definition xml:lang="en">missing</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/0011"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+	<skos:prefLabel xml:lang="en">greisen</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype/hematitic_alteration">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:creator xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:source>this vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified"/>
+	<skos:definition xml:lang="en">missing</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/0012"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+	<skos:prefLabel xml:lang="en">hematitic alteration</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype/kaolinitic_alteration">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:creator xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:source>this vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified"/>
+	<skos:definition xml:lang="en">missing</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/0013"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+	<skos:prefLabel xml:lang="en">kaolinitic alteration</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype/not_altered">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:creator xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:source>This Vocabulary</dc:source>
+	<skos:definition xml:lang="en">Rock or sediment not altered.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/0014"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+	<skos:prefLabel xml:lang="en">not altered</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype/potassic_alteration">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:creator xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:source>this vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified"/>
+	<skos:definition xml:lang="en">missing</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/0015"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+	<skos:prefLabel xml:lang="en">potassic alteration</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype/propylitic_alteration">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:creator xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:source>this vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified"/>
+	<skos:definition xml:lang="en">missing</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/0016"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+	<skos:prefLabel xml:lang="en">propylitic alteration</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype/pyritic_alteration">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:creator xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:source>this vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified"/>
+	<skos:definition xml:lang="en">missing</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/0017"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+	<skos:prefLabel xml:lang="en">pyritic alteration</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype/red_rock_alteration">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:creator xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:source>this vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified"/>
+	<skos:definition xml:lang="en">missing</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/0018"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+	<skos:prefLabel xml:lang="en">red rock alteration</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype/saussuritised">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:creator xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:source>this vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified"/>
+	<skos:definition xml:lang="en">missing</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/0019"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+	<skos:prefLabel xml:lang="en">saussuritised</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype/sericitic_alteration">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:creator xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:source>this vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified"/>
+	<skos:definition xml:lang="en">missing</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/0020"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+	<skos:prefLabel xml:lang="en">sericitic alteration</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype/serpentinisation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:creator xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:source>this vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified"/>
+	<skos:definition xml:lang="en">missing</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/0021"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+	<skos:prefLabel xml:lang="en">serpentinisation</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype/silicification">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:creator xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:source>this vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified"/>
+	<skos:definition xml:lang="en">missing</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/0022"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+	<skos:prefLabel xml:lang="en">silicification</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype/unknown_alteration">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:creator xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:source>this vocabulary</dc:source>
+	<skos:definition xml:lang="en">missing</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/0023"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+	<skos:prefLabel xml:lang="en">unknown alteration</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype/uralitisation">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:creator xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:source>this vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified"/>
+	<skos:definition xml:lang="en">missing</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/0024"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+	<skos:prefLabel xml:lang="en">uralitisation</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/alterationtype/zeolitic_alteration">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:creator xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:source>this vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified"/>
+	<skos:definition xml:lang="en">missing</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/alterationtype/0025"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype"/>
+	<skos:prefLabel xml:lang="en">zeolitic alteration</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+	<rdfs:comment>Automatically published using script</rdfs:comment>
+	<dc:creator xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:identifier>http://resource.geosciml.org/classifierscheme/cgi/201211/alterationtype</dc:identifier>
+	<dc:language xml:lang="en">en</dc:language>
+	<dc:publisher xml:lang="en">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:publisher>
+	<dc:title xml:lang="en">CGI alteration type categories</dc:title>
+	<owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+	<owl:imports rdf:resource="http://rdfs.org/ns/void"/>
+	<owl:versionInfo>201211</owl:versionInfo>
+	<skos:definition xml:lang="en">This file contains the CGI Alteration type vocabulary. Vocabulary for populating alteration type property in GeoSciML alterationDescription elements. Definitions of alteration types have not been included.</skos:definition>
+	<skos:historyNote xml:lang="en">2012-11-24 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types. Add missing for missing definitions.</skos:historyNote>
+	<skos:historyNote xml:lang="en">2010 11 27 SMR convert URN to http URI using CGI URI scheme to make the 201012 version.</skos:historyNote>
+	<skos:historyNote xml:lang="en">2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme. generate 201202 version</skos:historyNote>
+	<skos:historyNote xml:lang="en">2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege.</skos:historyNote>
+	<skos:prefLabel xml:lang="en">CGI Alteration type Categories</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/vocabulary/cgi/201211/alterationtype">
+	<rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alteration type vocabulary</rdfs:label>
+</rdf:Description>
+
+</rdf:RDF>

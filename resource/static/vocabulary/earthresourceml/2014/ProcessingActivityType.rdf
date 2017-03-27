@@ -1,0 +1,428 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:gtwg="http://resource.geosciml.org/authority/cgi/gtwg"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity">
+  <owl:Ontology rdf:about="http://resource.geosciml.org/static/vocabulary/earthresourceml/2014/ProcessingActivityType.rdf">
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <dc:creator>CGI Geoscience Terminology Working Group</dc:creator>
+    <dc:date>2014-01-09T00:00:00.000</dc:date>
+    <skos:editorialNote>This file contains the 201401 version of CGI Mining Processing Activity Type Vocabulary, which defines concepts to categorize processing activities associated with a mining activity. A miningActivity and subsequent processingActivity provide the linkage between a minedMaterial and a mine Product.</skos:editorialNote>
+    <skos:changeNote>Vocabulary Shepherd: Jouni Vuollo. Compilation and review in Google doc spreadsheet, converted to MS Excel XML for SKOS generation using GSML_SKOS_from_XLS_2013.xslt; Conversion to SKOS by SM Richard 2014-02-23.</skos:changeNote>
+    <skos:changeNote>Edits to fix typos and remove '201401' from rdf file name. Ollie Raymond 8-Jan-2015</skos:changeNote>
+  </owl:Ontology>
+  <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity">
+    <skos:definition xml:lang="en">This resource defines the concept space for Processing Activity Type vocabulary concepts by extension; it includes all concepts in this conceptScheme, as well as concepts in previous versions of the scheme.</skos:definition>
+    <skos:prefLabel xml:lang="en">Processing Activity Type vocabulary</skos:prefLabel>
+    <dc:creator xml:lang="en">CGI Geoscience Terminology Working Group</dc:creator>
+  </skos:ConceptScheme>
+  <skos:Collection rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/">
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/magnetic-separation">
+        <dc:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.1.3..</skos:notation>
+        <skos:broader>          
+          <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/automatic-sorting">
+            <dc:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dc:source>
+            <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.1.2..</skos:notation>
+            <skos:broader>              
+              <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/sorting">
+                <dc:source xml:lang="en">Based on http://en.wikipedia.org/wiki/Ore_sorting and http://en.wikipedia.org/wiki/Mineral_processing</dc:source>
+                <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.1..</skos:notation>
+                <skos:broader>                  
+                  <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physical-treatment">
+                    <dc:source xml:lang="en">This vocabulary</dc:source>
+                    <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01..</skos:notation>
+                    <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+                    <skos:prefLabel xml:lang="en">physical treatment</skos:prefLabel>
+                    <skos:definition>processes using physical separation methods</skos:definition>
+                    <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+                  </skos:Concept>
+                </skos:broader> 
+                <skos:prefLabel xml:lang="en">sorting</skos:prefLabel>
+                <skos:definition>Processes that operate on particulate material to concentrate a desired component and separate it from waste material.</skos:definition>
+                <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+              </skos:Concept>
+            </skos:broader>
+            <skos:prefLabel xml:lang="en">automatic sorting</skos:prefLabel>
+            <skos:definition>Automated sorting of material on the basis of physical characteristics using optical characteristics (visible spectrum, near infrared, X-ray, ultraviolet), electrical conductivity, density, magnetic susceptibility or other physical properties</skos:definition>
+            <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+          </skos:Concept>
+        </skos:broader>
+        <skos:prefLabel xml:lang="en">magnetic separation</skos:prefLabel>
+        <skos:definition>Separation process based on the difference in magnetic susceptibility between minerals. A magnetic field is used either to deviate the magnetic particles from their course, or to lift the magnetic particles.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/evaporation">
+        <dc:source xml:lang="en">http://en.wikipedia.org/wiki/Evaporation</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03.10..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+        <skos:altLabel xml:lang="en">drying</skos:altLabel>
+        <skos:prefLabel xml:lang="en">evaporation</skos:prefLabel>
+        <skos:definition>Evaporation is a type of vaporization of a liquid that occurs from the surface of a liquid into a gaseous phase that is not saturated with the evaporating substance.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/electrostatic-separation">
+        <dc:source xml:lang="en">B.A.Wills, T.J.Napier-Munn, Will's Mineral Processing Technology, Seventh edition, Elsevier 2006.</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.1.4..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/automatic-sorting"/>
+        <skos:prefLabel xml:lang="en">electrostatic separation</skos:prefLabel>
+        <skos:definition>Separation process based on the difference in electrical conductivity between the various minerals.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/bioleaching">
+        <dc:source xml:lang="en">http://en.wikipedia.org/wiki/Bioleaching</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03.17..</skos:notation>
+        <skos:broader>          
+          <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment">
+            <dc:source xml:lang="en">This vocabulary</dc:source>
+            <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03..</skos:notation>
+            <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+            <skos:prefLabel xml:lang="en">chemical treatment</skos:prefLabel>
+            <skos:definition>Sorting process using chemical separation methods</skos:definition>
+            <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+          </skos:Concept>
+        </skos:broader>
+        <skos:prefLabel xml:lang="en">bioleaching</skos:prefLabel>
+        <skos:definition>Bioleaching is the extraction of metals from their ores through the use of living organisms. This is much cleaner than the traditional heap leaching using cyanide. Bioleaching is one of several applications within biohydrometallurgy and several methods are used to recover copper, zinc, lead, arsenic, antimony, nickel, molybdenum, gold, silver, and cobalt.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/hydrometallurgy">
+        <dc:source xml:lang="en">http://en.wikipedia.org/wiki/Hydrometallurgy</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03.1..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+        <skos:prefLabel xml:lang="en">hydrometallurgy</skos:prefLabel>
+        <skos:definition>Hydrometallurgy is part of the field of extractive metallurgy involving the use of aqueous chemistry for the recovery of metals from ores, concentrates, and recycled or residual materials. Hydrometallurgy is typically divided into three general areas: leaching, solution concentration and purification, and metal recovery.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/stratification-jig">
+        <dc:source xml:lang="en">http://www.info-diamond.com/rough/mining-equipment-47.html; http://en.wikipedia.org/wiki/Jig_concentrators</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.1.2.1.1</skos:notation>
+        <skos:broader>          
+          <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/gravimetric-sorting">
+            <dc:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dc:source>
+            <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.1.2.1..</skos:notation>
+            <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/automatic-sorting"/>
+            <skos:prefLabel xml:lang="en">gravimetric sorting</skos:prefLabel>
+            <skos:definition>Process in which the valuable particles are separated from the gangue by virtue of the difference between their specific volumes. This causes their settling rates within a medium - air or water - to be different. This process is therefore affected by particle size.</skos:definition>
+            <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+          </skos:Concept>
+        </skos:broader>
+        <skos:prefLabel xml:lang="en">stratification jig</skos:prefLabel>
+        <skos:definition>The principle of the jig is the action of pulsed vertical movement of water through a volume of particulate material. Particles with a higher specific gravity (density) settle faster, resulting in a concentration of material with higher density at the bottom, on the jig bed.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/distillation">
+        <dc:source xml:lang="en">http://en.wikipedia.org/wiki/Distillation</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03.7..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+        <skos:prefLabel xml:lang="en">distillation</skos:prefLabel>
+        <skos:definition>Distillation is a method of separating mixtures based on differences in volatilities of components in a boiling liquid mixture. Distillation is a unit operation, or a physical separation process, and not a chemical reaction.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/calcining">
+        <dc:source xml:lang="en">http://en.wikipedia.org/wiki/Calcination</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03.15..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+        <skos:prefLabel xml:lang="en">calcining</skos:prefLabel>
+        <skos:definition>A more general definition is “Calcination (also referred to as calcining) is a thermal treatment process in presence of air applied to ores and other solid materials to bring about a thermal decomposition, phase transition, or removal of a volatile fraction. The calcination process normally takes place at temperatures below the melting point of the product materials. Calcination is to be distinguished from roasting, in which more complex gas–solid reactions take place between the furnace atmosphere and the solids.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/precipitation">
+        <dc:source xml:lang="en">http://en.wikipedia.org/wiki/Hydrometallurgy</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03.9..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+        <skos:prefLabel xml:lang="en">precipitation</skos:prefLabel>
+        <skos:definition>Precipitation in hydrometallurgy involves the chemical precipitation of either metals and their compounds or of the contaminants from aqueous solutions. Precipitation will proceed when, through reagent addition, evaporation, pH change or temperature manipulation, any given species exceeds its limit of solubility.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/agglomeration">
+        <dc:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">02.2..</skos:notation>
+        <skos:broader>          
+          <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physico-chemical-treatment">
+            <dc:source xml:lang="en">This vocabulary</dc:source>
+            <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">02..</skos:notation>
+            <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+            <skos:prefLabel xml:lang="en">physico-chemical treatment</skos:prefLabel>
+            <skos:definition>concentraing processes that combine physical and chemical separation methods.</skos:definition>
+            <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+          </skos:Concept>
+        </skos:broader>
+        <skos:altLabel xml:lang="en">pelletization</skos:altLabel>
+        <skos:prefLabel xml:lang="en">agglomeration</skos:prefLabel>
+        <skos:definition>Agglomeration: process designed to bind together finely ground particles. The result is an agglomerate or a sinter. Pelletization: process designed to produce spherical agglomerates of a few mm diameter, called pellets, through a rotating device (balling drum, balling disc) after the addition of some binding material (swelling clay, lime, cement, etc.) and water.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/cementation">
+        <dc:source xml:lang="en">http://en.wikipedia.org/wiki/Cementation</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03.4..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+        <skos:prefLabel xml:lang="en">cementation</skos:prefLabel>
+        <skos:definition>In metallurgy, cementation is a process in which ions are reduced to zero valence at a solid metallic interface</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/crystallization">
+        <dc:source xml:lang="en">http://en.wikipedia.org/wiki/Crystallization</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03.8..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+        <skos:prefLabel xml:lang="en">crystallization</skos:prefLabel>
+        <skos:definition>Crystallization is the (natural or artificial) process of formation of solid crystals precipitating from a solution, melt or more rarely deposited directly from a gas. Crystallization is also a chemical solid-liquid separation technique, in which mass transfer of a solute from the liquid solution to a pure solid crystalline phase occurs. In chemical engineering crystallization occurs in a crystallizer. Crystallization is therefore an aspect of precipitation, obtained through a variation of the solubility conditions of the solute in the solvent, as compared to precipitation due to chemical reaction.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/heavy-medium-separation">
+        <dc:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.1.2.1.5</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/gravimetric-sorting"/>
+        <skos:prefLabel xml:lang="en">heavy medium separation</skos:prefLabel>
+        <skos:definition>A gravity process by using a heavy medium with specific gravity intermediate between that of lighter minerals and heavier minerals. So that lighter minerals float, while heavier minerals sink.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/comminution">
+        <dc:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dc:source>
+        <skos:definition>Breaking solid particles to reduce their sizes; general term encompassing crushing and grinding.</skos:definition>
+        <skos:altLabel xml:lang="en">pulverising</skos:altLabel>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.3..</skos:notation>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physical-treatment"/>
+        <skos:altLabel xml:lang="en">fragmentation</skos:altLabel>
+        <skos:altLabel xml:lang="en">crushing</skos:altLabel>
+        <skos:prefLabel xml:lang="en">comminution</skos:prefLabel>
+        <skos:altLabel xml:lang="en">grinding</skos:altLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/manual-sorting">
+        <dc:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.1.1..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/sorting"/>
+        <skos:altLabel xml:lang="en">handpicking</skos:altLabel>
+        <skos:prefLabel xml:lang="en">manual sorting</skos:prefLabel>
+        <skos:definition>Sorting a coarse material into two or more classes on the basis of physical characteristics: appearance, colour, conductivity, fluorescence, etc., manually.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/gravimetric-sorting"/>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/liquid-solid-separation">
+        <dc:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.2..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physical-treatment"/>
+        <skos:prefLabel xml:lang="en">liquid-solid separation</skos:prefLabel>
+        <skos:definition>Separation of suspended material by concentrating of pulp and removal of fluid through thickening, filtering, decanting or cycloning.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/particle-sizing">
+        <dc:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.4..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physical-treatment"/>
+        <skos:altLabel xml:lang="en">classification</skos:altLabel>
+        <skos:prefLabel xml:lang="en">particle sizing</skos:prefLabel>
+        <skos:definition>separation of particles of a fragmented material into several classes according to size. Typically done by means of screens or sieves: particle with a size larger than the screen or sieve opening are said to form the oversize fraction, the others form the undersize fraction.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/burning">
+        <skos:definition xml:lang="en">The utilization of coal-oil agglomerates in the recovery of gold is based on the natural hydrophobicity/lipophilicity of gold, a property which according to the consensus of most surface chemistry experts is brought about by the ease by which gold surface becomes contaminated, though is possible to recover gold by agglomerating them with oil, the amount of gold in the ore is usually small that there is insufficient gold particles to form agglomerates. Thus, the need to use other hydrophobic materials (e.g. coal) to either form agglomerates together with gold or act as a carrier of gold particles. Agglomerates are prepared in a previous step and then added to the ore pulp in a second step. The gold particles, being oilfilic, penetrate into the agglomerates. In a continuous operation the agglomerates would be maintained in contacting tanks until they reach a pre-determined gold content. The tailings are discarded by means of a screen situated at the upper part of the tanks. The recovery of gold from agglomerates is obtained in a later step by burning the agglomerates and then separating the gold from the ashes.</skos:definition>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03.14..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+        <skos:prefLabel xml:lang="en">burning</skos:prefLabel>
+        <dc:source xml:lang="en">http://www.e-goldprospecting.com/html/coal_gold_agglomeration__cga_.html</dc:source>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/coagulation">
+        <dc:source xml:lang="en">http://ktrungthuy.free.fr/SACH-BOOKS/Handbook%20of%20Flotation%20Reagents,%20Elsevier%20(2007),%200444530290.pdf</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">02.3..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physico-chemical-treatment"/>
+        <skos:prefLabel xml:lang="en">coagulation</skos:prefLabel>
+        <skos:definition>In a dispersed system, particles of all species can be aggregated into larger structures by several mechanisms. Aggregation, based on reducing inter-particle repulsion forces, is known as coagulation and the aggregates are called coagula. If coagulation is induced by a polymer-bridging action, the process is called flocculation and the aggregates are called flocs. When aggregation is achieved as a result of the action of an immersible bridging liquid, such as oil, the process is called agglomeration and the aggregates are referred to as agglomerates. The mechanisms include both those in coagulation (i.e. action of electrolytes) and bridging flocculation by either inorganic polymers or by precipitating metal hydroxides. The latter is known as sweep flocculation.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/electrolysis">
+        <dc:source xml:lang="en">http://en.wikipedia.org/wiki/Hydrometallurgy</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03.5..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+       <skos:altLabel xml:lang="en">electrowinning and electrorefining</skos:altLabel>
+        <skos:prefLabel xml:lang="en">electrolysis</skos:prefLabel>
+        <skos:definition>Electrolysis: Electrowinning and electrorefining respectively involve the recovery and purification of metals using electrodeposition of metals at the cathode, and either metal dissolution or a competing oxidation reaction at the anode.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/gravity-separation-table">
+        <dc:source xml:lang="en">http://www.motive-traction.com.au/cgi-bin/engine.pl?Page=page.html&amp;Rec=124</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.1.2.1.3</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/gravimetric-sorting"/>
+        <skos:prefLabel xml:lang="en">gravity separation table</skos:prefLabel>
+        <skos:definition>Gravity concentration consisting of an inclined planar surface fitted with riffles. Particles are carried across the surface by a fluid flow as the surface is vibrated. The shaking promotes the segregation of denser particles and keeps them moving across the deck in different angles down to the discharge end. Wilfley table, Holman table are examples.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physico-chemical-treatment"/>
+    <skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/solvent-extraction">
+        <dc:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03.3..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+        <skos:prefLabel xml:lang="en">solvent extraction</skos:prefLabel>
+        <skos:definition>Extraction with a solvent. This may be achieved on: (1) the soluble part of a solid matter (solid/liquid extraction), (2) the elements within a liquid phase (liquid/liquid extraction).</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/centrifugal-gravity-separation">
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.1.2.1.4</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/gravimetric-sorting"/>
+        <skos:altLabel xml:lang="en">radial acceleration</skos:altLabel>
+        <skos:prefLabel xml:lang="en">centrifugal gravity separation</skos:prefLabel>
+        <skos:definition>particulate material is introduced into a fluid medium that is being rotated, denser particles move away from the center of rotation faster than lighter particles, allowing them to be concentrated.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physical-treatment"/>
+    <skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/automatic-sorting"/>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/adsorption">
+        <dc:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03.6..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+        <skos:prefLabel xml:lang="en">adsorption</skos:prefLabel>
+        <skos:definition>Taking up of ions, molecules or colloids on the surface of a material.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/leaching">
+        <dc:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03.2..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+        <skos:prefLabel xml:lang="en">leaching</skos:prefLabel>
+        <skos:definition>Action of chemical reagents on a material resulting in the dissolution of some of its elements.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <rdfs:label xml:lang="en">Processing Activity Type vocabulary</rdfs:label>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/pyrometallurgy">
+        <dc:source xml:lang="en">http://en.wikipedia.org/wiki/Pyrometallurgy</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03.11..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+        <skos:prefLabel xml:lang="en">pyrometallurgy</skos:prefLabel>
+        <skos:definition>Pyrometallurgy is a branch of extractive metallurgy. It consists of the thermal treatment of minerals and metallurgical ores and concentrates to bring about physical and chemical transformations in the materials to enable recovery of valuable metals. Pyrometallurgical treatment may produce saleable products such as pure metals, or intermediate compounds or alloys, suitable as feed for further processing. Examples of elements extracted by pyrometallurgical processes include the oxides of less reactive elements like Fe, Cu, Zn, Chromium, Tin, Manganese.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/incineration">
+        <dc:source xml:lang="en">http://en.wikipedia.org/wiki/Incineration</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03.16..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+        <skos:prefLabel xml:lang="en">incineration</skos:prefLabel>
+        <skos:definition>Incineration is a waste treatment process that involves the combustion of organic substances contained in waste materials. Incineration of waste materials converts the waste into ash, flue gas, and heat. (http://en.wikipedia.org/wiki/Incineration)</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/sluice-concentration">
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.1.2.1.2</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/gravimetric-sorting"/>
+        <skos:prefLabel xml:lang="en">sluice concentration</skos:prefLabel>
+        <skos:definition>a slanting trough fitted with riffles or with moquette along the bottom of the trough; particles are entrained in fluid flowing through the trough, and denser particles settle to the bottom more rapidly and are trapped.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/flocculation">
+        <dc:source xml:lang="en">B.A.Wills, T.J.Napier-Munn, Will's Mineral Processing Technology, Seventh edition, Elsevier 2006.</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">02.4..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physico-chemical-treatment"/>
+        <skos:prefLabel xml:lang="en">flocculation</skos:prefLabel>
+        <skos:definition>Flocculation is the coagulation between particles induced by the bridging action of long-chain organic polymers.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/smelting">
+        <dc:source xml:lang="en">http://en.wikipedia.org/wiki/Pyrometallurgy#Smelting</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03.13..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+        <skos:prefLabel xml:lang="en">smelting</skos:prefLabel>
+        <skos:definition>Smelting is a form of extractive metallurgy; its main use is to produce a metal from its ore. Smelting involves thermal reactions in which at least one product is a molten phase. Metal oxides can then be smelted by heating with coke or charcoal (forms of carbon), a reducing agent that liberates the oxygen as carbon dioxide leaving a refined mineral. Carbonate ores are also smelted with charcoal, but are sometimes need to be calcined first. Other materials may need to be added as flux, aiding the melting of the oxide ores and assisting in the formation of a slag, as the flux reacts with impurities, such as silicon compounds. Smelting usually takes place at a temperature above the melting point of the metal, but processes vary considerably according to the ore involved and other matters.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/sorting"/>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/eddy-current-separator">
+        <dc:source xml:lang="en">http://en.wikipedia.org/wiki/Eddy_current_separator</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.1.5..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/automatic-sorting"/>
+        <skos:altLabel xml:lang="en">foucault current separator</skos:altLabel>
+        <skos:prefLabel xml:lang="en">eddy current separator</skos:prefLabel>
+        <skos:definition>Uses an electric current induced into a conductor by changes in magnetic flux cutting through it. The effect of such currents is to induce a secondary magnetic field around the particle; this field reacts with the applied magnetic field resulting in forces that eject the conducting particle from the stream of mixed particles, providing the means for an effective separation.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/roasting">
+        <dc:source xml:lang="en">http://en.wikipedia.org/wiki/Roasting_(metallurgy)</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03.12..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/chemical-treatment"/>
+        <skos:prefLabel xml:lang="en">roasting</skos:prefLabel>
+        <skos:definition>Roasting is a step in the processing of certain ores. More specifically, roasting is a metallurgical process involving gas–solid reactions at elevated temperatures with the goal of purifying the metal component(s). Roasting consists of thermal gas–solid reactions, which can include oxidation, reduction, chlorination, sulfation, and pyrohydrolysis. In roasting, the ore or ore concentrate is treated with very hot air.” http://en.wikipedia.org/wiki/Roasting_(metallurgy)</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/flotation">
+        <dc:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor; http://www.cpchem.com/bl/specchem/en-us/Pages/IntroductiontoMineralProcessing.aspx</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">02.1..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mining-processing-activity/physico-chemical-treatment"/>
+        <skos:prefLabel xml:lang="en">flotation</skos:prefLabel>
+        <skos:definition>Process in which particles are separated according to their tendency to adhere more or less to air bubbles to form a mineralized froth: this feature is linked to the natural or designed hydrophobic property of the particle surface.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/mining-processing-activity"/>
+      </skos:Concept>
+    </skos:member>
+  </skos:Collection>
+</rdf:RDF>

@@ -1,0 +1,1165 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY cgi "http://resource.geosciml.org/classifierscheme/cgi/201202/" >
+    <!ENTITY consolidationdegree "http://resource.geosciml.org/classifier/cgi/consolidationdegree/" >
+]>
+
+
+<rdf:RDF xmlns="&cgi;consolidationdegree#"
+     xml:base="&cgi;consolidationdegree"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:cgi="http://resource.geosciml.org/classifierscheme/cgi/201202/"
+     xmlns:consolidationdegree="http://resource.geosciml.org/classifier/cgi/consolidationdegree/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="&cgi;consolidationdegree">
+        <dc:publisher>Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:publisher>
+        <owl:versionInfo>201202</owl:versionInfo>
+        <dc:title xml:lang="en">CGI Consolidation Degree Term Vocabulary</dc:title>
+        <dc:format>application/rdf-xml</dc:format>
+        <dc:creator>Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <rdfs:comment xml:lang="en">URIs mapped from URNs used in 200811 verstion to http URIs according to CGI URI scheme (https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)</rdfs:comment>
+        <dc:language>en</dc:language>
+        <dc:identifier>http://resource.geosciml.org/classifierscheme/cgi/201202/ConsolidationDegree</dc:identifier>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;source"/>
+    <owl:AnnotationProperty rdf:about="&dc;publisher"/>
+    <owl:AnnotationProperty rdf:about="&dc;identifier"/>
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    <owl:AnnotationProperty rdf:about="&dc;format"/>
+    <owl:AnnotationProperty rdf:about="&dc;language"/>
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+    <owl:ObjectProperty rdf:about="&rdf;value">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broadMatch -->
+
+    <owl:ObjectProperty rdf:about="&skos;broadMatch"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:ObjectProperty rdf:about="&skos;broader">
+        <rdfs:label xml:lang="en">has broader</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">Broader concepts are typically rendered as parents in a concept
+      hierarchy (tree).</rdfs:comment>
+        <rdfs:comment xml:lang="en">By convention, skos:broader is only used to assert an immediate
+      (i.e. direct) hierarchical link between two conceptual resources.</rdfs:comment>
+        <owl:inverseOf rdf:resource="&skos;narrower"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
+
+    <owl:ObjectProperty rdf:about="&skos;changeNote">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:ObjectProperty rdf:about="&skos;closeMatch">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">close match</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <owl:inverseOf rdf:resource="&skos;closeMatch"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;mappingRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:ObjectProperty rdf:about="&skos;definition">
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:ObjectProperty rdf:about="&skos;exactMatch">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">exact match</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">skos:exactMatch is disjoint with each of the properties
+      skos:broadMatch and skos:relatedMatch.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&skos;closeMatch"/>
+        <owl:inverseOf rdf:resource="&skos;exactMatch"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+    <owl:ObjectProperty rdf:about="&skos;hasTopConcept">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:label xml:lang="en">has top concept</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:range rdf:resource="&skos;Concept"/>
+        <rdfs:domain rdf:resource="&skos;ConceptScheme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+    <owl:ObjectProperty rdf:about="&skos;historyNote">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:ObjectProperty rdf:about="&skos;inScheme">
+        <rdfs:label xml:lang="en">in scheme</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">A concept may be a member of more than one concept scheme.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:range rdf:resource="&skos;ConceptScheme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#mappingRelation -->
+
+    <owl:ObjectProperty rdf:about="&skos;mappingRelation">
+        <rdfs:label xml:lang="en">mapping relation</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">These concept mapping relations mirror semantic relations, and the
+      data model defined below is similar (with the exception of skos:exactMatch) to the data model
+      defined for semantic relations. A distinct vocabulary is provided for concept mapping
+      relations, to provide a convenient way to differentiate links within a concept scheme from
+      links between concept schemes. However, this pattern of usage is not a formal requirement of
+      the SKOS data model, and relies on informal definitions of best practice.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&skos;semanticRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#member -->
+
+    <owl:ObjectProperty rdf:about="&skos;member">
+        <rdfs:label xml:lang="en">member</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:domain rdf:resource="&skos;Collection"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&skos;Collection"/>
+                    <rdf:Description rdf:about="&skos;Concept"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#memberList -->
+
+    <owl:ObjectProperty rdf:about="&skos;memberList">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">member list</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">For any resource, every item in the list given as the value of the
+      skos:memberList property is also a value of the skos:member property.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:domain rdf:resource="&skos;OrderedCollection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrowMatch -->
+
+    <owl:ObjectProperty rdf:about="&skos;narrowMatch">
+        <rdfs:label xml:lang="en">narrower match</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <owl:inverseOf rdf:resource="&skos;broadMatch"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;mappingRelation"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;narrower"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+    <owl:ObjectProperty rdf:about="&skos;narrower">
+        <rdfs:label xml:lang="en">has narrower</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">By convention, skos:broader is only used to assert an immediate
+      (i.e. direct) hierarchical link between two conceptual resources.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Narrower concepts are typically rendered as children in a concept
+      hierarchy (tree).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:ObjectProperty rdf:about="&skos;notation">
+        <rdfs:label xml:lang="en">notation</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">By convention, skos:notation is used with a typed literal in the
+      object position of the triple.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:ObjectProperty rdf:about="&skos;prefLabel">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#related -->
+
+    <owl:ObjectProperty rdf:about="&skos;related">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">related to</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">skos:related is disjoint with skos:broaderTransitive</rdfs:comment>
+        <owl:inverseOf rdf:resource="&skos;related"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;semanticRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#relatedMatch -->
+
+    <owl:ObjectProperty rdf:about="&skos;relatedMatch">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">related match</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:subPropertyOf rdf:resource="&skos;mappingRelation"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;related"/>
+        <owl:inverseOf rdf:resource="&skos;relatedMatch"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#semanticRelation -->
+
+    <owl:ObjectProperty rdf:about="&skos;semanticRelation">
+        <rdfs:label xml:lang="en">semantic relation</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">This property should not be used directly, but as a super-property
+      for all properties denoting a relationship of meaning between concepts.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:domain rdf:resource="&skos;Concept"/>
+        <rdfs:range rdf:resource="&skos;Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+    <owl:ObjectProperty rdf:about="&skos;topConceptOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:label xml:lang="en">top concept in scheme</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:subPropertyOf rdf:resource="&skos;inScheme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+    <owl:DatatypeProperty rdf:about="&rdf;value"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
+
+    <owl:DatatypeProperty rdf:about="&skos;changeNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:DatatypeProperty rdf:about="&skos;definition">
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+    <owl:DatatypeProperty rdf:about="&skos;historyNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:DatatypeProperty rdf:about="&skos;notation">
+        <rdfs:label xml:lang="en">notation</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">By convention, skos:notation is used with a typed literal in the
+      object position of the triple.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:DatatypeProperty rdf:about="&skos;prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Collection -->
+
+    <owl:Class rdf:about="&skos;Collection">
+        <rdfs:label xml:lang="en">Collection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith rdf:resource="&skos;Concept"/>
+        <owl:disjointWith rdf:resource="&skos;ConceptScheme"/>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">Labelled collections can be used with collectable semantic relation
+      properties e.g. skos:narrower, where you would like a set of concepts to be displayed under a
+      &#39;node label&#39; in the hierarchy.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="&skos;Concept">
+        <rdfs:label xml:lang="en">Concept</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith rdf:resource="&skos;ConceptScheme"/>
+        <owl:disjointWith rdf:resource="&skos;OrderedCollection"/>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="&skos;ConceptScheme">
+        <rdfs:label xml:lang="en">Concept Scheme</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith rdf:resource="&skos;OrderedCollection"/>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">A concept scheme may be defined to include concepts from different
+      sources.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Thesauri, classification schemes, subject heading lists, taxonomies,
+      &#39;folksonomies&#39;, and other types of controlled vocabulary are all examples of concept schemes.
+      Concept schemes are also embedded in glossaries and terminologies.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#OrderedCollection -->
+
+    <owl:Class rdf:about="&skos;OrderedCollection">
+        <rdfs:label xml:lang="en">Ordered Collection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&skos;Collection"/>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">Ordered collections can be used where you would like a set of concepts to be displayed in a specific order, and optionally under a &#39;node label&#39;.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/consolidationdegree/001 -->
+
+    <owl:NamedIndividual rdf:about="&consolidationdegree;001"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/consolidationdegree/002 -->
+
+    <owl:NamedIndividual rdf:about="&consolidationdegree;002"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/consolidationdegree/003 -->
+
+    <owl:NamedIndividual rdf:about="&consolidationdegree;003"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/consolidationdegree/004 -->
+
+    <owl:NamedIndividual rdf:about="&consolidationdegree;004"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/consolidationdegree/005 -->
+
+    <owl:NamedIndividual rdf:about="&consolidationdegree;005"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/consolidationdegree/006 -->
+
+    <owl:NamedIndividual rdf:about="&consolidationdegree;006"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/consolidationdegree/007 -->
+
+    <owl:NamedIndividual rdf:about="&consolidationdegree;007"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/consolidationdegree/008 -->
+
+    <owl:NamedIndividual rdf:about="&consolidationdegree;008"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/consolidationdegree/009 -->
+
+    <owl:NamedIndividual rdf:about="&consolidationdegree;009"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/consolidationdegree/010 -->
+
+    <owl:NamedIndividual rdf:about="&consolidationdegree;010"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/consolidationdegree/011 -->
+
+    <owl:NamedIndividual rdf:about="&consolidationdegree;011"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/consolidationdegree/012 -->
+
+    <owl:NamedIndividual rdf:about="&consolidationdegree;012"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/consolidationdegree/013 -->
+
+    <owl:NamedIndividual rdf:about="&consolidationdegree;013"/>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/consolidationdegree/consolidated -->
+
+    <skos:Concept rdf:about="&consolidationdegree;consolidated">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en">Consolidated</skos:prefLabel>
+        <skos:definition>Particulate constituents of a compound material adhere to each other strongly enough that the aggregate can be considered a solid material in its own right.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:exactMatch rdf:resource="&consolidationdegree;001"/>
+        <skos:broader rdf:resource="&consolidationdegree;consolidation_not_specified"/>
+        <skos:narrower rdf:resource="&consolidationdegree;indurated"/>
+        <skos:narrower rdf:resource="&consolidationdegree;well_consolidated"/>
+        <skos:inScheme rdf:resource="&cgi;consolidationdegree"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/consolidationdegree/consolidation_not_specified -->
+
+    <skos:Concept rdf:about="&consolidationdegree;consolidation_not_specified">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition>In normative descriptions, indicates that consolidation state is not a determining factor in identification, it may have any value.</skos:definition>
+        <skos:historyNote xml:lang="en">2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme.</skos:historyNote>
+        <skos:prefLabel xml:lang="en">Consolidation not specified</skos:prefLabel>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:exactMatch rdf:resource="&consolidationdegree;002"/>
+        <skos:topConceptOf rdf:resource="&cgi;consolidationdegree"/>
+        <skos:inScheme rdf:resource="&cgi;consolidationdegree"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/consolidationdegree/consolidation_variable -->
+
+    <skos:Concept rdf:about="&consolidationdegree;consolidation_variable">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition>Consolidation ranges from unconsolidated to indurated on scale of description</skos:definition>
+        <skos:prefLabel xml:lang="en">Consolidation variable</skos:prefLabel>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:exactMatch rdf:resource="&consolidationdegree;003"/>
+        <skos:broader rdf:resource="&consolidationdegree;consolidation_not_specified"/>
+        <skos:inScheme rdf:resource="&cgi;consolidationdegree"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/consolidationdegree/incipient_consolidation -->
+
+    <skos:Concept rdf:about="&consolidationdegree;incipient_consolidation">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition>Shoveled with difficulty; relative density 0.4 - 0.7.</skos:definition>
+        <skos:prefLabel xml:lang="en">Incipient consolidation</skos:prefLabel>
+        <dc:source>NADM SLTTs 2004 after Bowles 1986</dc:source>
+        <skos:exactMatch rdf:resource="&consolidationdegree;011"/>
+        <skos:broader rdf:resource="&consolidationdegree;unconsolidated"/>
+        <skos:inScheme rdf:resource="&cgi;consolidationdegree"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/consolidationdegree/indurated -->
+
+    <skos:Concept rdf:about="&consolidationdegree;indurated">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>NADM SLTTs 2004 after Bowles 1987</dc:source>
+        <skos:prefLabel xml:lang="en">Indurated</skos:prefLabel>
+        <skos:definition>Requires blasting or heavy equipment to loosen; Relative density 0.9-1.0. Rings to blow of hammer.</skos:definition>
+        <skos:exactMatch rdf:resource="&consolidationdegree;007"/>
+        <skos:broader rdf:resource="&consolidationdegree;consolidated"/>
+        <skos:narrower rdf:resource="&consolidationdegree;moderately_indurated"/>
+        <skos:narrower rdf:resource="&consolidationdegree;slightly_indurated"/>
+        <skos:narrower rdf:resource="&consolidationdegree;variable_induration"/>
+        <skos:narrower rdf:resource="&consolidationdegree;well_indurated"/>
+        <skos:inScheme rdf:resource="&cgi;consolidationdegree"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/consolidationdegree/moderately_indurated -->
+
+    <skos:Concept rdf:about="&consolidationdegree;moderately_indurated">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition>Multiple blows with standard rock hammer (less than 1 kg) are required to break rock.</skos:definition>
+        <skos:prefLabel xml:lang="en">Moderately indurated</skos:prefLabel>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:exactMatch rdf:resource="&consolidationdegree;009"/>
+        <skos:broader rdf:resource="&consolidationdegree;indurated"/>
+        <skos:inScheme rdf:resource="&cgi;consolidationdegree"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/consolidationdegree/slightly_indurated -->
+
+    <skos:Concept rdf:about="&consolidationdegree;slightly_indurated">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition>Rock can be broken with single blow from standard rock hammer (less than 1 kg mass).</skos:definition>
+        <skos:prefLabel xml:lang="en">Slightly indurated</skos:prefLabel>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:exactMatch rdf:resource="&consolidationdegree;008"/>
+        <skos:broader rdf:resource="&consolidationdegree;indurated"/>
+        <skos:inScheme rdf:resource="&cgi;consolidationdegree"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/consolidationdegree/unconsolidated -->
+
+    <skos:Concept rdf:about="&consolidationdegree;unconsolidated">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition>Particulate constituents of a compound material do not adhere to each other strongly enough that the aggregate can be considered a solid in its own right.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">Unconsolidated</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&consolidationdegree;004"/>
+        <skos:broader rdf:resource="&consolidationdegree;consolidation_not_specified"/>
+        <skos:narrower rdf:resource="&consolidationdegree;incipient_consolidation"/>
+        <skos:narrower rdf:resource="&consolidationdegree;unconsolidated_loose"/>
+        <skos:narrower rdf:resource="&consolidationdegree;unconsolidated_very_loose"/>
+        <skos:inScheme rdf:resource="&cgi;consolidationdegree"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/consolidationdegree/unconsolidated_loose -->
+
+    <skos:Concept rdf:about="&consolidationdegree;unconsolidated_loose">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>NADM SLTTs 2004 after Bowles 1985</dc:source>
+        <skos:definition>Easily shoveled, can be indented with fingers; Relative density 0.2-0.4.</skos:definition>
+        <skos:prefLabel xml:lang="en">Unconsolidated, loose</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&consolidationdegree;013"/>
+        <skos:broader rdf:resource="&consolidationdegree;unconsolidated"/>
+        <skos:inScheme rdf:resource="&cgi;consolidationdegree"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/consolidationdegree/unconsolidated_very_loose -->
+
+    <skos:Concept rdf:about="&consolidationdegree;unconsolidated_very_loose">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source>NADM SLTTs 2004 after Bowles 1984</dc:source>
+        <skos:definition>Easily indented with fingers; Relative density 0.0-0.2.</skos:definition>
+        <skos:prefLabel xml:lang="en">Unconsolidated, very loose</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&consolidationdegree;005"/>
+        <skos:broader rdf:resource="&consolidationdegree;unconsolidated"/>
+        <skos:inScheme rdf:resource="&cgi;consolidationdegree"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/consolidationdegree/variable_induration -->
+
+    <skos:Concept rdf:about="&consolidationdegree;variable_induration">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition>Material is lithified, but induration varies at scale of description.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">Variable induration</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&consolidationdegree;006"/>
+        <skos:broader rdf:resource="&consolidationdegree;indurated"/>
+        <skos:inScheme rdf:resource="&cgi;consolidationdegree"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/consolidationdegree/well_consolidated -->
+
+    <skos:Concept rdf:about="&consolidationdegree;well_consolidated">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition>Requires pick to loosen for shoveling; relative density 0.7-0.9.</skos:definition>
+        <dc:source>NADM SLTTs 2004 after Bowles 1986</dc:source>
+        <skos:prefLabel xml:lang="en">Well consolidated</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&consolidationdegree;012"/>
+        <skos:broader rdf:resource="&consolidationdegree;consolidated"/>
+        <skos:inScheme rdf:resource="&cgi;consolidationdegree"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/consolidationdegree/well_indurated -->
+
+    <skos:Concept rdf:about="&consolidationdegree;well_indurated">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition>Particles in the rock are strongly bound together such that rock surface can only be broken with great difficulty using standard rock hammer (less than 1 kg mass).</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">Well indurated</skos:prefLabel>
+        <skos:exactMatch rdf:resource="&consolidationdegree;010"/>
+        <skos:broader rdf:resource="&consolidationdegree;indurated"/>
+        <skos:inScheme rdf:resource="&cgi;consolidationdegree"/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifierscheme/cgi/201202/consolidationdegree -->
+
+    <skos:ConceptScheme rdf:about="&cgi;consolidationdegree">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:historyNote xml:lang="en">2009-07-14. create rdf/skos from excel spreadsheet.</skos:historyNote>
+        <skos:changeNote xml:lang="en">2009-12-07 SMR Update metadata properties for version, creator, title, and format.  Change skos:HistoryNote to dc:source for information on origin of terms and definitions.</skos:changeNote>
+        <skos:historyNote xml:lang="en">2010-02-08. SMR Clean up namespace declarations so concept URI&#39;s follow CGI URN scheme; concepts have URN, are not document fragments.</skos:historyNote>
+        <skos:historyNote xml:lang="en">2010-02-12 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using &#39;file/Export inferred axioms as ontology&#39; in Protege.</skos:historyNote>
+        <skos:historyNote xml:lang="en">2010-11-27 SMR.  URIs mapped from CGI URNs in 200811 version to http URIs according to CGI URI scheme (https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices#Example_Instances)</skos:historyNote>
+        <skos:historyNote xml:lang="en">2011-07-07. GD - Clean up topConcept associations, remove the &#39;transitive&#39; characteristic of the &#39;hasTopConcept&#39; object property.</skos:historyNote>
+        <skos:historyNote xml:lang="en">2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme.</skos:historyNote>
+        <skos:historyNote xml:lang="en">2012-02-27 SMR add skos:exactMatch triples to map URIs for concepts in this vocabulary to number-token URIs in 201012 version of same concepts.</skos:historyNote>
+        <skos:prefLabel xml:lang="en">CGI Consolidation Degree Term Vocabulary</skos:prefLabel>
+        <skos:definition xml:lang="en">This file contains the 200811 version of CGI Consolidation degree vocabulary. Use for specifying degree of consolidation of Compound material, distinguishes rock from unconsolidated material.</skos:definition>
+        <skos:hasTopConcept rdf:resource="&consolidationdegree;consolidation_not_specified"/>
+    </skos:ConceptScheme>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Collection -->
+
+    <owl:Thing rdf:about="&skos;Collection">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">Collection</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">A meaningful collection of concepts.</skos:definition>
+        <rdfs:comment xml:lang="en">Labelled collections can be used with collectable semantic relation
+      properties e.g. skos:narrower, where you would like a set of concepts to be displayed under a
+      &#39;node label&#39; in the hierarchy.</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Thing rdf:about="&skos;Concept">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">Concept</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">An abstract idea or notion; a unit of thought.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Thing rdf:about="&skos;ConceptScheme">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">Concept Scheme</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">A concept scheme may be defined to include concepts from different
+      sources.</rdfs:comment>
+        <skos:definition xml:lang="en">A set of concepts, optionally including statements about semantic
+      relationships between those concepts.</skos:definition>
+        <rdfs:comment xml:lang="en">Thesauri, classification schemes, subject heading lists, taxonomies,
+      &#39;folksonomies&#39;, and other types of controlled vocabulary are all examples of concept schemes.
+      Concept schemes are also embedded in glossaries and terminologies.</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#OrderedCollection -->
+
+    <owl:Thing rdf:about="&skos;OrderedCollection">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">Ordered Collection</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">An ordered collection of concepts, where both the grouping and
+      the ordering are meaningful.</skos:definition>
+        <rdfs:comment xml:lang="en">Ordered collections can be used where you would like a set of concepts to be displayed in a specific order, and optionally under a &#39;node label&#39;.</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:Thing rdf:about="&skos;altLabel">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <skos:definition xml:lang="en">An alternative lexical label for a resource.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broadMatch -->
+
+    <owl:Thing rdf:about="&skos;broadMatch">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <skos:definition xml:lang="en">skos:broadMatch is used to state a hierarchical mapping link
+      between two conceptual resources in different concept schemes.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:Thing rdf:about="&skos;broader">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">has broader</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">A concept that is more general in meaning.</skos:definition>
+        <rdfs:comment xml:lang="en">Broader concepts are typically rendered as parents in a concept
+      hierarchy (tree).</rdfs:comment>
+        <rdfs:comment xml:lang="en">By convention, skos:broader is only used to assert an immediate
+      (i.e. direct) hierarchical link between two conceptual resources.</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
+
+    <owl:Thing rdf:about="&skos;changeNote">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <skos:definition xml:lang="en">A note about a modification to a concept.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:Thing rdf:about="&skos;closeMatch">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">close match</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">skos:closeMatch is used to link two concepts that are
+      sufficiently similar that they can be used interchangeably in some information retrieval
+      applications. In order to avoid the possibility of &quot;compound errors&quot; when combining mappings
+      across more than two concept schemes, skos:closeMatch is not declared to be a transitive
+      property.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:Thing rdf:about="&skos;definition">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">A statement or formal explanation of the meaning of a concept.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#editorialNote -->
+
+    <owl:Thing rdf:about="&skos;editorialNote">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <skos:definition xml:lang="en">A note for an editor, translator or maintainer of the vocabulary.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:Thing rdf:about="&skos;exactMatch">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">exact match</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">skos:exactMatch is disjoint with each of the properties
+      skos:broadMatch and skos:relatedMatch.</rdfs:comment>
+        <skos:definition xml:lang="en">skos:exactMatch is used to link two concepts, indicating a high
+      degree of confidence that the concepts can be used interchangeably across a wide range of
+      information retrieval applications. skos:exactMatch is a transitive property, and is a
+      sub-property of skos:closeMatch.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:Thing rdf:about="&skos;example">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <skos:definition xml:lang="en">An example of the use of a concept.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+    <owl:Thing rdf:about="&skos;hasTopConcept">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">has top concept</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">A top level concept in the concept scheme.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hiddenLabel -->
+
+    <owl:Thing rdf:about="&skos;hiddenLabel">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <skos:definition xml:lang="en">A lexical label for a resource that should be hidden when
+      generating visual displays of the resource, but should still be accessible to free text search
+      operations.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+    <owl:Thing rdf:about="&skos;historyNote">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <skos:definition xml:lang="en">A note about the past state/use/meaning of a concept.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:Thing rdf:about="&skos;inScheme">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">in scheme</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en">A concept may be a member of more than one concept scheme.</rdfs:comment>
+        <skos:definition xml:lang="en">A concept scheme in which the concept is included.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#mappingRelation -->
+
+    <owl:Thing rdf:about="&skos;mappingRelation">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">mapping relation</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">Definition</skos:definition>
+        <rdfs:comment xml:lang="en">These concept mapping relations mirror semantic relations, and the
+      data model defined below is similar (with the exception of skos:exactMatch) to the data model
+      defined for semantic relations. A distinct vocabulary is provided for concept mapping
+      relations, to provide a convenient way to differentiate links within a concept scheme from
+      links between concept schemes. However, this pattern of usage is not a formal requirement of
+      the SKOS data model, and relies on informal definitions of best practice.</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#member -->
+
+    <owl:Thing rdf:about="&skos;member">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">member</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">A member of a collection.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#memberList -->
+
+    <owl:Thing rdf:about="&skos;memberList">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">member list</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">An RDF list containing the members of an ordered collection.</skos:definition>
+        <rdfs:comment xml:lang="en">For any resource, every item in the list given as the value of the
+      skos:memberList property is also a value of the skos:member property.</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrowMatch -->
+
+    <owl:Thing rdf:about="&skos;narrowMatch">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">narrower match</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">skos:narrowMatch is used to state a hierarchical mapping link
+      between two conceptual resources in different concept schemes.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+    <owl:Thing rdf:about="&skos;narrower">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">has narrower</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">A concept that is more specific in meaning.</skos:definition>
+        <rdfs:comment xml:lang="en">By convention, skos:broader is only used to assert an immediate
+      (i.e. direct) hierarchical link between two conceptual resources.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Narrower concepts are typically rendered as children in a concept
+      hierarchy (tree).</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrowerTransitive -->
+
+    <owl:Thing rdf:about="&skos;narrowerTransitive">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <skos:definition>skos:narrowerTransitive is a transitive superproperty of skos:broader. By
+      convention, skos:narrowerTransitive is not intended to be used in assertions, but provides a
+      mechanism whereby the transitive closure of skos:narrower can be queried.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:Thing rdf:about="&skos;notation">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">notation</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">A notation, also known as classification code, is a string of
+      characters such as &quot;T58.5&quot; or &quot;303.4833&quot; used to uniquely identify a concept within the scope
+      of a given concept scheme.</skos:definition>
+        <rdfs:comment xml:lang="en">By convention, skos:notation is used with a typed literal in the
+      object position of the triple.</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+    <owl:Thing rdf:about="&skos;note">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <skos:definition xml:lang="en">A general note, for any purpose.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:Thing rdf:about="&skos;prefLabel">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <skos:definition xml:lang="en">The preferred lexical label for a resource, in a given language.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#related -->
+
+    <owl:Thing rdf:about="&skos;related">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">related to</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">A concept with which there is an associative semantic
+      relationship.</skos:definition>
+        <rdfs:comment xml:lang="en">skos:related is disjoint with skos:broaderTransitive</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#relatedMatch -->
+
+    <owl:Thing rdf:about="&skos;relatedMatch">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">related match</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">skos:relatedMatch is used to state an associative mapping link
+      between two conceptual resources in different concept schemes.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
+
+    <owl:Thing rdf:about="&skos;scopeNote">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <skos:definition xml:lang="en">A note that helps to clarify the meaning of a concept.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#semanticRelation -->
+
+    <owl:Thing rdf:about="&skos;semanticRelation">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">semantic relation</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">A concept related by meaning.</skos:definition>
+        <rdfs:comment xml:lang="en">This property should not be used directly, but as a super-property
+      for all properties denoting a relationship of meaning between concepts.</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+    <owl:Thing rdf:about="&skos;topConceptOf">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <rdfs:label xml:lang="en">top concept in scheme</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en">Relates a concept to the concept scheme that it is a top level
+      concept of.</skos:definition>
+    </owl:Thing>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

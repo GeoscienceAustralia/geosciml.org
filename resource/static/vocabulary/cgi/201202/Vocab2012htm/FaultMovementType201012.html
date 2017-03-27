@@ -1,0 +1,596 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Title: CGI Fault movement type vocabulary</title>
+	</head>
+	<body>
+		<style type="text/css">
+body { font-size:10pt;
+       font-style: normal;
+	   font-family: Verdana;
+	 }
+
+a {
+  	text-decoration: none;
+}
+	 
+table.ABOUT {
+	border:  1px solid #8A8;
+    margin:  2px;
+    padding: 2px;
+    margin-bottom: 10px;
+    background-color: #EEF
+}
+
+.FIELD-HEADERS {
+}
+
+.FIELD-VALUE {
+    font-weight: bold;
+    background-color: #EEF
+}
+
+.CONCEPT-FIELD {
+    background-color: #FEE;
+	white-space:nowrap;
+}
+
+.SUBHEADER {
+	font-weight: bold;
+	color: brown;
+}
+
+.SN {
+    background-color: #EEF
+}
+
+.PREF {
+    font-weight: bold;
+}
+
+.URI {
+    color: blue;
+}
+
+.conceptURI {
+    color: brown;
+}
+
+.STATUS {
+    color: darkgreen;
+}
+
+.ALT {
+}
+
+.HID {
+   color:grey
+}
+                </style>
+		<h1><a name="top"></a>CGI Fault movement type vocabulary</h1>
+		<table class="ABOUT">
+			<tbody>
+				<tr>
+					<td class="FIELD-HEADERS">identifier:</td>
+					<td class="FIELD-VALUE">http://resource.geosciml.org/classifierscheme/cgi/201202/faultmovementtype</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">creator:</td>
+					<td class="FIELD-VALUE">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">publisher:</td>
+					<td class="FIELD-VALUE">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">language:</td>
+					<td class="FIELD-VALUE">en</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">title:</td>
+					<td class="FIELD-VALUE">CGI Fault movement type vocabulary</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">format:</td>
+					<td class="FIELD-VALUE">application/rdf+xml</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="ABOUT">
+			<tbody>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet.</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">2009-12-07 SMR Update metadata properties for version, creator, title, and format.  Change skos:HistoryNote to dc:source for information on origin of terms and definitions.</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">2010-02-08. SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments.</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">2010-02-14 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege.</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">2010-11-27 SMR replace URN with http URI according to CGI URI scheme.</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">prefLabel:</td>
+					<td class="FIELD-VALUE">CGI Fault Movement Type vocabulary</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">definition:</td>
+					<td class="FIELD-VALUE">This file contains the CGI Fault movement type vocabulary. Includes terms used to define the type of movement (eg dip-slip, strike-slip) for a DisplacementValue on a ShearDisplacementStructure.</td>
+				</tr>
+			</tbody>
+		</table>
+		<ul></ul><a name="http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_separation_sense"></a><h2><a href="#top">⇑</a> -- dip separation sense -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_separation_sense</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">dip separation sense</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">A fault along which there is some separation parallel to the dip of the fault.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">GGIC vocabularies working group (Australia)</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_slip">http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_slip</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_slip"></a><h2><a href="#top">⇑</a> -- dip slip -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_slip</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">dip slip</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">The net slip of the fault lies in the dip direction of the fault.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">GGIC vocabularies working group (Australia)</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_separation_sense">http://resource.geosciml.org/classifier/cgi/faultmovementtype/dip_separation_sense</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction"></a><h2><a href="#top">⇑</a> -- extraction -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">extraction</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">A fault whose two sides have approached each other substantially in the direction perpendicular to the fault.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">Froitzheim, N., Pleuger, J. &amp; Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395.</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/faultmovementtype/mixed_extraction">http://resource.geosciml.org/classifier/cgi/faultmovementtype/mixed_extraction</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/faultmovementtype/pure_extraction">http://resource.geosciml.org/classifier/cgi/faultmovementtype/pure_extraction</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/faultmovementtype/horizontal"></a><h2><a href="#top">⇑</a> -- horizontal -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/faultmovementtype/horizontal</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">horizontal</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">The fault is horizontal.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">GGIC vocabularies working group (Australia)</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/faultmovementtype/mixed_extraction"></a><h2><a href="#top">⇑</a> -- mixed extraction -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/faultmovementtype/mixed_extraction</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">mixed extraction</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">An extraction fault with some displacement within the fault plane.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">Froitzheim, N., Pleuger, J. &amp; Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395.</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction">http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/faultmovementtype/oblique_slip"></a><h2><a href="#top">⇑</a> -- oblique slip -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/faultmovementtype/oblique_slip</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">oblique slip</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">The net slip of the fault lies between the strike and dip directions of the fault; the slip vector rakes between 10 and 80 degrees in the plane of the fault.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">GGIC vocabularies working group (Australia); SMR</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/faultmovementtype/transpressional">http://resource.geosciml.org/classifier/cgi/faultmovementtype/transpressional</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/faultmovementtype/transtensional">http://resource.geosciml.org/classifier/cgi/faultmovementtype/transtensional</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/faultmovementtype/pure_extraction"></a><h2><a href="#top">⇑</a> -- pure extraction -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/faultmovementtype/pure_extraction</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">pure extraction</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">An extraction fault with no discernible displacement within the fault plane.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">Froitzheim, N., Pleuger, J. &amp; Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395.</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction">http://resource.geosciml.org/classifier/cgi/faultmovementtype/extraction</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/faultmovementtype/scissor"></a><h2><a href="#top">⇑</a> -- scissor -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/faultmovementtype/scissor</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">scissor</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">A fault on which there is increasing offset or separation along the strike from an initial point of no offset, with reverse offset in the opposite direction.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">Neuendorf et al 2005</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_separation_sense"></a><h2><a href="#top">⇑</a> -- strike separation sense -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_separation_sense</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">strike separation sense</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">A fault along which there is some separation parallel to the strike of the fault.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">GGIC vocabularies working group (Australia)</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip">http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip"></a><h2><a href="#top">⇑</a> -- strike slip -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">strike slip</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">The net slip of the fault (slip vector) is parallel to the strike of the fault.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">GGIC vocabularies working group (Australia); SMR</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_separation_sense">http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_separation_sense</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/faultmovementtype/transcurrent">http://resource.geosciml.org/classifier/cgi/faultmovementtype/transcurrent</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/faultmovementtype/transform">http://resource.geosciml.org/classifier/cgi/faultmovementtype/transform</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/faultmovementtype/wrench">http://resource.geosciml.org/classifier/cgi/faultmovementtype/wrench</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/faultmovementtype/transcurrent"></a><h2><a href="#top">⇑</a> -- transcurrent -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/faultmovementtype/transcurrent</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">transcurrent</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">A large scale strike-slip fault in which the fault surface is steeply inclined.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">GGIC vocabularies working group (Australia)</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip">http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/faultmovementtype/transform"></a><h2><a href="#top">⇑</a> -- transform -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/faultmovementtype/transform</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">transform</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">A variety of strike-slip fault along which the displacement suddenly stops or changes form; typically associated with mid-ocean ridges.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">GGIC vocabularies working group (Australia)</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip">http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/faultmovementtype/transpressional"></a><h2><a href="#top">⇑</a> -- transpressional -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/faultmovementtype/transpressional</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">transpressional</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">A fault along which strike-slip deformation is accompanied by a component of shortening transverse to the fault.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">GGIC vocabularies working group (Australia)</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/faultmovementtype/oblique_slip">http://resource.geosciml.org/classifier/cgi/faultmovementtype/oblique_slip</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/faultmovementtype/transtensional"></a><h2><a href="#top">⇑</a> -- transtensional -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/faultmovementtype/transtensional</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">transtensional</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">A fault along which strike-slip deformation is accompanied by a component of extension transverse to the fault.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">GGIC vocabularies working group (Australia)</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/faultmovementtype/oblique_slip">http://resource.geosciml.org/classifier/cgi/faultmovementtype/oblique_slip</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/faultmovementtype/wrench"></a><h2><a href="#top">⇑</a> -- wrench -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/faultmovementtype/wrench</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">wrench</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">A strike slip fault in which the faut plane is more or less vertical.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">GGIC vocabularies working group (Australia)</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip">http://resource.geosciml.org/classifier/cgi/faultmovementtype/strike_slip</a></td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Notes:  </td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

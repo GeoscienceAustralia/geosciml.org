@@ -1,0 +1,388 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:gtwg="http://resource.geosciml.org/authority/cgi/gtwg"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">
+  <owl:Ontology rdf:about="http://resource.geosciml.org/static/vocabulary/earthresourceml/2014/EnvironmentalImpactValue.rdf">
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <dc:creator>CGI Geoscience Terminology Working Group</dc:creator>
+    <dc:date>2014-01-10T00:00:00.000</dc:date>
+    <skos:editorialNote>This file contains the 201401 version of CGI Environmental Impact Category Vocabulary, which defines concepts for categorizing impacts associated with Earth Resource extraction activities. </skos:editorialNote>
+    <skos:changeNote>Vocabulary Shepherd: Carlo Cipolloni. Compilation and review in Google doc spreadsheet, converted to MS Excel XML for SKOS generation using GSML_SKOS_from_XLS_2013.xslt; Conversion to SKOS by SM Richard 2014-02-23. </skos:changeNote>
+    <skos:changeNote>Edits to fix typos and remove '201401' from rdf file name. Ollie Raymond 8-Jan-2015</skos:changeNote>
+  </owl:Ontology>
+  <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">
+    <skos:definition xml:lang="en">This resource defines the concept space for Environmental Impact Category vocabulary concepts by extension; it includes all concepts in this conceptScheme, as well as concepts in previous versions of the scheme.</skos:definition>
+    <skos:prefLabel xml:lang="en">Environmental Impact Category vocabulary</skos:prefLabel>
+    <dc:creator xml:lang="en">CGI Geoscience Terminology Working Group</dc:creator>
+  </skos:ConceptScheme>
+  <skos:Collection rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/">
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/non-aqueous-liquid-emission">
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.2.2..</skos:notation>
+        <skos:broader>
+          <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/liquid-emission">
+            <dc:source xml:lang="en">This vocabulary</dc:source>
+            <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.2..</skos:notation>
+            <skos:broader>
+              <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/emission">
+                <dc:source xml:lang="en">This vocabulary. adapted from (ESH Environment, Safety and Health Thesaurus/Dictionary. U.S. Department of Energy. DOE/EH-0186, 1991. 510 p.): Any spilling, leaking, pumping, pouring, emitting, emptying, discharging, injecting, escaping, leaching, dumping, or otherwise disposing of substances into the environment.</dc:source>
+                <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01..</skos:notation>
+                <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+                <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">emission</skos:notation>
+                <skos:prefLabel xml:lang="en">emission</skos:prefLabel>
+                <skos:definition>Any release or disposal of a substance into the environment</skos:definition>
+                <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+              </skos:Concept>
+            </skos:broader>
+            <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">liquid-emission</skos:notation>
+            <skos:prefLabel xml:lang="en">liquid emission</skos:prefLabel>
+            <skos:definition>Emission of liquids from resource extraction site; principal concern is likely to be toxic chemical constituents in the liquids, but these are too varied to enumerate in this vocabulary</skos:definition>
+            <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+          </skos:Concept>
+        </skos:broader>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">non-aqueous-liquid-emission</skos:notation>
+        <skos:prefLabel xml:lang="en">non-aqueous liquid emission</skos:prefLabel>
+        <skos:definition>Emission of liquid in which water is not the most abundant constituent.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/radiation">
+        <dc:source xml:lang="en">ISPRA - mining structural problems database and classification of underground mining sites by means of a risk index.</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.4.1</skos:notation>
+        <skos:broader>
+          <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/health-impact">
+            <dc:source xml:lang="en">ISPRA - mining structural problems database and classification of underground mining sites by means of a risk index.</dc:source>
+            <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03…</skos:notation>
+            <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/emission"/>
+            <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">health-impact</skos:notation>
+            <skos:prefLabel xml:lang="en">health impact</skos:prefLabel>
+            <skos:definition>Resource extraction activity directly or indirectly impacts the health of living organisms (human, other animals, plants...)</skos:definition>
+            <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+          </skos:Concept>
+        </skos:broader>
+        <skos:broader>
+          <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/radioactive-emission">
+            <dc:source xml:lang="en">This vocabulary</dc:source>
+            <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.4..</skos:notation>
+            <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/health-impact"/>
+            <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/emission"/>
+            <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">radioactive-emission</skos:notation>
+            <skos:prefLabel xml:lang="en">radioactive emission</skos:prefLabel>
+            <skos:definition>Emission of radioactive material or energy radiation due to radioactive decay of uncoverning of minerals.</skos:definition>
+            <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+          </skos:Concept>
+        </skos:broader>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">radiation</skos:notation>
+        <skos:prefLabel xml:lang="en">radiation</skos:prefLabel>
+        <skos:definition>Emission on air of radionuclides substance gangerous for many health situation</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/surface-aqueous-liquid-discharge">
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.2.1.2</skos:notation>
+        <skos:broader>
+          <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/aqueous-liquid-emission">
+            <dc:source xml:lang="en">This vocabulary</dc:source>
+            <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.2.1</skos:notation>
+            <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/liquid-emission"/>
+            <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">aqueous-liquid-emission</skos:notation>
+            <skos:prefLabel xml:lang="en">aqueous liquid emission</skos:prefLabel>
+            <skos:definition>Emission of liquids in which water is the most abundant constituent.</skos:definition>
+            <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+          </skos:Concept>
+        </skos:broader>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">surface-aqueous-liquid-discharge</skos:notation>
+        <skos:prefLabel xml:lang="en">surface aqueous liquid discharge</skos:prefLabel>
+        <skos:definition>Impact of aqueous liquid emission into the subsurface.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/liquid-emission"/>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/dust">
+        <dc:source xml:lang="en">ISO 4225 (ISO, 1994), quoted in http://www.who.int/occupational_health/publications/en/oehairbornedust3.pdf; http://ecorestoration.montana.edu/mineland/guide/problem/impacts/fugitive.htm</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.1.2..</skos:notation>
+        <skos:broader>
+          <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/particulate-emission">
+            <dc:source xml:lang="en">This vocabulary</dc:source>
+            <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.1..</skos:notation>
+            <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/emission"/>
+            <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">particulate-emission</skos:notation>
+            <skos:prefLabel xml:lang="en">particulate emission</skos:prefLabel>
+            <skos:definition>Emission of suspended particulate material into the air or water</skos:definition>
+            <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+          </skos:Concept>
+        </skos:broader>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">dust</skos:notation>
+        <skos:prefLabel xml:lang="en">dust</skos:prefLabel>
+        <skos:definition>Emission of dust into the air. Dust is defines as small solid particles with a diameter less than 75 µm. The particles are small enough to remain suspended in the air for some time, but settle out under their own weight in still air.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/heat">
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">04..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">heat</skos:notation>
+        <skos:prefLabel xml:lang="en">heat</skos:prefLabel>
+        <skos:definition>Impact includes noticable thermal release from mining activity (e.g. warm water discharge, exothermic mineral reactions).</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/landslide">
+        <dc:source xml:lang="en">ISPRA - mining structural problems database and classification of underground mining sites by means of a risk index.</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">02.5..</skos:notation>
+        <skos:broader>
+          <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/physical-impact">
+            <dc:source xml:lang="en">This vocabulary</dc:source>
+            <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">02..</skos:notation>
+            <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+            <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">physical-impact</skos:notation>
+            <skos:prefLabel xml:lang="en">physical impact</skos:prefLabel>
+            <skos:definition>Impact due to direct physical effects of natural processes resulting from mining activity.</skos:definition>
+            <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+          </skos:Concept>
+        </skos:broader>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">landslide</skos:notation>
+        <skos:altLabel xml:lang="en">slope failure</skos:altLabel>
+        <skos:prefLabel xml:lang="en">landslide</skos:prefLabel>
+        <skos:definition>Downslope displacement of material due to excavation related to resource extraction. Includes slope failure on waste or tailings heaps.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/dam-failure">
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">02.4..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/physical-impact"/>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">dam-failure</skos:notation>
+        <skos:prefLabel xml:lang="en">dam failure</skos:prefLabel>
+        <skos:definition>Breach or destruction of a large water or tailing containment structure and release of contained water that could result in downstream damage or pollution.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/gaseous-emission">
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.3..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/emission"/>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">gaseous-emission</skos:notation>
+        <skos:prefLabel xml:lang="en">gaseous emission</skos:prefLabel>
+        <skos:definition>Emission of gaseous substance, including steam or release of gas resulting from mining activity.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/erosion">
+        <dc:source xml:lang="en">IGH International Glossary of Hydrology. WMO - UNESCO, 1992. 413 p.</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">02.1..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/physical-impact"/>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">erosion</skos:notation>
+        <skos:prefLabel xml:lang="en">erosion</skos:prefLabel>
+        <skos:definition>Impact due to loss of material shaped by mining activities through water or wind action.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/emission"/>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/basic-mine-drainage">
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.2.1.2.1.2</skos:notation>
+        <skos:broader>
+          <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/mine-drainage">
+            <dc:source xml:lang="en">This vocabulary</dc:source>
+            <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.2.1.2.1</skos:notation>
+            <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/surface-aqueous-liquid-discharge"/>
+            <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">mine-drainage</skos:notation>
+            <skos:prefLabel xml:lang="en">mine drainage</skos:prefLabel>
+            <skos:definition>Surface discharge of aqueous liquid that has interacted with mineralized rock disturbed by Earth Resource extraction activities</skos:definition>
+            <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+          </skos:Concept>
+        </skos:broader>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">basic-mine-drainage</skos:notation>
+        <skos:prefLabel xml:lang="en">basic mine drainage</skos:prefLabel>
+        <skos:definition>Mine drainage that has a pH value of greater than 7.0.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/collapse">
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">02.3.1..</skos:notation>
+        <skos:broader>
+          <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/subsidence">
+            <dc:source xml:lang="en">This vocabulary</dc:source>
+            <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">02.3..</skos:notation>
+            <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/physical-impact"/>
+            <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">subsidence</skos:notation>
+            <skos:prefLabel xml:lang="en">subsidence</skos:prefLabel>
+            <skos:definition>Settlement of land or soil through compaction of loose or excavated material</skos:definition>
+            <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+          </skos:Concept>
+        </skos:broader>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">collapse</skos:notation>
+        <skos:prefLabel xml:lang="en">collapse</skos:prefLabel>
+        <skos:definition>Collapse of surface material into underground excavations, resulting in major surface subsidence and disruption.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/radioactive-emission"/>
+    <rdfs:label xml:lang="en">Environmental Impact Category vocabulary</rdfs:label>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/sedimentation">
+        <dc:source xml:lang="en">http://ecorestoration.montana.edu/mineland/guide/problem/impacts/erosion.htm</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">02.6..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/physical-impact"/>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">sedimentation</skos:notation>
+        <skos:prefLabel xml:lang="en">sedimentation</skos:prefLabel>
+        <skos:definition>Deposition of sediment eroded from resource extraction site in undesirable locations</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/physical-impact"/>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/neutral-mine-drainage">
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.2.1.2.1.3</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/mine-drainage"/>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">neutral-mine-drainage</skos:notation>
+        <skos:prefLabel xml:lang="en">neutral mine drainage</skos:prefLabel>
+        <skos:definition>Mine drainage that has a pH value of 7.0.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/subsidence"/>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/runoff-water">
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.2.1.2.2</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/surface-aqueous-liquid-discharge"/>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">runoff-water</skos:notation>
+        <skos:altLabel xml:lang="en">surface water effluents</skos:altLabel>
+        <skos:prefLabel xml:lang="en">runoff water</skos:prefLabel>
+        <skos:definition>Surface discharge of aqueous liquid sourced by rainfall that has not interacted with mineralized rock.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/subsurface-aqueous-liquid-discharge">
+        <dc:source xml:lang="en">IGH International Glossary of Hydrology. WMO - UNESCO, 1992. 413 p. ESD Gilpin, A. Dictionary of Environment and Sustainable Development. John Wiley and Sons. 1996. 247 p.</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.2.1.1.</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/aqueous-liquid-emission"/>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">subsurface-aqueous-liquid-discharge</skos:notation>
+        <skos:altLabel xml:lang="en">groundwater effluent | seepage water</skos:altLabel>
+        <skos:prefLabel xml:lang="en">subsurface aqueous liquid discharge</skos:prefLabel>
+        <skos:definition>Impact of subsurface aqueous fluid emission in which liquid water is the most abundant constituent.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/acid-mine-drainage">
+        <dc:source xml:lang="en">BAT/BREF of mining tailings and waste rock (European Commission 2004). http://eippcb.jrc.ec.europa.eu/reference/BREF/mmr_adopted_0109.pdf</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.2.1.2.1.1</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/mine-drainage"/>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">acid-mine-drainage</skos:notation>
+        <skos:prefLabel xml:lang="en">acid mine drainage</skos:prefLabel>
+        <skos:definition>Mine drainage that has a pH value of less than 7.0.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/visual-disturbance">
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">05.1..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/physical-impact"/>
+        <skos:broader>
+          <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/habitat-modification">
+            <dc:source xml:lang="en">ISPRA - mining structural problems database and classification of underground mining sites by means of a risk index. Reference to a ISPRA document: Berry P., Bandini A., Dacquino C. (2011) classification of underground mining sites by means of a risk index, V.3, pp. 31-44, Quad. Ambiente e Società. [http://www.isprambiente.gov.it/contentfiles/00009100/9196-qas-3-ultimo-corretto.pdf]; Dacquino C. et al. (2006) - Italian Mining sites inventory. APAT, 2006. [http://www.isprambiente.gov.it/files/miniere/i-siti-minerari-italiani-1870-2006.pdf]; http://ecorestoration.montana.edu/mineland/guide/problem/impacts/habitat.htm</dc:source>
+            <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">05..</skos:notation>
+            <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+            <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">habitat-modification</skos:notation>
+            <skos:prefLabel xml:lang="en">habitat modification</skos:prefLabel>
+            <skos:definition>Impact due to modification of landscape and ecosystem on or adjacent to the resource extraction site.</skos:definition>
+            <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+          </skos:Concept>
+        </skos:broader>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">visual-disturbance</skos:notation>
+        <skos:prefLabel xml:lang="en">visual disturbance</skos:prefLabel>
+        <skos:definition>Impact due to changed view, scene or visual appearance that modifies landscape resulting from mining activity.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/odour">
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.3.1</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/gaseous-emission"/>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">odour</skos:notation>
+        <skos:prefLabel xml:lang="en">odour</skos:prefLabel>
+        <skos:definition>Impact includes unpleasant smell resulting from a mining activity.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/aqueous-liquid-emission"/>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/mineral-fiber-emission">
+        <dc:source xml:lang="en">ISPRA - mining structural problems database and classification of underground mining sites by means of a risk index. Reference to a ISPRA document: Berry P., Bandini A., Dacquino C. (2011) classification of underground mining sites by means of a risk index, V.3, pp. 31-44, Quad. Ambiente e Società. [http://www.isprambiente.gov.it/contentfiles/00009100/9196-qas-3-ultimo-corretto.pdf]; Dacquino C. et al. (2006) - Italian Mining sites inventory. APAT, 2006. [http://www.isprambiente.gov.it/files/miniere/i-siti-minerari-italiani-1870-2006.pdf]</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.1.1..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/health-impact"/>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/particulate-emission"/>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">mineral-fiber-emission</skos:notation>
+        <skos:prefLabel xml:lang="en">mineral fiber emission</skos:prefLabel>
+        <skos:definition>Emission of mineral fiber particulates that are threats to respiratory health.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/mine-drainage"/>
+    <skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/particulate-emission"/>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/instability">
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">02.2..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/physical-impact"/>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">instability</skos:notation>
+        <skos:prefLabel xml:lang="en">instability</skos:prefLabel>
+        <skos:definition>Increased propensity for unpredictable surface displacements</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/vibration">
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">06..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">vibration</skos:notation>
+        <skos:prefLabel xml:lang="en">vibration</skos:prefLabel>
+        <skos:definition>Ground and airborne vibration (airblast) caused by resource extraction activity or by transportation associated with the mining activity or related transportation" (eg large lorries through narrow village roads).</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/environmental-impact/noise">
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">06.1..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/vibration"/>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact">noise</skos:notation>
+        <skos:prefLabel xml:lang="en">noise</skos:prefLabel>
+        <skos:definition>Noticable sound resulting from a mining activity, usually from machinery, processing plant or blasting.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/environmental-impact"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/health-impact"/>
+    <skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/environmental-impact/habitat-modification"/>
+  </skos:Collection>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->

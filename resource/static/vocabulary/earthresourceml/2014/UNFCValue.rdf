@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:gtwg="http://resource.geosciml.org/authority/cgi/gtwg"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc">
+  <owl:Ontology rdf:about="http://resource.geosciml.org/static/vocabulary/earthresourceml/2014/UNFCValue.rdf">
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <dc:creator>CGI Geoscience Terminology Working Group</dc:creator>
+    <dc:date>2014-01-09T00:00:00.000</dc:date>
+    <skos:editorialNote>This file contains the 201401 version of CGI UNFC code vocabulary, which defines concepts the categorisation of mineral reserves and resources according to the UN Framework Classification (2009). </skos:editorialNote>
+    <skos:changeNote>Vocabulary Shepherd: Jouni Vuollo. Compilation and review in Google doc spreadsheet, converted to MS Excel XML for SKOS generation using GSML_SKOS_from_XLS_2013.xslt; Conversion to SKOS by SM Richard 2014-02-23 </skos:changeNote>
+    <skos:changeNote>Edits to fix typos and remove '201401' from rdf file name. Ollie Raymond 8-Jan-2015</skos:changeNote>
+  </owl:Ontology>
+  <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc:201401">
+    <skos:definition xml:lang="en">This resource defines the concept space for UNFC code vocabulary concepts by extension; it includes all concepts in this conceptScheme, as well as concepts in previous versions of the scheme.</skos:definition>
+    <skos:prefLabel xml:lang="en">UNFC code vocabulary</skos:prefLabel>
+    <dc:creator xml:lang="en">CGI Geoscience Terminology Working Group</dc:creator>
+  </skos:ConceptScheme>
+  <skos:Collection rdf:about="http://resource.geosciml.org/classifier/cgi/unfc/">
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/unfc/additional-quantities-in-place">
+        <dc:source xml:lang="en">http://www.unece.org/fileadmin/DAM/energy/se/pdfs/egrc/egrc4_apr2013/SpecificationsUNFC2009.pdf - page 19</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">04..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc"/>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc">additional-quantities-in-place</skos:notation>
+        <skos:prefLabel xml:lang="en">additional quantities in place</skos:prefLabel>
+        <skos:definition>Quantities should only be classified as Additional Quantities in Place where no technically feasible projects have been identified that could lead to the extraction of any of these quantities.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/unfc/approved-for-development">
+        <dc:source xml:lang="en">http://www.unece.org/fileadmin/DAM/energy/se/pdfs/egrc/egrc4_apr2013/SpecificationsUNFC2009.pdf - page 19; synonym from CRIRSCO</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.2..</skos:notation>
+        <skos:broader>
+          <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/unfc/commercial-projects">
+            <dc:source xml:lang="en">www.unece.org/fileadmin/DAM/energy/se/pdfs/UNFC/UNFC2009_ECE_EnergySeries39.pdf - page 6; synonym from CRIRSCO</dc:source>
+            <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01..</skos:notation>
+            <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc"/>
+            <skos:altLabel xml:lang="en">mineral reserves</skos:altLabel>
+            <skos:prefLabel xml:lang="en">commercial projects</skos:prefLabel>
+            <skos:definition>Commercial Projects have been confirmed to be technically, economically and socially feasible.</skos:definition>
+            <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc"/>
+          </skos:Concept>
+        </skos:broader>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc">approved-for-development</skos:notation>
+        <skos:altLabel xml:lang="en">proved and probable (111+112)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">approved for development</skos:prefLabel>
+        <skos:definition>Approved for Development requires that all approvals/contracts are in place, and capital funds have been committed. Construction and installation of project facilities should be underway or due to start imminently.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/unfc/development-not-viable">
+        <dc:source xml:lang="en">http://www.unece.org/fileadmin/DAM/energy/se/pdfs/egrc/egrc4_apr2013/SpecificationsUNFC2009.pdf - page 19</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03.02..</skos:notation>
+        <skos:broader>
+          <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/unfc/non-commercial-projects">
+            <dc:source xml:lang="en">www.unece.org/fileadmin/DAM/energy/se/pdfs/UNFC/UNFC2009_ECE_EnergySeries39.pdf - page 6</dc:source>
+            <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03..</skos:notation>
+            <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc"/>            
+            <skos:prefLabel xml:lang="en">non commercial projects</skos:prefLabel>
+            <skos:definition>Non-Commercial Projects include those that are at an early stage of evaluation in addition to those that are considered unlikely to become commercially feasible developments within the foreseeable future.</skos:definition>
+            <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc"/>
+          </skos:Concept>
+        </skos:broader>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc">development-not-viable</skos:notation>
+        <skos:prefLabel xml:lang="en">development not viable</skos:prefLabel>
+        <skos:definition>Development not Viable is used where a technically feasible project can be identified, but it has been assessed as being of insufficient potential to warrant any further data acquisition activities or any direct efforts to remove commercial contingencies.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/unfc/non‐commercial-projects"/>
+    <rdfs:label xml:lang="en">UNFC code vocabulary</rdfs:label>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/unfc/development-pending">
+        <dc:source xml:lang="en">http://www.unece.org/fileadmin/DAM/energy/se/pdfs/egrc/egrc4_apr2013/SpecificationsUNFC2009.pdf - page 19; synonym from CRIRSCO</dc:source>
+        <skos:altLabel xml:lang="en">indicated (222)</skos:altLabel>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc"/>
+        <skos:definition>Development Pending is limited to those projects that are actively subject to projectspecific technical activities, such as acquisition of additional data (e.g. appraisal drilling) or the completion of project feasibility studies and associated economic analyses designed to confirm project commerciality and/or to determine the optimum development scenario or mine plan.</skos:definition>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">02.01..</skos:notation>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc">development-pending</skos:notation>
+        <skos:prefLabel xml:lang="en">development pending</skos:prefLabel>
+        <skos:broader>
+          <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/unfc/potentially-commercial-projects">
+            <dc:source xml:lang="en">www.unece.org/fileadmin/DAM/energy/se/pdfs/UNFC/UNFC2009_ECE_EnergySeries39.pdf - page 6; synonym from CRIRSCO</dc:source>
+            <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">02..</skos:notation>
+            <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc"/>
+            <skos:altLabel xml:lang="en">mineral resource</skos:altLabel>
+            <skos:prefLabel xml:lang="en">potentially commercial projects</skos:prefLabel>
+            <skos:definition>Potentially Commercial Projects are expected to be developed in the foreseeable future, in that the quantities are assessed to have reasonable prospects for eventual economic extraction, but technical and/or commercial feasibility has not yet been confirmed</skos:definition>
+            <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc"/>
+          </skos:Concept>
+        </skos:broader>
+        <skos:altLabel xml:lang="en">inferred (223)</skos:altLabel>
+        <skos:altLabel xml:lang="en">measured (221)</skos:altLabel>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/unfc/development-on-hold">
+        <dc:source xml:lang="en">http://www.unece.org/fileadmin/DAM/energy/se/pdfs/egrc/egrc4_apr2013/SpecificationsUNFC2009.pdf - page 19; synonym from CRIRSCO</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">02.02..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/unfc/potentially-commercial-projects"/>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc">development-on-hold</skos:notation>
+        <skos:altLabel xml:lang="en">indicated (222) and inferred (223)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">development on hold</skos:prefLabel>
+        <skos:definition>Development On Hold is used where a project is considered to have at least a reasonable chance of achieving commerciality (i.e. there are reasonable prospects for eventual economic extraction), but where there are currently major non-technical contingencies (e.g. environmental or social issues) that need to be resolved before the project can move towards development.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/unfc/development-unclarified">
+        <dc:source xml:lang="en">http://www.unece.org/fileadmin/DAM/energy/se/pdfs/egrc/egrc4_apr2013/SpecificationsUNFC2009.pdf - page 19</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03.01..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/unfc/non‐commercial-projects"/>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc">development-unclarified</skos:notation>
+        <skos:prefLabel xml:lang="en">development unclarified</skos:prefLabel>
+        <skos:definition>Development Unclarified is appropriate for projects that are still in the early stages of technical and commercial evaluation (e.g. a recent new discovery), and/or where significant further data acquisition will be required, in order to make a meaningful assessment of the potential for a commercial development, i.e. there is currently insufficient basis for concluding that there are reasonable prospects for eventual economic extraction.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/unfc/commercial-projects"/>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/unfc/justified-for-development">
+        <dc:source xml:lang="en">http://www.unece.org/fileadmin/DAM/energy/se/pdfs/egrc/egrc4_apr2013/SpecificationsUNFC2009.pdf - page 19; synonym from CRIRSCO</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.3..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/unfc/commercial-projects"/>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc">justified-for-development</skos:notation>
+        <skos:altLabel xml:lang="en">proved and probable (111+112)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">justified for development</skos:prefLabel>
+        <skos:definition>Justified for Development requires that the project has been demonstrated to be technically feasible and commercially viable, and there must be a reasonable expectation that all necessary approvals/contracts for the project to proceed to development will be forthcoming.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/unfc/exploration-projects">
+        <dc:source xml:lang="en">http://www.unece.org/fileadmin/DAM/energy/se/pdfs/egrc/egrc4_apr2013/SpecificationsUNFC2009.pdf - page 19; synonym from CRIRSCO</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">05..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc"/>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc">exploration-projects</skos:notation>
+        <skos:altLabel xml:lang="en">exploration results (334)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">exploration projects</skos:prefLabel>
+        <skos:definition>Project identiifed that has not advanced enought to categorize further.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/unfc/potentially-commercial-projects"/>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/unfc/on-production">
+        <dc:source xml:lang="en">http://www.unece.org/fileadmin/DAM/energy/se/pdfs/egrc/egrc4_apr2013/SpecificationsUNFC2009.pdf - page 19; synonym from CRIRSCO</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.1..</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/unfc/commercial-projects"/>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc">on-production</skos:notation>
+        <skos:altLabel xml:lang="en">proved and probable (111+112)</skos:altLabel>
+        <skos:prefLabel xml:lang="en">on production</skos:prefLabel>
+        <skos:definition>On Production is used where the project is actually producing/extracting and selling one or more commodities to market as at the Effective Date of the evaluation.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/unfc"/>
+      </skos:Concept>
+    </skos:member>
+  </skos:Collection>
+</rdf:RDF>

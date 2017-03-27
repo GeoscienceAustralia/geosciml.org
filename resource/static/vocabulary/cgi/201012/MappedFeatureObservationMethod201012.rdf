@@ -1,0 +1,673 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY cgi "http://resource.geosciml.org/classifierscheme/cgi/201012/" >
+    <!ENTITY mappedfeatureobservationmethod2 "http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/" >
+    <!ENTITY mappedfeatureobservationmethod3 "http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0004" >
+    <!ENTITY mappedfeatureobservationmethod "http://resource.geosciml.org/classifierscheme/cgi/201012/mappedfeatureobservationmethod#" >
+]>
+
+
+<rdf:RDF xmlns="&cgi;mappedfeatureobservationmethod#"
+     xml:base="&cgi;mappedfeatureobservationmethod"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:cgi="http://resource.geosciml.org/classifierscheme/cgi/201012/"
+     xmlns:mappedfeatureobservationmethod="&cgi;mappedfeatureobservationmethod#"
+     xmlns:mappedfeatureobservationmethod2="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:mappedfeatureobservationmethod3="&mappedfeatureobservationmethod2;0004"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="">
+        <owl:versionInfo>201012</owl:versionInfo>
+        <dc:identifier
+            >http://resource.geosciml.org/classifierscheme/cgi/201012/mappedfeatureobservationmethod</dc:identifier>
+        <dc:language>en</dc:language>
+        <dc:format
+            >application/rdf+xml</dc:format>
+        <skos:historyNote xml:lang="en"
+            >2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using &#39;file/Export inferred axioms as ontology&#39; in Protege.</skos:historyNote>
+        <dc:title xml:lang="en"
+            >CGI Mapped feature observation method vocabulary</dc:title>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:publisher xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:publisher>
+        <skos:historyNote xml:lang="en"
+            >Start file produced from excel spreadsheet version of MappedFeatureObservationMethod201001. Revisions based on recommendations from OneGeology Europe project.</skos:historyNote>
+        <skos:historyNote xml:lang="en"
+            >Vocabulary maintenence changed to SKOS with Protege v4 as tool of choice, Sept 2009</skos:historyNote>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;source"/>
+    <owl:AnnotationProperty rdf:about="&dc;publisher"/>
+    <owl:AnnotationProperty rdf:about="&dc;identifier"/>
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    <owl:AnnotationProperty rdf:about="&dc;language"/>
+    <owl:AnnotationProperty rdf:about="&skos;historyNote"/>
+    <owl:AnnotationProperty rdf:about="&dc;format"/>
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:ObjectProperty rdf:about="&skos;broader">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
+
+    <owl:ObjectProperty rdf:about="&skos;changeNote">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:ObjectProperty rdf:about="&skos;inScheme">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+    <owl:ObjectProperty rdf:about="&skos;narrower">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <owl:inverseOf rdf:resource="&skos;broader"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+    <owl:ObjectProperty rdf:about="&skos;topConceptOf">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+    <owl:DatatypeProperty rdf:about="&rdf;value">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
+
+    <owl:DatatypeProperty rdf:about="&skos;changeNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:DatatypeProperty rdf:about="&skos;definition">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+    <owl:DatatypeProperty rdf:about="&skos;historyNote">
+        <rdf:type rdf:resource="&owl;AnnotationProperty"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:DatatypeProperty rdf:about="&skos;notation">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:DatatypeProperty rdf:about="&skos;prefLabel">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="&skos;Concept">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="&skos;ConceptScheme">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0001 -->
+
+    <owl:Thing rdf:about="&mappedfeatureobservationmethod2;0001">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Compilation</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Mapped feature geometry derived from one or more published or unpublished data sources, involving some interpretation or generalization by the compiler; not an exact digital reproduction of the sources.</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0002 -->
+
+    <skos:Concept rdf:about="&mappedfeatureobservationmethod2;0002">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en"
+            >Direct observation</skos:prefLabel>
+        <dc:source
+            >Federal Geographic Data Committee, 2006</dc:source>
+        <skos:definition xml:lang="en"
+            >Indicates that mapped feature was delineated and a specifier assigned by direct visual observation.</skos:definition>
+        <skos:narrower rdf:resource="&mappedfeatureobservationmethod2;0017"/>
+        <skos:narrower rdf:resource="&mappedfeatureobservationmethod2;0018"/>
+        <skos:narrower rdf:resource="&mappedfeatureobservationmethod2;0021"/>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0003 -->
+
+    <skos:Concept rdf:about="&mappedfeatureobservationmethod2;0003">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en">Inertial survey</skos:prefLabel>
+        <skos:definition
+            >mapped feature is located by inertial survey methods</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="&mappedfeatureobservationmethod2;0025"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0004 -->
+
+    <owl:Thing rdf:about="&mappedfeatureobservationmethod2;0004">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition
+            >Indicates that mapped feature is not directly observable, location and specification based on inference from available evidence.</skos:definition>
+        <dc:source
+            >Federal Geographic Data Committee, 2006</dc:source>
+        <skos:prefLabel xml:lang="en">Inferred</skos:prefLabel>
+        <skos:narrower rdf:resource="&mappedfeatureobservationmethod2;0007"/>
+        <skos:narrower rdf:resource="&mappedfeatureobservationmethod2;0010"/>
+        <skos:narrower rdf:resource="&mappedfeatureobservationmethod2;0011"/>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0010 -->
+
+    <owl:Thing rdf:about="&mappedfeatureobservationmethod2;0010">
+        <skos:narrower rdf:resource="&mappedfeatureobservationmethod2;0005"/>
+        <skos:narrower rdf:resource="&mappedfeatureobservationmethod2;0006"/>
+        <skos:narrower rdf:resource="&mappedfeatureobservationmethod2;0008"/>
+        <skos:narrower rdf:resource="&mappedfeatureobservationmethod2;0009"/>
+        <skos:narrower rdf:resource="&mappedfeatureobservationmethod2;0015"/>
+        <skos:narrower rdf:resource="&mappedfeatureobservationmethod2;0016"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0005 -->
+
+    <skos:Concept rdf:about="&mappedfeatureobservationmethod2;0005">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en"
+            >Inferred-aeromagnetic survey</skos:prefLabel>
+        <skos:definition
+            >Location and specification inferred based on magnetic field data acquired by airborne sensor.</skos:definition>
+        <dc:source
+            >based on Matti et al 1997; definition this vocabulary</dc:source>
+        <skos:broader rdf:resource="&mappedfeatureobservationmethod2;0010"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0006 -->
+
+    <owl:Thing rdf:about="&mappedfeatureobservationmethod2;0006">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition
+            >Location and specification inferred based on measurements made by electronic bore hole logging device(s) that measure geophysical properties.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Inferred-borehole geophysical log</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="&mappedfeatureobservationmethod2;0010"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0007 -->
+
+    <owl:Thing rdf:about="&mappedfeatureobservationmethod2;0007">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition
+            >Geologic feature in bore hole inferred based on interpretation of drill cuttings.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Inferred-drill cuttings</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="&mappedfeatureobservationmethod2;0004"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0008 -->
+
+    <skos:Concept rdf:about="&mappedfeatureobservationmethod2;0008">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >based on Matti et al 1997; definition this vocabulary</dc:source>
+        <skos:definition
+            >Location and specification inferred based on measured variations in the acceleration of gravity related to mass of underlying Earth material.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Inferred-gravity data</skos:prefLabel>
+        <skos:broader rdf:resource="&mappedfeatureobservationmethod2;0010"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0009 -->
+
+    <skos:Concept rdf:about="&mappedfeatureobservationmethod2;0009">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >based on Matti et al 1997; definition this vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Inferred-ground magnetic survey</skos:prefLabel>
+        <skos:definition
+            >Location and specification inferred based on magnetic field data acquired by sensor on the earth surface, either at manually occupied stations, or by a vehicle-based continuously collected sensor data.</skos:definition>
+        <skos:broader rdf:resource="&mappedfeatureobservationmethod2;0010"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0010 -->
+
+    <owl:Thing rdf:about="&mappedfeatureobservationmethod2;0010">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en"
+            >Inferred using indirect method</skos:prefLabel>
+        <skos:definition
+            >Location and specification inferred based on properties related to lithology, e.g. geophysical or geochemical signature, vegetation, surface texture, reflectance.</skos:definition>
+        <dc:source
+            >based on Matti et al 1997; definition this vocabulary</dc:source>
+        <skos:broader rdf:resource="&mappedfeatureobservationmethod2;0004"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0011 -->
+
+    <owl:Thing rdf:about="&mappedfeatureobservationmethod2;0011">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en"
+            >Inferred projection between observed locations</skos:prefLabel>
+        <skos:definition
+            >Location and specification determined based on inferred continuity with observed locations, and assumption of continuity of the feature.</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="&mappedfeatureobservationmethod2;0004"/>
+        <skos:narrower rdf:resource="&mappedfeatureobservationmethod2;0012"/>
+        <skos:narrower rdf:resource="&mappedfeatureobservationmethod2;0013"/>
+        <skos:narrower rdf:resource="&mappedfeatureobservationmethod2;0014"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0012 -->
+
+    <owl:Thing rdf:about="&mappedfeatureobservationmethod2;0012">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >Federal Geographic Data Committee, 2006</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Inferred projection beneath covering mapped unit</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Phenomenon inferred to exist based on continuity with observed locations, and assumption of continuity of the feature. Mappable feature is covered by mapped younger geologic unit. Concealed feature.</skos:definition>
+        <skos:broader rdf:resource="&mappedfeatureobservationmethod2;0011"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0013 -->
+
+    <owl:Thing rdf:about="&mappedfeatureobservationmethod2;0013">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en"
+            >Inferred projection beneath unmapped surficial material</skos:prefLabel>
+        <skos:definition
+            >Location and specification determined based on inferred continuity with observed locations, and assumption of continuity of the feature. Not observable because of covering mantle of soil, talus or colluvium, not mapped as separate geologic units.</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="&mappedfeatureobservationmethod2;0011"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0014 -->
+
+    <skos:Concept rdf:about="&mappedfeatureobservationmethod2;0014">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition
+            >Location and specification determined based on inferred continuity with observed locations, and assumption of continuity of the feature. Not observable because of obscuring vegetation, but inferred to crop out at surface.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Inferred projection-obscured by vegetation</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="&mappedfeatureobservationmethod2;0011"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0015 -->
+
+    <skos:Concept rdf:about="&mappedfeatureobservationmethod2;0015">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition
+            >Location and specification inferred based on flux or intensity of radiation related to the decay of radioactive elements in observed Earth material. Use for both airborne and ground-surface based sensor.</skos:definition>
+        <dc:source
+            >based on Matti et al 1997; definition this vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Inferred-radiometric survey</skos:prefLabel>
+        <skos:broader rdf:resource="&mappedfeatureobservationmethod2;0010"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0016 -->
+
+    <owl:Thing rdf:about="&mappedfeatureobservationmethod2;0016">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >based on Matti et al 1997; definition this vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Inferred-remote sensing imagery</skos:prefLabel>
+        <skos:definition
+            >Location and specification inferred based on spectral characteristics of light measured by airborne or satellite based sensor. Phenomenon visible on standard (visible light) air photographs are considered &#39;observable&#39;.</skos:definition>
+        <skos:broader rdf:resource="&mappedfeatureobservationmethod2;0010"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0017 -->
+
+    <skos:Concept rdf:about="&mappedfeatureobservationmethod2;0017">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en"
+            >Observed in aerial imagery</skos:prefLabel>
+        <skos:definition
+            >Phenomenon observed and located using aerial imagery (standard visible light)</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="&mappedfeatureobservationmethod2;0002"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0018 -->
+
+    <skos:Concept rdf:about="&mappedfeatureobservationmethod2;0018">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition
+            >Geologic feature observed in core obtained from a borehole.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Observed in borehole core</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="&mappedfeatureobservationmethod2;0002"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0019 -->
+
+    <owl:Thing rdf:about="&mappedfeatureobservationmethod2;0019">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en"
+            >Observed-distant outcrop</skos:prefLabel>
+        <dc:source
+            >based on Matti et al 1997; definition this vocabulary</dc:source>
+        <skos:definition
+            >Phenomenon observed and located from a distance.</skos:definition>
+        <skos:broader rdf:resource="&mappedfeatureobservationmethod2;0021"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0020 -->
+
+    <owl:Thing rdf:about="&mappedfeatureobservationmethod2;0020">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Geomorphic features located and specified based on surface morphology determined by elevation (or bathemetry) data, e.g.  DEM, LIDAR</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Observed based on elevation data</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0021 -->
+
+    <owl:Thing rdf:about="&mappedfeatureobservationmethod2;0021">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source
+            >based on Matti et al 1997; definition this vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Observed in outcrop</skos:prefLabel>
+        <skos:definition
+            >Phenomenon observed and located directly in outcrop; geologist occupied location of phenomenon, and traced it explicitly over mapped extent.</skos:definition>
+        <skos:broader rdf:resource="&mappedfeatureobservationmethod2;0002"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0022 -->
+
+    <owl:Thing rdf:about="&mappedfeatureobservationmethod2;0022">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en"
+            >Observed-outcrop- topographic map location</skos:prefLabel>
+        <skos:definition
+            >Phenomenon observed directly in outcrop, and located by positioning on a topographic base map relative to physiographic or cultural features</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="&mappedfeatureobservationmethod2;0021"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0023 -->
+
+    <owl:Thing rdf:about="&mappedfeatureobservationmethod2;0023">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en"
+            >Observed-outcrop-GPS location</skos:prefLabel>
+        <skos:definition
+            >Phenomenon observed directly in outcrop, and located using GPS</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:broader rdf:resource="&mappedfeatureobservationmethod2;0021"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0024 -->
+
+    <owl:Thing rdf:about="&mappedfeatureobservationmethod2;0024">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition
+            >Mapped feature geometry was digitized from a published map, specification of feature based on map unit explanation</skos:definition>
+        <skos:prefLabel xml:lang="en">Published map</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0025 -->
+
+    <skos:Concept rdf:about="&mappedfeatureobservationmethod2;0025">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en">Surveyed</skos:prefLabel>
+        <skos:definition
+            >mapped feature is located by survey methods</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:narrower rdf:resource="&mappedfeatureobservationmethod2;0003"/>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0021 -->
+
+    <owl:Thing rdf:about="&mappedfeatureobservationmethod2;0021">
+        <skos:narrower rdf:resource="&mappedfeatureobservationmethod2;0019"/>
+        <skos:narrower rdf:resource="&mappedfeatureobservationmethod2;0022"/>
+        <skos:narrower rdf:resource="&mappedfeatureobservationmethod2;0023"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifierscheme/cgi/201012/mappedfeatureobservationmethod -->
+
+    <skos:ConceptScheme rdf:about="">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:changeNote xml:lang="en"
+            >2009-12-07 SMR Update metadata properties for version, creator, title, and format.  Change skos:HistoryNote to dc:source for information on origin of terms and definitions.</skos:changeNote>
+        <skos:historyNote xml:lang="en"
+            >2010-11-28 SMR Replace URN with http URI according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)</skos:historyNote>
+        <skos:prefLabel xml:lang="en"
+            >CGI Mapped Feature Observation Method terms</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >This file contains the CGI Mapped feature observation method vocabulary. These are terms that specify how a MappedFeature instance was mapped. MappedFeature ObservationMethod is essentially a metadata snippet indicating how the spatial extent of the mapped feature was determined, and the basis for association of the geometry with some GeologicFeature specification to define a MappedFeature. Observation method is a convenience property that provides a quick and dirty approach to shortcut use of more comprehensive observation and measurement construct when data are reported using a feature view (as opposed to observation view).</skos:definition>
+    </skos:ConceptScheme>
+    
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

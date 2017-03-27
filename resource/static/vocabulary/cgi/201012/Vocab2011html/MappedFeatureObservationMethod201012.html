@@ -1,0 +1,825 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Title: CGI Mapped feature observation method vocabulary</title>
+	</head>
+	<body>
+		<style type="text/css">
+body { font-size:10pt;
+       font-style: normal;
+	   font-family: Verdana;
+	 }
+
+a {
+  	text-decoration: none;
+}
+	 
+table.ABOUT {
+	border:  1px solid #8A8;
+    margin:  2px;
+    padding: 2px;
+    margin-bottom: 10px;
+    background-color: #EEF
+}
+
+.FIELD-HEADERS {
+}
+
+.FIELD-VALUE {
+    font-weight: bold;
+    background-color: #EEF
+}
+
+.CONCEPT-FIELD {
+    background-color: #FEE;
+	white-space:nowrap;
+}
+
+.SUBHEADER {
+	font-weight: bold;
+	color: brown;
+}
+
+.SN {
+    background-color: #EEF
+}
+
+.PREF {
+    font-weight: bold;
+}
+
+.URI {
+    color: blue;
+}
+
+.conceptURI {
+    color: brown;
+}
+
+.STATUS {
+    color: darkgreen;
+}
+
+.ALT {
+}
+
+.HID {
+   color:grey
+}
+                </style>
+		<h1><a name="top"></a>CGI Mapped feature observation method vocabulary</h1>
+		<table class="ABOUT">
+			<tbody>
+				<tr>
+					<td class="FIELD-HEADERS">identifier:</td>
+					<td class="FIELD-VALUE">http://resource.geosciml.org/classifierscheme/cgi/201012/mappedfeatureobservationmethod</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">language:</td>
+					<td class="FIELD-VALUE">en</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">format:</td>
+					<td class="FIELD-VALUE">application/rdf+xml</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">title:</td>
+					<td class="FIELD-VALUE">CGI Mapped feature observation method vocabulary</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">creator:</td>
+					<td class="FIELD-VALUE">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">publisher:</td>
+					<td class="FIELD-VALUE">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege.</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">Start file produced from excel spreadsheet version of MappedFeatureObservationMethod201001. Revisions based on recommendations from OneGeology Europe project.</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">Vocabulary maintenence changed to SKOS with Protege v4 as tool of choice, Sept 2009</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="ABOUT">
+			<tbody>
+				<tr>
+					<td class="FIELD-HEADERS">changeNote:</td>
+					<td class="FIELD-VALUE">2009-12-07 SMR Update metadata properties for version, creator, title, and format.  Change skos:HistoryNote to dc:source for information on origin of terms and definitions.</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">2010-11-28 SMR Replace URN with http URI according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">prefLabel:</td>
+					<td class="FIELD-VALUE">CGI Mapped Feature Observation Method terms</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">definition:</td>
+					<td class="FIELD-VALUE">This file contains the CGI Mapped feature observation method vocabulary. These are terms that specify how a MappedFeature instance was mapped. MappedFeature ObservationMethod is essentially a metadata snippet indicating how the spatial extent of the mapped feature was determined, and the basis for association of the geometry with some GeologicFeature specification to define a MappedFeature. Observation method is a convenience property that provides a quick and dirty approach to shortcut use of more comprehensive observation and measurement construct when data are reported using a feature view (as opposed to observation view).</td>
+				</tr>
+			</tbody>
+		</table>
+		<ul></ul><a name="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0001"></a><h2><a href="#top">⇑</a> -- Compilation -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0001</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Compilation</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition (en)</td>
+					<td class="SN">Mapped feature geometry derived from one or more published or unpublished data sources, involving some interpretation or generalization by the compiler; not an exact digital reproduction of the sources.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0002"></a><h2><a href="#top">⇑</a> -- Direct observation -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0002</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Direct observation</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition (en)</td>
+					<td class="SN">Indicates that mapped feature was delineated and a specifier assigned by direct visual observation.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">Federal Geographic Data Committee, 2006</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0017">Observed in aerial imagery</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0018">Observed in borehole core</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0021">Observed in outcrop</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0003"></a><h2><a href="#top">⇑</a> -- Inertial survey -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0003</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Inertial survey</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">mapped feature is located by inertial survey methods</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0025">Surveyed</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0004"></a><h2><a href="#top">⇑</a> -- Inferred -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0004</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Inferred</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Indicates that mapped feature is not directly observable, location and specification based on inference from available evidence.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">Federal Geographic Data Committee, 2006</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0007">Inferred-drill cuttings</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0010">Inferred using indirect method</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0011">Inferred projection between observed locations</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0005"></a><h2><a href="#top">⇑</a> -- Inferred-aeromagnetic survey -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0005</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Inferred-aeromagnetic survey</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Location and specification inferred based on magnetic field data acquired by airborne sensor.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">based on Matti et al 1997; definition this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0010">Inferred using indirect method</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0006"></a><h2><a href="#top">⇑</a> -- Inferred-borehole geophysical log -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0006</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Inferred-borehole geophysical log</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Location and specification inferred based on measurements made by electronic bore hole logging device(s) that measure geophysical properties.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0010">Inferred using indirect method</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0007"></a><h2><a href="#top">⇑</a> -- Inferred-drill cuttings -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0007</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Inferred-drill cuttings</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Geologic feature in bore hole inferred based on interpretation of drill cuttings.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0004">Inferred</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0008"></a><h2><a href="#top">⇑</a> -- Inferred-gravity data -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0008</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Inferred-gravity data</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Location and specification inferred based on measured variations in the acceleration of gravity related to mass of underlying Earth material.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">based on Matti et al 1997; definition this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0010">Inferred using indirect method</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0009"></a><h2><a href="#top">⇑</a> -- Inferred-ground magnetic survey -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0009</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Inferred-ground magnetic survey</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Location and specification inferred based on magnetic field data acquired by sensor on the earth surface, either at manually occupied stations, or by a vehicle-based continuously collected sensor data.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">based on Matti et al 1997; definition this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0010">Inferred using indirect method</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0010"></a><h2><a href="#top">⇑</a> -- Inferred using indirect method -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0010</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Inferred using indirect method</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Location and specification inferred based on properties related to lithology, e.g. geophysical or geochemical signature, vegetation, surface texture, reflectance.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">based on Matti et al 1997; definition this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0004">Inferred</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0011"></a><h2><a href="#top">⇑</a> -- Inferred projection between observed locations -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0011</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Inferred projection between observed locations</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Location and specification determined based on inferred continuity with observed locations, and assumption of continuity of the feature.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0004">Inferred</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0012">Inferred projection beneath covering mapped unit</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0013">Inferred projection beneath unmapped surficial material</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0014">Inferred projection-obscured by vegetation</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0012"></a><h2><a href="#top">⇑</a> -- Inferred projection beneath covering mapped unit -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0012</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Inferred projection beneath covering mapped unit</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition (en)</td>
+					<td class="SN">Phenomenon inferred to exist based on continuity with observed locations, and assumption of continuity of the feature. Mappable feature is covered by mapped younger geologic unit. Concealed feature.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">Federal Geographic Data Committee, 2006</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0011">Inferred projection between observed locations</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0013"></a><h2><a href="#top">⇑</a> -- Inferred projection beneath unmapped surficial material -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0013</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Inferred projection beneath unmapped surficial material</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Location and specification determined based on inferred continuity with observed locations, and assumption of continuity of the feature. Not observable because of covering mantle of soil, talus or colluvium, not mapped as separate geologic units.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0011">Inferred projection between observed locations</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0014"></a><h2><a href="#top">⇑</a> -- Inferred projection-obscured by vegetation -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0014</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Inferred projection-obscured by vegetation</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Location and specification determined based on inferred continuity with observed locations, and assumption of continuity of the feature. Not observable because of obscuring vegetation, but inferred to crop out at surface.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0011">Inferred projection between observed locations</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0015"></a><h2><a href="#top">⇑</a> -- Inferred-radiometric survey -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0015</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Inferred-radiometric survey</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Location and specification inferred based on flux or intensity of radiation related to the decay of radioactive elements in observed Earth material. Use for both airborne and ground-surface based sensor.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">based on Matti et al 1997; definition this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0010">Inferred using indirect method</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0016"></a><h2><a href="#top">⇑</a> -- Inferred-remote sensing imagery -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0016</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Inferred-remote sensing imagery</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Location and specification inferred based on spectral characteristics of light measured by airborne or satellite based sensor. Phenomenon visible on standard (visible light) air photographs are considered 'observable'.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">based on Matti et al 1997; definition this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0010">Inferred using indirect method</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0017"></a><h2><a href="#top">⇑</a> -- Observed in aerial imagery -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0017</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Observed in aerial imagery</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Phenomenon observed and located using aerial imagery (standard visible light)</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0002">Direct observation</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0018"></a><h2><a href="#top">⇑</a> -- Observed in borehole core -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0018</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Observed in borehole core</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Geologic feature observed in core obtained from a borehole.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0002">Direct observation</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0019"></a><h2><a href="#top">⇑</a> -- Observed-distant outcrop -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0019</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Observed-distant outcrop</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Phenomenon observed and located from a distance.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">based on Matti et al 1997; definition this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0021">Observed in outcrop</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0020"></a><h2><a href="#top">⇑</a> -- Observed based on elevation data -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0020</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Observed based on elevation data</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition (en)</td>
+					<td class="SN">Geomorphic features located and specified based on surface morphology determined by elevation (or bathemetry) data, e.g.  DEM, LIDAR</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0021"></a><h2><a href="#top">⇑</a> -- Observed in outcrop -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0021</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Observed in outcrop</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Phenomenon observed and located directly in outcrop; geologist occupied location of phenomenon, and traced it explicitly over mapped extent.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">based on Matti et al 1997; definition this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0002">Direct observation</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0022"></a><h2><a href="#top">⇑</a> -- Observed-outcrop- topographic map location -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0022</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Observed-outcrop- topographic map location</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Phenomenon observed directly in outcrop, and located by positioning on a topographic base map relative to physiographic or cultural features</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0021">Observed in outcrop</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0023"></a><h2><a href="#top">⇑</a> -- Observed-outcrop-GPS location -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0023</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Observed-outcrop-GPS location</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Phenomenon observed directly in outcrop, and located using GPS</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0021">Observed in outcrop</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0024"></a><h2><a href="#top">⇑</a> -- Published map -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0024</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Published map</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Mapped feature geometry was digitized from a published map, specification of feature based on map unit explanation</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0025"></a><h2><a href="#top">⇑</a> -- Surveyed -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0025</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Surveyed</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">mapped feature is located by survey methods</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0003">Inertial survey</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

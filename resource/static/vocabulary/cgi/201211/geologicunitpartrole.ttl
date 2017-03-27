@@ -1,0 +1,334 @@
+# baseURI: http://resource.geosciml.org/classifierscheme/cgi/201211/geologicunitpartrole
+# imports: http://rdfs.org/ns/void
+# imports: http://www.w3.org/2004/02/skos/core
+
+@prefix cgi:     <http://resource.geosciml.org/classifierscheme/cgi/201211/> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix geounitpart:  <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix owl2xml:  <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix void:    <http://rdfs.org/ns/void#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+geounitpart:
+      rdf:type skos:Collection ;
+      rdfs:label "geologic unit part role concepts"@en ;
+      skos:definition "This resource defines the concept space for geologic unit part role concepts by extension; it includes all concepts in this conceptScheme, as well as concepts in previous versions of the scheme."@en ;
+      skos:member geounitpart:layer_lithosome , geounitpart:inclusion , geounitpart:xenolith , geounitpart:irregular_lithosome , geounitpart:lithosome , geounitpart:lenticular_lithosome , geounitpart:stratigraphic_part , geounitpart:unspecified_part_role , geounitpart:roof_pendant , geounitpart:bed_lithosome , geounitpart:geologic_unit_matrix , geounitpart:rafts , geounitpart:pendants , geounitpart:facies , geounitpart:blocks , geounitpart:tectonic_block , geounitpart:concretion , geounitpart:only_part , geounitpart:screen , geounitpart:enclave , geounitpart:vein_or_dike_lithosome , geounitpart:cyclic_bedding_package , geounitpart:marker_bed , geounitpart:part_of ;
+      skos:prefLabel "CGI Geologic Unit Part Role"@en .
+
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0001>
+      rdf:type owl:NamedIndividual .
+
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0002>
+      rdf:type owl:NamedIndividual .
+
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0003>
+      rdf:type owl:NamedIndividual .
+
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0004>
+      rdf:type owl:NamedIndividual .
+
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0005>
+      rdf:type owl:NamedIndividual .
+
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0006>
+      rdf:type owl:NamedIndividual .
+
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0007>
+      rdf:type owl:NamedIndividual .
+
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0008>
+      rdf:type owl:NamedIndividual .
+
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0009>
+      rdf:type owl:NamedIndividual .
+
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0010>
+      rdf:type owl:NamedIndividual .
+
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0011>
+      rdf:type owl:NamedIndividual .
+
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0012>
+      rdf:type owl:NamedIndividual .
+
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0013>
+      rdf:type owl:NamedIndividual .
+
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0014>
+      rdf:type owl:NamedIndividual .
+
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0015>
+      rdf:type owl:NamedIndividual .
+
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0016>
+      rdf:type owl:NamedIndividual .
+
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0017>
+      rdf:type owl:NamedIndividual .
+
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0018>
+      rdf:type owl:NamedIndividual .
+
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0019>
+      rdf:type owl:NamedIndividual .
+
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0020>
+      rdf:type owl:NamedIndividual .
+
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0021>
+      rdf:type owl:NamedIndividual .
+
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0022>
+      rdf:type owl:NamedIndividual .
+
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0023>
+      rdf:type owl:NamedIndividual .
+
+<http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0024>
+      rdf:type owl:NamedIndividual .
+
+geounitpart:bed_lithosome
+      rdf:type skos:Concept ;
+      dc:source "This vocabulary"@en ;
+      skos:broader geounitpart:lithosome ;
+      skos:definition "Lithosome in lithostratigraphic unit that occurs as individual beds interleaved with other constituents on the outcrop (m) scale or larger."@en ;
+      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0001> ;
+      skos:inScheme cgi:geologicunitpartrole ;
+      skos:prefLabel "bed lithosome"@en .
+
+geounitpart:blocks
+      rdf:type skos:Concept ;
+      dc:source "This vocabulary"@en ;
+      skos:broader geounitpart:inclusion ;
+      skos:definition "Geologic unit constituent is present as masses with generally sharp boundaries and block-like geometry within a matrix of some other material emplaced by processes at the earth's surface--e.g. volcanic eruption or mass wasting. Implication is that blocks were derived from the same source geologic unit and emplaced in the described unit."@en ;
+      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0002> ;
+      skos:inScheme cgi:geologicunitpartrole ;
+      skos:prefLabel "blocks"@en .
+
+geounitpart:concretion
+      rdf:type skos:Concept ;
+      dc:source "Neuendorf et al. 2005" ;
+      skos:broader geounitpart:inclusion ;
+      skos:definition "Hard, compact mass or aggregate of mineral matter, normally subsperical but commonly oblate, disc-shaped or irregular. Formed from precipitation from solution about a nucleus or centre. Use as a geologic unit part should be restricted to concretions that are too large to consider as constituents in the rock material that composes the unit."@en ;
+      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0003> ;
+      skos:inScheme cgi:geologicunitpartrole ;
+      skos:prefLabel "concretion"@en .
+
+geounitpart:cyclic_bedding_package
+      rdf:type skos:Concept ;
+      dc:source "This vocabulary"@en ;
+      skos:broader geounitpart:lithosome ;
+      skos:definition "Lithosome characterized by an internal sequence of units, which is repeated in a stacked sequence; e.g. fining-upward sequence, thickening upward sequence, bouma sequence."@en ;
+      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0004> ;
+      skos:inScheme cgi:geologicunitpartrole ;
+      skos:prefLabel "cyclic bedding package"@en .
+
+geounitpart:enclave
+      rdf:type skos:Concept ;
+      dc:source "Cobbing, 2000; Barbarin, 1991" ;
+      skos:broader geounitpart:inclusion ;
+      skos:definition "General term for a polymineralic aggregate enclosed in a granitoid."@en ;
+      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0005> ;
+      skos:inScheme cgi:geologicunitpartrole ;
+      skos:prefLabel "enclave"@en .
+
+geounitpart:facies
+      rdf:type skos:Concept ;
+      dc:source "This vocabulary"@en ;
+      skos:broader geounitpart:part_of ;
+      skos:definition "Represents a particular body of rock that is a lateral variant of a lithostratigraphic unit, or a variant of a lithodemic unit. Contrast with lithosome in being a particular, connected body of rock, as opposed to a kind of rock body that is repeated in many places in a unit."@en ;
+      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0006> ;
+      skos:inScheme cgi:geologicunitpartrole ;
+      skos:prefLabel "facies"@en .
+
+geounitpart:geologic_unit_matrix
+      rdf:type skos:Concept ;
+      dc:source "This vocabulary"@en ;
+      skos:broader geounitpart:lithosome ;
+      skos:definition "Lithosome in a geologic unit that is generally interstitial to other constituents, e.g. in a mass wasting deposit, melange, tuff breccia."@en ;
+      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0007> ;
+      skos:inScheme cgi:geologicunitpartrole ;
+      skos:prefLabel "geologic unit matrix"@en .
+
+geounitpart:inclusion
+      rdf:type skos:Concept ;
+      dc:source "This vocabulary"@en ;
+      skos:broader geounitpart:part_of ;
+      skos:definition "Geologic unit constituent is present as masses with generally sharp boundaries enclosed within a matrix of some other material."@en ;
+      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0008> ;
+      skos:inScheme cgi:geologicunitpartrole ;
+      skos:narrower geounitpart:pendants , geounitpart:concretion , geounitpart:tectonic_block , geounitpart:enclave , geounitpart:xenolith , geounitpart:blocks ;
+      skos:prefLabel "inclusion"@en .
+
+geounitpart:irregular_lithosome
+      rdf:type skos:Concept ;
+      dc:source "This vocabulary"@en ;
+      skos:broader geounitpart:lithosome ;
+      skos:definition "lithosome in a mixed/heterogeneous lithodemic unit that occurs in irregular bodies within unit"@en ;
+      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0009> ;
+      skos:inScheme cgi:geologicunitpartrole ;
+      skos:prefLabel "irregular lithosome"@en .
+
+geounitpart:layer_lithosome
+      rdf:type skos:Concept ;
+      dc:source "This vocabulary"@en ;
+      skos:broader geounitpart:lithosome ;
+      skos:definition "lithosome in igneous or metamorphic geologic unit that occurs as layers alternating with other constituents."@en ;
+      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0010> ;
+      skos:inScheme cgi:geologicunitpartrole ;
+      skos:prefLabel "layer lithosome"@en .
+
+geounitpart:lenticular_lithosome
+      rdf:type skos:Concept ;
+      dc:source "This vocabulary"@en ;
+      skos:broader geounitpart:lithosome ;
+      skos:definition "lithosome occurs as discrete lense-shaped bodies, not connected with other bodies."@en ;
+      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0011> ;
+      skos:inScheme cgi:geologicunitpartrole ;
+      skos:prefLabel "lenticular lithosome"@en .
+
+geounitpart:lithosome
+      rdf:type skos:Concept ;
+      dc:source "This vocabulary"@en ;
+      skos:broader geounitpart:part_of ;
+      skos:definition "A kind of rock body that has multiple occurrences in a single geologic unit. A mass of rock of uniform character, characterized by geometry, composition, and internal structure. Generally denotes rock mass that is the product of a particular rock forming process or related sequence of processes in the containing unit. Example--bouma sequence, point bar sequence. A particular lithosome may be characterized by the presence of blocks, but blocks are not treated as kinds of lithosome because the internal character of the blocks is determined by a separate genetic sequence from the described unit. This vocabulary generalizes the concept defined in Neuendorf et al 2005 to include bodies of igneous or metamorphic rock as well as sedimentary rock. NADM SLTTs (2004) used the term 'lithotope' with similar meaning for sedimentary rocks."@en ;
+      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0012> ;
+      skos:inScheme cgi:geologicunitpartrole ;
+      skos:narrower geounitpart:bed_lithosome , geounitpart:irregular_lithosome , geounitpart:lenticular_lithosome , geounitpart:geologic_unit_matrix , geounitpart:layer_lithosome , geounitpart:vein_or_dike_lithosome , geounitpart:cyclic_bedding_package ;
+      skos:prefLabel "lithosome"@en .
+
+geounitpart:marker_bed
+      rdf:type skos:Concept ;
+      dc:source "This vocabulary"@en ;
+      skos:broader geounitpart:stratigraphic_part ;
+      skos:definition "Stratigraphic part that is a thin laterally continuous bed within another unit."@en ;
+      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0013> ;
+      skos:inScheme cgi:geologicunitpartrole ;
+      skos:prefLabel "marker bed"@en .
+
+geounitpart:only_part
+      rdf:type skos:Concept ;
+      dc:source "This vocabulary"@en ;
+      skos:definition "entire described unit consists of a single part or constituent"@en ;
+      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0014> ;
+      skos:inScheme cgi:geologicunitpartrole ;
+      skos:prefLabel "only part"@en ;
+      skos:topConceptOf cgi:geologicunitpartrole .
+
+geounitpart:part_of
+      rdf:type skos:Concept ;
+      dc:source "This vocabulary"@en ;
+      skos:definition "The geologic unit part role is not known in any greater detail. Inclusion of Only_part as a separate concept implies that this concept is the equivalent of 'proper part' in mereology."@en ;
+      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0015> ;
+      skos:inScheme cgi:geologicunitpartrole ;
+      skos:narrower geounitpart:stratigraphic_part , geounitpart:unspecified_part_role , geounitpart:inclusion , geounitpart:facies , geounitpart:lithosome ;
+      skos:prefLabel "part of"@en ;
+      skos:topConceptOf cgi:geologicunitpartrole .
+
+geounitpart:pendants
+      rdf:type skos:Concept ;
+      dc:source "Base on Neuendorf et al 2005" ;
+      skos:broader geounitpart:inclusion ;
+      skos:definition "A block of wall rock material in an igneous intrusion. Pendants become xenoliths as the dimension becomes smaller than about 10 m in their longest dimension. Although term pendant has connotation of being suspended or supported from above, this is rarely demonstrable in geologic situations, and the concept here does not require connection to the wall of the containing intrusion."@en ;
+      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0016> ;
+      skos:inScheme cgi:geologicunitpartrole ;
+      skos:narrower geounitpart:screen , geounitpart:roof_pendant , geounitpart:rafts ;
+      skos:prefLabel "pendants"@en .
+
+geounitpart:rafts
+      rdf:type skos:Concept ;
+      dc:source "This vocabulary"@en ;
+      skos:broader geounitpart:pendants ;
+      skos:definition "Pendants of pre-intrusive country rock in intrusive igneous matrix that have large horizontal extent relative to their thickness"@en ;
+      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0017> ;
+      skos:inScheme cgi:geologicunitpartrole ;
+      skos:prefLabel "rafts"@en .
+
+geounitpart:roof_pendant
+      rdf:type skos:Concept ;
+      dc:source "Neuendorf et al 2005" ;
+      skos:broader geounitpart:pendants ;
+      skos:definition "Pendant that is demonstrably derived from the upper boundary of an igneous body."@en ;
+      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0018> ;
+      skos:inScheme cgi:geologicunitpartrole ;
+      skos:prefLabel "roof pendant"@en .
+
+geounitpart:screen
+      rdf:type skos:Concept ;
+      dc:source "This vocabulary"@en ;
+      skos:broader geounitpart:pendants ;
+      skos:definition "Pendant that is a vertical sheet like pendant in an intrusive igneous rock body."@en ;
+      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0019> ;
+      skos:inScheme cgi:geologicunitpartrole ;
+      skos:prefLabel "screen"@en .
+
+geounitpart:stratigraphic_part
+      rdf:type skos:Concept ;
+      dc:source "This vocabulary"@en ;
+      skos:broader geounitpart:part_of ;
+      skos:definition "A geologic unit part that occupies a particular stratigraphic position within a geologic unit. Part is a particular body of rock."@en ;
+      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0020> ;
+      skos:inScheme cgi:geologicunitpartrole ;
+      skos:narrower geounitpart:marker_bed ;
+      skos:prefLabel "stratigraphic part"@en .
+
+geounitpart:tectonic_block
+      rdf:type skos:Concept ;
+      dc:source "This vocabulary"@en ;
+      skos:broader geounitpart:inclusion ;
+      skos:definition "The geologic unit part occurs as discrete masses with faulted boundaries, emplaced into the host unit by tectonic processes inside the earth, e.g. blocks in tectonic melange"@en ;
+      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0021> ;
+      skos:inScheme cgi:geologicunitpartrole ;
+      skos:prefLabel "tectonic block"@en .
+
+geounitpart:unspecified_part_role
+      rdf:type skos:Concept ;
+      dc:source "This vocabulary"@en ;
+      skos:broader geounitpart:part_of ;
+      skos:definition "Geologic unit part with unspecified role; use in normative descriptions when any role is allowed."@en ;
+      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0022> ;
+      skos:inScheme cgi:geologicunitpartrole ;
+      skos:prefLabel "unspecified part role"@en .
+
+geounitpart:vein_or_dike_lithosome
+      rdf:type skos:Concept ;
+      dc:source "This vocabulary"@en ;
+      skos:broader geounitpart:lithosome ;
+      skos:definition "Lithosome occurs as intrusive, sheet-like bodies within the unit as an essential part of the unit."@en ;
+      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0023> ;
+      skos:inScheme cgi:geologicunitpartrole ;
+      skos:prefLabel "vein or dike lithosome"@en .
+
+geounitpart:xenolith
+      rdf:type skos:Concept ;
+      dc:source "Neuendorf et al. 2005; Cobbing, 2000; This vocabulary" ;
+      skos:broader geounitpart:inclusion ;
+      skos:definition "Inclusion of pre-intrusive country rock in intrusive igneous matrix, cm to about 10 meter diameter in longest dimension. Use term pendant for larger blocks."@en ;
+      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0024> ;
+      skos:inScheme cgi:geologicunitpartrole ;
+      skos:prefLabel "xenolith"@en .
+
+cgi:geologicunitpartrole
+      rdf:type skos:ConceptScheme , owl:Ontology ;
+      rdfs:comment "2010-09-26 SMR correct URI and title for vocabulary from compositionCategory to GeologicUnitPartRole"@en ;
+      dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)" ;
+      dc:format "application/rdf+xml" ;
+      dc:identifier "http://resource.geosciml.org/classifierscheme/cgi/201211/geologicunitpartrole" ;
+      dc:language "en" ;
+      dc:publisher "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)" ;
+      dc:title "CGI Geologic Unit Part Role Vocabulary"@en ;
+      owl:imports <http://rdfs.org/ns/void> , <http://www.w3.org/2004/02/skos/core> ;
+      owl:versionInfo "201211" ;
+      skos:changeNote "2009-12-07 SMR Update metadata properties for version, creator, title, and format.  Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en ;
+      skos:definition "This file contains the CGI Geologic Unit Part role vocabulary. This vocabulary includes terms to specify the role of a geologic unit as part of another geologic unit, the role of a compositionPart in a geologic unit. These terms may be used to populate GeologicUnit.part.GeologicUnitPart.role, and GeologicUnit.composition.compositionPart.role. There are terms in This vocabulary that only apply to one or the other of these properties, but after an effort to create two separate vocabularies, it was decided to use a single vocabulary in order to avoid having the same concept in more than one closely related vocabulary. The duplication of applicable concepts in the two contexts (GeologicUnit.part.GeologicUnitPart.role and GeologicUnit.composition.compositionPart.role) arises because the model allows representation of complex geologic unit descriptions in more than one way. A complex geologic unit like a migmatite complex or a lithologically heterogeneous Pennsylvanian cyclothem stratigraphic unit will have many different lithologic components. The simplest approach to representing the lithologic heterogeneity is to report a single GeologicUnit element with compositionParts for each lithologic component; the role on these compositionParts provides information about what kind of parts they are and perhaps something about their relationship, along with the kinds of rock they are composed of. A more complex alternate approach is to represent the various components each as GeologicUnit elements, each with compositionPart links to the rock type(s) composing that part. These component GeologicUnit elements are aggregated by GeologicUnit.part.GeologicUnitPart elements, with roles in the aggregation for each GeologicUnit part. The benefit of the more complex approach is that additional descriptive properties provided by the GeologicUnit content model can be assigned to each part, as well as GeologicRelations between the parts. The role of the compositionParts in these more 'disaggregated' GeologicUnit elements would be a simpler 'composition' kind of role, because the heterogeneous 'whole' unit would be described in GeologicUnitParts that are more lithologically homogeneous. Its a standard trade off between simplicity and expressiveness. As far as the vocabulary for these 'role' properties, the decision to merge the compositionPart.role and GeologicUnitPart.role vocabularies into one was based on the idea that from a user point of view, one would not want to have to use terms from two different vocabularies to search for the same concept. For instance, if one wanted 'all geologicUnits that have parts whose role is 'Tectonic block', a merged vocabulary allows construction of a single xpath where \"role = 'CGI....:Tectonic_block'\" (or something like that). The single vocabulary also simplifies maintenance. A context column is added in the spreadsheet to distinguish terms for 'compositionPart', 'geologicUnitPart' or 'both'."@en ;
+      skos:historyNote "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en , "2010-11-28 SMR replace URN with http URI according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)"@en , "2012-02-27 SMR Add skos:exactMatch triples to previous version identifiers with numeric final tokens. Declare exactMatch a kind of owl:objectProperty. minimal representation of equivalence of identifiers."@en , "2012-11-24 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types."@en , "2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet."@en , "2010-02-13 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en , "2009-12-07 SMR Update metadata properties for version, creator, title, and format.  Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en , "2010-02-08. SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments."@en ;
+      skos:prefLabel "CGI Geologic Unit Part Role vocabulary"@en .
+
+<http://resource.geosciml.org/vocabulary/cgi/201211/geologicunitpartrole>
+      rdf:type void:Dataset ;
+      rdfs:label "Geologic unit part role vocabulary"^^xsd:string .

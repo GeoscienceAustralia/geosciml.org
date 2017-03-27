@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#">
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role">
+      <dcterms:title xml:lang="en">Earth Resource Material Role</dcterms:title>
+      <dcterms:description xml:lang="en">This file contains the CGI Earth Resource Material Role vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. This scheme describes concepts used to specify the relationship of Earth materials to a resource occurrence. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme.</dcterms:description>
+      <skos:editorialNote xml:lang="en">This file contains the 2016 SKOS-RDF version of the CGI Earth Resource Material Role vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt</skos:editorialNote>
+      <skos:changeNote xml:lang="en">Original SKOS implementation, based on 2013-06 approved vocabulary from GTWG face to face in St. Petersburg, Russia</skos:changeNote>
+      <skos:changeNote xml:lang="en">2014-03-19 SMR - SKOS generated from Excel workbook using GSML_SKOS_fromXLS_2014.xslt</skos:changeNote>
+      <skos:changeNote xml:lang="en">2016-11-28 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions.</skos:changeNote>
+      <dcterms:date>2016-11-28</dcterms:date>
+      <dcterms:creator>CGI Geoscience Terminology Working Group</dcterms:creator>
+   </skos:ConceptScheme>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/alteration-product"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/alteration-product">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role"/>
+      <skos:definition xml:lang="en">(a) Any change in the mineralogic composition of a rock brought about by physical or chemical means, esp. by the action of hydrothermal solutions; also, a secondary, i.e. supergene, change in a rock or mineral. (b) Changes in the chemical or mineralogical composition of a rock produced by weathering.</skos:definition>
+      <skos:prefLabel xml:lang="en">alteration product</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">01</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role"/>
+      <dcterms:source xml:lang="en">Glossary of Geology. 5th Edition, AGI - online</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/gangue"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/gangue">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role"/>
+      <skos:definition xml:lang="en">The valueless rock or mineral aggregates in an ore; that part of an ore that is not economically desirable but cannot be avoided in mining. It is separated from the ore minerals during concentration</skos:definition>
+      <skos:prefLabel xml:lang="en">gangue</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">02</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role"/>
+      <dcterms:source xml:lang="en">Glossary of Geology. 5th Edition, AGI - online</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/host-rock"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/host-rock">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role"/>
+      <skos:definition xml:lang="en">A body of rock serving as a host for other rocks or for mineral deposits; e.g. a pluton containing xenoliths, or any rock in which ore deposits occur. It is a somewhat more specific term than country rock.</skos:definition>
+      <skos:prefLabel xml:lang="en">host rock</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">03</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role"/>
+      <dcterms:source xml:lang="en">Glossary of Geology. 5th Edition, AGI - online</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/wall-rock"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/wall-rock">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role"/>
+      <skos:definition xml:lang="en">The rock adjacent to, enclosing, or including a vein, layer, or dissemination of ore minerals. It is commonly altered by epigenetic processes. The term implies more specific adjacency than host rock or country rock.</skos:definition>
+      <skos:prefLabel xml:lang="en">wall rock</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">04</skos:notation>
+      <skos:altLabel xml:lang="en">associated rock</skos:altLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role"/>
+      <dcterms:source xml:lang="en">Glossary of Geology. 5th Edition, AGI - online</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/ore"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/ore">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role"/>
+      <skos:definition xml:lang="en">The naturally occurring material from which a mineral or minerals of economic value can be extracted at a reasonable profit. Also, the mineral(s) thus extracted. The term is generally but not always used to refer to metalliferous material, and is often modified by the name of the valuable constituent, e.g., "iron ore".</skos:definition>
+      <skos:prefLabel xml:lang="en">ore</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">05</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role"/>
+      <dcterms:source xml:lang="en">Glossary of Geology. 5th Edition, AGI - online</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/primary"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/primary">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role"/>
+      <skos:definition xml:lang="en">Rocks of which the constituents are newly formed particles that have never been constituents of previously formed rocks and that are not the products of alteration or replacement, esp. igneous rocks formed directly by solidification from a magma</skos:definition>
+      <skos:prefLabel xml:lang="en">primary</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">06</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role"/>
+      <dcterms:source xml:lang="en">Glossary of Geology. 5th Edition, AGI - online</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/secondary"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/secondary">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role"/>
+      <skos:definition xml:lang="en">Rocks composed of particles derived from the erosion or weathering of pre-existing rocks, such as residual, chemical, or organic rocks formed of detrital, precipitated, or organically accumulated materials; specif. clastic sedimentary rocks.</skos:definition>
+      <skos:prefLabel xml:lang="en">secondary</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">07</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role"/>
+      <dcterms:source xml:lang="en">Glossary of Geology. 5th Edition, AGI - online</dcterms:source>
+   </skos:Concept>
+   <skos:Collection rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-material-role">
+      <dcterms:title xml:lang="en">Earth Resource Material Role - All Concepts</dcterms:title>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/alteration-product"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/gangue"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/host-rock"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/wall-rock"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/ore"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/primary"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-material-role/secondary"/></skos:member>
+   </skos:Collection>
+</rdf:RDF>

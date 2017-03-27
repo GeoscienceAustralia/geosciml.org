@@ -1,0 +1,21 @@
+URI,prefLabel,Definition,Source
+http://resource.geosciml.org/classifier/cgi/valuequalifier/always,always,all instances of the observed entity have this property value,"GeoSciML UML model, definition this vocabulary"
+http://resource.geosciml.org/classifier/cgi/valuequalifier/approximate,approximate,specified value is approximate,"GeoSciML UML model, definition this vocabulary"
+http://resource.geosciml.org/classifier/cgi/valuequalifier/arithmetic_mean,,,
+http://resource.geosciml.org/classifier/cgi/valuequalifier/common,common,reported property value is commonly observered,"GeoSciML UML model, definition this vocabulary"
+http://resource.geosciml.org/classifier/cgi/valuequalifier/equalTo,equalTo,reported property value is the observered value,"GeoSciML UML model, definition this vocabulary"
+http://resource.geosciml.org/classifier/cgi/valuequalifier/geometric_mean,,,
+http://resource.geosciml.org/classifier/cgi/valuequalifier/greaterThan,greaterThan,reported property value is lower bound,"GeoSciML UML model, definition this vocabulary"
+http://resource.geosciml.org/classifier/cgi/valuequalifier/harmonic_mean,,,
+http://resource.geosciml.org/classifier/cgi/valuequalifier/lessThan,lessThan,reported property value is upper bound,"GeoSciML UML model, definition this vocabulary"
+http://resource.geosciml.org/classifier/cgi/valuequalifier/median,,,
+http://resource.geosciml.org/classifier/cgi/valuequalifier/mode,,,
+http://resource.geosciml.org/classifier/cgi/valuequalifier/never,never,reported property value is never observed,"GeoSciML UML model, definition this vocabulary"
+http://resource.geosciml.org/classifier/cgi/valuequalifier/nil_inapplicable,,,
+http://resource.geosciml.org/classifier/cgi/valuequalifier/nil_missing,,,
+http://resource.geosciml.org/classifier/cgi/valuequalifier/nil_unknown,,,
+http://resource.geosciml.org/classifier/cgi/valuequalifier/nil_withheld,,,
+http://resource.geosciml.org/classifier/cgi/valuequalifier/quadratic_mean,,,
+http://resource.geosciml.org/classifier/cgi/valuequalifier/rare,rare,reported property value is rarely observed.,"GeoSciML UML model, definition this vocabulary"
+http://resource.geosciml.org/classifier/cgi/valuequalifier/sometimes,sometimes,reported property value is observed occasionally,"GeoSciML UML model, definition this vocabulary"
+http://resource.geosciml.org/classifierscheme/cgi/201202/valuequalifier,CGI Value Qualifier Term Vocabulary,"This file contains the CGI Value Qualifier code vocabulary. These terms are taken from the enumeration for values that may be assigned as the valueQualifier on CGI_Value. Definitions are proposed. This codelist includes qualifiers of several sorts: 1. frequence of occurrence--qualifiers that indicate how many occurrences of a described feature are expected to have a reported value. E.g. 'commonly red, sometimes brown', 2. kinds of statistical procedure used to determine a single value to report based on a collection of observed values, e.g. mean, median, mode., 3. kinds of nil values, 4. kind of value--a limiting value or the actual estimated value.@en ., skos:changeNote 2009-12-07 SMR Update metadata properties for version, creator, title, and format.  Change skos:HistoryNote to  for information on origin of terms and definitions.",

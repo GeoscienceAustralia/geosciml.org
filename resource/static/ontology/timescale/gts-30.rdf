@@ -1,0 +1,290 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:rank-30="http://resource.geosciml.org/ontology/timescale/rank-30/"
+    xmlns:gtrs-30="http://resource.geosciml.org/ontology/timescale/gtrs-30#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:gts-30="http://resource.geosciml.org/ontology/timescale/gts-30#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://resource.geosciml.org/ontology/timescale/gts-30">
+  <owl:Ontology rdf:about="">
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2012-07-26</dcterms:modified>
+    <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+    <rdfs:seeAlso rdf:resource="http://www.geosciml.org"/>
+    <owl:imports rdf:resource="http://resource.geosciml.org/ontology/timescale/rank-30"/>
+    <owl:imports rdf:resource="http://resource.geosciml.org/ontology/timescale/gtrs-30"/>
+    <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Simon J D COX</dc:creator>
+    <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Cox, S.J.D, &amp; Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137.</dc:source>
+    <rdfs:seeAlso rdf:resource="doi:10.1130/GES00022.1"/>
+    <owl:priorVersion rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201205-hash-namespaces/GeologicTimeScale/geologictimescale.rdf"/>
+    <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19156/2011/sampling"/>
+    <rdfs:seeAlso rdf:resource="http://dx.doi.org/10.1130/GES00022.1"/>
+    <dc:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stephen M RICHARD</dc:contributor>
+    <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This is an RDF/OWL representation of the GeoSciML Geologic Timescale model, which has been adapted from the model described in &#xD;
+Cox, S.J.D, &amp; Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137.</dc:description>
+    <owl:versionIRI rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201401/GeologicTimeScale/gts-30.rdf"/>
+    <rdfs:seeAlso rdf:resource="http://geosphere.gsapubs.org/cgi/doi/10.1130/GES00022.1"/>
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear"
+    >2011</dcterms:created>
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Created with TopBraid Composer</owl:versionInfo>
+  </owl:Ontology>
+  <rdfs:Datatype rdf:ID="EraCode">
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >&lt;xs:simpleType name="EraCode"&gt;&#xD;
+    &lt;xs:restriction base="xs:string"&gt;&#xD;
+        &lt;xs:pattern value="a[12](.[1-9])*"&gt;&lt;/xs:pattern&gt;&#xD;
+    &lt;/xs:restriction&gt;&#xD;
+&lt;/xs:simpleType&gt;</rdfs:comment>
+  </rdfs:Datatype>
+  <rdfs:Class rdf:ID="GeochronologicEraRank">
+    <skos:prefLabel xml:lang="en">Geochronologic Era Rank</skos:prefLabel>
+    <rdfs:label xml:lang="en">Geochronologic Era Rank</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdfs:Class>
+  <owl:Class rdf:ID="StandardGlobalNumericalAge">
+    <skos:prefLabel xml:lang="en">Standard Global Numerical Age</skos:prefLabel>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="NumericEraBoundary"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Standard Global Numerical Age</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Standard Global Numerical Age</rdfs:label>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="GeochronologicBoundary"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:ID="StratigraphicPoint">
+    <rdfs:subClassOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19156/2011/sampling#SamplingPoint"/>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:AnnotationProperty rdf:ID="primaryGuidingCriterion">
+            <rdfs:domain rdf:resource="#StratigraphicPoint"/>
+          </owl:AnnotationProperty>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:AnnotationProperty rdf:ID="status">
+            <rdfs:domain>
+              <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                  <owl:Class rdf:about="#NumericEraBoundary"/>
+                  <owl:Class rdf:about="#StratigraphicPoint"/>
+                </owl:unionOf>
+              </owl:Class>
+            </rdfs:domain>
+          </owl:AnnotationProperty>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <skos:prefLabel xml:lang="en">Stratigraphic Point</skos:prefLabel>
+    <rdfs:label xml:lang="en">Stratigraphic Point</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="StratigraphicSection">
+    <rdfs:subClassOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19156/2011/sampling#SamplingCurve"/>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:AnnotationProperty rdf:ID="geologicSetting">
+            <rdfs:domain rdf:resource="#StratigraphicSection"/>
+          </owl:AnnotationProperty>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:AnnotationProperty rdf:ID="geologicDescription">
+            <rdfs:domain rdf:resource="#StratigraphicSection"/>
+          </owl:AnnotationProperty>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:AnnotationProperty rdf:ID="conservation">
+            <rdfs:domain rdf:resource="#StratigraphicSection"/>
+          </owl:AnnotationProperty>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:AnnotationProperty rdf:ID="accessibility">
+            <rdfs:domain rdf:resource="#StratigraphicSection"/>
+          </owl:AnnotationProperty>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <skos:prefLabel xml:lang="en">Stratigraphic Section</skos:prefLabel>
+    <rdfs:label xml:lang="en">Stratigraphic Section</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:ID="GlobalStratotypePoint">
+    <rdfs:subClassOf rdf:resource="#StratigraphicPoint"/>
+    <skos:prefLabel xml:lang="en">Global Stratotype Point</skos:prefLabel>
+    <rdfs:label xml:lang="en">Global Stratotype Point</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="#NumericEraBoundary">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+        <owl:onProperty rdf:resource="#status"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <skos:prefLabel xml:lang="en">Numeric Era Boundary</skos:prefLabel>
+    <rdfs:label xml:lang="en">Numeric Era Boundary</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Numeric Era Boundary</rdfs:label>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#GeochronologicBoundary"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf rdf:resource="http://resource.geosciml.org/ontology/timescale/gtrs-30#TimeOrdinalEraBoundary"/>
+  </owl:Class>
+  <owl:Class rdf:about="#GeochronologicBoundary">
+    <owl:disjointWith rdf:resource="#NumericEraBoundary"/>
+    <skos:prefLabel xml:lang="en">Geochronologic Boundary</skos:prefLabel>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="stratotype"/>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="#StratigraphicPoint"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:maxCardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#stratotype"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <rdfs:label xml:lang="en">Geochronologic Boundary</rdfs:label>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Geochronologic Boundary</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://resource.geosciml.org/ontology/timescale/gtrs-30#TimeOrdinalEraBoundary"/>
+  </owl:Class>
+  <owl:Class rdf:ID="GeologicTimescale">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >2</owl:minCardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="referencePoint"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <skos:prefLabel xml:lang="en">Geologic Timescale</skos:prefLabel>
+    <rdfs:label xml:lang="en">Geologic Timescale</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://resource.geosciml.org/ontology/timescale/gtrs-30#TimeOrdinalReferenceSystem"/>
+  </owl:Class>
+  <owl:Class rdf:ID="GeochronologicEra">
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="rank"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:maxCardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#stratotype"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </owl:equivalentClass>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#notation"/>
+        <owl:someValuesFrom rdf:resource="#EraCode"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="#StratigraphicSection"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#stratotype"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Geochronologic Era</skos:prefLabel>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Geochronologic Era</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://resource.geosciml.org/ontology/timescale/gtrs-30#TimeOrdinalEra"/>
+  </owl:Class>
+  <owl:Class rdf:ID="GlobalStratotypeSection">
+    <rdfs:subClassOf rdf:resource="#StratigraphicSection"/>
+    <rdfs:label xml:lang="en">Global Stratotype Section</rdfs:label>
+    <skos:prefLabel xml:lang="en">Global Stratotype Section</skos:prefLabel>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="#referencePoint">
+    <rdfs:domain rdf:resource="#GeologicTimescale"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#hasTopConcept"/>
+    <rdfs:range rdf:resource="http://resource.geosciml.org/ontology/timescale/gtrs-30#TimeOrdinalEraBoundary"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#rank">
+    <rdfs:domain rdf:resource="#GeochronologicEra"/>
+    <rdfs:range rdf:resource="#GeochronologicEraRank"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#stratotype">
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#StratigraphicPoint"/>
+          <owl:Class rdf:about="#StratigraphicSection"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#GeochronologicBoundary"/>
+          <owl:Class rdf:about="#GeochronologicEra"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <owl:AnnotationProperty rdf:ID="boundaryLevel">
+    <rdfs:domain rdf:resource="#StratigraphicPoint"/>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:ID="additionalCorrelationProperty">
+    <rdfs:domain rdf:resource="#StratigraphicPoint"/>
+  </owl:AnnotationProperty>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->

@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:gtwg="http://resource.geosciml.org/authority/cgi/gtwg"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://resource.geosciml.org/classifierscheme/cgi/201401/earth-resource-shape">
+  <owl:Ontology rdf:about="http://resource.geosciml.org/static/vocabulary/earthresourceml/2014/EarthResourceShape.rdf">
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <dc:creator>CGI Geoscience Terminology Working Group</dc:creator>
+    <dc:date>2014-01-09T00:00:00.000</dc:date>
+    <skos:editorialNote>This file contains the 201401 version of CGI Earth Resource Form vocabulary, which defines concepts specifying the typical geometrical shape of the Earth Resource (e.g. lenticular, pipelike, irregular etc). </skos:editorialNote>
+    <skos:changeNote>Vocabulary Shepherd: Tim McCormick/Rachel Heaven. Compilation and review in Google doc spreadsheet, converted to MS Excel for SKOS generation using GSML_SKOS_from_XLS_2013.xslt; Conversion to SKOS by SM Richard 2014-02-23. </skos:changeNote>
+    <skos:changeNote>Edits to fix typos and remove '201401' from rdf file name. Ollie Raymond 8-Jan-2015</skos:changeNote>
+  </owl:Ontology>
+  <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/201401/earth-resource-shape:201401">
+    <skos:definition xml:lang="en">This resource defines the concept space for Earth Resource Shape vocabulary  concepts by extension; it includes all concepts in this conceptScheme, as well as concepts in previous versions of the scheme.</skos:definition>
+    <skos:prefLabel xml:lang="en">Earth Resource Shape vocabulary</skos:prefLabel>
+    <dc:creator xml:lang="en">CGI Geoscience Terminology Working Group</dc:creator>
+  </skos:ConceptScheme>
+  <skos:Collection rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-shape/">
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-shape/tabular">
+        <skos:altLabel xml:lang="en">blanket</skos:altLabel>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/earth-resource-shape"/>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">02..</skos:notation>
+        <dc:source xml:lang="en">Dictionary of Mining 2nd ed, AGI 1997, adapted from</dc:source>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/earth-resource-shape">tabular</skos:notation>
+        <skos:altLabel xml:lang="en">blanket-like</skos:altLabel>
+        <skos:altLabel xml:lang="en">sheeted</skos:altLabel>
+        <skos:altLabel xml:lang="en">planar</skos:altLabel>
+        <skos:ExactMatch>http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/tabular_prism</skos:ExactMatch>
+        <skos:altLabel xml:lang="en">sheet-like</skos:altLabel>
+        <skos:prefLabel xml:lang="en">tabular</skos:prefLabel>
+        <skos:altLabel xml:lang="en">manto</skos:altLabel>
+        <skos:altLabel xml:lang="en">layer</skos:altLabel>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/earth-resource-shape"/>
+        <skos:definition>A body having two dimensions that are much larger or longer than the third, e.g. a dyke-hosted or bed-hosted deposit</skos:definition>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-shape/irregular">
+        <skos:ExactMatch>http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/rock_body_geometry_irregular</skos:ExactMatch>
+        <dc:source xml:lang="en">From CGI GeologicUnitMorphology vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">07..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/earth-resource-shape"/>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/earth-resource-shape">irregular</skos:notation>
+        <skos:prefLabel xml:lang="en">irregular</skos:prefLabel>
+        <skos:definition>Body geometry is irregular and can not be characterized using terminology.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/earth-resource-shape"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-shape/cylindrical">
+        <skos:altLabel xml:lang="en">pipe-like</skos:altLabel>
+        <skos:altLabel xml:lang="en">funnel</skos:altLabel>
+        <skos:altLabel xml:lang="en">tube</skos:altLabel>
+        <skos:altLabel xml:lang="en">tube-like</skos:altLabel>
+        <skos:altLabel xml:lang="en">shoot</skos:altLabel>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/earth-resource-shape"/>
+        <skos:ExactMatch>http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/cylinder</skos:ExactMatch>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/earth-resource-shape">cylindrical</skos:notation>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">05..</skos:notation>
+        <skos:prefLabel xml:lang="en">cylindrical</skos:prefLabel>
+        <skos:definition>A roughly cylindrical body, which may reduce in diameter at one end like a funnel</skos:definition>
+        <skos:altLabel xml:lang="en">chimney</skos:altLabel>
+        <skos:altLabel xml:lang="en">tubular</skos:altLabel>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/earth-resource-shape"/>
+        <skos:altLabel xml:lang="en">pipe</skos:altLabel>
+        <dc:source xml:lang="en">BGS Mineral Occurrence Database</dc:source>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-shape/saddle-shaped">
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/earth-resource-shape">saddle-shaped</skos:notation>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">06..</skos:notation>
+        <skos:prefLabel xml:lang="en">saddle-shaped</skos:prefLabel>
+        <skos:CloseMatch>http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/longitudinal_section_of_cylinder</skos:CloseMatch>
+		<skos:BroadMatch>http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/arcuate_sheet</skos:BroadMatch>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/earth-resource-shape"/>
+        <skos:altLabel xml:lang="en">saddle reef</skos:altLabel>
+        <skos:definition>Having a curved form like a fold hinge</skos:definition>
+        <skos:altLabel xml:lang="en">reverse saddle</skos:altLabel>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/earth-resource-shape"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:prefLabel xml:lang="en">CGI Concept Collection for Earth Resource Shape vocabulary</skos:prefLabel>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-shape/podiform">
+        <skos:altLabel xml:lang="en">pod-like</skos:altLabel>
+        <skos:altLabel xml:lang="en">pod</skos:altLabel>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/earth-resource-shape"/>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03..</skos:notation>
+        <skos:ExactMatch>http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/pod</skos:ExactMatch>
+        <skos:prefLabel xml:lang="en">podiform</skos:prefLabel>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/earth-resource-shape">podiform</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/earth-resource-shape"/>
+        <skos:definition>A roughly cylindrical body having a diameter that decreases to zero at both ends like a cigar or a potato.</skos:definition>
+        <dc:source xml:lang="en">Dictionary of Mining 2nd ed, AGI 1997, adapted from</dc:source>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-shape/lensoidal">
+        <skos:prefLabel xml:lang="en">lensoidal</skos:prefLabel>
+        <skos:ExactMatch>http://resource.geosciml.org/classifier/cgi/geologicunitmorphology/lens</skos:ExactMatch>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/earth-resource-shape"/>
+        <skos:definition>A body bounded by converging surfaces (at least one of which is curved), thick in the middle and thinning out toward the edges, resembling a convex lens.</skos:definition>
+        <dc:source xml:lang="en">Glossary of Geology. 4th Edition, AGI + DC, adapted from</dc:source>
+        <skos:altLabel xml:lang="en">lenticular</skos:altLabel>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/earth-resource-shape"/>
+        <skos:altLabel xml:lang="en">lens</skos:altLabel>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/earth-resource-shape">lensoidal</skos:notation>
+      </skos:Concept>
+    </skos:member>
+    <rdfs:label xml:lang="en">EarthResource Shape vocabulary</rdfs:label>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/earth-resource-shape/nodular">
+        <dc:source xml:lang="en">Glossary of Geology. 5th Edition, AGI, definition (b)</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">04..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/earth-resource-shape"/>
+        <skos:notation rdf:datatype="http://resource.geosciml.org/classifierscheme/cgi/201401/earth-resource-shape">nodular</skos:notation>
+        <skos:altLabel xml:lang="en">nodule</skos:altLabel>
+        <skos:prefLabel xml:lang="en">nodular</skos:prefLabel>
+        <skos:definition>Having the shape of a nodule or occurring in the form of nodules; e.g. "nodular ore" such as a colloform mineral aggregate with a bulbed surface.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/earth-resource-shape"/>
+      </skos:Concept>
+    </skos:member>
+  </skos:Collection>
+</rdf:RDF>

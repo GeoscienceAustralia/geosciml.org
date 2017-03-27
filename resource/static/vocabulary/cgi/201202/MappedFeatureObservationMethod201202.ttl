@@ -1,0 +1,946 @@
+@prefix cgi: <http://resource.geosciml.org/classifierscheme/cgi/201202/> .
+@prefix mappedfeatureobservationmethod: <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix momclassifier: <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix : <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> .
+
+<http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> rdf:type owl:Ontology ;
+                                                                                          
+                                                                                          skos:historyNote "2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en ;
+                                                                                          
+                                                                                          dc:language "en" ;
+                                                                                          
+                                                                                          dc:format "text/turtle" ;
+                                                                                          
+                                                                                          skos:historyNote "2010-11-28 SMR Replace URN with http URI according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)"@en ,
+                                                                                                           "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en ;
+                                                                                          
+                                                                                          owl:versionInfo "201202" ;
+                                                                                          
+                                                                                          dc:title "CGI Mapped Feature Observation Method Term Vocabulary"@en ;
+                                                                                          
+                                                                                          dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                                          
+                                                                                          dc:publisher "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                                          
+                                                                                          skos:historyNote "Start file produced from excel spreadsheet version of momclassifier01001. Revisions based on recommendations from OneGeology Europe project."@en ,
+                                                                                                           "Vocabulary maintenence changed to SKOS with Protege v4 as tool of choice, Sept 2009"@en ;
+                                                                                          
+                                                                                          dc:identifier "http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod" .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+
+dc:publisher rdf:type owl:AnnotationProperty .
+
+
+
+dc:language rdf:type owl:AnnotationProperty .
+
+
+
+dc:identifier rdf:type owl:AnnotationProperty .
+
+
+
+dc:source rdf:type owl:AnnotationProperty .
+
+
+
+skos:historyNote rdf:type owl:AnnotationProperty .
+
+
+
+dc:format rdf:type owl:AnnotationProperty .
+
+
+
+dc:title rdf:type owl:AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+
+owl:topObjectProperty rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+
+skos:broader rdf:type owl:ObjectProperty ;
+             
+             rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#changeNote
+
+skos:changeNote rdf:type owl:ObjectProperty ;
+                
+                rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#exactMatch
+
+skos:exactMatch rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+
+skos:inScheme rdf:type owl:ObjectProperty ;
+              
+              rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#narrower
+
+skos:narrower rdf:type owl:ObjectProperty ;
+              
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              
+              owl:inverseOf skos:broader .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#topConceptOf
+
+skos:topConceptOf rdf:type owl:ObjectProperty ;
+                  
+                  rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+
+rdf:value rdf:type owl:DatatypeProperty ;
+          
+          rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.w3.org/2002/07/owl#topDataProperty
+
+owl:topDataProperty rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#changeNote
+
+skos:changeNote rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+
+skos:definition rdf:type owl:DatatypeProperty ;
+                
+                rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#historyNote
+
+skos:historyNote rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#notation
+
+skos:notation rdf:type owl:DatatypeProperty ;
+              
+              rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+
+skos:prefLabel rdf:type owl:DatatypeProperty ;
+               
+               rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+
+owl:Thing rdf:type owl:Class .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+
+skos:Concept rdf:type owl:Class ;
+             
+             rdfs:subClassOf owl:Thing .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+
+skos:ConceptScheme rdf:type owl:Class ;
+                   
+                   rdfs:subClassOf owl:Thing .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0001
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0001> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0002
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0002> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0003
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0003> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0004
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0004> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0005
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0005> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0006
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0006> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0007
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0007> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0008
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0008> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0009
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0009> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0010
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0010> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0011
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0011> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0012
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0012> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0013
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0013> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0014
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0014> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0015
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0015> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0016
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0016> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0017
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0017> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0018
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0018> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0019
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0019> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0020
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0020> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0021
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0021> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0022
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0022> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0023
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0023> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0024
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0024> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0025
+
+<http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0025> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/compilation
+
+momclassifier:compilation rdf:type owl:NamedIndividual ,
+                                   owl:Thing ,
+                                   skos:Concept ;
+                          
+                          skos:prefLabel "Compilation"@en ;
+                          
+                          skos:definition "Mapped feature geometry derived from one or more published or unpublished data sources, involving some interpretation or generalization by the compiler; not an exact digital reproduction of the sources."@en ;
+                          
+                          dc:source "this vocabulary"@en ;
+                          
+                          skos:exactMatch <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0001>  ;
+                          
+                          skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> ;
+                          
+                          skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/direct_observation
+
+momclassifier:direct_observation rdf:type owl:NamedIndividual ,
+                                          owl:Thing ,
+                                          skos:Concept ;
+                                 
+                                 skos:prefLabel "Direct observation"@en ;
+                                 
+                                 dc:source "Federal Geographic Data Committee, 2006" ;
+                                 
+                                 skos:definition "Indicates that mapped feature was delineated and a specifier assigned by direct visual observation."@en ;
+                                 
+                                 skos:exactMatch <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0002>  ;
+                                 
+                                 skos:narrower momclassifier:observed_aerial_imagery ,
+                                               momclassifier:observed_borehole_core ,
+                                               momclassifier:observed_outcrop ;
+                                 
+                                 skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> ;
+                                 
+                                 skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inertial_survey
+
+momclassifier:inertial_survey rdf:type owl:NamedIndividual ,
+                                       owl:Thing ,
+                                       skos:Concept ;
+                              
+                              skos:prefLabel "Inertial survey"@en ;
+                              
+                              skos:definition "mapped feature is located by inertial survey methods" ;
+                              
+                              dc:source "this vocabulary"@en ;
+                              
+                              skos:exactMatch <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0003>  ;
+                              
+                              skos:broader momclassifier:surveyed ;
+                              
+                              skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred
+
+momclassifier:inferred rdf:type owl:NamedIndividual ,
+                                owl:Thing ,
+                                skos:Concept ;
+                       
+                       dc:source "Federal Geographic Data Committee, 2006" ;
+                       
+                       skos:definition "Indicates that mapped feature is not directly observable, location and specification based on inference from available evidence." ;
+                       
+                       skos:prefLabel "Inferred"@en ;
+                       
+                       skos:exactMatch <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0004>  ;
+                       
+                       skos:narrower momclassifier:inferred_drill_cuttings ,
+                                     momclassifier:inferred_indirect_method ,
+                                     momclassifier:inferred_projection__observed_locations ;
+                       
+                       skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> ;
+                       
+                       skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_aeromagnetic_survey
+
+momclassifier:inferred_aeromagnetic_survey rdf:type owl:NamedIndividual ,
+                                                    owl:Thing ,
+                                                    skos:Concept ;
+                                           
+                                           skos:prefLabel "Inferred-aeromagnetic survey"@en ;
+                                           
+                                           dc:source "based on Matti et al 1997; definition this vocabulary" ;
+                                           
+                                           skos:definition "Location and specification inferred based on magnetic field data acquired by airborne sensor." ;
+                                           
+                                           skos:exactMatch <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0005>  ;
+                                           
+                                           skos:broader momclassifier:inferred_indirect_method ;
+                                           
+                                           skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_borehole_geophysical_log
+
+momclassifier:inferred_borehole_geophysical_log rdf:type owl:NamedIndividual ,
+                                                         owl:Thing ,
+                                                         skos:Concept ;
+                                                
+                                                skos:prefLabel "Inferred-borehole geophysical log"@en ;
+                                                
+                                                skos:definition "Location and specification inferred based on measurements made by electronic bore hole logging device(s) that measure geophysical properties." ;
+                                                
+                                                dc:source "this vocabulary"@en ;
+                                                
+                                                skos:exactMatch <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0006>  ;
+                                                
+                                                skos:broader momclassifier:inferred_indirect_method ;
+                                                
+                                                skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_drill_cuttings
+
+momclassifier:inferred_drill_cuttings rdf:type owl:NamedIndividual ,
+                                               owl:Thing ,
+                                               skos:Concept ;
+                                      
+                                      skos:definition "Geologic feature in bore hole inferred based on interpretation of drill cuttings." ;
+                                      
+                                      skos:prefLabel "Inferred-drill cuttings"@en ;
+                                      
+                                      dc:source "this vocabulary"@en ;
+                                      
+                                      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0007>  ;
+                                      
+                                      skos:broader momclassifier:inferred ;
+                                      
+                                      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_gravity_data
+
+momclassifier:inferred_gravity_data rdf:type owl:NamedIndividual ,
+                                             owl:Thing ,
+                                             skos:Concept ;
+                                    
+                                    skos:definition "Location and specification inferred based on measured variations in the acceleration of gravity related to mass of underlying Earth material." ;
+                                    
+                                    skos:prefLabel "Inferred-gravity data"@en ;
+                                    
+                                    dc:source "based on Matti et al 1997; definition this vocabulary" ;
+                                    
+                                    skos:exactMatch <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0008>  ;
+                                    
+                                    skos:broader momclassifier:inferred_indirect_method ;
+                                    
+                                    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_ground_magnetic_survey
+
+momclassifier:inferred_ground_magnetic_survey rdf:type owl:NamedIndividual ,
+                                                       owl:Thing ,
+                                                       skos:Concept ;
+                                              
+                                              skos:prefLabel "Inferred-ground magnetic survey"@en ;
+                                              
+                                              dc:source "based on Matti et al 1997; definition this vocabulary" ;
+                                              
+                                              skos:definition "Location and specification inferred based on magnetic field data acquired by sensor on the earth surface, either at manually occupied stations, or by a vehicle-based continuously collected sensor data." ;
+                                              
+                                              skos:exactMatch <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0009>  ;
+                                              
+                                              skos:broader momclassifier:inferred_indirect_method ;
+                                              
+                                              skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_indirect_method
+
+momclassifier:inferred_indirect_method rdf:type owl:NamedIndividual ,
+                                                owl:Thing ,
+                                                skos:Concept ;
+                                       
+                                       skos:definition "Location and specification inferred based on properties related to lithology, e.g. geophysical or geochemical signature, vegetation, surface texture, reflectance." ;
+                                       
+                                       dc:source "based on Matti et al 1997; definition this vocabulary" ;
+                                       
+                                       skos:prefLabel "Inferred using indirect method"@en ;
+                                       
+                                       skos:exactMatch <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0010>  ;
+                                       
+                                       skos:broader momclassifier:inferred ;
+                                       
+                                       skos:narrower momclassifier:inferred_aeromagnetic_survey ,
+                                                     momclassifier:inferred_borehole_geophysical_log ,
+                                                     momclassifier:inferred_gravity_data ,
+                                                     momclassifier:inferred_ground_magnetic_survey ,
+                                                     momclassifier:inferred_radiometric_survey ,
+                                                     momclassifier:inferred_remote_sensing_imagery ;
+                                       
+                                       skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection__observed_locations
+
+momclassifier:inferred_projection__observed_locations rdf:type owl:NamedIndividual ,
+                                                               owl:Thing ,
+                                                               skos:Concept ;
+                                                      
+                                                      skos:prefLabel "Inferred projection between observed locations"@en ;
+                                                      
+                                                      skos:definition "Location and specification determined based on inferred continuity with observed locations, and assumption of continuity of the feature." ;
+                                                      
+                                                      dc:source "this vocabulary"@en ;
+                                                      
+                                                      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0011>  ;
+                                                      
+                                                      skos:broader momclassifier:inferred ;
+                                                      
+                                                      skos:narrower momclassifier:inferred_projection_covering_mapped_unit ,
+                                                                    momclassifier:inferred_projection_unmapped_surficial_material ,
+                                                                    momclassifier:inferred_projection_vegetation ;
+                                                      
+                                                      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection_covering_mapped_unit
+
+momclassifier:inferred_projection_covering_mapped_unit rdf:type owl:NamedIndividual ,
+                                                                owl:Thing ,
+                                                                skos:Concept ;
+                                                       
+                                                       dc:source "Federal Geographic Data Committee, 2006" ;
+                                                       
+                                                       skos:prefLabel "Inferred projection beneath covering mapped unit"@en ;
+                                                       
+                                                       skos:definition "Phenomenon inferred to exist based on continuity with observed locations, and assumption of continuity of the feature. Mappable feature is covered by mapped younger geologic unit. Concealed feature."@en ;
+                                                       
+                                                       skos:exactMatch <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0012>  ;
+                                                       
+                                                       skos:broader momclassifier:inferred_projection__observed_locations ;
+                                                       
+                                                       skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection_unmapped_surficial_material
+
+momclassifier:inferred_projection_unmapped_surficial_material rdf:type owl:NamedIndividual ,
+                                                                       owl:Thing ,
+                                                                       skos:Concept ;
+                                                              
+                                                              skos:definition "Location and specification determined based on inferred continuity with observed locations, and assumption of continuity of the feature. Not observable because of covering mantle of soil, talus or colluvium, not mapped as separate geologic units." ;
+                                                              
+                                                              skos:prefLabel "Inferred projection beneath unmapped surficial material"@en ;
+                                                              
+                                                              dc:source "this vocabulary"@en ;
+                                                              
+                                                              skos:exactMatch <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0013>  ;
+                                                              
+                                                              skos:broader momclassifier:inferred_projection__observed_locations ;
+                                                              
+                                                              skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_projection_vegetation
+
+momclassifier:inferred_projection_vegetation rdf:type owl:NamedIndividual ,
+                                                      owl:Thing ,
+                                                      skos:Concept ;
+                                             
+                                             skos:prefLabel "Inferred projection-obscured by vegetation"@en ;
+                                             
+                                             skos:definition "Location and specification determined based on inferred continuity with observed locations, and assumption of continuity of the feature. Not observable because of obscuring vegetation, but inferred to crop out at surface." ;
+                                             
+                                             dc:source "this vocabulary"@en ;
+                                             
+                                             skos:exactMatch <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0014>  ;
+                                             
+                                             skos:broader momclassifier:inferred_projection__observed_locations ;
+                                             
+                                             skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_radiometric_survey
+
+momclassifier:inferred_radiometric_survey rdf:type owl:NamedIndividual ,
+                                                   owl:Thing ,
+                                                   skos:Concept ;
+                                          
+                                          skos:definition "Location and specification inferred based on flux or intensity of radiation related to the decay of radioactive elements in observed Earth material. Use for both airborne and ground-surface based sensor." ;
+                                          
+                                          skos:prefLabel "Inferred-radiometric survey"@en ;
+                                          
+                                          dc:source "based on Matti et al 1997; definition this vocabulary" ;
+                                          
+                                          skos:exactMatch <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0015>  ;
+                                          
+                                          skos:broader momclassifier:inferred_indirect_method ;
+                                          
+                                          skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/inferred_remote_sensing_imagery
+
+momclassifier:inferred_remote_sensing_imagery rdf:type owl:NamedIndividual ,
+                                                       owl:Thing ,
+                                                       skos:Concept ;
+                                              
+                                              skos:definition "Location and specification inferred based on spectral characteristics of light measured by airborne or satellite based sensor. Phenomenon visible on standard (visible light) air photographs are considered 'observable'." ;
+                                              
+                                              skos:prefLabel "Inferred-remote sensing imagery"@en ;
+                                              
+                                              dc:source "based on Matti et al 1997; definition this vocabulary" ;
+                                              
+                                              skos:exactMatch <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0016>  ;
+                                              
+                                              skos:broader momclassifier:inferred_indirect_method ;
+                                              
+                                              skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_aerial_imagery
+
+momclassifier:observed_aerial_imagery rdf:type owl:NamedIndividual ,
+                                               owl:Thing ,
+                                               skos:Concept ;
+                                      
+                                      skos:definition "Phenomenon observed and located using aerial imagery (standard visible light)" ;
+                                      
+                                      skos:prefLabel "Observed in aerial imagery"@en ;
+                                      
+                                      dc:source "this vocabulary"@en ;
+                                      
+                                      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0017>  ;
+                                      
+                                      skos:broader momclassifier:direct_observation ;
+                                      
+                                      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_borehole_core
+
+momclassifier:observed_borehole_core rdf:type owl:NamedIndividual ,
+                                              owl:Thing ,
+                                              skos:Concept ;
+                                     
+                                     skos:definition "Geologic feature observed in core obtained from a borehole." ;
+                                     
+                                     skos:prefLabel "Observed in borehole core"@en ;
+                                     
+                                     dc:source "this vocabulary"@en ;
+                                     
+                                     skos:exactMatch <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0018>  ;
+                                     
+                                     skos:broader momclassifier:direct_observation ;
+                                     
+                                     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_distant_outcrop
+
+momclassifier:observed_distant_outcrop rdf:type owl:NamedIndividual ,
+                                                owl:Thing ,
+                                                skos:Concept ;
+                                       
+                                       dc:source "based on Matti et al 1997; definition this vocabulary" ;
+                                       
+                                       skos:prefLabel "Observed-distant outcrop"@en ;
+                                       
+                                       skos:definition "Phenomenon observed and located from a distance." ;
+                                       
+                                       skos:exactMatch <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0019>  ;
+                                       
+                                       skos:broader momclassifier:observed_outcrop ;
+                                       
+                                       skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_elevation_data
+
+momclassifier:observed_elevation_data rdf:type owl:NamedIndividual ,
+                                               owl:Thing ,
+                                               skos:Concept ;
+                                      
+                                      skos:definition "Geomorphic features located and specified based on surface morphology determined by elevation (or bathemetry) data, e.g.  DEM, LIDAR"@en ;
+                                      
+                                      skos:prefLabel "Observed based on elevation data"@en ;
+                                      
+                                      dc:source "this vocabulary"@en ;
+                                      
+                                      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0020>  ;
+                                      
+                                      skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> ;
+                                      
+                                      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_outcrop
+
+momclassifier:observed_outcrop rdf:type owl:NamedIndividual ,
+                                        owl:Thing ,
+                                        skos:Concept ;
+                               
+                               skos:prefLabel "Observed in outcrop"@en ;
+                               
+                               skos:definition "Phenomenon observed and located directly in outcrop; geologist occupied location of phenomenon, and traced it explicitly over mapped extent." ;
+                               
+                               dc:source "based on Matti et al 1997; definition this vocabulary" ;
+                               
+                               skos:exactMatch <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0021>  ;
+                               
+                               skos:broader momclassifier:direct_observation ;
+                               
+                               skos:narrower momclassifier:observed_distant_outcrop ,
+                                             momclassifier:observed_outcrop__topographic_map_location ,
+                                             momclassifier:observed_outcrop_gps_location ;
+                               
+                               skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_outcrop__topographic_map_location
+
+momclassifier:observed_outcrop__topographic_map_location rdf:type owl:NamedIndividual ,
+                                                                  owl:Thing ,
+                                                                  skos:Concept ;
+                                                         
+                                                         skos:prefLabel "Observed-outcrop- topographic map location"@en ;
+                                                         
+                                                         skos:definition "Phenomenon observed directly in outcrop, and located by positioning on a topographic base map relative to physiographic or cultural features" ;
+                                                         
+                                                         dc:source "this vocabulary"@en ;
+                                                         
+                                                         skos:exactMatch <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0022>  ;
+                                                         
+                                                         skos:broader momclassifier:observed_outcrop ;
+                                                         
+                                                         skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/observed_outcrop_gps_location
+
+momclassifier:observed_outcrop_gps_location rdf:type owl:NamedIndividual ,
+                                                     owl:Thing ,
+                                                     skos:Concept ;
+                                            
+                                            skos:prefLabel "Observed-outcrop-GPS location"@en ;
+                                            
+                                            skos:definition "Phenomenon observed directly in outcrop, and located using GPS" ;
+                                            
+                                            dc:source "this vocabulary"@en ;
+                                            
+                                            skos:exactMatch <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0023>  ;
+                                            
+                                            skos:broader momclassifier:observed_outcrop ;
+                                            
+                                            skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/published_map
+
+momclassifier:published_map rdf:type owl:NamedIndividual ,
+                                     owl:Thing ,
+                                     skos:Concept ;
+                            
+                            skos:definition "Mapped feature geometry was digitized from a published map, specification of feature based on map unit explanation" ;
+                            
+                            skos:prefLabel "Published map"@en ;
+                            
+                            dc:source "this vocabulary"@en ;
+                            
+                            skos:exactMatch <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0024>  ;
+                            
+                            skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> ;
+                            
+                            skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/surveyed
+
+momclassifier:surveyed rdf:type owl:NamedIndividual ,
+                                owl:Thing ,
+                                skos:Concept ;
+                       
+                       skos:definition "mapped feature is located by survey methods" ;
+                       
+                       skos:prefLabel "Surveyed"@en ;
+                       
+                       dc:source "this vocabulary"@en ;
+                       
+                       skos:exactMatch <http://resource.geosciml.org/classifier/cgi/mappedfeatureobservationmethod/0025>  ;
+                       
+                       skos:narrower momclassifier:inertial_survey ;
+                       
+                       skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> ;
+                       
+                       skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> .
+
+
+
+###  http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod
+
+<http://resource.geosciml.org/classifierscheme/cgi/201202/mappedfeatureobservationmethod> rdf:type owl:NamedIndividual ,
+                                                                                                   owl:Thing ,
+                                                                                                   skos:ConceptScheme ;
+                                                                                          
+                                                                                          skos:changeNote "2009-12-07 SMR Update metadata properties for version, creator, title, and format.  Change skos:HistoryNote to dc:source for information on origin of terms and definitions."@en ;
+                                                                                          
+                                                                                          skos:historyNote "2012-02-27 SMR add skos:exactMatch triples to map URIs for concepts in this vocabulary to number-token URIs in 201012 version of same concepts."@en ,
+                                                                                          "2012-05-01 GD fix URI encoding of matching concepts."@en ;
+                                                                                          
+                                                                                          skos:prefLabel "CGI Mapped Feature Observation Method Term Vocabulary"@en ;
+                                                                                          
+                                                                                          skos:definition "This file contains the CGI Mapped feature observation method vocabulary. These are terms that specify how a MappedFeature instance was mapped. MappedFeature ObservationMethod is essentially a metadata snippet indicating how the spatial extent of the mapped feature was determined, and the basis for association of the geometry with some GeologicFeature specification to define a MappedFeature. Observation method is a convenience property that provides a quick and dirty approach to shortcut use of more comprehensive observation and measurement construct when data are reported using a feature view (as opposed to observation view)."@en .
+
+
+
+
+###  Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net
+

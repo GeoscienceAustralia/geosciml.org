@@ -1,0 +1,970 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Title: CGI Geologic Unit Part Role Vocabulary</title>
+	</head>
+	<body>
+		<style type="text/css">
+body { font-size:10pt;
+       font-style: normal;
+	   font-family: Verdana;
+	 }
+
+a {
+  	text-decoration: none;
+}
+	 
+table.ABOUT {
+	border:  1px solid #8A8;
+    margin:  2px;
+    padding: 2px;
+    margin-bottom: 10px;
+    background-color: #EEF
+}
+
+.FIELD-HEADERS {
+}
+
+.FIELD-VALUE {
+    font-weight: bold;
+    background-color: #EEF
+}
+
+.CONCEPT-FIELD {
+    background-color: #FEE;
+	white-space:nowrap;
+}
+
+.SUBHEADER {
+	font-weight: bold;
+	color: brown;
+}
+
+.SN {
+    background-color: #EEF
+}
+
+.PREF {
+    font-weight: bold;
+}
+
+.URI {
+    color: blue;
+}
+
+.conceptURI {
+    color: brown;
+}
+
+.STATUS {
+    color: darkgreen;
+}
+
+.ALT {
+}
+
+.HID {
+   color:grey
+}
+                </style>
+		<h1><a name="top"></a>CGI Geologic Unit Part Role Vocabulary</h1>
+		<table class="ABOUT">
+			<tbody>
+				<tr>
+					<td class="FIELD-HEADERS">language:</td>
+					<td class="FIELD-VALUE">en</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">format:</td>
+					<td class="FIELD-VALUE">application/rdf-xml</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">publisher:</td>
+					<td class="FIELD-VALUE">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">title:</td>
+					<td class="FIELD-VALUE">CGI Geologic Unit Part Role Vocabulary</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">identifier:</td>
+					<td class="FIELD-VALUE">http://resource.geosciml.org/classifierscheme/cgi/201202/geologicunitpartrole</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">creator:</td>
+					<td class="FIELD-VALUE">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="ABOUT">
+			<tbody>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet.</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">2009-12-07 SMR Update metadata properties for version, creator, title, and format.  Change skos:HistoryNote to dc:source for information on origin of terms and definitions.</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">changeNote:</td>
+					<td class="FIELD-VALUE">2009-12-07 SMR Update metadata properties for version, creator, title, and format.  Change skos:HistoryNote to dc:source for information on origin of terms and definitions.</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">2010-02-08. SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments.</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">2010-02-13 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege.</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">2010-11-28 SMR replace URN with http URI according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme.</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">2012-02-27 SMR Add skos:exactMatch triples to previous version identifiers with numeric final tokens. Declare exactMatch a kind of owl:objectProperty. minimal representation of equivalence of identifiers.</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">prefLabel:</td>
+					<td class="FIELD-VALUE">CGI Geologic Unit Part Role vocabulary</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">definition:</td>
+					<td class="FIELD-VALUE">This file contains the CGI Geologic Unit Part role vocabulary. This vocabulary includes terms to specify the role of a geologic unit as part of another geologic unit, the role of a CompositionPart in a geologic unit. These terms may be used to populate GeologicUnit.part.GeologicUnitPart.role, and GeologicUnit.composition.CompositionPart.role. There are terms in This vocabulary that only apply to one or the other of these properties, but after an effort to create two separate vocabularies, it was decided to use a single vocabulary in order to avoid having the same concept in more than one closely related vocabulary. The duplication of applicable concepts in the two contexts (GeologicUnit.part.GeologicUnitPart.role and GeologicUnit.composition.CompositionPart.role) arises because the model allows representation of complex geologic unit descriptions in more than one way. A complex geologic unit like a migmatite complex or a lithologically heterogeneous Pennsylvanian cyclothem stratigraphic unit will have many different lithologic components. The simplest approach to representing the lithologic heterogeneity is to report a single GeologicUnit element with compositionParts for each lithologic component; the role on these compositionParts provides information about what kind of parts they are and perhaps something about their relationship, along with the kinds of rock they are composed of. A more complex alternate approach is to represent the various components each as GeologicUnit elements, each with compositionPart links to the rock type(s) composing that part. These component GeologicUnit elements are aggregated by GeologicUnit.part.GeologicUnitPart elements, with roles in the aggregation for each GeologicUnit part. The benefit of the more complex approach is that additional descriptive properties provided by the GeologicUnit content model can be assigned to each part, as well as GeologicRelations between the parts. The role of the compositionParts in these more 'disaggregated' GeologicUnit elements would be a simpler 'composition' kind of role, because the heterogeneous 'whole' unit would be described in GeologicUnitParts that are more lithologically homogeneous. Its a standard trade off between simplicity and expressiveness. As far as the vocabulary for these 'role' properties, the decision to merge the compositionPart.role and GeologicUnitPart.role vocabularies into one was based on the idea that from a user point of view, one would not want to have to use terms from two different vocabularies to search for the same concept. For instance, if one wanted 'all geologicUnits that have parts whose role is 'Tectonic block', a merged vocabulary allows construction of a single xpath where "role = 'CGI....:Tectonic_block'" (or something like that). The single vocabulary also simplifies maintenance. A context column is added in the spreadsheet to distinguish terms for 'compositionPart', 'geologicUnitPart' or 'both'.</td>
+				</tr>
+			</tbody>
+		</table>
+		<ul></ul><a name="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/bed_lithosome"></a><h2><a href="#top">⇑</a> -- Bed lithosome -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/bed_lithosome</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Bed lithosome</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Lithosome in lithostratigraphic unit that occurs as individual beds interleaved with other constituents on the outcrop (m) scale or larger.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">This vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0001">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0001</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/lithosome">Lithosome</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/blocks"></a><h2><a href="#top">⇑</a> -- Blocks -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/blocks</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Blocks</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Geologic unit constituent is present as masses with generally sharp boundaries and block-like geometry within a matrix of some other material emplaced by processes at the earth's surface--e.g. volcanic eruption or mass wasting. Implication is that blocks were derived from the same source geologic unit and emplaced in the described unit.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">This vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0002">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0002</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/inclusion">Inclusion</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/concretion"></a><h2><a href="#top">⇑</a> -- Concretion -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/concretion</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Concretion</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Hard, compact mass or aggregate of mineral matter, normally subsperical but commonly oblate, disc-shaped or irregular. Formed from precipitation from solution about a nucleus or centre. Use as a geologic unit part should be restricted to concretions that are too large to consider as constituents in the rock material that composes the unit.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">Neuendorf et al. 2005</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0003">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0003</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/inclusion">Inclusion</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/cyclic_bedding_package"></a><h2><a href="#top">⇑</a> -- Cyclic bedding package -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/cyclic_bedding_package</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Cyclic bedding package</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Lithosome characterized by an internal sequence of units, which is repeated in a stacked sequence; e.g. fining-upward sequence, thickening upward sequence, bouma sequence.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">This vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0004">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0004</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/lithosome">Lithosome</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/enclave"></a><h2><a href="#top">⇑</a> -- Enclave -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/enclave</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Enclave</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">General term for a polymineralic aggregate enclosed in a granitoid.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">Cobbing, 2000; Barbarin, 1991</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0005">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0005</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/inclusion">Inclusion</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/facies"></a><h2><a href="#top">⇑</a> -- Facies -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/facies</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Facies</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Represents a particular body of rock that is a lateral variant of a lithostratigraphic unit, or a variant of a lithodemic unit. Contrast with lithosome in being a particular, connected body of rock, as opposed to a kind of rock body that is repeated in many places in a unit.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">This vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0006">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0006</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/part_of">Part of</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/geologic_unit_matrix"></a><h2><a href="#top">⇑</a> -- Geologic unit matrix -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/geologic_unit_matrix</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Geologic unit matrix</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Lithosome in a geologic unit that is generally interstitial to other constituents, e.g. in a mass wasting deposit, melange, tuff breccia.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">This vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0007">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0007</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/lithosome">Lithosome</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/inclusion"></a><h2><a href="#top">⇑</a> -- Inclusion -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/inclusion</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Inclusion</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Geologic unit constituent is present as masses with generally sharp boundaries enclosed within a matrix of some other material.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">This vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0008">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0008</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/part_of">Part of</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/blocks">Blocks</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/concretion">Concretion</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/enclave">Enclave</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/pendants">Pendants</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/tectonic_block">Tectonic block</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/xenolith">Xenolith</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/irregular_lithosome"></a><h2><a href="#top">⇑</a> -- Irregular lithosome -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/irregular_lithosome</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Irregular lithosome</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">lithosome in a mixed/heterogeneous lithodemic unit that occurs in irregular bodies within unit</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">This vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0009">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0009</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/lithosome">Lithosome</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/layer_lithosome"></a><h2><a href="#top">⇑</a> -- Layer lithosome -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/layer_lithosome</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Layer lithosome</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">lithosome in igneous or metamorphic geologic unit that occurs as layers alternating with other constituents.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">This vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0010">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0010</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/lithosome">Lithosome</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/lenticular_lithosome"></a><h2><a href="#top">⇑</a> -- Lenticular lithosome -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/lenticular_lithosome</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Lenticular lithosome</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">lithosome occurs as discrete lense-shaped bodies, not connected with other bodies.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">This vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0011">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0011</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/lithosome">Lithosome</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/lithosome"></a><h2><a href="#top">⇑</a> -- Lithosome -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/lithosome</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Lithosome</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">A kind of rock body that has multiple occurrences in a single geologic unit. A mass of rock of uniform character, characterized by geometry, composition, and internal structure. Generally denotes rock mass that is the product of a particular rock forming process or related sequence of processes in the containing unit. Example--bouma sequence, point bar sequence. A particular lithosome may be characterized by the presence of blocks, but blocks are not treated as kinds of lithosome because the internal character of the blocks is determined by a separate genetic sequence from the described unit. This vocabulary generalizes the concept defined in Neuendorf et al 2005 to include bodies of igneous or metamorphic rock as well as sedimentary rock. NADM SLTTs (2004) used the term 'lithotope' with similar meaning for sedimentary rocks.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">This vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0012">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0012</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/part_of">Part of</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/bed_lithosome">Bed lithosome</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/cyclic_bedding_package">Cyclic bedding package</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/geologic_unit_matrix">Geologic unit matrix</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/irregular_lithosome">Irregular lithosome</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/layer_lithosome">Layer lithosome</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/lenticular_lithosome">Lenticular lithosome</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/vein_or_dike_lithosome">Vein or dike lithosome</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/marker_bed"></a><h2><a href="#top">⇑</a> -- Marker bed -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/marker_bed</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Marker bed</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Stratigraphic part that is a thin laterally continuous bed within another unit.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">This vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0013">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0013</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/stratigraphic_part">Stratigraphic part</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/only_part"></a><h2><a href="#top">⇑</a> -- Only part -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/only_part</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Only part</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">entire described unit consists of a single part or constituent</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">This vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0014">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0014</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/part_of"></a><h2><a href="#top">⇑</a> -- Part of -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/part_of</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Part of</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">The geologic unit part role is not known in any greater detail. Inclusion of Only_part as a separate concept implies that this concept is the equivalent of 'proper part' in mereology.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">This vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0015">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0015</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/facies">Facies</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/inclusion">Inclusion</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/lithosome">Lithosome</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/stratigraphic_part">Stratigraphic part</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/unspecified_part_role">Unspecified part role</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/pendants"></a><h2><a href="#top">⇑</a> -- Pendants -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/pendants</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Pendants</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">A block of wall rock material in an igneous intrusion. Pendants become xenoliths as the dimension becomes smaller than about 10 m in their longest dimension. Although term pendant has connotation of being suspended or supported from above, this is rarely demonstrable in geologic situations, and the concept here does not require connection to the wall of the containing intrusion.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">Base on Neuendorf et al 2005</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0016">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0016</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/inclusion">Inclusion</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/rafts">Rafts</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/roof_pendant">Roof pendant</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/screen">Screen</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/rafts"></a><h2><a href="#top">⇑</a> -- Rafts -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/rafts</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Rafts</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Pendants of pre-intrusive country rock in intrusive igneous matrix that have large horizontal extent relative to their thickness</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">This vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0017">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0017</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/pendants">Pendants</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/roof_pendant"></a><h2><a href="#top">⇑</a> -- Roof pendant -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/roof_pendant</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Roof pendant</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Pendant that is demonstrably derived from the upper boundary of an igneous body.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">Neuendorf et al 2005</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0018">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0018</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/pendants">Pendants</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/screen"></a><h2><a href="#top">⇑</a> -- Screen -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/screen</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Screen</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Pendant that is a vertical sheet like pendant in an intrusive igneous rock body.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">This vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0019">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0019</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/pendants">Pendants</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/stratigraphic_part"></a><h2><a href="#top">⇑</a> -- Stratigraphic part -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/stratigraphic_part</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Stratigraphic part</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">A geologic unit part that occupies a particular stratigraphic position within a geologic unit. Part is a particular body of rock.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">This vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0020">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0020</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/part_of">Part of</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/marker_bed">Marker bed</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/tectonic_block"></a><h2><a href="#top">⇑</a> -- Tectonic block -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/tectonic_block</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Tectonic block</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">The geologic unit part occurs as discrete masses with faulted boundaries, emplaced into the host unit by tectonic processes inside the earth, e.g. blocks in tectonic melange</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">This vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0021">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0021</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/inclusion">Inclusion</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/unspecified_part_role"></a><h2><a href="#top">⇑</a> -- Unspecified part role -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/unspecified_part_role</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Unspecified part role</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Geologic unit part with unspecified role; use in normative descriptions when any role is allowed.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">This vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0022">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0022</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/part_of">Part of</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/vein_or_dike_lithosome"></a><h2><a href="#top">⇑</a> -- Vein or dike lithosome -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/vein_or_dike_lithosome</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Vein or dike lithosome</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Lithosome occurs as intrusive, sheet-like bodies within the unit as an essential part of the unit.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">This vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0023">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0023</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/lithosome">Lithosome</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/xenolith"></a><h2><a href="#top">⇑</a> -- Xenolith -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/xenolith</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Xenolith</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition ()</td>
+					<td class="SN">Inclusion of pre-intrusive country rock in intrusive igneous matrix, cm to about 10 meter diameter in longest dimension. Use term pendant for larger blocks.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">Neuendorf et al. 2005; Cobbing, 2000; This vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0024">http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/0024</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/geologicunitpartrole/inclusion">Inclusion</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

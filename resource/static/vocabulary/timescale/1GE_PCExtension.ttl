@@ -1,0 +1,615 @@
+# baseURI: http://resource.geosciml.org/vocabulary/timescale/1GE_PCExtension
+# imports: http://resource.geosciml.org/ontology/timescale/gts
+
+@prefix basic:   <http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix gtrs:    <http://resource.geosciml.org/ontology/timescale/thors#> .
+@prefix gts:     <http://resource.geosciml.org/ontology/timescale/gts#> .
+@prefix isc:     <http://resource.geosciml.org/classifier/ics/ischart/> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rank:    <http://resource.geosciml.org/ontology/timescale/rank/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sccgi:   <http://resource.geosciml.org/classifier/cgi/stratchart/> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix tm:      <http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+sccgi:
+      rdf:type skos:Collection ;
+      rdfs:label "oneGeology Europe precambrian timescale elements"@en ;
+      skos:member sccgi:Siderian2 , sccgi:Orosirian7 , sccgi:Base-Ectasian2 , sccgi:Neoarchean2 , sccgi:Orosirian5 , sccgi:Base-Stenian2 , sccgi:Calymmian3 , sccgi:Base-Statherian3 , sccgi:Stenian1 , sccgi:Base-Orosirian5 , sccgi:Ectasian2 , sccgi:Base-Ectasian3 , sccgi:Orosirian2 , sccgi:Tonian1 , sccgi:Base-Statherian4 , sccgi:Base-Tonian2 , sccgi:Statherian2 , sccgi:Ectasian3 , sccgi:Base-Calymmian2 , sccgi:Tonian2 , sccgi:Base-Siderian2 , sccgi:Calymmian4 , sccgi:Stenian2 , sccgi:Base-Orosirian6 , sccgi:Statherian3 , sccgi:Base-Orosirian2 , sccgi:Base-Calymmian3 , sccgi:Base-Ectasian4 , sccgi:Orosirian3 , sccgi:Base-Orosirian7 , sccgi:Calymmian1 , sccgi:Base-Orosirian3 , sccgi:Siderian1 , sccgi:Orosirian6 , sccgi:Ectasian4 , sccgi:Neoarchean1 , sccgi:Base-Statherian2 , sccgi:Base-Orosirian4 , sccgi:Statherian4 , sccgi:Ectasian1 , sccgi:Orosirian1 , sccgi:Base-Calymmian4 , sccgi:Base-Neoarchean2 , sccgi:Orosirian4 , sccgi:Statherian1 , sccgi:Calymmian2 ;
+      skos:prefLabel "oneGeology Europe precambrian timescale elements"@en .
+
+sccgi:Base-Calymmian2
+      rdf:type gts:NumericEraBoundary ;
+      tm:temporalPosition sccgi:Base-Calymmian2Time ;
+      gtrs:nextEra sccgi:Calymmian2 ;
+      gtrs:previousEra sccgi:Calymmian1 .
+
+sccgi:Base-Calymmian2Time
+      rdf:type tm:Coordinate ;
+      tm:frame <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+      tm:value "1520"^^xsd:double .
+
+sccgi:Base-Calymmian3
+      rdf:type gts:NumericEraBoundary ;
+      tm:temporalPosition sccgi:Base-Calymmian3Time ;
+      gtrs:nextEra sccgi:Calymmian3 ;
+      gtrs:previousEra sccgi:Calymmian2 .
+
+sccgi:Base-Calymmian3Time
+      rdf:type tm:Coordinate ;
+      tm:frame <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+      tm:value "1470"^^xsd:double .
+
+sccgi:Base-Calymmian4
+      rdf:type gts:NumericEraBoundary ;
+      tm:temporalPosition sccgi:Base-Calymmian4Time ;
+      gtrs:nextEra sccgi:Calymmian4 ;
+      gtrs:previousEra sccgi:Calymmian3 .
+
+sccgi:Base-Calymmian4Time
+      rdf:type tm:Coordinate ;
+      tm:frame <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+      tm:value "1440"^^xsd:double .
+
+sccgi:Base-Ectasian2
+      rdf:type gts:NumericEraBoundary ;
+      tm:temporalPosition sccgi:Base-Ectasian2Time ;
+      gtrs:nextEra sccgi:Ectasian2 ;
+      gtrs:previousEra sccgi:Ectasian1 .
+
+sccgi:Base-Ectasian2Time
+      rdf:type tm:Coordinate ;
+      tm:frame <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+      tm:value "1360"^^xsd:double .
+
+sccgi:Base-Ectasian3
+      rdf:type gts:NumericEraBoundary ;
+      tm:temporalPosition sccgi:Base-Ectasian3Time ;
+      gtrs:nextEra sccgi:Calymmian3 , sccgi:Ectasian3 ;
+      gtrs:previousEra sccgi:Calymmian2 , sccgi:Ectasian2 .
+
+sccgi:Base-Ectasian3Time
+      rdf:type tm:Coordinate ;
+      tm:frame <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+      tm:value "1280"^^xsd:double .
+
+sccgi:Base-Ectasian4
+      rdf:type gts:NumericEraBoundary ;
+      tm:temporalPosition sccgi:Base-Ectasian4Time ;
+      gtrs:nextEra sccgi:Ectasian4 ;
+      gtrs:previousEra sccgi:Ectasian3 .
+
+sccgi:Base-Ectasian4Time
+      rdf:type tm:Coordinate ;
+      tm:frame <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+      tm:value "1250"^^xsd:double .
+
+sccgi:Base-Neoarchean2
+      rdf:type gts:NumericEraBoundary ;
+      tm:temporalPosition sccgi:Base-Neoarchean2Time ;
+      gtrs:nextEra sccgi:Neoarchean2 ;
+      gtrs:previousEra sccgi:Neoarchean1 .
+
+sccgi:Base-Neoarchean2Time
+      rdf:type tm:Coordinate ;
+      tm:frame <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+      tm:value "2650"^^xsd:double .
+
+sccgi:Base-Orosirian2
+      rdf:type gts:NumericEraBoundary ;
+      tm:temporalPosition sccgi:Base-Orosirian2Time ;
+      gtrs:nextEra sccgi:Orosirian2 ;
+      gtrs:previousEra sccgi:Orosirian1 .
+
+sccgi:Base-Orosirian2Time
+      rdf:type tm:Coordinate ;
+      tm:frame <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+      tm:value "1960"^^xsd:double .
+
+sccgi:Base-Orosirian3
+      rdf:type gts:NumericEraBoundary ;
+      tm:temporalPosition sccgi:Base-Orosirian3Time ;
+      gtrs:nextEra sccgi:Orosirian3 ;
+      gtrs:previousEra sccgi:Orosirian2 .
+
+sccgi:Base-Orosirian3Time
+      rdf:type tm:Coordinate ;
+      tm:frame <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+      tm:value "1910"^^xsd:double .
+
+sccgi:Base-Orosirian4
+      rdf:type gts:NumericEraBoundary ;
+      tm:temporalPosition sccgi:Base-Orosirian4Time ;
+      gtrs:nextEra sccgi:Orosirian4 ;
+      gtrs:previousEra sccgi:Orosirian3 .
+
+sccgi:Base-Orosirian4Time
+      rdf:type tm:Coordinate ;
+      tm:frame <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+      tm:value "1880"^^xsd:double .
+
+sccgi:Base-Orosirian5
+      rdf:type gts:NumericEraBoundary ;
+      tm:temporalPosition sccgi:Base-Orosirian5Time ;
+      gtrs:nextEra sccgi:Orosirian5 ;
+      gtrs:previousEra sccgi:Orosirian4 .
+
+sccgi:Base-Orosirian5Time
+      rdf:type tm:Coordinate ;
+      tm:frame <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+      tm:value "1870"^^xsd:double .
+
+sccgi:Base-Orosirian6
+      rdf:type gts:NumericEraBoundary ;
+      tm:temporalPosition sccgi:Base-Orosirian6Time ;
+      gtrs:nextEra sccgi:Orosirian6 ;
+      gtrs:previousEra sccgi:Orosirian5 .
+
+sccgi:Base-Orosirian6Time
+      rdf:type tm:Coordinate ;
+      tm:frame <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+      tm:value "1840"^^xsd:double .
+
+sccgi:Base-Orosirian7
+      rdf:type gts:NumericEraBoundary ;
+      tm:temporalPosition sccgi:Base-Orosirian7Time ;
+      gtrs:nextEra sccgi:Orosirian7 ;
+      gtrs:previousEra sccgi:Orosirian6 .
+
+sccgi:Base-Orosirian7Time
+      rdf:type tm:Coordinate ;
+      tm:frame <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+      tm:value "1820"^^xsd:double .
+
+sccgi:Base-Siderian2
+      rdf:type gts:NumericEraBoundary ;
+      tm:temporalPosition sccgi:Base-Siderian2Time ;
+      gtrs:nextEra sccgi:Siderian2 ;
+      gtrs:previousEra sccgi:Siderian1 .
+
+sccgi:Base-Siderian2Time
+      rdf:type tm:Coordinate ;
+      tm:frame <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+      tm:value "2400"^^xsd:double .
+
+sccgi:Base-Statherian2
+      rdf:type gts:NumericEraBoundary ;
+      tm:temporalPosition sccgi:Base-Statherian2Time ;
+      gtrs:nextEra sccgi:Statherian2 ;
+      gtrs:previousEra sccgi:Statherian1 .
+
+sccgi:Base-Statherian2Time
+      rdf:type tm:Coordinate ;
+      tm:frame <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+      tm:value "1770"^^xsd:double .
+
+sccgi:Base-Statherian3
+      rdf:type gts:NumericEraBoundary ;
+      tm:temporalPosition sccgi:Base-Statherian3Time ;
+      gtrs:nextEra sccgi:Statherian3 ;
+      gtrs:previousEra sccgi:Statherian2 .
+
+sccgi:Base-Statherian3Time
+      rdf:type tm:Coordinate ;
+      tm:frame <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+      tm:value "1740"^^xsd:double .
+
+sccgi:Base-Statherian4
+      rdf:type gts:NumericEraBoundary ;
+      tm:temporalPosition sccgi:Base-Statherian4Time ;
+      gtrs:nextEra sccgi:Statherian4 ;
+      gtrs:previousEra sccgi:Statherian3 .
+
+sccgi:Base-Statherian4Time
+      rdf:type tm:Coordinate ;
+      tm:frame <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+      tm:value "1660"^^xsd:double .
+
+sccgi:Base-Stenian2
+      rdf:type gts:NumericEraBoundary ;
+      tm:temporalPosition sccgi:Base-Stenian2Time ;
+      gtrs:nextEra sccgi:Stenian2 ;
+      gtrs:previousEra sccgi:Stenian1 .
+
+sccgi:Base-Stenian2Time
+      rdf:type tm:Coordinate ;
+      tm:frame <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+      tm:value "1130"^^xsd:double .
+
+sccgi:Base-Tonian2
+      rdf:type gts:NumericEraBoundary ;
+      tm:temporalPosition sccgi:Base-Tonian2Time ;
+      gtrs:nextEra sccgi:Tonian2 ;
+      gtrs:previousEra sccgi:Tonian1 .
+
+sccgi:Base-Tonian2Time
+      rdf:type tm:Coordinate ;
+      tm:frame <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+      tm:value "910"^^xsd:double .
+
+sccgi:Boundaries
+      rdf:type skos:OrderedCollection ;
+      rdfs:label "Boundaries in the oneGeology Europe Precambrian timescale"@en ;
+      skos:memberList (sccgi:Base-Neoarchean2 sccgi:Base-Siderian2 sccgi:Base-Orosirian2 sccgi:Base-Orosirian3 sccgi:Base-Orosirian4 sccgi:Base-Orosirian5 sccgi:Base-Orosirian6 sccgi:Base-Orosirian7 sccgi:Base-Statherian2 sccgi:Base-Statherian3 sccgi:Base-Statherian4 sccgi:Base-Calymmian2 sccgi:Base-Calymmian3 sccgi:Base-Calymmian4 sccgi:Base-Ectasian2 sccgi:Base-Ectasian3 sccgi:Base-Ectasian4 sccgi:Base-Stenian2 sccgi:Base-Tonian2) ;
+      skos:prefLabel "Boundaries in the oneGeology Europe Precambrian timescale"@en .
+
+sccgi:Calymmian1
+      rdf:type skos:Concept , gts:GeochronologicEra ;
+      rdfs:comment "older bound-1600.0"@en , "younger bound-1520.0"@en ;
+      gts:rank rank:Epoch ;
+      gtrs:begin isc:BaseMesoproterozoic ;
+      gtrs:end sccgi:Base-Calymmian2 ;
+      skos:broader isc:Calymmian ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.1.2.3.4"^^gts:EraCode ;
+      skos:prefLabel "Kalym 1 *"@pl , "Calymmian 1 *"@en , "calymmi 1. szakasz"@hu , "Calymiano 1"@pt , "Calymmien 1*"@da , "Калим 1*"@bg , "Kalymmium 1*"@no , "calymmiano 1"@it , "Calymm 1"@et , "calymmij 1 *"@sl , "Kalymis 1 *"@lt , "Calymmiën 1 *"@nl , "Calymmien 1 *"@fr , "kalymmium 1 *"@sv , "Calymmium 1"@de , "Calym 1 *"@fi , "kalymnium 1 *"@sk , "Calymmiense 1 *"@es , "Calymm 1 *"@cs .
+
+sccgi:Calymmian2
+      rdf:type skos:Concept , gts:GeochronologicEra ;
+      rdfs:comment "younger bound-1470.0"@en , "older bound-1520.0"@en ;
+      gts:rank rank:Epoch ;
+      gtrs:begin sccgi:Base-Calymmian2 ;
+      gtrs:end sccgi:Base-Calymmian3 , sccgi:Base-Ectasian3 ;
+      skos:broader isc:Calymmian ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.1.2.3.3"^^gts:EraCode ;
+      skos:prefLabel "Calymm 2 *"@cs , "calymmiano 2"@it , "Calymmien 2*"@da , "kalymnium 2 *"@sk , "Kalym 2 *"@pl , "Calymmien 2 *"@fr , "Kalymis 2 *"@lt , "Calymmian 2 *"@en , "calymmi 2. szakasz"@hu , "Calymmiën 2 *"@nl , "Calymiano 2"@pt , "calymmij 2 *"@sl , "Калим 2*"@bg , "Calymmiense 2 *"@es , "Kalymmium 2*"@no , "Calymm 2"@et , "Calym 2 *"@fi , "Calymmium 2"@de , "kalymmium 2 *"@sv .
+
+sccgi:Calymmian3
+      rdf:type gts:GeochronologicEra , skos:Concept ;
+      rdfs:comment "younger bound-1440.0"@en , "older bound-1470.0"@en ;
+      gts:rank rank:Epoch ;
+      gtrs:begin sccgi:Base-Ectasian3 , sccgi:Base-Calymmian3 ;
+      gtrs:end sccgi:Base-Calymmian4 ;
+      skos:broader isc:Calymmian ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.1.2.3.2"^^gts:EraCode ;
+      skos:prefLabel "Kalymmium 3*"@no , "Calymmiense 3 *"@es , "Калим 3*"@bg , "Calymmien 3*"@da , "Calymmiën 3 *"@nl , "Calymiano 3"@pt , "calymmiano 3"@it , "Kalymis 3 *"@lt , "Kalym 3 *"@pl , "Calymmium 3"@de , "calymmi 3. szakasz"@hu , "Calymmian 3 *"@en , "calymmij 3 *"@sl , "kalymmium 3 *"@sv , "Calym 3 *"@fi , "Calymm 3"@et , "Calymm 3 *"@cs , "Calymmien 3 *"@fr , "kalymnium 3 *"@sk .
+
+sccgi:Calymmian4
+      rdf:type skos:Concept , gts:GeochronologicEra ;
+      rdfs:comment "older bound-1440.0"@en , "younger bound-1400.0"@en ;
+      gtrs:begin sccgi:Base-Calymmian4 ;
+      gtrs:end isc:BaseEctasian ;
+      skos:broader isc:Calymmian ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.1.2.3.1"^^gts:EraCode ;
+      skos:prefLabel "Calymmiense 4 *"@es , "kalymnium  4 *"@sk , "Calymm 4"@et , "Kalym 4 *"@pl , "calymmij 4 *"@sl , "Калим 4*"@bg , "Calymm 4 *"@cs , "Calymmien 4 *"@fr , "Calymmien 4*"@da , "Calymmiën 4 *"@nl , "kalymmium 4 *"@sv , "Kalymmium 4*"@no , "Calym 4 *"@fi , "calymmi 4. szakasz"@hu , "Kalymis 4 *"@lt , "calymmiano 4"@it , "Calymiano 4"@pt , "Calymmian 4 *"@en , "Calymmium 4"@de .
+
+sccgi:Ectasian1
+      rdf:type gts:GeochronologicEra , skos:Concept ;
+      rdfs:comment "younger bound-1360.0"@en , "older bound-1400.0"@en ;
+      gts:rank rank:Epoch ;
+      gtrs:begin isc:BaseEctasian ;
+      gtrs:end sccgi:Base-Ectasian2 ;
+      skos:broader isc:Ectasian ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.1.2.2.4"^^gts:EraCode ;
+      skos:prefLabel "Ectas 1"@et , "ektazium 1 *"@sk , "ectasij 1 *"@sl , "Ektas 1 *"@pl , "Ectasien 1 *"@fr , "Ectasien 1*"@da , "Ectasium 1"@de , "Ektasium 1*"@no , "Ektasis 1 *"@lt , "ectasiano 1"@it , "Ectasiano 1"@pt , "ectasium 1 *"@sv , "Ектаз 1*"@bg , "Ectasiense 1 *"@es , "Ectasian 1 *"@en , "Ectasiën 1 *"@nl , "Ectas 1 *"@cs , "Ectas 1 *"@fi , "ectasi 1. szakasz"@hu .
+
+sccgi:Ectasian2
+      rdf:type skos:Concept , gts:GeochronologicEra ;
+      rdfs:comment "younger bound-1270.0"@en , "older bound-1360.0"@en ;
+      gts:rank rank:Epoch ;
+      gtrs:begin sccgi:Base-Ectasian2 ;
+      gtrs:end sccgi:Base-Calymmian3 , sccgi:Base-Ectasian3 ;
+      skos:broader isc:Ectasian ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.1.2.2.3"^^gts:EraCode ;
+      skos:prefLabel "ectasiano 2"@it , "Ectasian 2 *"@en , "ektazium 2 *"@sk , "Ectasien 2*"@da , "ectasij 2 *"@sl , "Ectasium 2"@de , "Ectasiense 2 *"@es , "Ектаз 2*"@bg , "Ectas 2"@et , "Ectasiano 2"@pt , "Ektasium 2*"@no , "Ectas 2 *"@fi , "Ectasiën 2 *"@nl , "Ectas 2 *"@cs , "ectasi 2. szakasz"@hu , "Ectasien 2 *"@fr , "ectasium 2 *"@sv , "Ektasis 2 *"@lt , "Ektas 2 *"@pl .
+
+sccgi:Ectasian3
+      rdf:type gts:GeochronologicEra , skos:Concept ;
+      rdfs:comment "older bound-1270.0"@en , "younger bound-1250.0"@en ;
+      gts:rank rank:Epoch ;
+      gtrs:begin sccgi:Base-Calymmian3 , sccgi:Base-Ectasian3 ;
+      gtrs:end sccgi:Base-Ectasian4 ;
+      skos:broader isc:Ectasian ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.1.2.2.2"^^gts:EraCode ;
+      skos:prefLabel "Ectasien 3 *"@fr , "Ectas 3"@et , "ectasi 3. szakasz"@hu , "Ectasien 3*"@da , "Ektas 3 *"@pl , "Ectasiense 3 *"@es , "Ectasiën 3 *"@nl , "Ectasiano 3"@pt , "Ektasis 3 *"@lt , "ektazium 3 *"@sk , "Ectasium 3"@de , "Ectas 3 *"@cs , "Ectas 3 *"@fi , "ectasij 3 *"@sl , "ectasiano 3"@it , "Ectasian 3 *"@en , "ectasium 3 *"@sv , "Ektasium 3*"@no , "Ектаз 3*"@bg .
+
+sccgi:Ectasian4
+      rdf:type skos:Concept , gts:GeochronologicEra ;
+      rdfs:comment "older bound-1250.0"@en , "younger bound-1200.0"@en ;
+      gts:rank rank:Epoch ;
+      gtrs:begin sccgi:Base-Ectasian4 ;
+      gtrs:end isc:BaseStenian ;
+      skos:broader isc:Ectasian ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.1.2.2.1"^^gts:EraCode ;
+      skos:prefLabel "Ectasian 4 *"@en , "ectasium 4 *"@sv , "Ectasiën 4 *"@nl , "Ectasiano 4"@pt , "Ectas 4 *"@cs , "Ectas 4 *"@fi , "ektazium 4 *"@sk , "ectasi 4. szakasz"@hu , "ectasiano 4"@it , "Ectasiense 4 *"@es , "Ektas 4 *"@pl , "Ectasien 4 *"@fr , "Ектаз 4*"@bg , "Ectasium 4"@de , "Ectasien 4*"@da , "ectasij 4 *"@sl , "Ectas 4"@et , "Ekatsium 4*"@no , "Ektasis 4 *"@lt .
+
+sccgi:Eras
+      rdf:type skos:Collection ;
+      rdfs:label "Eras in the oneGeology Europe Precambrian timescale"@en ;
+      skos:member sccgi:Statherian3 , sccgi:Siderian1 , sccgi:Statherian1 , sccgi:Ectasian3 , sccgi:Orosirian6 , sccgi:Ectasian1 , sccgi:Orosirian4 , sccgi:Calymmian4 , sccgi:Stenian1 , sccgi:Orosirian7 , sccgi:Calymmian2 , sccgi:Stenian2 , sccgi:Orosirian2 , sccgi:Orosirian3 , sccgi:Orosirian5 , sccgi:Calymmian3 , sccgi:Statherian4 , sccgi:Siderian2 , sccgi:Statherian2 , sccgi:Neoarchean1 , sccgi:Ectasian4 , sccgi:Orosirian1 , sccgi:Calymmian1 , sccgi:Tonian1 , sccgi:Neoarchean2 , sccgi:Ectasian2 , sccgi:Tonian2 ;
+      skos:prefLabel "Eras in the oneGeology Europe Precambrian timescale"@en .
+
+sccgi:Neoarchean1
+      rdf:type skos:Concept , gts:GeochronologicEra ;
+      rdfs:comment "younger bound-2650.0"@en , "older bound-2800.0"@en ;
+      gts:rank rank:Period ;
+      gtrs:begin isc:BaseNeoarchean ;
+      gtrs:end sccgi:Base-Neoarchean2 ;
+      skos:broader isc:Neoarchean ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.2.1.2"^^gts:EraCode ;
+      skos:prefLabel "neoarcheano 1"@it , "Neoarcaico 1"@pt , "Neo-archaicum 1*"@nl , "Neoarkæisk 1*"@da , "Neoarkeikum 1 *"@fi , "neoarchaikum 1 *"@sk , "neoarkeikum 1 *"@sv , "Neoarchaikum 1"@de , "neoarhaik 1 *"@sl , "Neoarchaik 1 *"@pl , "пеоархай 1*"@bg , "Néoarchéen 1 *"@fr , "neoarchai alsÃ³ szakasz"@hu , "Neoarchean 1 *"@en , "Neoarchaikum 1 *"@cs , "Neoarchejus 1 *"@lt , "Neocarcaico 1 *"@es , "Neoarhaikum 1"@et , "Neoarkeikum 1*"@no .
+
+sccgi:Neoarchean2
+      rdf:type skos:Concept , gts:GeochronologicEra ;
+      rdfs:comment "older bound-2650.0"@en , "younger bound-2500.0"@en ;
+      gts:rank rank:Period ;
+      gtrs:begin sccgi:Base-Neoarchean2 ;
+      gtrs:end isc:BaseProterozoic ;
+      skos:broader isc:Neoarchean ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.2.1.1"^^gts:EraCode ;
+      skos:prefLabel "Neoarkæisk 2*"@da , "neoarkeikum 2 *"@sv , "Neoarchean 2 *"@en , "Neoarhaikum 2"@et , "Neoarcaico 2"@pt , "neoarcheano 2"@it , "Neoarkeikum 2 *"@fi , "Neo-archaicum 2*"@nl , "Neoarchaikum 2"@de , "Neoarchaikum 2 *"@cs , "neoarchai felsÅ‘ szakasz"@hu , "neoarhaik 2 *"@sl , "neoarchaikum 2 *"@sk , "Neoarkeikum 2*"@no , "Neoarchaik 2 *"@pl , "Neoarchejus 2 *"@lt , "пеоархай  2*"@bg , "Néoarchéen 2 *"@fr , "Neoarcaico 2 *"@es .
+
+sccgi:Orosirian1
+      rdf:type skos:Concept , gts:GeochronologicEra ;
+      rdfs:comment "younger bound-1960.0"@en , "older bound-2050.0"@en ;
+      gts:rank rank:Epoch ;
+      gtrs:begin isc:BaseOrosirian ;
+      gtrs:end sccgi:Base-Orosirian2 ;
+      skos:broader isc:Orosirian ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.1.3.2.7"^^gts:EraCode ;
+      skos:prefLabel "orosirij 1 *"@sl , "orosirium 1 *"@sk , "orosirium 1 *"@sv , "Orosirien 1 *"@fr , "Orosirian 1 *"@en , "Orosirium 1*"@no , "orosiri 1. szakasz"@hu , "Orosir 1 *"@pl , "Orosir 1 *"@cs , "Orosir 1 *"@fi , "Orosiriën 1 *"@nl , "Orosir 1"@et , "Orosirium 1"@de , "Orosiriense 1 *"@es , "Orosirien 1*"@da , "Ороѿир 1*"@bg , "Orosiriano 1"@pt , "Orosiris 1 *"@lt , "orosiriano 1"@it .
+
+sccgi:Orosirian2
+      rdf:type skos:Concept , gts:GeochronologicEra ;
+      rdfs:comment "younger bound-1920.0"@en , "older bound-1960.0"@en ;
+      gts:rank rank:Epoch ;
+      gtrs:begin sccgi:Base-Orosirian2 ;
+      gtrs:end sccgi:Base-Orosirian3 ;
+      skos:broader isc:Orosirian ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.1.3.2.6"^^gts:EraCode ;
+      skos:prefLabel "Orosirien 2*"@da , "Ороѿир 2*"@bg , "Orosirien 2 *"@fr , "Orosir 2*"@pl , "orosirij 2 *"@sl , "Orosiriën 2 *"@nl , "Orosir 2"@et , "orosiri 2. szakasz"@hu , "orosiriano 2"@it , "Orosirium 2*"@no , "Orosir 2 *"@cs , "Orosirium 2"@de , "Orosir 2 *"@fi , "Orosiriense 2 *"@es , "orosirium 2 *"@sk , "Orosirian 2 *"@en , "orosirium 2 *"@sv , "Orosiris 2 *"@lt , "Orosiriano 2"@pt .
+
+sccgi:Orosirian3
+      rdf:type gts:GeochronologicEra , skos:Concept ;
+      rdfs:comment "older bound-1920.0"@en , "younger bound-1880.0"@en ;
+      gts:rank rank:Epoch ;
+      gtrs:begin sccgi:Base-Orosirian3 ;
+      gtrs:end sccgi:Base-Orosirian4 ;
+      skos:broader isc:Orosirian ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.1.3.2.5"^^gts:EraCode ;
+      skos:prefLabel "Orosirium  3*"@no , "Orosirian 3 *"@en , "Orosirien 3 *"@fr , "Orosirium 3"@de , "Orosiriano 3"@pt , "Orosir 3 *"@pl , "Orosir 3 *"@fi , "Orosir 3 *"@cs , "orosirij 3 *"@sl , "Orosiriën 3 *"@nl , "Ороѿир 3*"@bg , "orosirium 3 *"@sk , "orosirium 3 *"@sv , "Orosir 3"@et , "orosiriano 3"@it , "Orosiris 3 *"@lt , "orosiri 3. szakasz"@hu , "Orosirien 3*"@da , "Orosiriense 3 *"@es .
+
+sccgi:Orosirian4
+      rdf:type skos:Concept , gts:GeochronologicEra ;
+      rdfs:comment "older bound-1880.0"@en , "younger bound-1870.0"@en ;
+      gts:rank rank:Epoch ;
+      gtrs:begin sccgi:Base-Orosirian4 ;
+      gtrs:end sccgi:Base-Orosirian5 ;
+      skos:broader isc:Orosirian ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.1.3.2.4"^^gts:EraCode ;
+      skos:prefLabel "Orosirium 4"@de , "orosiriano 4"@it , "Orosiriën 4 *"@nl , "Orosiris 4 *"@lt , "orosirij 4 *"@sl , "Orosirien 4 *"@fr , "Orosir 4 *"@cs , "Orosir 4 *"@fi , "Orosir 4 *"@pl , "Orosiriense 4 *"@es , "Orosiriano 4"@pt , "orosirium 4 *"@sk , "orosirium 4 *"@sv , "Ороѿир 4*"@bg , "Orosir 4"@et , "Orosirian 4 *"@en , "Orosirien 4*"@da , "Orosirium 4*"@no , "orosiri 4. szakasz"@hu .
+
+sccgi:Orosirian5
+      rdf:type gts:GeochronologicEra , skos:Concept ;
+      rdfs:comment "younger bound-1840.0"@en , "older bound-1870.0"@en ;
+      gts:rank rank:Epoch ;
+      gtrs:begin sccgi:Base-Orosirian5 ;
+      gtrs:end sccgi:Base-Orosirian6 ;
+      skos:broader isc:Orosirian ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.1.3.2.3"^^gts:EraCode ;
+      skos:prefLabel "Orosiris 5 *"@lt , "Orosir 5"@et , "Orosirien 5*"@da , "Orosirien 5 *"@fr , "Orosirium 5"@de , "Orosirium 5*"@no , "Orosiriense 5 *"@es , "orosiri 5. szakasz"@hu , "Orosiriën 5 *"@nl , "orosirij 5 *"@sl , "Orosirian 5 *"@en , "orosiriano 5"@it , "Ороѿир 5*"@bg , "Orosir 5 *"@cs , "Orosir 5 *"@fi , "Orosir 5 *"@pl , "orosirium 5 *"@sk , "orosirium 5 *"@sv , "Orosiriano 5"@pt .
+
+sccgi:Orosirian6
+      rdf:type skos:Concept , gts:GeochronologicEra ;
+      rdfs:comment "older bound-1840.0"@en , "younger bound-1820.0"@en ;
+      gts:rank rank:Epoch ;
+      gtrs:begin sccgi:Base-Orosirian6 ;
+      gtrs:end sccgi:Base-Orosirian7 ;
+      skos:broader isc:Orosirian ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.1.3.2.2"^^gts:EraCode ;
+      skos:prefLabel "orosiriano 6"@it , "Orosiriano 6"@pt , "Orosirien 6 *"@fr , "Orosiriën 6 *"@nl , "orosirium 6 *"@sk , "orosirium 6 *"@sv , "Orosirium 6"@de , "Orosirien 6*"@da , "Orosiriense 6 *"@es , "orosirij 6 *"@sl , "Orosir 6"@et , "Ороѿир 6*"@bg , "Orosir 6 *"@cs , "Orosir 6 *"@fi , "Orosir 6 *"@pl , "Orosirian 6 *"@en , "Orosiris 6 *"@lt , "Orosirium 6*"@no , "orosiri 6. szakasz"@hu .
+
+sccgi:Orosirian7
+      rdf:type skos:Concept , gts:GeochronologicEra ;
+      rdfs:comment "older bound-1820.0"@en , "younger bound-1800.0"@en ;
+      gts:rank rank:Epoch ;
+      gtrs:begin sccgi:Base-Orosirian7 ;
+      gtrs:end isc:BaseStatherian ;
+      skos:broader isc:Orosirian ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.1.3.2.1"^^gts:EraCode ;
+      skos:prefLabel "Orosirien 7*"@da , "Orosirien 7 *"@fr , "Orosirium 7"@de , "Orosiriano 7"@pt , "orosirium 7 *"@sk , "orosirium 7 *"@sv , "Orosiris 7 *"@lt , "Orosiriense 7 *"@es , "Orosirium 7*"@no , "Orosirian 7 *"@en , "orosiriano 7"@it , "Orosir 7"@et , "Orosir 7 *"@cs , "Orosir 7 *"@fi , "Orosir 7 *"@pl , "Orosiriën 7 *"@nl , "Ороѿир 7*"@bg , "orosirij 7 *"@sl , "orosiri 7. szakasz"@hu .
+
+sccgi:Siderian1
+      rdf:type gts:GeochronologicEra , skos:Concept ;
+      rdfs:comment "younger bound-2400.0"@en , "older bound-2500.0"@en ;
+      gts:rank rank:Epoch ;
+      gtrs:begin isc:BaseProterozoic ;
+      gtrs:end sccgi:Base-Siderian2 ;
+      skos:broader isc:Siderian ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.1.3.4.2"^^gts:EraCode ;
+      skos:prefLabel "sideri 1. szakasz"@hu , "Sider 1 *"@fi , "Sider 1 *"@pl , "sideriano 1"@it , "Sider 1 *"@cs , "Sideriense 1 *"@es , "Сидер 1*"@bg , "siderium 1 *"@sk , "siderium 1 *"@sv , "Sideris 1 *"@lt , "Siderian 1 *"@en , "Sider 1"@et , "Siderien 1*"@da , "siderij 1 *"@sl , "Siderium 1"@de , "Sideriën 1 *"@nl , "Siderium 1*"@no , "Sidérien 1 *"@fr , "Sideriano 1"@pt .
+
+sccgi:Siderian2
+      rdf:type skos:Concept , gts:GeochronologicEra ;
+      rdfs:comment "younger bound-2300.0"@en , "older bound-2400.0"@en ;
+      gts:rank rank:Epoch ;
+      gtrs:begin sccgi:Base-Siderian2 ;
+      gtrs:end isc:BaseRhyacian ;
+      skos:broader isc:Siderian ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.1.3.4.1"^^gts:EraCode ;
+      skos:prefLabel "Sidérien 2 *"@fr , "Sider 2 *"@fi , "Сидер 2*"@bg , "Siderien 2*"@da , "Sideris 2 *"@lt , "sideri 2. szakasz"@hu , "Sider 2"@et , "Sideriano 2"@pt , "Sideriën 2 *"@nl , "sideriano 2"@it , "Sideriense 2 *"@es , "sederij 2 *"@sl , "Siderian 2 *"@en , "Siderium 2*"@no , "siderium 2 *"@sk , "siderium 2 *"@sv , "Siderium 2"@de , "Sider 2 *"@pl , "Sider 2 *"@cs .
+
+sccgi:Statherian1
+      rdf:type gts:GeochronologicEra , skos:Concept ;
+      rdfs:comment "older bound-1800.0"@en , "younger bound-1770.0"@en ;
+      gts:rank rank:Epoch ;
+      gtrs:begin isc:BaseStatherian ;
+      gtrs:end sccgi:Base-Statherian2 ;
+      skos:broader isc:Statherian ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.1.3.1.4"^^gts:EraCode ;
+      skos:prefLabel "Staterium 1*"@no , "Stater 1 *"@pl , "Stateris 1 *"@lt , "Статер 1*"@bg , "Stathérien 1 *"@fr , "Statheriense 1 *"@es , "statheri 1. szakasz"@hu , "Stateriano 1"@pt , "statherij 1 *"@sl , "staterium 1 *"@sk , "Statherium 1"@de , "staterium 1 *"@sv , "Statheriën 1 *"@nl , "Statherien 1*"@da , "statheriano 1"@it , "Statherian 1 *"@en , "Stather 1"@et , "Stather 1 *"@cs , "Stather 1 *"@fi .
+
+sccgi:Statherian2
+      rdf:type skos:Concept , gts:GeochronologicEra ;
+      rdfs:comment "younger bound-1740.0"@en , "older bound-1770.0"@en ;
+      gts:rank rank:Epoch ;
+      gtrs:begin sccgi:Base-Statherian2 ;
+      gtrs:end sccgi:Base-Statherian3 ;
+      skos:broader isc:Statherian ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.1.3.1.3"^^gts:EraCode ;
+      skos:prefLabel "Statherien 2*"@da , "Statherium 2"@de , "Statherian 2 *"@en , "statheri 2. szakasz"@hu , "staterium 2 *"@sk , "staterium 2 *"@sv , "Staterium 2*"@no , "Statheriën 2 *"@nl , "statherij 2 *"@sl , "statheriano 2"@it , "Stathérien 2 *"@fr , "Stather 2"@et , "Stateriano 2"@pt , "Stater 2 *"@pl , "Stather 2 *"@cs , "Statheriense 2 *"@es , "Stather 2 *"@fi , "Stateris 2 *"@lt , "Статер 2*"@bg .
+
+sccgi:Statherian3
+      rdf:type gts:GeochronologicEra , skos:Concept ;
+      rdfs:comment "younger bound-1660.0"@en , "older bound-1740.0"@en ;
+      gts:rank rank:Epoch ;
+      gtrs:begin sccgi:Base-Statherian3 ;
+      gtrs:end sccgi:Base-Statherian4 ;
+      skos:broader isc:Statherian ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.1.3.1.2"^^gts:EraCode ;
+      skos:prefLabel "statherij 3 *"@sl , "Stather 3 *"@cs , "Statherium 3"@de , "Stather 3 *"@fi , "staterium 3 *"@sv , "staterium 3 *"@sk , "Statheriense 3 *"@es , "statheri 3. szakasz"@hu , "Stateris 3 *"@lt , "Stater 3 *"@pl , "Stather 3"@et , "Stathérien 3 *"@fr , "Статер 3*"@bg , "Statherian 3 *"@en , "Statherien 3*"@da , "Stateriano 3"@pt , "Staterium 3*"@no , "Statheriën 3 *"@nl , "statheriano 3"@it .
+
+sccgi:Statherian4
+      rdf:type skos:Concept , gts:GeochronologicEra ;
+      rdfs:comment "younger bound-1600.0"@en , "older bound-1660.0"@en ;
+      gts:rank rank:Epoch ;
+      gtrs:begin sccgi:Base-Statherian4 ;
+      gtrs:end isc:BaseMesoproterozoic ;
+      skos:broader isc:Statherian ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.1.3.1.1"^^gts:EraCode ;
+      skos:prefLabel "Stateriano 4"@pt , "Stateris 4 *"@lt , "Статер 4*"@bg , "staterium 4 *"@sv , "staterium 4 *"@sk , "Stather 4"@et , "Statherien 4*"@da , "statherij 4 *"@sl , "Stathérien 4 *"@fr , "statheri 4. szakasz"@hu , "statheriano 4"@it , "Statherian 4 *"@en , "Statherium 4"@de , "Stather 4 *"@cs , "Stather 4 *"@fi , "Statheriën 4 *"@nl , "Statheriense 4 *"@es , "Stater 4 *"@pl , "Staterium 4*"@no .
+
+sccgi:Stenian1
+      rdf:type gts:GeochronologicEra , skos:Concept ;
+      rdfs:comment "older bound-1200.0"@en , "younger bound-1130.0"@en ;
+      gts:rank rank:Epoch ;
+      gtrs:begin isc:BaseStenian ;
+      gtrs:end sccgi:Base-Stenian2 ;
+      skos:broader isc:Stenian ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.1.2.1.2"^^gts:EraCode ;
+      skos:prefLabel "steniano 1"@it , "Steniën 1 *"@nl , "Stenian 1 *"@en , "Sten 1 *"@cs , "Sten 1 *"@fi , "Sten 1 *"@pl , "Steniano 1"@pt , "Stenium 1"@de , "stenium 1 *"@sk , "Stenium 1*"@no , "stenium 1 *"@sv , "Sten1"@et , "Sténien 1 *"@fr , "Stenien 1*"@da , "Stenis 1 *"@lt , "stenij 1 *"@sl , "Esteniense 1 *"@es , "Стен 1*"@bg , "steni alsÃ³ szakasz"@hu .
+
+sccgi:Stenian2
+      rdf:type skos:Concept , gts:GeochronologicEra ;
+      rdfs:comment "younger bound-1000.0"@en , "older bound-1130.0"@en ;
+      gts:rank rank:Epoch ;
+      gtrs:begin sccgi:Base-Stenian2 ;
+      gtrs:end isc:BaseNeoproterozoic ;
+      skos:broader isc:Stenian ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.1.2.1.1"^^gts:EraCode ;
+      skos:prefLabel "Stenian 2 *"@en , "Sténien 2 *"@fr , "stenij 2 *"@sl , "steni felsÅ‘ szakasz"@hu , "Steniano 2"@pt , "Sten 2 *"@cs , "Stenium 2"@de , "Sten 2 *"@fi , "Sten 2 *"@pl , "Steniën 2 *"@nl , "Esteniense 2 *"@es , "Stenium 2*"@no , "Sten 2"@et , "Stenis 2 *"@lt , "Stenien 2*"@da , "steniano 2"@it , "stenium 2 *"@sk , "stenium 2 *"@sv , "Стен 2*"@bg .
+
+sccgi:Tonian1
+      rdf:type skos:Concept , gts:GeochronologicEra ;
+      rdfs:comment "younger bound-910.0"@en , "older bound-1000.0"@en ;
+      gts:rank rank:Epoch ;
+      gtrs:begin isc:BaseNeoproterozoic ;
+      gtrs:end sccgi:Base-Tonian2 ;
+      skos:broader isc:Tonian ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.1.1.3.2"^^gts:EraCode ;
+      skos:prefLabel "Tonian 1 *"@en , "Тон 1*"@bg , "Tonis 1 *"@lt , "Tonium 1"@de , "Toniën 1 *"@nl , "toniano 1"@it , "Tonien 1 *"@da , "Tonien 1 *"@fr , "toni alsÃ³ szakasz"@hu , "Tiniense 1 *"@es , "Ton 1 *"@cs , "Toniano 1"@pt , "Ton 1"@et , "Ton 1 *"@fi , "Ton 1 *"@pl , "Tonium 1*"@no , "tonium 1 *"@sk , "tonium 1 *"@sv , "tonij 1 *"@sl .
+
+sccgi:Tonian2
+      rdf:type skos:Concept , gts:GeochronologicEra ;
+      rdfs:comment "older bound-910.0"@en , "younger bound-850.0"@en ;
+      gts:rank rank:Epoch ;
+      gtrs:begin sccgi:Base-Tonian2 ;
+      gtrs:end isc:BaseCryogenian ;
+      skos:broader isc:Tonian ;
+      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale> ;
+      skos:notation "a2.1.1.3.1"^^gts:EraCode ;
+      skos:prefLabel "tonij 2 *"@sl , "Тон 2*"@bg , "toni felsÅ‘ szakasz"@hu , "Tonien 2*"@da , "tonium 2 *"@sk , "tonium 2 *"@sv , "Tonian 2 *"@en , "Tonium 2*"@no , "Ton 2"@et , "Toniano 2"@pt , "Tonien 2 *"@fr , "Toniën 2 *"@nl , "toniano 2"@it , "Ton 2 *"@cs , "Ton 2 *"@fi , "Ton 2 *"@pl , "Tonis 2 *"@lt , "Toniense 2 *"@es , "Tonium 2"@de .
+
+isc:BaseCryogenian
+      gtrs:previousEra sccgi:Tonian2 .
+
+isc:BaseEctasian
+      gtrs:nextEra sccgi:Ectasian1 ;
+      gtrs:previousEra sccgi:Calymmian4 .
+
+isc:BaseMesoproterozoic
+      gtrs:nextEra sccgi:Calymmian1 ;
+      gtrs:previousEra sccgi:Statherian4 .
+
+isc:BaseNeoarchean
+      gtrs:nextEra sccgi:Neoarchean1 .
+
+isc:BaseNeoproterozoic
+      gtrs:nextEra sccgi:Tonian1 ;
+      gtrs:previousEra sccgi:Stenian2 .
+
+isc:BaseOrosirian
+      gtrs:nextEra sccgi:Orosirian1 .
+
+isc:BaseProterozoic
+      gtrs:nextEra sccgi:Siderian1 ;
+      gtrs:previousEra sccgi:Neoarchean2 .
+
+isc:BaseStatherian
+      gtrs:nextEra sccgi:Statherian1 ;
+      gtrs:previousEra sccgi:Orosirian7 .
+
+isc:Calymmian
+      skos:narrower sccgi:Calymmian4 , sccgi:Calymmian3 , sccgi:Calymmian2 , sccgi:Calymmian1 .
+
+isc:Ectasian
+      skos:narrower sccgi:Ectasian4 , sccgi:Ectasian3 , sccgi:Ectasian2 , sccgi:Ectasian1 .
+
+isc:Furongian
+      skos:narrower isc:CambrianStage9 .
+
+isc:Orosirian
+      skos:narrower sccgi:Orosirian7 , sccgi:Orosirian6 , sccgi:Orosirian5 , sccgi:Orosirian4 , sccgi:Orosirian3 , sccgi:Orosirian2 , sccgi:Orosirian1 .
+
+isc:Pleistocene
+      skos:narrower isc:Ionian .
+
+isc:Siderian
+      skos:narrower sccgi:Siderian2 , sccgi:Siderian1 .
+
+isc:Statherian
+      skos:narrower sccgi:Statherian4 , sccgi:Statherian3 , sccgi:Statherian2 , sccgi:Statherian1 .
+
+isc:Stenian
+      skos:narrower sccgi:Stenian2 , sccgi:Stenian1 .
+
+isc:Tonian
+      skos:narrower sccgi:Tonian2 , sccgi:Tonian1 .
+
+<http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale>
+      rdf:type skos:ConceptScheme ;
+      rdfs:label "One Geology Europe Precambrian Epoch definitions for Fenno-Scandian Shield"^^xsd:string ;
+      dc:creator "Stephen M Richard"^^xsd:string ;
+      dc:source """KOISTINEN, T., STEPHENS, M.B., BOGATCHEV, V., NORDGULEN, O., WENNERSTRÖM, M.,
+KORHONEN, J., 2001. Geological map of Fennoscandian Shield, scale 1:2 000 000. Geological Surveys of Finland, Norway and Sweden and the North-West Department of Natural Resources of Russia"""^^xsd:string , "Definitions extracted from Asch, Kristine and WP3 Core Team, 31 July 2009, OneGeology-Europe Scientific/Semantic Data Specification and Dictionaries, ECP-2007-GEO-317001"^^xsd:string ;
+      skos:historyNote "Ontology created by SM Richard. Links to ICS time scale. This ontology only defines the Epochs that extend the Precambrian time scale, defined by Fenno Scandian Geological Surveys. "^^xsd:string ;
+      skos:prefLabel "One Geology Europe Precambrian Epoch definitions for Fenno-Scandian Shield"^^xsd:string .
+
+<http://resource.geosciml.org/vocabulary/timescale/1GE_PCExtension>
+      rdf:type owl:Ontology ;
+      rdfs:label "One Geology Europe Precambrian Epoch definitions for Fenno-Scandian Shield"^^xsd:string ;
+      dc:creator "Stephen M Richard"^^xsd:string ;
+      dc:source "Definitions extracted from Asch, Kristine and WP3 Core Team, 31 July 2009, OneGeology-Europe Scientific/Semantic Data Specification and Dictionaries, ECP-2007-GEO-317001"^^xsd:string , "KOISTINEN, T., STEPHENS, M.B., BOGATCHEV, V., NORDGULEN, O., WENNERSTRÖM, M., KORHONEN, J., 2001. Geological map of Fennoscandian Shield, scale 1:2 000 000. Geological Surveys of Finland, Norway and Sweden and the North-West Department of Natural Resources of Russia"^^xsd:string ;
+      owl:imports <http://resource.geosciml.org/ontology/timescale/gts> ;
+      owl:priorVersion <https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201305/Geoscience/GeologicTimeScale/1GE_PCExtension.rdf> ;
+      owl:versionIRI <https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201402/Geoscience/GeologicTimeScale/1GE_PCExtension.rdf> ;
+      skos:historyNote "Ontology created by SM Richard. Links to ICS time scale. This ontology only defines the Epochs that extend the Precambrian time scale, defined by Fenno Scandian Geological Surveys. "^^xsd:string .

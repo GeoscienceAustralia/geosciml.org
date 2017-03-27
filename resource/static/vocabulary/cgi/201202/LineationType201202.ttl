@@ -1,0 +1,903 @@
+@prefix cgi: <http://resource.geosciml.org/classifierscheme/cgi/201202/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix lineationtype: <http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype#> .
+@prefix : <http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype> .
+
+<http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype> rdf:type owl:Ontology ;
+                                                                         
+                                                                         dc:format "text/turtle" ;
+                                                                         
+                                                                         owl:versionInfo "201202" ;
+                                                                         
+                                                                         dc:title "CGI Lineation Type Categories"@en ;
+                                                                         
+                                                                         dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                         
+                                                                         dc:publisher "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                         
+                                                                         dc:language "en"@en ;
+                                                                         
+                                                                         dc:identifier "http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype" .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+
+dc:publisher rdf:type owl:AnnotationProperty .
+
+
+
+dc:language rdf:type owl:AnnotationProperty .
+
+
+
+dc:identifier rdf:type owl:AnnotationProperty .
+
+
+
+dc:source rdf:type owl:AnnotationProperty .
+
+
+
+dc:format rdf:type owl:AnnotationProperty .
+
+
+
+dc:title rdf:type owl:AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+
+owl:topObjectProperty rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+
+skos:broader rdf:type owl:ObjectProperty ;
+             
+             rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#exactMatch
+
+skos:exactMatch rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+
+skos:inScheme rdf:type owl:ObjectProperty ;
+              
+              rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#narrower
+
+skos:narrower rdf:type owl:ObjectProperty ;
+              
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              
+              owl:inverseOf skos:broader .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#topConceptOf
+
+skos:topConceptOf rdf:type owl:ObjectProperty ;
+                  
+                  rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+
+rdf:value rdf:type owl:DatatypeProperty ;
+          
+          rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.w3.org/2002/07/owl#topDataProperty
+
+owl:topDataProperty rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+
+skos:definition rdf:type owl:DatatypeProperty ;
+                
+                rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#historyNote
+
+skos:historyNote rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+
+skos:prefLabel rdf:type owl:DatatypeProperty ;
+               
+               rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+
+owl:Thing rdf:type owl:Class .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+
+skos:Concept rdf:type owl:Class ;
+             
+             rdfs:subClassOf owl:Thing .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+
+skos:ConceptScheme rdf:type owl:Class ;
+                   
+                   rdfs:subClassOf owl:Thing .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/0001
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/0001> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/0002
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/0002> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/0003
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/0003> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/0004
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/0004> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/0005
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/0005> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/0006
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/0006> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/0007
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/0007> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/0008
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/0008> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/0009
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/0009> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/0010
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/0010> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/0011
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/0011> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/0012
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/0012> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/0013
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/0013> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/0014
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/0014> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/0015
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/0015> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/0016
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/0016> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/0017
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/0017> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/0018
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/0018> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/0019
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/0019> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/0020
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/0020> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/0021
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/0021> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/0022
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/0022> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/augen_lineation
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/augen_lineation> rdf:type owl:NamedIndividual ,
+                                                                                     owl:Thing ,
+                                                                                     skos:Concept ;
+                                                                            
+                                                                            dc:source "this vocabulary" ;
+                                                                            
+                                                                            skos:definition "A shape lineation defined by elongate augen."@en ;
+                                                                            
+                                                                            skos:prefLabel "Augen lineation"@en ;
+                                                                            
+                                                                            dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                            
+                                                                            skos:exactMatch <http://resource.geosciml.org/classifier/cgi/lineationtype/0001> ;
+                                                                            
+                                                                            skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/particle_shape_lineation> ,
+                                                                                         <http://resource.geosciml.org/classifier/cgi/lineationtype/tectonic_lineation> ;
+                                                                            
+                                                                            skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/bedding_cleavage_intersection_lineation
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/bedding_cleavage_intersection_lineation> rdf:type owl:NamedIndividual ,
+                                                                                                             owl:Thing ,
+                                                                                                             skos:Concept ;
+                                                                                                    
+                                                                                                    skos:prefLabel "Bedding cleavage intersection lineation"@en ;
+                                                                                                    
+                                                                                                    dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                                                    
+                                                                                                    skos:definition "Lineation defined by the intersection of bedding surfaces and cleavage surfaces."@en ;
+                                                                                                    
+                                                                                                    dc:source "this vocabulary" ;
+                                                                                                    
+                                                                                                    skos:exactMatch <http://resource.geosciml.org/classifier/cgi/lineationtype/0002> ;
+                                                                                                    
+                                                                                                    skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/intersection_lineation> ,
+                                                                                                                 <http://resource.geosciml.org/classifier/cgi/lineationtype/tectonic_lineation> ;
+                                                                                                    
+                                                                                                    skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/biotite_mineral_lineation
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/biotite_mineral_lineation> rdf:type owl:NamedIndividual ,
+                                                                                               owl:Thing ,
+                                                                                               skos:Concept ;
+                                                                                      
+                                                                                      dc:source "this vocabulary" ;
+                                                                                      
+                                                                                      skos:prefLabel "Biotite mineral lineation"@en ;
+                                                                                      
+                                                                                      dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                                      
+                                                                                      skos:definition "Mineral lineation defined by aligned elongate biotite aggregates in a foliation surface. Biotite does not have an elongate (prismatic, acicular) mineral habit, so production of lineation must reflect elongate aggregates of biotite crystals."@en ;
+                                                                                      
+                                                                                      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/lineationtype/0003> ;
+                                                                                      
+                                                                                      skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/mineral_lineation> ;
+                                                                                      
+                                                                                      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/cleavage_intersection_lineation
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/cleavage_intersection_lineation> rdf:type owl:NamedIndividual ,
+                                                                                                     owl:Thing ,
+                                                                                                     skos:Concept ;
+                                                                                            
+                                                                                            skos:prefLabel "Cleavage intersection lineation"@en ;
+                                                                                            
+                                                                                            dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                                            
+                                                                                            skos:definition "Lineation defined by the intersection of two cleavages."@en ;
+                                                                                            
+                                                                                            dc:source "this vocabulary" ;
+                                                                                            
+                                                                                            skos:exactMatch <http://resource.geosciml.org/classifier/cgi/lineationtype/0004> ;
+                                                                                            
+                                                                                            skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/intersection_lineation> ,
+                                                                                                         <http://resource.geosciml.org/classifier/cgi/lineationtype/tectonic_lineation> ;
+                                                                                            
+                                                                                            skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/crenulation_lineation
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/crenulation_lineation> rdf:type owl:NamedIndividual ,
+                                                                                           owl:Thing ,
+                                                                                           skos:Concept ;
+                                                                                  
+                                                                                  dc:source "this vocabulary" ;
+                                                                                  
+                                                                                  dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                                  
+                                                                                  skos:prefLabel "Crenulation lineation"@en ;
+                                                                                  
+                                                                                  skos:definition "Lineation defined by small-scale wrinkles, typically of phylosillicate minerals, on another surface, typically a cleavage or schistosity. Use instead of intersection lineation if the wrinkles are the measured feature and the intersecting planar feature is not apparent."@en ;
+                                                                                  
+                                                                                  skos:exactMatch <http://resource.geosciml.org/classifier/cgi/lineationtype/0005> ;
+                                                                                  
+                                                                                  skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/lineation> ,
+                                                                                               <http://resource.geosciml.org/classifier/cgi/lineationtype/tectonic_lineation> ;
+                                                                                  
+                                                                                  skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/flow_lineation
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/flow_lineation> rdf:type owl:NamedIndividual ,
+                                                                                    owl:Thing ,
+                                                                                    skos:Concept ;
+                                                                           
+                                                                           skos:definition "A linear alignment of fabric elements, especially elongate or rod-shaped minerals, interpreted to have been aligned by flow of magma, lava, pyroclastic material, or diapiric flow of sedimentary rock."@en ;
+                                                                           
+                                                                           dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                           
+                                                                           dc:source "Geoscience Victoria, Australia" ;
+                                                                           
+                                                                           skos:prefLabel "Flow lineation"@en ;
+                                                                           
+                                                                           skos:exactMatch <http://resource.geosciml.org/classifier/cgi/lineationtype/0006> ;
+                                                                           
+                                                                           skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/lineation> ;
+                                                                           
+                                                                           skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/hornblende_mineral_lineation
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/hornblende_mineral_lineation> rdf:type owl:NamedIndividual ,
+                                                                                                  owl:Thing ,
+                                                                                                  skos:Concept ;
+                                                                                         
+                                                                                         dc:source "this vocabulary" ;
+                                                                                         
+                                                                                         dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                                         
+                                                                                         skos:prefLabel "Hornblende mineral lineation"@en ;
+                                                                                         
+                                                                                         skos:definition "Mineral lineation defined by aligned hornblende crystals."@en ;
+                                                                                         
+                                                                                         skos:exactMatch <http://resource.geosciml.org/classifier/cgi/lineationtype/0007> ;
+                                                                                         
+                                                                                         skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/mineral_lineation> ;
+                                                                                         
+                                                                                         skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/igneous_lineation
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/igneous_lineation> rdf:type owl:NamedIndividual ,
+                                                                                       owl:Thing ,
+                                                                                       skos:Concept ;
+                                                                              
+                                                                              dc:source "this vocabulary" ;
+                                                                              
+                                                                              dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                              
+                                                                              skos:prefLabel "Igneous lineation"@en ;
+                                                                              
+                                                                              skos:definition "Lineation defined by alignment of elongate fabric elements formed in lava or magma before complete crystallization. Some typical fabric elements are elongate phenocrysts and vesicles."@en ;
+                                                                              
+                                                                              skos:exactMatch <http://resource.geosciml.org/classifier/cgi/lineationtype/0008> ;
+                                                                              
+                                                                              skos:narrower <http://resource.geosciml.org/classifier/cgi/lineationtype/igneous_mineral_lineation> ,
+                                                                                            <http://resource.geosciml.org/classifier/cgi/lineationtype/igneous_particle_shape_lineation> ,
+                                                                                            <http://resource.geosciml.org/classifier/cgi/lineationtype/igneous_vesicle_lineation> ;
+                                                                              
+                                                                              skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/lineation> ;
+                                                                              
+                                                                              skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/igneous_mineral_lineation
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/igneous_mineral_lineation> rdf:type owl:NamedIndividual ,
+                                                                                               owl:Thing ,
+                                                                                               skos:Concept ;
+                                                                                      
+                                                                                      dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                                      
+                                                                                      skos:prefLabel "Igneous mineral lineation"@en ;
+                                                                                      
+                                                                                      dc:source "this vocabulary" ;
+                                                                                      
+                                                                                      skos:definition "Lineation in igneous rock defined by aligned crystals where there is evidence that the crystal alignment is related to process occurring before the rock was solidified."@en ;
+                                                                                      
+                                                                                      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/lineationtype/0009> ;
+                                                                                      
+                                                                                      skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/igneous_lineation> ,
+                                                                                                   <http://resource.geosciml.org/classifier/cgi/lineationtype/mineral_lineation> ;
+                                                                                      
+                                                                                      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/igneous_particle_shape_lineation
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/igneous_particle_shape_lineation> rdf:type owl:NamedIndividual ,
+                                                                                                      owl:Thing ,
+                                                                                                      skos:Concept ;
+                                                                                             
+                                                                                             dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                                             
+                                                                                             skos:prefLabel "Igneous particle shape lineation"@en ;
+                                                                                             
+                                                                                             skos:definition "Lineation in an igneous rock, usually welded tuff, defined by elongate objects in the rock (usually pumice pads, also elongate crystals). Descriptive--elogation may be due to deformation or to rotation/alignment of originally elongate (prolate ellipsoid) objects in the rock."@en ;
+                                                                                             
+                                                                                             dc:source "this vocabulary" ;
+                                                                                             
+                                                                                             skos:exactMatch <http://resource.geosciml.org/classifier/cgi/lineationtype/0010> ;
+                                                                                             
+                                                                                             skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/igneous_lineation> ,
+                                                                                                          <http://resource.geosciml.org/classifier/cgi/lineationtype/particle_shape_lineation> ;
+                                                                                             
+                                                                                             skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/igneous_vesicle_lineation
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/igneous_vesicle_lineation> rdf:type owl:NamedIndividual ,
+                                                                                               owl:Thing ,
+                                                                                               skos:Concept ;
+                                                                                      
+                                                                                      dc:source "this vocabulary" ;
+                                                                                      
+                                                                                      dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                                      
+                                                                                      skos:prefLabel "Igneous vesicle lineation"@en ;
+                                                                                      
+                                                                                      skos:definition "lineation defined in a volcanic rock by aligned elongation direction of vesicles."@en ;
+                                                                                      
+                                                                                      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/lineationtype/0011> ;
+                                                                                      
+                                                                                      skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/igneous_lineation> ;
+                                                                                      
+                                                                                      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/intersection_lineation
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/intersection_lineation> rdf:type owl:NamedIndividual ,
+                                                                                            owl:Thing ,
+                                                                                            skos:Concept ;
+                                                                                   
+                                                                                   skos:definition "A lineation produced by the intersection of two planar fabrics."@en ;
+                                                                                   
+                                                                                   dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                                   
+                                                                                   skos:prefLabel "Intersection lineation"@en ;
+                                                                                   
+                                                                                   dc:source "Neuendorf et al 2005; this vocabulary" ;
+                                                                                   
+                                                                                   skos:exactMatch <http://resource.geosciml.org/classifier/cgi/lineationtype/0012> ;
+                                                                                   
+                                                                                   skos:narrower <http://resource.geosciml.org/classifier/cgi/lineationtype/bedding_cleavage_intersection_lineation> ,
+                                                                                                 <http://resource.geosciml.org/classifier/cgi/lineationtype/cleavage_intersection_lineation> ;
+                                                                                   
+                                                                                   skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/lineation> ;
+                                                                                   
+                                                                                   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/lineation
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/lineation> rdf:type owl:NamedIndividual ,
+                                                                               owl:Thing ,
+                                                                               skos:Concept ;
+                                                                      
+                                                                      dc:source "Neuendorf et al 2005; this vocabulary" ;
+                                                                      
+                                                                      dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                      
+                                                                      skos:prefLabel "Lineation"@en ;
+                                                                      
+                                                                      skos:definition "Nongenetic term for a penetrative linear structure."@en ;
+                                                                      
+                                                                      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/lineationtype/0013> ;
+                                                                      
+                                                                      skos:narrower <http://resource.geosciml.org/classifier/cgi/lineationtype/crenulation_lineation> ,
+                                                                                    <http://resource.geosciml.org/classifier/cgi/lineationtype/flow_lineation> ,
+                                                                                    <http://resource.geosciml.org/classifier/cgi/lineationtype/igneous_lineation> ,
+                                                                                    <http://resource.geosciml.org/classifier/cgi/lineationtype/intersection_lineation> ,
+                                                                                    <http://resource.geosciml.org/classifier/cgi/lineationtype/particle_shape_lineation> ,
+                                                                                    <http://resource.geosciml.org/classifier/cgi/lineationtype/pencil_lineation> ,
+                                                                                    <http://resource.geosciml.org/classifier/cgi/lineationtype/rodding_lineation> ,
+                                                                                    <http://resource.geosciml.org/classifier/cgi/lineationtype/slickenline> ,
+                                                                                    <http://resource.geosciml.org/classifier/cgi/lineationtype/tectonic_lineation> ;
+                                                                      
+                                                                      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype> ;
+                                                                      
+                                                                      skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/mineral_lineation
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/mineral_lineation> rdf:type owl:NamedIndividual ,
+                                                                                       owl:Thing ,
+                                                                                       skos:Concept ;
+                                                                              
+                                                                              dc:source "Neuendorf et al 2005; this vocabulary" ;
+                                                                              
+                                                                              dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                              
+                                                                              skos:definition "Lineation defined by alignment of elongate crystals that have a prismatic crystal habit or of monomineralic grain aggregates."@en ;
+                                                                              
+                                                                              skos:prefLabel "Mineral lineation"@en ;
+                                                                              
+                                                                              skos:exactMatch <http://resource.geosciml.org/classifier/cgi/lineationtype/0014> ;
+                                                                              
+                                                                              skos:narrower <http://resource.geosciml.org/classifier/cgi/lineationtype/biotite_mineral_lineation> ,
+                                                                                            <http://resource.geosciml.org/classifier/cgi/lineationtype/hornblende_mineral_lineation> ,
+                                                                                            <http://resource.geosciml.org/classifier/cgi/lineationtype/igneous_mineral_lineation> ;
+                                                                              
+                                                                              skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/particle_shape_lineation> ;
+                                                                              
+                                                                              skos:narrower <http://resource.geosciml.org/classifier/cgi/lineationtype/sillimanite_mineral_lineation> ;
+                                                                              
+                                                                              skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/particle_shape_lineation
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/particle_shape_lineation> rdf:type owl:NamedIndividual ,
+                                                                                              owl:Thing ,
+                                                                                              skos:Concept ;
+                                                                                     
+                                                                                     dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                                     
+                                                                                     skos:definition "Lineation defined by alignment of long axes of prolate-shaped particles such as clasts, fossils, crystals, or phenocrysts. Particles may be polycrystalline aggregates formed by deformation of pre-existing particles. General category does not specify genesis of particles or their alignment."@en ;
+                                                                                     
+                                                                                     skos:prefLabel "Particle shape lineation"@en ;
+                                                                                     
+                                                                                     dc:source "this vocabulary" ;
+                                                                                     
+                                                                                     skos:exactMatch <http://resource.geosciml.org/classifier/cgi/lineationtype/0015> ;
+                                                                                     
+                                                                                     skos:narrower <http://resource.geosciml.org/classifier/cgi/lineationtype/augen_lineation> ,
+                                                                                                   <http://resource.geosciml.org/classifier/cgi/lineationtype/igneous_particle_shape_lineation> ;
+                                                                                     
+                                                                                     skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/lineation> ;
+                                                                                     
+                                                                                     skos:narrower <http://resource.geosciml.org/classifier/cgi/lineationtype/mineral_lineation> ,
+                                                                                                   <http://resource.geosciml.org/classifier/cgi/lineationtype/quartz_fibre_lineation> ,
+                                                                                                   <http://resource.geosciml.org/classifier/cgi/lineationtype/stretching_lineation> ;
+                                                                                     
+                                                                                     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/pencil_lineation
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/pencil_lineation> rdf:type owl:NamedIndividual ,
+                                                                                      owl:Thing ,
+                                                                                      skos:Concept ;
+                                                                             
+                                                                             dc:source "based on Neuendorf et al 2005" ;
+                                                                             
+                                                                             dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                             
+                                                                             skos:definition "Lineation defined by tendency of rock to break into long, slender pieces resembling pencils. Typically produced by intesection of bedding and cleavage or intersection of two cleavages. Fabric is generally only observed in weakly metamorphosed rocks."@en ;
+                                                                             
+                                                                             skos:prefLabel "Pencil lineation"@en ;
+                                                                             
+                                                                             skos:exactMatch <http://resource.geosciml.org/classifier/cgi/lineationtype/0016> ;
+                                                                             
+                                                                             skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/lineation> ;
+                                                                             
+                                                                             skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/quartz_fibre_lineation
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/quartz_fibre_lineation> rdf:type owl:NamedIndividual ,
+                                                                                            owl:Thing ,
+                                                                                            skos:Concept ;
+                                                                                   
+                                                                                   dc:source "this vocabulary" ;
+                                                                                   
+                                                                                   skos:definition "Aligned quartz fibres that define a measurable lineation"@en ;
+                                                                                   
+                                                                                   dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                                   
+                                                                                   skos:prefLabel "Quartz fibre lineation"@en ;
+                                                                                   
+                                                                                   skos:exactMatch <http://resource.geosciml.org/classifier/cgi/lineationtype/0017> ;
+                                                                                   
+                                                                                   skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/particle_shape_lineation> ;
+                                                                                   
+                                                                                   skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/rodding_lineation
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/rodding_lineation> rdf:type owl:NamedIndividual ,
+                                                                                       owl:Thing ,
+                                                                                       skos:Concept ;
+                                                                              
+                                                                              dc:source "Jackson 1997" ;
+                                                                              
+                                                                              dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                              
+                                                                              skos:definition "Linear structure in metamorphic rocks in which the stronger parts have been shaped into parallel rods (eg. vein quartz)"@en ;
+                                                                              
+                                                                              skos:prefLabel "Rodding lineation"@en ;
+                                                                              
+                                                                              skos:exactMatch <http://resource.geosciml.org/classifier/cgi/lineationtype/0018> ;
+                                                                              
+                                                                              skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/lineation> ,
+                                                                                           <http://resource.geosciml.org/classifier/cgi/lineationtype/tectonic_lineation> ;
+                                                                              
+                                                                              skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/sillimanite_mineral_lineation
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/sillimanite_mineral_lineation> rdf:type owl:NamedIndividual ,
+                                                                                                   owl:Thing ,
+                                                                                                   skos:Concept ;
+                                                                                          
+                                                                                          dc:source "this vocabulary" ;
+                                                                                          
+                                                                                          dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                                          
+                                                                                          skos:definition "Mineral lineation defined by aligned sillimanite crystals."@en ;
+                                                                                          
+                                                                                          skos:prefLabel "Sillimanite mineral lineation"@en ;
+                                                                                          
+                                                                                          skos:exactMatch <http://resource.geosciml.org/classifier/cgi/lineationtype/0019> ;
+                                                                                          
+                                                                                          skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/mineral_lineation> ;
+                                                                                          
+                                                                                          skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/slickenline
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/slickenline> rdf:type owl:NamedIndividual ,
+                                                                                 owl:Thing ,
+                                                                                 skos:Concept ;
+                                                                        
+                                                                        dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                        
+                                                                        skos:definition "Lineation on a brittle slip surface defined by grooves, ridges, or striations"@en ;
+                                                                        
+                                                                        dc:source "based on Neuendorf et al 2005" ;
+                                                                        
+                                                                        skos:prefLabel "Slickenline"@en ;
+                                                                        
+                                                                        skos:exactMatch <http://resource.geosciml.org/classifier/cgi/lineationtype/0020> ;
+                                                                        
+                                                                        skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/lineation> ,
+                                                                                     <http://resource.geosciml.org/classifier/cgi/lineationtype/tectonic_lineation> ;
+                                                                        
+                                                                        skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/stretching_lineation
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/stretching_lineation> rdf:type owl:NamedIndividual ,
+                                                                                          owl:Thing ,
+                                                                                          skos:Concept ;
+                                                                                 
+                                                                                 dc:source "this vocabulary" ;
+                                                                                 
+                                                                                 dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                                 
+                                                                                 skos:definition "Lineation defined by elongate (prolate) fabric elements in which the alignment of the fabric elements, and the formation of prolate fabric elements is interpreted to be the product of crystal plastic deformation processes. Associated with mylontic foliation."@en ;
+                                                                                 
+                                                                                 skos:prefLabel "Stretching lineation"@en ;
+                                                                                 
+                                                                                 skos:exactMatch <http://resource.geosciml.org/classifier/cgi/lineationtype/0021> ;
+                                                                                 
+                                                                                 skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/particle_shape_lineation> ,
+                                                                                              <http://resource.geosciml.org/classifier/cgi/lineationtype/tectonic_lineation> ;
+                                                                                 
+                                                                                 skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/lineationtype/tectonic_lineation
+
+<http://resource.geosciml.org/classifier/cgi/lineationtype/tectonic_lineation> rdf:type owl:NamedIndividual ,
+                                                                                        owl:Thing ,
+                                                                                        skos:Concept ;
+                                                                               
+                                                                               dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                               
+                                                                               dc:source "this vocabulary" ;
+                                                                               
+                                                                               skos:definition "Penetrative linear structure in a rock body defined by fabric elements that are the product of tectonic processes. Linear is used in the sense that the orientation of the structure can be represented as a line in some sufficiently small neighborhood of any point in the material containig the fabric. Penetrative denotes that the fabric elements defining the structure are repeated at distances so small, compared with the scale of the whole…that they can be considered to pervade it uniformly and be present at every point (paraphrase of Turner and Weiss, 1963, p. 21)."@en ;
+                                                                               
+                                                                               skos:prefLabel "Tectonic lineation"@en ;
+                                                                               
+                                                                               skos:exactMatch <http://resource.geosciml.org/classifier/cgi/lineationtype/0022> ;
+                                                                               
+                                                                               skos:narrower <http://resource.geosciml.org/classifier/cgi/lineationtype/augen_lineation> ,
+                                                                                             <http://resource.geosciml.org/classifier/cgi/lineationtype/bedding_cleavage_intersection_lineation> ,
+                                                                                             <http://resource.geosciml.org/classifier/cgi/lineationtype/cleavage_intersection_lineation> ,
+                                                                                             <http://resource.geosciml.org/classifier/cgi/lineationtype/crenulation_lineation> ;
+                                                                               
+                                                                               skos:broader <http://resource.geosciml.org/classifier/cgi/lineationtype/lineation> ;
+                                                                               
+                                                                               skos:narrower <http://resource.geosciml.org/classifier/cgi/lineationtype/rodding_lineation> ,
+                                                                                             <http://resource.geosciml.org/classifier/cgi/lineationtype/slickenline> ,
+                                                                                             <http://resource.geosciml.org/classifier/cgi/lineationtype/stretching_lineation> ;
+                                                                               
+                                                                               skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype> .
+
+
+
+###  http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype
+
+<http://resource.geosciml.org/classifierscheme/cgi/201202/lineationtype> rdf:type owl:NamedIndividual ,
+                                                                                  owl:Thing ,
+                                                                                  skos:ConceptScheme ;
+                                                                         
+                                                                         skos:historyNote "2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en ,
+                                                                                          "2010-11-28 SMR Replace URN with http URI according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)"@en ,
+                                                                                          "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en ,
+                                                                                          "2012-02-27 SMR add skos:exactMatch triples relating uris to number-token URI from 201012 version."@en ,
+                                                                                          "2012-05-01 GD fix EOF encoding and declare topConcept in the conceptScheme"@en ;
+                                                                         
+                                                                         skos:prefLabel "CGI Lineation Type Categories"@en ;
+                                                                         
+                                                                         skos:definition "This file contains the CGI Lineation Type vocabulary. Vocabulary for populating Lineation Type properties in GeoSciML GeologicStructure/Lineation elements."@en ;
+                                                                         skos:hasTopConcept <http://resource.geosciml.org/classifier/cgi/lineationtype/lineation> .
+
+
+
+
+
+###  Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net
+

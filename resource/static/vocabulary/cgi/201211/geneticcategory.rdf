@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:cgi="http://resource.geosciml.org/classifierscheme/cgi/201211/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:gencat="http://resource.geosciml.org/classifier/cgi/geneticcategory/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:void="http://rdfs.org/ns/void#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">geologic genetic category concepts</rdfs:label>
+	<skos:definition xml:lang="en">This resource defines the concept space for geologic genetic category concepts by extension; it includes all concepts in this conceptScheme, as well as concepts in previous versions of the scheme.</skos:definition>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_metasomatic_or_hydrothermal_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/composite_process_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/local_metamorphic_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_extrusive_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/deformation_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/cataclastic_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/ductile_deformation_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/clastic_sedimentary_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/volcaniclastic_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/sedimentary_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_sedimentary_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/hypabyssal_intrusive_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metasedimentary_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/subaqueous_extrusive_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/impact_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metaigneous_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metavolcanic_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/contact_metamorphic_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metaplutonic_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/anthropogenic_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metasomatic_or_hydrothermal_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/dislocation_metamorphic_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/biological_sedimentary_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/plutonic_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/weathering_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/regional_metamorphic_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_intrusive_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/diagenetic_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/chemical_sedimentary_genesis"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/subaerial_extrusive_genesis"/>
+	<skos:prefLabel xml:lang="en">CGI Genetic Category</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/anthropogenic_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source xml:lang="en">This vocabulary</dc:source>
+	<skos:definition>Formation predominantly by human activity.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0001"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">anthropogenic genesis</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/biological_sedimentary_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source xml:lang="en">This vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/sedimentary_genesis"/>
+	<skos:definition>Formation predominantly by deposition of material produced by living organisms either as part of their body (e.g., exoskeleton, bone, pollen, wood) or through their activities (e.g., faecal pellets).</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0002"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">biological sedimentary genesis</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/cataclastic_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source>based on Neuendorf et al 2005</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/deformation_genesis"/>
+	<skos:definition>Formation predominantly by brittle deformation, i.e. the formation and growth of fractures and frictional sliding along fracture surfaces.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0003"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">cataclastic genesis</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/chemical_sedimentary_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source xml:lang="en">This vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/sedimentary_genesis"/>
+	<skos:definition>Formation predominantly by direct chemical precipitation (e.g., evaporites, exhalative deposits).</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0004"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">chemical sedimentary genesis</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/clastic_sedimentary_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source xml:lang="en">This vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/sedimentary_genesis"/>
+	<skos:definition>Formation predominantly by accumulation of particles (clasts) derived by weathering, erosion, or fragmentation of pre-existing rock or produced by chemical or biologically-mediated precipitation.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0005"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">clastic sedimentary genesis</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/composite_process_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source xml:lang="en">This vocabulary</dc:source>
+	<skos:definition>Formation in which more than one genetic process is dominant. This usually involves some combination of igneous, weathering, sedimentary, metamorphic, deformation or impact-related processes that better represents the origin of the material</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0006"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_metasomatic_or_hydrothermal_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/impact_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/weathering_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/deformation_genesis"/>
+	<skos:prefLabel xml:lang="en">composite process genesis</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/contact_metamorphic_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source>based on Smulikowski et al, 2003</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_genesis"/>
+	<skos:definition>Formation predominantly by metamorphism due to the effect of a magma body on the rocks it intrudes.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0007"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">contact metamorphic genesis</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/deformation_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source xml:lang="en">This vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/composite_process_genesis"/>
+	<skos:definition>Formation predominantly by strain-related processes resulting in changes of shape of a rock body, including folding, faulting, shearing, or fabric development; deformation may be either brittle or ductile. Local deformation metamorphic genesis related to a particular fault or shear zone is categorized as 'Dislocation metamorphic genesis'</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0008"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/ductile_deformation_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/dislocation_metamorphic_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/cataclastic_genesis"/>
+	<skos:prefLabel xml:lang="en">deformation genesis</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/diagenetic_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source xml:lang="en">This vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/sedimentary_genesis"/>
+	<skos:definition>Formation predominantly by chemical and physical changes subsequent to deposition of sediment, during and after lithification that occur under temperature and pressure conditions too low to be considered metamorphic.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0009"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">diagenetic genesis</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/dislocation_metamorphic_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source>based on Smulikowski et al, 2003</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/local_metamorphic_genesis"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/deformation_genesis"/>
+	<skos:definition>Formation predominantly by metamorphism of local extent associated with fault zones or shear zones. 'Dislocation metamorphic genesis' is 'Deformation genesis' of local extent, explicitly associated with a particular fault or shear zone.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0010"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">dislocation metamorphic genesis</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/ductile_deformation_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source xml:lang="en">This vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/deformation_genesis"/>
+	<skos:definition>Formation predominantly by deformation without loss of material continuity at the scale of observation.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0011"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">ductile deformation genesis</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/hypabyssal_intrusive_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source xml:lang="en">This vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_intrusive_genesis"/>
+	<skos:definition>Formed by crystallisation close to the Earth's surface, characterized by more rapid cooling than plutonic setting to produce generally fine-grained intrusive igneous rock, commonly associated with co-magmatic volcanic rocks.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0012"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">hypabyssal intrusive genesis</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_extrusive_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source xml:lang="en">This vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_genesis"/>
+	<skos:definition>Formation predominantly by crystallisation of magma at or immediately adjacent to Earth's surface.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0013"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/subaqueous_extrusive_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/subaerial_extrusive_genesis"/>
+	<skos:prefLabel xml:lang="en">igneous extrusive genesis</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source xml:lang="en">This vocabulary</dc:source>
+	<skos:definition>Formation predominantly by crystallisation from magma</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0014"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_intrusive_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_extrusive_genesis"/>
+	<skos:prefLabel xml:lang="en">igneous genesis</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_intrusive_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source xml:lang="en">This vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_genesis"/>
+	<skos:definition>Formation predominantly by crystallisation of magma within the Earth.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0015"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/plutonic_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/hypabyssal_intrusive_genesis"/>
+	<skos:prefLabel xml:lang="en">igneous intrusive genesis</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_sedimentary_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source xml:lang="en">This vocabulary</dc:source>
+	<skos:definition>Formation by a combination of igneous and sedimentary processes</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0016"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/volcaniclastic_genesis"/>
+	<skos:prefLabel xml:lang="en">igneous sedimentary genesis</skos:prefLabel>
+	<skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/sedimentary_genesis"/>
+	<skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_genesis"/>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/impact_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source>Smulikowski et al, 2003</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/composite_process_genesis"/>
+	<skos:definition>Formation predominantly by metamorphism related to the passage of a shock wave through a body of material, typically the result of impact of a planetary body (impactor) on a planetary surface (target)</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0017"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">impact genesis</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/local_metamorphic_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source>Smulikowski et al, 2003</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_genesis"/>
+	<skos:definition>Formation predominantly by metamorphism that may be attributed to a localized cause, such as magmatic intrusion, faulting, metorite impact, combustion of naturally occuring substances (coal), or lightning.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0018"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/dislocation_metamorphic_genesis"/>
+	<skos:prefLabel xml:lang="en">local metamorphic genesis</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/metaigneous_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source xml:lang="en">This vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_genesis"/>
+	<skos:definition>Formation by metamorphism of an igneous protolith</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0019"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metavolcanic_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metaplutonic_genesis"/>
+	<skos:prefLabel xml:lang="en">metaigneous genesis</skos:prefLabel>
+	<skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source>based on Neuendorf et al. 2005</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_metasomatic_or_hydrothermal_genesis"/>
+	<skos:definition>Formation predominantly by closed-system changes in mineralogy, texture, or fabric of a rock in response to chemical and physical conditions that have been imposed below the surface zones of weathering and cementation (diagenesis), and that differ from the conditions under which the rocks in question originated. As defined here the changes in rock volume may include removal of some chemical constituents from the system (especially water and other volatile constituents). Note narrower use that Neuendorf et al. 2005; this vocabulary distinguishes metasomatism from metamorphism.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0020"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/local_metamorphic_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metasedimentary_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metaigneous_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/regional_metamorphic_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/contact_metamorphic_genesis"/>
+	<skos:prefLabel xml:lang="en">metamorphic genesis</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_metasomatic_or_hydrothermal_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source xml:lang="en">This vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/composite_process_genesis"/>
+	<skos:definition>Formation predominantly by changes in chemical, mineralogical, or structural properties of rocks in response to chemical and physical conditions that have been imposed below the surface zones of weathering and cementation (diagenesis), and that differ from the conditions under which the rocks in question originated.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0021"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metasomatic_or_hydrothermal_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_genesis"/>
+	<skos:prefLabel xml:lang="en">metamorphic metasomatic or hydrothermal genesis</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/metaplutonic_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source xml:lang="en">This vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metaigneous_genesis"/>
+	<skos:definition>Formation by metamorphism of a plutonic igneous protolith.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0022"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">metaplutonic genesis</skos:prefLabel>
+	<skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/plutonic_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/metasedimentary_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source xml:lang="en">This vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_genesis"/>
+	<skos:definition>Formation by metamorphism of a sedimentary protolith.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0023"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">metasedimentary genesis</skos:prefLabel>
+	<skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/sedimentary_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/metasomatic_or_hydrothermal_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source>based on Neuendorf et al 2005</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_metasomatic_or_hydrothermal_genesis"/>
+	<skos:definition>Formation predominantly by open-system changes in chemical composition by reaction with an external source, typically involving chemical transport by a fluid medium flowing through the rock. Metasomatism typically involves introduction of chemical constituents into a rock volume.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0024"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">metasomatic or hydrothermal genesis</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/metavolcanic_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source xml:lang="en">This vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metaigneous_genesis"/>
+	<skos:definition>Formation by metamorphism of an extrusive igneous protolith.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0025"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">metavolcanic genesis</skos:prefLabel>
+	<skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_extrusive_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/plutonic_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source xml:lang="en">This vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_intrusive_genesis"/>
+	<skos:definition>Formation predominantly by crystallisation of magma far enough below Earth surface that complete crystallization of magma bodies forms holocrystalline medium to coarse grained igneous rock, wall rocks generally do not include volcanic products related to the magma, and some contact metamorphism is developed at intrusive contacts.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0026"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">plutonic genesis</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/regional_metamorphic_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source>Smulikowski et al, 2003</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/metamorphic_genesis"/>
+	<skos:definition>Formation predominantly by metamorphic processes affecting a large rock volume, associated with large-scale tectonic processes.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0027"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">regional metamorphic genesis</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/sedimentary_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source xml:lang="en">This vocabulary</dc:source>
+	<skos:definition>Formation predominantly by processes of erosion, mass wasting, transportation, deposition, precipitation and biogenic production that take place in Earth’s hydrosphere and atmosphere.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0028"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/biological_sedimentary_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/chemical_sedimentary_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/clastic_sedimentary_genesis"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/diagenetic_genesis"/>
+	<skos:prefLabel xml:lang="en">sedimentary genesis</skos:prefLabel>
+	<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/subaerial_extrusive_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source xml:lang="en">This vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_extrusive_genesis"/>
+	<skos:definition>Formation predominantly by crystallisation of magma either in the open air or immediately adjacent to the land surface.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0029"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">subaerial extrusive genesis</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/subaqueous_extrusive_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source xml:lang="en">This vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_extrusive_genesis"/>
+	<skos:definition>Formation predominantly by crystallisation of magma under water or ice.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0030"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">subaqueous extrusive genesis</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/volcaniclastic_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source xml:lang="en">This vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_sedimentary_genesis"/>
+	<skos:definition>Formation by a combination of extrusive igneous activity and sedimentary transport and deposition.</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0031"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">volcaniclastic genesis</skos:prefLabel>
+	<skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/sedimentary_genesis"/>
+	<skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/igneous_extrusive_genesis"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/geneticcategory/weathering_genesis">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<dc:source xml:lang="en">This vocabulary</dc:source>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/composite_process_genesis"/>
+	<skos:definition>Formation predominantly by the physical, chemical or biological alteration of rock or sediment at or near the Earth surface; connotes involvement of processes related to the atmosphere (weather...).</skos:definition>
+	<skos:exactMatch rdf:resource="http://resource.geosciml.org/classifier/cgi/geneticcategory/0032"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory"/>
+	<skos:prefLabel xml:lang="en">weathering genesis</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+	<dc:creator>Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+	<dc:format>application/rdf+xml</dc:format>
+	<dc:identifier>http://resource.geosciml.org/classifierscheme/cgi/201211/geneticcategory</dc:identifier>
+	<dc:language>en</dc:language>
+	<dc:publisher>Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:publisher>
+	<dc:title xml:lang="en">CGI Genetic category vocabulary</dc:title>
+	<owl:imports rdf:resource="http://rdfs.org/ns/void"/>
+	<owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+	<owl:versionInfo>201211</owl:versionInfo>
+	<skos:definition xml:lang="en">This file contains the CGI Genetic Category vocabulary. Categories that summarize the geologic history of an Earth material. (ie, a genetic process classifier term). Examples include igneous, sedimentary, metamorphic, shock metamorphic, volcanic, pyroclastic.</skos:definition>
+	<skos:historyNote xml:lang="en">2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme.</skos:historyNote>
+	<skos:historyNote xml:lang="en">2013-02-04 SMR Check update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types. Add missing for missing definitions.</skos:historyNote>
+	<skos:historyNote xml:lang="en">2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet.</skos:historyNote>
+	<skos:historyNote xml:lang="en">2010-02-08. SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments.</skos:historyNote>
+	<skos:historyNote xml:lang="en">2010-02-08 SMR add prefLabel strings; they were missing up to this time. Add and modify hierarchical relations to better represent concept hierachy. Add TopConcept assertions</skos:historyNote>
+	<skos:historyNote xml:lang="en">2010-02-13 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege.</skos:historyNote>
+	<skos:historyNote xml:lang="en">2009-12-07 SMR Update metadata properties for version, creator, title, and format.  Change skos:HistoryNote to dc:source for information on origin of terms and definitions.</skos:historyNote>
+	<skos:historyNote xml:lang="en">2010-11-28 SMR replace URN with http URI according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)</skos:historyNote>
+	<skos:prefLabel xml:lang="en">CGI Genetic Category vocabulary</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/vocabulary/cgi/201211/geneticcategory">
+	<rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genetic category vocabulary</rdfs:label>
+</rdf:Description>
+
+</rdf:RDF>

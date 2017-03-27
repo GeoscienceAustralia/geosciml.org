@@ -1,0 +1,561 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Title: CGI Metamorphic Facies Categories</title>
+	</head>
+	<body>
+		<style type="text/css">
+body { font-size:10pt;
+       font-style: normal;
+	   font-family: Verdana;
+	 }
+
+a {
+  	text-decoration: none;
+}
+	 
+table.ABOUT {
+	border:  1px solid #8A8;
+    margin:  2px;
+    padding: 2px;
+    margin-bottom: 10px;
+    background-color: #EEF
+}
+
+.FIELD-HEADERS {
+}
+
+.FIELD-VALUE {
+    font-weight: bold;
+    background-color: #EEF
+}
+
+.CONCEPT-FIELD {
+    background-color: #FEE;
+	white-space:nowrap;
+}
+
+.SUBHEADER {
+	font-weight: bold;
+	color: brown;
+}
+
+.SN {
+    background-color: #EEF
+}
+
+.PREF {
+    font-weight: bold;
+}
+
+.URI {
+    color: blue;
+}
+
+.conceptURI {
+    color: brown;
+}
+
+.STATUS {
+    color: darkgreen;
+}
+
+.ALT {
+}
+
+.HID {
+   color:grey
+}
+                </style>
+		<h1><a name="top"></a>CGI Metamorphic Facies Categories</h1>
+		<table class="ABOUT">
+			<tbody>
+				<tr>
+					<td class="FIELD-HEADERS">identifier:</td>
+					<td class="FIELD-VALUE">http://resource.geosciml.org/classifierscheme/cgi/201202/metamorphicfacies</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">language:</td>
+					<td class="FIELD-VALUE">en</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">format:</td>
+					<td class="FIELD-VALUE">application/rdf-xml</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">title:</td>
+					<td class="FIELD-VALUE">CGI Metamorphic Facies Categories</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">publisher:</td>
+					<td class="FIELD-VALUE">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">creator:</td>
+					<td class="FIELD-VALUE">Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="ABOUT">
+			<tbody>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege.</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">2010-11-28 SMR Replace URN identifiers with http URI identifiers according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme.</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">historyNote:</td>
+					<td class="FIELD-VALUE">2012-02-27 SMR add skos:exactMatch triples associating URIs with number token URI in 201012 version.</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">prefLabel:</td>
+					<td class="FIELD-VALUE">CGI Metamorphic Facies Categories</td>
+				</tr>
+				<tr>
+					<td class="FIELD-HEADERS">definition:</td>
+					<td class="FIELD-VALUE">This file contains the CGI metamorphic facies vocabulary; vocabulary is based on Fettes and Desmons, 2007. Use to populate metamorphic facies property in metamorphic description</td>
+				</tr>
+			</tbody>
+		</table>
+		<ul></ul><a name="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/amphibolite_metamorphic_facies"></a><h2><a href="#top">⇑</a> -- Amphibolite metamorphic facies -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/metamorphicfacies/amphibolite_metamorphic_facies</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Amphibolite metamorphic facies</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition (en)</td>
+					<td class="SN">Metamorphic facies characterized in rocks of basaltic composition by hornblende-plagioclase (plagioclase more calcic than An17).</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source ()</td>
+					<td class="SN">Smulikowski et al. 2003; Fettes and Desmons 2007</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0001">http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0001</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified">Metamorphic facies not specified</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/eclogite_metamorphic_facies"></a><h2><a href="#top">⇑</a> -- Eclogite metamorphic facies -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/metamorphicfacies/eclogite_metamorphic_facies</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Eclogite metamorphic facies</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition (en)</td>
+					<td class="SN">omphacite-garnet-quartz (no plagioclase, olivine stable with garnet); assemblage for rocks of basaltic composition</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">Fettes and Desmons 2007</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0002">http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0002</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified">Metamorphic facies not specified</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/epidote_amphibolite_metamorphic_facies"></a><h2><a href="#top">⇑</a> -- Epidote amphibolite metamorphic facies -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/metamorphicfacies/epidote_amphibolite_metamorphic_facies</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Epidote amphibolite metamorphic facies</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition (en)</td>
+					<td class="SN">hornblende-albite-epidote(-chlorite); assemblage for rocks of basaltic composition</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">Fettes and Desmons 2007</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0003">http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0003</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified">Metamorphic facies not specified</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/glaucophane_schist_facies"></a><h2><a href="#top">⇑</a> -- Glaucophane-schist facies -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/metamorphicfacies/glaucophane_schist_facies</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Glaucophane-schist facies</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition (en)</td>
+					<td class="SN">Metamorphic facies characterized in rocks of basaltic composition by glaucophane-epidote (-garnet), glaucophane-lawsonite, or glaucophane-lawsonite-jadeite.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">Smulikowski et al., 2003; Fettes and Desmons 2007</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0004">http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0004</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified">Metamorphic facies not specified</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/granulite_facies"></a><h2><a href="#top">⇑</a> -- Granulite facies -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/metamorphicfacies/granulite_facies</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Granulite facies</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition (en)</td>
+					<td class="SN">Metamorphic facies characterized in rocks of basaltic composition by the mineral assemblage clinopyroxene-orthopyroxene-plagioclase (olivine not stable with plagioclase or with garnet), or especially high-temperature varieties or polymorphs of minerals (e</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">Smulikowski et al., 2003; Fettes and Desmons 2007</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0005">http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0005</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified">Metamorphic facies not specified</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/greenschist_metamorphic_facies"></a><h2><a href="#top">⇑</a> -- Greenschist metamorphic facies -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/metamorphicfacies/greenschist_metamorphic_facies</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Greenschist metamorphic facies</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition (en)</td>
+					<td class="SN">Metamorphic facies characterized in rocks of basaltic composition by actinolite-albite-epidote-chlorite (an epidote group mineral is the diagnostic Ca-Al silicate rather than prehnite or pumpellyite).</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">Smulikowski et al., 2003; Fettes and Desmons 2007</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0006">http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0006</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified">Metamorphic facies not specified</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified"></a><h2><a href="#top">⇑</a> -- Metamorphic facies not specified -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Metamorphic facies not specified</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition (en)</td>
+					<td class="SN">Metamorphosed, but facies not specified in more detail. For use in normative description to indicate that any metamorphic facies value is valid.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0007">http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0007</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/metamorphicfacies/amphibolite_metamorphic_facies">Amphibolite metamorphic facies</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/metamorphicfacies/eclogite_metamorphic_facies">Eclogite metamorphic facies</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/metamorphicfacies/epidote_amphibolite_metamorphic_facies">Epidote amphibolite metamorphic facies</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/metamorphicfacies/glaucophane_schist_facies">Glaucophane-schist facies</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/metamorphicfacies/granulite_facies">Granulite facies</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/metamorphicfacies/greenschist_metamorphic_facies">Greenschist metamorphic facies</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/metamorphicfacies/pyroxene_hornfels_metamorphic_facies">Pyroxene hornfels metamorphic facies</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/metamorphicfacies/sanidinite_metamorphic_facies">Sanidinite metamorphic facies</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/metamorphicfacies/subgreenschist_metamorphic_facies">Subgreenschist metamorphic facies</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Narrower</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/metamorphicfacies/zeolite_metamorphic_facies">Zeolite metamorphic facies</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_unknown"></a><h2><a href="#top">⇑</a> -- Metamorphic facies unknown -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_unknown</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Metamorphic facies unknown</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition (en)</td>
+					<td class="SN">For use in instance descriptions to indicate that no data are available to constrain metamorphic facies.  May be metamorphosed or non-metamorphosed.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0008">http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0008</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/no_metamorphic_minerals"></a><h2><a href="#top">⇑</a> -- No metamorphic minerals -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/metamorphicfacies/no_metamorphic_minerals</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">No metamorphic minerals</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition (en)</td>
+					<td class="SN">Corresponds to non-metamorphosed condition; since metamorphic facies classification is based on mineral assemblages, absence of metamorphic minerals means that the classification does not apply.</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">this vocabulary</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0009">http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0009</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/pyroxene_hornfels_metamorphic_facies"></a><h2><a href="#top">⇑</a> -- Pyroxene hornfels metamorphic facies -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/metamorphicfacies/pyroxene_hornfels_metamorphic_facies</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Pyroxene hornfels metamorphic facies</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition (en)</td>
+					<td class="SN">Metamorphic facies characterized in rocks of basaltic composition by clinopyroxene-orthopyroxene-plagioclase (olivine stable with plagioclase).</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">Smulikowski et al. 2003;Fettes and Desmons 2007</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0010">http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0010</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified">Metamorphic facies not specified</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/sanidinite_metamorphic_facies"></a><h2><a href="#top">⇑</a> -- Sanidinite metamorphic facies -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/metamorphicfacies/sanidinite_metamorphic_facies</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Sanidinite metamorphic facies</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition (en)</td>
+					<td class="SN">distinguished from the pyroxene hornfels facies by the occurrence of especially high-temperature varieties and polymorphs of minerals (eg. pigeonite, K-rich labradorite); assemblage for rocks of basaltic composition</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">Fettes and Desmons 2007</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0011">http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0011</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified">Metamorphic facies not specified</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/subgreenschist_metamorphic_facies"></a><h2><a href="#top">⇑</a> -- Subgreenschist metamorphic facies -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/metamorphicfacies/subgreenschist_metamorphic_facies</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Subgreenschist metamorphic facies</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition (en)</td>
+					<td class="SN">Metamorphic facies characterized in rocks of basaltic composition by prehnite-pumpellyite, pumpellyite-actinolite, prehnite-actinolite (prehnite and pumpellyite are the diagnostic Ca-Al silicates rather than minerals of the epidote or zeolite groups).</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">Smulikowski et al. 2003; Fettes and Desmons 2007</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0012">http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0012</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified">Metamorphic facies not specified</a></td>
+				</tr>
+			</tbody>
+		</table><a name="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/zeolite_metamorphic_facies"></a><h2><a href="#top">⇑</a> -- Zeolite metamorphic facies -- </h2>
+		<table class="TERM">
+			<tbody>
+				<tr>
+					<td class="CONCEPT-FIELD">URI</td>
+					<td class="conceptURI">http://resource.geosciml.org/classifier/cgi/metamorphicfacies/zeolite_metamorphic_facies</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Preferred label (en)</td>
+					<td class="PREF">Zeolite metamorphic facies</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Definition (en)</td>
+					<td class="SN">Metamorphic facies characterized in rocks of basaltic composition by zeolite minerals such as laumontite and heulandites (in place of other Ca-Al silicates such as prehnite, pumpellyite and epidote).</td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Source (en)</td>
+					<td class="SN">Smulikowski et al. 2003; Fettes and Desmons 2007</td>
+				</tr>
+				<tr>
+					<td class="SUBHEADER">Relationships: </td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Exact match</td>
+					<td class="URI"><a href="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0013">http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0013</a></td>
+				</tr>
+				<tr>
+					<td class="CONCEPT-FIELD">Broader</td>
+					<td class="URI"><a href="#http://resource.geosciml.org/classifier/cgi/metamorphicfacies/metamorphic_facies_not_specified">Metamorphic facies not specified</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

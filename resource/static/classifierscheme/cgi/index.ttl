@@ -1,0 +1,280 @@
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix dpr: <http://promsns.org/def/dpr#> .
+@prefix gapd: <http://pid.geoscience.gov.au/def/ont/gapd#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<http://pid.geoscience.gov.au/id/cgi> a dpr:DataProviderRegister, org:Organisation;
+	rdfs:label "Commission for the Management and Application of Geoscience Information (CGI)"@en;
+	rdfs:comment "CGI's mission is to: To foster the interoperability and exchange of geoscience information, by active community leadership, collaboration, education, and the development and promotion of geoscience information standards and best practice."@en;
+	dpr:isLDR "true"^^xsd:boolean;
+	reg:subregister <http://pid.geoscience.gov.au/dataset/>
+.
+
+<http://resource.geosciml.org/dataset/> a dpr:FederatedRegister;
+	rdfs:label "CGI's Dataset register"@en;
+	rdfs:comment "This is CGI's dataset register. It is a federated register as it contains multiple subregisters. It is not yet a Linked Data reigster but will be soon."@en;
+	dpr:isLDR "false"^^xsd:boolean;
+	reg:subregister <http://resource.geosciml.org/classifier/cgi/>;
+	reg:containedItemClass dcat:Dataset;
+.
+
+<http://resource.geosciml.org/classifier/cgi/> a dpr:Register;
+	rdfs:label "CGI's Vocabulary register"@en;
+	rdfs:comment "This is CGI's vocabularies register. It is a subregister of the dataset register. It is not yet a Linked Data reigster but will be soon."@en;
+	dpr:isLDR "false"^^xsd:boolean;
+	reg:containedItemClass skos:ConceptScheme;
+.
+
+<http://resource.geosciml.org/classifierScheme/cgi/2016.01/simplelithology> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Simple Lithology"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Alteration Type"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Borehole Drilling Method"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Mineral Resource Reporting Classification Method"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Commodity Code"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Composition Category"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/compoundmaterialconstituentpartrole> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Compound Material Constituent Part"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Consolidation Degree"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/contacttype> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Contact Type"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/conventioncode> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Convention Code for Strike and Dip Measurements"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Deformation Style"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Description Purpose"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Orientation Determination Method"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Earth Resource Expression"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Earth Resource Material Role"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Earth Resource Shape"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "End Use Potential"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Environmental Impact"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Event Environment"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Event Process"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Exploration Activity Type"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Exploration Result"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Fault Movement Sense"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Fault Movement Type"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Fault Type"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Genetic Category"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Geologic Unit Morphology"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Geologic Unit Part Role"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Geologic Unit Type"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Lineation Type"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Observation Method (Mapped Feature)"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Metamorphic Facies"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicgrade> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Metamorphic Grade"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-occurrence-type> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Mineral Occurrence Type"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Mining Activity"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Processing Activity"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/particleaspectratio> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Particle Aspect Ratio"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/particleshape> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Particle Shape"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Particle Type"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Proportion Term"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/raw-material-role> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Raw Material Role"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/reserve-assessment-category> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Reserve Assessment Category"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/resource-assessment-category> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Resource Assessment Category"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Stratigraphic Rank"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/unfc> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "UNFC Code"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Value Qualifier"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Vocabulary Relation"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Waste Storage"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> a skos:ConceptScheme, dcat:Dataset, gapd:Vocabulary;
+    rdfs:label "Earth Resource Form"@en;
+	reg:register <http://pid.geoscience.gov.au/def/voc/>;
+.
+

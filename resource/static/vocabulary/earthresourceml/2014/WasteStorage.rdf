@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns="http://resource.geosciml.org/classifierscheme/cgi/201403/waste-storage#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:gtwg="http://resource.geosciml.org/authority/cgi/gtwg"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://resource.geosciml.org/classifierscheme/cgi/201403/waste-storage">
+	<owl:Ontology rdf:about="http://resource.geosciml.org/static/vocabulary/earthresourceml/2014/WasteStorage.rdf">
+		<owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+		<owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+		<dc:creator>SKOS generated from Excel workbook using GSML_SKOS_from_XLS_2014.xslt; SM Richard</dc:creator>
+		<dc:date>2014-03-19T00:00:00.000</dc:date>
+		<skos:editorialNote>This file contains the 201403 version of CGI Material waste storage type vocabulary, for categorizing approaches to material waste storage associated with Earth material resource extraction.</skos:editorialNote>
+		<skos:changeNote>Original SKOS implementation, based on 2013-06 approved vocabulary from GTWG face to face in St. Petersburg, Russia</skos:changeNote>
+		<skos:changeNote>Edits to fix typos and remove '201403' from rdf file name. Ollie Raymond 8-Jan-2015</skos:changeNote>
+	</owl:Ontology>
+	<skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/201403/waste-storage">
+		<skos:definition xml:lang="en">This resource defines the concept space for Material Waste Storage type vocabulary concepts by extension; it includes all concepts in this conceptScheme, as well as concepts in previous versions of the scheme.</skos:definition>
+		<skos:prefLabel xml:lang="en">Material Waste Storage Type vocabulary</skos:prefLabel>
+		<dc:creator xml:lang="en">CGI Geoscience Terminology Working Group</dc:creator>
+	</skos:ConceptScheme>
+	<skos:Collection rdf:about="http://resource.geosciml.org/classifier/cgi/waste-storage/">
+		<skos:member>
+			<skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/waste-storage/underwater">
+				<skos:definition xml:lang="en">Mining waste deposited at sea or lake floor (e.g. sea bed mining)</skos:definition>
+				<skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03..</skos:notation>
+				<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201403/waste-storage"/>
+				<skos:prefLabel xml:lang="en">underwater</skos:prefLabel>
+				<dc:source xml:lang="en">Australia GGIC</dc:source>
+				<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201403/waste-storage"/>
+			</skos:Concept>
+		</skos:member>
+		<skos:member>
+			<skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/waste-storage/underground">
+				<skos:definition xml:lang="en">Mining waste storage at underground environment</skos:definition>
+				<skos:notation rdf:datatype="gtwg:LocalHierarchyKey">02..</skos:notation>
+				<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201403/waste-storage"/>
+				<skos:prefLabel xml:lang="en">underground</skos:prefLabel>
+				<dc:source xml:lang="en">This vocabulary</dc:source>
+				<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201403/waste-storage"/>
+			</skos:Concept>
+		</skos:member>
+		<skos:member>
+			<skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/waste-storage/covered">
+				<skos:definition xml:lang="en">Covered mining waste storage at ground level</skos:definition>
+				<skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01.1..</skos:notation>
+				<skos:broader>
+					<skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/waste-storage/surface">
+						<skos:definition xml:lang="en">Mining waste storage at open-sky environment (ground level)</skos:definition>
+						<skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01..</skos:notation>
+						<skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201403/waste-storage"/>
+						<skos:prefLabel xml:lang="en">surface</skos:prefLabel>
+						<dc:source xml:lang="en">This vocabulary</dc:source>
+						<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201403/waste-storage"/>
+					</skos:Concept>
+				</skos:broader>
+				<skos:prefLabel xml:lang="en">covered</skos:prefLabel>
+				<dc:source xml:lang="en">This vocabulary</dc:source>
+				<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201403/waste-storage"/>
+			</skos:Concept>
+		</skos:member>
+		<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/waste-storage/surface"/>
+		<rdfs:label xml:lang="en">Material Waste Storage Type vocabulary</rdfs:label>
+	</skos:Collection>
+</rdf:RDF>
+

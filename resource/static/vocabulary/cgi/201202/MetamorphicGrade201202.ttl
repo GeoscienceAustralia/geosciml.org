@@ -1,0 +1,489 @@
+@prefix cgi: <http://resource.geosciml.org/classifierscheme/cgi/201202/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix : <http://resource.geosciml.org/classifierscheme/cgi/201202/metamorphicgrade#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://resource.geosciml.org/classifierscheme/cgi/201202/metamorphicgrade> .
+
+<http://resource.geosciml.org/classifierscheme/cgi/201202/metamorphicgrade> rdf:type owl:Ontology ;
+                                                                            
+                                                                            dc:identifier "http://resource.geosciml.org/classifierscheme/cgi/201202/metamorphicgrade" ;
+                                                                            
+                                                                            dc:format "text/turtle" ;
+                                                                            
+                                                                            owl:versionInfo "201202" ;
+                                                                            
+                                                                            dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                            
+                                                                            dc:publisher "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                            
+                                                                            dc:language "en" ;
+                                                                            
+                                                                            dc:title "CGI Metamorphic Grade Categories"@en .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+
+dc:publisher rdf:type owl:AnnotationProperty .
+
+
+
+dc:language rdf:type owl:AnnotationProperty .
+
+
+
+dc:identifier rdf:type owl:AnnotationProperty .
+
+
+
+dc:source rdf:type owl:AnnotationProperty .
+
+
+
+dc:format rdf:type owl:AnnotationProperty .
+
+
+
+dc:title rdf:type owl:AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+
+owl:topObjectProperty rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#broader
+
+skos:broader rdf:type owl:ObjectProperty ;
+             
+             rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#exactMatch
+
+skos:exactMatch rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#inScheme
+
+skos:inScheme rdf:type owl:ObjectProperty ;
+              
+              rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#narrower
+
+skos:narrower rdf:type owl:ObjectProperty ;
+              
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              
+              owl:inverseOf skos:broader .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#topConceptOf
+
+skos:topConceptOf rdf:type owl:ObjectProperty ;
+                  
+                  rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.w3.org/2002/07/owl#topDataProperty
+
+owl:topDataProperty rdf:type owl:DatatypeProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+
+skos:definition rdf:type owl:DatatypeProperty ;
+                
+                rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#historyNote
+
+skos:historyNote rdf:type owl:DatatypeProperty ;
+                 
+                 rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+
+skos:prefLabel rdf:type owl:DatatypeProperty ;
+               
+               rdfs:subPropertyOf owl:topDataProperty .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.w3.org/2002/07/owl#Thing
+
+owl:Thing rdf:type owl:Class .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+
+skos:Concept rdf:type owl:Class ;
+             
+             rdfs:subClassOf owl:Thing .
+
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+
+skos:ConceptScheme rdf:type owl:Class ;
+                   
+                   rdfs:subClassOf owl:Thing .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0001
+
+<http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0001> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0002
+
+<http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0002> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0003
+
+<http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0003> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0004
+
+<http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0004> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0005
+
+<http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0005> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0006
+
+<http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0006> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0007
+
+<http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0007> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0008
+
+<http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0008> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0009
+
+<http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0009> rdf:type owl:NamedIndividual .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/metamorphicgrade/high_metamorphic_grade
+
+<http://resource.geosciml.org/classifier/cgi/metamorphicgrade/high_metamorphic_grade> rdf:type owl:NamedIndividual ,
+                                                                                               owl:Thing ,
+                                                                                               skos:Concept ;
+                                                                                      
+                                                                                      dc:source "Smulikowski et al, 2003; Fry, 1984" ;
+                                                                                      
+                                                                                      dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                                      
+                                                                                      skos:prefLabel "High metamorphic grade"@en ;
+                                                                                      
+                                                                                      skos:definition "Protolith structures almost always obliterated, evidence of partial melting common. Includes rocks metamorphosed in high-temperature amphibolite, pyroxene hornfels, and medium to high-temperature eclogite facies. Mineral assemblages according to Fry (1984) Table 10-1: ultramafic-olivine, anthophyllite, cummingtonite, enstatite; mafic-hornblende, (diopside, garnet); calc-aluminous basic-plagioclase; pelite, semi-pelite -- K-feldspar, biotite, quartz, Al-minerals (garnet), migmatite."@en ;
+                                                                                      
+                                                                                      skos:exactMatch <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0001> ;
+                                                                                      
+                                                                                      skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphosed_grade_not_specified> ;
+                                                                                      
+                                                                                      skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/metamorphicgrade> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/metamorphicgrade/low_metamorphic_grade
+
+<http://resource.geosciml.org/classifier/cgi/metamorphicgrade/low_metamorphic_grade> rdf:type owl:NamedIndividual ,
+                                                                                              owl:Thing ,
+                                                                                              skos:Concept ;
+                                                                                     
+                                                                                     dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                                     
+                                                                                     skos:prefLabel "Low metamorphic grade"@en ;
+                                                                                     
+                                                                                     skos:definition "Metamorphic effects clearly visible, protolith structures typically still observable, includes rocks metamorphosed in greenschist, high-temperature blueschist, very low temperature eclogite facies. Mineral assemblages according to Fry (1984) Table 10-1: ultramafic-serpentine (talc, magnesite); mafic-chlorite, actinolite (garnet); calc-aluminous basic-albite, epidote; pelite, semi-pelite -- white mica, chlorite, quartz, biotite (garnet, Al-minerals)."@en ;
+                                                                                     
+                                                                                     dc:source "Smulikowski et al, 2003; Fry, 1984" ;
+                                                                                     
+                                                                                     skos:exactMatch <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0002> ;
+                                                                                     
+                                                                                     skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphosed_grade_not_specified> ;
+                                                                                     
+                                                                                     skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/metamorphicgrade> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/metamorphicgrade/medium_metamorphic_grade
+
+<http://resource.geosciml.org/classifier/cgi/metamorphicgrade/medium_metamorphic_grade> rdf:type owl:NamedIndividual ,
+                                                                                                 owl:Thing ,
+                                                                                                 skos:Concept ;
+                                                                                        
+                                                                                        dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                                        
+                                                                                        skos:prefLabel "Medium metamorphic grade"@en ;
+                                                                                        
+                                                                                        skos:definition "Protolith structure typically obliterated. Includes rocks metamorphosed in high-temperature epidote-amphibolite, low-temperature amphibolite, and low temperature eclogite facies. Mineral assemblages according to Fry (1984) Table 10-1: ultramafic-olivine, talc (magnesite, anthophyllite); mafic-hornblende, (diopside, garnet); calc-aluminous basic-plagioclase; pelite, semi-pelite -- white mica, biotite, quartz (garnet, Al-minerals)."@en ;
+                                                                                        
+                                                                                        dc:source "Smulikowski et al, 2003; Fry, 1984" ;
+                                                                                        
+                                                                                        skos:exactMatch <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0003> ;
+                                                                                        
+                                                                                        skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphosed_grade_not_specified> ;
+                                                                                        
+                                                                                        skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/metamorphicgrade> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphic_grade_not_specified
+
+<http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphic_grade_not_specified> rdf:type owl:NamedIndividual ,
+                                                                                                        owl:Thing ,
+                                                                                                        skos:Concept ;
+                                                                                               
+                                                                                               dc:source "This Vocabulary" ;
+                                                                                               
+                                                                                               dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                                               
+                                                                                               skos:prefLabel "Metamorphic grade not specified"@en ;
+                                                                                               
+                                                                                               skos:definition "for use in normative descriptions to explicitly indicate that any metamorphic condition is allowed (including non-metamorphosed)."@en ;
+                                                                                               
+                                                                                               skos:exactMatch <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0004> ;
+                                                                                               
+                                                                                               skos:narrower <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphosed_grade_not_specified> ,
+                                                                                                             <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/not_metamorphosed> ;
+                                                                                               
+                                                                                               skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/metamorphicgrade> ;
+                                                                                               
+                                                                                               skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/201202/metamorphicgrade> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphic_grade_unknown
+
+<http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphic_grade_unknown> rdf:type owl:NamedIndividual ,
+                                                                                                  owl:Thing ,
+                                                                                                  skos:Concept ;
+                                                                                         
+                                                                                         dc:source "This Vocabulary" ;
+                                                                                         
+                                                                                         dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                                         
+                                                                                         skos:definition "For use in instance descriptions to indicate that no information is available on metamorphic grade"@en ;
+                                                                                         
+                                                                                         skos:prefLabel "Metamorphic grade unknown"@en ;
+                                                                                         
+                                                                                         skos:exactMatch <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0005> ;
+                                                                                         
+                                                                                         skos:topConceptOf <http://resource.geosciml.org/classifierscheme/cgi/201202/metamorphicgrade> ;
+                                                                                         
+                                                                                         skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/metamorphicgrade> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphosed_grade_not_specified
+
+<http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphosed_grade_not_specified> rdf:type owl:NamedIndividual ,
+                                                                                                          owl:Thing ,
+                                                                                                          skos:Concept ;
+                                                                                                 
+                                                                                                 dc:source "This Vocabulary" ;
+                                                                                                 
+                                                                                                 dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                                                 
+                                                                                                 skos:prefLabel "Metamorphosed grade not specified"@en ;
+                                                                                                 
+                                                                                                 skos:definition "Rock is metamorphosed, may have any value for metamorphic grade."@en ;
+                                                                                                 
+                                                                                                 skos:exactMatch <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0006> ;
+                                                                                                 
+                                                                                                 skos:narrower <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/high_metamorphic_grade> ,
+                                                                                                               <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/low_metamorphic_grade> ,
+                                                                                                               <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/medium_metamorphic_grade> ;
+                                                                                                 
+                                                                                                 skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphic_grade_not_specified> ;
+                                                                                                 
+                                                                                                 skos:narrower <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/very_high_metamorphic_grade> ,
+                                                                                                               <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/very_low_metamorphic_grade> ;
+                                                                                                 
+                                                                                                 skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/metamorphicgrade> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/metamorphicgrade/not_metamorphosed
+
+<http://resource.geosciml.org/classifier/cgi/metamorphicgrade/not_metamorphosed> rdf:type owl:NamedIndividual ,
+                                                                                          owl:Thing ,
+                                                                                          skos:Concept ;
+                                                                                 
+                                                                                 skos:prefLabel "Not metamorphosed"@en ;
+                                                                                 
+                                                                                 dc:source "This Vocabulary" ;
+                                                                                 
+                                                                                 dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                                 
+                                                                                 skos:definition "Rock or sediment not metamorphosed."@en ;
+                                                                                 
+                                                                                 skos:exactMatch <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0007> ;
+                                                                                 
+                                                                                 skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphic_grade_not_specified> ;
+                                                                                 
+                                                                                 skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/metamorphicgrade> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/metamorphicgrade/very_high_metamorphic_grade
+
+<http://resource.geosciml.org/classifier/cgi/metamorphicgrade/very_high_metamorphic_grade> rdf:type owl:NamedIndividual ,
+                                                                                                    owl:Thing ,
+                                                                                                    skos:Concept ;
+                                                                                           
+                                                                                           dc:source "Smulikowski et al, 2003; Fry, 1984" ;
+                                                                                           
+                                                                                           dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                                           
+                                                                                           skos:definition "Protolith structures almost always obliterated. Includes rocks metamorphosed in granulite (or sanidinite), and high-temperature eclogite facies. Mineral assemblages according to Fry (1984) Table 10-1: ultramafic-olivine, enstatite; mafic-hypersthene, diopside (hornblende); calc-aluminous basic-plagioclase; pelite, semi-pelite -- hypersthene + Al-minerals (K-feldspar, quartz), or sapphirine."@en ;
+                                                                                           
+                                                                                           skos:prefLabel "Very high metamorphic grade"@en ;
+                                                                                           
+                                                                                           skos:exactMatch <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0008> ;
+                                                                                           
+                                                                                           skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphosed_grade_not_specified> ;
+                                                                                           
+                                                                                           skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/metamorphicgrade> .
+
+
+
+###  http://resource.geosciml.org/classifier/cgi/metamorphicgrade/very_low_metamorphic_grade
+
+<http://resource.geosciml.org/classifier/cgi/metamorphicgrade/very_low_metamorphic_grade> rdf:type owl:NamedIndividual ,
+                                                                                                   owl:Thing ,
+                                                                                                   skos:Concept ;
+                                                                                          
+                                                                                          dc:creator "Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)"@en ;
+                                                                                          
+                                                                                          dc:source "Smulikowski et al, 2003; Fry, 1984" ;
+                                                                                          
+                                                                                          skos:definition "Rock very slightly metamorphosed, protolith structure ubiquitous; mineral assemblage of zeolite facies, subgreenschist facies, or low temperature part of blueschist facies. Mineral assemblages according to Fry (1984) Table 10-1: ultramafic-serpentine (quartz, magnesite); mafic-clay, chlorite, relict igneous minerals; calc-aluminous basic-zeolite, pumpellite, epidote, albite; pelite, semi-pelite -- clays, chlorite, sericite, quartz."@en ;
+                                                                                          
+                                                                                          skos:prefLabel "Very low metamorphic grade"@en ;
+                                                                                          
+                                                                                          skos:exactMatch <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/0009> ;
+                                                                                          
+                                                                                          skos:broader <http://resource.geosciml.org/classifier/cgi/metamorphicgrade/metamorphosed_grade_not_specified> ;
+                                                                                          
+                                                                                          skos:inScheme <http://resource.geosciml.org/classifierscheme/cgi/201202/metamorphicgrade> .
+
+
+
+###  http://resource.geosciml.org/classifierscheme/cgi/201202/metamorphicgrade
+
+<http://resource.geosciml.org/classifierscheme/cgi/201202/metamorphicgrade> rdf:type owl:NamedIndividual ,
+                                                                                     owl:Thing ,
+                                                                                     skos:ConceptScheme ;
+                                                                            
+                                                                            skos:historyNote "2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege."@en ,
+                                                                                             "2010-11-28 SMR replace URN identifiers with http URI identifiers according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)"@en ,
+                                                                                             "2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme."@en ,
+                                                                                             "2012-02-27 SMR add skos:exactMatch triples relating URI in this vocabulary to URI with number tokens in 201012 vocabulary"@en ;
+                                                                            
+                                                                            skos:prefLabel "CGI Metamorphic Grade Categories"@en ;
+                                                                            
+                                                                            skos:definition "This file contains the CGI Metamorphic Grade vocabulary. Vocabulary for populating Metamorphic grade property in GeoSciML metamorphicDescription elements. Derived from Fettes and Desmons, 2007"@en .
+
+
+
+
+###  Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net
+

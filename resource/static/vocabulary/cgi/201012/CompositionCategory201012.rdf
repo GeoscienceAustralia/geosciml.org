@@ -1,0 +1,2032 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY cgi "http://resource.geosciml.org/classifierscheme/cgi/201012/" >
+    <!ENTITY CompositionCategory "http://resource.geosciml.org/classifier/cgi/compositioncategory/" >
+    <!ENTITY CompositionCategory2 "http://resource.geosciml.org/classifierscheme/cgi/201012/compositioncategory/" >
+]>
+
+
+<rdf:RDF xmlns="&cgi;compositioncategory"
+     xml:base="&cgi;compositioncategory"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:cgi="http://resource.geosciml.org/classifierscheme/cgi/201012/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:CompositionCategory2="&cgi;compositioncategory/"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:CompositionCategory="http://resource.geosciml.org/classifier/cgi/compositioncategory/">
+    <owl:Ontology rdf:about="">
+        <owl:versionInfo>200811</owl:versionInfo>
+        <dc:creator
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:language>en</dc:language>
+        <skos:historyNote xml:lang="en"
+            >2009-12-07. SMR add collections for mineralogical and sedimentary petrographic categories, improve annotation and notes on vocabulary.</skos:historyNote>
+        <skos:historyNote xml:lang="en"
+            >2010-02-08. SMR Clean up namespace declarations so concept URI&#39;s follow CGI URN scheme; concepts have URN, are not document fragments.</skos:historyNote>
+        <skos:historyNote xml:lang="en"
+            >2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using &#39;file/Export inferred axioms as ontology&#39; in Protege.</skos:historyNote>
+        <skos:historyNote xml:lang="en"
+            >2010-11-27 SMR replace URN with http URI according to CGI URI scheme; update version number to 201012</skos:historyNote>
+        <dc:identifier
+            >http://resource.geosciml.org/classifierscheme/cgi/201012/compositioncategory</dc:identifier>
+        <dc:publisher
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:publisher>
+        <skos:historyNote xml:lang="en"
+            >2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet.</skos:historyNote>
+        <dc:title xml:lang="en"
+            >CGI Composition Category vocabulary</dc:title>
+        <dc:format
+            >application/rdf+xml</dc:format>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;date"/>
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    <owl:AnnotationProperty rdf:about="&dc;format"/>
+    <owl:AnnotationProperty rdf:about="&dc;source"/>
+    <owl:AnnotationProperty rdf:about="&dc;publisher"/>
+    <owl:AnnotationProperty rdf:about="&dc;identifier"/>
+    <owl:AnnotationProperty rdf:about="&dc;language"/>
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    <owl:AnnotationProperty rdf:about="&skos;historyNote"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+    <owl:ObjectProperty rdf:about="&rdf;value">
+        <owl:subObjectPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broadMatch -->
+
+    <owl:ObjectProperty rdf:about="&skos;broadMatch"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:ObjectProperty rdf:about="&skos;broader">
+        <rdfs:label xml:lang="en">has broader</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI"
+            >http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en"
+            >Broader concepts are typically rendered as parents in a concept
+      hierarchy (tree).</rdfs:comment>
+        <rdfs:comment xml:lang="en"
+            >By convention, skos:broader is only used to assert an immediate
+      (i.e. direct) hierarchical link between two conceptual resources.</rdfs:comment>
+        <owl:inverseOf rdf:resource="&skos;narrower"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
+
+    <owl:ObjectProperty rdf:about="&skos;changeNote">
+        <owl:subObjectPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:ObjectProperty rdf:about="&skos;closeMatch">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">close match</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI"
+            >http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <owl:inverseOf rdf:resource="&skos;closeMatch"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;mappingRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:ObjectProperty rdf:about="&skos;definition">
+        <owl:subObjectPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:ObjectProperty rdf:about="&skos;exactMatch">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">exact match</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI"
+            >http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en"
+            >skos:exactMatch is disjoint with each of the properties
+      skos:broadMatch and skos:relatedMatch.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&skos;closeMatch"/>
+        <owl:inverseOf rdf:resource="&skos;exactMatch"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+    <owl:ObjectProperty rdf:about="&skos;hasTopConcept">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:label xml:lang="en">has top concept</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI"
+            >http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:range rdf:resource="&skos;Concept"/>
+        <rdfs:domain rdf:resource="&skos;ConceptScheme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+    <owl:ObjectProperty rdf:about="&skos;historyNote">
+        <rdf:type rdf:resource="&owl;AnnotationProperty"/>
+        <owl:subObjectPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:ObjectProperty rdf:about="&skos;inScheme">
+        <rdfs:label xml:lang="en">in scheme</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI"
+            >http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en"
+            >A concept may be a member of more than one concept scheme.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:range rdf:resource="&skos;ConceptScheme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#mappingRelation -->
+
+    <owl:ObjectProperty rdf:about="&skos;mappingRelation">
+        <rdfs:label xml:lang="en"
+            >mapping relation</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI"
+            >http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en"
+            >These concept mapping relations mirror semantic relations, and the
+      data model defined below is similar (with the exception of skos:exactMatch) to the data model
+      defined for semantic relations. A distinct vocabulary is provided for concept mapping
+      relations, to provide a convenient way to differentiate links within a concept scheme from
+      links between concept schemes. However, this pattern of usage is not a formal requirement of
+      the SKOS data model, and relies on informal definitions of best practice.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&skos;semanticRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#member -->
+
+    <owl:ObjectProperty rdf:about="&skos;member">
+        <rdfs:label xml:lang="en">member</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI"
+            >http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:domain rdf:resource="&skos;Collection"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&skos;Collection"/>
+                    <rdf:Description rdf:about="&skos;Concept"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#memberList -->
+
+    <owl:ObjectProperty rdf:about="&skos;memberList">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">member list</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI"
+            >http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en"
+            >For any resource, every item in the list given as the value of the
+      skos:memberList property is also a value of the skos:member property.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:domain rdf:resource="&skos;OrderedCollection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrowMatch -->
+
+    <owl:ObjectProperty rdf:about="&skos;narrowMatch">
+        <rdfs:label xml:lang="en">narrower match</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI"
+            >http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <owl:inverseOf rdf:resource="&skos;broadMatch"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;mappingRelation"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;narrower"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+    <owl:ObjectProperty rdf:about="&skos;narrower">
+        <rdfs:label xml:lang="en">has narrower</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI"
+            >http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en"
+            >By convention, skos:broader is only used to assert an immediate
+      (i.e. direct) hierarchical link between two conceptual resources.</rdfs:comment>
+        <rdfs:comment xml:lang="en"
+            >Narrower concepts are typically rendered as children in a concept
+      hierarchy (tree).</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:ObjectProperty rdf:about="&skos;notation">
+        <owl:subObjectPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:ObjectProperty rdf:about="&skos;prefLabel">
+        <owl:subObjectPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#related -->
+
+    <owl:ObjectProperty rdf:about="&skos;related">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">related to</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI"
+            >http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en"
+            >skos:related is disjoint with skos:broaderTransitive</rdfs:comment>
+        <owl:inverseOf rdf:resource="&skos;related"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;semanticRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#relatedMatch -->
+
+    <owl:ObjectProperty rdf:about="&skos;relatedMatch">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">related match</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI"
+            >http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:subPropertyOf rdf:resource="&skos;mappingRelation"/>
+        <rdfs:subPropertyOf rdf:resource="&skos;related"/>
+        <owl:inverseOf rdf:resource="&skos;relatedMatch"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#semanticRelation -->
+
+    <owl:ObjectProperty rdf:about="&skos;semanticRelation">
+        <rdfs:label xml:lang="en"
+            >semantic relation</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI"
+            >http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en"
+            >This property should not be used directly, but as a super-property
+      for all properties denoting a relationship of meaning between concepts.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <rdfs:range rdf:resource="&skos;Concept"/>
+        <rdfs:domain rdf:resource="&skos;Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+    <owl:ObjectProperty rdf:about="&skos;topConceptOf">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:label xml:lang="en"
+            >top concept in scheme</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI"
+            >http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:subPropertyOf rdf:resource="&skos;inScheme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#value -->
+
+    <owl:DatatypeProperty rdf:about="&rdf;value"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
+
+    <owl:DatatypeProperty rdf:about="&skos;changeNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:DatatypeProperty rdf:about="&skos;definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+    <owl:DatatypeProperty rdf:about="&skos;historyNote">
+        <rdf:type rdf:resource="&owl;AnnotationProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:DatatypeProperty rdf:about="&skos;notation"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:DatatypeProperty rdf:about="&skos;prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Collection -->
+
+    <owl:Class rdf:about="&skos;Collection">
+        <rdfs:label xml:lang="en">Collection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith rdf:resource="&skos;Concept"/>
+        <owl:disjointWith rdf:resource="&skos;ConceptScheme"/>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI"
+            >http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en"
+            >Labelled collections can be used with collectable semantic relation
+      properties e.g. skos:narrower, where you would like a set of concepts to be displayed under a
+      &#39;node label&#39; in the hierarchy.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="&skos;Concept">
+        <rdfs:label xml:lang="en">Concept</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith rdf:resource="&skos;ConceptScheme"/>
+        <owl:disjointWith rdf:resource="&skos;OrderedCollection"/>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI"
+            >http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="&skos;ConceptScheme">
+        <rdfs:label xml:lang="en">Concept Scheme</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith rdf:resource="&skos;OrderedCollection"/>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI"
+            >http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en"
+            >A concept scheme may be defined to include concepts from different
+      sources.</rdfs:comment>
+        <rdfs:comment xml:lang="en"
+            >Thesauri, classification schemes, subject heading lists, taxonomies,
+      &#39;folksonomies&#39;, and other types of controlled vocabulary are all examples of concept schemes.
+      Concept schemes are also embedded in glossaries and terminologies.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#OrderedCollection -->
+
+    <owl:Class rdf:about="&skos;OrderedCollection">
+        <rdfs:label xml:lang="en"
+            >Ordered Collection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&skos;Collection"/>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI"
+            >http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <rdfs:comment xml:lang="en"
+            >Ordered collections can be used where you would like a set of concepts to be displayed in a specific order, and optionally under a &#39;node label&#39;.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0001 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0001">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en">Argillic</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Greater than accessory amount (greater than 5 percent by volume) of clay is present</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0002 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0002">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en"
+            >Arkosic detrital mode</skos:prefLabel>
+        <dc:source xml:lang="en">Folk1968</dc:source>
+        <skos:definition xml:lang="en"
+            >Sandstone petrographic composition term indicating that detrital mode for clastic rock (Q-F-L) includes less than 75 percent quartz and the feldspar to lithic ratio is greater than 3 to 1. This corresponds to the arkose field of Folk (1968). For clastic rocks with little or no matrix and cement, rocks in this detrital mode composition category will also have quartz-feldspathic mineralogical composition.</skos:definition>
+        <skos:broader rdf:resource="&CompositionCategory;0022"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0003 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0003">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Asphaltic</skos:prefLabel>
+        <dc:source xml:lang="en">Jackson 1997</dc:source>
+        <skos:definition xml:lang="en"
+            >Material contains a significant amount of asphalt, which is &#8220;A dark brown to black viscous liquid or low-melting solid bitumen that consists almost entirely of carbon and hydrogen...[and] formed in oil-bearing rocks by the evaporation of volatiles...&#8221; (Jackson, 1997, p. 39).</skos:definition>
+        <skos:broader rdf:resource="&CompositionCategory;0011"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0004 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0004">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en"
+            >Barium-bearing carbonate chemistry</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >CO3 is the predominant anion, and greater than 5 mole percent of cations are Ba.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:broader rdf:resource="&CompositionCategory;0015"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0005 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0005">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Bioclastic</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Carbonate sedimentary material contains significant broken skeletal material</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0006 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0006">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Calcareous</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Calcium carbonate minerals are present, carbonate minerals form less than 50 percent of rock, material contains sufficient CaCO3 to react forming bubbles when hydrochloric acid is applied.</skos:definition>
+        <dc:source xml:lang="en">NADM SLTTm 2004</dc:source>
+        <skos:broader rdf:resource="&CompositionCategory;0014"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0007 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0007">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en"
+            >Calcareous monomeralic carbonate</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Carbonate minerals form greater than 75 percent of rock, and calcium carbonate minerals forms greater than 75 percent of carbonate minerals.</skos:definition>
+        <dc:source xml:lang="en">NADM SLTTm 2004</dc:source>
+        <skos:broader rdf:resource="&CompositionCategory;0046"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0008 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0008">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >CO3 is the predominante anion, and the Ca is the most abundant (mole percent) cation.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Calcium-rich carbonate chemistry</skos:prefLabel>
+        <dc:source xml:lang="en"
+            >Struik etal 2002; This vocabulary</dc:source>
+        <skos:broader rdf:resource="&CompositionCategory;0015"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0009 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0009">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en">Calcsilicate</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Material consists of greater than or equal to 50 percent calcsilicate or carbonate minerals and carbonate minerals less than or equal to calcsilicate minerals in mineral mode.</skos:definition>
+        <dc:source xml:lang="en">NADM SLTTm 2004</dc:source>
+        <skos:broader rdf:resource="&CompositionCategory;0029"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0010 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0010">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Calcsilicate minerals of any sort are present, but less than 50 percent of rock</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Calcsilicate-bearing</skos:prefLabel>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0011 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0011">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Carbonaceous</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Material containing significant carbon or hydrocarbon mineral phases, including graphite, coal, oil, gas, lignite, peat.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:narrower rdf:resource="&CompositionCategory;0003"/>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0012 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0012">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en"
+            >Carbonaceous chemistry</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Containing greater than 5 percent reduced carbon in compounds that are typically the diagenetic products of dead organisms (e.g. coal, bitumen and petroleum). 5 percent value is chosen for consistency with SLTTs usage of term carbonaceous.</skos:definition>
+        <dc:source xml:lang="en"
+            >Struik2002; SLTTs2004; This vocabulary</dc:source>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0013 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0013">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en">Carbonate</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Material consists of greater than 50 percent calcsilicate or carbonate minerals and carbonate minerals greater than calcsilicate minerals in mineral mode. Metacarbonate of NADMSC SLTTm (2004) terminology, adopted here for non-genetic use.</skos:definition>
+        <dc:source xml:lang="en">NADM SLTTm 2004</dc:source>
+        <skos:broader rdf:resource="&CompositionCategory;0029"/>
+        <skos:narrower rdf:resource="&CompositionCategory;0046"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0014 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0014">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en"
+            >Carbonate bearing</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Carbonate minerals of any sort are present, but less than 50 percent of rock.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:narrower rdf:resource="&CompositionCategory;0006"/>
+        <skos:narrower rdf:resource="&CompositionCategory;0020"/>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0015 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0015">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en"
+            >Carbonate chemistry</skos:prefLabel>
+        <dc:source xml:lang="en"
+            >Struik etal 2002; This vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >The carbonate (CO3) anion is the predominant anion (by mole percent) in chemical analysis. Sub-categories may be defined by dominant cation. Material in this chemical class overlaps with the monomineralic carbonate class, and probably overlaps with the Carbonate class in the mineralogical composition classification.</skos:definition>
+        <skos:narrower rdf:resource="&CompositionCategory;0004"/>
+        <skos:narrower rdf:resource="&CompositionCategory;0008"/>
+        <skos:narrower rdf:resource="&CompositionCategory;0032"/>
+        <skos:narrower rdf:resource="&CompositionCategory;0040"/>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0016 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0016">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en"
+            >Chloride chemistry</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Chloride is the most abundant (mole percent) anion</skos:definition>
+        <dc:source xml:lang="en"
+            >Struik etal 2002; This vocabulary</dc:source>
+        <skos:broader rdf:resource="&CompositionCategory;0027"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0017 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0017">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Chloritic</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Greater than accessory amount (greater than 5 percent by volume) of chlorite group minerals are present</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0018 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0018">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en"
+            >Composition not specified</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Composition not specified. Use in normative descriptions where any composition property is allowed.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0019 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0019">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Carbonate minerals form greater than 75 percent of rock, and dolomite forms greater than 75 percent of carbonate minerals.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Dolomite monomineralic carbonate</skos:prefLabel>
+        <dc:source xml:lang="en">NADM SLTTm 2004</dc:source>
+        <skos:broader rdf:resource="&CompositionCategory;0046"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0020 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0020">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Dolomite is present, carbonate minerals form less than 50 percent of rock.</skos:definition>
+        <skos:prefLabel xml:lang="en">Dolomitic</skos:prefLabel>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:broader rdf:resource="&CompositionCategory;0014"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0021 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0021">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Feldspathic</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Sedimentary material contains significant feldspar mineral content</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0022 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0022">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en"
+            >Dott1964; Folk1968</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Feldspathic detrital mode</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >General sandstone petrography term for a sandstone in which the ratio of feldspar to lithic fragments is greater than 1:1 and less than 75 percent quartz is present in the detrital mode. Subsumes lithic arkosic and arkosic sandstone petrographic composition classes. Usage of modifier feldspathic is consistent with petrographic subdivisions of Dott (1964) and Williams, Turner and Gilbert (1982)</skos:definition>
+        <skos:narrower rdf:resource="&CompositionCategory;0002"/>
+        <skos:narrower rdf:resource="&CompositionCategory;0035"/>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0023 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0023">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en"
+            >Feldspathic lithic detrital mode</skos:prefLabel>
+        <dc:source xml:lang="en">Folk1968</dc:source>
+        <skos:definition xml:lang="en"
+            >Sandstone petrographic composition term indicating that detrital mode for clastic rock (Q-F-L) includes less than 75 percent quartz and the feldspar to lithic ratio is between 1 to 1 and 1 to 3. This corresponds to the feldspathic litharenite field of Folk (1968). Rocks in this class are likely to be quartzo-feldspathic in terms of mineralogical composition terms in this vocablary, but because the mineralogical composition of the lithic fraction is not constrainged, this correlation is not necessary.</skos:definition>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0024 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0024">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en">Ferromagnesian</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Material consists of greater than 40 percent dark ferromagnesian silicate minerals. Standard term defined by Bates and Jackson (1987) to mean &#39;containing iron and magnesium&#39;. Subsumes mafic and ultramafic.</skos:definition>
+        <dc:source xml:lang="en">NADM SLTTm 2004</dc:source>
+        <skos:narrower rdf:resource="&CompositionCategory;0039"/>
+        <skos:narrower rdf:resource="&CompositionCategory;0073"/>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0025 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0025">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en">Ferruginous</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Greater than accessory amount (greater than 5 percent by volume) of non-silicate iron minerals (hematite, magnetite, siderite...) are present. Rocks containing abundant iron-rich silicate minerals would use the &#39;Ferromagnesian&#39; terms.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0026 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0026">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en"
+            >Fluoride chemistry</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Fluorine is the most abundant (mole percent) anion</skos:definition>
+        <dc:source xml:lang="en"
+            >Struik etal 2002; This vocabulary</dc:source>
+        <skos:broader rdf:resource="&CompositionCategory;0027"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0027 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0027">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en"
+            >Halide chemistry</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >One or more of halide group elements (F, Cl, Br, I) are most abundant (mole percent) anion</skos:definition>
+        <dc:source xml:lang="en"
+            >Struik etal 2002; This vocabulary</dc:source>
+        <skos:narrower rdf:resource="&CompositionCategory;0016"/>
+        <skos:narrower rdf:resource="&CompositionCategory;0026"/>
+        <skos:narrower rdf:resource="&CompositionCategory;0047"/>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0028 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0028">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Containing 65 percent or more SiO2 by weight. Syn acid.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >High silica chemistry</skos:prefLabel>
+        <dc:source xml:lang="en"
+            >Struik2002; SLTTs2004; This vocabulary</dc:source>
+        <skos:broader rdf:resource="&CompositionCategory;0062"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0029 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0029">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en"
+            >Impure calcsilicate or carbonate</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Material consists of greater than 50 percent calcsilicate or carbonate minerals and relative proportion of calcsilicate and carbonate minerals is unknown or not specified.</skos:definition>
+        <dc:source xml:lang="en">NADM SLTTm 2004</dc:source>
+        <skos:narrower rdf:resource="&CompositionCategory;0009"/>
+        <skos:narrower rdf:resource="&CompositionCategory;0013"/>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0030 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0030">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Containing SiO2 in the range 52-65 percent, sometimes described as &quot;intermediate&quot; rocks.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Intermediate silica chemistry</skos:prefLabel>
+        <dc:source xml:lang="en"
+            >Struik2002; SLTTs2004; This vocabulary</dc:source>
+        <skos:broader rdf:resource="&CompositionCategory;0062"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0031 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0031">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Carbonate sedimentary material contains signficant intraclast content</skos:definition>
+        <skos:prefLabel xml:lang="en">Intraclastic</skos:prefLabel>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0032 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0032">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >CO3 is the predominant anion, and iron is greater than 5 mole percent of the cations (includes Fe, Mg, Mn, Ba, Sr, Ca...).</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Iron-bearing carbonate chemistry</skos:prefLabel>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:broader rdf:resource="&CompositionCategory;0015"/>
+        <skos:narrower rdf:resource="&CompositionCategory;0033"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0033 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0033">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >CO3 is the predominant anion, and iron is the most abundant (mole percent) cation</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Iron-rich carbonate chemistry</skos:prefLabel>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:broader rdf:resource="&CompositionCategory;0032"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0034 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0034">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en">Lithic</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Sedimentary material contains significant detrital rock fragments derived by erosion from older, pre-existing rock materials</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0035 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0035">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en">Folk1968</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Lithic arkosic detrital mode</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Sandstone petrographic composition term indicating that detrital mode for clastic rock (Q-F-L) includes less than 75 percent quartz and the ratio of lithic fragments to feldspar is between 1:1 and 1:3. This corresponds to the lithic arkose field of Folk (1968); the 75 percent quartz boundary is chosen to be consistent with quartzsose composition as defined in the mineralogic compostion terms vocabulary. Because of the abundance of lithic fragments for which the mineralogic composition is not specified, and the presence of undiscernible matrix and cement that are not incuded in the detrital mode, corresondence with the mineralogical composition terms is very approximate.</skos:definition>
+        <skos:broader rdf:resource="&CompositionCategory;0022"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0036 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0036">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en">Folk1968</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Lithic detrital mode</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Sandstone petrographic composition term indicating that detrital mode for clastic rock (Q-F-L) includes less than 75 percent quartz and the lithic to feldspar ratio is greater than 3 to 1. This corresponds to the litharenite field of Folk (1968). Because the mineralogy of the lithic fragments is not constrained, the mineralogical composition is largely independent of the detrital mode composition for this class.</skos:definition>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0037 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0037">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en"
+            >Dott1964; Folk1968</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Lithic rich detrital mode</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Sandstone petrographic composition term indicating that the ratio of lithic fragments to feldspar is greater than 1:1, and less than 75 percent quartz is present in the detrital mode. Because the mineralogy of the lithic fragments is not constrained, the mineralogical composition is largely independent of the detrital mode composition for this class.</skos:definition>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0038 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0038">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Containing SiO2 in the range 44-52 percent. Syn basic.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Low silica chemistry</skos:prefLabel>
+        <dc:source xml:lang="en"
+            >Struik2002; SLTTs2004; This vocabulary</dc:source>
+        <skos:broader rdf:resource="&CompositionCategory;0062"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0039 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0039">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:prefLabel xml:lang="en">Mafic</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Material consists of greater than or equal to 40 percent and less than 90 percent ferromagnesian silicate minerals.</skos:definition>
+        <dc:source xml:lang="en">NADM SLTTm 2004</dc:source>
+        <skos:broader rdf:resource="&CompositionCategory;0024"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0040 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0040">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >CO3 is the predominant anion, and Mg is the most abundant (mole percent) cation.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Magnesium-rich carbonate chemistry</skos:prefLabel>
+        <dc:source xml:lang="en"
+            >Struik etal 2002; This vocabulary</dc:source>
+        <skos:broader rdf:resource="&CompositionCategory;0015"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0041 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0041">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Greater than accessory amounts (greater than 5 percent by volume) of base metal oxide minerals such as magnetite (Fe3O4) or pyrolusite (MnO2) are present.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Metallic oxide bearing</skos:prefLabel>
+        <dc:source xml:lang="en"
+            >Struik2002; SLTTs2004; This vocabulary</dc:source>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0042 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0042">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Chemical composition term used for igneous rocks, denoting that content of aluminum oxide is greater than sodium oxide plus potassium oxide, but aluminum oxide less than sum of Na, K and Ca oxide.</skos:definition>
+        <skos:prefLabel xml:lang="en">Metaluminous</skos:prefLabel>
+        <dc:source xml:lang="en">Shand 1947</dc:source>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0043 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0043">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Greater than accessory amount (greater than 5 percent by volume) of mica group mineral are present</skos:definition>
+        <skos:prefLabel xml:lang="en">Micaceous</skos:prefLabel>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0044 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0044">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Greater than 75 percent of the material consists of a single mineral species.</skos:definition>
+        <skos:prefLabel xml:lang="en">Mono mineralic</skos:prefLabel>
+        <dc:source xml:lang="en">NADM SLTTm 2004</dc:source>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0045 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0045">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Grains or clasts are composed of a single rock or mineral type (Jackson, 1997)</skos:definition>
+        <dc:source xml:lang="en">Jackson 1997</dc:source>
+        <skos:prefLabel xml:lang="en">Monomictic</skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0046 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0046">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel xml:lang="en"
+            >Monomineralic carbonate</skos:prefLabel>
+        <dc:source xml:lang="en">NADM SLTTm 2004</dc:source>
+        <skos:definition xml:lang="en"
+            >Rock in which carbonate minerals form greater than 75 percent of rock.</skos:definition>
+        <skos:narrower rdf:resource="&CompositionCategory;0007"/>
+        <skos:broader rdf:resource="&CompositionCategory;0013"/>
+        <skos:narrower rdf:resource="&CompositionCategory;0019"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0047 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0047">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Nitrate (NO3) is most abundant (mole percent) anion.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Nitrate chemistry</skos:prefLabel>
+        <dc:source xml:lang="en"
+            >Struik etal 2002; This vocabulary</dc:source>
+        <skos:broader rdf:resource="&CompositionCategory;0027"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0048 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0048">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Composition is known but doesn&#8217;t&#39; fit in any other category</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Other composition</skos:prefLabel>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0049 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0049">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Material predominantly composed of oxide minerals</skos:definition>
+        <skos:prefLabel xml:lang="en">Oxide</skos:prefLabel>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0050 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0050">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Material for which the sum of modal quartz+feldspar+ mica + aluminous mineral is greater than or equal to 70 percent, and aluminous mineral + mica content is greater than or equal to 40 percent.</skos:definition>
+        <dc:source xml:lang="en">NADM SLTTm 2004</dc:source>
+        <skos:prefLabel xml:lang="en">Pelitic</skos:prefLabel>
+        <skos:broader rdf:resource="&CompositionCategory;0057"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0051 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0051">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Aluminum oxide (Al2O3) is less than sum of K and Na oxide.</skos:definition>
+        <skos:prefLabel xml:lang="en">Peralkaline</skos:prefLabel>
+        <dc:source xml:lang="en">Shand 1947</dc:source>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0052 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0052">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Aluminum oxide (Al2O3) greater than sum of Na, K and Ca oxide.</skos:definition>
+        <skos:prefLabel xml:lang="en">Peraluminous</skos:prefLabel>
+        <dc:source xml:lang="en">Shand 1947</dc:source>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0053 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0053">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Crude oil or natural gas is present, generally in trace amounts, commonly detected by smell</skos:definition>
+        <skos:prefLabel xml:lang="en">Petroliferous</skos:prefLabel>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0054 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0054">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Phosphate (PO4) is the most abundant (mole percent) anion.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Phosphate chemistry</skos:prefLabel>
+        <dc:source xml:lang="en"
+            >Struik etal 2002; This vocabulary</dc:source>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0055 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0055">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Greater than accessory amount (greater than 5 percent by volume) of phosphate minerals are present</skos:definition>
+        <skos:prefLabel xml:lang="en">Phosphatic</skos:prefLabel>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0056 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0056">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Grains or clasts are composed of many mineral or rock types</skos:definition>
+        <dc:source xml:lang="en"
+            >Jackson, 1997, p. 501</dc:source>
+        <skos:prefLabel xml:lang="en">Polymictic</skos:prefLabel>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0057 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0057">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Material for which the sum of modal quartz+feldspar+ mica + aluminous mineral is greater than or equal to 70 percent.</skos:definition>
+        <dc:source xml:lang="en">NADM SLTTm 2004</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Quartz-feldspar-pelitic</skos:prefLabel>
+        <skos:narrower rdf:resource="&CompositionCategory;0050"/>
+        <skos:narrower rdf:resource="&CompositionCategory;0058"/>
+        <skos:narrower rdf:resource="&CompositionCategory;0061"/>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0058 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0058">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Material for which the sum of modal quartz+feldspar+ mica + aluminous mineral is greater than or equal to 70 percent, and quartz + feldspar (sensu Robertson, 1999) greater than 60 percent.</skos:definition>
+        <dc:source xml:lang="en">NADM SLTTm 2004</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Quartzo-feldspathic</skos:prefLabel>
+        <skos:broader rdf:resource="&CompositionCategory;0057"/>
+        <skos:narrower rdf:resource="&CompositionCategory;0059"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0059 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0059">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Material consists of greater than or equal to 75 percent quartz.</skos:definition>
+        <dc:source xml:lang="en">NADM SLTTm 2004</dc:source>
+        <skos:prefLabel xml:lang="en">Quartzose</skos:prefLabel>
+        <skos:broader rdf:resource="&CompositionCategory;0058"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0060 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0060">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Detrital mineral grains in a granular rock consist of greater than 95 percent quartz. This petrographic criteria follows the most restrictive definition of the composition field at the quartz vertex of the sandstone QFL triangle (Folk, 1968). This use of term quartzose is more restrictive that that used in the mineralogical composition term vocabulary, reflecting the interpretive significance of pure quartz sandstones in sedimentary petrology.</skos:definition>
+        <dc:source xml:lang="en"
+            >Folk1968; This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Quartzose detrital mode</skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0061 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0061">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Material for which the sum of modal quartz+feldspar+ mica + aluminous mineral is greater than or equal to 70 percent, and quartz+ feldspar less than 60 percent</skos:definition>
+        <dc:source xml:lang="en">NADM SLTTm 2004</dc:source>
+        <skos:prefLabel xml:lang="en">Semi-pelitic</skos:prefLabel>
+        <skos:broader rdf:resource="&CompositionCategory;0057"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0062 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0062">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Composed of minerals whose crystal structure contains SiO4 tetrahedra, either isolated or joined through one or more oxygen atoms to form groups, chains, sheets or three-dimensional structures with metallic cations. Composition ranges from 20-100 percent SiO2. Typically some Al substitutues for silica. A survey of chemical analyses in the Georock database (query FOR ALL GEOLOGICAL SETTINGS, MATERIAL: WHOLE ROCK (AND VOLCANIC GLASS), PUB. YEARS: 2005-1970), 10/10/2005 state, http://georoc.mpch-mainz.gwdg.de/georoc/Entry.html) discovered that the lowest silica (Si02) content for igneous rock is about 20 percent. This is consistent with the lowest silica content found for a silicate mineral is about 21 percent for a chlorite variety found by scanning the mineral analyses in Deer, Howie, and Zussman (1966).</skos:definition>
+        <dc:source xml:lang="en"
+            >Neuendorf et al 2005; Struik 2002; This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Silicate chemistry</skos:prefLabel>
+        <skos:narrower rdf:resource="&CompositionCategory;0028"/>
+        <skos:narrower rdf:resource="&CompositionCategory;0030"/>
+        <skos:narrower rdf:resource="&CompositionCategory;0038"/>
+        <skos:narrower rdf:resource="&CompositionCategory;0074"/>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0063 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0063">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Greater than accessory amount (greater than 5 percent by volume) of silica, amorphous, as quartz, or any of the silica polymorphs are present</skos:definition>
+        <skos:prefLabel xml:lang="en">Silicic</skos:prefLabel>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0064 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0064">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source xml:lang="en">Folk1968</dc:source>
+        <skos:definition xml:lang="en"
+            >Sandstone petrographic composition term indicating that detrital mode for clastic rock (Q-F-L) includes less than 50 percent lithic fragments, between 75 and 95 percent quartz (thus less than 25 percent feldspar). This corresponds to the subarkose field of Folk (1968); the 75 percent quartz boundary is consistent with the quartzsose composition as defined in the mineralogic compostion terms vocabulary, but if more than a few percent &#39;matrix&#39; or cement is present, this is not necessarily equivalent to the mineralogical composition term.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Sub feldspathic detrital mode</skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0065 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0065">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en">Folk1968</dc:source>
+        <skos:definition xml:lang="en"
+            >Sandstone petrographic composition term indicating that detrital mode for clastic rock (Q-F-L) includes more than 50 percent lithic fragments, between 75 and 95 percent quartz (thus less than 25 percent feldspar). This corresponds to the sublitharenite field of Folk (1968); the 75 percent quartz boundary is consistent with quartzsose composition as defined in the mineralogic compostion terms vocabulary.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Sub lithic detrital mode</skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0066 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0066">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Aluminum oxide within 10 percent of sum of Na and K oxide.</skos:definition>
+        <dc:source xml:lang="en">Shand 1947</dc:source>
+        <skos:prefLabel xml:lang="en">Subaluminous</skos:prefLabel>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0067 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0067">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Material predominantly composed of sulfate minerals</skos:definition>
+        <skos:prefLabel xml:lang="en">Sulfate</skos:prefLabel>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0068 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0068">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:source xml:lang="en"
+            >Struik etal 2002; This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Sulfate chemistry</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Sulfate is the most abundant anion</skos:definition>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0069 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0069">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Material predominantly composed of sulfide minerals</skos:definition>
+        <skos:prefLabel xml:lang="en">Sulfide</skos:prefLabel>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:broader rdf:resource="&CompositionCategory;0070"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0070 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0070">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Greater than accessory amount (greater than 5 percent by volume) of sulfide mineral are present</skos:definition>
+        <skos:prefLabel xml:lang="en">Sulfide bearing</skos:prefLabel>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:narrower rdf:resource="&CompositionCategory;0069"/>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0071 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0071">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en"
+            >Neuendorf et al 2005; Struik 2002; This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Sulfide chemistry</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Sulfur is the most abundant anion; cations are metals or semimetals.</skos:definition>
+        <skos:narrower rdf:resource="&CompositionCategory;0072"/>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0072 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0072">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source xml:lang="en"
+            >Neuendorf et al 2005; Struik 2002; This vocabulary</dc:source>
+        <skos:definition xml:lang="en"
+            >Sulfide in which a semimetal (As, Sb, Bi) is present in a cation role</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Sulfosalt chemistry</skos:prefLabel>
+        <skos:broader rdf:resource="&CompositionCategory;0071"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0073 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0073">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Material consists of greater than 90 percent ferromagnesian silicate minerals..</skos:definition>
+        <dc:source xml:lang="en">NADM SLTTm 2004</dc:source>
+        <skos:prefLabel xml:lang="en">Ultramafic</skos:prefLabel>
+        <skos:broader rdf:resource="&CompositionCategory;0024"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0074 -->
+
+    <skos:Concept rdf:about="&CompositionCategory;0074">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:definition xml:lang="en"
+            >Containing between about 20 and 44 percent SiO2. A survey of chemical analyses in the Georock database (query FOR ALL GEOLOGICAL SETTINGS, MATERIAL: WHOLE ROCK (AND VOLCANIC GLASS), PUB. YEARS: 2005-1970), 10/10/2005 state, http://georoc.mpch-mainz.gwdg. syn ultrabasic.</skos:definition>
+        <dc:source xml:lang="en"
+            >Struik2002; SLTTs2004; This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Very low silica chemistry</skos:prefLabel>
+        <skos:broader rdf:resource="&CompositionCategory;0062"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/compositioncategory/0075 -->
+
+    <owl:Thing rdf:about="&CompositionCategory;0075">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition xml:lang="en"
+            >Sedimentary material contains significant broken volcanic rock fragments or vitric fragments, irrespective of their pyroclastic or epiclastic origin.</skos:definition>
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:prefLabel xml:lang="en">Volcanic lithic</skos:prefLabel>
+        <skos:inScheme rdf:resource=""/>
+        <skos:topConceptOf rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifierscheme/cgi/201012/compositioncategory -->
+
+    <skos:ConceptScheme rdf:about="">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:historyNote xml:lang="en"
+            >2011-07-07: GD update the class/object properties, define topConcepts properties and inverse. </skos:historyNote>
+        <skos:prefLabel xml:lang="en"
+            >CompositionCategory</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >This file contains the 201012 version of CGI Composition Category vocabulary. Includes terms for chemical, sedimentary petrographic, and mineralogical composition spaces, which are grouped into skos:collections.</skos:definition>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0001"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0005"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0010"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0011"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0012"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0014"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0015"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0017"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0018"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0021"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0022"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0023"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0024"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0025"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0027"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0029"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0031"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0034"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0036"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0037"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0041"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0042"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0043"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0044"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0045"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0048"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0049"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0051"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0052"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0053"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0054"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0055"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0056"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0057"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0060"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0062"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0063"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0064"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0065"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0066"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0067"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0068"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0070"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0071"/>
+        <skos:hasTopConcept rdf:resource="&CompositionCategory;0075"/>
+    </skos:ConceptScheme>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Collection -->
+
+    <owl:Thing rdf:about="&skos;Collection">
+        <skos:definition xml:lang="en"
+            >A meaningful collection of concepts.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Thing rdf:about="&skos;Concept">
+        <skos:definition xml:lang="en"
+            >An abstract idea or notion; a unit of thought.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Thing rdf:about="&skos;ConceptScheme">
+        <skos:definition xml:lang="en"
+            >A set of concepts, optionally including statements about semantic
+      relationships between those concepts.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#OrderedCollection -->
+
+    <owl:Thing rdf:about="&skos;OrderedCollection">
+        <skos:definition xml:lang="en"
+            >An ordered collection of concepts, where both the grouping and
+      the ordering are meaningful.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:Thing rdf:about="&skos;altLabel">
+        <skos:definition xml:lang="en"
+            >An alternative lexical label for a resource.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broadMatch -->
+
+    <owl:Thing rdf:about="&skos;broadMatch">
+        <skos:definition xml:lang="en"
+            >skos:broadMatch is used to state a hierarchical mapping link
+      between two conceptual resources in different concept schemes.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:Thing rdf:about="&skos;broader">
+        <skos:definition xml:lang="en"
+            >A concept that is more general in meaning.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#changeNote -->
+
+    <owl:Thing rdf:about="&skos;changeNote">
+        <skos:definition xml:lang="en"
+            >A note about a modification to a concept.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:Thing rdf:about="&skos;closeMatch">
+        <skos:definition xml:lang="en"
+            >skos:closeMatch is used to link two concepts that are
+      sufficiently similar that they can be used interchangeably in some information retrieval
+      applications. In order to avoid the possibility of &quot;compound errors&quot; when combining mappings
+      across more than two concept schemes, skos:closeMatch is not declared to be a transitive
+      property.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:Thing rdf:about="&skos;definition">
+        <rdf:type rdf:resource="&owl;DatatypeProperty"/>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI"
+            >http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en"
+            >A statement or formal explanation of the meaning of a concept.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#editorialNote -->
+
+    <owl:Thing rdf:about="&skos;editorialNote">
+        <skos:definition xml:lang="en"
+            >A note for an editor, translator or maintainer of the vocabulary.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:Thing rdf:about="&skos;exactMatch">
+        <skos:definition xml:lang="en"
+            >skos:exactMatch is used to link two concepts, indicating a high
+      degree of confidence that the concepts can be used interchangeably across a wide range of
+      information retrieval applications. skos:exactMatch is a transitive property, and is a
+      sub-property of skos:closeMatch.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:Thing rdf:about="&skos;example">
+        <skos:definition xml:lang="en"
+            >An example of the use of a concept.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hasTopConcept -->
+
+    <owl:Thing rdf:about="&skos;hasTopConcept">
+        <skos:definition xml:lang="en"
+            >A top level concept in the concept scheme.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#hiddenLabel -->
+
+    <owl:Thing rdf:about="&skos;hiddenLabel">
+        <skos:definition xml:lang="en"
+            >A lexical label for a resource that should be hidden when
+      generating visual displays of the resource, but should still be accessible to free text search
+      operations.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+    <owl:Thing rdf:about="&skos;historyNote">
+        <skos:definition xml:lang="en"
+            >A note about the past state/use/meaning of a concept.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:Thing rdf:about="&skos;inScheme">
+        <skos:definition xml:lang="en"
+            >A concept scheme in which the concept is included.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#mappingRelation -->
+
+    <owl:Thing rdf:about="&skos;mappingRelation">
+        <skos:definition xml:lang="en">Definition</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#member -->
+
+    <owl:Thing rdf:about="&skos;member">
+        <skos:definition xml:lang="en"
+            >A member of a collection.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#memberList -->
+
+    <owl:Thing rdf:about="&skos;memberList">
+        <skos:definition xml:lang="en"
+            >An RDF list containing the members of an ordered collection.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrowMatch -->
+
+    <owl:Thing rdf:about="&skos;narrowMatch">
+        <skos:definition xml:lang="en"
+            >skos:narrowMatch is used to state a hierarchical mapping link
+      between two conceptual resources in different concept schemes.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+    <owl:Thing rdf:about="&skos;narrower">
+        <skos:definition xml:lang="en"
+            >A concept that is more specific in meaning.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrowerTransitive -->
+
+    <owl:Thing rdf:about="&skos;narrowerTransitive">
+        <skos:definition
+            >skos:narrowerTransitive is a transitive superproperty of skos:broader. By
+      convention, skos:narrowerTransitive is not intended to be used in assertions, but provides a
+      mechanism whereby the transitive closure of skos:narrower can be queried.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:Thing rdf:about="&skos;notation">
+        <rdfs:label xml:lang="en">notation</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI"
+            >http://www.w3.org/2004/02/skos/core</rdfs:isDefinedBy>
+        <skos:definition xml:lang="en"
+            >A notation, also known as classification code, is a string of
+      characters such as &quot;T58.5&quot; or &quot;303.4833&quot; used to uniquely identify a concept within the scope
+      of a given concept scheme.</skos:definition>
+        <rdfs:comment xml:lang="en"
+            >By convention, skos:notation is used with a typed literal in the
+      object position of the triple.</rdfs:comment>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+    <owl:Thing rdf:about="&skos;note">
+        <skos:definition xml:lang="en"
+            >A general note, for any purpose.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:Thing rdf:about="&skos;prefLabel">
+        <skos:definition xml:lang="en"
+            >The preferred lexical label for a resource, in a given language.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#related -->
+
+    <owl:Thing rdf:about="&skos;related">
+        <skos:definition xml:lang="en"
+            >A concept with which there is an associative semantic
+      relationship.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#relatedMatch -->
+
+    <owl:Thing rdf:about="&skos;relatedMatch">
+        <skos:definition xml:lang="en"
+            >skos:relatedMatch is used to state an associative mapping link
+      between two conceptual resources in different concept schemes.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
+
+    <owl:Thing rdf:about="&skos;scopeNote">
+        <skos:definition xml:lang="en"
+            >A note that helps to clarify the meaning of a concept.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#semanticRelation -->
+
+    <owl:Thing rdf:about="&skos;semanticRelation">
+        <skos:definition xml:lang="en"
+            >A concept related by meaning.</skos:definition>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+    <owl:Thing rdf:about="&skos;topConceptOf">
+        <skos:definition xml:lang="en"
+            >Relates a concept to the concept scheme that it is a top level
+      concept of.</skos:definition>
+    </owl:Thing>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

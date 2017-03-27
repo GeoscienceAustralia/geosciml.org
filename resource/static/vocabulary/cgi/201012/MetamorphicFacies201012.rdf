@@ -1,0 +1,455 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY cgi "http://resource.geosciml.org/classifierscheme/cgi/201012/" >
+]>
+
+
+<rdf:RDF xmlns="&cgi;metamorphicfacies#"
+     xml:base="&cgi;metamorphicfacies"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:cgi="http://resource.geosciml.org/classifierscheme/cgi/201012/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="">
+        <dc:identifier
+            >http://resource.geosciml.org/classifierscheme/cgi/201012/metamorphicfacies</dc:identifier>
+        <dc:language>en</dc:language>
+        <dc:format
+            >application/rdf+xml</dc:format>
+        <owl:versionInfo>201012</owl:versionInfo>
+        <dc:title xml:lang="en"
+            >CGI metamorphic facies categories</dc:title>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:publisher xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:publisher>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;source"/>
+    <owl:AnnotationProperty rdf:about="&dc;identifier"/>
+    <owl:AnnotationProperty rdf:about="&dc;publisher"/>
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    <owl:AnnotationProperty rdf:about="&dc;language"/>
+    <owl:AnnotationProperty rdf:about="&dc;format"/>
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:ObjectProperty rdf:about="&skos;broader">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:ObjectProperty rdf:about="&skos;inScheme">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+    <owl:ObjectProperty rdf:about="&skos;narrower">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+        <owl:inverseOf rdf:resource="&skos;broader"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+    <owl:ObjectProperty rdf:about="&skos;topConceptOf">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:DatatypeProperty rdf:about="&skos;definition">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#historyNote -->
+
+    <owl:DatatypeProperty rdf:about="&skos;historyNote">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:DatatypeProperty rdf:about="&skos;prefLabel">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="&skos;Concept">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="&skos;ConceptScheme">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0001 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0001">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:source
+            >Smulikowski et al. 2003; Fettes and Desmons 2007</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Amphibolite metamorphic facies</skos:prefLabel>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Metamorphic facies characterized in rocks of basaltic composition by hornblende-plagioclase (plagioclase more calcic than An17).</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0007"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0002 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0002">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Eclogite metamorphic facies</skos:prefLabel>
+        <dc:source xml:lang="en"
+            >Fettes and Desmons 2007</dc:source>
+        <skos:definition xml:lang="en"
+            >omphacite-garnet-quartz (no plagioclase, olivine stable with garnet); assemblage for rocks of basaltic composition</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0007"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0003 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0003">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Epidote amphibolite metamorphic facies</skos:prefLabel>
+        <dc:source xml:lang="en"
+            >Fettes and Desmons 2007</dc:source>
+        <skos:definition xml:lang="en"
+            >hornblende-albite-epidote(-chlorite); assemblage for rocks of basaltic composition</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0007"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0004 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0004">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Glaucophane-schist facies</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Metamorphic facies characterized in rocks of basaltic composition by glaucophane-epidote (-garnet), glaucophane-lawsonite, or glaucophane-lawsonite-jadeite.</skos:definition>
+        <dc:source xml:lang="en"
+            >Smulikowski et al., 2003; Fettes and Desmons 2007</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0007"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0005 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0005">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Granulite facies</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Metamorphic facies characterized in rocks of basaltic composition by the mineral assemblage clinopyroxene-orthopyroxene-plagioclase (olivine not stable with plagioclase or with garnet), or especially high-temperature varieties or polymorphs of minerals (e</skos:definition>
+        <dc:source xml:lang="en"
+            >Smulikowski et al., 2003; Fettes and Desmons 2007</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0007"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0006 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0006">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Greenschist metamorphic facies</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Metamorphic facies characterized in rocks of basaltic composition by actinolite-albite-epidote-chlorite (an epidote group mineral is the diagnostic Ca-Al silicate rather than prehnite or pumpellyite).</skos:definition>
+        <dc:source xml:lang="en"
+            >Smulikowski et al., 2003; Fettes and Desmons 2007</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0007"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0007 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0007">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:prefLabel xml:lang="en"
+            >Metamorphic facies not specified</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >Metamorphosed, but facies not specified in more detail. For use in normative description to indicate that any metamorphic facies value is valid.</skos:definition>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0001"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0002"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0003"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0004"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0005"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0006"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0010"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0011"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0012"/>
+        <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0013"/>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0008 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0008">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >For use in instance descriptions to indicate that no data are available to constrain metamorphic facies.  May be metamorphosed or non-metamorphosed.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Metamorphic facies unknown</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0009 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0009">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Corresponds to non-metamorphosed condition; since metamorphic facies classification is based on mineral assemblages, absence of metamorphic minerals means that the classification does not apply.</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >No metamorphic minerals</skos:prefLabel>
+        <dc:source xml:lang="en">this vocabulary</dc:source>
+        <skos:topConceptOf rdf:resource=""/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0010 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0010">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Metamorphic facies characterized in rocks of basaltic composition by clinopyroxene-orthopyroxene-plagioclase (olivine stable with plagioclase).</skos:definition>
+        <skos:prefLabel xml:lang="en"
+            >Pyroxene hornfels metamorphic facies</skos:prefLabel>
+        <dc:source xml:lang="en"
+            >Smulikowski et al. 2003;Fettes and Desmons 2007</dc:source>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0007"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0011 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0011">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <dc:source xml:lang="en"
+            >Fettes and Desmons 2007</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Sanidinite metamorphic facies</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >distinguished from the pyroxene hornfels facies by the occurrence of especially high-temperature varieties and polymorphs of minerals (eg. pigeonite, K-rich labradorite); assemblage for rocks of basaltic composition</skos:definition>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0007"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0012 -->
+
+    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0012">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Metamorphic facies characterized in rocks of basaltic composition by prehnite-pumpellyite, pumpellyite-actinolite, prehnite-actinolite (prehnite and pumpellyite are the diagnostic Ca-Al silicates rather than minerals of the epidote or zeolite groups).</skos:definition>
+        <dc:source xml:lang="en"
+            >Smulikowski et al. 2003; Fettes and Desmons 2007</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Subgreenschist metamorphic facies</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0007"/>
+        <skos:inScheme rdf:resource=""/>
+    </skos:Concept>
+    
+
+
+    <!-- http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0013 -->
+
+    <owl:Thing rdf:about="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0013">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <dc:creator xml:lang="en"
+            >Concept Definition Task Group of IUGS CGI Interoperability Working Group (http://www.cgi-iugs.org/tech_collaboration/interoperability_working_group.html)</dc:creator>
+        <skos:definition xml:lang="en"
+            >Metamorphic facies characterized in rocks of basaltic composition by zeolite minerals such as laumontite and heulandites (in place of other Ca-Al silicates such as prehnite, pumpellyite and epidote).</skos:definition>
+        <dc:source xml:lang="en"
+            >Smulikowski et al. 2003; Fettes and Desmons 2007</dc:source>
+        <skos:prefLabel xml:lang="en"
+            >Zeolite metamorphic facies</skos:prefLabel>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/metamorphicfacies/0007"/>
+        <skos:inScheme rdf:resource=""/>
+    </owl:Thing>
+    
+
+
+    <!-- http://resource.geosciml.org/classifierscheme/cgi/201012/metamorphicfacies -->
+
+    <skos:ConceptScheme rdf:about="">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <skos:historyNote xml:lang="en"
+            >2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using &#39;file/Export inferred axioms as ontology&#39; in Protege.</skos:historyNote>
+        <skos:historyNote xml:lang="en"
+            >2010-11-28 SMR Replace URN identifiers with http URI identifiers according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)</skos:historyNote>
+        <skos:prefLabel xml:lang="en"
+            >Metamorphic facies categories</skos:prefLabel>
+        <skos:definition xml:lang="en"
+            >This file contains the CGI metamorphic facies vocabulary; vocabulary is based on Fettes and Desmons, 2007. Use to populate metamorphic facies property in metamorphic description</skos:definition>
+    </skos:ConceptScheme>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

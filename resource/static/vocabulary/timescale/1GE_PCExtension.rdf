@@ -1,0 +1,1438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:basic="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:gtrs="http://resource.geosciml.org/ontology/timescale/thors#"
+	xmlns:gts="http://resource.geosciml.org/ontology/timescale/gts#"
+	xmlns:isc="http://resource.geosciml.org/classifier/ics/ischart/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rank="http://resource.geosciml.org/ontology/timescale/rank/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:sccgi="http://resource.geosciml.org/classifier/cgi/stratchart/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:tm="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">oneGeology Europe precambrian timescale elements</rdfs:label>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Siderian2"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian7"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Ectasian2"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Neoarchean2"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian5"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Stenian2"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Calymmian3"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Statherian3"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Stenian1"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian5"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Ectasian2"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Ectasian3"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian2"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Tonian1"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Statherian4"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Tonian2"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Statherian2"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Ectasian3"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Calymmian2"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Tonian2"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Siderian2"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Calymmian4"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Stenian2"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian6"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Statherian3"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian2"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Calymmian3"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Ectasian4"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian3"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian7"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Calymmian1"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian3"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Siderian1"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian6"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Ectasian4"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Neoarchean1"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Statherian2"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian4"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Statherian4"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Ectasian1"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian1"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Calymmian4"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Neoarchean2"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian4"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Statherian1"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Calymmian2"/>
+	<skos:prefLabel xml:lang="en">oneGeology Europe precambrian timescale elements</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Calymmian2">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary"/>
+	<tm:temporalPosition rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Calymmian2Time"/>
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Calymmian2"/>
+	<gtrs:previousEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Calymmian1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Calymmian2Time">
+	<rdf:type rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Coordinate"/>
+	<tm:frame rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicage/ma"/>
+	<tm:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1520</tm:value>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Calymmian3">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary"/>
+	<tm:temporalPosition rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Calymmian3Time"/>
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Calymmian3"/>
+	<gtrs:previousEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Calymmian2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Calymmian3Time">
+	<rdf:type rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Coordinate"/>
+	<tm:frame rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicage/ma"/>
+	<tm:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1470</tm:value>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Calymmian4">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary"/>
+	<tm:temporalPosition rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Calymmian4Time"/>
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Calymmian4"/>
+	<gtrs:previousEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Calymmian3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Calymmian4Time">
+	<rdf:type rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Coordinate"/>
+	<tm:frame rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicage/ma"/>
+	<tm:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1440</tm:value>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Ectasian2">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary"/>
+	<tm:temporalPosition rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Ectasian2Time"/>
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Ectasian2"/>
+	<gtrs:previousEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Ectasian1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Ectasian2Time">
+	<rdf:type rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Coordinate"/>
+	<tm:frame rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicage/ma"/>
+	<tm:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1360</tm:value>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Ectasian3">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary"/>
+	<tm:temporalPosition rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Ectasian3Time"/>
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Calymmian3"/>
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Ectasian3"/>
+	<gtrs:previousEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Calymmian2"/>
+	<gtrs:previousEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Ectasian2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Ectasian3Time">
+	<rdf:type rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Coordinate"/>
+	<tm:frame rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicage/ma"/>
+	<tm:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1280</tm:value>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Ectasian4">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary"/>
+	<tm:temporalPosition rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Ectasian4Time"/>
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Ectasian4"/>
+	<gtrs:previousEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Ectasian3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Ectasian4Time">
+	<rdf:type rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Coordinate"/>
+	<tm:frame rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicage/ma"/>
+	<tm:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1250</tm:value>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Neoarchean2">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary"/>
+	<tm:temporalPosition rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Neoarchean2Time"/>
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Neoarchean2"/>
+	<gtrs:previousEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Neoarchean1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Neoarchean2Time">
+	<rdf:type rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Coordinate"/>
+	<tm:frame rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicage/ma"/>
+	<tm:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2650</tm:value>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian2">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary"/>
+	<tm:temporalPosition rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian2Time"/>
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian2"/>
+	<gtrs:previousEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian2Time">
+	<rdf:type rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Coordinate"/>
+	<tm:frame rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicage/ma"/>
+	<tm:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1960</tm:value>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian3">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary"/>
+	<tm:temporalPosition rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian3Time"/>
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian3"/>
+	<gtrs:previousEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian3Time">
+	<rdf:type rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Coordinate"/>
+	<tm:frame rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicage/ma"/>
+	<tm:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1910</tm:value>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian4">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary"/>
+	<tm:temporalPosition rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian4Time"/>
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian4"/>
+	<gtrs:previousEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian4Time">
+	<rdf:type rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Coordinate"/>
+	<tm:frame rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicage/ma"/>
+	<tm:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1880</tm:value>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian5">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary"/>
+	<tm:temporalPosition rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian5Time"/>
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian5"/>
+	<gtrs:previousEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian5Time">
+	<rdf:type rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Coordinate"/>
+	<tm:frame rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicage/ma"/>
+	<tm:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1870</tm:value>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian6">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary"/>
+	<tm:temporalPosition rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian6Time"/>
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian6"/>
+	<gtrs:previousEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian5"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian6Time">
+	<rdf:type rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Coordinate"/>
+	<tm:frame rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicage/ma"/>
+	<tm:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1840</tm:value>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian7">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary"/>
+	<tm:temporalPosition rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian7Time"/>
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian7"/>
+	<gtrs:previousEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian6"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian7Time">
+	<rdf:type rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Coordinate"/>
+	<tm:frame rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicage/ma"/>
+	<tm:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1820</tm:value>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Siderian2">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary"/>
+	<tm:temporalPosition rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Siderian2Time"/>
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Siderian2"/>
+	<gtrs:previousEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Siderian1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Siderian2Time">
+	<rdf:type rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Coordinate"/>
+	<tm:frame rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicage/ma"/>
+	<tm:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2400</tm:value>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Statherian2">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary"/>
+	<tm:temporalPosition rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Statherian2Time"/>
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Statherian2"/>
+	<gtrs:previousEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Statherian1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Statherian2Time">
+	<rdf:type rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Coordinate"/>
+	<tm:frame rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicage/ma"/>
+	<tm:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1770</tm:value>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Statherian3">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary"/>
+	<tm:temporalPosition rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Statherian3Time"/>
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Statherian3"/>
+	<gtrs:previousEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Statherian2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Statherian3Time">
+	<rdf:type rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Coordinate"/>
+	<tm:frame rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicage/ma"/>
+	<tm:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1740</tm:value>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Statherian4">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary"/>
+	<tm:temporalPosition rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Statherian4Time"/>
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Statherian4"/>
+	<gtrs:previousEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Statherian3"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Statherian4Time">
+	<rdf:type rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Coordinate"/>
+	<tm:frame rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicage/ma"/>
+	<tm:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1660</tm:value>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Stenian2">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary"/>
+	<tm:temporalPosition rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Stenian2Time"/>
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Stenian2"/>
+	<gtrs:previousEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Stenian1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Stenian2Time">
+	<rdf:type rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Coordinate"/>
+	<tm:frame rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicage/ma"/>
+	<tm:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1130</tm:value>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Tonian2">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary"/>
+	<tm:temporalPosition rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Tonian2Time"/>
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Tonian2"/>
+	<gtrs:previousEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Tonian1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Tonian2Time">
+	<rdf:type rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Coordinate"/>
+	<tm:frame rdf:resource="http://resource.geosciml.org/classifier/cgi/geologicage/ma"/>
+	<tm:value rdf:datatype="http://www.w3.org/2001/XMLSchema#double">910</tm:value>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Boundaries">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#OrderedCollection"/>
+	<rdfs:label xml:lang="en">Boundaries in the oneGeology Europe Precambrian timescale</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18nfa8p4bx1">
+	<rdf:first rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Neoarchean2"/>
+	<rdf:rest rdf:nodeID="node18nfa8p4bx2"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18nfa8p4bx2">
+	<rdf:first rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Siderian2"/>
+	<rdf:rest rdf:nodeID="node18nfa8p4bx3"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18nfa8p4bx3">
+	<rdf:first rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian2"/>
+	<rdf:rest rdf:nodeID="node18nfa8p4bx4"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18nfa8p4bx4">
+	<rdf:first rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian3"/>
+	<rdf:rest rdf:nodeID="node18nfa8p4bx5"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18nfa8p4bx5">
+	<rdf:first rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian4"/>
+	<rdf:rest rdf:nodeID="node18nfa8p4bx6"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18nfa8p4bx6">
+	<rdf:first rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian5"/>
+	<rdf:rest rdf:nodeID="node18nfa8p4bx7"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18nfa8p4bx7">
+	<rdf:first rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian6"/>
+	<rdf:rest rdf:nodeID="node18nfa8p4bx8"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18nfa8p4bx8">
+	<rdf:first rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian7"/>
+	<rdf:rest rdf:nodeID="node18nfa8p4bx9"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18nfa8p4bx9">
+	<rdf:first rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Statherian2"/>
+	<rdf:rest rdf:nodeID="node18nfa8p4bx10"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18nfa8p4bx10">
+	<rdf:first rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Statherian3"/>
+	<rdf:rest rdf:nodeID="node18nfa8p4bx11"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18nfa8p4bx11">
+	<rdf:first rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Statherian4"/>
+	<rdf:rest rdf:nodeID="node18nfa8p4bx12"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18nfa8p4bx12">
+	<rdf:first rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Calymmian2"/>
+	<rdf:rest rdf:nodeID="node18nfa8p4bx13"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18nfa8p4bx13">
+	<rdf:first rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Calymmian3"/>
+	<rdf:rest rdf:nodeID="node18nfa8p4bx14"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18nfa8p4bx14">
+	<rdf:first rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Calymmian4"/>
+	<rdf:rest rdf:nodeID="node18nfa8p4bx15"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18nfa8p4bx15">
+	<rdf:first rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Ectasian2"/>
+	<rdf:rest rdf:nodeID="node18nfa8p4bx16"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18nfa8p4bx16">
+	<rdf:first rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Ectasian3"/>
+	<rdf:rest rdf:nodeID="node18nfa8p4bx17"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18nfa8p4bx17">
+	<rdf:first rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Ectasian4"/>
+	<rdf:rest rdf:nodeID="node18nfa8p4bx18"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18nfa8p4bx18">
+	<rdf:first rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Stenian2"/>
+	<rdf:rest rdf:nodeID="node18nfa8p4bx19"/>
+</rdf:Description>
+
+<rdf:Description rdf:nodeID="node18nfa8p4bx19">
+	<rdf:first rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Tonian2"/>
+	<rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Boundaries">
+	<skos:memberList rdf:nodeID="node18nfa8p4bx1"/>
+	<skos:prefLabel xml:lang="en">Boundaries in the oneGeology Europe Precambrian timescale</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Calymmian1">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdfs:comment xml:lang="en">older bound-1600.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">younger bound-1520.0</rdfs:comment>
+	<gts:rank rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Epoch"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseMesoproterozoic"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Calymmian2"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Calymmian"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.1.2.3.4</skos:notation>
+	<skos:prefLabel xml:lang="pl">Kalym 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Calymmian 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="hu">calymmi 1. szakasz</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Calymiano 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">Calymmien 1*</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">Калим 1*</skos:prefLabel>
+	<skos:prefLabel xml:lang="no">Kalymmium 1*</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">calymmiano 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="et">Calymm 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="sl">calymmij 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="lt">Kalymis 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Calymmiën 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Calymmien 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">kalymmium 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Calymmium 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Calym 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">kalymnium 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">Calymmiense 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="cs">Calymm 1 *</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Calymmian2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdfs:comment xml:lang="en">younger bound-1470.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">older bound-1520.0</rdfs:comment>
+	<gts:rank rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Epoch"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Calymmian2"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Calymmian3"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Ectasian3"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Calymmian"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.1.2.3.3</skos:notation>
+	<skos:prefLabel xml:lang="cs">Calymm 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">calymmiano 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">Calymmien 2*</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">kalymnium 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pl">Kalym 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Calymmien 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="lt">Kalymis 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Calymmian 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="hu">calymmi 2. szakasz</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Calymmiën 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Calymiano 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="sl">calymmij 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">Калим 2*</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">Calymmiense 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="no">Kalymmium 2*</skos:prefLabel>
+	<skos:prefLabel xml:lang="et">Calymm 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Calym 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Calymmium 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">kalymmium 2 *</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Calymmian3">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:comment xml:lang="en">younger bound-1440.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">older bound-1470.0</rdfs:comment>
+	<gts:rank rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Epoch"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Ectasian3"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Calymmian3"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Calymmian4"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Calymmian"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.1.2.3.2</skos:notation>
+	<skos:prefLabel xml:lang="no">Kalymmium 3*</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">Calymmiense 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">Калим 3*</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">Calymmien 3*</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Calymmiën 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Calymiano 3</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">calymmiano 3</skos:prefLabel>
+	<skos:prefLabel xml:lang="lt">Kalymis 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pl">Kalym 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Calymmium 3</skos:prefLabel>
+	<skos:prefLabel xml:lang="hu">calymmi 3. szakasz</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Calymmian 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sl">calymmij 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">kalymmium 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Calym 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="et">Calymm 3</skos:prefLabel>
+	<skos:prefLabel xml:lang="cs">Calymm 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Calymmien 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">kalymnium 3 *</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Calymmian4">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdfs:comment xml:lang="en">older bound-1440.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">younger bound-1400.0</rdfs:comment>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Calymmian4"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseEctasian"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Calymmian"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.1.2.3.1</skos:notation>
+	<skos:prefLabel xml:lang="es">Calymmiense 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">kalymnium  4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="et">Calymm 4</skos:prefLabel>
+	<skos:prefLabel xml:lang="pl">Kalym 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sl">calymmij 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">Калим 4*</skos:prefLabel>
+	<skos:prefLabel xml:lang="cs">Calymm 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Calymmien 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">Calymmien 4*</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Calymmiën 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">kalymmium 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="no">Kalymmium 4*</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Calym 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="hu">calymmi 4. szakasz</skos:prefLabel>
+	<skos:prefLabel xml:lang="lt">Kalymis 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">calymmiano 4</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Calymiano 4</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Calymmian 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Calymmium 4</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Ectasian1">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:comment xml:lang="en">younger bound-1360.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">older bound-1400.0</rdfs:comment>
+	<gts:rank rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Epoch"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseEctasian"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Ectasian2"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Ectasian"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.1.2.2.4</skos:notation>
+	<skos:prefLabel xml:lang="et">Ectas 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">ektazium 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sl">ectasij 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pl">Ektas 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Ectasien 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">Ectasien 1*</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Ectasium 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="no">Ektasium 1*</skos:prefLabel>
+	<skos:prefLabel xml:lang="lt">Ektasis 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">ectasiano 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Ectasiano 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">ectasium 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">Ектаз 1*</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">Ectasiense 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Ectasian 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Ectasiën 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="cs">Ectas 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Ectas 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="hu">ectasi 1. szakasz</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Ectasian2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdfs:comment xml:lang="en">younger bound-1270.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">older bound-1360.0</rdfs:comment>
+	<gts:rank rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Epoch"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Ectasian2"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Calymmian3"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Ectasian3"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Ectasian"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.1.2.2.3</skos:notation>
+	<skos:prefLabel xml:lang="it">ectasiano 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Ectasian 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">ektazium 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">Ectasien 2*</skos:prefLabel>
+	<skos:prefLabel xml:lang="sl">ectasij 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Ectasium 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">Ectasiense 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">Ектаз 2*</skos:prefLabel>
+	<skos:prefLabel xml:lang="et">Ectas 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Ectasiano 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="no">Ektasium 2*</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Ectas 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Ectasiën 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="cs">Ectas 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="hu">ectasi 2. szakasz</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Ectasien 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">ectasium 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="lt">Ektasis 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pl">Ektas 2 *</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Ectasian3">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:comment xml:lang="en">older bound-1270.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">younger bound-1250.0</rdfs:comment>
+	<gts:rank rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Epoch"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Calymmian3"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Ectasian3"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Ectasian4"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Ectasian"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.1.2.2.2</skos:notation>
+	<skos:prefLabel xml:lang="fr">Ectasien 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="et">Ectas 3</skos:prefLabel>
+	<skos:prefLabel xml:lang="hu">ectasi 3. szakasz</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">Ectasien 3*</skos:prefLabel>
+	<skos:prefLabel xml:lang="pl">Ektas 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">Ectasiense 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Ectasiën 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Ectasiano 3</skos:prefLabel>
+	<skos:prefLabel xml:lang="lt">Ektasis 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">ektazium 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Ectasium 3</skos:prefLabel>
+	<skos:prefLabel xml:lang="cs">Ectas 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Ectas 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sl">ectasij 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">ectasiano 3</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Ectasian 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">ectasium 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="no">Ektasium 3*</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">Ектаз 3*</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Ectasian4">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdfs:comment xml:lang="en">older bound-1250.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">younger bound-1200.0</rdfs:comment>
+	<gts:rank rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Epoch"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Ectasian4"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseStenian"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Ectasian"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.1.2.2.1</skos:notation>
+	<skos:prefLabel xml:lang="en">Ectasian 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">ectasium 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Ectasiën 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Ectasiano 4</skos:prefLabel>
+	<skos:prefLabel xml:lang="cs">Ectas 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Ectas 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">ektazium 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="hu">ectasi 4. szakasz</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">ectasiano 4</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">Ectasiense 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pl">Ektas 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Ectasien 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">Ектаз 4*</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Ectasium 4</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">Ectasien 4*</skos:prefLabel>
+	<skos:prefLabel xml:lang="sl">ectasij 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="et">Ectas 4</skos:prefLabel>
+	<skos:prefLabel xml:lang="no">Ekatsium 4*</skos:prefLabel>
+	<skos:prefLabel xml:lang="lt">Ektasis 4 *</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Eras">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+	<rdfs:label xml:lang="en">Eras in the oneGeology Europe Precambrian timescale</rdfs:label>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Statherian3"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Siderian1"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Statherian1"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Ectasian3"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian6"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Ectasian1"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian4"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Calymmian4"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Stenian1"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian7"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Calymmian2"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Stenian2"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian2"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian3"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian5"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Calymmian3"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Statherian4"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Siderian2"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Statherian2"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Neoarchean1"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Ectasian4"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian1"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Calymmian1"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Tonian1"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Neoarchean2"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Ectasian2"/>
+	<skos:member rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Tonian2"/>
+	<skos:prefLabel xml:lang="en">Eras in the oneGeology Europe Precambrian timescale</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Neoarchean1">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdfs:comment xml:lang="en">younger bound-2650.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">older bound-2800.0</rdfs:comment>
+	<gts:rank rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Period"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseNeoarchean"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Neoarchean2"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Neoarchean"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.2.1.2</skos:notation>
+	<skos:prefLabel xml:lang="it">neoarcheano 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Neoarcaico 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Neo-archaicum 1*</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">Neoarkæisk 1*</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Neoarkeikum 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">neoarchaikum 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">neoarkeikum 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Neoarchaikum 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="sl">neoarhaik 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pl">Neoarchaik 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">пеоархай 1*</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Néoarchéen 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="hu">neoarchai alsÃ³ szakasz</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Neoarchean 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="cs">Neoarchaikum 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="lt">Neoarchejus 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">Neocarcaico 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="et">Neoarhaikum 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="no">Neoarkeikum 1*</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Neoarchean2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdfs:comment xml:lang="en">older bound-2650.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">younger bound-2500.0</rdfs:comment>
+	<gts:rank rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Period"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Neoarchean2"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseProterozoic"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Neoarchean"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.2.1.1</skos:notation>
+	<skos:prefLabel xml:lang="da">Neoarkæisk 2*</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">neoarkeikum 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Neoarchean 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="et">Neoarhaikum 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Neoarcaico 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">neoarcheano 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Neoarkeikum 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Neo-archaicum 2*</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Neoarchaikum 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="cs">Neoarchaikum 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="hu">neoarchai felsÅ‘ szakasz</skos:prefLabel>
+	<skos:prefLabel xml:lang="sl">neoarhaik 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">neoarchaikum 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="no">Neoarkeikum 2*</skos:prefLabel>
+	<skos:prefLabel xml:lang="pl">Neoarchaik 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="lt">Neoarchejus 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">пеоархай  2*</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Néoarchéen 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">Neoarcaico 2 *</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian1">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdfs:comment xml:lang="en">younger bound-1960.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">older bound-2050.0</rdfs:comment>
+	<gts:rank rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Epoch"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseOrosirian"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian2"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Orosirian"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.1.3.2.7</skos:notation>
+	<skos:prefLabel xml:lang="sl">orosirij 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">orosirium 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">orosirium 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Orosirien 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Orosirian 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="no">Orosirium 1*</skos:prefLabel>
+	<skos:prefLabel xml:lang="hu">orosiri 1. szakasz</skos:prefLabel>
+	<skos:prefLabel xml:lang="pl">Orosir 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="cs">Orosir 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Orosir 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Orosiriën 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="et">Orosir 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Orosirium 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">Orosiriense 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">Orosirien 1*</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">Ороѿир 1*</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Orosiriano 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="lt">Orosiris 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">orosiriano 1</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdfs:comment xml:lang="en">younger bound-1920.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">older bound-1960.0</rdfs:comment>
+	<gts:rank rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Epoch"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian2"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian3"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Orosirian"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.1.3.2.6</skos:notation>
+	<skos:prefLabel xml:lang="da">Orosirien 2*</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">Ороѿир 2*</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Orosirien 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pl">Orosir 2*</skos:prefLabel>
+	<skos:prefLabel xml:lang="sl">orosirij 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Orosiriën 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="et">Orosir 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="hu">orosiri 2. szakasz</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">orosiriano 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="no">Orosirium 2*</skos:prefLabel>
+	<skos:prefLabel xml:lang="cs">Orosir 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Orosirium 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Orosir 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">Orosiriense 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">orosirium 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Orosirian 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">orosirium 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="lt">Orosiris 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Orosiriano 2</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian3">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:comment xml:lang="en">older bound-1920.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">younger bound-1880.0</rdfs:comment>
+	<gts:rank rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Epoch"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian3"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian4"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Orosirian"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.1.3.2.5</skos:notation>
+	<skos:prefLabel xml:lang="no">Orosirium  3*</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Orosirian 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Orosirien 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Orosirium 3</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Orosiriano 3</skos:prefLabel>
+	<skos:prefLabel xml:lang="pl">Orosir 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Orosir 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="cs">Orosir 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sl">orosirij 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Orosiriën 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">Ороѿир 3*</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">orosirium 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">orosirium 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="et">Orosir 3</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">orosiriano 3</skos:prefLabel>
+	<skos:prefLabel xml:lang="lt">Orosiris 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="hu">orosiri 3. szakasz</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">Orosirien 3*</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">Orosiriense 3 *</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian4">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdfs:comment xml:lang="en">older bound-1880.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">younger bound-1870.0</rdfs:comment>
+	<gts:rank rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Epoch"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian4"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian5"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Orosirian"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.1.3.2.4</skos:notation>
+	<skos:prefLabel xml:lang="de">Orosirium 4</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">orosiriano 4</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Orosiriën 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="lt">Orosiris 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sl">orosirij 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Orosirien 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="cs">Orosir 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Orosir 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pl">Orosir 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">Orosiriense 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Orosiriano 4</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">orosirium 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">orosirium 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">Ороѿир 4*</skos:prefLabel>
+	<skos:prefLabel xml:lang="et">Orosir 4</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Orosirian 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">Orosirien 4*</skos:prefLabel>
+	<skos:prefLabel xml:lang="no">Orosirium 4*</skos:prefLabel>
+	<skos:prefLabel xml:lang="hu">orosiri 4. szakasz</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian5">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:comment xml:lang="en">younger bound-1840.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">older bound-1870.0</rdfs:comment>
+	<gts:rank rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Epoch"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian5"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian6"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Orosirian"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.1.3.2.3</skos:notation>
+	<skos:prefLabel xml:lang="lt">Orosiris 5 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="et">Orosir 5</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">Orosirien 5*</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Orosirien 5 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Orosirium 5</skos:prefLabel>
+	<skos:prefLabel xml:lang="no">Orosirium 5*</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">Orosiriense 5 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="hu">orosiri 5. szakasz</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Orosiriën 5 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sl">orosirij 5 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Orosirian 5 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">orosiriano 5</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">Ороѿир 5*</skos:prefLabel>
+	<skos:prefLabel xml:lang="cs">Orosir 5 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Orosir 5 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pl">Orosir 5 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">orosirium 5 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">orosirium 5 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Orosiriano 5</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian6">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdfs:comment xml:lang="en">older bound-1840.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">younger bound-1820.0</rdfs:comment>
+	<gts:rank rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Epoch"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian6"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian7"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Orosirian"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.1.3.2.2</skos:notation>
+	<skos:prefLabel xml:lang="it">orosiriano 6</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Orosiriano 6</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Orosirien 6 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Orosiriën 6 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">orosirium 6 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">orosirium 6 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Orosirium 6</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">Orosirien 6*</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">Orosiriense 6 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sl">orosirij 6 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="et">Orosir 6</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">Ороѿир 6*</skos:prefLabel>
+	<skos:prefLabel xml:lang="cs">Orosir 6 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Orosir 6 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pl">Orosir 6 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Orosirian 6 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="lt">Orosiris 6 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="no">Orosirium 6*</skos:prefLabel>
+	<skos:prefLabel xml:lang="hu">orosiri 6. szakasz</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian7">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdfs:comment xml:lang="en">older bound-1820.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">younger bound-1800.0</rdfs:comment>
+	<gts:rank rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Epoch"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Orosirian7"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseStatherian"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Orosirian"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.1.3.2.1</skos:notation>
+	<skos:prefLabel xml:lang="da">Orosirien 7*</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Orosirien 7 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Orosirium 7</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Orosiriano 7</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">orosirium 7 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">orosirium 7 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="lt">Orosiris 7 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">Orosiriense 7 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="no">Orosirium 7*</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Orosirian 7 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">orosiriano 7</skos:prefLabel>
+	<skos:prefLabel xml:lang="et">Orosir 7</skos:prefLabel>
+	<skos:prefLabel xml:lang="cs">Orosir 7 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Orosir 7 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pl">Orosir 7 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Orosiriën 7 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">Ороѿир 7*</skos:prefLabel>
+	<skos:prefLabel xml:lang="sl">orosirij 7 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="hu">orosiri 7. szakasz</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Siderian1">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:comment xml:lang="en">younger bound-2400.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">older bound-2500.0</rdfs:comment>
+	<gts:rank rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Epoch"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseProterozoic"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Siderian2"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Siderian"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.1.3.4.2</skos:notation>
+	<skos:prefLabel xml:lang="hu">sideri 1. szakasz</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Sider 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pl">Sider 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">sideriano 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="cs">Sider 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">Sideriense 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">Сидер 1*</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">siderium 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">siderium 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="lt">Sideris 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Siderian 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="et">Sider 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">Siderien 1*</skos:prefLabel>
+	<skos:prefLabel xml:lang="sl">siderij 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Siderium 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Sideriën 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="no">Siderium 1*</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Sidérien 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Sideriano 1</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Siderian2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdfs:comment xml:lang="en">younger bound-2300.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">older bound-2400.0</rdfs:comment>
+	<gts:rank rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Epoch"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Siderian2"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseRhyacian"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Siderian"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.1.3.4.1</skos:notation>
+	<skos:prefLabel xml:lang="fr">Sidérien 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Sider 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">Сидер 2*</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">Siderien 2*</skos:prefLabel>
+	<skos:prefLabel xml:lang="lt">Sideris 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="hu">sideri 2. szakasz</skos:prefLabel>
+	<skos:prefLabel xml:lang="et">Sider 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Sideriano 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Sideriën 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">sideriano 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">Sideriense 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sl">sederij 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Siderian 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="no">Siderium 2*</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">siderium 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">siderium 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Siderium 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="pl">Sider 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="cs">Sider 2 *</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Statherian1">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:comment xml:lang="en">older bound-1800.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">younger bound-1770.0</rdfs:comment>
+	<gts:rank rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Epoch"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseStatherian"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Statherian2"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Statherian"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.1.3.1.4</skos:notation>
+	<skos:prefLabel xml:lang="no">Staterium 1*</skos:prefLabel>
+	<skos:prefLabel xml:lang="pl">Stater 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="lt">Stateris 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">Статер 1*</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Stathérien 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">Statheriense 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="hu">statheri 1. szakasz</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Stateriano 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="sl">statherij 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">staterium 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Statherium 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">staterium 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Statheriën 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">Statherien 1*</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">statheriano 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Statherian 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="et">Stather 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="cs">Stather 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Stather 1 *</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Statherian2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdfs:comment xml:lang="en">younger bound-1740.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">older bound-1770.0</rdfs:comment>
+	<gts:rank rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Epoch"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Statherian2"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Statherian3"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Statherian"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.1.3.1.3</skos:notation>
+	<skos:prefLabel xml:lang="da">Statherien 2*</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Statherium 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Statherian 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="hu">statheri 2. szakasz</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">staterium 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">staterium 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="no">Staterium 2*</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Statheriën 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sl">statherij 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">statheriano 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Stathérien 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="et">Stather 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Stateriano 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="pl">Stater 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="cs">Stather 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">Statheriense 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Stather 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="lt">Stateris 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">Статер 2*</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Statherian3">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:comment xml:lang="en">younger bound-1660.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">older bound-1740.0</rdfs:comment>
+	<gts:rank rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Epoch"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Statherian3"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Statherian4"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Statherian"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.1.3.1.2</skos:notation>
+	<skos:prefLabel xml:lang="sl">statherij 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="cs">Stather 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Statherium 3</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Stather 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">staterium 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">staterium 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">Statheriense 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="hu">statheri 3. szakasz</skos:prefLabel>
+	<skos:prefLabel xml:lang="lt">Stateris 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pl">Stater 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="et">Stather 3</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Stathérien 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">Статер 3*</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Statherian 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">Statherien 3*</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Stateriano 3</skos:prefLabel>
+	<skos:prefLabel xml:lang="no">Staterium 3*</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Statheriën 3 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">statheriano 3</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Statherian4">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdfs:comment xml:lang="en">younger bound-1600.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">older bound-1660.0</rdfs:comment>
+	<gts:rank rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Epoch"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Statherian4"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseMesoproterozoic"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Statherian"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.1.3.1.1</skos:notation>
+	<skos:prefLabel xml:lang="pt">Stateriano 4</skos:prefLabel>
+	<skos:prefLabel xml:lang="lt">Stateris 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">Статер 4*</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">staterium 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">staterium 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="et">Stather 4</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">Statherien 4*</skos:prefLabel>
+	<skos:prefLabel xml:lang="sl">statherij 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Stathérien 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="hu">statheri 4. szakasz</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">statheriano 4</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Statherian 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Statherium 4</skos:prefLabel>
+	<skos:prefLabel xml:lang="cs">Stather 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Stather 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Statheriën 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">Statheriense 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pl">Stater 4 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="no">Staterium 4*</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Stenian1">
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdfs:comment xml:lang="en">older bound-1200.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">younger bound-1130.0</rdfs:comment>
+	<gts:rank rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Epoch"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseStenian"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Stenian2"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Stenian"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.1.2.1.2</skos:notation>
+	<skos:prefLabel xml:lang="it">steniano 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Steniën 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Stenian 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="cs">Sten 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Sten 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pl">Sten 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Steniano 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Stenium 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">stenium 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="no">Stenium 1*</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">stenium 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="et">Sten1</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Sténien 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">Stenien 1*</skos:prefLabel>
+	<skos:prefLabel xml:lang="lt">Stenis 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sl">stenij 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">Esteniense 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">Стен 1*</skos:prefLabel>
+	<skos:prefLabel xml:lang="hu">steni alsÃ³ szakasz</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Stenian2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdfs:comment xml:lang="en">younger bound-1000.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">older bound-1130.0</rdfs:comment>
+	<gts:rank rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Epoch"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Stenian2"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseNeoproterozoic"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Stenian"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.1.2.1.1</skos:notation>
+	<skos:prefLabel xml:lang="en">Stenian 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Sténien 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sl">stenij 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="hu">steni felsÅ‘ szakasz</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Steniano 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="cs">Sten 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Stenium 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Sten 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pl">Sten 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Steniën 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">Esteniense 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="no">Stenium 2*</skos:prefLabel>
+	<skos:prefLabel xml:lang="et">Sten 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="lt">Stenis 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">Stenien 2*</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">steniano 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">stenium 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">stenium 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">Стен 2*</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Tonian1">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdfs:comment xml:lang="en">younger bound-910.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">older bound-1000.0</rdfs:comment>
+	<gts:rank rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Epoch"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseNeoproterozoic"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Tonian2"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Tonian"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.1.1.3.2</skos:notation>
+	<skos:prefLabel xml:lang="en">Tonian 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">Тон 1*</skos:prefLabel>
+	<skos:prefLabel xml:lang="lt">Tonis 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Tonium 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Toniën 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">toniano 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">Tonien 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Tonien 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="hu">toni alsÃ³ szakasz</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">Tiniense 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="cs">Ton 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Toniano 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="et">Ton 1</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Ton 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pl">Ton 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="no">Tonium 1*</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">tonium 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">tonium 1 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sl">tonij 1 *</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/cgi/stratchart/Tonian2">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+	<rdf:type rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra"/>
+	<rdfs:comment xml:lang="en">older bound-910.0</rdfs:comment>
+	<rdfs:comment xml:lang="en">younger bound-850.0</rdfs:comment>
+	<gts:rank rdf:resource="http://resource.geosciml.org/ontology/timescale/rank/Epoch"/>
+	<gtrs:begin rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Base-Tonian2"/>
+	<gtrs:end rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseCryogenian"/>
+	<skos:broader rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Tonian"/>
+	<skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale"/>
+	<skos:notation rdf:datatype="http://resource.geosciml.org/ontology/timescale/gts#EraCode">a2.1.1.3.1</skos:notation>
+	<skos:prefLabel xml:lang="sl">tonij 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="bg">Тон 2*</skos:prefLabel>
+	<skos:prefLabel xml:lang="hu">toni felsÅ‘ szakasz</skos:prefLabel>
+	<skos:prefLabel xml:lang="da">Tonien 2*</skos:prefLabel>
+	<skos:prefLabel xml:lang="sk">tonium 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="sv">tonium 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="en">Tonian 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="no">Tonium 2*</skos:prefLabel>
+	<skos:prefLabel xml:lang="et">Ton 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="pt">Toniano 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="fr">Tonien 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="nl">Toniën 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="it">toniano 2</skos:prefLabel>
+	<skos:prefLabel xml:lang="cs">Ton 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="fi">Ton 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="pl">Ton 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="lt">Tonis 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="es">Toniense 2 *</skos:prefLabel>
+	<skos:prefLabel xml:lang="de">Tonium 2</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/ics/ischart/BaseCryogenian">
+	<gtrs:previousEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Tonian2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/ics/ischart/BaseEctasian">
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Ectasian1"/>
+	<gtrs:previousEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Calymmian4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/ics/ischart/BaseMesoproterozoic">
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Calymmian1"/>
+	<gtrs:previousEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Statherian4"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/ics/ischart/BaseNeoarchean">
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Neoarchean1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/ics/ischart/BaseNeoproterozoic">
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Tonian1"/>
+	<gtrs:previousEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Stenian2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/ics/ischart/BaseOrosirian">
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/ics/ischart/BaseProterozoic">
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Siderian1"/>
+	<gtrs:previousEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Neoarchean2"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/ics/ischart/BaseStatherian">
+	<gtrs:nextEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Statherian1"/>
+	<gtrs:previousEra rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian7"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/ics/ischart/Calymmian">
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Calymmian4"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Calymmian3"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Calymmian2"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Calymmian1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/ics/ischart/Ectasian">
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Ectasian4"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Ectasian3"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Ectasian2"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Ectasian1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/ics/ischart/Furongian">
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/CambrianStage9"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/ics/ischart/Orosirian">
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian7"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian6"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian5"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian4"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian3"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian2"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Orosirian1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/ics/ischart/Pleistocene">
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/Ionian"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/ics/ischart/Siderian">
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Siderian2"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Siderian1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/ics/ischart/Statherian">
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Statherian4"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Statherian3"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Statherian2"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Statherian1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/ics/ischart/Stenian">
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Stenian2"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Stenian1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifier/ics/ischart/Tonian">
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Tonian2"/>
+	<skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratchart/Tonian1"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2009/FennoScandianShieldProterozoicTimeScale">
+	<rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One Geology Europe Precambrian Epoch definitions for Fenno-Scandian Shield</rdfs:label>
+	<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stephen M Richard</dc:creator>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KOISTINEN, T., STEPHENS, M.B., BOGATCHEV, V., NORDGULEN, O., WENNERSTRÖM, M.,
+KORHONEN, J., 2001. Geological map of Fennoscandian Shield, scale 1:2 000 000. Geological Surveys of Finland, Norway and Sweden and the North-West Department of Natural Resources of Russia</dc:source>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definitions extracted from Asch, Kristine and WP3 Core Team, 31 July 2009, OneGeology-Europe Scientific/Semantic Data Specification and Dictionaries, ECP-2007-GEO-317001</dc:source>
+	<skos:historyNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontology created by SM Richard. Links to ICS time scale. This ontology only defines the Epochs that extend the Precambrian time scale, defined by Fenno Scandian Geological Surveys. </skos:historyNote>
+	<skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One Geology Europe Precambrian Epoch definitions for Fenno-Scandian Shield</skos:prefLabel>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://resource.geosciml.org/vocabulary/timescale/1GE_PCExtension">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+	<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One Geology Europe Precambrian Epoch definitions for Fenno-Scandian Shield</rdfs:label>
+	<dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stephen M Richard</dc:creator>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Definitions extracted from Asch, Kristine and WP3 Core Team, 31 July 2009, OneGeology-Europe Scientific/Semantic Data Specification and Dictionaries, ECP-2007-GEO-317001</dc:source>
+	<dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KOISTINEN, T., STEPHENS, M.B., BOGATCHEV, V., NORDGULEN, O., WENNERSTRÖM, M., KORHONEN, J., 2001. Geological map of Fennoscandian Shield, scale 1:2 000 000. Geological Surveys of Finland, Norway and Sweden and the North-West Department of Natural Resources of Russia</dc:source>
+	<owl:imports rdf:resource="http://resource.geosciml.org/ontology/timescale/gts"/>
+	<owl:priorVersion rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201305/Geoscience/GeologicTimeScale/1GE_PCExtension.rdf"/>
+	<owl:versionIRI rdf:resource="https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201402/Geoscience/GeologicTimeScale/1GE_PCExtension.rdf"/>
+	<skos:historyNote rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ontology created by SM Richard. Links to ICS time scale. This ontology only defines the Epochs that extend the Precambrian time scale, defined by Fenno Scandian Geological Surveys. </skos:historyNote>
+</rdf:Description>
+
+</rdf:RDF>

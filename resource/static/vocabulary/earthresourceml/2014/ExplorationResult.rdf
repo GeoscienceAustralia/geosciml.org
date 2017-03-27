@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:gtwg="http://resource.geosciml.org/authority/cgi/gtwg"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-result">
+  <owl:Ontology rdf:about="http://resource.geosciml.org/static/vocabulary/earthresourceml/2014/ExplorationResult.rdf">
+    <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+    <owl:imports rdf:resource="http://purl.org/dc/elements/1.1/"/>
+  </owl:Ontology>
+  <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-result">
+    <skos:prefLabel xml:lang="en">Exploration Result vocabulary</skos:prefLabel>
+<!--    <skos:definition xml:lang="en">This resource defines the concept space for Exploration Result value vocabulary concepts by extension; it includes all concepts in this conceptScheme, as well as concepts in previous versions of the scheme.</skos:definition>-->
+    <dc:date>2014-01-14T00:00:00.000</dc:date>
+    <dc:creator>CGI Geoscience Terminology Working Group</dc:creator>
+    <skos:editorialNote>This file contains the 201401 version of CGI Exploration Result Value Vocabulary, which defines concepts for categorizing the result of the exploration activity. Note that broader-narrower relationships have not been populated for the most part. </skos:editorialNote>
+    <skos:changeNote>Vocabulary Shepherd: Mark Rattenbury. Compilation and review in Google doc spreadsheet, converted to MS Excel XML for SKOS generation using GSML_SKOS_from_XLS_2013.xslt; Conversion to SKOS by SM Richard 2013-02-23. </skos:changeNote>
+    <skos:changeNote>Edits to fix typos and remove '201401' from rdf file name. Ollie Raymond 8-Jan-2015</skos:changeNote>
+   </skos:ConceptScheme>
+  <skos:Collection rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-result/">
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-result/mineral-resource-defined">
+        <dc:source xml:lang="en">Canadian Institute of Mining (CIM) Definitions Standards, 2010-11-27, http://web.cim.org/UserFiles/File/CIM_DEFINITON_STANDARDS_Nov_2010.pdfThi</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">06..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-result"/>
+        <skos:prefLabel xml:lang="en">mineral resource defined</skos:prefLabel>
+        <skos:definition>Work has been completed to identify a three dimensional zone of mineralization and estimate its tonnage and grade to the standard of a "mineral resource". Result allows definition of a 'Measured Mineral Resource' as defined by CIM (2010-11-27)</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-result"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-result/mineralized-zone-identified">
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">04..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-result"/>
+        <skos:prefLabel xml:lang="en">mineralized zone identified</skos:prefLabel>
+        <skos:definition>Identification by mapping and sampling of a two dimensional zone where the target minerals are found. This is done mainly by geological mapping and geochemical sampling and may include trenching and pitting.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-result"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-result/identification-anomalous-area">
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-result"/>
+        <skos:prefLabel xml:lang="en">identification of an anomalous area</skos:prefLabel>
+        <skos:definition>Area where geological, geophysical or geochemical properties are different from areas around and which might indicate the presence of a mineralizing process in the vicinity.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-result"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-result/key-geological-features">
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03.1.</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/exploration-result/identification-anomalous-area"/>
+        <skos:altLabel xml:lang="en">identification of key minerals</skos:altLabel>
+        <skos:prefLabel xml:lang="en">key geological features</skos:prefLabel>
+        <skos:definition>Identification of particular minerals or geological features which may indicate a possible mineralized area or accompany a mineralizing process</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-result"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-result/geochemical-anomaly">
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03.3.</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/exploration-result/identification-anomalous-area"/>
+        <skos:prefLabel xml:lang="en">geochemical anomaly</skos:prefLabel>
+        <skos:definition>Area where geochemical properties (e.g. single or multiple element concentrations or isotope ratios) differ from surrounding areas and which may be the result of mineralisation.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-result"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-result/mineral-resource-indicated">
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">05..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-result"/>
+        <skos:prefLabel xml:lang="en">mineral resource indicated</skos:prefLabel>
+        <skos:definition>Identification of a three dimension zone of mineralization. This is done by augmenting surface work with a small number of drill holes. At this stage there is insufficient data to estimate tonnage and grade.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-result"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-result/positive-feasibility-study">
+        <dc:source xml:lang="en">Canadian Institute of Mining (CIM) Definitions Standards, 2010-11-27, http://web.cim.org/UserFiles/File/CIM_DEFINITON_STANDARDS_Nov_2010.pdfThi</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">08..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-result"/>
+        <skos:prefLabel xml:lang="en">positive feasibility study</skos:prefLabel>
+        <skos:definition>Completion of an economic evaluation of the mineral project at a level sufficient for a feasibility study with a resulting determination that extraction is reaonably justfied. A Feasibility Study is a comprehensive technical and economic study of the selected development option for a mineral project that includes appropriately detailed assessments of all factors necessary to determine at the time of reporting whether extraction is reasonably justified (economically mineable).</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-result"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:prefLabel xml:lang="en">Exploration Result vocabulary</skos:prefLabel>
+<!--    <rdfs:label xml:lang="en">Exploration Result vocabulary</rdfs:label>-->
+    <skos:definition xml:lang="en">A collection of terms describing the results of exploration for earth resources.</skos:definition>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-result/geophysical-anomaly">
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">03.2.</skos:notation>
+        <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/exploration-result/identification-anomalous-area"/>
+        <skos:prefLabel xml:lang="en">geophysical anomaly</skos:prefLabel>
+        <skos:definition>Area where geophysical properties (e.g. radiometric, magnetic, electromagnetic, gravity) differ from surrounding areas and which may be the result of mineralisation.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-result"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-result/negative-feasibility-study">
+        <dc:source xml:lang="en">Canadian Institute of Mining (CIM) Definitions Standards, 2010-11-27, http://web.cim.org/UserFiles/File/CIM_DEFINITON_STANDARDS_Nov_2010.pdfThi</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">09..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-result"/>
+        <skos:prefLabel xml:lang="en">negative feasibility study</skos:prefLabel>
+        <skos:definition>Completion of an economic evaluation of the mineral project at a level sufficient for a feasbility study with a resulting determination that extraction is not reasonably justified. A Feasibility Study is a comprehensive technical and economic study of the selected development option for a mineral project that includes appropriately detailed assessments of all factors necessary to determine at the time of reporting whether extraction is reasonably justified (economically mineable).</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-result"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-result/favorable-geological-environment">
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">01..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-result"/>
+        <skos:altLabel xml:lang="en">prospective area</skos:altLabel>
+        <skos:prefLabel xml:lang="en">favorable geological environment</skos:prefLabel>
+        <skos:definition>Identification of geological units or environments that are favorable or permissive for the occurrence of mineral deposits.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-result"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-result/mineral-occurrences">
+        <dc:source xml:lang="en">This vocabulary</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">02..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-result"/>
+        <skos:altLabel xml:lang="en">mineral showings</skos:altLabel>
+        <skos:prefLabel xml:lang="en">mineral occurrences</skos:prefLabel>
+        <skos:definition>Identification of occurrences of the target minerals as float (stone) or outcrop.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-result"/>
+      </skos:Concept>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/exploration-result/mineral-reserve-defined">
+        <dc:source xml:lang="en">Canadian Institute of Mining (CIM) Definitions Standards, 2010-11-27, http://web.cim.org/UserFiles/File/CIM_DEFINITON_STANDARDS_Nov_2010.pdfThi</dc:source>
+        <skos:notation rdf:datatype="gtwg:LocalHierarchyKey">07..</skos:notation>
+        <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-result"/>
+        <skos:prefLabel xml:lang="en">mineral reserve defined</skos:prefLabel>
+        <skos:definition>Definition of a three dimensional body of mineralization in sufficient technical detail and accompanied by an economic evaluation so that the estimated tonnage and grade can be classified as a mineral reserve. A Mineral Reserve is the economically mineable part of a Measured or Indicated Mineral Resource demonstrated by at least a Preliminary Feasibility Study.</skos:definition>
+        <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/201401/exploration-result"/>
+      </skos:Concept>
+    </skos:member>
+  </skos:Collection>
+</rdf:RDF>
+
