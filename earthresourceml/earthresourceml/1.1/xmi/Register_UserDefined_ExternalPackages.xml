@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<register
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:package-register:2.0"
+	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:package-register:2.0 ../dependency-util/package-register.xsd"
+	id="Register_UserDefined_ExternalPackages.xml"
+>
+	<description>Register_UserDefined_ExternalPackages</description>
+	<package name="CGI_Utilities">
+		<implementation binding="GML 3.1">
+			<classMap location="https://www.seegrid.csiro.au/subversion/GeoSciML/utilities/trunk/classmap/ClassMap_CGI_Utilities.xml" />
+		</implementation>
+	</package>
+</register>

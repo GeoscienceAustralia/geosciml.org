@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+  xmlns:er="http://xmlns.earthresourceml.org/EarthResource/2.0" 
+  xmlns:gsml="http://xmlns.geosciml.org/GeoSciML-Core/3.2" 
+  xmlns:gsmlem="http://xmlns.geosciml.org/EarthMaterial/3.2" 
+  xmlns:gsmlu="http://xmlns.geosciml.org/Utilities/3.2" 
+  xmlns:swe="http://www.opengis.net/swe/2.0" elementFormDefault="qualified" targetNamespace="http://xmlns.earthresourceml.org/EarthResource/2.0" version="2.0.0">
+  <include schemaLocation="mine.xsd"/>
+  <include schemaLocation="mineralOccurrence.xsd"/>
+  <import namespace="http://www.opengis.net/swe/2.0" schemaLocation="http://schemas.opengis.net/sweCommon/2.0/swe.xsd"/>
+  <import namespace="http://xmlns.geosciml.org/EarthMaterial/3.2" schemaLocation="http://schemas.geosciml.org/earthmaterial/3.2/earthMaterial.xsd"/>
+  <import namespace="http://xmlns.geosciml.org/GeoSciML-Core/3.2" schemaLocation="http://schemas.geosciml.org/geosciml-core/3.2/geosciml-core.xsd"/>
+  <import namespace="http://xmlns.geosciml.org/Utilities/3.2" schemaLocation="http://schemas.geosciml.org/cgiutilities/3.2/cgiUtilities.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+</schema>

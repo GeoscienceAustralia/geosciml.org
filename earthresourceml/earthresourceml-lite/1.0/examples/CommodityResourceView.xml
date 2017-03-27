@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<erl:CommodityResourceView 
+    xmlns:erl="http://xmlns.earthresourceml.org/earthresourceml-lite/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:gml="http://www.opengis.net/gml"
+    xsi:schemaLocation="http://xmlns.earthresourceml.org/earthresourceml-lite/1.0 
+    http://schemas.earthresourceml.org/earthresourceml-lite/1.0/erml-lite.xsd" gml:id="ga.commodityResourceView.123456">
+    <erl:identifier>http://data.geoscience.gov.au/feature/ga/commodityResourceView/ga.commodityResourceView.123456</erl:identifier>
+    <erl:commodity>gold</erl:commodity>
+    <erl:commodityRank>primary commodity</erl:commodityRank>
+    <erl:commodityImportance>very large</erl:commodityImportance>
+    <erl:mineralOccurrenceName>Lassiter's Reef</erl:mineralOccurrenceName>
+    <erl:mineName>Lassiters</erl:mineName>
+    <erl:totalEndowment>1300 Mt @ 2.7 g/t Au</erl:totalEndowment>
+    <erl:totalReserves>800 Mt @ 2.9 g/t Au</erl:totalReserves>
+    <erl:reservesCategory>proved ore reserves</erl:reservesCategory>
+    <erl:totalResources>500 Mt @ 2.6 g/t Au</erl:totalResources>
+    <erl:resourcesCategory>inferred mineral resource</erl:resourcesCategory>
+    <erl:classificationMethodUsed>JORC code</erl:classificationMethodUsed>
+    <erl:observationMethod>surveyed</erl:observationMethod>
+    <erl:positionalAccuracy>0.5 metre</erl:positionalAccuracy>
+    <erl:source>BHP Billiton Pty Ltd annual report, 2010</erl:source>
+    <erl:commodityClassifier_uri>http://resource.geosciml.org/classifier/cgi/commodity-code/gold</erl:commodityClassifier_uri>
+    <erl:mineralOccurrence_uri>http://data.geoscience.gov.au/feature/ga/mineralOccurrenceView/ga.mineralOccurrenceView.123456</erl:mineralOccurrence_uri>
+    <erl:mine_uri>http://ga.gov.au/feature/mine/ga.mine.123456</erl:mine_uri>
+    <erl:reservesCategory_uri>http://resource.geosciml.org/classifier/cgi/reserve-assessment-category/proved-ore-reserves</erl:reservesCategory_uri>
+    <erl:resourcesCategory_uri>http://resource.geosciml.org/classifier/cgi/resource-assessment-category/inferred-mineral-resource</erl:resourcesCategory_uri>
+    <erl:classificationMethodUsed_uri>http://resource.geosciml.org/classifier/cgi/classification-method-used/jorc-code</erl:classificationMethodUsed_uri>
+    <erl:specification_uri>http://ga.gov.au/feature/commodityResource/ga.commodityResource.123456</erl:specification_uri>
+    <erl:shape>
+        <gml:Point srsName="epsg:4283" srsDimension="2" gml:id="GA.commodityResourceView.123456.point">          
+            <gml:pos>138.234 -26.747467</gml:pos>
+        </gml:Point>
+    </erl:shape>
+</erl:CommodityResourceView>

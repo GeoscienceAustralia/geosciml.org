@@ -1,0 +1,257 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <title>GML Application Schema Class Details - MiningFeatureOccurrence</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <link href="../../default.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body class="section-3">
+        <div id="header">
+            <div align="left">
+                <img src="../../gas-banner.jpg" alt="GML Application Schema API Specification" width="1000" height="59"/>
+            </div>
+            <ul id="menu">
+                <li id="nav-1">
+                    <a href="../../overview-summary.html">Overview</a>
+                </li>
+                <li id="nav-2">
+                    <a href="package-summary.html">Package</a>
+                </li>
+                <li id="nav-3">
+                    <a href="MiningFeatureOccurrence.html">Class</a>
+                </li>
+                <li id="nav-4">
+                    <a href="../../help-doc.html">Help</a>
+                </li>
+            </ul>
+        </div>
+        <div id="main">
+            <h1 class="first">
+				Class <tt>&lt;&lt;FeatureType&gt;&gt;  MiningFeatureOccurrence </tt>
+            </h1>
+            <p>&#160;</p><!-- Create a list of known local subclasses, if there are any -->
+            <b>Local Subclasses:</b> (none)<!-- Create a table to list class attributes, if there are any -->
+            <h2>Attributes</h2>
+            <table width="95%" class="details"><!-- Column 1: Name -->
+                <th>Name</th><!-- Column 2: Type -->
+                <th>Type</th><!-- Column 3: Bounds -->
+                <th>Bounds</th><!-- Column 4: From Class -->
+                <th>From Class</th><!-- Column 5: Notes-->
+                <th>Notes</th>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>observationMethod</b>
+                    </td><!-- Column 2: Type -->
+                    <td>CGI_TermValue</td><!-- Column 3: Bounds -->
+                    <td>1..*</td><!-- Column 4: From Class -->
+                    <td>MiningFeatureOccurrence</td><!-- Column 5: Notes -->
+                    <td>Specifies the method that was used to identify the MiningFeatureOccurrence. Examples: digitised,  Global Positioning System, published map, fieldObservation, downhole survey, aerial photography, field survey. This corresponds (loosely) to ISO19115 Lineage.Statement</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>2</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>positionalAccuracy</b>
+                    </td><!-- Column 2: Type -->
+                    <td>CGI_Value</td><!-- Column 3: Bounds -->
+                    <td>1..1</td><!-- Column 4: From Class -->
+                    <td>MiningFeatureOccurrence</td><!-- Column 5: Notes -->
+                    <td>Examples: accurate, approximate, diagramatic, indefinite, unknown, 5 m. Corresponds to ISO19115 DQ_ThematicAccuracy (either quantitative or non quantitative).result.value</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>3</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+            </table>
+			&#160;
+			<!-- Create a table to list class associations, if there are any -->
+            <h2>Outbound Associations</h2>
+            <table width="95%" class="details">
+                <th>Name</th>
+                <th>Type</th>
+                <th>Multiplicity</th>
+                <th>From Class</th>
+                <th>Notes</th>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>specification</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="MiningFeature.html">MiningFeature</a>
+                    </td><!-- Multiplicity -->
+                    <td>1</td><!-- From Class -->
+                    <td>MiningFeatureOccurrence</td><!-- Notes -->
+                    <td>Indicates the MiningFeature that the occurrence specifies<br/>Points to any number of MiningFeatureOccurrences which are occurrences of the Miningfeature.  MiningFeatureOccurrences may all be from a single map or from several maps, or reflect different levels of detail, eg point, area, 3D volume.</td>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>location</b>
+                    </td><!-- Type -->
+                    <td>GM_Object</td><!-- Multiplicity -->
+                    <td>1</td><!-- From Class -->
+                    <td>MiningFeatureOccurrence</td><!-- Notes -->
+                    <td>Points to the GML shape object that describes the geometry of the MiningFeatureOccurrence.</td>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>5</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+            </table>
+			&#160;
+			<!-- Create a table to list class constraints, if there are any -->
+            <h2>Constraints</h2>
+            <table width="95%" class="details">
+                <th>Constraint</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Weight</th>
+            </table>
+			&#160;
+			<!-- Create a table to list class tagged values, if there are any -->
+            <h2>Tagged values</h2>
+            <table width="95%" class="details">
+                <th>Tag</th>
+                <th>Value</th>
+                <th>Notes</th>
+            </table>
+			&#160;
+			<h2>GML-conformant XML Implementation Details</h2>
+            <table width="95%" border="0">
+                <td>
+                    <pre>&lt;xs:element xmlns:xs="http://www.w3.org/2001/XMLSchema" name="MiningFeatureOccurrence" substitutionGroup="gml:_Feature" type="er:MiningFeatureOccurrenceType"/&gt;</pre>
+                    <pre>&lt;xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="MiningFeatureOccurrenceType"&gt;
+    &lt;xs:complexContent&gt;
+        &lt;xs:extension base="gml:AbstractFeatureType"&gt;
+            &lt;xs:sequence&gt;
+                &lt;xs:element maxOccurs="unbounded" minOccurs="1" name="observationMethod" type="gsml:CGI_TermValuePropertyType"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Specifies the method that was used to identify the MiningFeatureOccurrence. Examples: digitised,  Global Positioning System, published map, fieldObservation, downhole survey, aerial photography, field survey. This corresponds (loosely) to ISO19115 Lineage.Statement&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="positionalAccuracy" type="gsml:CGI_ValuePropertyType"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Examples: accurate, approximate, diagramatic, indefinite, unknown, 5 m. Corresponds to ISO19115 DQ_ThematicAccuracy (either quantitative or non quantitative).result.value&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="specification" type="er:MiningFeaturePropertyType"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Indicates the MiningFeature that the occurrence specifies
+Points to any number of MiningFeatureOccurrences which are occurrences of the Miningfeature.  MiningFeatureOccurrences may all be from a single map or from several maps, or reflect different levels of detail, eg point, area, 3D volume.&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="location" type="gml:GeometryPropertyType"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Points to the GML shape object that describes the geometry of the MiningFeatureOccurrence.&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+            &lt;/xs:sequence&gt;
+        &lt;/xs:extension&gt;
+    &lt;/xs:complexContent&gt;
+&lt;/xs:complexType&gt;</pre>
+                    <pre>&lt;xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="MiningFeatureOccurrencePropertyType"&gt;
+    &lt;xs:sequence minOccurs="0"&gt;
+        &lt;xs:element ref="er:MiningFeatureOccurrence"/&gt;
+    &lt;/xs:sequence&gt;
+    &lt;xs:attributeGroup ref="gml:AssociationAttributeGroup"/&gt;
+&lt;/xs:complexType&gt;</pre>
+                </td>
+            </table>&#160;</div>
+        <div class="clearing">&#160;</div>
+        <div id="footer" __skip="skip">
+            <hr class="first"/>
+            <p class="panel">
+			For more information about GML Application Schema development refer to:<br/>
+                <a href="https://www.seegrid.csiro.au/wiki/bin/view/AppSchemas/UmlGml">UML models of GML Application Schemas</a>
+            </p>
+            <p class="panel">
+			For more general information about GML refer to:<br/>
+                <a href="http://www.opengis.net/gml/">GML - the Geography Markup Language</a>
+            </p>
+            <p class="panel">
+			The document set was auto-generated at 2009-07-06T11:34+08:00<br/>
+			using FullMoon - A processing framework for transforming XML models
+		</p>
+        </div>
+    </body>
+</html>

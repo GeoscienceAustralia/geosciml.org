@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" 
+  xmlns:er="http://xmlns.earthresourceml.org/EarthResource/2.0" 
+  xmlns:gml="http://www.opengis.net/gml/3.2" 
+  xmlns:gsml="http://xmlns.geosciml.org/GeoSciML-Core/3.2" 
+  xmlns:gsmlem="http://xmlns.geosciml.org/EarthMaterial/3.2" 
+  xmlns:gsmlu="http://xmlns.geosciml.org/Utilities/3.2" 
+  xmlns:swe="http://www.opengis.net/swe/2.0" 
+  elementFormDefault="qualified" targetNamespace="http://xmlns.earthresourceml.org/EarthResource/2.0" version="2.0.0">
+  <include schemaLocation="earthresourceml.xsd"/>
+  <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+  <import namespace="http://www.opengis.net/swe/2.0" schemaLocation="http://schemas.opengis.net/sweCommon/2.0/swe.xsd"/>
+  <import namespace="http://xmlns.geosciml.org/EarthMaterial/3.2" schemaLocation="http://schemas.geosciml.org/earthmaterial/3.2/earthMaterial.xsd"/>
+  <import namespace="http://xmlns.geosciml.org/GeoSciML-Core/3.2" schemaLocation="http://schemas.geosciml.org/geosciml-core/3.2/geosciml-core.xsd"/>
+  <import namespace="http://xmlns.geosciml.org/Utilities/3.2" schemaLocation="http://schemas.geosciml.org/cgiutilities/3.2/cgiUtilities.xsd"/>
+  <!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="Commodity" substitutionGroup="gml:AbstractFeature" type="er:CommodityType"/>
+  <complexType name="CommodityType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="commodity" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">er:CommodityCodeValue</targetElement>
+              </appinfo>
+            </annotation>
+          </element>
+          <element name="commodityImportance" nillable="true" type="gml:ReferenceType"/>
+          <element name="commodityRank" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="integer">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element name="source" type="gml:ReferenceType">
+            <annotation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">er:EarthResource</targetElement>
+                <reversePropertyName xmlns="http://www.opengis.net/gml/3.2">er:commodityDescription</reversePropertyName>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="CommodityPropertyType">
+    <sequence minOccurs="0">
+      <element ref="er:Commodity"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="CommodityMeasure" substitutionGroup="gml:AbstractObject" type="er:CommodityMeasureType"/>
+  <complexType name="CommodityMeasureType">
+    <sequence>
+      <element name="commodityAmount" nillable="true">
+        <complexType>
+          <complexContent>
+            <extension base="gml:AbstractMemberType">
+              <sequence minOccurs="0">
+                <element ref="swe:QuantityRange"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+      <element name="cutOffGrade" nillable="true">
+        <complexType>
+          <complexContent>
+            <extension base="gml:AbstractMemberType">
+              <sequence minOccurs="0">
+                <element ref="swe:QuantityRange"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+      <element name="grade" nillable="true">
+        <complexType>
+          <complexContent>
+            <extension base="gml:AbstractMemberType">
+              <sequence minOccurs="0">
+                <element ref="swe:QuantityRange"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+      <element maxOccurs="unbounded" name="commodityOfInterest" type="gml:ReferenceType">
+        <annotation>
+          <appinfo>
+            <targetElement xmlns="http://www.opengis.net/gml/3.2">er:Commodity</targetElement>
+          </appinfo>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="CommodityMeasurePropertyType">
+    <sequence>
+      <element ref="er:CommodityMeasure"/>
+    </sequence>
+  </complexType>
+  <element abstract="true" name="EarthResource" substitutionGroup="gsml:GeologicFeature" type="er:EarthResourceType"/>
+  <complexType abstract="true" name="EarthResourceType">
+    <complexContent>
+      <extension base="gsml:GeologicFeatureType">
+        <sequence>
+          <element maxOccurs="unbounded" name="explorationHistory" nillable="true" type="er:ExplorationActivityPropertyType"/>
+          <element name="dimension" nillable="true">
+            <complexType>
+              <sequence minOccurs="0">
+                <element ref="er:EarthResourceDimension"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" name="expression" nillable="true">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="swe:Category"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" name="form" nillable="true">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="swe:Category"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" name="linearOrientation" nillable="true">
+            <complexType>
+              <sequence minOccurs="0">
+                <element ref="gsmlu:CGI_LinearOrientation"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" name="planarOrientation" nillable="true">
+            <complexType>
+              <sequence minOccurs="0">
+                <element ref="gsmlu:CGI_PlanarOrientation"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" name="shape" nillable="true">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="swe:Category"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" name="sourceReference" nillable="true">
+            <annotation>
+              <appinfo>
+                <targetElement xmlns="http://www.opengis.net/gml/3.2">gmd2:CI_Citation</targetElement>
+              </appinfo>
+            </annotation>
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractMetadataPropertyType">
+                  <sequence/>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element name="beginLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element name="endLifespanVersion" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="dateTime">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element name="parent" nillable="true" type="er:EarthResourcePropertyType">
+            <annotation>
+              <appinfo>
+                <reversePropertyName xmlns="http://www.opengis.net/gml/3.2">er:child</reversePropertyName>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" name="child" nillable="true">
+            <annotation>
+              <appinfo>
+                <reversePropertyName xmlns="http://www.opengis.net/gml/3.2">er:parent</reversePropertyName>
+              </appinfo>
+            </annotation>
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="er:EarthResource"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" name="composition" nillable="true">
+            <complexType>
+              <sequence minOccurs="0">
+                <element ref="er:EarthResourceMaterial"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" name="commodityDescription" type="er:CommodityPropertyType">
+            <annotation>
+              <appinfo>
+                <reversePropertyName xmlns="http://www.opengis.net/gml/3.2">er:source</reversePropertyName>
+              </appinfo>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" name="resourceExtraction" nillable="true" type="er:MiningActivityPropertyType"/>
+          <element maxOccurs="unbounded" name="oreAmount" nillable="true">
+            <complexType>
+              <sequence minOccurs="0">
+                <element ref="er:OreMeasure"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </complexType>
+          </element>
+          <element name="classification" nillable="true" type="er:MineralDepositModelPropertyType"/>
+          <element maxOccurs="unbounded" name="supergeneModification" nillable="true">
+            <complexType>
+              <sequence minOccurs="0">
+                <element ref="er:SupergeneProcesses"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </complexType>
+          </element>
+          <element name="geneticDescription" nillable="true" type="er:MineralSystemPropertyType">
+            <annotation>
+              <appinfo>
+                <reversePropertyName xmlns="http://www.opengis.net/gml/3.2">er:resultantResource</reversePropertyName>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="EarthResourcePropertyType">
+    <sequence minOccurs="0">
+      <element ref="er:EarthResource"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="EarthResourceDimension" substitutionGroup="gml:AbstractObject" type="er:EarthResourceDimensionType"/>
+  <complexType name="EarthResourceDimensionType">
+    <sequence>
+      <element maxOccurs="unbounded" name="area" nillable="true">
+        <complexType>
+          <complexContent>
+            <extension base="gml:AbstractMemberType">
+              <sequence minOccurs="0">
+                <element ref="swe:QuantityRange"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+      <element maxOccurs="unbounded" name="depth" nillable="true">
+        <complexType>
+          <complexContent>
+            <extension base="gml:AbstractMemberType">
+              <sequence minOccurs="0">
+                <element ref="swe:QuantityRange"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+      <element maxOccurs="unbounded" name="length" nillable="true">
+        <complexType>
+          <complexContent>
+            <extension base="gml:AbstractMemberType">
+              <sequence minOccurs="0">
+                <element ref="swe:QuantityRange"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+      <element maxOccurs="unbounded" name="width" nillable="true">
+        <complexType>
+          <complexContent>
+            <extension base="gml:AbstractMemberType">
+              <sequence minOccurs="0">
+                <element ref="swe:QuantityRange"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="EarthResourceDimensionPropertyType">
+    <sequence>
+      <element ref="er:EarthResourceDimension"/>
+    </sequence>
+  </complexType>
+  <element name="EarthResourceMaterial" substitutionGroup="gml:AbstractObject" type="er:EarthResourceMaterialType"/>
+  <complexType name="EarthResourceMaterialType">
+    <sequence>
+      <element name="earthResourceMaterialRole" type="gml:ReferenceType"/>
+      <element name="material">
+        <complexType>
+          <choice minOccurs="0">
+            <element ref="gsmlem:InorganicFluid"/>
+            <element ref="gsmlem:Mineral"/>
+            <element ref="gsmlem:OrganicMaterial"/>
+            <element ref="gsmlem:RockMaterial"/>
+          </choice>
+          <attributeGroup ref="gml:AssociationAttributeGroup"/>
+          <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+        </complexType>
+      </element>
+      <element name="proportion" nillable="true">
+        <complexType>
+          <complexContent>
+            <extension base="gml:AbstractMemberType">
+              <sequence minOccurs="0">
+                <element ref="swe:QuantityRange"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="EarthResourceMaterialPropertyType">
+    <sequence>
+      <element ref="er:EarthResourceMaterial"/>
+    </sequence>
+  </complexType>
+  <element name="Endowment" substitutionGroup="er:OreMeasure" type="er:EndowmentType"/>
+  <complexType name="EndowmentType">
+    <complexContent>
+      <extension base="er:OreMeasureType">
+        <sequence>
+          <element name="includesReserves" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="boolean">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+          <element name="includesResources" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="boolean">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="EndowmentPropertyType">
+    <sequence>
+      <element ref="er:Endowment"/>
+    </sequence>
+  </complexType>
+  <element name="ExplorationActivity" substitutionGroup="gml:AbstractFeature" type="er:ExplorationActivityType"/>
+  <complexType name="ExplorationActivityType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="activityType" type="gml:ReferenceType"/>
+          <element name="activityDuration" type="gml:TimePeriodPropertyType"/>
+          <element maxOccurs="unbounded" name="explorationResult" type="gml:ReferenceType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ExplorationActivityPropertyType">
+    <sequence minOccurs="0">
+      <element ref="er:ExplorationActivity"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="MineralDepositModel" substitutionGroup="gml:AbstractGML" type="er:MineralDepositModelType"/>
+  <complexType name="MineralDepositModelType">
+    <complexContent>
+      <extension base="gml:AbstractGMLType">
+        <sequence>
+          <element maxOccurs="unbounded" name="mineralDepositGroup" type="gml:ReferenceType"/>
+          <element maxOccurs="unbounded" name="mineralDepositType" nillable="true" type="gml:ReferenceType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="MineralDepositModelPropertyType">
+    <sequence minOccurs="0">
+      <element ref="er:MineralDepositModel"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="MineralOccurrence" substitutionGroup="er:EarthResource" type="er:MineralOccurrenceType"/>
+  <complexType name="MineralOccurrenceType">
+    <complexContent>
+      <extension base="er:EarthResourceType">
+        <sequence>
+          <element name="type" type="gml:ReferenceType"/>
+          <element maxOccurs="unbounded" name="endusePotential" nillable="true" type="gml:ReferenceType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="MineralOccurrencePropertyType">
+    <sequence minOccurs="0">
+      <element ref="er:MineralOccurrence"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element name="MineralSystem" substitutionGroup="gml:AbstractFeature" type="er:MineralSystemType"/>
+  <complexType name="MineralSystemType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element name="associationType">
+            <complexType>
+              <complexContent>
+                <extension base="gml:AbstractMemberType">
+                  <sequence minOccurs="0">
+                    <element ref="swe:Category"/>
+                  </sequence>
+                  <attributeGroup ref="gml:AssociationAttributeGroup"/>
+                </extension>
+              </complexContent>
+            </complexType>
+          </element>
+          <element maxOccurs="unbounded" name="resultantResource" nillable="true" type="er:EarthResourcePropertyType">
+            <annotation>
+              <appinfo>
+                <reversePropertyName xmlns="http://www.opengis.net/gml/3.2">er:geneticDescription</reversePropertyName>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="MineralSystemPropertyType">
+    <sequence minOccurs="0">
+      <element ref="er:MineralSystem"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+    <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+  </complexType>
+  <element abstract="true" name="OreMeasure" substitutionGroup="gml:AbstractObject" type="er:OreMeasureType"/>
+  <complexType abstract="true" name="OreMeasureType">
+    <sequence>
+      <element maxOccurs="unbounded" name="measureDetails" type="er:CommodityMeasurePropertyType"/>
+      <element name="classificationMethodUsed" type="gml:ReferenceType"/>
+      <element name="date">
+        <complexType>
+          <complexContent>
+            <extension base="gml:AbstractMemberType">
+              <sequence minOccurs="0">
+                <element ref="gml:AbstractTimeGeometricPrimitive"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+      <element maxOccurs="unbounded" name="sourceReference">
+        <annotation>
+          <appinfo>
+            <targetElement xmlns="http://www.opengis.net/gml/3.2">null:CI_Citation</targetElement>
+          </appinfo>
+        </annotation>
+        <complexType>
+          <complexContent>
+            <extension base="gml:AbstractMetadataPropertyType">
+              <sequence/>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+      <element name="ore">
+        <complexType>
+          <complexContent>
+            <extension base="gml:AbstractMemberType">
+              <sequence minOccurs="0">
+                <element ref="swe:QuantityRange"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+      <element name="dimension" nillable="true">
+        <complexType>
+          <sequence minOccurs="0">
+            <element ref="er:EarthResourceDimension"/>
+          </sequence>
+          <attributeGroup ref="gml:AssociationAttributeGroup"/>
+        </complexType>
+      </element>
+      <element name="proposedExtractionMethod" nillable="true">
+        <complexType>
+          <complexContent>
+            <extension base="gml:AbstractMemberType">
+              <sequence minOccurs="0">
+                <element ref="swe:Category"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="OreMeasurePropertyType">
+    <sequence>
+      <element ref="er:OreMeasure"/>
+    </sequence>
+  </complexType>
+  <element name="Reserve" substitutionGroup="er:OreMeasure" type="er:ReserveType"/>
+  <complexType name="ReserveType">
+    <complexContent>
+      <extension base="er:OreMeasureType">
+        <sequence>
+          <element name="category" type="gml:ReferenceType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ReservePropertyType">
+    <sequence>
+      <element ref="er:Reserve"/>
+    </sequence>
+  </complexType>
+  <element name="Resource" substitutionGroup="er:OreMeasure" type="er:ResourceType"/>
+  <complexType name="ResourceType">
+    <complexContent>
+      <extension base="er:OreMeasureType">
+        <sequence>
+          <element name="category" type="gml:ReferenceType"/>
+          <element name="includesReserves" nillable="true">
+            <complexType>
+              <simpleContent>
+                <extension base="boolean">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ResourcePropertyType">
+    <sequence>
+      <element ref="er:Resource"/>
+    </sequence>
+  </complexType>
+  <element name="SupergeneProcesses" substitutionGroup="gml:AbstractObject" type="er:SupergeneProcessesType"/>
+  <complexType name="SupergeneProcessesType">
+    <sequence>
+      <element name="type" nillable="true">
+        <complexType>
+          <complexContent>
+            <extension base="gml:AbstractMemberType">
+              <sequence minOccurs="0">
+                <element ref="swe:Category"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+      <element maxOccurs="unbounded" name="material" nillable="true">
+        <complexType>
+          <choice minOccurs="0">
+            <element ref="gsmlem:InorganicFluid"/>
+            <element ref="gsmlem:Mineral"/>
+            <element ref="gsmlem:OrganicMaterial"/>
+            <element ref="gsmlem:RockMaterial"/>
+          </choice>
+          <attributeGroup ref="gml:AssociationAttributeGroup"/>
+          <attributeGroup ref="gml:OwnershipAttributeGroup"/>
+        </complexType>
+      </element>
+      <element name="depth" nillable="true">
+        <complexType>
+          <complexContent>
+            <extension base="gml:AbstractMemberType">
+              <sequence minOccurs="0">
+                <element ref="swe:QuantityRange"/>
+              </sequence>
+              <attributeGroup ref="gml:AssociationAttributeGroup"/>
+            </extension>
+          </complexContent>
+        </complexType>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="SupergeneProcessesPropertyType">
+    <sequence>
+      <element ref="er:SupergeneProcesses"/>
+    </sequence>
+  </complexType>
+  <element name="UNFClassification" substitutionGroup="er:OreMeasure" type="er:UNFClassificationType"/>
+  <complexType name="UNFClassificationType">
+    <complexContent>
+      <extension base="er:OreMeasureType">
+        <sequence>
+          <element name="category" type="gml:ReferenceType"/>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="UNFClassificationPropertyType">
+    <sequence>
+      <element ref="er:UNFClassification"/>
+    </sequence>
+  </complexType>
+</schema>

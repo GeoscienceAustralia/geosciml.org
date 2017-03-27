@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<erl:MineralOccurrenceView 
+    xmlns:erl="http://xmlns.earthresourceml.org/earthresourceml-lite/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:gml="http://www.opengis.net/gml"
+    xsi:schemaLocation="http://xmlns.earthresourceml.org/earthresourceml-lite/1.0 
+    http://schemas.earthresourceml.org/earthresourceml-lite/1.0/erml-lite.xsd" gml:id="ga.mineralOccurrenceView.123456">
+    <erl:identifier>http://data.geoscience.gov.au/feature/ga/mineralOccurrenceView/ga.mineralOccurrenceView.123456</erl:identifier>
+    <erl:name>Lassiter's Reef</erl:name>
+    <erl:mineralOccurrenceType>occurrence</erl:mineralOccurrenceType>
+    <erl:commodity>gold, silver</erl:commodity>
+    <erl:mineName>Lassiters</erl:mineName>
+    <erl:geologicHistory>Mineralisation around 350-360 Ma</erl:geologicHistory>
+    <erl:hostGeologicUnit>Killi Killi Formation</erl:hostGeologicUnit>
+    <erl:mineralDepositModel>mesothermal vein gold</erl:mineralDepositModel>
+    <erl:mineralOccurrenceShape>irregular</erl:mineralOccurrenceShape>
+    <erl:explorationActivityType>subsurface exploration, detailed geophysics</erl:explorationActivityType>
+    <erl:explorationActivityDuration>6 months</erl:explorationActivityDuration>
+    <erl:explorationResult>mineral resource defined</erl:explorationResult>
+    <erl:observationMethod>surveyed</erl:observationMethod>
+    <erl:positionalAccuracy>0.5 metres</erl:positionalAccuracy>
+    <erl:source>BHP Billiton Pty Ltd annual report, 2010</erl:source>
+    <erl:mineralOccurrenceType_uri>http://resource.geosciml.org/classifier/cgi/mineral-occurrence-type/occurrence</erl:mineralOccurrenceType_uri>
+    <erl:representativeCommodity_uri>http://resource.geosciml.org/classifier/cgi/commodity-code/precious-metal</erl:representativeCommodity_uri>
+    <erl:mine_uri>http://data.geoscience.gov.au/feature/ga/mineView/ga.mineView.123456</erl:mine_uri>
+    <erl:hostGeologicUnit_uri>http://dbforms.ga.gov.au/pls/www/geodx.strat_units.sch_full?wher=stratno=35397</erl:hostGeologicUnit_uri>
+    <erl:mineralDepositModel_uri>http://resource.geoscience.gov.au/classifier/ga/mineral-deposit-model/mesothermal-vein-gold</erl:mineralDepositModel_uri>
+    <erl:representativeAge_uri>http://resource.geosciml.org/classifier/ics/icschart/Carboniferous</erl:representativeAge_uri>
+    <erl:representativeOlderAge_uri>http://resource.geosciml.org/classifier/ics/icschart/Famennian</erl:representativeOlderAge_uri>
+    <erl:representativeYoungerAge_uri>http://resource.geosciml.org/classifier/ics/icschart/Tournaisian</erl:representativeYoungerAge_uri>
+    <erl:specification_uri>http://ga.gov.au/feature/mineralOccurrence/ga.mineralOccurrence.123456</erl:specification_uri>
+    <erl:shape>
+        <gml:Point srsName="epsg:4283" srsDimension="2" gml:id="GA.mineralOccurrenceView.123456.point">
+            <gml:pos>138.234 -26.747467</gml:pos>
+        </gml:Point>
+    </erl:shape>
+</erl:MineralOccurrenceView>

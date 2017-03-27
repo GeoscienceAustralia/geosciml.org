@@ -1,0 +1,703 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <title>GML Application Schema Class Details - NonMetallicOccurrence</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <link href="../../default.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body class="section-3">
+        <div id="header">
+            <div align="left">
+                <img src="../../gas-banner.jpg" alt="GML Application Schema API Specification" width="1000" height="59"/>
+            </div>
+            <ul id="menu">
+                <li id="nav-1">
+                    <a href="../../overview-summary.html">Overview</a>
+                </li>
+                <li id="nav-2">
+                    <a href="package-summary.html">Package</a>
+                </li>
+                <li id="nav-3">
+                    <a href="NonMetallicOccurrence.html">Class</a>
+                </li>
+                <li id="nav-4">
+                    <a href="../../help-doc.html">Help</a>
+                </li>
+            </ul>
+        </div>
+        <div id="main">
+            <h1 class="first">
+				Class <tt>&lt;&lt;FeatureType&gt;&gt;  NonMetallicOccurrence  (extends <i>
+                        <a href="EarthResource.html">EarthResource</a>
+                    </i>)</tt>
+            </h1>
+            <p>&#160;</p><!-- Create a list of known local subclasses, if there are any -->
+            <b>Local Subclasses:</b> (none)<!-- Create a table to list class attributes, if there are any -->
+            <h2>Attributes</h2>
+            <table width="95%" class="details"><!-- Column 1: Name -->
+                <th>Name</th><!-- Column 2: Type -->
+                <th>Type</th><!-- Column 3: Bounds -->
+                <th>Bounds</th><!-- Column 4: From Class -->
+                <th>From Class</th><!-- Column 5: Notes-->
+                <th>Notes</th>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>sourceReference</b>
+                    </td><!-- Column 2: Type -->
+                    <td>CI_Citation</td><!-- Column 3: Bounds -->
+                    <td>0..*</td><!-- Column 4: From Class -->
+                    <td>
+                        <a href="EarthResource.html">EarthResource</a>
+                    </td><!-- Column 5: Notes -->
+                    <td>The source or reference for the Earth Resource. CI_Citation can not be serialised in-line for GML3.1 but as an xlink reference.<br/>
+                    </td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>inlineOrByReference</td>
+                                            <td>byReference</td>
+                                        </tr>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>2</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>dimension</b>
+                    </td><!-- Column 2: Type -->
+                    <td>
+                        <a href="EarthResourceDimension.html">EarthResourceDimension</a>
+                    </td><!-- Column 3: Bounds -->
+                    <td>0..1</td><!-- Column 4: From Class -->
+                    <td>
+                        <a href="EarthResource.html">EarthResource</a>
+                    </td><!-- Column 5: Notes -->
+                    <td>Describes the size/volume of the earth resource</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>3</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>expression</b>
+                    </td><!-- Column 2: Type -->
+                    <td>CGI_TermValue</td><!-- Column 3: Bounds -->
+                    <td>0..*</td><!-- Column 4: From Class -->
+                    <td>
+                        <a href="EarthResource.html">EarthResource</a>
+                    </td><!-- Column 5: Notes -->
+                    <td>Whether an EarthResource has a surface expression or has been detected under cover rocks. </td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>form</b>
+                    </td><!-- Column 2: Type -->
+                    <td>CGI_TermValue</td><!-- Column 3: Bounds -->
+                    <td>0..*</td><!-- Column 4: From Class -->
+                    <td>
+                        <a href="EarthResource.html">EarthResource</a>
+                    </td><!-- Column 5: Notes -->
+                    <td>The orebodies typical physical and structural relationship to wallrocks and associated rocks (e.g. strataform, stratabound, cross-cutting, vein, intrusive contact etc)</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>5</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>linearOrientation</b>
+                    </td><!-- Column 2: Type -->
+                    <td>CGI_LinearOrientation</td><!-- Column 3: Bounds -->
+                    <td>0..*</td><!-- Column 4: From Class -->
+                    <td>
+                        <a href="EarthResource.html">EarthResource</a>
+                    </td><!-- Column 5: Notes -->
+                    <td>Captures linear orientation of the Earth Resource (Plunge etc)</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>6</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>planarOrientation</b>
+                    </td><!-- Column 2: Type -->
+                    <td>CGI_PlanarOrientation</td><!-- Column 3: Bounds -->
+                    <td>0..*</td><!-- Column 4: From Class -->
+                    <td>
+                        <a href="EarthResource.html">EarthResource</a>
+                    </td><!-- Column 5: Notes -->
+                    <td>Captures planar orientation of the Earth Resource (Dip/Dip Direction etc)</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>7</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>shape</b>
+                    </td><!-- Column 2: Type -->
+                    <td>CGI_TermValue</td><!-- Column 3: Bounds -->
+                    <td>0..*</td><!-- Column 4: From Class -->
+                    <td>
+                        <a href="EarthResource.html">EarthResource</a>
+                    </td><!-- Column 5: Notes -->
+                    <td>The typical geometrical shape of the Earth Resource (e.g. lenticular, pipelike, irregular etc)</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>8</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+            </table>
+			&#160;
+			<!-- Create a table to list class associations, if there are any -->
+            <h2>Outbound Associations</h2>
+            <table width="95%" class="details">
+                <th>Name</th>
+                <th>Type</th>
+                <th>Multiplicity</th>
+                <th>From Class</th>
+                <th>Notes</th>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>classification</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="MineralDepositModel.html">MineralDepositModel</a>
+                    </td><!-- Multiplicity -->
+                    <td>0..1</td><!-- From Class -->
+                    <td>
+                        <a href="EarthResource.html">EarthResource</a>
+                    </td><!-- Notes -->
+                    <td>Classifies the EarthResource<br/>Systematically arranged information describing the essential attributes of a class of mineral deposits. May be empirical (descriptive) or theoretical (genetic).</td>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>9</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>commodityDescription</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="Commodity.html">Commodity</a>
+                    </td><!-- Multiplicity -->
+                    <td>1..*</td><!-- From Class -->
+                    <td>
+                        <a href="EarthResource.html">EarthResource</a>
+                    </td><!-- Notes -->
+                    <td/>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>10</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>composition</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="EarthResourceMaterial.html">EarthResourceMaterial</a>
+                    </td><!-- Multiplicity -->
+                    <td>0..*</td><!-- From Class -->
+                    <td>
+                        <a href="EarthResource.html">EarthResource</a>
+                    </td><!-- Notes -->
+                    <td/>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>11</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>geneticDescription</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="MineralSystem.html">MineralSystem</a>
+                    </td><!-- Multiplicity -->
+                    <td>0..1</td><!-- From Class -->
+                    <td>
+                        <a href="EarthResource.html">EarthResource</a>
+                    </td><!-- Notes -->
+                    <td>Provides a description for how the EarthResource formed</td>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>12</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>resourceExtraction</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="../Mine/MiningActivity.html">MiningActivity</a>
+                    </td><!-- Multiplicity -->
+                    <td>0..*</td><!-- From Class -->
+                    <td>
+                        <a href="EarthResource.html">EarthResource</a>
+                    </td><!-- Notes -->
+                    <td/>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>13</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>supergeneModification</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="SupergeneProcesses.html">SupergeneProcesses</a>
+                    </td><!-- Multiplicity -->
+                    <td>0..*</td><!-- From Class -->
+                    <td>
+                        <a href="EarthResource.html">EarthResource</a>
+                    </td><!-- Notes -->
+                    <td/>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>14</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>parent</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="EarthResource.html">EarthResource</a>
+                    </td><!-- Multiplicity -->
+                    <td>0..1</td><!-- From Class -->
+                    <td>
+                        <a href="EarthResource.html">EarthResource</a>
+                    </td><!-- Notes -->
+                    <td/>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>15</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>oreAmount</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="OreMeasure.html">OreMeasure</a>
+                    </td><!-- Multiplicity -->
+                    <td>0..*</td><!-- From Class -->
+                    <td>
+                        <a href="EarthResource.html">EarthResource</a>
+                    </td><!-- Notes -->
+                    <td/>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>17</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+            </table>
+			&#160;
+			<!-- Create a table to list class constraints, if there are any -->
+            <h2>Constraints</h2>
+            <table width="95%" class="details">
+                <th>Constraint</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Weight</th>
+            </table>
+			&#160;
+			<!-- Create a table to list class tagged values, if there are any -->
+            <h2>Tagged values</h2>
+            <table width="95%" class="details">
+                <th>Tag</th>
+                <th>Value</th>
+                <th>Notes</th>
+                <tr>
+                    <td>byValuePropertyType</td>
+                    <td>false</td>
+                    <td>Values: true,false<br/>Default: false<br/>Description: enforce the 'by value' property pattern without xl<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>hasXmlLang</td>
+                    <td>false</td>
+                    <td>Values: true | false<br/>Default: false<br/>Description: axml attribute xml:lang shall be generated for the type representing the class<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>isCollection</td>
+                    <td>false</td>
+                    <td>Values: true,false<br/>Default: false<br/>Description: attribute group gml:AggregationAttributeGroup is a<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>noPropertyType</td>
+                    <td>false</td>
+                    <td>Values: true,false<br/>Default: false<br/>Description: suppress automatic creation of *PropertyType compl<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>xsdCanonicalElement</td>
+                    <td>#NOTES#Description: no element shall be generated for the class, but the given type or element referenced
+</td>
+                    <td>Description: no element shall be generated for the class, but the given type or element referenced<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>xsdCanonicalPropertyGroup</td>
+                    <td>#NOTES#Description: group to be referenced if the class is used as a type of a property
+</td>
+                    <td>Description: group to be referenced if the class is used as a type of a property<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>xsdCanonicalPropertyType</td>
+                    <td>#NOTES#Description: type to be referenced if the class is used as a type of a property
+</td>
+                    <td>Description: type to be referenced if the class is used as a type of a property<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>xsdCanonicalType</td>
+                    <td>#NOTES#Description: no type shall be generated for the class, but the given type or element referenced
+</td>
+                    <td>Description: no type shall be generated for the class, but the given type or element referenced<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>xsdDerivation</td>
+                    <td>true</td>
+                    <td>Values: true | false<br/>Default: true<br/>Description: class implemented as new type + element, or by applying constraints only<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>xsdName</td>
+                    <td>#NOTES#Description: value to be used for the schema conversion instead of the UML name
+</td>
+                    <td>Description: value to be used for the schema conversion instead of the UML name<br/>
+                    </td>
+                </tr>
+            </table>
+			&#160;
+			<h2>GML-conformant XML Implementation Details</h2>
+            <table width="95%" border="0">
+                <td>
+                    <pre>&lt;xs:element xmlns:xs="http://www.w3.org/2001/XMLSchema" name="NonMetallicOccurrence" substitutionGroup="er:EarthResource" type="er:NonMetallicOccurrenceType"/&gt;</pre>
+                    <pre>&lt;xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="NonMetallicOccurrenceType"&gt;
+    &lt;xs:complexContent&gt;
+        &lt;xs:extension base="er:EarthResourceType"/&gt;
+    &lt;/xs:complexContent&gt;
+&lt;/xs:complexType&gt;</pre>
+                    <pre>&lt;xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="NonMetallicOccurrencePropertyType"&gt;
+    &lt;xs:sequence minOccurs="0"&gt;
+        &lt;xs:element ref="er:NonMetallicOccurrence"/&gt;
+    &lt;/xs:sequence&gt;
+    &lt;xs:attributeGroup ref="gml:AssociationAttributeGroup"/&gt;
+&lt;/xs:complexType&gt;</pre>
+                </td>
+            </table>&#160;</div>
+        <div class="clearing">&#160;</div>
+        <div id="footer" __skip="skip">
+            <hr class="first"/>
+            <p class="panel">
+			For more information about GML Application Schema development refer to:<br/>
+                <a href="https://www.seegrid.csiro.au/wiki/bin/view/AppSchemas/UmlGml">UML models of GML Application Schemas</a>
+            </p>
+            <p class="panel">
+			For more general information about GML refer to:<br/>
+                <a href="http://www.opengis.net/gml/">GML - the Geography Markup Language</a>
+            </p>
+            <p class="panel">
+			The document set was auto-generated at 2009-07-06T11:34+08:00<br/>
+			using FullMoon - A processing framework for transforming XML models
+		</p>
+        </div>
+    </body>
+</html>
