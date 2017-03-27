@@ -1,0 +1,473 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <title>GML Application Schema Class Details - GeochronologicInterpretation</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <link href="../../../default.css" rel="stylesheet" type="text/css"/>
+
+    <body class="section-3">
+        <div id="header">
+            <div align="left">
+                <img src="../../../gas-banner.jpg" alt="GML Application Schema API Specification" width="1000" height="59"/>
+            </div>
+            <ul id="menu">
+                <li id="nav-1">
+                    <a href="../../../overview-summary.html">Overview</a>
+                </li>
+                <li id="nav-2">
+                    <a href="package-summary.html">Package</a>
+                </li>
+                <li id="nav-3">
+                    <a href="GeochronologicInterpretation.html">Class</a>
+                </li>
+                <li id="nav-4">
+                    <a href="../../../help-doc.html">Help</a>
+                </li>
+            </ul>
+        </div>
+        <div id="main">
+            <h1 class="first">
+				Class <tt>&lt;&lt;FeatureType&gt;&gt;  GeochronologicInterpretation </tt>
+            </h1>
+            <p>An interpretation made by a geologist of the age of a specimen made by statistical analysis of a single collection of observations.  A specimen may have multiple geochronological interpretations made on it, each related to a different observation collection.</p><!-- Create a list of known local subclasses, if there are any -->
+            <b>Local Subclasses:</b> (none)<!-- Create a table to list class attributes, if there are any -->
+            <h2>Attributes</h2>
+            <table width="95%" class="details"><!-- Column 1: Name -->
+                <th>Name</th><!-- Column 2: Type -->
+                <th>Type</th><!-- Column 3: Bounds -->
+                <th>Bounds</th><!-- Column 4: From Class -->
+                <th>From Class</th><!-- Column 5: Notes-->
+                <th>Notes</th>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>interpretedAge</b>
+                    </td><!-- Column 2: Type -->
+                    <td>
+                        <a href="../../GeologicAge/GeologicEvent.html">GeologicEvent</a>
+                    </td><!-- Column 3: Bounds -->
+                    <td>1..1</td><!-- Column 4: From Class -->
+                    <td>GeochronologicInterpretation</td><!-- Column 5: Notes -->
+                    <td>Use GeoSciML GeologicEvent to describe event age, process and environment.  e.g, Event age = 350 Ma +/- 3 Ma.  Event process = intrusion, extrusion, metamorphism. Event environment = plutonic, marine.</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>1</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>isotopicEvent</b>
+                    </td><!-- Column 2: Type -->
+                    <td>
+                        <a href="IsotopicEventType.html">IsotopicEventType</a>
+                    </td><!-- Column 3: Bounds -->
+                    <td>1..*</td><!-- Column 4: From Class -->
+                    <td>GeochronologicInterpretation</td><!-- Column 5: Notes -->
+                    <td>Describes any isotopic events that are relevant to the interpretation. eg; closure, isotopic mixing, Pb loss, etc</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>nillable</td>
+                                            <td>true</td>
+                                        </tr>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>inlineOrByReference</td>
+                                            <td>byReference</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>isotopicSystem</b>
+                    </td><!-- Column 2: Type -->
+                    <td>
+                        <a href="IsotopicSystemName.html">IsotopicSystemName</a>
+                    </td><!-- Column 3: Bounds -->
+                    <td>1..1</td><!-- Column 4: From Class -->
+                    <td>GeochronologicInterpretation</td><!-- Column 5: Notes -->
+                    <td>Describes the isotopic system used to calculate geochronological age. StatisticalAgeTypes vocabulary would contain values like:<br/>Ar-Ar, K-Ar, Nd-Sm, Pb-Pb, Rb-Sr, Re-Os, U-Pb, etc</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>nillable</td>
+                                            <td>true</td>
+                                        </tr>
+                                        <tr>
+                                            <td>inlineOrByReference</td>
+                                            <td>byReference</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>statisticalMethod</b>
+                    </td><!-- Column 2: Type -->
+                    <td>
+                        <a href="StatisticalMethodTerm.html">StatisticalMethodTerm</a>
+                    </td><!-- Column 3: Bounds -->
+                    <td>1..1</td><!-- Column 4: From Class -->
+                    <td>GeochronologicInterpretation</td><!-- Column 5: Notes -->
+                    <td>The statistical method used to interpret the results</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>nillable</td>
+                                            <td>true</td>
+                                        </tr>
+                                        <tr>
+                                            <td>inlineOrByReference</td>
+                                            <td>byReference</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>interpretedBy</b>
+                    </td><!-- Column 2: Type -->
+                    <td>CI_ResponsibleParty</td><!-- Column 3: Bounds -->
+                    <td>1..1</td><!-- Column 4: From Class -->
+                    <td>GeochronologicInterpretation</td><!-- Column 5: Notes -->
+                    <td>Party responsible for this interpretation</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>nillable</td>
+                                            <td>true</td>
+                                        </tr>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>5</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>citation</b>
+                    </td><!-- Column 2: Type -->
+                    <td>CI_Citation</td><!-- Column 3: Bounds -->
+                    <td>1..1</td><!-- Column 4: From Class -->
+                    <td>GeochronologicInterpretation</td><!-- Column 5: Notes -->
+                    <td>Use ISO metadata citation element to describe author and other reference information.  Can be used to describe reference for new or legacy data</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>nillable</td>
+                                            <td>True</td>
+                                        </tr>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>6</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>preferredInterpretation</b>
+                    </td><!-- Column 2: Type -->
+                    <td>Boolean</td><!-- Column 3: Bounds -->
+                    <td>1..1</td><!-- Column 4: From Class -->
+                    <td>GeochronologicInterpretation</td><!-- Column 5: Notes -->
+                    <td>Indicates whether this interpretation is the preferred interpretation (ie; the analytical data may be reinterpreted) </td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>nillable</td>
+                                            <td>true</td>
+                                        </tr>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>7</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+            </table>
+			&#160;
+			<!-- Create a table to list class associations, if there are any -->
+            <h2>Outbound Associations</h2>
+            <table width="95%" class="details">
+                <th>Name</th>
+                <th>Type</th>
+                <th>Multiplicity</th>
+                <th>From Class</th>
+                <th>Notes</th>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>sourceCollection</b>
+                    </td><!-- Type -->
+                    <td>SF_SamplingFeatureCollection</td><!-- Multiplicity -->
+                    <td>1</td><!-- From Class -->
+                    <td>GeochronologicInterpretation</td><!-- Notes -->
+                    <td>Each geochronological interpretation has a mandatory association to a collection of sampling features (eg; a collection of burn spots or craters from a SHRIMP analytical session).  Legacy published data for which the SamplingFeatureCollection is unknown may be delivered with SamplingFeatureCollection = 'unknown'.</td>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>nillable</td>
+                                            <td>True</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+            </table>
+			&#160;
+			<!-- Create a table to list class constraints, if there are any -->
+            <h2>Constraints</h2>
+            <table width="95%" class="details">
+                <th>Constraint</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Weight</th>
+            </table>
+			&#160;
+			<!-- Create a table to list class tagged values, if there are any -->
+            <h2>Tagged values</h2>
+            <table width="95%" class="details">
+                <th>Tag</th>
+                <th>Value</th>
+                <th>Notes</th>
+            </table>
+			&#160;
+			<h2>GML-conformant XML Implementation Details</h2>
+            <table width="95%" border="0">
+                <td>
+                    <pre>&lt;xs:element xmlns:xs="http://www.w3.org/2001/XMLSchema" name="GeochronologicInterpretation" substitutionGroup="gml:AbstractFeature" type="gsmlla:GeochronologicInterpretationType"&gt;
+    &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;An interpretation made by a geologist of the age of a specimen made by statistical analysis of a single collection of observations.  A specimen may have multiple geochronological interpretations made on it, each related to a different observation collection.&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+&lt;/xs:element&gt;</pre>
+                    <pre>&lt;xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="GeochronologicInterpretationType"&gt;
+    &lt;xs:complexContent&gt;
+        &lt;xs:extension base="gml:AbstractFeatureType"&gt;
+            &lt;xs:sequence&gt;
+                &lt;xs:element name="interpretedAge" type="gsmlga:GeologicEventPropertyType"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Use GeoSciML GeologicEvent to describe event age, process and environment.  e.g, Event age = 350 Ma +/- 3 Ma.  Event process = intrusion, extrusion, metamorphism. Event environment = plutonic, marine.&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element maxOccurs="unbounded" minOccurs="1" name="isotopicEvent" nillable="true" type="gml:ReferenceType"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:appinfo&gt;
+                            &lt;gml:targetElement xmlns:gml="http://www.opengis.net/gml/3.2"&gt;gsmlla:IsotopicEventType&lt;/gml:targetElement&gt;
+                        &lt;/xs:appinfo&gt;
+                        &lt;xs:documentation&gt;Describes any isotopic events that are relevant to the interpretation. eg; closure, isotopic mixing, Pb loss, etc&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="isotopicSystem" nillable="true" type="gml:ReferenceType"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:appinfo&gt;
+                            &lt;gml:targetElement xmlns:gml="http://www.opengis.net/gml/3.2"&gt;gsmlla:IsotopicSystemName&lt;/gml:targetElement&gt;
+                        &lt;/xs:appinfo&gt;
+                        &lt;xs:documentation&gt;Describes the isotopic system used to calculate geochronological age. StatisticalAgeTypes vocabulary would contain values like:
+Ar-Ar, K-Ar, Nd-Sm, Pb-Pb, Rb-Sr, Re-Os, U-Pb, etc&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="statisticalMethod" nillable="true" type="gml:ReferenceType"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:appinfo&gt;
+                            &lt;gml:targetElement xmlns:gml="http://www.opengis.net/gml/3.2"&gt;gsmlla:StatisticalMethodTerm&lt;/gml:targetElement&gt;
+                        &lt;/xs:appinfo&gt;
+                        &lt;xs:documentation&gt;The statistical method used to interpret the results&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="interpretedBy" nillable="true" type="gmd:CI_ResponsibleParty_PropertyType"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Party responsible for this interpretation&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="citation" nillable="true" type="gmd:CI_Citation_PropertyType"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Use ISO metadata citation element to describe author and other reference information.  Can be used to describe reference for new or legacy data&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="preferredInterpretation" nillable="true"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Indicates whether this interpretation is the preferred interpretation (ie; the analytical data may be reinterpreted)&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                    &lt;xs:complexType&gt;
+                        &lt;xs:simpleContent&gt;
+                            &lt;xs:extension base="boolean"&gt;
+                                &lt;xs:attribute name="nilReason" type="gml:NilReasonType"/&gt;
+                            &lt;/xs:extension&gt;
+                        &lt;/xs:simpleContent&gt;
+                    &lt;/xs:complexType&gt;
+                &lt;/xs:element&gt;
+                &lt;xs:element name="sourceCollection" nillable="true" type="sam:SF_SamplingFeatureCollectionPropertyType"&gt;
+                    &lt;xs:annotation&gt;
+                        &lt;xs:documentation&gt;Each geochronological interpretation has a mandatory association to a collection of sampling features (eg; a collection of burn spots or craters from a SHRIMP analytical session).  
+                                Legacy published data for which the SamplingFeatureCollection is unknown may be delivered with SamplingFeatureCollection = 'unknown'.&lt;/xs:documentation&gt;
+                    &lt;/xs:annotation&gt;
+                &lt;/xs:element&gt;
+            &lt;/xs:sequence&gt;
+        &lt;/xs:extension&gt;
+    &lt;/xs:complexContent&gt;
+&lt;/xs:complexType&gt;</pre>
+                    <pre>&lt;xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="GeochronologicInterpretationPropertyType"&gt;
+    &lt;xs:sequence minOccurs="0"&gt;
+        &lt;xs:element ref="gsmlla:GeochronologicInterpretation"/&gt;
+    &lt;/xs:sequence&gt;
+    &lt;xs:attributeGroup ref="gml:AssociationAttributeGroup"/&gt;
+    &lt;xs:attributeGroup ref="gml:OwnershipAttributeGroup"/&gt;
+&lt;/xs:complexType&gt;</pre>
+                </td>
+            </table>&#160;</div>
+        <div class="clearing">&#160;</div>
+        <div id="footer" __skip="skip">
+            <hr class="first"/>
+            <p class="panel">
+			For more information about GML Application Schema development refer to:<br/>
+                <a href="https://www.seegrid.csiro.au/wiki/bin/view/AppSchemas/UmlGml">UML models of GML Application Schemas</a>
+            </p>
+            <p class="panel">
+			For more general information about GML refer to:<br/>
+                <a href="http://www.opengis.net/gml/">GML - the Geography Markup Language</a>
+            </p>
+            <p class="panel">
+			The document set was auto-generated at 2011-09-30T10:00+<br/>
+			using FullMoon - A processing framework for transforming XML models
+		</p>
+        </div>
+    </body>
+</html>

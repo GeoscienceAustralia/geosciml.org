@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- IUGS/CGI GeoSciML schema, ver. 1 - draft 2005-10-19 -->
+<!-- Contains the concepts (classes), their inheritance, and relations from the CGI_Top package of the GeoSciML model -->
+<!-- GeoSciML Testbed-2 Model -->
+<schema xmlns:gml="http://www.opengis.net/gml" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gsml="http://www.cgi-iugs.org/xml/GeoSciML/1" targetNamespace="http://www.cgi-iugs.org/xml/GeoSciML/1" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.0">
+	<annotation>
+		<documentation>top.xsd
+		High level classes for GeoSciML
+		Primarily abstract superclasses (substitution group heads) that are specialized to concrete classes in the various documents describing sub-domains</documentation>
+	</annotation>
+	<!--=======================-->
+	<import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd"/>
+	<!--=======================-->
+	<include schemaLocation="metadata.xsd"/>
+	<include schemaLocation="geologicAge.xsd"/>
+	<!--=======================-->
+	<complexType name="GeometryPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gml:_Geometry"/>
+		</sequence>
+		<attributeGroup ref="gsml:RichPropertyAttributeGroup"/>
+	</complexType>
+	<!--=======================-->
+	<complexType name="MappedFeatureType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="shape" type="gsml:GeometryPropertyType"/>
+					<element name="specification" type="gsml:GeologicFeaturePropertyType"/>
+					<element name="samplingFrame" type="gml:ReferenceType"/>
+					<element name="metadata" type="gsml:MappedFeatureMetadataPropertyType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<!-- ..................... -->
+	<element name="MappedFeature" type="gsml:MappedFeatureType" substitutionGroup="gml:_Feature"/>
+	<!-- ..................... -->
+	<complexType name="MappedFeaturePropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsml:MappedFeature"/>
+		</sequence>
+		<attributeGroup ref="gsml:RichPropertyAttributeGroup"/>
+	</complexType>
+	<!--=======================-->
+	<complexType name="GeologicFeatureType" abstract="true">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="purpose" type="gsml:DescriptionPurpose">
+						<annotation>
+							<documentation>What is this for? </documentation>
+						</annotation>
+					</element>
+					<element name="age" type="gsml:GeologicAgePropertyType" maxOccurs="unbounded"/>
+					<element name="metadata" type="gsml:GeologicFeatureMetadataPropertyType"/>
+					<element name="occurrence" type="gsml:MappedFeaturePropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<element name="classifier" type="gml:ReferenceType">
+						<annotation>
+							<documentation>Pointer to controlled concept which serves to classify the object on some axis</documentation>
+						</annotation>
+					</element>
+					<!--					<element name="classifier" type="gsml:ControlledConceptPropertyType" minOccurs="0" maxOccurs="unbounded"/> -->
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<!-- ..................... -->
+	<element name="GeologicFeature" type="gsml:GeologicFeatureType" substitutionGroup="gml:_Feature"/>
+	<!-- ..................... -->
+	<complexType name="GeologicFeaturePropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsml:GeologicFeature"/>
+		</sequence>
+		<attributeGroup ref="gsml:RichPropertyAttributeGroup"/>
+	</complexType>
+	<!--=======================-->
+	<complexType name="GeologicObjectType" abstract="true">
+		<complexContent>
+			<extension base="gml:AbstractGMLType">
+				<sequence>
+					<element name="purpose" type="gsml:DescriptionPurpose"/>
+					<element name="metadata" type="gsml:ObjectMetadataPropertyType" minOccurs="0"/>
+					<element name="classifier" type="gml:ReferenceType">
+						<annotation>
+							<documentation>Pointer to controlled concept which serves to classify the object on some axis</documentation>
+						</annotation>
+					</element>
+					<!--					<element name="classifier" type="gsml:ControlledConceptPropertyType" minOccurs="0" maxOccurs="unbounded"/> -->
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<!-- ..................... -->
+	<element name="GeologicObject" type="gsml:GeologicObjectType" substitutionGroup="gml:_GML"/>
+	<!-- ..................... -->
+	<complexType name="GeologicObjectPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsml:GeologicObject"/>
+		</sequence>
+		<attributeGroup ref="gsml:RichPropertyAttributeGroup"/>
+	</complexType>
+	<!--=======================-->
+	<complexType name="GeologicEntityPropertyType">
+		<sequence minOccurs="0">
+			<choice>
+				<element ref="gsml:GeologicFeature"/>
+				<element ref="gsml:GeologicObject"/>
+			</choice>
+		</sequence>
+		<attributeGroup ref="gsml:RichPropertyAttributeGroup"/>
+		<attribute name="unionSemantics">
+			<simpleType>
+				<restriction base="string">
+					<enumeration value="featureEntity"/>
+					<enumeration value="objectEntity"/>
+				</restriction>
+			</simpleType>
+		</attribute>
+	</complexType>
+	<!--=======================-->
+	<simpleType name="DescriptionPurpose">
+		<union>
+			<simpleType>
+				<restriction base="string">
+					<enumeration value="definingNorm"/>
+					<enumeration value="identifyingNorm"/>
+					<enumeration value="typicalNorm"/>
+					<enumeration value="instance"/>
+				</restriction>
+			</simpleType>
+			<simpleType>
+				<restriction base="string">
+					<pattern value="other:\w{2,}"/>
+				</restriction>
+			</simpleType>
+		</union>
+	</simpleType>
+	<!--=======================-->
+	<complexType name="GeologicRelationType" abstract="true">
+		<complexContent>
+			<extension base="gml:AbstractGMLType">
+				<sequence>
+					<element name="role" type="gsml:ScopedNameType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<!-- ..................... -->
+	<element name="GeologicRelation" type="gsml:GeologicRelationType" substitutionGroup="gml:_GML"/>
+	<!-- ..................... -->
+	<complexType name="GeologicRelationPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsml:GeologicRelation"/>
+		</sequence>
+		<attributeGroup ref="gsml:RichPropertyAttributeGroup"/>
+	</complexType>
+	<!--=======================-->
+</schema>

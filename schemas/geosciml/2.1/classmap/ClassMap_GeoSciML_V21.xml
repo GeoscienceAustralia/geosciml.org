@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:gsml21="urn:cgi:xmlns:CGI:GeoSciML:2.1"
+	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0"
+	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0 http://projects.arcs.org.au/svn/fullmoon/trunk/resources/dependency-util/package-class-map.xsd"
+	id="ClassMap_GeoSciML_V21.xml">
+	<description>Provides a mapping of elements specific to GeoSciML Version 2.1.</description>
+	<imports>
+		<schema prefix="gsml21" namespace="urn:cgi:xmlns:CGI:GeoSciML:2.1" schemaLocation="http://www.geosciml.org/geosciml/2.1/xsd/geosciml.xsd" />
+	</imports>
+	<entry>
+		<umlClass>ShearDisplacementStructure</umlClass>
+		<gmlObjectElement>gsml21:ShearDisplacementStructure</gmlObjectElement>
+		<gmlType>gsml21:ShearDisplacementStructureType</gmlType>
+		<gmlPropertyType>gsml21:ShearDisplacementStructurePropertyType</gmlPropertyType>
+	</entry>
+</mapping>

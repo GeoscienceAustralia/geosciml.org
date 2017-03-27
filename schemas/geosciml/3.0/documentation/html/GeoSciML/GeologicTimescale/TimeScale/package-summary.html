@@ -1,0 +1,178 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <title>GML Application Schema Package Summary - GeoSciML/GeologicTimescale/TimeScale</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <link href="../../../default.css" rel="stylesheet" type="text/css"/>
+
+    <body class="section-2">
+        <div id="header">
+            <div align="left">
+                <img src="../../../gas-banner.jpg" alt="GML Application Schema API Specification" width="1000" height="59"/>
+            </div>
+            <ul id="menu">
+                <li id="nav-1">
+                    <a href="../../../overview-summary.html">Overview</a>
+                </li>
+                <li id="nav-2">
+                    <a href="package-summary.html">Package</a>
+                </li>
+                <li id="nav-3">Class</li>
+                <li id="nav-4">
+                    <a href="../../../help-doc.html">Help</a>
+                </li>
+            </ul>
+        </div>
+        <div id="main">
+            <h1 class="first">Package <tt>GeoSciML/GeologicTimescale/TimeScale</tt>
+            </h1>
+            <p>The Timescale package describes geologic time periods (geochronologic eras) and the boundaries between them.</p>
+            <table width="95%" class="details">
+                <tr>
+                    <td colspan="2">
+                        <h2>Class Summary</h2>
+                    </td>
+                </tr>
+                <tr class="stheader">
+                    <td colspan="2" class="stheader">
+                        <tt>&lt;&lt;</tt>Type<tt>&gt;&gt;</tt> Classes
+							</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="GeochronologicBoundary.html" title="Class in GeoSciML.GeologicTimescale.TimeScale.GeochronologicBoundary">GeochronologicBoundary</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;Type&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>A boundary between two geochronologic time periods</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="GeochronologicEra.html" title="Class in GeoSciML.GeologicTimescale.TimeScale.GeochronologicEra">GeochronologicEra</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;Type&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>The association of an era with a stratotype is optional.  In the GSSP approach recommended by ICS for the Global Geologic Timescale, Unit Stratotypes are not used. <br/>
+                        <br/>Rather, the association of an Era with geologic units and sections is indirect, via the association of an era with Boundaries, which are in turn tied to Stratotype Points, which occur within host Stratotype Sections. <br/>
+                        <br/>Note that the "German School" defines stratigraphic eras conceptually, without reference to stratotypes.</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="GeologicTimescale.html" title="Class in GeoSciML.GeologicTimescale.TimeScale.GeologicTimescale">GeologicTimescale</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;Type&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>The classic "Geologic Timescale" comprising an ordered, hierarchical set of named "eras" is an example of an Ordinal Temporal Reference System. It may be calibrated with reference to a numeric Temporal Coordinate System, but is in principle defined independently. <br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="NumericEraBoundary.html" title="Class in GeoSciML.GeologicTimescale.TimeScale.NumericEraBoundary">NumericEraBoundary</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;Type&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Used for pre-Ediacaran and Pleistocene / Holocene boundaries in the standard timescale</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="StandardGlobalNumericalAge.html" title="Class in GeoSciML.GeologicTimescale.TimeScale.StandardGlobalNumericalAge">StandardGlobalNumericalAge</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;Type&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>A standard numeric age point (a numeric analogue to a 'golden spike') applicable to the formal subdivision of the Precambrian, and perhaps the Pleistocene/Holocene boundary (Walshe, Gradstein and Ogg, 2004)</td>
+                </tr>
+                <tr class="stheader">
+                    <td colspan="2" class="stheader">
+                        <tt>&lt;&lt;</tt>CodeList<tt>&gt;&gt;</tt> Classes
+							</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="GeochronologicEraRank.html" title="Class in GeoSciML.GeologicTimescale.TimeScale.GeochronologicEraRank">GeochronologicEraRank</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;CodeList&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>This list is an indicative list only of terms used to describe the rank of time periods defined by the International Commission on Stratigraphy.  Users are encouraged to use vocabulary of terms owned by the ICS or CGI vocabularies working group and managed outside of this model.<br/>
+                        <br/>For example:<br/>eon<br/>era<br/>period<br/>epoch<br/>age</td>
+                </tr>
+            </table>
+    		&#160;
+    		<table width="95%" class="details">
+                <tr>
+                    <td colspan="3">
+                        <h2>Tagged Values</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="stheader">Tag</td>
+                    <td class="stheader">Value</td>
+                    <td class="stheader">Notes</td>
+                </tr>
+                <tr>
+                    <td>xsdDocument</td>
+                    <td>timeScale.xsd</td>
+                    <td>Description: Name of an XML Schema document to create representing the content of this package<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>xsdEncodingRule</td>
+                    <td>iso19136_2007</td>
+                    <td>Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br/>Default: iso19136_2007<br/>Description: XML Schema encoding rule to apply<br/>
+                    </td>
+                </tr>
+            </table>
+    		&#160;
+    		<p>
+                <h4>UML Diagram: Context diagram: GeochronologicEra</h4>
+                <img src="../../../Images/EAID_27FA8DB6_9064_462a_B92B_F0604C012D38.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Summary diagram: Timescale</h4>
+                <img src="../../../Images/EAID_0FC638B5_BA82_4614_8D89_FFB6A3B33088.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context diagram: GeochronologicBoundary</h4>
+                <img src="../../../Images/EAID_591CDEC0_3708_4edb_A9CA_22FA3D81FFB5.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : GeologicTimescale</h4>
+                <img src="../../../Images/EAID_89B634E1_1332_4225_8D3D_A86F3574F695.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : NumericEraBoundary</h4>
+                <img src="../../../Images/EAID_E7C504F1_FCEC_4a0c_8049_B0B0D96C0F27.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : StandardGlobalNumericalAge</h4>
+                <img src="../../../Images/EAID_005CC2CD_276B_41f9_96F6_D2A5D6097A57.gif" alt="UML Diagram"/>
+            </p>
+        </div>
+        <div class="clearing">&#160;</div>
+        <div id="footer" __skip="skip">
+            <hr class="first"/>
+            <p class="panel">
+			For more information about GML Application Schema development refer to:<br/>
+                <a href="https://www.seegrid.csiro.au/wiki/bin/view/AppSchemas/UmlGml">UML models of GML Application Schemas</a>
+            </p>
+            <p class="panel">
+			For more general information about GML refer to:<br/>
+                <a href="http://www.opengis.net/gml/">GML - the Geography Markup Language</a>
+            </p>
+            <p class="panel">
+			The document set was auto-generated at 2011-09-30T10:00+<br/>
+			using FullMoon - A processing framework for transforming XML models
+		</p>
+        </div>
+    </body>
+</html>

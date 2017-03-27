@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gt="http://www.cgi-iugs.org/xml/GeoTime/1" targetNamespace="http://www.cgi-iugs.org/xml/GeoTime/1" elementFormDefault="qualified" attributeFormDefault="unqualified" version="pre-release">
+	<!-- ==================================================================        -->
+	<annotation>
+		<documentation>
+stratEnums.xsd
+
+Codelists used in stratigraphy
+
+2004-06-24
+
+Copyright (c) 2004 CSIRO - see https://www.seegrid.csiro.au/twiki/bin/view/Xmml/LegalNotices#Software_Notice
+</documentation>
+	</annotation>
+	<!-- ==================================================================        -->
+	<simpleType name="GeochronEraRank">
+		<annotation>
+			<documentation>List of ranks for geochronologic eras</documentation>
+		</annotation>
+		<union>
+			<simpleType>
+				<restriction base="token">
+					<enumeration value="Eon">
+						<annotation>
+							<documentation>Eon</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Sub-Eon">
+						<annotation>
+							<documentation>Sub Eon</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Era">
+						<annotation>
+							<documentation>Era</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Sub-Era">
+						<annotation>
+							<documentation>Sub-Era</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Period">
+						<annotation>
+							<documentation>Period</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Sub-Period">
+						<annotation>
+							<documentation>Sub-Period</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Epoch">
+						<annotation>
+							<documentation>Epoch</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Sub-Epoch">
+						<annotation>
+							<documentation>Sub-Epoch</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Age">
+						<annotation>
+							<documentation>Age</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Sub-Age">
+						<annotation>
+							<documentation>Sub-Age</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Chron">
+						<annotation>
+							<documentation>Chron</documentation>
+						</annotation>
+					</enumeration>
+				</restriction>
+			</simpleType>
+			<simpleType>
+				<restriction base="token">
+					<pattern value="other:\w{2,}"/>
+				</restriction>
+			</simpleType>
+		</union>
+	</simpleType>
+	<!-- ================================================================== -->
+	<simpleType name="StratUnitRank">
+		<annotation>
+			<documentation>List of ranks for chronostratigraphic units</documentation>
+		</annotation>
+		<union>
+			<simpleType>
+				<restriction base="token">
+					<enumeration value="Eonothem">
+						<annotation>
+							<documentation>Eonothem</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Sub-Eonothem">
+						<annotation>
+							<documentation>Sub Eonothem</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Erathem">
+						<annotation>
+							<documentation>Erathem</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Sub-Erathem">
+						<annotation>
+							<documentation>Sub-Erathem</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="System">
+						<annotation>
+							<documentation>System</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Sub-System">
+						<annotation>
+							<documentation>Sub-System</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Series">
+						<annotation>
+							<documentation>Series</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Sub-Series">
+						<annotation>
+							<documentation>Sub-Series</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Stage">
+						<annotation>
+							<documentation>Stage</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Sub-Stage">
+						<annotation>
+							<documentation>Sub-Stage</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Zone">
+						<annotation>
+							<documentation>Chronozone</documentation>
+						</annotation>
+					</enumeration>
+				</restriction>
+			</simpleType>
+			<simpleType>
+				<restriction base="token">
+					<pattern value="other:\w{2,}"/>
+				</restriction>
+			</simpleType>
+		</union>
+	</simpleType>
+	<!-- ================================================================== -->
+	<!-- ==================================================================        -->
+	<simpleType name="geochronologyProcedureCode">
+		<annotation>
+			<documentation>Codes for dating procedures</documentation>
+		</annotation>
+		<union>
+			<simpleType>
+				<restriction base="token">
+					<enumeration value="Radiometric" id="radiometric">
+						<annotation>
+							<documentation>Radiometric - general</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Radiometric - C14" id="c14">
+						<annotation>
+							<documentation>Carbon 14</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Radiometric - U-Pb" id="U-Pb">
+						<annotation>
+							<documentation>Uranium Lead</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Radiometric - Pb-Pb" id="Pb-Pb">
+						<annotation>
+							<documentation>Lead Lead</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Radiometric - K-Ar" id="K-Ar">
+						<annotation>
+							<documentation>Potassium Argon</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Radiometric - Ar-Ar" id="Ar-Ar">
+						<annotation>
+							<documentation>Argon Argon</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Radiometric - Rb-Sr" id="Rb-Sr">
+						<annotation>
+							<documentation>Rubidium Strontium</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Radiometric - Nd-Sm" id="Nd-Sm">
+						<annotation>
+							<documentation>Neodymium Samarium</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="AFTA" id="afta">
+						<annotation>
+							<documentation>Apatite fission track</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="TFTA" id="tfta">
+						<annotation>
+							<documentation>Titanate fission track</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="ZFTA" id="zfta">
+						<annotation>
+							<documentation>Zircon fission track</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Astronomical Cycles" id="astro-cycle">
+						<annotation>
+							<documentation>Astronomical cycles in sedimentary sequence</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Biostratigraphic zonation" id="bio-strat">
+						<annotation>
+							<documentation>Biostratigraphic correlation</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Composite section calibration" id="comp-section">
+						<annotation>
+							<documentation>Calibration of composite section to selected radiometric ages</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Cycle scaling" id="cycle">
+						<annotation>
+							<documentation>Cycle scaled stratigraphy</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Magnetic Anomaly" id="mag-an">
+						<annotation>
+							<documentation>Calibration of magnetic anomalies</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Magnetostratigraphy" id="mag-strat">
+						<annotation>
+							<documentation>Magnetostratigraphic correlation</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="Subzone division" id="subzone">
+						<annotation>
+							<documentation>Equal division of subzones</documentation>
+						</annotation>
+					</enumeration>
+				</restriction>
+			</simpleType>
+			<simpleType>
+				<restriction base="token">
+					<pattern value="other:\w{2,}"/>
+				</restriction>
+			</simpleType>
+		</union>
+	</simpleType>
+	<!-- ================================================================== -->
+	<!-- ================================================================== -->
+</schema>

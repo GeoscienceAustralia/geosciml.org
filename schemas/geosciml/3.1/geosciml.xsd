@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+    xmlns:gsml31="http://xmlns.geosciml.org/GeoSciML/3.1" 
+    targetNamespace="http://xmlns.geosciml.org/GeoSciML/3.1" 
+    elementFormDefault="qualified" 
+    attributeFormDefault="unqualified"
+    version="3.1.0">
+
+    <annotation>
+        <documentation>Summary schema to import all related application schemas for GeoSciML v 3.1
+     
+GeoSciML is an application schema that specifies a set of feature-types and supporting structures for information used in the solid-earth geosciences.  
+GeoSciML is scoped approximately to the information required to construct geologic maps. "Map" is interpreted broadly, and not constrained to conventional 
+2-D semi-horizontal cartography, so the GeoSciML information structures also support representation of the distribution of geologic features on sections, 
+along curvilinear-traverses and boreholes, and within volumetric samples, etc.  GeoSciML is primarily concerned with "interpreted" geology (units, structures, etc), 
+but links to external schemas for the descriptions of observational data. 
+      
+GeoSciML is factored into a set of sub-packages.  From v3.0 onwards, the component packages are maintained separately. 
+      
+---
+      
+GeoSciML was developed under the auspices of the Interoperability Working Group (https://www.seegrid.csiro.au/twiki/bin/view/CGIModel/InteroperabilityWG/) 
+of the Commission for the Management and Application of Geoscience Information (http://www.cgi-iugs.org), a commission of the International Union of Geological 
+Sciences (http://www.iugs.org).  For the latest release, please see http://www.geosciml.org.  
+Copyright (c) Commission for the Management and Application of Geoscience Information 2012. All rights reserved. 
+
+---
+
+Changes from GeoSciML v3.0 to v3.1  -  Ollie Raymond, GeoSciML Working Group, 3 Dec 2012.
+
+- GeoSciML-Core package - changed cardinality of "classifier" to 1..* (voidable) 
+- Geomorphology package - added "activity" (0..1) to NaturalGeomphologicFeature
+- The Borehole, Collection, EarthMaterial, GeologicAge, GeologicStructure, GeologicUnit, and LaboratoryAnalysis-Specimen schemas were advanced to v3.1 as they
+   import GeoSciML-Core v3.1.
+   
+---
+
+- Corrected a typo in the pathname to the EarthMaterial v3.1 schema  -  Ollie Raymond, GeoSciML Standards Working Group, 21 March 2013 
+
+---
+
+        </documentation>
+    </annotation>
+    <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+    <import namespace="http://xmlns.geosciml.org/GeoSciML-Core/3.1" schemaLocation="http://schemas.geosciml.org/geosciml-core/3.1/geosciml-core.xsd"/>
+    <import namespace="http://xmlns.geosciml.org/Borehole/3.1" schemaLocation="http://schemas.geosciml.org/borehole/3.1/borehole.xsd"/>    
+    <import namespace="http://xmlns.geosciml.org/Utilities/3.0" schemaLocation="http://schemas.geosciml.org/cgiutilities/3.0/cgiUtilities.xsd"/>
+    <import namespace="http://xmlns.geosciml.org/Collection/3.1" schemaLocation="http://schemas.geosciml.org/collection/3.1/collection.xsd"/>
+    <import namespace="http://xmlns.geosciml.org/EarthMaterial/3.1" schemaLocation="http://schemas.geosciml.org/earthmaterial/3.1/earthMaterial.xsd"/>
+    <import namespace="http://xmlns.geosciml.org/GeologicAge/3.1" schemaLocation="http://schemas.geosciml.org/geologicage/3.1/geologicAge.xsd"/>
+    <import namespace="http://xmlns.geosciml.org/GeologicStructure/3.1" schemaLocation="http://schemas.geosciml.org/geologicstructure/3.1/geologicStructure.xsd"/>
+    <import namespace="http://xmlns.geosciml.org/GeologicUnit/3.1" schemaLocation="http://schemas.geosciml.org/geologicunit/3.1/geologicUnit.xsd"/>
+    <import namespace="http://xmlns.geosciml.org/Geomorphology/3.1" schemaLocation="http://schemas.geosciml.org/geomorphology/3.1/geomorphology.xsd"/>
+    <import namespace="http://xmlns.geosciml.org/GeologicTime/3.0" schemaLocation="http://schemas.geosciml.org/geotime/3.0/geologicTime.xsd"/>
+    <import namespace="http://xmlns.geosciml.org/LaboratoryAnalysis-Specimen/3.1" schemaLocation="http://schemas.geosciml.org/laboratoryanalysis-specimen/3.1/laboratoryAnalysis-Specimen.xsd"/>
+    <import namespace="http://xmlns.geosciml.org/PhysicalProperties/3.0" schemaLocation="http://schemas.geosciml.org/physicalproperties/3.0/physicalProperties.xsd"/>
+    <import namespace="http://xmlns.geosciml.org/TemporalReferenceSystem/3.0" schemaLocation="http://schemas.geosciml.org/temporalreferencesystem/3.0/trs.xsd"/>
+</schema>

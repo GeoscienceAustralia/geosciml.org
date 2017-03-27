@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- IUGS/CGI GeoSciML schema, ver. 1 - draft 2005-10-19 -->
+<!-- Contains the concepts (classes), their inheritance, and relations from the structureObject package of the GeoSciML model -->
+<!-- GeoSciML Testbed-2 Model -->
+<schema xmlns:gml="http://www.opengis.net/gml" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gsml="http://www.cgi-iugs.org/xml/GeoSciML/1" targetNamespace="http://www.cgi-iugs.org/xml/GeoSciML/1" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.0">
+	<annotation>
+		<documentation>structureObject.xsd
+Basic structure objects for GeoSciML
+covering 	simple faults and contacts</documentation>
+	</annotation>
+	<!--=======================-->
+	<import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd"/>
+	<!--=======================-->
+	<include schemaLocation="top.xsd"/>
+	<!--=======================-->
+	<complexType name="GeologicStructureType">
+		<complexContent>
+			<extension base="gsml:GeologicFeatureType">
+				<sequence>
+					<element name="genesis" type="gsml:CGI_TermValuePropertyType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<!-- ..................... -->
+	<element name="GeologicStructure" type="gsml:GeologicStructureType" substitutionGroup="gsml:GeologicFeature"/>
+	<!-- ..................... -->
+	<complexType name="GeologicStructurePropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsml:GeologicStructure"/>
+		</sequence>
+		<attributeGroup ref="gsml:RichPropertyAttributeGroup"/>
+	</complexType>
+	<!--=======================-->
+	<complexType name="DisplacementType">
+		<sequence>
+			<element name="displacementMagnitude" type="gsml:CGI_NumericPropertyType"/>
+			<element name="hangingWallDirection" type="gsml:CGI_NumericPropertyType"/>
+			<element name="displacementDirection" type="gsml:CGI_NumericPropertyType"/>
+		</sequence>
+	</complexType>
+	<!-- ..................... -->
+	<element name="Displacement" type="gsml:DisplacementType"/>
+	<!-- ..................... -->
+	<complexType name="DisplacementPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsml:Displacement"/>
+		</sequence>
+		<attributeGroup ref="gsml:RichPropertyAttributeGroup"/>
+	</complexType>
+	<!--=======================-->
+	<complexType name="FaultSystemType">
+		<complexContent>
+			<extension base="gsml:GeologicStructureType">
+				<sequence>
+					<element name="movementType" type="gsml:CGI_TermValuePropertyType"/>
+					<element name="movementSense" type="gsml:CGI_TermValuePropertyType"/>
+					<element name="displacement" type="gsml:DisplacementPropertyType" minOccurs="0"/>
+					<element name="faultSystemMember" type="gsml:FaultSystemPropertyType" minOccurs="0" maxOccurs="unbounded"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<!-- ..................... -->
+	<element name="FaultSystem" type="gsml:FaultSystemType" substitutionGroup="gsml:GeologicStructure"/>
+	<!-- ..................... -->
+	<complexType name="FaultSystemPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsml:FaultSystem"/>
+		</sequence>
+		<attributeGroup ref="gsml:RichPropertyAttributeGroup"/>
+	</complexType>
+	<!--=======================-->
+	<complexType name="FaultType">
+		<complexContent>
+			<extension base="gsml:FaultSystemType">
+				<sequence>
+					<element name="segment" type="gsml:FaultPropertyType" minOccurs="0" maxOccurs="unbounded"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<!-- ..................... -->
+	<element name="Fault" type="gsml:FaultType" substitutionGroup="gsml:FaultSystem"/>
+	<!-- ..................... -->
+	<complexType name="FaultPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsml:Fault"/>
+		</sequence>
+		<attributeGroup ref="gsml:RichPropertyAttributeGroup"/>
+	</complexType>
+	<!--=======================-->
+	<complexType name="ContactType">
+		<complexContent>
+			<extension base="gsml:GeologicStructureType">
+				<sequence>
+					<element name="contactType" type="gsml:CGI_TermValuePropertyType"/>
+					<element name="contactCharacter" type="gsml:CGI_TermValuePropertyType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<!-- ..................... -->
+	<element name="Contact" type="gsml:ContactType" substitutionGroup="gsml:GeologicStructure"/>
+	<!--=======================-->
+</schema>
