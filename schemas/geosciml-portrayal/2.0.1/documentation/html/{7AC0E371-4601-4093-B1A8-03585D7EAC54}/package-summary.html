@@ -1,0 +1,60 @@
+<html  name="{7AC0E371-4601-4093-B1A8-03585D7EAC54}/package-summary" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><title>Package Detail View</title><meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+<link href="../default.css" rel="stylesheet"type="text/css"/></head><body><!-- ========= START OF TOP NAVBAR ======= -->
+<div align="left">
+<a name="navbar_top"><!-- --></a>
+<a href="#skip-navbar_top" title="Skip navigation links"></a>
+<table summary="" width="100%" border="0" cellpadding="1" cellspacing="0">
+<tbody>
+<tr>
+    <td class="NavBarCell1" bgcolor="#eeeeff">
+    <a name="navbar_top_firstrow"><!-- --></a>
+    <table summary="" border="0" cellpadding="0" cellspacing="3">
+      <tbody><tr valign="top" align="center">
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../index/index-1.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../help.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+
+     </tr>
+    </tbody></table>
+    </td>
+    <td rowspan=2 valign="top" align="right"><em>
+    <b>GeoSciML-Portrayal<br>2.0.1</b></em>
+    </td>
+</tr>
+<tr>
+<td class="NavBarCell2" bgcolor="white"><font size="-1">
+  <a href="../index.html?{7AC0E371-4601-4093-B1A8-03585D7EAC54}/package-summary.html" target="_top"><b>FRAMES</b></a>  &nbsp;
+&nbsp;<a href="package-summary.html" target="_top"><b>NO FRAMES</b></a>  &nbsp;
+&nbsp;
+<script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../allclasses-frame.html"><B>All Classes</B></A>');
+  }
+  //-->
+</script>
+
+
+</font></td>
+</tr>
+</tbody></table>
+<a name="skip-navbar_top"></a>
+</div>
+<hr>
+
+<!-- ========= END OF TOP NAVBAR ========= -->
+<div id="main"><h1 class="first">Package GeoSciML-Portrayal</h1><table class="description" width="95%"><tr><td width="5%"><b>Author:</b></td><td></td></tr><tr><td width="5%"><b>Version:</b></td><td>2.0.1</td></tr><tr><td width="5%"><b>Notes:</b></td><td>The GeoSciML-Portrayal schema standardises the interaction (request/response formats) with layer-based map services. It is best thought of as a view of GeoSciML data that denormalizes the data and concatenates complex property values into single, human-readable, labels and returns single, representative, values from controlled vocabularies for properties multi-valued properties that can be used when generating thematic maps, or portrayals, of the data.<br/>It is separate to, but harmonized with, GeoSciML and conforms to the level 0 of the Simple Features Profile for GML (link). Labels, will be 'free-text' fields that will be, in robust services, well-structured summaries of complex GeoSciML data, while the representative thematic properties will be URIs of concepts in a controlled vocabulary (for example CGI Simple Lithology). There will also be links, via identifier URIs, providing hooks to full GeoSciML representations of a the geologic feature in question.<br/><br/>********************************************************************************************************************<br/>Minor edit in v2.0.1<br/><br/>- Corrected error in documentation notes for Borehole/specification_uri, to read<br/>"URI referring the GeoSciML Borehole feature...", not "URI referring the GeoSciML GeologicUnit feature..."<br/>			<br/>********************************************************************************************************************</td></tr></table><table class="details"><tr><td colspan="2"><h2>Class Summary</h2></td></tr><tr><td width="15%">Name</td><td width="85%">Notes</td></tr><tr><td width="15%"><a href="{CD675610-E5C2-47d3-980E-2D716E06BBEB}.html">&lt;&lt;FeatureType&gt;&gt;BoreholeView</a></td><td width="85%">Simplified view of a GeoSciML Borehole. In GeoSciML terms, this will be an instance of a Borehole feature with key property values summarised as labels (unconstrained character strings) or arbitrarily selected classifiers to be used for thematic mapping purposes. The latter are the properties suffixed with '_uri' and will contain URIs referring to controlled concepts in published vocabularies.</td></tr><tr><td width="15%"><a href="{6A5667C6-1461-4aa7-BA98-1583B82E247C}.html">&lt;&lt;FeatureType&gt;&gt;ContactView</a></td><td width="85%">Simplified view of a GeoSciML Contact. In GeoSciML terms this will be in instance of a MappedFeature with key property values from the associated Contact feature summarised as labels (unconstrained character strings) or arbitrarily selected classifiers to be used for thematic mapping purposes. The latter are the properties suffixed with '_uri' and will contain URIs referring to controlled concepts in published vocabularies.</td></tr><tr><td width="15%"><a href="{FF60AD7C-2E0B-4916-8D62-5142FE366B49}.html">&lt;&lt;FeatureType&gt;&gt;GeologicUnitView</a></td><td width="85%">Simplified view of a GeoSciML GeologicUnit. In GeoSciML terms, this will be an instance of a MappedFeature with key property values from the associated GeologicUnit feature summarised as labels (unconstrained character strings) or arbitrarily selected classifiers to be used for thematic mapping purposes. The latter are the properties suffixed with '_uri' and will contain URIs referring to controlled concepts in published vocabularies.</td></tr><tr><td width="15%"><a href="{CE5E700D-EBA4-44ca-83C8-617C916DF033}.html">&lt;&lt;FeatureType&gt;&gt;ShearDisplacementStructureView</a></td><td width="85%">Simplified view of a GeoSciML ShearDisplacementStructure. In GeoSciML terms this will be in instance of a MappedFeature with key property values from the associated ShearDisplacementStructure feature summarised as labels (unconstrained character strings) or arbitrarily selected classifiers to be used for thematic mapping purposes. The latter are the properties suffixed with '_uri' and will contain URIs referring to controlled concepts in published vocabularies.</td></tr></table><table class="details"><tr><td colspan="3"><h3>Tagged Value</h3></td></tr><tr><td>Tag</td><td>Value</td><td>Notes</td></tr><tr><td>gmlProfileSchema</td><td></td><td>Description: URL of the schema location of a GML profile (optional)<br/></td></tr><tr><td>owner</td><td>IUGS Commission for the Management and Application of Geoscience Information</td><td></td></tr><tr><td>schemaLocation</td><td>http://schemas.geosciml.org/geosciml-portrayal/2.0/geosciml-portrayal.xsd</td><td></td></tr><tr><td>targetNamespace</td><td>http://xmlns.geosciml.org/geosciml-portrayal/2.0</td><td>Default: FIXME<br/>Description: Target XML namespace of the application schema<br/></td></tr><tr><td>version</td><td>2.0.1</td><td>Default: FIXME<br/>Description: Current version of the application schema<br/></td></tr><tr><td>xmlns</td><td>gsmlp</td><td>Default: FIXME<br/>Description: Namespace prefix to be used as short form of the target namespace<br/></td></tr><tr><td>xsdDocument</td><td>geosciml-portrayal.xsd</td><td>Default: FIXME<br/>Description: Name of an XML Schema document to create representing the content of this package<br/></td></tr><tr><td>xsdEncodingRule</td><td>iso19136_2007</td><td>Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br/>Default: iso19136_2007<br/>Description: XML Schema encoding rule to apply<br/></td></tr></table><P><h4>UML Diagram: GeoSciML-Portrayal</h4><img src="../Images/EAID_A26D8B02_E85C_4a09_8FD1_20FEF7D52D30.jpg" atl="UML Diagram"/></p><P><h4>UML Diagram: Package dependencies</h4><img src="../Images/EAID_AEFCF42E_1B7A_419a_8DFA_DFF71C36DDF4.jpg" atl="UML Diagram"/></p></div></body><div class="clearing">&#160;</div>
+<div id="footer" __skip="skip">
+    <hr class="first"/>
+    <p class="panel">
+		The document set was auto-generated at 16 Jul 2013 10:07:07<br/>
+		using Solid Ground
+    </p>
+</div>
+</html>
