@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:tbd:xmlns:TBD:FullMoon:type-mapping:1.0"
+	xmlns:gt="urn:cgi:xmlns:CGI:GeoTime:2.0"
+	xsi:schemaLocation="urn:tbd:xmlns:TBD:FullMoon:type-mapping:1.0 https://www.seegrid.csiro.au/subversion/FullMoon/trunk/resources/type-mapping-util/type-mapping.xsd
+	urn:cgi:xmlns:CGI:GeoTime:2.0 http://www.geosciml.org/geotime/2.0/xsd/geologicTime.xsd"
+	id="Mapping_GeoTime_V2.xml">
+	<description>Provides a mapping of elements specific to Geologic Time Version 2.0</description>
+	<entry>
+		<umlClass>DateMeasurement</umlClass>
+		<gmlObjectElement>gt:DateMeasurement</gmlObjectElement>
+		<gmlType>gt:DateMeasurementType</gmlType>
+		<gmlPropertyType>gt:DateMeasurementPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>DatingProcedure</umlClass>
+		<gmlObjectElement>gt:DatingProcedure</gmlObjectElement>
+		<gmlType>gt:DatingProcedureType</gmlType>
+		<gmlPropertyType>gt:DatingProcedurePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GeochronSpecimen</umlClass>
+		<gmlObjectElement>gt:GeochronSpecimen</gmlObjectElement>
+		<gmlType>gt:GeochronSpecimenType</gmlType>
+		<gmlPropertyType>gt:GeochronSpecimenPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GlobalStratotypePoint</umlClass>
+		<gmlObjectElement>gt:GlobalStratotypePoint</gmlObjectElement>
+		<gmlType>gt:GlobalStratotypePointType</gmlType>
+		<gmlPropertyType>gt:GlobalStratotypePointPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GlobalStratotypeSection</umlClass>
+		<gmlObjectElement>gt:GlobalStratotypeSection</gmlObjectElement>
+		<gmlType>gt:GlobalStratotypeSectionType</gmlType>
+		<gmlPropertyType>gt:GlobalStratotypeSectionPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>StratigraphicDateEstimate</umlClass>
+		<gmlObjectElement>gt:StratigraphicDateEstimate</gmlObjectElement>
+		<gmlType>gt:StratigraphicDateEstimateType</gmlType>
+		<gmlPropertyType>gt:StratigraphicDateEstimatePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>StratigraphicPoint</umlClass>
+		<gmlObjectElement>gt:StratigraphicPoint</gmlObjectElement>
+		<gmlType>gt:StratigraphicPointType</gmlType>
+		<gmlPropertyType>gt:StratigraphicPointPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>StratigraphicSection</umlClass>
+		<gmlObjectElement>gt:StratigraphicSection</gmlObjectElement>
+		<gmlType>gt:StratigraphicSectionType</gmlType>
+		<gmlPropertyType>gt:StratigraphicSectionPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>CGI_Numeric</umlClass>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gt:CGI_NumericPropertyType</gmlPropertyType>
+	</entry>
+</mapping>
