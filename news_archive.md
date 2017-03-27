@@ -1,0 +1,25 @@
+# GeoSciML Resource Repository
+
+* **August 2014** - [An example database is now available to demonstrate mapping of geological data to GeoSciML v3 WFS schemas](reference_database/reference_database_2013-11-07.zip)
+
+---
+
+* **April 2014** - [UK INSPIRE publishes a new guide for building GeoSciML v3 WFS using Geoserver](news_20142904_geoserver_cookbook.html)
+
+---
+
+* **December 2013** - [instructional cookbook for encoding GeoSciML web services for INSPIRE](http://schemas.geosciml.net/geosciml/3.2/documentation/cookbook/INSPIRE_GeoSciML_Cookbook_1.0.pdf)
+
+---
+
+* **July 2013** - [GeoSciML-Portrayal v2.0.1 schema and documentation released](http://schemas.geosciml.net)
+
+---
+
+* **February 2013** - [GeoSciML-Portrayal version 2.0.0 simple features WFS and WMS schema is released at http://schemas.geosciml.org](http://schemas.geosciml.net)
+
+---
+
+* **December 2012** - [Updated version 3.1 schemas are released at http://schemas.geosciml.org](http://schemas.geosciml.net)
+
+---
