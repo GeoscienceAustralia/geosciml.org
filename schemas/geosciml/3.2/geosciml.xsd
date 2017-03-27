@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+    xmlns:gsml="http://xmlns.geosciml.org/GeoSciML/3.2" 
+    targetNamespace="http://xmlns.geosciml.org/GeoSciML/3.2" 
+    elementFormDefault="qualified" 
+    attributeFormDefault="unqualified"
+    version="3.2.0">
+
+    <annotation>
+        <documentation>This is a summary schema to import all related application schemas for GeoSciML v 3.2.0
+     
+GeoSciML is a data transfer standard that specifies a set of feature-types and supporting structures for information used in the solid-earth geosciences.  
+GeoSciML is scoped approximately to the information required to construct geologic maps, but also geological sampling, observation and analyses. "Map" is interpreted broadly, 
+and not constrained to conventional 2-D semi-horizontal cartography, so the GeoSciML information structures also support representation of the distribution of 
+geologic features on sections, along curvilinear-traverses and boreholes, and within volumetric samples, etc.  GeoSciML is primarily concerned with "interpreted" 
+geology (units, structures, etc), but links to external schemas for the descriptions of observational data. 
+      
+GeoSciML is factored into a set of 13 application schema sub-packages.  From v3.0 onwards, the component packages are maintained separately. 
+      
+---
+      
+GeoSciML was developed under the auspices of the Interoperability Working Group (https://www.seegrid.csiro.au/twiki/bin/view/CGIModel/InteroperabilityWG/) 
+of the Commission for the Management and Application of Geoscience Information (http://www.cgi-iugs.org), a commission of the International Union of Geological 
+Sciences (http://www.iugs.org).  For the latest release, please see http://www.geosciml.org.
+
+Copyright (c) Commission for the Management and Application of Geoscience Information 2013. All rights reserved. 
+
+=========================================================================================
+
+Changes from GeoSciML v3.0 to v3.1
+
+- GeoSciML-Core package - changed cardinality of "classifier" to 1..* (voidable) 
+- Geomorphology package - added "activity" (0..1) to NaturalGeomphologicFeature
+- The Borehole, Collection, EarthMaterial, GeologicAge, GeologicStructure, GeologicUnit, and LaboratoryAnalysis-Specimen schemas were advanced to v3.1 as they
+   import GeoSciML-Core v3.1.
+   
+=========================================================================================
+
+Changes from GeoSciML v3.1 to v3.2.0 - 24 June 2013
+
+- Changed import dependencies to import all v3.2 schemas
+- Changes to other GeoSciML packages:
+   - Borehole - added intervalBegin and intervalEnd attributes to DrillingDetails class.
+              - added mappedIntervalBegin and mappedIntervalEnd to MappedInterval class.
+              - the addition of discrete begin and end attributes for downhole intervals is to allow data providers to overcome limitations of various WFS 
+                implementations which do not allow delivery of 1D spatial objects from non-spatial databases, and to work around the inability of WFS filter 
+                to query spatial objects of varying SRS in a single WFS service.
+   - Collection - added collectionType attribute to the GSML class.
+   - Utilities - added GSML_QuantityRange class as a child of swe:QuantityRange.  The new class has two discrete attributes (lowerValue and upperValue) to deliver
+                 a quantity range.  This works around the inability of WFS filter to query a number pair such as in swe:QuantityRange/value.
+   - GeologicUnit and EarthMaterial - these packages now import Utilities to gain access to the new GSML_QuantityRange element.
+                 
+=========================================================================================
+
+        </documentation>
+    </annotation>
+    <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+    <import namespace="http://xmlns.geosciml.org/GeoSciML-Core/3.2" schemaLocation="http://schemas.geosciml.org/geosciml-core/3.2/geosciml-core.xsd"/>
+    <import namespace="http://xmlns.geosciml.org/Borehole/3.2" schemaLocation="http://schemas.geosciml.org/borehole/3.2/borehole.xsd"/>    
+    <import namespace="http://xmlns.geosciml.org/Utilities/3.2" schemaLocation="http://schemas.geosciml.org/cgiutilities/3.2/cgiUtilities.xsd"/>
+    <import namespace="http://xmlns.geosciml.org/Collection/3.2" schemaLocation="http://schemas.geosciml.org/collection/3.2/collection.xsd"/>
+    <import namespace="http://xmlns.geosciml.org/EarthMaterial/3.2" schemaLocation="http://schemas.geosciml.org/earthmaterial/3.2/earthMaterial.xsd"/>
+    <import namespace="http://xmlns.geosciml.org/GeologicAge/3.2" schemaLocation="http://schemas.geosciml.org/geologicage/3.2/geologicAge.xsd"/>
+    <import namespace="http://xmlns.geosciml.org/GeologicStructure/3.2" schemaLocation="http://schemas.geosciml.org/geologicstructure/3.2/geologicStructure.xsd"/>
+    <import namespace="http://xmlns.geosciml.org/GeologicUnit/3.2" schemaLocation="http://schemas.geosciml.org/geologicunit/3.2/geologicUnit.xsd"/>
+    <import namespace="http://xmlns.geosciml.org/Geomorphology/3.2" schemaLocation="http://schemas.geosciml.org/geomorphology/3.2/geomorphology.xsd"/>
+    <import namespace="http://xmlns.geosciml.org/GeologicTime/3.2" schemaLocation="http://schemas.geosciml.org/geotime/3.2/geologicTime.xsd"/>
+    <import namespace="http://xmlns.geosciml.org/LaboratoryAnalysis-Specimen/3.2" schemaLocation="http://schemas.geosciml.org/laboratoryanalysis-specimen/3.2/laboratoryAnalysis-Specimen.xsd"/>   
+    <import namespace="http://xmlns.geosciml.org/PhysicalProperties/3.2" schemaLocation="http://schemas.geosciml.org/physicalproperties/3.2/physicalProperties.xsd"/>
+    <import namespace="http://xmlns.geosciml.org/TemporalReferenceSystem/3.2" schemaLocation="http://schemas.geosciml.org/temporalreferencesystem/3.2/trs.xsd"/>
+</schema>
