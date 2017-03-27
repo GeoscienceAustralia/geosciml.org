@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmlexr="http://www.opengis.net/gml/3.3/exr" xmlns:gsmlgt="http://xmlns.geosciml.org/GeologicTime/4.0" xmlns:om="http://www.opengis.net/om/2.0" xmlns:sf="http://www.opengis.net/samplingSpatial/2.0" xmlns:swe="http://www.opengis.net/swe/2.0" elementFormDefault="qualified" targetNamespace="http://xmlns.geosciml.org/GeologicTime/4.0" version="4.0.0">
+	<annotation>
+		<documentation>The Geologic Time package contains elements used to describe the classification of geologic time: time periods, time boundaries, and the relationships between them as defined by the International Commission on Stratigraphy.</documentation>
+	</annotation>
+	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+	<import namespace="http://www.opengis.net/gml/3.3/exr" schemaLocation="http://schemas.opengis.net/gml/3.3/extdEncRule.xsd"/>
+	<import namespace="http://www.opengis.net/om/2.0" schemaLocation="http://schemas.opengis.net/om/2.0/observation.xsd"/>
+  <import namespace="http://www.opengis.net/samplingSpatial/2.0" schemaLocation="http://schemas.opengis.net/samplingSpatial/2.0/spatialSamplingFeature.xsd"/>
+	<import namespace="http://www.opengis.net/swe/2.0" schemaLocation="http://schemas.opengis.net/sweCommon/2.0/swe.xsd"/>
+	<!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+  <element name="GeochronologicBoundary" substitutionGroup="gsmlgt:TimeOrdinalEraBoundary" type="gsmlgt:GeochronologicBoundaryType">
+		<annotation>
+			<documentation>A boundary between two geochronologic time periods</documentation>
+		</annotation>
+	</element>
+	<complexType name="GeochronologicBoundaryType">
+		<complexContent>
+			<extension base="gsmlgt:TimeOrdinalEraBoundaryType">
+				<sequence>
+          <element minOccurs="0" name="stratotype" type="gsmlgt:StratigraphicPointPropertyType">
+						<annotation>
+							<documentation>Several StratigraphicPoints may be associated with a boundary, but only one may have GSSP ratified status. The others are proposed equivalent.</documentation>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="GeochronologicBoundaryPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsmlgt:GeochronologicBoundary"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+  <element name="GeochronologicEra" substitutionGroup="gsmlgt:TimeOrdinalEra" type="gsmlgt:GeochronologicEraType">
+		<annotation>
+			<documentation>The association of an era with a stratotype is optional.  In the GSSP approach recommended by ICS for the Global Geologic Timescale, Unit Stratotypes are not used. 
+
+Rather, the association of an Era with geologic units and sections is indirect, via the association of an era with Boundaries, which are in turn tied to Stratotype Points, which occur within host Stratotype Sections. 
+
+Note that the "German School" defines stratigraphic eras conceptually, without reference to stratotypes.</documentation>
+		</annotation>
+	</element>
+	<complexType name="GeochronologicEraType">
+		<complexContent>
+			<extension base="gsmlgt:TimeOrdinalEraType">
+				<sequence>
+          <element minOccurs="0" name="rank" type="gml:ReferenceType">
+						<annotation>
+							<documentation>A term from a controlled vocabulary describing the rank of the time period (eg, eon, era, period, stage)</documentation>
+							<appinfo>
+								<targetElement xmlns="http://www.opengis.net/gml/3.2">gsmlgt:GeochronologicEraRank</targetElement>
+								<targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">GeochronologicEraRank</targetCodeList>
+							</appinfo>
+						</annotation>
+					</element>
+          <element minOccurs="0" name="stratotype" type="gsmlgt:StratigraphicSectionPropertyType">
+            <annotation>
+              <documentation>Type section that names the physical location or outcrop of a particular reference exposure of a stratigraphic sequence or stratigraphic boundary. A unit stratotype is the agreed reference point for a particular stratigraphic unit and a boundary stratotype the reference for a particular boundary between strata (Wikipedia)</documentation>
+            </annotation>
+          </element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="GeochronologicEraPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsmlgt:GeochronologicEra"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+  <element name="GeologicTimescale" substitutionGroup="gsmlgt:TimeOrdinalReferenceSystem" type="gsmlgt:GeologicTimescaleType">
+		<annotation>
+			<documentation>The classic "Geologic Timescale" comprising an ordered, hierarchical set of named "eras" is an example of an Ordinal Temporal Reference System. It may be calibrated with reference to a numeric Temporal Coordinate System, but is in principle defined independently.</documentation>
+		</annotation>
+	</element>
+	<complexType name="GeologicTimescaleType">
+		<complexContent>
+			<extension base="gsmlgt:TimeOrdinalReferenceSystemType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="GeologicTimescalePropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsmlgt:GeologicTimescale"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+  <element name="GlobalStratotypePoint" substitutionGroup="gsmlgt:StratigraphicPoint" type="gsmlgt:GlobalStratotypePointType">
+		<annotation>
+			<documentation>A type of stratigraphic point used to define a globally agreed point in geologic time</documentation>
+		</annotation>
+	</element>
+	<complexType name="GlobalStratotypePointType">
+		<complexContent>
+			<extension base="gsmlgt:StratigraphicPointType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="GlobalStratotypePointPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsmlgt:GlobalStratotypePoint"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+  <element name="GlobalStratotypeSection" substitutionGroup="gsmlgt:StratigraphicSection" type="gsmlgt:GlobalStratotypeSectionType">
+		<annotation>
+			<documentation>A type of stratigraphic section used to define a globally agreed standard period of geologic time</documentation>
+		</annotation>
+	</element>
+	<complexType name="GlobalStratotypeSectionType">
+		<complexContent>
+			<extension base="gsmlgt:StratigraphicSectionType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="GlobalStratotypeSectionPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsmlgt:GlobalStratotypeSection"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+  <element name="NumericEraBoundary" substitutionGroup="gsmlgt:TimeOrdinalEraBoundary" type="gsmlgt:NumericEraBoundaryType">
+		<annotation>
+			<documentation>Used for pre-Ediacaran and Pleistocene / Holocene boundaries in the standard timescale</documentation>
+		</annotation>
+	</element>
+	<complexType name="NumericEraBoundaryType">
+		<complexContent>
+			<extension base="gsmlgt:TimeOrdinalEraBoundaryType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="NumericEraBoundaryPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsmlgt:NumericEraBoundary"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+  <element name="StandardGlobalNumericalAge" substitutionGroup="gsmlgt:NumericEraBoundary" type="gsmlgt:StandardGlobalNumericalAgeType">
+		<annotation>
+			<documentation>A standard numeric age point (a numeric analogue to a 'golden spike') applicable to the formal subdivision of the Precambrian, and perhaps the Pleistocene/Holocene boundary (Walshe, Gradstein and Ogg, 2004)</documentation>
+		</annotation>
+	</element>
+	<complexType name="StandardGlobalNumericalAgeType">
+		<complexContent>
+			<extension base="gsmlgt:NumericEraBoundaryType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="StandardGlobalNumericalAgePropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsmlgt:StandardGlobalNumericalAge"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+  <element name="StratigraphicPoint" substitutionGroup="sf:SF_SpatialSamplingFeature" type="gsmlgt:StratigraphicPointType">
+		<annotation>
+			<documentation>A point in the stratigraphic record used to define a geochronologic boundary or point in geologic time</documentation>
+		</annotation>
+	</element>
+	<complexType name="StratigraphicPointType">
+		<complexContent>
+			<extension base="sf:SF_SpatialSamplingFeatureType">
+				<sequence>
+          <element minOccurs="0" name="primaryGuidingCriterion" type="string">
+						<annotation>
+							<documentation>A description of the primary criterion used to establish this stratigraphic point</documentation>
+						</annotation>
+					</element>
+          <element maxOccurs="unbounded" minOccurs="0" name="additionalCorrelationProperty" type="string">
+						<annotation>
+							<documentation>Any additional criteria used to establish this stratigraphic point</documentation>
+						</annotation>
+					</element>
+          <element minOccurs="0" name="status" type="string">
+						<annotation>
+							<documentation>A description of the status of stratigraphic point (eg, formally accepted, etc)</documentation>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="StratigraphicPointPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsmlgt:StratigraphicPoint"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+  <element name="StratigraphicSection" substitutionGroup="sf:SF_SpatialSamplingFeature" type="gsmlgt:StratigraphicSectionType">
+		<annotation>
+			<documentation>A sampled section of the stratigraphic record used to define a period in geologic time</documentation>
+		</annotation>
+	</element>
+	<complexType name="StratigraphicSectionType">
+		<complexContent>
+			<extension base="sf:SF_SpatialSamplingFeatureType">
+				<sequence>
+          <element minOccurs="0" name="geologicSetting" type="string">
+						<annotation>
+							<documentation>A description of the geologic setting of the stratigraphic section</documentation>
+						</annotation>
+					</element>
+          <element minOccurs="0" name="geologicDescription" type="string">
+						<annotation>
+							<documentation>A description of the geology of the stratigraphic section (eg, lithology, paleontology, paleogeography, etc)</documentation>
+						</annotation>
+					</element>
+          <element minOccurs="0" name="accessibility" type="string">
+						<annotation>
+							<documentation>A description of the ability to access the stratigraphic section</documentation>
+						</annotation>
+					</element>
+          <element minOccurs="0" name="conservation" type="string">
+						<annotation>
+							<documentation>A description of measures to conserve the stratigraphic section</documentation>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="StratigraphicSectionPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsmlgt:StratigraphicSection"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+  <element name="TimeOrdinalEra" substitutionGroup="gml:AbstractGML" type="gsmlgt:TimeOrdinalEraType">
+		<annotation>
+			<documentation>The association of an era with a stratotype is optional.  In the GSSP approach recommended by ICS for the Global Geologic Timescale, Unit Stratotypes are not used.  Rather, the association of an Era with geologic units and sections is indirect, via the association of an era with Boundaries, which are in turn tied to Stratotype Points, which occur within host Stratotype Sections. 
+Note that the "German School" defines stratigraphic eras conceptually, without reference to stratotypes.</documentation>
+		</annotation>
+	</element>
+	<complexType name="TimeOrdinalEraType">
+		<complexContent>
+			<extension base="gml:AbstractGMLType">
+				<sequence>
+          <element minOccurs="0" name="start" type="gsmlgt:TimeOrdinalEraBoundaryPropertyType">
+						<annotation>
+							<documentation>Older time boundary of an era</documentation>
+							<appinfo>
+								<reversePropertyName xmlns="http://www.opengis.net/gml/3.2">gsmlgt:nextEra</reversePropertyName>
+							</appinfo>
+						</annotation>
+					</element>
+          <element minOccurs="0" name="end" type="gsmlgt:TimeOrdinalEraBoundaryPropertyType">
+						<annotation>
+							<documentation>Younger time boundary of an era</documentation>
+							<appinfo>
+								<reversePropertyName xmlns="http://www.opengis.net/gml/3.2">gsmlgt:previousEra</reversePropertyName>
+							</appinfo>
+						</annotation>
+					</element>
+          <element maxOccurs="unbounded" minOccurs="0" name="member" type="gsmlgt:TimeOrdinalEraPropertyType">
+            <annotation>
+              <documentation>Subdivisions of TimeOrdinalEra</documentation>
+            </annotation>
+          </element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="TimeOrdinalEraPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsmlgt:TimeOrdinalEra"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+  <element name="TimeOrdinalEraBoundary" substitutionGroup="gml:AbstractGML" type="gsmlgt:TimeOrdinalEraBoundaryType">
+		<annotation>
+			<documentation>A point in Earth's history which bounds a TimeOrdinalEra.</documentation>
+		</annotation>
+	</element>
+	<complexType name="TimeOrdinalEraBoundaryType">
+		<complexContent>
+			<extension base="gml:AbstractGMLType">
+				<sequence>
+          <element minOccurs="0" name="position" type="gml:TimeInstantPropertyType">
+						<annotation>
+							<documentation>A point in time corresponding to the era boundary</documentation>
+						</annotation>
+					</element>
+          <element maxOccurs="unbounded" minOccurs="0" name="observationalBasis" type="om:OM_ObservationPropertyType">
+            <annotation>
+              <documentation>Observation supporting the existence of the boundary (geochronology, paleontology, etc.)</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" name="positionalUncertainty">
+						<annotation>
+							<documentation>A measure of the uncertainty in the estimate of the point in time of the era boundary</documentation>
+						</annotation>
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractMemberType">
+									<sequence minOccurs="0">
+										<element ref="swe:Quantity"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+          <element maxOccurs="unbounded" minOccurs="0" name="nextEra" type="gsmlgt:TimeOrdinalEraPropertyType">
+						<annotation>
+              <documentation>Succeeding era</documentation>
+							<appinfo>
+								<reversePropertyName xmlns="http://www.opengis.net/gml/3.2">gsmlgt:start</reversePropertyName>
+							</appinfo>
+						</annotation>
+					</element>
+          <element maxOccurs="unbounded" minOccurs="0" name="previousEra" type="gsmlgt:TimeOrdinalEraPropertyType">
+						<annotation>
+              <documentation>Preceding era</documentation>
+							<appinfo>
+								<reversePropertyName xmlns="http://www.opengis.net/gml/3.2">gsmlgt:end</reversePropertyName>
+							</appinfo>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="TimeOrdinalEraBoundaryPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsmlgt:TimeOrdinalEraBoundary"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+  <element name="TimeOrdinalReferenceSystem" substitutionGroup="gml:TimeOrdinalReferenceSystem" type="gsmlgt:TimeOrdinalReferenceSystemType">
+		<annotation>
+			<documentation>A time reference system comprised of an ordered set of time periods (time ordinal eras).</documentation>
+		</annotation>
+	</element>
+	<complexType name="TimeOrdinalReferenceSystemType">
+		<complexContent>
+			<extension base="gml:TimeOrdinalReferenceSystemType">
+				<sequence>
+          <element maxOccurs="unbounded" minOccurs="0" name="component" type="gsmlgt:TimeOrdinalEraPropertyType">
+            <annotation>
+              <documentation>TimeOrdinalEra composing the TimeOrdinalReferenceSystem</documentation>
+            </annotation>
+          </element>
+          <element maxOccurs="unbounded" minOccurs="2" name="referencePoint" type="gsmlgt:TimeOrdinalEraBoundaryPropertyType">
+            <annotation>
+              <documentation>Two reference points defining the extent of the system</documentation>
+            </annotation>
+          </element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="TimeOrdinalReferenceSystemPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsmlgt:TimeOrdinalReferenceSystem"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+</schema>

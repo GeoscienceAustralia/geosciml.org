@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmlexr="http://www.opengis.net/gml/3.3/exr" xmlns:gsmlb="http://xmlns.geosciml.org/GeoSciML-Basic/4.0" xmlns:gsmlla="http://xmlns.geosciml.org/LaboratoryAnalysis-Specimen/4.0" xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/1.0" xmlns:om="http://www.opengis.net/om/2.0" xmlns:sam="http://www.opengis.net/sampling/2.0" xmlns:spec="http://www.opengis.net/samplingSpecimen/2.0" targetNamespace="http://xmlns.geosciml.org/LaboratoryAnalysis-Specimen/4.0" elementFormDefault="qualified" version="4.0.0">
+	<annotation>
+		<documentation>The LaboratoryAnlaysis-Specimen application schema extends the ISO19156 schema for Observations, Measurements and Sampling.  It specifically describes processes and results related to the analysis of (geological) samples using instruments, most commonly in a laboratory environment. (Design of this package is based upon, and extends, the MOLES v3 data model.)</documentation>
+	</annotation>
+	<import namespace="http://standards.iso.org/iso/19115/-3/cit/1.0" schemaLocation="http://standards.iso.org/iso/19115/-3/cit/1.0/cit.xsd"/>
+	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+	<import namespace="http://www.opengis.net/gml/3.3/exr" schemaLocation="http://schemas.opengis.net/gml/3.3/extdEncRule.xsd"/>
+	<import namespace="http://www.opengis.net/om/2.0" schemaLocation="http://schemas.opengis.net/om/2.0/observation.xsd"/>
+	<import namespace="http://www.opengis.net/sampling/2.0" schemaLocation="http://schemas.opengis.net/sampling/2.0/samplingFeature.xsd"/>
+	<import namespace="http://www.opengis.net/samplingSpecimen/2.0" schemaLocation="http://schemas.opengis.net/samplingSpecimen/2.0/specimen.xsd"/>
+	<import namespace="http://xmlns.geosciml.org/GeoSciML-Basic/4.0" schemaLocation="geoSciMLBasic.xsd"/>
+	<!--XML Schema document created by ShapeChange - http://shapechange.net/-->
+	<element name="AnalyticalInstrument" type="gsmlla:AnalyticalInstrumentType" substitutionGroup="gml:AbstractFeature">
+		<annotation>
+			<documentation>Type of instrument used to perform an analytical observation</documentation>
+		</annotation>
+	</element>
+	<complexType name="AnalyticalInstrumentType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="type" type="gml:ReferenceType" minOccurs="0">
+						<annotation>
+							<documentation>The category of instrument used in an analytical session (eg; XRF, ICPMS, SHRIMP, etc)</documentation>
+							<appinfo>
+								<targetElement xmlns="http://www.opengis.net/gml/3.2">gsmlla:InstrumentTypeTerm</targetElement>
+								<targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">InstrumentTypeTerm</targetCodeList>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="model" type="string" minOccurs="0">
+						<annotation>
+							<documentation>An optional text string to identify the model of instrument used. (eg instrument type = XRD, model = Siemens Diffraktometer D500)</documentation>
+						</annotation>
+					</element>
+					<element name="serialNumber" type="string" minOccurs="0">
+						<annotation>
+							<documentation>An optional text string for the serial number of the machine used in an analytical session.</documentation>
+						</annotation>
+					</element>
+					<element name="commissionDate" type="gml:TimeInstantPropertyType" minOccurs="0">
+						<annotation>
+							<documentation>The date of the commissioning of an instrument (optional)</documentation>
+						</annotation>
+					</element>
+					<element name="location" type="cit:CI_Responsibility_PropertyType" minOccurs="0">
+						<annotation>
+							<documentation>The location and owner of an instrument</documentation>
+						</annotation>
+					</element>
+					<element name="usedIn" type="gsmlla:AnalyticalSessionPropertyType" minOccurs="0" maxOccurs="unbounded">
+						<annotation>
+							<documentation>Identifies one or more analytical sessions which used this instrument</documentation>
+							<appinfo>
+								<reversePropertyName xmlns="http://www.opengis.net/gml/3.2">gsmlla:instrument</reversePropertyName>
+							</appinfo>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="AnalyticalInstrumentPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsmlla:AnalyticalInstrument"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="AnalyticalMethod" type="gsmlla:AnalyticalMethodType" substitutionGroup="gml:AbstractGML">
+		<annotation>
+			<documentation>Name, and published citation (nillable), of the analytical method used in an analytical session</documentation>
+		</annotation>
+	</element>
+	<complexType name="AnalyticalMethodType">
+		<complexContent>
+			<extension base="gml:AbstractGMLType">
+				<sequence>
+					<element name="methodName" type="gml:ReferenceType" minOccurs="0">
+						<annotation>
+							<documentation>Reference to a controlled vocabulary of names of analytical method used in a session (eg; XRF mass spectrometry, ICPMS, SHRIMP geochronology)</documentation>
+							<appinfo>
+								<targetElement xmlns="http://www.opengis.net/gml/3.2">gsmlla:AnalyticalMethodTerm</targetElement>
+								<targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">AnalyticalMethodTerm</targetCodeList>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="citation" type="cit:CI_Citation_PropertyType" minOccurs="0">
+						<annotation>
+							<documentation>A published description of a particular analytical method (eg; a standard operating procedure document).  This attribute is nillable if such a document does not exist.</documentation>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="AnalyticalMethodPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsmlla:AnalyticalMethod"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="AnalyticalProcess" type="gsmlla:AnalyticalProcessType" substitutionGroup="gml:AbstractFeature">
+		<annotation>
+			<documentation>Concrete implementation of OM_Process.  Links to an analytical session (data acquisition) or a computational process which produce analytical results.</documentation>
+		</annotation>
+	</element>
+	<complexType name="AnalyticalProcessType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="method" type="gsmlla:AnalyticalMethodPropertyType" minOccurs="0">
+						<annotation>
+							<documentation>Identifies the type of analytical method used to make an observation.</documentation>
+						</annotation>
+					</element>
+					<element name="acquisition" minOccurs="0">
+						<annotation>
+							<documentation>Describes the analytical session (eg, laboratory session) in which an observation was made and data acquired.</documentation>
+						</annotation>
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="gsmlla:AnalyticalSession"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+					<element name="computation" type="gml:ReferenceType" minOccurs="0">
+						<annotation>
+							<documentation>Computational process associated with the Process.</documentation>
+							<appinfo>
+								<targetElement xmlns="http://www.opengis.net/gml/3.2">mrl:LI_ProcessStep</targetElement>
+							</appinfo>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="AnalyticalProcessPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsmlla:AnalyticalProcess"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="AnalyticalSession" type="gsmlla:AnalyticalSessionType" substitutionGroup="gml:AbstractFeature">
+		<annotation>
+			<documentation>This class describes the time and operator of a particular laboratory analytical session. AnalyticalSession also has associated links to the type of instrument and analytical method used, processing steps applied to data collected during a session, and instrument parameters unique to that session.</documentation>
+		</annotation>
+	</element>
+	<complexType name="AnalyticalSessionType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="time" type="gml:TimePeriodPropertyType" minOccurs="0">
+						<annotation>
+							<documentation>The time period during which the analysis was performed</documentation>
+						</annotation>
+					</element>
+					<element name="operator" type="cit:CI_Responsibility_PropertyType" minOccurs="0">
+						<annotation>
+							<documentation>The name of the operator or organisation responsible for the analytical session</documentation>
+						</annotation>
+					</element>
+					<element name="parameter" minOccurs="0" maxOccurs="unbounded">
+						<annotation>
+							<documentation>This association is analogous to the "parameter" attribute of OM_Observation, but in this case describes environmental or instrument setting parameters that apply to an entire analytical session (eg, voltage, current, temperature, vacuum).  The "name" attribute of NamedValue is implemented in OMXML as a byReference URI to a controlled list.</documentation>
+						</annotation>
+						<complexType>
+							<sequence>
+								<element ref="om:NamedValue"/>
+							</sequence>
+						</complexType>
+					</element>
+					<element name="instrument" type="gsmlla:AnalyticalInstrumentPropertyType" minOccurs="0">
+						<annotation>
+							<documentation>Identifies the instrument used in the analytical session</documentation>
+							<appinfo>
+								<reversePropertyName xmlns="http://www.opengis.net/gml/3.2">gsmlla:usedIn</reversePropertyName>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="referenceAnalyses" type="gsmlla:ReferenceSpecimenPropertyType" minOccurs="0" maxOccurs="unbounded">
+						<annotation>
+							<documentation>Describes any reference specimens (ie, standards, blanks) used in the analytical session.</documentation>
+							<appinfo>
+								<reversePropertyName xmlns="http://www.opengis.net/gml/3.2">gsmlla:usedIn</reversePropertyName>
+							</appinfo>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="AnalyticalSessionPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsmlla:AnalyticalSession"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="GeochronologicInterpretation" type="gsmlla:GeochronologicInterpretationType" substitutionGroup="gml:AbstractFeature">
+		<annotation>
+			<documentation>An interpretation made by a geologist of the age of a specimen made by statistical analysis of a single collection of observations.  A specimen may have multiple geochronological interpretations made on it, each related to a different observation collection.</documentation>
+		</annotation>
+	</element>
+	<complexType name="GeochronologicInterpretationType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="interpretedAge" minOccurs="0">
+						<annotation>
+							<documentation>Use GeoSciML GeologicEvent to describe event age, process and environment.  e.g, Event age = 350 Ma +/- 3 Ma.  Event process = intrusion, extrusion, metamorphism. Event environment = plutonic, marine.</documentation>
+						</annotation>
+						<complexType>
+							<complexContent>
+								<extension base="gml:AbstractFeatureMemberType">
+									<sequence minOccurs="0">
+										<element ref="gsmlb:GeologicEvent"/>
+									</sequence>
+									<attributeGroup ref="gml:AssociationAttributeGroup"/>
+								</extension>
+							</complexContent>
+						</complexType>
+					</element>
+					<element name="isotopicEvent" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+						<annotation>
+							<documentation>Describes any isotopic events that are relevant to the interpretation. eg; closure, isotopic mixing, Pb loss, etc</documentation>
+							<appinfo>
+								<targetElement xmlns="http://www.opengis.net/gml/3.2">gsmlla:IsotopicEventType</targetElement>
+								<targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">IsotopicEventType</targetCodeList>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="isotopicSystem" type="gml:ReferenceType" minOccurs="0">
+						<annotation>
+							<documentation>Describes the isotopic system used to calculate geochronological age. StatisticalAgeTypes vocabulary would contain values like:
+Ar-Ar, K-Ar, Nd-Sm, Pb-Pb, Rb-Sr, Re-Os, U-Pb, etc</documentation>
+							<appinfo>
+								<targetElement xmlns="http://www.opengis.net/gml/3.2">gsmlla:IsotopicSystemName</targetElement>
+								<targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">IsotopicSystemName</targetCodeList>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="statisticalMethod" type="gml:ReferenceType" minOccurs="0">
+						<annotation>
+							<documentation>The statistical method used to interpret the results</documentation>
+							<appinfo>
+								<targetElement xmlns="http://www.opengis.net/gml/3.2">gsmlla:StatisticalMethodTerm</targetElement>
+								<targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">StatisticalMethodTerm</targetCodeList>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="interpretedBy" type="cit:CI_Responsibility_PropertyType" minOccurs="0">
+						<annotation>
+							<documentation>Party responsible for this interpretation</documentation>
+						</annotation>
+					</element>
+					<element name="citation" type="cit:CI_Citation_PropertyType" minOccurs="0">
+						<annotation>
+							<documentation>Use ISO metadata citation element to describe author and other reference information.  Can be used to describe reference for new or legacy data</documentation>
+						</annotation>
+					</element>
+					<element name="preferredInterpretation" type="boolean" minOccurs="0">
+						<annotation>
+							<documentation>Indicates whether this interpretation is the preferred interpretation (ie; the analytical data may be reinterpreted)</documentation>
+						</annotation>
+					</element>
+					<element name="sourceCollection" type="sam:SF_SamplingFeatureCollectionPropertyType" minOccurs="0">
+						<annotation>
+							<documentation>Each geochronological interpretation has a mandatory association to a collection of sampling features (eg; a collection of burn spots or craters from a SHRIMP analytical session).  Legacy published data for which the SamplingFeatureCollection is unknown may be delivered with SamplingFeatureCollection = 'unknown'.</documentation>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="GeochronologicInterpretationPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsmlla:GeochronologicInterpretation"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="GeologicSamplingMethod" type="gsmlla:GeologicSamplingMethodType" substitutionGroup="gml:AbstractFeature">
+		<annotation>
+			<documentation>Implementation of SF_Process to describe the method used to obtain a geologic specimen
+eg:
+diamond drilling
+percussion drilling
+piston core drilling
+vibro core drilling
+channel sampling
+sea floor dredging
+geological hammer</documentation>
+		</annotation>
+	</element>
+	<complexType name="GeologicSamplingMethodType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="method" type="gml:ReferenceType" minOccurs="0">
+						<annotation>
+							<documentation>Name of the process used to obtain or create a geologic specimen. eg:
+diamond drilling
+percussion drilling
+piston core drilling
+vibro core drilling
+channel sampling
+sea floor dredging
+crushing
+mineral separation
+melting
+geological hammer</documentation>
+							<appinfo>
+								<targetElement xmlns="http://www.opengis.net/gml/3.2">gsmlla:GeologicSamplingMethodTerm</targetElement>
+								<targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">GeologicSamplingMethodTerm</targetCodeList>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="parameter" minOccurs="0" maxOccurs="unbounded">
+						<annotation>
+							<documentation>One or more specific parameters used in the sampling process.</documentation>
+						</annotation>
+						<complexType>
+							<sequence>
+								<element ref="om:NamedValue"/>
+							</sequence>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="GeologicSamplingMethodPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsmlla:GeologicSamplingMethod"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="GeologicSpecimenPreparation" type="gsmlla:GeologicSpecimenPreparationType" substitutionGroup="spec:PreparationStep">
+		<annotation>
+			<documentation>An extension of OGC Specimen:PreparationStep to allow details of preparation steps to be delivered (eg, filtration and mesh size, chemical additives, crushing methods, drying parameters, etc)</documentation>
+		</annotation>
+	</element>
+	<complexType name="GeologicSpecimenPreparationType">
+		<complexContent>
+			<extension base="spec:PreparationStepType">
+				<sequence>
+					<element name="preparationMethod" type="gml:ReferenceType" minOccurs="0">
+						<annotation>
+							<documentation>A term from a controlled vocabulary to describe the method employed for the preparation of a geologic specimen for further analysis.</documentation>
+							<appinfo>
+								<targetElement xmlns="http://www.opengis.net/gml/3.2">gsmlla:GeologicSpecimenPreparationTerm</targetElement>
+								<targetCodeList xmlns="http://www.opengis.net/gml/3.3/exr">GeologicSpecimenPreparationTerm</targetCodeList>
+							</appinfo>
+						</annotation>
+					</element>
+					<element name="parameter" minOccurs="0" maxOccurs="unbounded">
+						<annotation>
+							<documentation>One or more parameters used in this preparation step. eg, mesh size in a sieving process, type of chemical additives, parameters in a mineral separation process</documentation>
+						</annotation>
+						<complexType>
+							<sequence>
+								<element ref="om:NamedValue"/>
+							</sequence>
+						</complexType>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="GeologicSpecimenPreparationPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsmlla:GeologicSpecimenPreparation"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="Image" type="gsmlla:ImageType" substitutionGroup="sam:SF_SamplingFeature">
+		<annotation>
+			<documentation>Use gml:description for xlink:href URL to a photographic image.  SF_Process = camera. For example, photographs of ion microprobe grain mounts.</documentation>
+		</annotation>
+	</element>
+	<complexType name="ImageType">
+		<complexContent>
+			<extension base="sam:SF_SamplingFeatureType">
+				<sequence/>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="ImagePropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsmlla:Image"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+	<element name="ReferenceSpecimen" type="gsmlla:ReferenceSpecimenType" substitutionGroup="spec:SF_Specimen">
+		<annotation>
+			<documentation>A reference specimen is a specimen with known or accepted values of some property. The citation property describes the location of a published description of these values.  Reference specimens include analytical blanks.
+
+Analytical results from a reference specimen analysed during an AnalyticalSession are delivered in the same way as the results of other specimens analysed in that session.</documentation>
+		</annotation>
+	</element>
+	<complexType name="ReferenceSpecimenType">
+		<complexContent>
+			<extension base="spec:SF_SpecimenType">
+				<sequence>
+					<element name="referenceDescription" type="cit:CI_Citation_PropertyType" minOccurs="0">
+						<annotation>
+							<documentation>Citation of published analytical results for this standard reference specimen</documentation>
+						</annotation>
+					</element>
+					<element name="usedIn" type="gsmlla:AnalyticalSessionPropertyType" minOccurs="0" maxOccurs="unbounded">
+						<annotation>
+							<documentation>Identifies any analytical sessions in which the reference specimens were used</documentation>
+							<appinfo>
+								<reversePropertyName xmlns="http://www.opengis.net/gml/3.2">gsmlla:referenceAnalyses</reversePropertyName>
+							</appinfo>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="ReferenceSpecimenPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsmlla:ReferenceSpecimen"/>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"/>
+	</complexType>
+</schema>
