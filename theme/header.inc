@@ -20,9 +20,10 @@
         <tr>
             <td>
                 <div id="ga-nav">
+                    <a href="/">GeoSciML Home</a>
                     <a href="http://www.cgi-iugs.org/">CGI Home</a>
-                    <a href="http://resource.geosciml.org/def/voc/">Vocabs</a>
-                    <a href="http://schemas.geosciml.org">Schemas</a>
+                    <a href="http://resource.geosciml.org/def/voc/">CGI Resources</a>
+                    <a href="http://schemas.geosciml.org">CGI Schemas</a>
                 </div>
             </td>
         </tr>

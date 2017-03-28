@@ -1,14 +1,19 @@
-<?php include '../theme/header.inc'; ?>
+<?php
+    include '../settings.php';
+    require $PROJECT_HOME_DIR . 'vendor/autoload.php';
+    include $PROJECT_HOME_DIR . 'theme/header.inc';
+?>
 
-<div id="container-content">
-    <?php include '../theme/right_menu.inc'; ?>
+    <div id="container-content">
+        <?php include $PROJECT_HOME_DIR . 'theme/right_menu.inc'; ?>
 
-    <?php
-        // read file contents from Markdown (.md) file
-        require '../vendor/autoload.php';
-        $contents = file_get_contents('../resource.geosciml.org.md');
-        $Parsedown = new Parsedown();
-        echo $Parsedown->text($contents);
-    ?>
+        <?php
+            // read file contents from Markdown (.md) file
+            $contents = file_get_contents($PROJECT_HOME_DIR . 'pages/resource.geosciml.org.md');
+            $Parsedown = new Parsedown();
+            echo $Parsedown->text($contents);
+        ?>
 
-<?php include '../theme/footer.inc'; ?>
+    </div><!-- #content-container -->
+
+<?php include $PROJECT_HOME_DIR . 'theme/footer.inc'; ?>

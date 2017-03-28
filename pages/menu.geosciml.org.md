@@ -1,0 +1,8 @@
+* [Home](http://www.geosciml.net)
+* [Introduction to GeoSciML](http://www.cgi-iugs.org/tech_collaboration/geosciml.html)
+* [GeoSciML schemas](http://schemas.geosciml.net)
+* [Geoscience vocabularies](http://resource.geosciml.net)
+* [GeoSciML Standards Working Group (SWG)](http://www.opengeospatial.org/projects/groups/geoscimlswg)
+* [GeoSciML SWG Wiki](http://external.opengeospatial.org/twiki_public/GeoSciMLswg/WebHome)
+* [EarthResourceML](http://www.earthresourceml.org)
+* [Wiki for earlier versions of GeoSciML](https://www.seegrid.csiro.au/wiki/CGIModel/WebHome)

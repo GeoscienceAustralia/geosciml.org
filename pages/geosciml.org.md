@@ -1,9 +1,9 @@
 # GeoSciML and GeoSciML-Portrayal
 
-####  ![new](theme/img/new.gif) [GeoSciML version 4.0 is released!](reference_database/reference_database_2013-11-07.zip)
+####  ![new](theme/img/new.gif) [GeoSciML version 4.0 is released!](../reference_database/reference_database_2013-11-07.zip)
 *with updated cookbooks for creating web services*
 
-#### [GeoSciML News Archive](news_archive.html)
+#### [GeoSciML News Archive](../news_archive.html)
 
 ---
 
@@ -17,7 +17,7 @@ GeoSciML version 4.0 is a data transfer standard  for geological data  - from ba
     * [How To Serve a GeoSciML v4.0 Web Feature Service (WFS) Using GeoServer](http://www.onegeology.org/docs/technical/OneGeologyWFSCookbook_v1.2.pdf)
     * [GeoSciML v4.0 Encoding Cookbook for OneGeology and INSPIRE](http://www.onegeology.org/docs/technical/GeoSciML_Cookbook_1.2.1.pdf)
 * **Reference database**
-    * [An example database for mapping geological data to GeoSciML v3 web services](reference_database/reference_database_2013-11-07.zip)
+    * [An example database for mapping geological data to GeoSciML v3 web services](../reference_database/reference_database_2013-11-07.zip)
 
 GeoSciML v4.0 will be submitted as an Open Geospatial Consortium ([OGC](http://www.opengeospatial.org/)) specification in 2016.
 
