@@ -3,7 +3,7 @@
 ####  ![new](theme/img/new.gif) [GeoSciML version 4.0 is released!](../reference_database/reference_database_2013-11-07.zip)
 *with updated cookbooks for creating web services*
 
-#### [GeoSciML News Archive](../news_archive.html)
+#### [GeoSciML News Archive](../news_archive.php)
 
 ---
 

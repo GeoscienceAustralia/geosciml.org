@@ -4,7 +4,7 @@
 
 ---
 
-* **April 2014** - [UK INSPIRE publishes a new guide for building GeoSciML v3 WFS using Geoserver](../news_20142904_geoserver_cookbook.html)
+* **April 2014** - UK INSPIRE publishes a new guide for building GeoSciML v3 WFS using Geoserver
 
 **Guide for building GeoSciML services using Geoserver**  
 As part of the European INSPIRE initiative, the UK INSPIRE team have published a guide to set up an INSPIRE-compliant GeoSciML Web Feature Service (WFS v2.0). The document specifically addresses requirements for INSPIRE services, but much of the guide can also be used by service providers outside of Europe to build GeoSciML services using [Geoserver](http://geoserver.org/).
