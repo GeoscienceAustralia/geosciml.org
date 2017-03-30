@@ -7,6 +7,13 @@ namespace Composer\Autoload;
 class ComposerStaticInit46be5376fef0d2ee35c8f0459e7cec18
 {
     public static $prefixesPsr0 = array (
+        'R' => 
+        array (
+            'Requests' => 
+            array (
+                0 => __DIR__ . '/..' . '/rmccue/requests/library',
+            ),
+        ),
         'P' => 
         array (
             'Parsedown' => 
