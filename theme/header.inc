@@ -3,18 +3,18 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>GeoSciML and GeoSciML-Portrayal</title>
-    <link rel="stylesheet" href="/geosciml.org/theme/css/cgi_theme.css" />
-    <link rel="stylesheet" href="/geosciml.org/theme/css/alternates.css" />
-    <link rel="shortcut icon" href="/geosciml.org/theme/favicon.ico">
+    <link rel="stylesheet" href="<?php print $WEB_FOLDER; ?>theme/css/cgi_theme.css" />
+    <link rel="stylesheet" href="<?php print $WEB_FOLDER; ?>theme/css/alternates.css" />
+    <link rel="shortcut icon" href="<?php print $WEB_FOLDER; ?>theme/favicon.ico">
 </head>
 <body>
 <div id="header">
     <table>
         <tr>
             <td>
-                <a href="http://www.cgi-iugs.org/"><img src="/geosciml.org/theme/img/logo-iugs.png" height="100px"/></a>
-                <a href="http://www.cgi-iugs.org/"><img src="/geosciml.org/theme/img/title.jpg" height="100px"/></a>
-                <a href="http://www.geosciml.net"><img src="/geosciml.org/theme/img/logo-geosciml.png" height="100px"/></a>
+                <a href="http://www.cgi-iugs.org/"><img src="<?php print $WEB_FOLDER; ?>theme/img/logo-iugs.png" height="100px"/></a>
+                <a href="http://www.cgi-iugs.org/"><img src="<?php print $WEB_FOLDER; ?>theme/img/title.jpg" height="100px"/></a>
+                <a href="http://www.geosciml.net"><img src="<?php print $WEB_FOLDER; ?>theme/img/logo-geosciml.png" height="100px"/></a>
             </td>
         </tr>
         <tr>
