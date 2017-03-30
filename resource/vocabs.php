@@ -69,18 +69,12 @@ function make_page_html() {
 include $PROJECT_HOME_DIR . 'theme/header.inc';
 ?>
 
-<div id="container-content">
-    <?php include $PROJECT_HOME_DIR . 'theme/right_menu.inc'; ?>
+    <div id="container-content">
 
-<!--    --><?php
-//    // read file contents from Markdown (.md) file
-//    $contents = file_get_contents($PROJECT_HOME_DIR . 'pages/vocabs.md');
-//    $Parsedown = new Parsedown();
-//    echo $Parsedown->text($contents);
-//    ?>
+        <?php include $PROJECT_HOME_DIR . 'theme/right_menu.inc'; ?>
 
-    <?php print make_page_html(); ?>
+        <?php print make_page_html(); ?>
 
-</div><!-- #content-container -->
+    </div><!-- #content-container -->
 
 <?php include $PROJECT_HOME_DIR . 'theme/footer.inc'; ?>
