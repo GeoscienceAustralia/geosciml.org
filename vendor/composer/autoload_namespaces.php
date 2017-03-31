@@ -8,4 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'Requests' => array($vendorDir . '/rmccue/requests/library'),
     'Parsedown' => array($vendorDir . '/erusev/parsedown'),
+    'ML\\JsonLD' => array($vendorDir . '/ml/json-ld'),
+    'ML\\IRI' => array($vendorDir . '/ml/iri'),
+    'EasyRdf_' => array($vendorDir . '/easyrdf/easyrdf/lib'),
 );

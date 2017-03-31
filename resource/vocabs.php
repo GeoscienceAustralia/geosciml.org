@@ -52,12 +52,18 @@ function make_vocabs_list_html($vocabs) {
     return $html;
 }
 
-function make_vocabs_list_rdf($vocabs) {
+function make_vocabs_list_rdf($vocabs, $register, $vocabs_graph) {
     foreach ($vocabs as $vocab) {
         if (isset($vocab->sissvoc_end_point)) {
-
+            $x = $vocabs_graph->resource($vocab->sissvoc_end_point, 'skos:ConceptScheme');
+            $x = $vocabs_graph->resource($vocab->sissvoc_end_point, 'dcat:Dataset');
+            $x = $vocabs_graph->resource($vocab->sissvoc_end_point, 'gapd:Vocabulary');
+            $x->add('rdfs:label', $vocab->title);
+            $x->add('reg:register', $register);
         }
     }
+
+    return $vocabs_graph;
 }
 
 function make_page_html() {
@@ -73,54 +79,52 @@ function make_page_html() {
     return $html . make_vocabs_list_html($vocabs);
 }
 
-// http://stackoverflow.com/questions/1049401/how-to-select-content-type-from-http-accept-header-in-php
-function getBestSupportedMimeType($mimeTypes = null) {
-    // Values will be stored in this array
-    $AcceptTypes = Array ();
+function make_page_rdf($rdf_format) {
+    $publisher = 'CGI Geoscience Terminology Working Group';
+    $vocabs = get_all_vocabs($publisher);
 
-    // Accept header is case insensitive, and whitespace isn’t important
-    $accept = strtolower(str_replace(' ', '', $_SERVER['HTTP_ACCEPT']));
-    // divide it into parts in the place of a ","
-    $accept = explode(',', $accept);
-    foreach ($accept as $a) {
-        // the default quality is 1.
-        $q = 1;
-        // check if there is a different quality
-        if (strpos($a, ';q=')) {
-            // divide "mime/type;q=X" into two parts: "mime/type" i "X"
-            list($a, $q) = explode(';q=', $a);
-        }
-        // mime-type $a is accepted with the quality $q
-        // WARNING: $q == 0 means, that mime-type isn’t supported!
-        $AcceptTypes[$a] = $q;
-    }
-    arsort($AcceptTypes);
+    // the empty graph
+    $graph = new EasyRdf_Graph();
 
-    // if no parameter was passed, just return parsed data
-    if (!$mimeTypes) return $AcceptTypes;
+    // special namespaces
+    EasyRdf_Namespace::set('dpr', 'http://promsns.org/def/dpr#');
+    EasyRdf_Namespace::set('gapd', 'http://pid.geoscience.gov.au/def/ont/gapd#');
+    EasyRdf_Namespace::set('reg', 'http://purl.org/linked-data/registry#');
 
-    $mimeTypes = array_map('strtolower', (array)$mimeTypes);
+    // the vocab register as a resource
+    $register = $graph->resource('http://resource.geosciml.org/def/voc/', 'reg:Register');
+    $register->add('rdfs:label', 'CGI\'s Vocabulary Register');
+    $register->add('reg:containedItemClass', 'skos:ConceptScheme');
 
-    // let’s check our supported types:
-    foreach ($AcceptTypes as $mime => $q) {
-        if ($q && in_array($mime, $mimeTypes)) return $mime;
-    }
-    // no mime-type found
-    return null;
+    // CGI as a resource
+    $cgi = $graph->resource('<http://pid.geoscience.org.au/org/cgi>', 'org:Organisation');
+    $cgi->add('rdfs:label', 'Commission for Geoscience Information');
+    $cgi->add('rdfs:comment', 'The Commission for the Management and Application of Geoscience Information (CGI) is a working subcommittee of the International Union of Geological Sciences.');
+    $cgi->add('dpr:isLDF', "false");
+    $cgi->add('reg:subregister', $register);
+
+    // all the vocabs as resources
+    $vocabs_graph = make_vocabs_list_rdf($vocabs, $register, $graph);
+
+    return $vocabs_graph->serialise($rdf_format);
 }
 
-
+/*
+ * Make the response: RDF or HTML
+ */
 $mimetypes = array(
     'text/turtle',
     'text/n3',
     'application/n-triples',
     'application/rdf+xml',
-    'application/json+xml',
+    'application/rdf+json',
     'text/html',
     'application/xhtml+xml'
 );
+
 // find the strpos of each mimetype in Accept header
 $mimestring = $_SERVER['HTTP_ACCEPT'];
+
 foreach ($mimetypes as $m) {
     if (strpos($mimestring, $m) === 0) {
         $mimetype = $m;
@@ -131,17 +135,33 @@ if (empty($mimetype)) {
     $mimetype = 'text/html';
 }
 
+// cater for QSA _format directive
+if (isset($_GET['_format'])) {
+    if (in_array($_GET['_format'], $mimetypes)) {
+        $mimetype = $_GET['_format'];
+    }
+}
+
+// set the MIME type
+header('Content-Type: ' . $mimetype);
 
 // decide whether it's RDF or HTML
 switch ($mimetype) {
+    // RDF
     case 'text/turtle':
+        print make_page_rdf('turtle');
+        break;
     case 'text/n3':
     case 'application/n-triples':
-    case 'application/rdf+xml':
-    case 'application/json+xml':
-        header('Content-Type: text/plain');
-        print 'RDF coming';
+        print make_page_rdf('turtle');
         break;
+    case 'application/rdf+xml':
+        print make_page_rdf('rdfxml');
+        break;
+    case 'application/rdf+json':
+        print make_page_rdf('jsonld');
+        break;
+    // HTML
     case 'text/html':
     case 'application/xhtml+xml':
         include $PROJECT_HOME_DIR . 'theme/header.inc';

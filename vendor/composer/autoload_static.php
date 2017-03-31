@@ -21,6 +21,24 @@ class ComposerStaticInit46be5376fef0d2ee35c8f0459e7cec18
                 0 => __DIR__ . '/..' . '/erusev/parsedown',
             ),
         ),
+        'M' => 
+        array (
+            'ML\\JsonLD' => 
+            array (
+                0 => __DIR__ . '/..' . '/ml/json-ld',
+            ),
+            'ML\\IRI' => 
+            array (
+                0 => __DIR__ . '/..' . '/ml/iri',
+            ),
+        ),
+        'E' => 
+        array (
+            'EasyRdf_' => 
+            array (
+                0 => __DIR__ . '/..' . '/easyrdf/easyrdf/lib',
+            ),
+        ),
     );
 
     public static function getInitializer(ClassLoader $loader)
