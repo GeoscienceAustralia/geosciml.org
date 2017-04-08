@@ -44,7 +44,7 @@ GeoSciML-Portrayal delivers a flat (denormalised) view of just a small core of t
     * [version 0.9](/schemas/geosciml/0.9.0/)
 2. GeoSciML-Portrayal
     * [version 2.0](/schemas/geosciml-portrayal/2.0.1/) (2013)
-    * version 1.0 (2011)
+    * [version 1.0](/schemas/geosciml-portrayal/1.0/) (2011)
 3. Geologic Time
     * [version 2.0](/schemas/geotime/2.0/) (2009)
 4. Utilities
