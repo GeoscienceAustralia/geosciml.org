@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>GeoSciML and GeoSciML-Portrayal</title>
+    <title>GeoSciML</title>
     <link rel="stylesheet" href="<?php print $WEB_FOLDER; ?>theme/css/cgi_theme.css" />
     <link rel="stylesheet" href="<?php print $WEB_FOLDER; ?>theme/css/alternates.css" />
     <link rel="shortcut icon" href="<?php print $WEB_FOLDER; ?>theme/favicon.ico">
