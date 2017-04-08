@@ -33,19 +33,19 @@ GeoSciML-Portrayal delivers a flat (denormalised) view of just a small core of t
 
 ### Previous versions of  GeoSciML and GeoSciML-Portrayal
 1. GeoSciML
-    * [version 3.2](geosciml/3.2/documentation/) (2013)
-    * [version 3.1](geosciml/3.1/documentation/)
-    * [version 3.0](geosciml/3.0/documentation/) (2012)
-    * [version 2.1](geosciml/2.1/)
-    * [version 2.0](geosciml/2.0/) (2009)
-    * [version 1.1.1](geosciml/1.1.1)
-    * [version 1.1](geosciml/1.1.0/)
-    * [version 1.0](geosciml/0.9.0/) (2005)
-    * [version 0.9](geosciml/0.9.0/)
+    * [version 3.2](/schemas/geosciml/3.2/documentation/) (2013)
+    * [version 3.1](/schemas/geosciml/3.1/documentation/)
+    * [version 3.0](/schemas/geosciml/3.0/documentation/) (2012)
+    * [version 2.1](/schemas/geosciml/2.1/)
+    * [version 2.0](/schemas/geosciml/2.0/) (2009)
+    * [version 1.1.1](/schemas/geosciml/1.1.1)
+    * [version 1.1](/schemas/geosciml/1.1.0/)
+    * [version 1.0](/schemas/geosciml/0.9.0/) (2005)
+    * [version 0.9](/schemas/geosciml/0.9.0/)
 2. GeoSciML-Portrayal
-    * [version 2.0](geosciml-portrayal/2.0.1/) (2013)
+    * [version 2.0](/schemas/geosciml-portrayal/2.0.1/) (2013)
     * version 1.0 (2011)
 3. Geologic Time
-    * [version 2.0](geotime/2.0/) (2009)
+    * [version 2.0](/schemas/geotime/2.0/) (2009)
 4. Utilities
-    * [version 1.0](cgiutilities/1.0/) (2008)
+    * [version 1.0](/schemas/cgiutilities/1.0/) (2008)
