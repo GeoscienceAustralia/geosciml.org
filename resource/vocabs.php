@@ -72,6 +72,8 @@ function make_page_html() {
 
     $html = '<h1>CGI Vocabularies Register</h1>' .
         '<p>This is the static register (index) of CGI\'s vocabularies. Its purpose is to present the static URIs to each of the vocabs. This is particularly useful for machines that wish to automatically index our vocabularies, rather than humans who can search for them manually.</p>' .
+        '<p>This page you are now viewing is a typical HTML web page. You can also find this list of vocabularies in the Semantic Web Machine-redable RDF format:</p>'.
+        '<ul><li><a href="?_format=text/turtle">RDF version, turtle format</a></li></ul>'.
         '<p>These vocabularies are all published for general discovery in the <a href="http://www.ands.org.au/">Australian National Data Service (ANDS)</a>\'s <a href="http://vocabs.ands.org.au/">Research Vocabularies Australia (RVA) Portal</a>:</p>' .
         '<ul><li><a href="https://vocabs.ands.org.au/search/#!/?p=1&publisher=CGI%20Geoscience%20Terminology%20Working%20Group">CGI\'s vocabs in the RVA portal</a></li></ul>' .
         '<h2>Vocabularies</h2>';
