@@ -1,4 +1,4 @@
 <?php
 
-$PROJECT_HOME_DIR = 'c:/work/geosciml.org/';
+$PROJECT_HOME_DIR = '/var/www/html/geosciml.org/';
 $WEB_FOLDER = 'http://geosciml.com/';

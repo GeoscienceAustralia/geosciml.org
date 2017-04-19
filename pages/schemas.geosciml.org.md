@@ -5,13 +5,13 @@
 ---
 
 ### Current version of GeoSciML (includes GeoSciML-Portrayal)
-* [v 4.0](http://schemas.geosciml.net/geosciml/4.0) (2015)
+* [v 4.0](/geosciml/4.0) (2015)
 
 ---
 
 ### Previous versions
-* [GeoSciML](http://schemas.geosciml.net/geosciml)
-* [GeoSciML-Portrayal](http://schemas.geosciml.net/geosciml-portrayal/)
-* [zip file of all current and previous GeoSciML and GeoSciML-Portrayal schemas](http://schemas.geosciml.net/zip_files/)
+* [GeoSciML](/geosciml/)
+* [GeoSciML-Portrayal](/geosciml-portrayal/)
+* [zip file of all current and previous GeoSciML and GeoSciML-Portrayal schemas](/zip_files/)
 
 ---
