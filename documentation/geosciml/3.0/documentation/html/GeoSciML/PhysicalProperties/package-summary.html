@@ -1,0 +1,164 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <title>GML Application Schema Package Summary - GeoSciML/PhysicalProperties</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <link href="../../default.css" rel="stylesheet" type="text/css"/>
+
+    <body class="section-2">
+        <div id="header">
+            <div align="left">
+                <img src="../../gas-banner.jpg" alt="GML Application Schema API Specification" width="1000" height="59"/>
+            </div>
+            <ul id="menu">
+                <li id="nav-1">
+                    <a href="../../overview-summary.html">Overview</a>
+                </li>
+                <li id="nav-2">
+                    <a href="package-summary.html">Package</a>
+                </li>
+                <li id="nav-3">Class</li>
+                <li id="nav-4">
+                    <a href="../../help-doc.html">Help</a>
+                </li>
+            </ul>
+        </div>
+        <div id="main">
+            <h1 class="first">Package <tt>GeoSciML/PhysicalProperties</tt>
+            </h1>
+            <p>The PhysicalProperties Application Schema permits description of bulk physical properties of earth materials, geologic units and geologic structures.  The model borrows from the SWECommon model to describe scalar (quantity) values of physical property measurements such as density, porosity, permeability, magnetic susceptibility, and other geophysical properties.<br/>
+                <br/>Individual physical property measurements made on sampling features such as specimens, outcrops, and boreholes should be delivered using the ISO19156 Observations and Measurements model.</p>
+            <table width="95%" class="details">
+                <tr>
+                    <td colspan="2">
+                        <h2>Class Summary</h2>
+                    </td>
+                </tr>
+                <tr class="stheader">
+                    <td colspan="2" class="stheader">
+                        <tt>&lt;&lt;</tt>DataType<tt>&gt;&gt;</tt> Classes
+							</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="PhysicalDescription.html" title="Class in GeoSciML.PhysicalProperties.PhysicalDescription">PhysicalDescription</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>A class to describe the numeric physical properties of a geologic unit, earth material, or geologic structure. (eg; density, porosity, magnetic susceptibility, remanent magnetism).  These properties are modelled here as scalar numeric values (swe:Quantity).  <br/>
+                        <br/>Vector and tensor physical properties are considered to be more applicable to located observations and should be delivered as SamplingFeature/Observations with associated geologic unit or geologic structure features.</td>
+                </tr>
+                <tr class="stheader">
+                    <td colspan="2" class="stheader">
+                        <tt>&lt;&lt;</tt>CodeList<tt>&gt;&gt;</tt> Classes
+							</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="PhysicalPropertyTerm.html" title="Class in GeoSciML.PhysicalProperties.PhysicalPropertyTerm">PhysicalPropertyTerm</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;CodeList&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Refers to a vocabulary of physical property types (eg, density, porosity, magnetic susceptibility, magnetic remanence, conductivity, etc)</td>
+                </tr>
+            </table>
+    		&#160;
+    		<table width="95%" class="details">
+                <tr>
+                    <td colspan="3">
+                        <h2>Tagged Values</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="stheader">Tag</td>
+                    <td class="stheader">Value</td>
+                    <td class="stheader">Notes</td>
+                </tr>
+                <tr>
+                    <td>classMap</td>
+                    <td>https://www.seegrid.csiro.au/subversion/GeoSciML/physicalProperties/trunk/classmap/ClassMap_PhysicalProperties_GeoSciML_v3.xml</td>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>gmlProfileSchema</td>
+                    <td>#NOTES#Description: URL of the schema location of a GML profile (optional)
+</td>
+                    <td>Description: URL of the schema location of a GML profile (optional)<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>owner</td>
+                    <td>IUGS Commission for the Management and Application of Geoscience Information</td>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>schemaLocation</td>
+                    <td>https://schemas.geosciml.org/physicalproperties/3.0/physicalProperties.xsd</td>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>targetNamespace</td>
+                    <td>http://xmlns.geosciml.org/PhysicalProperties/3.0</td>
+                    <td>Default: FIXME<br/>Description: Target XML namespace of the application schema<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>version</td>
+                    <td>3.0.0</td>
+                    <td>Default: FIXME<br/>Description: Current version of the application schema<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>xmlns</td>
+                    <td>gsmlpp</td>
+                    <td>Default: FIXME<br/>Description: Namespace prefix to be used as short form of the target namespace<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>xsdDocument</td>
+                    <td>physicalProperties.xsd</td>
+                    <td>Default: FIXME<br/>Description: Name of an XML Schema document to create representing the content of this package<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>xsdEncodingRule</td>
+                    <td>iso19136_2007_INSPIRE_Extensions</td>
+                    <td>Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br/>Default: iso19136_2007<br/>Description: XML Schema encoding rule to apply<br/>
+                    </td>
+                </tr>
+            </table>
+    		&#160;
+    		<p>
+                <h4>UML Diagram: Summary diagram: PhysicalProperties</h4>
+                <img src="../../Images/EAID_36A58AEB_9B04_4eb4_8BFF_B05749588F13.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: PhysicalProperties package dependencies</h4>
+                <img src="../../Images/EAID_4C47C87A_ED4C_4e60_8D4E_5D3761698CA5.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : PhysicalDescription</h4>
+                <img src="../../Images/EAID_FAB42919_3530_4348_B0ED_DB7061E9AD29.gif" alt="UML Diagram"/>
+            </p>
+        </div>
+        <div class="clearing">&#160;</div>
+        <div id="footer" __skip="skip">
+            <hr class="first"/>
+            <p class="panel">
+			For more information about GML Application Schema development refer to:<br/>
+                <a href="https://www.seegrid.csiro.au/wiki/bin/view/AppSchemas/UmlGml">UML models of GML Application Schemas</a>
+            </p>
+            <p class="panel">
+			For more general information about GML refer to:<br/>
+                <a href="http://www.opengis.net/gml/">GML - the Geography Markup Language</a>
+            </p>
+            <p class="panel">
+			The document set was auto-generated at 2011-09-30T10:00+<br/>
+			using FullMoon - A processing framework for transforming XML models
+		</p>
+        </div>
+    </body>
+</html>

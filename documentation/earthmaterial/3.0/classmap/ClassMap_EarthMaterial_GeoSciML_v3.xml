@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:gsmlem="http://xmlns.geosciml.org/EarthMaterial/3.0"
+	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0"
+	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0 http://projects.arcs.org.au/svn/fullmoon/trunk/resources/dependency-util/package-class-map.xsd"
+	id="ClassMap_EarthMaterial_GeoSciML_v3.xml">
+	<description>Provides a mapping of classes from the earthMaterial module of GeoSciML to elements from GeoSciML XML Schema Version 3.0.0</description>
+	<imports>
+		<schema prefix="gsmlem" namespace="http://xmlns.geosciml.org/EarthMaterial/3.0" schemaLocation="http://schemas.geosciml.org/earthmaterial/3.0/earthmaterial.xsd" />  <!-- Note prefix is "gsmlem", not "gsml"  -->
+	</imports>
+
+<!-- ================================================================ -->
+<!-- EarthMaterial leaf -->
+	
+	<!-- Association class -->
+	<entry>
+		<umlClass>MaterialRelation</umlClass>
+		<gmlObjectElement>gsmlem:MaterialRelation</gmlObjectElement>
+		<gmlType>gsmlem:MaterialRelationType</gmlType>
+		<gmlPropertyType>gsmlem:MaterialRelationPropertyType</gmlPropertyType>
+	</entry>
+	
+	<!-- DataTypes -->
+	<entry>
+		<umlClass>AlterationDescription</umlClass>
+		<umlStereotype>DataType</umlStereotype>
+		<gmlObjectElement>gsmlem:AlterationDescription</gmlObjectElement>
+		<gmlType>gsmlem:AlterationDescriptionType</gmlType>
+		<gmlPropertyType>gsmlem:AlterationDescriptionPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>ChemicalComposition</umlClass>
+		<umlStereotype>DataType</umlStereotype>
+		<gmlObjectElement>gsmlem:ChemicalComposition</gmlObjectElement>
+		<gmlType>gsmlem:ChemicalCompositionType</gmlType>
+		<gmlPropertyType>gsmlem:ChemicalCompositionPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>FabricDescription</umlClass>
+		<umlStereotype>DataType</umlStereotype>
+		<gmlObjectElement>gsmlem:FabricDescription</gmlObjectElement>
+		<gmlType>gsmlem:FabricDescriptionType</gmlType>
+		<gmlPropertyType>gsmlem:FabricDescriptionPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>MetamorphicDescription</umlClass>
+		<umlStereotype>DataType</umlStereotype>
+		<gmlObjectElement>gsmlem:MetamorphicDescription</gmlObjectElement>
+		<gmlType>gsmlem:MetamorphicDescriptionType</gmlType>
+		<gmlPropertyType>gsmlem:MetamorphicDescriptionPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>ParticleGeometryDescription</umlClass>
+		<umlStereotype>DataType</umlStereotype>
+		<gmlObjectElement>gsmlem:ParticleGeometryDescription</gmlObjectElement>
+		<gmlType>gsmlem:ParticleGeometryDescriptionType</gmlType>
+		<gmlPropertyType>gsmlem:ParticleGeometryDescriptionPropertyType</gmlPropertyType>
+	</entry>
+	
+	<!-- Type classes -->
+	<entry>
+		<umlClass>CompoundMaterial</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>gsmlem:CompoundMaterial</gmlObjectElement>
+		<gmlType>gsmlem:CompoundMaterialType</gmlType>
+		<gmlPropertyType>gsmlem:CompoundMaterialPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>ConstituentPart</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>gsmlem:ConstituentPart</gmlObjectElement>
+		<gmlType>gsmlem:ConstituentPartType</gmlType>
+		<gmlPropertyType>gsmlem:ConstituentPartPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>EarthMaterial</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>gsmlem:EarthMaterial</gmlObjectElement>
+		<gmlType>gsmlem:EarthMaterialType</gmlType>
+		<gmlPropertyType>gsmlem:EarthMaterialPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>InorganicFluid</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>gsmlem:InorganicFluid</gmlObjectElement>
+		<gmlType>gsmlem:InorganicFluidType</gmlType>
+		<gmlPropertyType>gsmlem:InorganicFluidPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Mineral</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>gsmlem:Mineral</gmlObjectElement>
+		<gmlType>gsmlem:MineralType</gmlType>
+		<gmlPropertyType>gsmlem:MineralPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>OrganicMaterial</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>gsmlem:OrganicMaterial</gmlObjectElement>
+		<gmlType>gsmlem:OrganicMaterialType</gmlType>
+		<gmlPropertyType>gsmlem:OrganicMaterialPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>RockMaterial</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>gsmlem:RockMaterial</gmlObjectElement>
+		<gmlType>gsmlem:RockMaterialType</gmlType>
+		<gmlPropertyType>gsmlem:RockMaterialPropertyType</gmlPropertyType>
+	</entry>
+
+
+</mapping>

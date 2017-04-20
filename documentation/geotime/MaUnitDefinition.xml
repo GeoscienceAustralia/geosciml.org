@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gml:ConventionalUnit gml:id="Ma" 
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:gml="http://www.opengis.net/gml/3.2" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.opengis.net/gml/3.2 http://schemas.opengis.net/gml/3.2.1/gml.xsd">
+    
+<!-- ========================================================================   -->
+<!--                                                                                                                                                                      -->
+<!--     Definition document for the "Ma" unit of measure for geologic time.                                                        -->
+<!--     CGI Interoperability Working Group, October 2012                                                                                  -->
+<!--                                                                                                                                                                      -->
+<!-- ========================================================================   -->
+    
+    <gml:description>A period of time equal to one million times the period taken for the Earth to complete a single revolution around the sun.  At the reference point of the year 2000, one year was 3.1556925445 x 10e7 seconds.</gml:description>
+    <gml:descriptionReference xlink:href="http://www.iupac.org/publications/pac/pdf/2011/pdf/8305x1159.pdf"/>
+    <gml:identifier codeSpace="http://resource.geosciml.org/classifierscheme/cgi/geologicage/2011">http://resource.geosciml.org/classifier/cgi/geologicage/ma</gml:identifier>
+    <gml:name>million years</gml:name>
+    <gml:quantityType>geologic time</gml:quantityType>
+    <gml:catalogSymbol codeSpace="http://www.iupac.org/publications/pac/pdf/2011/pdf/8305x1159.pdf">Ma</gml:catalogSymbol>
+    <gml:conversionToPreferredUnit uom="second">
+        <gml:factor>3.1556925445e13</gml:factor>
+    </gml:conversionToPreferredUnit>
+</gml:ConventionalUnit>

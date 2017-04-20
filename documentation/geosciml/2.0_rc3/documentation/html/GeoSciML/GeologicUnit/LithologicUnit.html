@@ -1,0 +1,970 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <title>GML Application Schema Class Details - LithologicUnit</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <link href="../../default.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-35254121-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script>
+
+    <body class="section-3">
+        <div id="header">
+            <div align="left">
+                <img src="../../gas-banner.jpg" alt="GML Application Schema API Specification" width="1000" height="59"/>
+            </div>
+            <ul id="menu">
+                <li id="nav-1">
+                    <a href="../../overview-summary.html">Overview</a>
+                </li>
+                <li id="nav-2">
+                    <a href="package-summary.html">Package</a>
+                </li>
+                <li id="nav-3">
+                    <a href="LithologicUnit.html">Class</a>
+                </li>
+                <li id="nav-4">
+                    <a href="../../help-doc.html">Help</a>
+                </li>
+            </ul>
+        </div>
+        <div id="main">
+            <h1 class="first">
+				Class <tt>&lt;&lt;FeatureType&gt;&gt;  LithologicUnit  (extends <a href="GeologicUnit.html">GeologicUnit</a>)</tt>
+            </h1>
+            <p>Element representing a GeologicUnit defined by lithology independent of subdividing external and internal boundaries. May be stratified or non-stratified. This concept corresponds to LithostratigraphicUnit in the sense of the International Stratigraphic Code. Usage here follows distinction of stratified and non-stratified units from North American Code of Stratigraphic Nomenclature to represent possible presence of stratification-related properties in stratified units, but the explicit absence of those properties in an non-stratified (Lithodemic) unit. <br/>
+                <br/>May represent a particular body of rock (a NADM geologic unit), or may represent a 'kind' of rock body characterized by some internal sequence of rock types and the presence of various geologic (typically sedimentary) structures.<br/>
+                <br/>This element will be made Abstract when a complete (enough) set of specialized data structures for subtypes is defined.<br/>
+            </p><!-- Create a list of known local subclasses, if there are any -->
+            <b>Local Subclasses:</b>
+            <a href="LithodemicUnit.html">LithodemicUnit</a><!-- Create a table to list class attributes, if there are any -->
+            <h2>Attributes</h2>
+            <table width="95%" class="details"><!-- Column 1: Name -->
+                <th>Name</th><!-- Column 2: Type -->
+                <th>Type</th><!-- Column 3: Bounds -->
+                <th>Bounds</th><!-- Column 4: From Class -->
+                <th>From Class</th><!-- Column 5: Notes-->
+                <th>Notes</th>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>observationMethod</b>
+                    </td><!-- Column 2: Type -->
+                    <td>
+                        <a href="../CGI_Value/CGI_TermValue.html">CGI_TermValue</a>
+                    </td><!-- Column 3: Bounds -->
+                    <td>1..*</td><!-- Column 4: From Class -->
+                    <td>
+                        <a href="../GeologicFeature/GeologicFeature.html">GeologicFeature</a>
+                    </td><!-- Column 5: Notes -->
+                    <td>Term(s) that specify the method by which the values for the GeologicFeature were obtained (e.g. point count, brunton compass on site, air photo interpretation,  field observation, hand specimen,  laboratory, aerial photography, creative imagination...). This corresponds (loosely) to ISO19115 Lineage.<br/>
+                        <br/>Statement specifies the method that was used to identify the MappedFeature. Examples: . </td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>2</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>purpose</b>
+                    </td><!-- Column 2: Type -->
+                    <td>
+                        <a href="../GeologicFeature/DescriptionPurpose.html">DescriptionPurpose</a>
+                    </td><!-- Column 3: Bounds -->
+                    <td>1..1</td><!-- Column 4: From Class -->
+                    <td>
+                        <a href="../GeologicFeature/GeologicFeature.html">GeologicFeature</a>
+                    </td><!-- Column 5: Notes -->
+                    <td>Specification of the intended purpose/level of abstraction for a given feature or object instance. Scoped name because intention is asserted by author of the data instance. Values: Instance, TypicalNorm, IdentifyingNorm. </td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>3</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>geologicUnitType</b>
+                    </td><!-- Column 2: Type -->
+                    <td>
+                        <a href="../Vocabulary/ControlledConcept.html">ControlledConcept</a>
+                    </td><!-- Column 3: Bounds -->
+                    <td>1..1</td><!-- Column 4: From Class -->
+                    <td>
+                        <a href="GeologicUnit.html">GeologicUnit</a>
+                    </td><!-- Column 5: Notes -->
+                    <td>controlled concept defining the type of unit. Logical constraints of definition of unit and valid property cardinalities should be contained in the definition</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>2</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>bodyMorphology</b>
+                    </td><!-- Column 2: Type -->
+                    <td>
+                        <a href="../CGI_Value/CGI_TermValue.html">CGI_TermValue</a>
+                    </td><!-- Column 3: Bounds -->
+                    <td>0..*</td><!-- Column 4: From Class -->
+                    <td>
+                        <a href="GeologicUnit.html">GeologicUnit</a>
+                    </td><!-- Column 5: Notes -->
+                    <td>The geometry or form of a GeologicUnit.  Examples include: dike (dyke), cone, fan, sheet, etc. Morphology is independent of the substance (EarthMaterial) that composes the GeologicUnit.</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>3</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>compositionCategory</b>
+                    </td><!-- Column 2: Type -->
+                    <td>
+                        <a href="../CGI_Value/CGI_TermValue.html">CGI_TermValue</a>
+                    </td><!-- Column 3: Bounds -->
+                    <td>0..1</td><!-- Column 4: From Class -->
+                    <td>
+                        <a href="GeologicUnit.html">GeologicUnit</a>
+                    </td><!-- Column 5: Notes -->
+                    <td>Term to specify the gross chemical character of geologic unit. <br/>Examples: silicate, carbonate, ferromagnesian, oxide.  <br/>Chemical classification terms for igneous rocks also go here.<br/>Examples: alkalic, subaluminous, peraluminous, mafic, felsic, intermediate.</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>exposureColor</b>
+                    </td><!-- Column 2: Type -->
+                    <td>
+                        <a href="../CGI_Value/CGI_TermValue.html">CGI_TermValue</a>
+                    </td><!-- Column 3: Bounds -->
+                    <td>0..*</td><!-- Column 4: From Class -->
+                    <td>
+                        <a href="GeologicUnit.html">GeologicUnit</a>
+                    </td><!-- Column 5: Notes -->
+                    <td>Typical color at the outcrop of a geologic unit. </td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>5</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>outcropCharacter</b>
+                    </td><!-- Column 2: Type -->
+                    <td>
+                        <a href="../CGI_Value/CGI_TermValue.html">CGI_TermValue</a>
+                    </td><!-- Column 3: Bounds -->
+                    <td>0..*</td><!-- Column 4: From Class -->
+                    <td>
+                        <a href="GeologicUnit.html">GeologicUnit</a>
+                    </td><!-- Column 5: Notes -->
+                    <td>Describes the nature of outcrops formed by a geologic unit.   Examples: bouldery, cliff-forming, ledge-forming, slope-forming, poorly exposed</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>6</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>rank</b>
+                    </td><!-- Column 2: Type -->
+                    <td>ScopedName</td><!-- Column 3: Bounds -->
+                    <td>0..1</td><!-- Column 4: From Class -->
+                    <td>
+                        <a href="GeologicUnit.html">GeologicUnit</a>
+                    </td><!-- Column 5: Notes -->
+                    <td>Term that classifies the geologic unit in a generalization hierarchy from most local/smallest volume to most regional. Scoped name because classification is asserted, not based on observational data.<br/>Examples: group, subgroup, formation, member, bed, intrusion, complex, batholith</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>nillable</td>
+                                            <td>true</td>
+                                        </tr>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>7</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>unitThickness</b>
+                    </td><!-- Column 2: Type -->
+                    <td>
+                        <a href="../CGI_Value/CGI_Numeric.html">CGI_Numeric</a>
+                    </td><!-- Column 3: Bounds -->
+                    <td>0..*</td><!-- Column 4: From Class -->
+                    <td>
+                        <a href="GeologicUnit.html">GeologicUnit</a>
+                    </td><!-- Column 5: Notes -->
+                    <td>Typical thickness of the geologic unit.</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>8</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+            </table>
+			&#160;
+			<!-- Create a table to list class associations, if there are any -->
+            <h2>Outbound Associations</h2>
+            <table width="95%" class="details">
+                <th>Name</th>
+                <th>Type</th>
+                <th>Multiplicity</th>
+                <th>From Class</th>
+                <th>Notes</th>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>occurrence</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="../GeologicFeature/MappedFeature.html">MappedFeature</a>
+                    </td><!-- Multiplicity -->
+                    <td>0..*</td><!-- From Class -->
+                    <td>
+                        <a href="../GeologicFeature/GeologicFeature.html">GeologicFeature</a>
+                    </td><!-- Notes -->
+                    <td>Points to any number of mapped features which are occurrences of the geologic feature.  Mapped features may all be from a single map or from several maps.</td>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>preferredAge</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="../GeologicAge/GeologicEvent.html">GeologicEvent</a>
+                    </td><!-- Multiplicity -->
+                    <td>0..1</td><!-- From Class -->
+                    <td>
+                        <a href="../GeologicFeature/GeologicFeature.html">GeologicFeature</a>
+                    </td><!-- Notes -->
+                    <td>Specifies the geologic event that the data supplier considers the 'preferred' event age and event process for that feature.<br/>This is the age and process of the feature that would be commonly shown on a geologic map (eg deposition age, peak temperature age, intrusion age).<br/>Normative geologic unit descriptions are expected to include an age specification whenever the age is constrained--even if the range is very large (e.g. Phanerozoic....).</td>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>5</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>geologicHistory</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="../GeologicAge/GeologicEvent.html">GeologicEvent</a>
+                    </td><!-- Multiplicity -->
+                    <td>0..*</td><!-- From Class -->
+                    <td>
+                        <a href="../GeologicFeature/GeologicFeature.html">GeologicFeature</a>
+                    </td><!-- Notes -->
+                    <td>A sequence of GeologicEvents with role geologicHistory allow describing the Genesis of the GeologicFeature. In future versions of GeoSciML this sequence should be ordered.</td>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>6</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>targetLink</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="../GeologicFeature/GeologicFeatureRelation.html">GeologicFeatureRelation</a>
+                    </td><!-- Multiplicity -->
+                    <td>0..*</td><!-- From Class -->
+                    <td>
+                        <a href="../GeologicFeature/GeologicFeature.html">GeologicFeature</a>
+                    </td><!-- Notes -->
+                    <td>Specifies the GeologicFeatureRelation that links the 'source' GeologicFeature  to the 'target' GeologicFeature.</td>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>8</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>metadata</b>
+                    </td><!-- Type -->
+                    <td>MD_Metadata</td><!-- Multiplicity -->
+                    <td>0..1</td><!-- From Class -->
+                    <td>
+                        <a href="../GeologicFeature/GeologicFeature.html">GeologicFeature</a>
+                    </td><!-- Notes -->
+                    <td>feature level metadata associated with the GeologicFeature</td>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>inlineOrByReference</td>
+                                            <td>byReference</td>
+                                        </tr>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>10</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>classifier</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="../Vocabulary/ControlledConcept.html">ControlledConcept</a>
+                    </td><!-- Multiplicity -->
+                    <td>0..1</td><!-- From Class -->
+                    <td>
+                        <a href="GeologicUnit.html">GeologicUnit</a>
+                    </td><!-- Notes -->
+                    <td>The classifier indicates the kind of thing a GeologicUnit instance is meant to represent.<br/>For example the GeologicUnit could be 'classified' by a ControlledConcept that is a name, such as 'Good Hope Formation',  from a Stratigraphic Lexicon.</td>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>inlineOrByReference</td>
+                                            <td>byReference</td>
+                                        </tr>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>9</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>composition</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="CompositionPart.html">CompositionPart</a>
+                    </td><!-- Multiplicity -->
+                    <td>0..*</td><!-- From Class -->
+                    <td>
+                        <a href="GeologicUnit.html">GeologicUnit</a>
+                    </td><!-- Notes -->
+                    <td>Describes the composition (detailed, instance specific, lithologic description) of the GeologicUnit</td>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>10</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>metamorphicCharacter</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="MetamorphicDescription.html">MetamorphicDescription</a>
+                    </td><!-- Multiplicity -->
+                    <td>0..1</td><!-- From Class -->
+                    <td>
+                        <a href="GeologicUnit.html">GeologicUnit</a>
+                    </td><!-- Notes -->
+                    <td>Contains the description of the metamorphic character</td>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>11</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>part</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="GeologicUnitPart.html">GeologicUnitPart</a>
+                    </td><!-- Multiplicity -->
+                    <td>0..*</td><!-- From Class -->
+                    <td>
+                        <a href="GeologicUnit.html">GeologicUnit</a>
+                    </td><!-- Notes -->
+                    <td>indicates a subsiduary unit with its role and proportion with respect to the container unit</td>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>inlineOrByReference</td>
+                                            <td>inline</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>physicalProperty</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="PhysicalDescription.html">PhysicalDescription</a>
+                    </td><!-- Multiplicity -->
+                    <td>0..*</td><!-- From Class -->
+                    <td>
+                        <a href="GeologicUnit.html">GeologicUnit</a>
+                    </td><!-- Notes -->
+                    <td>Describes the physical description values</td>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>13</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>weatheringCharacter</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="WeatheringDescription.html">WeatheringDescription</a>
+                    </td><!-- Multiplicity -->
+                    <td>0..1</td><!-- From Class -->
+                    <td>
+                        <a href="GeologicUnit.html">GeologicUnit</a>
+                    </td><!-- Notes -->
+                    <td>Describes the weathering character of the GeologicUnit<br/>
+                    </td>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>14</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>bedding</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="BeddingDescription.html">BeddingDescription</a>
+                    </td><!-- Multiplicity -->
+                    <td>0..1</td><!-- From Class -->
+                    <td>
+                        <a href="GeologicUnit.html">GeologicUnit</a>
+                    </td><!-- Notes -->
+                    <td/>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>15</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>definingStructure</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="../GeologicStructure/GeologicStructure.html">GeologicStructure</a>
+                    </td><!-- Multiplicity -->
+                    <td>0..1</td><!-- From Class -->
+                    <td>
+                        <a href="GeologicUnit.html">GeologicUnit</a>
+                    </td><!-- Notes -->
+                    <td>Specifies the GeologicStructure associated with the DeformationUnit<br/>cardinality is 1 because defining structure could be compound.</td>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>16</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+            </table>
+			&#160;
+			<!-- Create a table to list class constraints, if there are any -->
+            <h2>Constraints</h2>
+            <table width="95%" class="details">
+                <th>Constraint</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Weight</th>
+                <tr><!-- Column 1: Constraint -->
+                    <td>count(rank)=1</td><!-- Column 2: Type -->
+                    <td>Invariant</td><!-- Column 3: Status -->
+                    <td>Approved</td><!-- Column 4: Weight -->
+                    <td>0.00</td>
+                </tr>
+            </table>
+			&#160;
+			<!-- Create a table to list class tagged values, if there are any -->
+            <h2>Tagged values</h2>
+            <table width="95%" class="details">
+                <th>Tag</th>
+                <th>Value</th>
+                <th>Notes</th>
+                <tr>
+                    <td>byValuePropertyType</td>
+                    <td>false</td>
+                    <td>Values: true,false<br/>Default: false<br/>Description: enforce the 'by value' property pattern without xl<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>byValuePropertyType</td>
+                    <td>false</td>
+                    <td>Values: true,false<br/>Default: false<br/>Description: enforce the 'by value' property pattern without xl<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>hasXmlLang</td>
+                    <td>false</td>
+                    <td>Values: true | false<br/>Default: false<br/>Description: axml attribute xml:lang shall be generated for the type representing the class<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>isCollection</td>
+                    <td>false</td>
+                    <td>Values: true,false<br/>Default: false<br/>Description: attribute group gml:AggregationAttributeGroup is a<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>isCollection</td>
+                    <td>false</td>
+                    <td>Values: true,false<br/>Default: false<br/>Description: attribute group gml:AggregationAttributeGroup is a<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>noPropertyType</td>
+                    <td>false</td>
+                    <td>Values: true,false<br/>Default: false<br/>Description: suppress automatic creation of *PropertyType compl<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>noPropertyType</td>
+                    <td>false</td>
+                    <td>Values: true,false<br/>Default: false<br/>Description: suppress automatic creation of *PropertyType compl<br/>
+                    </td>
+                </tr>
+            </table>
+			&#160;
+			<h2>GML-conformant XML Implementation Details</h2>
+            <table width="95%" border="0">
+                <td>
+                    <pre>&lt;xs:element xmlns:xs="http://www.w3.org/2001/XMLSchema" name="LithologicUnit" substitutionGroup="gsml:GeologicUnit" type="gsml:LithologicUnitType"&gt;
+    &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;Element representing a GeologicUnit defined by lithology independent of subdividing external and internal boundaries. May be stratified or non-stratified. This concept corresponds to LithostratigraphicUnit in the sense of the International Stratigraphic Code. Usage here follows distinction of stratified and non-stratified units from North American Code of Stratigraphic Nomenclature to represent possible presence of stratification-related properties in stratified units, but the explicit absence of those properties in an non-stratified (Lithodemic) unit. 
+
+May represent a particular body of rock (a NADM geologic unit), or may represent a 'kind' of rock body characterized by some internal sequence of rock types and the presence of various geologic (typically sedimentary) structures.
+
+This element will be made Abstract when a complete (enough) set of specialized data structures for subtypes is defined.&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+&lt;/xs:element&gt;</pre>
+                    <pre>&lt;xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="LithologicUnitType"&gt;
+    &lt;xs:complexContent&gt;
+        &lt;xs:extension base="gsml:GeologicUnitType"/&gt;
+    &lt;/xs:complexContent&gt;
+&lt;/xs:complexType&gt;</pre>
+                    <pre>&lt;xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="LithologicUnitPropertyType"&gt;
+    &lt;xs:sequence minOccurs="0"&gt;
+        &lt;xs:element ref="gsml:LithologicUnit"/&gt;
+    &lt;/xs:sequence&gt;
+    &lt;xs:attributeGroup ref="gml:AssociationAttributeGroup"/&gt;
+&lt;/xs:complexType&gt;</pre>
+                </td>
+            </table>&#160;</div>
+        <div class="clearing">&#160;</div>
+        <div id="footer" __skip="skip">
+            <hr class="first"/>
+            <p class="panel">
+			For more information about GML Application Schema development refer to:<br/>
+                <a href="https://www.seegrid.csiro.au/wiki/bin/view/AppSchemas/UmlGml">UML models of GML Application Schemas</a>
+            </p>
+            <p class="panel">
+			For more general information about GML refer to:<br/>
+                <a href="http://www.opengis.net/gml/">GML - the Geography Markup Language</a>
+            </p>
+            <p class="panel">
+			The document set was auto-generated at 2008-08-12T09:50+02:00<br/>
+			using FullMoon - A processing framework for transforming XML models
+		</p>
+        </div>
+    </body>
+</html>

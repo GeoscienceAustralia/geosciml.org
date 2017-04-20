@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:gsmlgt="http://xmlns.geosciml.org/GeologicTime/3.0"
+	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0"
+	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0 http://projects.arcs.org.au/svn/fullmoon/trunk/resources/dependency-util/package-class-map.xsd"
+	id="ClassMap_GeoTime_GeoSciML_v3.xml">
+	<description>Provides a mapping of elements specific to Geologic Time Version 3.0.0</description>
+	<imports>
+		<schema prefix="gsmlgt" namespace="http://xmlns.geosciml.org/GeologicTime/3.0" schemaLocation="http://schemas.geosciml.org/geotime/3.0/geologicTime.xsd" />
+	</imports>
+<!-- ===================================================== -->
+<!--GSSP Leaf-->
+	<entry>
+		<umlClass>GlobalStratotypePoint</umlClass>
+		<umlStereotype>FeatureType</umlStereotype>
+		<gmlObjectElement>gsmlgt:GlobalStratotypePoint</gmlObjectElement>
+		<gmlType>gsmlgt:GlobalStratotypePointType</gmlType>
+		<gmlPropertyType>gsmlgt:GlobalStratotypePointPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GlobalStratotypeSection</umlClass>
+		<umlStereotype>FeatureType</umlStereotype>
+		<gmlObjectElement>gsmlgt:GlobalStratotypeSection</gmlObjectElement>
+		<gmlType>gsmlgt:GlobalStratotypeSectionType</gmlType>
+		<gmlPropertyType>gsmlgt:GlobalStratotypeSectionPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>StratigraphicPoint</umlClass>
+		<umlStereotype>FeatureType</umlStereotype>
+		<gmlObjectElement>gsmlgt:StratigraphicPoint</gmlObjectElement>
+		<gmlType>gsmlgt:StratigraphicPointType</gmlType>
+		<gmlPropertyType>gsmlgt:StratigraphicPointPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>StratigraphicSection</umlClass>
+		<umlStereotype>FeatureType</umlStereotype>
+		<gmlObjectElement>gsmlgt:StratigraphicSection</gmlObjectElement>
+		<gmlType>gsmlgt:StratigraphicSectionType</gmlType>
+		<gmlPropertyType>gsmlgt:StratigraphicSectionPropertyType</gmlPropertyType>
+	</entry>
+<!-- ===================================================== -->
+<!--TIMESCALE Leaf-->
+	<entry>
+		<umlClass>GeochronologicBoundary</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>gsmlgt:GeochronologicBoundary</gmlObjectElement>
+		<gmlType>gsmlgt:GeochronologicBoundaryType</gmlType>
+		<gmlPropertyType>gsmlgt:GeochronologicBoundaryPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GeochronologicEra</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>gsmlgt:GeochronologicEra</gmlObjectElement>
+		<gmlType>gsmlgt:GeochronologicEraType</gmlType>
+		<gmlPropertyType>gsmlgt:GeochronologicEraPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GeologicTimescale</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>gsmlgt:GeologicTimescale</gmlObjectElement>
+		<gmlType>gsmlgt:GeologicTimescaleType</gmlType>
+		<gmlPropertyType>gsmlgt:GeologicTimescalePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>NumericEraBoundary</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>gsmlgt:NumericEraBoundary</gmlObjectElement>
+		<gmlType>gsmlgt:NumericEraBoundaryType</gmlType>
+		<gmlPropertyType>gsmlgt:NumericEraBoundaryPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>StandardGlobalNumericAge</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>gsmlgt:StandardGlobalNumericAge</gmlObjectElement>
+		<gmlType>gsmlgt:StandardGlobalNumericAgeType</gmlType>
+		<gmlPropertyType>gsmlgt:StandardGlobalNumericAgePropertyType</gmlPropertyType>
+	</entry>
+</mapping>

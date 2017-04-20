@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:gsmlpp="http://xmlns.geosciml.org/PhysicalProperties/3.0"
+	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0"
+	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0 http://projects.arcs.org.au/svn/fullmoon/trunk/resources/dependency-util/package-class-map.xsd"
+	id="ClassMap_PhysicalProperties_GeoSciML_v3.xml">
+	<description>Provides a mapping of elements of the PhysicalProperties module of GeoSciML to GeoSciML Version 3.0.0</description>
+	<imports>
+		<schema prefix="gsmlpp" namespace="http://xmlns.geosciml.org/PhysicalProperties/3.0" schemaLocation="http://schemas.geosciml.org/physicalproperties/3.0/physicalProperties.xsd" />
+	</imports>
+	<!-- ===================================================== -->
+	<entry>
+		<umlClass>PhysicalDescription</umlClass>
+		<umlStereotype>DataType</umlStereotype>
+		<gmlObjectElement>gsmlpp:PhysicalDescription</gmlObjectElement>
+		<gmlType>gsmlpp:PhysicalDescriptionType</gmlType>
+		<gmlPropertyType>gsmlpp:PhysicalDescriptionPropertyType</gmlPropertyType>
+	</entry>
+</mapping>

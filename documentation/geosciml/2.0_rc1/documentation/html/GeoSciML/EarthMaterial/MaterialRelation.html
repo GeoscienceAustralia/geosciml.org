@@ -1,0 +1,315 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <title>GML Application Schema Class Details - MaterialRelation</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <link href="../../default.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-35254121-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script>
+
+    <body class="section-3">
+        <div id="header">
+            <div align="left">
+                <img src="../../gas-banner.jpg" alt="GML Application Schema API Specification" width="1000" height="59"/>
+            </div>
+            <ul id="menu">
+                <li id="nav-1">
+                    <a href="../../overview-summary.html">Overview</a>
+                </li>
+                <li id="nav-2">
+                    <a href="package-summary.html">Package</a>
+                </li>
+                <li id="nav-3">
+                    <a href="MaterialRelation.html">Class</a>
+                </li>
+                <li id="nav-4">
+                    <a href="../../help-doc.html">Help</a>
+                </li>
+            </ul>
+        </div>
+        <div id="main">
+            <h1 class="first">
+				Class <tt>&lt;&lt;FeatureType&gt;&gt;  MaterialRelation  (extends <i>
+                        <a href="../GeologicRelation/GeologicRelation.html">GeologicRelation</a>
+                    </i>)</tt>
+            </h1>
+            <p>The concrete MaterialRelation class is a subtype of the abstract GeologicRelation class which describes the relationships between constituent parts in an Earth Material (eg: A mineral overgrowth on a phenocryst within a granite). <br/>
+                <br/>Relationships are always binary and directional.  There is always a single source and a single target.  The relationship is always defined from the perspective of the Source and is generally an active verb.<br/>
+                <br/>Example:  Consider an overgrowth of albite on plagioclase in a granite.  The  Source would point to the albite mineral description.  In this case, the Target would point to the plagioclase mineral description and the relationship attribute would be 'overgrowth' and the sourceRole is 'overgrows' and the targetRole is 'overgrown'.  Other appropriate role attributes might include: crosscuts, replaces, etc. for crosscutting and replacement relationships.</p><!-- Create a list of known local subclasses, if there are any -->
+            <b>Local Subclasses:</b> (none)<!-- Create a table to list class attributes, if there are any -->
+            <h2>Attributes</h2>
+            <table width="95%" class="details"><!-- Column 1: Name -->
+                <th>Name</th><!-- Column 2: Type -->
+                <th>Type</th><!-- Column 3: Bounds -->
+                <th>Bounds</th><!-- Column 4: From Class -->
+                <th>From Class</th><!-- Column 5: Notes-->
+                <th>Notes</th>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>relationship</b>
+                    </td><!-- Column 2: Type -->
+                    <td>ScopedName</td><!-- Column 3: Bounds -->
+                    <td>1..1</td><!-- Column 4: From Class -->
+                    <td>
+                        <a href="../GeologicRelation/GeologicRelation.html">GeologicRelation</a>
+                    </td><!-- Column 5: Notes -->
+                    <td>Term that specifies the relationship between source and target geologic objects. Vocabulary of relationship names should explicitly state relationship between source and target role fillers.  For example, quartz (source) overgrows feldspar phenocryst (target).</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>2</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>sourceRole</b>
+                    </td><!-- Column 2: Type -->
+                    <td>ScopedName</td><!-- Column 3: Bounds -->
+                    <td>0..1</td><!-- Column 4: From Class -->
+                    <td>
+                        <a href="../GeologicRelation/GeologicRelation.html">GeologicRelation</a>
+                    </td><!-- Column 5: Notes -->
+                    <td/>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>3</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>targetRole</b>
+                    </td><!-- Column 2: Type -->
+                    <td>ScopedName</td><!-- Column 3: Bounds -->
+                    <td>0..1</td><!-- Column 4: From Class -->
+                    <td>
+                        <a href="../GeologicRelation/GeologicRelation.html">GeologicRelation</a>
+                    </td><!-- Column 5: Notes -->
+                    <td/>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+            </table>
+			&#160;
+			<!-- Create a table to list class associations, if there are any -->
+            <h2>Outbound Associations</h2>
+            <table width="95%" class="details">
+                <th>Name</th>
+                <th>Type</th>
+                <th>Multiplicity</th>
+                <th>From Class</th>
+                <th>Notes</th>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>source</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="ConstituentPart.html">ConstituentPart</a>
+                    </td><!-- Multiplicity -->
+                    <td/><!-- From Class -->
+                    <td>MaterialRelation</td><!-- Notes -->
+                    <td>Specifies the ConstituentPart that is playing the role 'source' in the MaterialRelation</td>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>2</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>target</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="ConstituentPart.html">ConstituentPart</a>
+                    </td><!-- Multiplicity -->
+                    <td/><!-- From Class -->
+                    <td>MaterialRelation</td><!-- Notes -->
+                    <td>Specifies the ConstituentPart that is playing the role 'target' in the MaterialRelation</td>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>3</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+            </table>
+			&#160;
+			<!-- Create a table to list class constraints, if there are any -->
+            <h2>Constraints</h2>
+            <table width="95%" class="details">
+                <th>Constraint</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Weight</th>
+            </table>
+			&#160;
+			<!-- Create a table to list class tagged values, if there are any -->
+            <h2>Tagged values</h2>
+            <table width="95%" class="details">
+                <th>Tag</th>
+                <th>Value</th>
+                <th>Notes</th>
+                <tr>
+                    <td>byValuePropertyType</td>
+                    <td>true</td>
+                    <td>Values: true,false<br/>Default: false<br/>Description: enforce the 'by value' property pattern without xl<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>hasXmlLang</td>
+                    <td>false</td>
+                    <td>Values: true | false<br/>Default: false<br/>Description: axml attribute xml:lang shall be generated for the type representing the class<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>isCollection</td>
+                    <td>false</td>
+                    <td>Values: true,false<br/>Default: false<br/>Description: attribute group gml:AggregationAttributeGroup is a<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>noPropertyType</td>
+                    <td>false</td>
+                    <td>Values: true,false<br/>Default: false<br/>Description: suppress automatic creation of *PropertyType compl<br/>
+                    </td>
+                </tr>
+            </table>
+			&#160;
+			<h2>GML-conformant XML Implementation Details</h2>
+            <table width="95%" border="0">
+                <td>
+                    <pre>&lt;xs:element xmlns:xs="http://www.w3.org/2001/XMLSchema" name="MaterialRelation" substitutionGroup="gsml:GeologicRelation" type="gsml:MaterialRelationType"&gt;
+    &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;The concrete MaterialRelation class is a subtype of the abstract GeologicRelation class which describes the relationships between constituent parts in an Earth Material (eg: A mineral overgrowth on a phenocryst within a granite).
+
+Relationships are always binary and directional.  There is always a single source and a single target.  The relationship is always defined from the perspective of the Source and is generally an active verb.
+
+Example:  Consider an overgrowth of albite on plagioclase in a granite.  The  Source would point to the albite mineral description.  In this case, the Target would point to the plagioclase mineral description and the relationship attribute would be 'overgrows'.  Other appropriate relationship attributes might include: crosscuts, replaces, etc.&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+&lt;/xs:element&gt;</pre>
+                    <pre>&lt;xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="MaterialRelationType"&gt;
+    &lt;xs:complexContent&gt;
+        &lt;xs:extension base="gsml:GeologicRelationType"&gt;
+            &lt;xs:sequence&gt;
+                &lt;xs:element name="source" type="gsml:ConstituentPartPropertyType"/&gt;
+                &lt;xs:element name="target" type="gsml:ConstituentPartPropertyType"/&gt;
+            &lt;/xs:sequence&gt;
+        &lt;/xs:extension&gt;
+    &lt;/xs:complexContent&gt;
+&lt;/xs:complexType&gt;</pre>
+                    <pre>&lt;xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="MaterialRelationPropertyType"&gt;
+    &lt;xs:sequence minOccurs="0"&gt;
+        &lt;xs:element ref="gsml:MaterialRelation"/&gt;
+    &lt;/xs:sequence&gt;
+    &lt;xs:attributeGroup ref="gml:AssociationAttributeGroup"/&gt;
+&lt;/xs:complexType&gt;</pre>
+                </td>
+            </table>&#160;</div>
+        <div class="clearing">&#160;</div>
+        <div id="footer">
+            <hr class="first"/>
+            <p class="panel">For more information about GML Application Schema
+    		             development refer to:<br/>
+                <a href="https://www.seegrid.csiro.au/wiki/bin/view/AppSchemas/UmlGml">
+    		UML models of GML Application Schemas</a>
+            </p>
+            <p class="panel">For more general information about GML refer to:<br/>
+                <a href="http://www.opengis.net/gml/">GML - the Geography Markup Language</a>
+            </p>
+            <p class="panel">The document set was auto-generated at 2008-02-14T18:09+09:00<br/>
+    	                 using FullMoon - A processing framework for transforming XML models
+    	</p>
+            <p/>
+        </div>
+    </body>
+</html>

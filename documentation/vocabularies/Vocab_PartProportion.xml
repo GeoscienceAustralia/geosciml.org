@@ -1,0 +1,95 @@
+<gsml:GSML xmlns:gsml="urn:cgi:xmlns:CGI:GeoSciML:2.0">
+    <gsml:member>
+        <gsml:GeologicVocabulary xmlns:gml="http://www.opengis.net/gml" gml:id="CGI_GeologicUnitPartProportion">
+            <gml:name codeSpace="urn:ietf:rfc:2141">urn:cgi:classifierScheme:CGI:GeologicUnitPartProportion:2008</gml:name>
+            <gml:definitionMember>
+                <gsml:ControlledConcept gml:id="geoProp_1">
+                    <gml:description>Component constitutes effectively 100 percent of the volume of the GeologicUnit.
+</gml:description>
+                    <gml:name codeSpace="urn:ietf:rfc:2141">urn:cgi:classifier:CGI:GeologicUnitPartProportion:2008:all</gml:name>
+                    <gsml:identifier codeSpace="urn:ietf:rfc:2141">urn:cgi:classifier:CGI:GeologicUnitPartProportion:2008:all</gsml:identifier>
+                    <gsml:name codeSpace="urn:cgi:classifierScheme:CGI:GeologicUnitPartProportion:2008" xml:lang="fr">all</gsml:name>
+                    <gsml:name codeSpace="urn:cgi:classifierScheme:CGI:GeologicUnitPartProportion:2008" xml:lang="eng">all</gsml:name>
+                    <gsml:vocabulary xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="urn:cgi:classifierScheme:CGI:GeologicUnitPartProportion:2008"/>
+                </gsml:ControlledConcept>
+            </gml:definitionMember>
+            <gml:definitionMember>
+                <gsml:ControlledConcept gml:id="geoProp_2">
+                    <gml:description>Component constitutes greater than 75 percent of the volume of the GeologicUnit.
+</gml:description>
+                    <gml:name codeSpace="urn:ietf:rfc:2141">urn:cgi:classifier:CGI:GeologicUnitPartProportion:2008:dominant</gml:name>
+                    <gsml:identifier codeSpace="urn:ietf:rfc:2141">urn:cgi:classifier:CGI:GeologicUnitPartProportion:2008:dominant</gsml:identifier>
+                    <gsml:name codeSpace="urn:cgi:classifierScheme:CGI:GeologicUnitPartProportion:2008" xml:lang="fr">dominant</gsml:name>
+                    <gsml:name codeSpace="urn:cgi:classifierScheme:CGI:GeologicUnitPartProportion:2008" xml:lang="eng">dominant</gsml:name>
+                    <gsml:vocabulary xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="urn:cgi:classifierScheme:CGI:GeologicUnitPartProportion:2008"/>
+                </gsml:ControlledConcept>
+            </gml:definitionMember>
+            <gml:definitionMember>
+                <gsml:ControlledConcept gml:id="geoProp_3">
+                    <gml:description>Component constitutes greater than 50 percent of the volume of the GeologicUnit.
+</gml:description>
+                    <gml:name codeSpace="urn:ietf:rfc:2141">urn:cgi:classifier:CGI:GeologicUnitPartProportion:2008:major</gml:name>
+                    <gsml:identifier codeSpace="urn:ietf:rfc:2141">urn:cgi:classifier:CGI:GeologicUnitPartProportion:2008:major</gsml:identifier>
+                    <gsml:name codeSpace="urn:cgi:classifierScheme:CGI:GeologicUnitPartProportion:2008" xml:lang="fr">major</gsml:name>
+                    <gsml:name codeSpace="urn:cgi:classifierScheme:CGI:GeologicUnitPartProportion:2008" xml:lang="eng">major</gsml:name>
+                    <gsml:vocabulary xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="urn:cgi:classifierScheme:CGI:GeologicUnitPartProportion:2008"/>
+                </gsml:ControlledConcept>
+            </gml:definitionMember>
+            <gml:definitionMember>
+                <gsml:ControlledConcept gml:id="geoProp_4">
+                    <gml:description>Component constitutes less than 50 percent of the volume of the GeologicUnit.
+</gml:description>
+                    <gml:name codeSpace="urn:ietf:rfc:2141">urn:cgi:classifier:CGI:GeologicUnitPartProportion:2008:subordinate</gml:name>
+                    <gsml:identifier codeSpace="urn:ietf:rfc:2141">urn:cgi:classifier:CGI:GeologicUnitPartProportion:2008:subordinate</gsml:identifier>
+                    <gsml:name codeSpace="urn:cgi:classifierScheme:CGI:GeologicUnitPartProportion:2008" xml:lang="fr">subordinate</gsml:name>
+                    <gsml:name codeSpace="urn:cgi:classifierScheme:CGI:GeologicUnitPartProportion:2008" xml:lang="eng">subordinate</gsml:name>
+                    <gsml:vocabulary xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="urn:cgi:classifierScheme:CGI:GeologicUnitPartProportion:2008"/>
+                </gsml:ControlledConcept>
+            </gml:definitionMember>
+            <gml:definitionMember>
+                <gsml:ControlledConcept gml:id="geoProp_5">
+                    <gml:description>component constitutes less than 25 percent of the volume of the GeologicUnit.
+</gml:description>
+                    <gml:name codeSpace="urn:ietf:rfc:2141">urn:cgi:classifier:CGI:GeologicUnitPartProportion:2008:minor</gml:name>
+                    <gsml:identifier codeSpace="urn:ietf:rfc:2141">urn:cgi:classifier:CGI:GeologicUnitPartProportion:2008:minor</gsml:identifier>
+                    <gsml:name codeSpace="urn:cgi:classifierScheme:CGI:GeologicUnitPartProportion:2008" xml:lang="fr">minor</gsml:name>
+                    <gsml:name codeSpace="urn:cgi:classifierScheme:CGI:GeologicUnitPartProportion:2008" xml:lang="eng">minor</gsml:name>
+                    <gsml:vocabulary xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="urn:cgi:classifierScheme:CGI:GeologicUnitPartProportion:2008"/>
+                </gsml:ControlledConcept>
+            </gml:definitionMember>
+            <gml:definitionMember>
+                <gsml:ControlledConcept gml:id="geoProp_6">
+                    <gml:description>Component constitutes less than 5 percent of the volume of the GeologicUnit.
+</gml:description>
+                    <gml:name codeSpace="urn:ietf:rfc:2141">urn:cgi:classifier:CGI:GeologicUnitPartProportion:2008:trace</gml:name>
+                    <gsml:identifier codeSpace="urn:ietf:rfc:2141">urn:cgi:classifier:CGI:GeologicUnitPartProportion:2008:trace</gsml:identifier>
+                    <gsml:name codeSpace="urn:cgi:classifierScheme:CGI:GeologicUnitPartProportion:2008" xml:lang="fr">trace</gsml:name>
+                    <gsml:name codeSpace="urn:cgi:classifierScheme:CGI:GeologicUnitPartProportion:2008" xml:lang="eng">trace</gsml:name>
+                    <gsml:vocabulary xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="urn:cgi:classifierScheme:CGI:GeologicUnitPartProportion:2008"/>
+                </gsml:ControlledConcept>
+            </gml:definitionMember>
+            <gml:definitionMember>
+                <gsml:ControlledConcept gml:id="geoProp_7">
+                    <gml:description>Component constitutes less than 1 percent of the volume of the GeologicUnit.
+</gml:description>
+                    <gml:name codeSpace="urn:ietf:rfc:2141">urn:cgi:classifier:CGI:GeologicUnitPartProportion:2008:rare </gml:name>
+                    <gsml:identifier codeSpace="urn:ietf:rfc:2141">urn:cgi:classifier:CGI:GeologicUnitPartProportion:2008:rare </gsml:identifier>
+                    <gsml:name codeSpace="urn:cgi:classifierScheme:CGI:GeologicUnitPartProportion:2008" xml:lang="fr">rare </gsml:name>
+                    <gsml:name codeSpace="urn:cgi:classifierScheme:CGI:GeologicUnitPartProportion:2008" xml:lang="eng">rare </gsml:name>
+                    <gsml:vocabulary xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="urn:cgi:classifierScheme:CGI:GeologicUnitPartProportion:2008"/>
+                </gsml:ControlledConcept>
+            </gml:definitionMember>
+            <gml:definitionMember>
+                <gsml:ControlledConcept gml:id="geoProp_8">
+                    <gml:description>Component constitutes greater than 5 percent but less than 50 percent of the volume of the GeologicUnit.
+</gml:description>
+                    <gml:name codeSpace="urn:ietf:rfc:2141">urn:cgi:classifier:CGI:GeologicUnitPartProportion:2008:significant</gml:name>
+                    <gsml:identifier codeSpace="urn:ietf:rfc:2141">urn:cgi:classifier:CGI:GeologicUnitPartProportion:2008:significant</gsml:identifier>
+                    <gsml:name codeSpace="urn:cgi:classifierScheme:CGI:GeologicUnitPartProportion:2008" xml:lang="fr">significant</gsml:name>
+                    <gsml:name codeSpace="urn:cgi:classifierScheme:CGI:GeologicUnitPartProportion:2008" xml:lang="eng">significant</gsml:name>
+                    <gsml:vocabulary xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="urn:cgi:classifierScheme:CGI:GeologicUnitPartProportion:2008"/>
+                </gsml:ControlledConcept>
+            </gml:definitionMember>
+        </gsml:GeologicVocabulary>
+    </gsml:member>
+</gsml:GSML>

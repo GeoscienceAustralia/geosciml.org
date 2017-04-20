@@ -1,0 +1,1376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+<!ENTITY iso-19115-codelists "http://www.geosciml.org/vocabularies/iso-19115-codelists.owl#">
+<!ENTITY iso-19115-codes "http://www.geosciml.org/vocabularies/iso-19115-codes.owl#">
+<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+<rdf:RDF xml:base="http://www.geosciml.org/vocabularies/iso-19115-codes.owl" 
+		xmlns:iso-19115-codes="&iso-19115-codes;" 
+		xmlns:iso-19115-codelists="&iso-19115-codelists;"
+         xmlns:owl="&owl;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;">
+
+	<!-- Ontology Information -->
+	<owl:Ontology rdf:about="">
+		<rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2008-03-10 version by Simon Cox, CSIRO Exploration and Mining. </rdfs:comment>
+		<rdfs:comment xml:lang="en">title- Ontology for Geographic Information Metadata -  ISO 19115:2003. creator- Akm Saiful Islam, Luis Bermudez, Bora Beran, Stephane Fellah, and Michael Piasecki. description- Ontology for ISO 19115. Vocabulary terms are declared using OWL language to support RDF applications. publisher- Drexel University . date- 2004-08-07. format - text/xml. language - English</rdfs:comment>
+		<owl:imports>
+			<owl:Ontology rdf:about="http://www.geosciml.org/vocabularies/iso-19115-codelists.owl"/>
+		</owl:imports>
+		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.0</owl:versionInfo>
+	</owl:Ontology>
+
+	<!-- Classes -->
+	<owl:Class rdf:about="http://www.geosciml.org/vocabularies/iso-19115-codelists.owl#MD_ObligationCode">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+		<owl:oneOf rdf:parseType="Collection">
+			<rdf:Description rdf:about="#conditional"/>
+			<rdf:Description rdf:about="#mandatory"/>
+			<rdf:Description rdf:about="#optional"/>
+		</owl:oneOf>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.geosciml.org/vocabularies/iso-19115-codelists.owl#MD_PixelOrientationCode">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+		<owl:oneOf rdf:parseType="Collection">
+			<rdf:Description rdf:about="#center"/>
+			<rdf:Description rdf:about="#lowerLeft"/>
+			<rdf:Description rdf:about="#lowerRight"/>
+			<rdf:Description rdf:about="#upperLeft"/>
+			<rdf:Description rdf:about="#upperRight"/>
+		</owl:oneOf>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.geosciml.org/vocabularies/iso-19115-codelists.owl#MD_TopicCategoryCode">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+		<owl:oneOf rdf:parseType="Collection">
+			<rdf:Description rdf:about="#biota"/>
+			<rdf:Description rdf:about="#boundaries"/>
+			<rdf:Description rdf:about="#climatologyMeteorologyAtmosphere"/>
+			<rdf:Description rdf:about="#economy"/>
+			<rdf:Description rdf:about="#elevation"/>
+			<rdf:Description rdf:about="#environment"/>
+			<rdf:Description rdf:about="#farming"/>
+			<rdf:Description rdf:about="#geoscientificInformation"/>
+			<rdf:Description rdf:about="#health"/>
+			<rdf:Description rdf:about="#imageryBaseMapsEarthCover"/>
+			<rdf:Description rdf:about="#inlandWaters"/>
+			<rdf:Description rdf:about="#intelligenceMilitary"/>
+			<rdf:Description rdf:about="#location"/>
+			<rdf:Description rdf:about="#oceans"/>
+			<rdf:Description rdf:about="#planningCadastre"/>
+			<rdf:Description rdf:about="#society"/>
+			<rdf:Description rdf:about="#structure"/>
+			<rdf:Description rdf:about="#transportation"/>
+			<rdf:Description rdf:about="#utilitiesCommunication"/>
+		</owl:oneOf>
+	</owl:Class>
+
+	<!-- Annotation Properties -->
+	<owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+	<owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+	<owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+
+	<!-- Datatype Properties -->
+	<owl:DatatypeProperty rdf:about="http://www.geosciml.org/vocabularies/iso-19115-codelists.owl#Domain_code"/>
+	<owl:DatatypeProperty rdf:about="http://www.geosciml.org/vocabularies/iso-19115-codelists.owl#stereotype"/>
+
+	<!-- Instances -->
+	<iso-19115-codelists:MD_MediumNameCode rdf:about="#_1quarterInchCartidgeTape">
+		<rdfs:comment xml:lang="en">0,25 inch magnetic tape</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">013</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MediumNameCode>
+
+	<iso-19115-codelists:MD_MediumNameCode rdf:about="#_3480Cartidge">
+		<rdfs:comment xml:lang="en">3480 cartridge tape drive</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">008</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MediumNameCode>
+
+	<iso-19115-codelists:MD_MediumNameCode rdf:about="#_3490Cartidge">
+		<rdfs:comment xml:lang="en">3490 cartridge tape drive</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">009</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MediumNameCode>
+
+	<iso-19115-codelists:MD_MediumNameCode rdf:about="#_3580Cartidge">
+		<rdfs:comment xml:lang="en">3580 cartridge tape drive</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">010</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MediumNameCode>
+
+	<iso-19115-codelists:MD_MediumNameCode rdf:about="#_3halfIncFloppy">
+		<rdfs:comment xml:lang="en">3,5 inch magnetic disk</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">004</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MediumNameCode>
+
+	<iso-19115-codelists:MD_MediumNameCode rdf:about="#_4mmCartidge">
+		<rdfs:comment xml:lang="en">4 millimetre magnetic tape</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">011</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MediumNameCode>
+
+	<iso-19115-codelists:MD_MediumNameCode rdf:about="#_5quarterInchFloppy">
+		<rdfs:comment xml:lang="en">5,25 inch magnetic disk</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">005</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MediumNameCode>
+
+	<iso-19115-codelists:MD_MediumNameCode rdf:about="#_7trackTape">
+		<rdfs:comment xml:lang="en">7 track magnetic tape</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">006</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MediumNameCode>
+
+	<iso-19115-codelists:MD_CharacterSetCode rdf:about="#_8859part1">
+		<rdfs:comment xml:lang="en">latin-1, west European code set</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">006</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CharacterSetCode>
+
+	<iso-19115-codelists:MD_CharacterSetCode rdf:about="#_8859part11">
+		<rdfs:comment xml:lang="en">thai code set</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">015</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CharacterSetCode>
+
+	<iso-19115-codelists:MD_CharacterSetCode rdf:about="#_8859part14">
+		<rdfs:comment xml:lang="en">latin-8 code set</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">016</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CharacterSetCode>
+
+	<iso-19115-codelists:MD_CharacterSetCode rdf:about="#_8859part15">
+		<rdfs:comment xml:lang="en">latin-9 code set</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">017</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CharacterSetCode>
+
+	<iso-19115-codelists:MD_CharacterSetCode rdf:about="#_8859part2">
+		<rdfs:comment xml:lang="en">latin-2, central European code set</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">007</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CharacterSetCode>
+
+	<iso-19115-codelists:MD_CharacterSetCode rdf:about="#_8859part3">
+		<rdfs:comment xml:lang="en">latin-3, south European code set</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">008</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CharacterSetCode>
+
+	<iso-19115-codelists:MD_CharacterSetCode rdf:about="#_8859part4">
+		<rdfs:comment xml:lang="en">latin-4, north European code set</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">010</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CharacterSetCode>
+
+	<iso-19115-codelists:MD_CharacterSetCode rdf:about="#_8859part5">
+		<rdfs:comment xml:lang="en">cyrillic code set</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">009</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CharacterSetCode>
+
+	<iso-19115-codelists:MD_CharacterSetCode rdf:about="#_8859part6">
+		<rdfs:comment xml:lang="en">arabic code set</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">011</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CharacterSetCode>
+
+	<iso-19115-codelists:MD_CharacterSetCode rdf:about="#_8859part7">
+		<rdfs:comment xml:lang="en">greek code set</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">012</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CharacterSetCode>
+
+	<iso-19115-codelists:MD_CharacterSetCode rdf:about="#_8859part8">
+		<rdfs:comment xml:lang="en">hebrew code set</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">013</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CharacterSetCode>
+
+	<iso-19115-codelists:MD_CharacterSetCode rdf:about="#_8859part9">
+		<rdfs:comment xml:lang="en">latin-5, Turkish code set</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">014</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CharacterSetCode>
+
+	<iso-19115-codelists:MD_MediumNameCode rdf:about="#_8mmCartidge">
+		<rdfs:comment xml:lang="en">8 millimetre magnetic tape</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">012</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MediumNameCode>
+
+	<iso-19115-codelists:MD_MediumNameCode rdf:about="#_9trackTape">
+		<rdfs:comment xml:lang="en">9 track magnetic tape</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">007</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MediumNameCode>
+
+	<iso-19115-codelists:MD_DataTypeCode rdf:about="#_class">
+		<rdfs:comment xml:lang="en">descriptor of a set of objects that share the same attributes, operations, methods, relationships, and behavior</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_DataTypeCode>
+
+	<iso-19115-codelists:MD_ScopeCode rdf:about="#_dataset">
+		<rdfs:comment xml:lang="en">information applies to the dataset</rdfs:comment>
+		<rdfs:label xml:lang="en">dataset</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">005</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ScopeCode>
+
+	<iso-19115-codelists:MD_DataTypeCode rdf:about="#_integer">
+		<rdfs:comment xml:lang="en">numerical field</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">014</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_DataTypeCode>
+
+	<iso-19115-codelists:MD_GeometricObjectTypeCode rdf:about="#_point">
+		<rdfs:comment xml:lang="en">zero-dimensional geometric primitive, representing a position but not having an extent</rdfs:comment>
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">point</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">004</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_GeometricObjectTypeCode>
+
+	<iso-19115-codelists:CI_RoleCode rdf:about="#_pointOfContact">
+		<rdfs:comment xml:lang="en">party who can be contacted for acquiring knowledge about or acquisition of the resource</rdfs:comment>
+		<rdfs:label xml:lang="en">pointOfContact</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">007</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_RoleCode>
+
+	<iso-19115-codelists:CI_RoleCode rdf:about="#_processor">
+		<rdfs:comment xml:lang="en">party who has processed the data in a manner such that the resource has been modified</rdfs:comment>
+		<rdfs:label xml:lang="en">processor</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">009</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_RoleCode>
+
+	<iso-19115-codelists:MD_ClassificationCode rdf:about="#_restricted">
+		<rdfs:comment xml:lang="en">not for general disclosure</rdfs:comment>
+		<rdfs:label xml:lang="en">restricted</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ClassificationCode>
+
+	<iso-19115-codelists:MD_ScopeCode rdf:about="#_series">
+		<rdfs:comment xml:lang="en">information applies to the series</rdfs:comment>
+		<rdfs:label xml:lang="en">series</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">006</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ScopeCode>
+
+	<iso-19115-codelists:DS_AssociationTypeCode rdf:about="#_source">
+		<rdfs:comment xml:lang="en">mapping and charting information from which the dataset content originates</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">004</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:DS_AssociationTypeCode>
+
+	<iso-19115-codelists:MD_DimensionNameTypeCode rdf:about="#_time">
+		<rdfs:comment xml:lang="en">duration</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">008</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_DimensionNameTypeCode>
+
+	<iso-19115-codelists:MD_DataTypeCode rdf:about="#abstractClass">
+		<rdfs:comment xml:lang="en">class that cannot be directly instantiated</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">005</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_DataTypeCode>
+
+	<iso-19115-codelists:MD_TopologyLevelCode rdf:about="#abstract_TopoLevCd">
+		<rdfs:comment xml:lang="en">topological complex without any specified geometric realization</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">009</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopologyLevelCode>
+
+	<iso-19115-codelists:MD_DataTypeCode rdf:about="#aggregatedClass">
+		<rdfs:comment xml:lang="en">class that is composed of classes it is connected to by an aggregate relationship</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">006</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_DataTypeCode>
+
+	<iso-19115-codelists:MD_MaintenanceFrequenceCode rdf:about="#annually">
+		<rdfs:comment xml:lang="en">data is updated every year</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">008</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MaintenanceFrequenceCode>
+
+	<iso-19115-codelists:MD_CellGeometryCode rdf:about="#area">
+		<rdfs:comment xml:lang="en">each cell represents an area</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CellGeometryCode>
+
+	<iso-19115-codelists:MD_MaintenanceFrequenceCode rdf:about="#asNeeded">
+		<rdfs:comment xml:lang="en">data is updated as deemed necessary</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">009</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MaintenanceFrequenceCode>
+
+	<iso-19115-codelists:MD_DataTypeCode rdf:about="#association">
+		<rdfs:comment xml:lang="en">semantic relationship between two classes that involves connections among their instances</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">015</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_DataTypeCode>
+
+	<iso-19115-codelists:MD_ScopeCode rdf:about="#attribute">
+		<rdfs:comment xml:lang="en">information applies to the attribute class</rdfs:comment>
+		<rdfs:label xml:lang="en">attribute</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ScopeCode>
+
+	<iso-19115-codelists:MD_ScopeCode rdf:about="#attributeType">
+		<rdfs:comment xml:lang="en">information applies to the characteristic of a feature</rdfs:comment>
+		<rdfs:label xml:lang="en">attributeType</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ScopeCode>
+
+	<iso-19115-codelists:CI_RoleCode rdf:about="#author">
+		<rdfs:comment xml:lang="en">party who authored the resource</rdfs:comment>
+		<rdfs:label xml:lang="en">author</rdfs:label>
+		<iso-19115-codelists:Domain_code xml:lang="en">011</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_RoleCode>
+
+	<iso-19115-codelists:MD_MaintenanceFrequenceCode rdf:about="#biannually">
+		<rdfs:comment xml:lang="en">data is updated twice each year</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">007</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MaintenanceFrequenceCode>
+
+	<iso-19115-codelists:MD_CharacterSetCode rdf:about="#big5">
+		<rdfs:comment xml:lang="en">taiwanese code set</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">024</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CharacterSetCode>
+
+	<iso-19115-codelists:MD_TopicCategoryCode rdf:about="#biota">
+		<rdfs:comment xml:lang="en">flora and/or fauna in natural environment Examples: wildlife, vegetation, biological sciences, ecology, wilderness, sealife, wetlands, habitat</rdfs:comment>
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biota</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopicCategoryCode>
+
+	<iso-19115-codelists:MD_ImagingConditionCode rdf:about="#blurredImage">
+		<rdfs:comment xml:lang="en">portion of the image is blurred</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ImagingConditionCode>
+
+	<iso-19115-codelists:MD_TopicCategoryCode rdf:about="#boundaries">
+		<rdfs:comment xml:lang="en">legal land descriptions Examples: political and administrative boundaries</rdfs:comment>
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boundaries</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">003</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopicCategoryCode>
+
+	<iso-19115-codelists:DS_InitiativeTypeCode rdf:about="#campaign">
+		<rdfs:comment xml:lang="en">series of organized planned actions</rdfs:comment>
+		<rdfs:label xml:lang="en">campaign</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:DS_InitiativeTypeCode>
+
+	<iso-19115-codelists:MD_MediumNameCode rdf:about="#cdRom">
+		<rdfs:comment xml:lang="en">read-only optical disk</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MediumNameCode>
+
+	<iso-19115-codelists:MD_PixelOrientationCode rdf:about="#center">
+		<rdfs:comment xml:lang="en">point halfway between the lower left and the upper right of the pixel</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_PixelOrientationCode>
+
+	<iso-19115-codelists:MD_DataTypeCode rdf:about="#characterString">
+		<rdfs:comment xml:lang="en">free text field</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">013</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_DataTypeCode>
+
+	<iso-19115-codelists:MD_TopicCategoryCode rdf:about="#climatologyMeteorologyAtmosphere">
+		<rdfs:comment xml:lang="en">processes and phenomena of the atmosphere Examples: cloud cover, weather, climate, atmospheric conditions, climate change, precipitation</rdfs:comment>
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">climatologyMeteorologyAtmosphere</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">004</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopicCategoryCode>
+
+	<iso-19115-codelists:MD_ImagingConditionCode rdf:about="#cloud">
+		<rdfs:comment xml:lang="en">portion of the image is partially obscured by cloud cover</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ImagingConditionCode>
+
+	<iso-19115-codelists:MD_DataTypeCode rdf:about="#codelist">
+		<rdfs:comment xml:lang="en">flexible enumeration useful for expressing a long list of values, can be extended</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_DataTypeCode>
+
+	<iso-19115-codelists:MD_DataTypeCode rdf:about="#codelistElement">
+		<rdfs:comment xml:lang="en">permissible value for a codelist or enumeration</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">004</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_DataTypeCode>
+
+	<iso-19115-codelists:DS_InitiativeTypeCode rdf:about="#collection">
+		<rdfs:comment xml:lang="en">accumulation of datasets assembled for a specific purpose</rdfs:comment>
+		<rdfs:label xml:lang="en">collection</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:DS_InitiativeTypeCode>
+
+	<iso-19115-codelists:MD_ScopeCode rdf:about="#collectionHardware">
+		<rdfs:comment xml:lang="en">information applies to the collection hardware class</rdfs:comment>
+		<rdfs:label xml:lang="en">collectionHardware</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">003</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ScopeCode>
+
+	<iso-19115-codelists:MD_ScopeCode rdf:about="#collectionSession">
+		<rdfs:comment xml:lang="en">information applies to the collection session</rdfs:comment>
+		<rdfs:label xml:lang="en">collectionSession</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">004</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ScopeCode>
+
+	<iso-19115-codelists:MD_DimensionNameTypeCode rdf:about="#column">
+		<rdfs:comment xml:lang="en">abscissa x axis</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_DimensionNameTypeCode>
+
+	<iso-19115-codelists:MD_ProgressCode rdf:about="#completed">
+		<rdfs:comment xml:lang="en">production of the data has been completed</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ProgressCode>
+
+	<iso-19115-codelists:MD_GeometricObjectTypeCode rdf:about="#complex">
+		<rdfs:comment xml:lang="en">set of geometric primitives such that their boundaries can be represented as a union of other primitives</rdfs:comment>
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">complex</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_GeometricObjectTypeCode>
+
+	<iso-19115-codelists:MD_GeometricObjectTypeCode rdf:about="#composite">
+		<rdfs:comment xml:lang="en">connected set of curves, solids or surfaces</rdfs:comment>
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">composite</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_GeometricObjectTypeCode>
+
+	<iso-19115-codelists:MD_ObligationCode rdf:about="#conditional">
+		<rdfs:comment xml:lang="en">element is required when specific a specific condition is met</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">003</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ObligationCode>
+
+	<iso-19115-codelists:MD_ClassificationCode rdf:about="#confidential">
+		<rdfs:comment xml:lang="en">available for someone who can be entrusted with information</rdfs:comment>
+		<rdfs:label xml:lang="en">confidential</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">003</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ClassificationCode>
+
+	<iso-19115-codelists:MD_MaintenanceFrequenceCode rdf:about="#continual">
+		<rdfs:comment xml:lang="en">data is repeatedly and frequently updated</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MaintenanceFrequenceCode>
+
+	<iso-19115-codelists:MD_RestrictionCode rdf:about="#copyright">
+		<rdfs:comment xml:lang="en">exclusive right to the publication, production, or sale of the rights to a literary, dramatic, musical, or artistic work, or to the use of a commercial print or label, granted by law for a specified period of time to an author, composer, artist, distributor</rdfs:comment>
+		<rdfs:label xml:lang="en">copyright</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_RestrictionCode>
+
+	<iso-19115-codelists:MD_MediumFormatCode rdf:about="#cpio">
+		<rdfs:comment xml:lang="en">Copy In/ Out (Unix file format and command)</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MediumFormatCode>
+
+	<iso-19115-codelists:CI_DateTypeCode rdf:about="#creation">
+		<rdfs:comment xml:lang="en">date identifies when the resource was brought into existence</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_DateTypeCode>
+
+	<iso-19115-codelists:DS_AssociationTypeCode rdf:about="#crossReference">
+		<rdfs:comment xml:lang="en">reference from one dataset to another</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:DS_AssociationTypeCode>
+
+	<iso-19115-codelists:MD_DimensionNameTypeCode rdf:about="#crossTrack">
+		<rdfs:comment xml:lang="en">perpendicular to the direction of motion of the scan point</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">005</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_DimensionNameTypeCode>
+
+	<iso-19115-codelists:MD_GeometricObjectTypeCode rdf:about="#curve">
+		<rdfs:comment xml:lang="en">bounded, 1-dimensional geometric primitive, representing the continuous image of a line</rdfs:comment>
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">curve</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">003</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_GeometricObjectTypeCode>
+
+	<iso-19115-codelists:CI_RoleCode rdf:about="#custodian">
+		<rdfs:comment xml:lang="en">party that accepts accountability and responsibility for the data and ensures appropriate care and maintenance of the resource</rdfs:comment>
+		<rdfs:label xml:lang="en">custodian</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_RoleCode>
+
+	<iso-19115-codelists:MD_MaintenanceFrequenceCode rdf:about="#daily">
+		<rdfs:comment xml:lang="en">data is updated each day</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MaintenanceFrequenceCode>
+
+	<iso-19115-codelists:MD_DataTypeCode rdf:about="#dataTypeClass">
+		<rdfs:comment xml:lang="en">class with few or no operations whose primary purpose is to hold the abstract state of another class for transmittal, storage, encoding or persistent storage</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">008</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_DataTypeCode>
+
+	<iso-19115-codelists:MD_ImagingConditionCode rdf:about="#degradingObliquity">
+		<rdfs:comment xml:lang="en">acute angle between the plane of the ecliptic (the plane of the Earth’s orbit) and the plane of the celestial equator</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">003</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ImagingConditionCode>
+
+	<iso-19115-codelists:MD_MediumNameCode rdf:about="#digitalLinearTape">
+		<rdfs:comment xml:lang="en">half inch cartridge streaming tape drive</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">014</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MediumNameCode>
+
+	<iso-19115-codelists:MD_ScopeCode rdf:about="#dimensionGroup">
+		<rdfs:comment xml:lang="en">information applies to a dimension group</rdfs:comment>
+		<rdfs:label xml:lang="en">dimensionGroup</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">008</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ScopeCode>
+
+	<iso-19115-codelists:DQ_EvaluationMethodTypeCode rdf:about="#directExternal">
+		<rdfs:comment xml:lang="en">method of evaluating the quality of a dataset based on inspection of items within the dataset, where reference data external to the dataset being evaluated is required</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:DQ_EvaluationMethodTypeCode>
+
+	<iso-19115-codelists:DQ_EvaluationMethodTypeCode rdf:about="#directInternal">
+		<rdfs:comment xml:lang="en">method of evaluating the quality of a dataset based on inspection of items within the dataset, where all data required is internal to the dataset being evaluated</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:DQ_EvaluationMethodTypeCode>
+
+	<iso-19115-codelists:MD_KeywordTypeCode rdf:about="#discipline">
+		<rdfs:comment xml:lang="en">keyword identifies a branch of instruction or specialized learning</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_KeywordTypeCode>
+
+	<iso-19115-codelists:CI_RoleCode rdf:about="#distributor">
+		<rdfs:comment xml:lang="en">party who distributes the resource</rdfs:comment>
+		<rdfs:label xml:lang="en">distributor</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">005</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_RoleCode>
+
+	<iso-19115-codelists:CI_PresentationFormCode rdf:about="#documentDigital">
+		<rdfs:comment xml:lang="en">digital representation of a primarily textual item (can contain illustrations also)</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_PresentationFormCode>
+
+	<iso-19115-codelists:CI_PresentationFormCode rdf:about="#documentHardcopy">
+		<rdfs:comment xml:lang="en">representation of a primarily textual item (can contain illustrations also) on paper, photographic material, or other media</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_PresentationFormCode>
+
+	<iso-19115-codelists:CI_OnLineFunctionCode rdf:about="#download">
+		<rdfs:comment xml:lang="en">online instructions for transferring data from one storage device or system to another</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_OnLineFunctionCode>
+
+	<iso-19115-codelists:MD_MediumNameCode rdf:about="#dvd">
+		<rdfs:comment xml:lang="en">digital versatile disk</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MediumNameCode>
+
+	<iso-19115-codelists:MD_MediumNameCode rdf:about="#dvdRom">
+		<rdfs:comment xml:lang="en">digital versatile disk, read only</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">003</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MediumNameCode>
+
+	<iso-19115-codelists:MD_CharacterSetCode rdf:about="#ebcdic">
+		<rdfs:comment xml:lang="en">ibm mainframe code set</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">022</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CharacterSetCode>
+
+	<iso-19115-codelists:MD_TopicCategoryCode rdf:about="#economy">
+		<rdfs:comment xml:lang="en">economic activities, conditions and employment Examples: production, labour, revenue, commerce, industry, tourism and ecotourism, forestry, fisheries, commercial or subsistence hunting, exploration and exploitation of resources such as minerals, oil and gas</rdfs:comment>
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">economy</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">005</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopicCategoryCode>
+
+	<iso-19115-codelists:MD_TopicCategoryCode rdf:about="#elevation">
+		<rdfs:comment xml:lang="en">height above or below sea level Examples: altitude, bathymetry, digital elevation models, slope, derived products</rdfs:comment>
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elevation</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">006</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopicCategoryCode>
+
+	<iso-19115-codelists:MD_TopicCategoryCode rdf:about="#environment">
+		<rdfs:comment xml:lang="en">environmental resources, protection and conservation Examples: environmental pollution, waste storage and treatment, environmental impact assessment, monitoring environmental risk, nature reserves, landscape</rdfs:comment>
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">environment</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">007</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopicCategoryCode>
+
+	<iso-19115-codelists:MD_CharacterSetCode rdf:about="#eucJP">
+		<rdfs:comment xml:lang="en">japanese code set used on UNIX based machines</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">020</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CharacterSetCode>
+
+	<iso-19115-codelists:MD_CharacterSetCode rdf:about="#eucKR">
+		<rdfs:comment xml:lang="en">korean code set</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">023</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CharacterSetCode>
+
+	<iso-19115-codelists:DS_InitiativeTypeCode rdf:about="#exercise">
+		<rdfs:comment xml:lang="en">specific performance of a function or group of functions</rdfs:comment>
+		<rdfs:label xml:lang="en">exercise</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">003</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:DS_InitiativeTypeCode>
+
+	<iso-19115-codelists:DS_InitiativeTypeCode rdf:about="#experiment">
+		<rdfs:comment xml:lang="en">process designed to find if something is effective or valid</rdfs:comment>
+		<rdfs:label xml:lang="en">experiment</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">004</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:DS_InitiativeTypeCode>
+
+	<iso-19115-codelists:MD_TopicCategoryCode rdf:about="#farming">
+		<rdfs:comment xml:lang="en">rearing of animals and/or cultivation of plants Examples: agriculture, irrigation, aquaculture, plantations, herding, pests and diseases affecting crops and livestock</rdfs:comment>
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">farming</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopicCategoryCode>
+
+	<iso-19115-codelists:MD_ScopeCode rdf:about="#feature">
+		<rdfs:comment xml:lang="en">information applies to a feature</rdfs:comment>
+		<rdfs:label xml:lang="en">feature</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">009</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ScopeCode>
+
+	<iso-19115-codelists:MD_ScopeCode rdf:about="#featureType">
+		<rdfs:comment xml:lang="en">information applies to a feature type</rdfs:comment>
+		<rdfs:label xml:lang="en">featureType</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">010</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ScopeCode>
+
+	<iso-19115-codelists:MD_ScopeCode rdf:about="#fieldSesson">
+		<rdfs:comment xml:lang="en">information applies to a field session</rdfs:comment>
+		<rdfs:label xml:lang="en">fieldSession</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">012</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ScopeCode>
+
+	<iso-19115-codelists:MD_ImagingConditionCode rdf:about="#fog">
+		<rdfs:comment xml:lang="en">portion of the image is partially obscured by fog</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">004</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ImagingConditionCode>
+
+	<iso-19115-codelists:MD_MaintenanceFrequenceCode rdf:about="#fortnightly">
+		<rdfs:comment xml:lang="en">data is updated every two weeks</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">004</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MaintenanceFrequenceCode>
+
+	<iso-19115-codelists:MD_TopologyLevelCode rdf:about="#fullPlanarGraph">
+		<rdfs:comment xml:lang="en">2-dimensional topological complex which is planar</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">004</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopologyLevelCode>
+
+	<iso-19115-codelists:MD_TopologyLevelCode rdf:about="#fullSurfaceGraph">
+		<rdfs:comment xml:lang="en">2-dimensional topological complex which is isomorphic to a subset of a surface</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">006</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopologyLevelCode>
+
+	<iso-19115-codelists:MD_TopologyLevelCode rdf:about="#fullTopology3D">
+		<rdfs:comment xml:lang="en">complete coverage of a 3D coordinate space</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">008</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopologyLevelCode>
+
+	<iso-19115-codelists:MD_TopologyLevelCode rdf:about="#geometryOnly">
+		<rdfs:comment xml:lang="en">geometry objects without any additional structure which describes topology</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopologyLevelCode>
+
+	<iso-19115-codelists:MD_TopicCategoryCode rdf:about="#geoscientificInformation">
+		<rdfs:comment xml:lang="en">information pertaining to earth sciences Examples: geophysical features and processes, geology, minerals, sciences dealing with earthquakes, volcanic activity, landslides, soils, permafrost, hydrogeology, erosion</rdfs:comment>
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geoscientificInformation</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">008</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopicCategoryCode>
+
+	<iso-19115-codelists:MD_SpatialRepresentationTypeCode rdf:about="#grid">
+		<rdfs:comment xml:lang="en">grid data is used to represent geographic data</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_SpatialRepresentationTypeCode>
+
+	<iso-19115-codelists:MD_MediumNameCode rdf:about="#hardcopy">
+		<rdfs:comment xml:lang="en">pamphlet or leaflet giving descriptive information</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">018</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MediumNameCode>
+
+	<iso-19115-codelists:MD_TopicCategoryCode rdf:about="#health">
+		<rdfs:comment xml:lang="en">health, health services, human ecology, and safety Examples: disease and illness, factors affecting health, hygiene, substance abuse, mental and physical health, health services</rdfs:comment>
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">health</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">009</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopicCategoryCode>
+
+	<iso-19115-codelists:MD_ImagingConditionCode rdf:about="#heavySmokeOrDust">
+		<rdfs:comment xml:lang="en">portion of the image is partially obscured by heavy smoke or dust</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">005</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ImagingConditionCode>
+
+	<iso-19115-codelists:MD_MediumFormatCode rdf:about="#highSierra">
+		<rdfs:comment xml:lang="en">high sierra file system</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">003</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MediumFormatCode>
+
+	<iso-19115-codelists:MD_ProgressCode rdf:about="#historicalArchive">
+		<rdfs:comment xml:lang="en">data has been stored in an offline storage facility</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ProgressCode>
+
+	<iso-19115-codelists:MD_MaintenanceFrequenceCode rdf:about="#iiregular">
+		<rdfs:comment xml:lang="en">data is updated in intervals that are uneven in duration</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">010</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MaintenanceFrequenceCode>
+
+	<iso-19115-codelists:MD_CoverageContentTypeCode rdf:about="#image">
+		<rdfs:comment xml:lang="en">meaningful numerical representation of a physical parameter that is not the actual value of the physical parameter</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CoverageContentTypeCode>
+
+	<iso-19115-codelists:CI_PresentationFormCode rdf:about="#imageDigital">
+		<rdfs:comment xml:lang="en">likeness of natural or man-made features, objects, and activities acquired through the sensing of visual or any other segment of the electromagnetic spectrum by sensors, such as thermal infrared, and high resolution radar and stored in digital format</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">003</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_PresentationFormCode>
+
+	<iso-19115-codelists:CI_PresentationFormCode rdf:about="#imageHardCopy">
+		<rdfs:comment xml:lang="en">likeness of natural or man-made features, objects, and activities acquired through the sensing of visual or any other segment of the electromagnetic spectrum by sensors, such as thermal infrared, and high resolution radar and reproduced on paper, photographic material, or other media for use directly by the human user</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">004</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_PresentationFormCode>
+
+	<iso-19115-codelists:MD_TopicCategoryCode rdf:about="#imageryBaseMapsEarthCover">
+		<rdfs:comment xml:lang="en">base maps Examples: land cover, topographic maps, imagery, unclassified images, annotations</rdfs:comment>
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">imageryBaseMapsEarthCover</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">010</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopicCategoryCode>
+
+	<iso-19115-codelists:DQ_EvaluationMethodTypeCode rdf:about="#indirect">
+		<rdfs:comment xml:lang="en">method of evaluating the quality of a dataset based on external knowledge</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">003</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:DQ_EvaluationMethodTypeCode>
+
+	<iso-19115-codelists:CI_OnLineFunctionCode rdf:about="#information">
+		<rdfs:comment xml:lang="en">online information about the resource</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_OnLineFunctionCode>
+
+	<iso-19115-codelists:MD_TopicCategoryCode rdf:about="#inlandWaters">
+		<rdfs:comment xml:lang="en">inland water features, drainage systems and their characteristics Examples: rivers and glaciers, salt lakes, water utilization plans, dams, currents, floods, water quality, hydrographic charts</rdfs:comment>
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inlandWaters</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">012</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopicCategoryCode>
+
+	<iso-19115-codelists:MD_RestrictionCode rdf:about="#intellectualPropertyRights">
+		<rdfs:comment xml:lang="en">rights to financial benefit from and control of distribution of non-tangible property that is a result of creativity</rdfs:comment>
+		<rdfs:label xml:lang="en">intellectualPropertyRights</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">006</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_RestrictionCode>
+
+	<iso-19115-codelists:MD_TopicCategoryCode rdf:about="#intelligenceMilitary">
+		<rdfs:comment xml:lang="en">military bases, structures, activities Examples: barracks, training grounds, military transportation, information collection</rdfs:comment>
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intelligenceMilitary</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">011</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopicCategoryCode>
+
+	<iso-19115-codelists:MD_DataTypeCode rdf:about="#interfaceClass">
+		<rdfs:comment xml:lang="en">named set of operations that characterize the behavior of an element</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">009</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_DataTypeCode>
+
+	<iso-19115-codelists:DS_InitiativeTypeCode rdf:about="#investigation">
+		<rdfs:comment xml:lang="en">search or systematic inquiry</rdfs:comment>
+		<rdfs:label xml:lang="en">investigation</rdfs:label>
+		<iso-19115-codelists:Domain_code xml:lang="en">005</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:DS_InitiativeTypeCode>
+
+	<iso-19115-codelists:MD_MediumFormatCode rdf:about="#iso9660">
+		<rdfs:comment xml:lang="en">information processing - volume and file structure of CD- ROM</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">004</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MediumFormatCode>
+
+	<iso-19115-codelists:MD_MediumFormatCode rdf:about="#iso9660AppleHFS">
+		<rdfs:comment xml:lang="en">hierarchical file system</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">006</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MediumFormatCode>
+
+	<iso-19115-codelists:MD_MediumFormatCode rdf:about="#iso9660RockRidge">
+		<rdfs:comment xml:lang="en">rock ridge interchange protocol (UNIX)</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">005</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MediumFormatCode>
+
+	<iso-19115-codelists:MD_CharacterSetCode rdf:about="#jis">
+		<rdfs:comment xml:lang="en">japanese code set used for electronic transmission</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">018</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CharacterSetCode>
+
+	<iso-19115-codelists:DS_AssociationTypeCode rdf:about="#largerWorkCitation">
+		<rdfs:comment xml:lang="en">reference to a master dataset of which this one is a part</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:DS_AssociationTypeCode>
+
+	<iso-19115-codelists:MD_RestrictionCode rdf:about="#license">
+		<rdfs:comment xml:lang="en">formal permission to do something</rdfs:comment>
+		<rdfs:label xml:lang="en">license</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">005</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_RestrictionCode>
+
+	<iso-19115-codelists:MD_DimensionNameTypeCode rdf:about="#line">
+		<rdfs:comment xml:lang="en">scan line of a sensor</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">006</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_DimensionNameTypeCode>
+
+	<iso-19115-codelists:MD_TopicCategoryCode rdf:about="#location">
+		<rdfs:comment xml:lang="en">positional information and services Examples: addresses, geodetic networks, control points, postal zones and services, place names</rdfs:comment>
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">location</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">013</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopicCategoryCode>
+
+	<iso-19115-codelists:MD_PixelOrientationCode rdf:about="#lowerLeft">
+		<rdfs:comment xml:lang="en">the corner in the pixel closest to the origin of the SRS; if two are at the same distance from the origin, the one with the smallest x-value</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_PixelOrientationCode>
+
+	<iso-19115-codelists:MD_PixelOrientationCode rdf:about="#lowerRight">
+		<rdfs:comment xml:lang="en">next corner counterclockwise from the lower left</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">003</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_PixelOrientationCode>
+
+	<iso-19115-codelists:MD_ObligationCode rdf:about="#mandatory">
+		<rdfs:comment xml:lang="en">element is always required</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ObligationCode>
+
+	<iso-19115-codelists:CI_PresentationFormCode rdf:about="#mapDigital">
+		<rdfs:comment xml:lang="en">map represented in raster or vector form</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">005</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_PresentationFormCode>
+
+	<iso-19115-codelists:CI_PresentationFormCode rdf:about="#mapHardCopy">
+		<rdfs:comment xml:lang="en">map printed on paper, photographic material, or other media for use directly by the human user</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">006</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_PresentationFormCode>
+
+	<iso-19115-codelists:MD_DataTypeCode rdf:about="#metaClass">
+		<rdfs:comment xml:lang="en">class whose instances are classes</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">011</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_DataTypeCode>
+
+	<iso-19115-codelists:DS_InitiativeTypeCode rdf:about="#mission">
+		<rdfs:comment xml:lang="en">specific operation of a data collection system</rdfs:comment>
+		<rdfs:label xml:lang="en">mission</rdfs:label>
+		<iso-19115-codelists:Domain_code xml:lang="en">006</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:DS_InitiativeTypeCode>
+
+	<iso-19115-codelists:MD_ScopeCode rdf:about="#model">
+		<rdfs:comment xml:lang="en">information applies to a copy or imitation of an existing or hypothetical object</rdfs:comment>
+		<rdfs:label xml:lang="en">model</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">015</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ScopeCode>
+
+	<iso-19115-codelists:CI_PresentationFormCode rdf:about="#modelDigital">
+		<rdfs:comment xml:lang="en">multi-dimensional digital representation of a feature, process, etc.</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">007</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_PresentationFormCode>
+
+	<iso-19115-codelists:CI_PresentationFormCode rdf:about="#modelHardcopy">
+		<rdfs:comment xml:lang="en">3-dimensional, physical model</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">008</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_PresentationFormCode>
+
+	<iso-19115-codelists:MD_MaintenanceFrequenceCode rdf:about="#monthly">
+		<rdfs:comment xml:lang="en">data is updated each month</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">005</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MaintenanceFrequenceCode>
+
+	<iso-19115-codelists:MD_ImagingConditionCode rdf:about="#night">
+		<rdfs:comment xml:lang="en">image was taken at night</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">006</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ImagingConditionCode>
+
+	<iso-19115-codelists:MD_ScopeCode rdf:about="#nonGeographicDataset">
+		<rdfs:comment xml:lang="en">information applies to non-geographic data</rdfs:comment>
+		<rdfs:label xml:lang="en">nonGeographicDataset</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">007</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ScopeCode>
+
+	<owl:Thing rdf:about="#nonImageSensor">
+		<rdfs:comment xml:lang="en">device or piece of equipment which detects or records</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">006</iso-19115-codelists:Domain_code>
+	</owl:Thing>
+
+	<iso-19115-codelists:MD_MaintenanceFrequenceCode rdf:about="#notPlanned">
+		<rdfs:comment xml:lang="en">there are no plans to update the data</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">011</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MaintenanceFrequenceCode>
+
+	<iso-19115-codelists:MD_ProgressCode rdf:about="#obsolete">
+		<rdfs:comment xml:lang="en">data is no longer relevant</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">003</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ProgressCode>
+
+	<iso-19115-codelists:MD_TopicCategoryCode rdf:about="#oceans">
+		<rdfs:comment xml:lang="en">features and characteristics of salt water bodies (excluding inland waters) Examples: tides, tidal waves, coastal information, reefs</rdfs:comment>
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oceans</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">014</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopicCategoryCode>
+
+	<iso-19115-codelists:CI_OnLineFunctionCode rdf:about="#offLineAccess">
+		<rdfs:comment xml:lang="en">online instructions for requesting the resource from the provider</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">003</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_OnLineFunctionCode>
+
+	<iso-19115-codelists:MD_ProgressCode rdf:about="#onGoing">
+		<rdfs:comment xml:lang="en">data is continually being updated</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">004</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ProgressCode>
+
+	<iso-19115-codelists:MD_MediumNameCode rdf:about="#onLineMedia">
+		<rdfs:comment xml:lang="en">direct computer linkage</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">015</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MediumNameCode>
+
+	<iso-19115-codelists:DS_InitiativeTypeCode rdf:about="#operation">
+		<rdfs:comment xml:lang="en">action that is part of a series of actions</rdfs:comment>
+		<rdfs:label xml:lang="en">operation</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">008</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:DS_InitiativeTypeCode>
+
+	<iso-19115-codelists:MD_ObligationCode rdf:about="#optional">
+		<rdfs:comment xml:lang="en">element is not required</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ObligationCode>
+
+	<iso-19115-codelists:CI_OnLineFunctionCode rdf:about="#order">
+		<rdfs:comment xml:lang="en">online order process for obtaining the resource</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">004</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_OnLineFunctionCode>
+
+	<iso-19115-codelists:CI_RoleCode rdf:about="#originator">
+		<rdfs:comment xml:lang="en">party who created the resource</rdfs:comment>
+		<rdfs:label xml:lang="en">originator</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">006</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_RoleCode>
+
+	<iso-19115-codelists:MD_RestrictionCode rdf:about="#otherRestrictions">
+		<rdfs:comment xml:lang="en">limitation not listed</rdfs:comment>
+		<rdfs:label xml:lang="en">otherRestrictions</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">008</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_RestrictionCode>
+
+	<iso-19115-codelists:CI_RoleCode rdf:about="#owner">
+		<rdfs:comment xml:lang="en">party that owns the resource</rdfs:comment>
+		<rdfs:label xml:lang="en">owner</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">003</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_RoleCode>
+
+	<iso-19115-codelists:DS_AssociationTypeCode rdf:about="#partOfSeamlessDatabase">
+		<rdfs:comment xml:lang="en">part of same structured set of data held in a computer</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">003</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:DS_AssociationTypeCode>
+
+	<iso-19115-codelists:MD_RestrictionCode rdf:about="#patent">
+		<rdfs:comment xml:lang="en">government has granted exclusive right to make, sell, use or license an invention or discovery</rdfs:comment>
+		<rdfs:label xml:lang="en">patent</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_RestrictionCode>
+
+	<iso-19115-codelists:MD_RestrictionCode rdf:about="#patentPending">
+		<rdfs:comment xml:lang="en">produced or sold information awaiting a patent</rdfs:comment>
+		<rdfs:label xml:lang="en">patentPending</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">003</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_RestrictionCode>
+
+	<iso-19115-codelists:MD_CoverageContentTypeCode rdf:about="#physicalMeasurement">
+		<rdfs:comment xml:lang="en">value in physical units of the quantity being measured</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">003</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CoverageContentTypeCode>
+
+	<iso-19115-codelists:MD_KeywordTypeCode rdf:about="#place">
+		<rdfs:comment xml:lang="en">keyword identifies a location</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_KeywordTypeCode>
+
+	<iso-19115-codelists:MD_TopologyLevelCode rdf:about="#planarGraph">
+		<rdfs:comment xml:lang="en">1-dimensional topological complex which is planar</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">003</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopologyLevelCode>
+
+	<iso-19115-codelists:MD_ProgressCode rdf:about="#planned">
+		<rdfs:comment xml:lang="en">fixed date has been established upon or by which the data will be created or updated</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">005</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ProgressCode>
+
+	<iso-19115-codelists:MD_TopicCategoryCode rdf:about="#planningCadastre">
+		<rdfs:comment xml:lang="en">information used for appropriate actions for future use of the land Examples: land use maps, zoning maps, cadastral surveys, land ownership</rdfs:comment>
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">planningCadastre</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">015</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopicCategoryCode>
+
+	<iso-19115-codelists:DS_InitiativeTypeCode rdf:about="#platform">
+		<rdfs:comment xml:lang="en">vehicle or other support base that holds a sensor</rdfs:comment>
+		<rdfs:label xml:lang="en">platform</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">009</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:DS_InitiativeTypeCode>
+
+	<iso-19115-codelists:MD_CellGeometryCode rdf:about="#point">
+		<rdfs:comment xml:lang="en">each cell represents a point</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CellGeometryCode>
+
+	<iso-19115-codelists:CI_RoleCode rdf:about="#principalInvestigator">
+		<rdfs:comment xml:lang="en">key party responsible for gathering information and conducting research</rdfs:comment>
+		<rdfs:label xml:lang="en">principalInvestigator</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">008</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_RoleCode>
+
+	<iso-19115-codelists:DS_InitiativeTypeCode rdf:about="#process">
+		<rdfs:comment xml:lang="en">method of doing something involving a number of steps</rdfs:comment>
+		<rdfs:label xml:lang="en">process</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">010</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:DS_InitiativeTypeCode>
+
+	<iso-19115-codelists:CI_PresentationFormCode rdf:about="#profileDigital">
+		<rdfs:comment xml:lang="en">vertical cross-section in digital form</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">009</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_PresentationFormCode>
+
+	<iso-19115-codelists:CI_PresentationFormCode rdf:about="#profileHardcopy">
+		<rdfs:comment xml:lang="en">vertical cross-section printed on paper, etc.</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">010</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_PresentationFormCode>
+
+	<iso-19115-codelists:DS_InitiativeTypeCode rdf:about="#program">
+		<rdfs:comment xml:lang="en">specific planned activity</rdfs:comment>
+		<rdfs:label xml:lang="en">program</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">011</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:DS_InitiativeTypeCode>
+
+	<iso-19115-codelists:DS_InitiativeTypeCode rdf:about="#project">
+		<rdfs:comment xml:lang="en">organized undertaking, research, or development</rdfs:comment>
+		<rdfs:label xml:lang="en">project</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">012</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:DS_InitiativeTypeCode>
+
+	<iso-19115-codelists:MD_ScopeCode rdf:about="#propertyType">
+		<rdfs:comment xml:lang="en">information applies to a property type</rdfs:comment>
+		<rdfs:label xml:lang="en">propertyType</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">011</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ScopeCode>
+
+	<iso-19115-codelists:CI_DateTypeCode rdf:about="#publication">
+		<rdfs:comment xml:lang="en">date identifies when the resource was issued</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_DateTypeCode>
+
+	<iso-19115-codelists:CI_RoleCode rdf:about="#publisher">
+		<rdfs:comment xml:lang="en">party who published the resource</rdfs:comment>
+		<rdfs:label xml:lang="en">publisher</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">010</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_RoleCode>
+
+	<iso-19115-codelists:MD_MaintenanceFrequenceCode rdf:about="#quarterly">
+		<rdfs:comment xml:lang="en">data is updated every three months</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">006</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MaintenanceFrequenceCode>
+
+	<iso-19115-codelists:MD_ImagingConditionCode rdf:about="#rain">
+		<rdfs:comment xml:lang="en">image was taken during rainfall</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">007</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ImagingConditionCode>
+
+	<iso-19115-codelists:MD_ProgressCode rdf:about="#required">
+		<rdfs:comment xml:lang="en">data needs to be generated or updated</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">006</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ProgressCode>
+
+	<iso-19115-codelists:CI_RoleCode rdf:about="#resourceProvider">
+		<rdfs:comment xml:lang="en">party that supplies the resource</rdfs:comment>
+		<rdfs:label xml:lang="en">resourceProvider</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_RoleCode>
+
+	<iso-19115-codelists:MD_RestrictionCode rdf:about="#restricted">
+		<rdfs:comment xml:lang="en">withheld from general circulation or disclosure</rdfs:comment>
+		<rdfs:label xml:lang="en">restricted</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">007</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_RestrictionCode>
+
+	<iso-19115-codelists:CI_DateTypeCode rdf:about="#revision">
+		<rdfs:comment xml:lang="en">date identifies when the resource was examined or re-examined and improved or amended</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">003</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_DateTypeCode>
+
+	<iso-19115-codelists:MD_DimensionNameTypeCode rdf:about="#row">
+		<rdfs:comment xml:lang="en">ordinate y axis</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_DimensionNameTypeCode>
+
+	<iso-19115-codelists:MD_DimensionNameTypeCode rdf:about="#sample">
+		<rdfs:comment xml:lang="en">element along a scan line</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">007</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_DimensionNameTypeCode>
+
+	<iso-19115-codelists:MD_MediumNameCode rdf:about="#satellite">
+		<rdfs:comment xml:lang="en">linkage through a satellite communication system</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">016</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MediumNameCode>
+
+	<iso-19115-codelists:CI_OnLineFunctionCode rdf:about="#search">
+		<rdfs:comment xml:lang="en">online search interface for seeking out information about the resource</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">005</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_OnLineFunctionCode>
+
+	<iso-19115-codelists:MD_ClassificationCode rdf:about="#secret">
+		<rdfs:comment xml:lang="en">kept or meant to be kept private, unknown, or hidden from all but a select group of people</rdfs:comment>
+		<rdfs:label xml:lang="en">secret</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">004</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ClassificationCode>
+
+	<iso-19115-codelists:MD_ImagingConditionCode rdf:about="#semiDarkness">
+		<rdfs:comment xml:lang="en">image was taken during semi-dark conditions—twilight conditions</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">008</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ImagingConditionCode>
+
+	<iso-19115-codelists:DS_InitiativeTypeCode rdf:about="#sensor">
+		<rdfs:comment xml:lang="en">device or piece of equipment which detects or records</rdfs:comment>
+		<rdfs:label xml:lang="en">sensor</rdfs:label>
+		<iso-19115-codelists:Domain_code xml:lang="en">007</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:DS_InitiativeTypeCode>
+
+	<iso-19115-codelists:MD_ScopeCode rdf:about="#service">
+		<rdfs:comment xml:lang="en">information applies to a capability which a service provider entity makes available to a service user entity through a set of interfaces that define a behaviour, such as a use case</rdfs:comment>
+		<rdfs:label xml:lang="en">service</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">014</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ScopeCode>
+
+	<iso-19115-codelists:MD_ImagingConditionCode rdf:about="#shadow">
+		<rdfs:comment xml:lang="en">portion of the image is obscured by shadow</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">009</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ImagingConditionCode>
+
+	<iso-19115-codelists:MD_CharacterSetCode rdf:about="#shiftJIS">
+		<rdfs:comment xml:lang="en">japanese code set used on MS-DOS based machines</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">019</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CharacterSetCode>
+
+	<iso-19115-codelists:MD_TopicCategoryCode rdf:about="#society">
+		<rdfs:comment xml:lang="en">characteristics of society and cultures Examples: settlements, anthropology, archaeology, education, traditional beliefs, manners and customs, demographic data, recreational areas and activities, social impact assessments, crime and justice, census information</rdfs:comment>
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">society</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">016</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopicCategoryCode>
+
+	<iso-19115-codelists:MD_ScopeCode rdf:about="#software">
+		<rdfs:comment xml:lang="en">information applies to a computer program or routine</rdfs:comment>
+		<rdfs:label xml:lang="en">software</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">013</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ScopeCode>
+
+	<iso-19115-codelists:MD_GeometricObjectTypeCode rdf:about="#solid">
+		<rdfs:comment xml:lang="en">bounded, connected 3-dimensional geometric primitive, representing the continuous image of a region of space</rdfs:comment>
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solid</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">005</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_GeometricObjectTypeCode>
+
+	<iso-19115-codelists:MD_DataTypeCode rdf:about="#specifiedClass">
+		<rdfs:comment xml:lang="en">subclass that may be substituted for its superclass</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">007</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_DataTypeCode>
+
+	<iso-19115-codelists:MD_SpatialRepresentationTypeCode rdf:about="#stereoModel">
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">005</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_SpatialRepresentationTypeCode>
+
+	<iso-19115-codelists:DS_AssociationTypeCode rdf:about="#stereomate">
+		<rdfs:comment xml:lang="en">part of a set of imagery that when used together, provides three-dimensional images</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">005</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:DS_AssociationTypeCode>
+
+	<iso-19115-codelists:MD_KeywordTypeCode rdf:about="#stratum">
+		<rdfs:comment xml:lang="en">keyword identifies the layer(s) of any deposited substance</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">003</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_KeywordTypeCode>
+
+	<iso-19115-codelists:MD_TopicCategoryCode rdf:about="#structure">
+		<rdfs:comment xml:lang="en">man-made construction Examples: buildings, museums, churches, factories, housing, monuments, shops, towers</rdfs:comment>
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">structure</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">017</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopicCategoryCode>
+
+	<iso-19115-codelists:DS_InitiativeTypeCode rdf:about="#study">
+		<rdfs:comment xml:lang="en">examination or investigation</rdfs:comment>
+		<rdfs:label xml:lang="en">study</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">013</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:DS_InitiativeTypeCode>
+
+	<iso-19115-codelists:MD_GeometricObjectTypeCode rdf:about="#surface">
+		<rdfs:comment xml:lang="en">bounded, connected 2-dimensional geometric, representing the continuous image of a region of a plane</rdfs:comment>
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">surface</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">006</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_GeometricObjectTypeCode>
+
+	<iso-19115-codelists:MD_TopologyLevelCode rdf:about="#surfaceGraph">
+		<rdfs:comment xml:lang="en">1-dimensional topological complex which is isomorphic to a subset of a surface</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">005</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopologyLevelCode>
+
+	<iso-19115-codelists:CI_PresentationFormCode rdf:about="#tableDigital">
+		<rdfs:comment xml:lang="en">digital representation of facts or figures systematically displayed, especially in columns</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">011</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_PresentationFormCode>
+
+	<iso-19115-codelists:CI_PresentationFormCode rdf:about="#tableHardcopy">
+		<rdfs:comment xml:lang="en">representation of facts or figures systematically displayed, especially in columns, printed on paper, photographic material, or other media</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">012</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_PresentationFormCode>
+
+	<iso-19115-codelists:MD_MediumFormatCode rdf:about="#tar">
+		<rdfs:comment xml:lang="en">Tape Archive</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MediumFormatCode>
+
+	<iso-19115-codelists:DS_InitiativeTypeCode rdf:about="#task">
+		<rdfs:comment xml:lang="en">piece of work</rdfs:comment>
+		<rdfs:label xml:lang="en">task</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">014</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:DS_InitiativeTypeCode>
+
+	<iso-19115-codelists:MD_MediumNameCode rdf:about="#telephoneLink">
+		<rdfs:comment xml:lang="en">communication through a telephone network</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">017</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MediumNameCode>
+
+	<iso-19115-codelists:MD_KeywordTypeCode rdf:about="#temporal">
+		<rdfs:comment xml:lang="en">keyword identifies a time period related to the dataset</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">004</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_KeywordTypeCode>
+
+	<iso-19115-codelists:MD_ImagingConditionCode rdf:about="#terrainMasking">
+		<rdfs:comment xml:lang="en">the absence of collection data of a given point or area caused by the relative location of topographic features which obstruct the collection path between the collector(s) and the subject(s) of interest</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">010</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ImagingConditionCode>
+
+	<iso-19115-codelists:MD_SpatialRepresentationTypeCode rdf:about="#textTable">
+		<rdfs:comment xml:lang="en">textual or tabular data is used to represent geographic data</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">003</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_SpatialRepresentationTypeCode>
+
+	<iso-19115-codelists:MD_CoverageContentTypeCode rdf:about="#thematicClassification">
+		<rdfs:comment xml:lang="en">code value with no quantitative meaning, used to represent a physical quantity</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CoverageContentTypeCode>
+
+	<iso-19115-codelists:MD_KeywordTypeCode rdf:about="#theme">
+		<rdfs:comment xml:lang="en">keyword identifies a particular subject or topic</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">005</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_KeywordTypeCode>
+
+	<iso-19115-codelists:MD_ScopeCode rdf:about="#tile">
+		<rdfs:comment xml:lang="en">information applies to a tile, a spatial subset of geographic data</rdfs:comment>
+		<rdfs:label xml:lang="en">tile</rdfs:label>
+		<iso-19115-codelists:Domain_code xml:lang="en">016</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ScopeCode>
+
+	<iso-19115-codelists:MD_SpatialRepresentationTypeCode rdf:about="#tin">
+		<rdfs:comment xml:lang="en">triangulated irregular network</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">004</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_SpatialRepresentationTypeCode>
+
+	<iso-19115-codelists:MD_ClassificationCode rdf:about="#topSecret">
+		<rdfs:comment xml:lang="en">of the highest secrecy</rdfs:comment>
+		<rdfs:label xml:lang="en">topSecret</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">005</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ClassificationCode>
+
+	<iso-19115-codelists:MD_TopologyLevelCode rdf:about="#topology1D">
+		<rdfs:comment xml:lang="en">1-dimensional topological complex</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopologyLevelCode>
+
+	<iso-19115-codelists:MD_TopologyLevelCode rdf:about="#topology3D">
+		<rdfs:comment xml:lang="en">3-dimensional topological complex</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">007</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopologyLevelCode>
+
+	<iso-19115-codelists:MD_DimensionNameTypeCode rdf:about="#track">
+		<rdfs:comment xml:lang="en">along the direction of motion of the scan point</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">004</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_DimensionNameTypeCode>
+
+	<iso-19115-codelists:MD_RestrictionCode rdf:about="#trademark">
+		<rdfs:comment xml:lang="en">a name, symbol, or other device identifying a product, officially registered and legally restricted to the use of the owner or manufacturer</rdfs:comment>
+		<rdfs:label xml:lang="en">trademark</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">004</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_RestrictionCode>
+
+	<iso-19115-codelists:MD_TopicCategoryCode rdf:about="#transportation">
+		<rdfs:comment xml:lang="en">means and aids for conveying persons and/or goods Examples: roads, airports/airstrips, shipping routes, tunnels, nautical charts, vehicle or vessel location, aeronautical charts, railways</rdfs:comment>
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transportation</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">018</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopicCategoryCode>
+
+	<iso-19115-codelists:DS_InitiativeTypeCode rdf:about="#trial">
+		<rdfs:comment xml:lang="en">process of testing to discover or demonstrate something</rdfs:comment>
+		<rdfs:label xml:lang="en">trial</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">015</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:DS_InitiativeTypeCode>
+
+	<iso-19115-codelists:MD_DataTypeCode rdf:about="#typeClass">
+		<rdfs:comment xml:lang="en">class used for specification of a domain of instances (objects), together with the operations applicable to the objects. A type may have attributes and associations</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">012</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_DataTypeCode>
+
+	<iso-19115-codelists:MD_CharacterSetCode rdf:about="#ucs2">
+		<rdfs:comment xml:lang="en">16-bit fixed size Universal Character Set, based on ISO/IEC 10646</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CharacterSetCode>
+
+	<iso-19115-codelists:MD_CharacterSetCode rdf:about="#ucs4">
+		<rdfs:comment xml:lang="en">32-bit fixed size Universal Character Set, based on ISO/IEC 10646</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">002</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CharacterSetCode>
+
+	<iso-19115-codelists:MD_ClassificationCode rdf:about="#unclassified">
+		<rdfs:comment xml:lang="en">available for general disclosure</rdfs:comment>
+		<rdfs:label xml:lang="en">unclassified</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ClassificationCode>
+
+	<iso-19115-codelists:MD_ProgressCode rdf:about="#underdevelopment">
+		<rdfs:comment xml:lang="en">data is currently in the process of being created</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">007</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_ProgressCode>
+
+	<iso-19115-codelists:MD_DataTypeCode rdf:about="#unionClass">
+		<rdfs:comment xml:lang="en">class describing a selection of one of the specified types</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">010</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_DataTypeCode>
+
+	<iso-19115-codelists:MD_MaintenanceFrequenceCode rdf:about="#unknow">
+		<rdfs:comment xml:lang="en">frequency of maintenance for the data is not known</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">012</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MaintenanceFrequenceCode>
+
+	<iso-19115-codelists:MD_PixelOrientationCode rdf:about="#upperLeft">
+		<rdfs:comment xml:lang="en">next corner counterclockwise from the upper right</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">005</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_PixelOrientationCode>
+
+	<iso-19115-codelists:MD_PixelOrientationCode rdf:about="#upperRight">
+		<rdfs:comment xml:lang="en">next corner counterclockwise from the lower right</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">004</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_PixelOrientationCode>
+
+	<iso-19115-codelists:MD_CharacterSetCode rdf:about="#usAscii">
+		<rdfs:comment xml:lang="en">united states ASCII code set (ISO 646 US)</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">021</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CharacterSetCode>
+
+	<iso-19115-codelists:CI_RoleCode rdf:about="#user">
+		<rdfs:comment xml:lang="en">party who uses the resource</rdfs:comment>
+		<rdfs:label xml:lang="en">user</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">004</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_RoleCode>
+
+	<iso-19115-codelists:MD_CharacterSetCode rdf:about="#utf16">
+		<rdfs:comment xml:lang="en">16-bit variable size UCS Transfer Format, based on ISO/IEC 10646</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">005</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CharacterSetCode>
+
+	<iso-19115-codelists:MD_CharacterSetCode rdf:about="#utf7">
+		<rdfs:comment xml:lang="en">7-bit variable size UCS Transfer Format, based on ISO/IEC 10646</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">003</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CharacterSetCode>
+
+	<iso-19115-codelists:MD_CharacterSetCode rdf:about="#utf8">
+		<rdfs:comment xml:lang="en">8-bit variable size UCS Transfer Format, based on ISO/IEC 10646</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">004</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_CharacterSetCode>
+
+	<iso-19115-codelists:MD_TopicCategoryCode rdf:about="#utilitiesCommunication">
+		<rdfs:comment xml:lang="en">energy, water and waste systems and communications infrastructure and services Examples: hydroelectricity, geothermal, solar and nuclear sources of energy, water purification and distribution, sewage collection and disposal, electricity and gas distribution, data communication, telecommunication, radio, communication networks</rdfs:comment>
+		<rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">utilitiesCommunication</rdfs:label>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">019</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_TopicCategoryCode>
+
+	<iso-19115-codelists:MD_SpatialRepresentationTypeCode rdf:about="#vector">
+		<rdfs:comment xml:lang="en">vector data is used to represent geographic data</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">001</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_SpatialRepresentationTypeCode>
+
+	<iso-19115-codelists:MD_DimensionNameTypeCode rdf:about="#vertical">
+		<rdfs:comment xml:lang="en">vertical z axis</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">003</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_DimensionNameTypeCode>
+
+	<iso-19115-codelists:MD_SpatialRepresentationTypeCode rdf:about="#video">
+		<rdfs:comment xml:lang="en">scene from a video recording</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">006</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_SpatialRepresentationTypeCode>
+
+	<iso-19115-codelists:CI_PresentationFormCode rdf:about="#videoDigital">
+		<rdfs:comment xml:lang="en">digital video recording</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">013</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_PresentationFormCode>
+
+	<iso-19115-codelists:CI_PresentationFormCode rdf:about="#videoHardcopy">
+		<rdfs:comment xml:lang="en">video recording on film</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">014</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:CI_PresentationFormCode>
+
+	<iso-19115-codelists:MD_MaintenanceFrequenceCode rdf:about="#weekly">
+		<rdfs:comment xml:lang="en">data is updated on a weekly basis</rdfs:comment>
+		<iso-19115-codelists:Domain_code rdf:datatype="http://www.w3.org/2001/XMLSchema#string">003</iso-19115-codelists:Domain_code>
+	</iso-19115-codelists:MD_MaintenanceFrequenceCode>
+</rdf:RDF>

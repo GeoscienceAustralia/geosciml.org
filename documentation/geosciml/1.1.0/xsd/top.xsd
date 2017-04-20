@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- IUGS/CGI GeoSciML schema, ver. 1 - draft 2005-10-19 -->
+<!-- Contains the concepts (classes), their inheritance, and relations from the CGI_Top package of the GeoSciML model -->
+<!-- GeoSciML Testbed-2 Model -->
+<schema xmlns:gml="http://www.opengis.net/gml" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gsml="http://www.cgi-iugs.org/xml/GeoSciML/1" targetNamespace="http://www.cgi-iugs.org/xml/GeoSciML/1" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.1.0">
+	<annotation>
+		<documentation>top.xsd
+		High level classes for GeoSciML
+		Primarily abstract superclasses (substitution group heads) that are specialized to concrete classes in the various documents describing sub-domains</documentation>
+	</annotation>
+	<!--=======================-->
+	<import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd"/>
+	<!--=======================-->
+	<include schemaLocation="metadata.xsd"/>
+	<include schemaLocation="geologicAge.xsd"/>
+	<include schemaLocation="vocabulary.xsd"/>
+	<!--=======================-->
+	<complexType name="GeometryPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gml:_Geometry"/>
+		</sequence>
+		<attributeGroup ref="gsml:RichPropertyAttributeGroup"/>
+	</complexType>
+	<!--=======================-->
+	<complexType name="MappedFeatureType">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="shape" type="gsml:GeometryPropertyType"/>
+					<element name="specification" type="gsml:GeologicFeaturePropertyType"/>
+					<element name="samplingFrame" type="gml:ReferenceType"/>
+					<element name="metadata" type="gsml:MappedFeatureMetadataPropertyType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<!-- ..................... -->
+	<element name="MappedFeature" type="gsml:MappedFeatureType" substitutionGroup="gml:_Feature"/>
+	<!-- ..................... -->
+	<complexType name="MappedFeaturePropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsml:MappedFeature"/>
+		</sequence>
+		<attributeGroup ref="gsml:RichPropertyAttributeGroup"/>
+	</complexType>
+	<!--=======================-->
+	<complexType name="GeologicFeatureType" abstract="true">
+		<complexContent>
+			<extension base="gml:AbstractFeatureType">
+				<sequence>
+					<element name="purpose" type="gsml:DescriptionPurpose">
+						<annotation>
+							<documentation>Indicates the purpose of this description package: 
+							either an instance description, or some kind of norm (definingNorm, typicalNorm)</documentation>
+						</annotation>
+					</element>
+					<element name="age" type="gsml:GeologicAgePropertyType" maxOccurs="unbounded">
+						<annotation>
+							<documentation>multiple ages may apply to multiple events in the history of a feature</documentation>
+						</annotation>
+					</element>
+					<element name="physicalProperty" type="gsml:CGI_PhysicalDescriptionPropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<element name="occurrence" type="gsml:MappedFeaturePropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<element name="classifier" type="gsml:ControlledConceptPropertyType">
+						<annotation>
+							<documentation>Primary classifier: Pointer to controlled concept that defines the original intent under which the feature was defined. This classifier might be a very general concept for reporting observational data that has not been organized into named concepts (e.g. classifier is LithostratigraphicUnit for geolgoic unit descriptions in field data for which named stratigraphic units have not yet been defined). For data instances containing descriptions of named concepts (e.g. named geologic units), the classifer identifies the data as a description of some occurrence of that concept, and the prototype description feature associated with the classifier controlledConcept provides constraints on property values to be consistent with the classifier prototype. 
+							 Classifier Type should be gml:refence, such that Dictionary elements are always by reference. The type=gsml:ControlledConceptPropertyType assignment is made here with the idea that because we can't include vocabularies in WFS documents (they're geologicObject, not GeologicFeatures), the ControlledConcept basics (preferredName, vocabulary) should be inline, with prototype links by reference. This is a temporary measure, pending a proper strategy for "Dictionary" objects. We need to plan on using a registry solution for the latter, in parallel with the WFS solution for features. Then concepts would have identifiers that resolve to registry calls (SMR SJC 052606).</documentation>
+						</annotation>
+					</element>
+					<element name="alternativeClassifier" type="gsml:ControlledConceptPropertyType" minOccurs="0" maxOccurs="unbounded">
+						<annotation>
+							<documentation>Alternative classifier: Pointer to other controlled concept which may serve to classify the object on some alternative axis. Use for classifications that are not implicit in the existing content of the feature instance. For example a lithologic classification of lithostratigraphic units that uses various combinations of genesis and composition, or interpretive assignment of a geologic unit with a complex, protracted history of deposition, deformation, and metamorphism to a single 'best representative' geologic age. The principal use case for this property is for encoding of classifications used to define derivative map views of data without generating a new feature collection defined based on the alternate classification. This follows the logic that it is important to include the 'heritage' (i.e. original definition, see classifier above) of the features with derivative classification information.
+							See discussion of element type in documentation for classifier.</documentation>
+						</annotation>
+					</element>
+					<element name="metadata" type="gsml:GeologicFeatureMetadataPropertyType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<!-- ..................... -->
+	<element name="GeologicFeature" type="gsml:GeologicFeatureType" substitutionGroup="gml:_Feature"/>
+	<!-- ..................... -->
+	<complexType name="GeologicFeaturePropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsml:GeologicFeature"/>
+		</sequence>
+		<attributeGroup ref="gsml:RichPropertyAttributeGroup"/>
+	</complexType>
+	<!--=======================-->
+	<complexType name="GeologicObjectType" abstract="true">
+		<complexContent>
+			<extension base="gml:AbstractGMLType">
+				<sequence>
+					<element name="purpose" type="gsml:DescriptionPurpose"/>
+					<element name="classifier" type="gml:ReferenceType">
+						<annotation>
+							<documentation>Primary classifier: Pointer to controlled concept which serves to classify the object on some axis</documentation>
+						</annotation>
+					</element>
+					<element name="alternativeClassifier" type="gml:ReferenceType" minOccurs="0" maxOccurs="unbounded">
+						<annotation>
+							<documentation>Alternative classifier: Pointer to other controlled concept which may serve to classify the object on some alternative axis</documentation>
+						</annotation>
+					</element>
+					<element name="metadata" type="gsml:MetadataPropertyType" minOccurs="0"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<!-- ..................... -->
+	<element name="GeologicObject" type="gsml:GeologicObjectType" substitutionGroup="gml:_GML"/>
+	<!-- ..................... -->
+	<complexType name="GeologicObjectPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsml:GeologicObject"/>
+		</sequence>
+		<attributeGroup ref="gsml:RichPropertyAttributeGroup"/>
+	</complexType>
+	<!--=======================-->
+	<complexType name="GeologicEntityPropertyType">
+		<sequence minOccurs="0">
+			<choice>
+				<element ref="gsml:GeologicFeature"/>
+				<element ref="gsml:GeologicObject"/>
+			</choice>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"/>
+		<attribute name="unionSemantics">
+			<simpleType>
+				<restriction base="string">
+					<enumeration value="featureEntity"/>
+					<enumeration value="objectEntity"/>
+				</restriction>
+			</simpleType>
+		</attribute>
+	</complexType>
+	<!--=======================-->
+	<simpleType name="DescriptionPurpose">
+		<union>
+			<simpleType>
+				<restriction base="string">
+					<enumeration value="definingNorm">
+						<annotation>
+							<documentation>DefiningNorm -- a description that specifies properties sufficient to identify a new occurrence as belonging to the class represented by the description. 
+					Basically these are the 'sufficient conditions' for class membership. 
+					Used when presented with a query 'I have an outcrop with these properties; which geologic unit should I assign to the outcrop?' 
+					DefiningNorm has to do with the intension of a ControlledConcept.</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="typicalNorm">
+						<annotation>
+							<documentation>TypicalNorm -- a description that specifies properties to be expected of some occurrence associated with the GeologicEntity. 
+					This description may include many properties that are not part of the DefiningNorm. 
+					For example, the fact that granite is typically light-colored is not a defining property, but is certainly a useful typical property. 
+					These kinds of descriptions would be used to address queries like 'This area is within a polygon classified as Podunk Formation; what sort of lithology am I most likely to encounter when I start digging?' 
+					The Podunk Formation may be defined by the presence of a certain ammonite... 
+					TypicalNorm description would be constructed as a summary over many Instance descriptions.</documentation>
+						</annotation>
+					</enumeration>
+					<enumeration value="instance">
+						<annotation>
+							<documentation>Instance -- a description that is specific to a particular observed occurrence. This is 'raw data', and its classification may start out as very general. There are kinds of narrowly defined ControlledConcepts that might not allow 'instances' that are different from the DefiningNorm. It might be worth considering a different relationship between MappedFeature and an Instance GeologicEntity, with the GeologicEntity role being 'description'.</documentation>
+						</annotation>
+					</enumeration>
+				</restriction>
+			</simpleType>
+			<simpleType>
+				<restriction base="string">
+					<pattern value="other:\w{2,}"/>
+				</restriction>
+			</simpleType>
+		</union>
+	</simpleType>
+	<!--=======================-->
+	<complexType name="GeologicRelationType" abstract="true">
+		<complexContent>
+			<extension base="gml:AbstractGMLType">
+				<sequence>
+					<element name="role" type="gsml:ScopedNameType"/>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<!-- ..................... -->
+	<element name="GeologicRelation" type="gsml:GeologicRelationType" substitutionGroup="gml:_GML"/>
+	<!-- ..................... -->
+	<complexType name="GeologicRelationPropertyType">
+		<sequence minOccurs="0">
+			<element ref="gsml:GeologicRelation"/>
+		</sequence>
+		<attributeGroup ref="gsml:RichPropertyAttributeGroup"/>
+	</complexType>
+	<!--=======================-->
+</schema>

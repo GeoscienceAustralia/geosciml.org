@@ -1,0 +1,289 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <title>GML Application Schema Package Summary - GeoSciML/CGI_Value</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <link href="../../default.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-35254121-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script>
+
+    <body class="section-2">
+        <div id="header">
+            <div align="left">
+                <img src="../../gas-banner.jpg" alt="GML Application Schema API Specification" width="1000" height="59"/>
+            </div>
+            <ul id="menu">
+                <li id="nav-1">
+                    <a href="../../overview-summary.html">Overview</a>
+                </li>
+                <li id="nav-2">
+                    <a href="package-summary.html">Package</a>
+                </li>
+                <li id="nav-3">Class</li>
+                <li id="nav-4">
+                    <a href="../../help-doc.html">Help</a>
+                </li>
+            </ul>
+        </div>
+        <div id="main">
+            <h1 class="first">Package <tt>GeoSciML/CGI_Value</tt>
+            </h1>
+            <p>The GeoSciML "CGI_Value" model provides a generic way of encoding "literal" values, both textual and numeric, which have uncertainty and may be a range. These structures are designed to be able to capture value descriptions as conventionally recorded by geologists.  <br/>
+                <br/>The Value structures are for when you need <br/>1. a qualifier, <br/>2. to be able to use either single values or ranges, or <br/>3. to express uncertainty on numeric values <br/>4. use numbers or words as alternatives for a single value or in a mixed range<br/>
+                <br/>e.g. "usually X", "greater than Y" where X and Y are either a Measure (number with a scale) or Term (word from a vocabulary) or a range constructed from measures and terms<br/>
+                <br/>"CGI_GeometricDescriptions" allow describing the planar or linear orientation of a geologic feature. Allows specifying direction by DirectionVector (eg Dip/Dip Direction), compass point (NE), description ("toward fold hinge", "below')<br/>
+                <br/>These values are usually obtained as the result of an observation. The description of the associated observation event will provide more detail about the observation method, result quality, etc. </p>
+            <table width="95%" class="details">
+                <tr>
+                    <td colspan="2">
+                        <h2>Class Summary</h2>
+                    </td>
+                </tr>
+                <tr class="stheader">
+                    <td colspan="2" class="stheader">
+                        <tt>&lt;&lt;</tt>DataType<tt>&gt;&gt;</tt> Classes
+							</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="CGI_GeometricDescriptionValue.html" title="Class in GeoSciML.CGI_Value.CGI_GeometricDescriptionValue">
+                                <i>CGI_GeometricDescriptionValue</i>
+                            </a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Description of the planar or linear orientation of a geologic feature.   <br/>Allows specifying direction by DirectionVector (eg Dip/Dip Direction), compass point (NE),  description ("toward fold hinge", "below')</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="CGI_LinearOrientation.html" title="Class in GeoSciML.CGI_Value.CGI_LinearOrientation">CGI_LinearOrientation</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Description of the geometry of a line.</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="CGI_NumericRange.html" title="Class in GeoSciML.CGI_Value.CGI_NumericRange">CGI_NumericRange</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Allows specifying a range of numeric values (eg 443.7+-1.5 to 359+-2.5) by specifying an upper and lower  CGI_NumericValue</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="CGI_NumericValue.html" title="Class in GeoSciML.CGI_Value.CGI_NumericValue">CGI_NumericValue</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Numerical data type</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="CGI_PhysicalDescription.html" title="Class in GeoSciML.CGI_Value.CGI_PhysicalDescription">CGI_PhysicalDescription</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Numbers and word values with a pointer to the semantics</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="CGI_PlanarOrientation.html" title="Class in GeoSciML.CGI_Value.CGI_PlanarOrientation">CGI_PlanarOrientation</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Description of the geometry of a plane.</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="CGI_PrimitiveValue.html" title="Class in GeoSciML.CGI_Value.CGI_PrimitiveValue">
+                                <i>CGI_PrimitiveValue</i>
+                            </a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Abstract class to capture CGI data types</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="CGI_Range.html" title="Class in GeoSciML.CGI_Value.CGI_Range">CGI_Range</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Allows specifying a range consisting of both terms and numeric values (eg Silurian to 359.2+-2.5Ma) by specifying an upper and lower CGI_TermValue or CGI_NumericValue</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="CGI_TermRange.html" title="Class in GeoSciML.CGI_Value.CGI_TermRange">CGI_TermRange</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Allows specifying a range of terms (eg Silurian - Devonian) by specifying an upper (Devonian) and lower (Silurian) CGI_TermValue</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="CGI_TermValue.html" title="Class in GeoSciML.CGI_Value.CGI_TermValue">CGI_TermValue</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Where the value is from a ControlledVocabulary, the string shall be the value of the preferredName on the ControlledConcept; the codeSpace shall indicate the ControlledVocabulary; where the value is from an informal vocabulary, the codeSpace shall indicate the identity of that vocabulary and the string shall be a term from the vocabulary ... somehow</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="CGI_Value.html" title="Class in GeoSciML.CGI_Value.CGI_Value">
+                                <i>CGI_Value</i>
+                            </a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>The Value structures are for when you need <br/>1. a qualifier, <br/>2. to be able to use either single values or ranges, or <br/>3. to express uncertainty on numeric values<br/>4. use numbers or words as alternatives for a single value or in a mixed range<br/>
+                        <br/>e.g. "usually X", "greater than Y" where X and Y are either a Measure (number with a scale) or Term (word from a vocabulary) or a range constructed from measures and terms</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="CGI_Vector.html" title="Class in GeoSciML.CGI_Value.CGI_Vector">CGI_Vector</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>data type for linear orientation with magnitude. Cardinality on magnitude is 1, if magnitude is unknown use CGI_LinearOrientation</td>
+                </tr>
+                <tr class="stheader">
+                    <td colspan="2" class="stheader">
+                        <tt>&lt;&lt;</tt>Union<tt>&gt;&gt;</tt> Classes
+							</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="CGI_Numeric.html" title="Class in GeoSciML.CGI_Value.CGI_Numeric">CGI_Numeric</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;Union&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>A union class that allows the value to either be a CGI_NumericValue or a CGI_NumericRange</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="CGI_Term.html" title="Class in GeoSciML.CGI_Value.CGI_Term">CGI_Term</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;Union&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>A union class that allows the value to either be a CGI_TermValue or a CGI_TermRange</td>
+                </tr>
+                <tr class="stheader">
+                    <td colspan="2" class="stheader">
+                        <tt>&lt;&lt;</tt>Enumeration<tt>&gt;&gt;</tt> Classes
+							</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="ConventionCode.html" title="Class in GeoSciML.CGI_Value.ConventionCode">ConventionCode</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;Enumeration&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Code list to specify the convention used for the orientation measurement</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="LinearDirectedCode.html" title="Class in GeoSciML.CGI_Value.LinearDirectedCode">LinearDirectedCode</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;Enumeration&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Code list to capture terms related to directedness of linear orientations</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="PlanarPolarityCode.html" title="Class in GeoSciML.CGI_Value.PlanarPolarityCode">PlanarPolarityCode</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;Enumeration&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>values to use for expressing overturned property on planar orientation measurements. </td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="ValueQualifierCode.html" title="Class in GeoSciML.CGI_Value.ValueQualifierCode">ValueQualifierCode</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;Enumeration&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Enumeration list for valueQualifierCode attribute on CGI_Value</td>
+                </tr>
+            </table>
+    		&#160;
+    		<table width="95%" class="details">
+                <tr>
+                    <td colspan="3">
+                        <h2>Tagged Values</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="stheader">Tag</td>
+                    <td class="stheader">Value</td>
+                    <td class="stheader">Notes</td>
+                </tr>
+                <tr>
+                    <td>xsdDocument</td>
+                    <td>value.xsd</td>
+                    <td>Description: Relative path to XML Schema document corresponding to this package.<br/>
+                    </td>
+                </tr>
+            </table>
+    		&#160;
+    		<p>
+                <h4>UML Diagram: Summary diagram: generic values</h4>
+                <img src="../../Images/EAID_22E61AA7_33A4_4b5f_9D26_5ADA5173856A.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Summary diagram: geometric values</h4>
+                <img src="../../Images/EAID_7BB88917_8EB5_47b2_A2F5_62B622A918CB.gif" alt="UML Diagram"/>
+            </p>
+        </div>
+        <div class="clearing">&#160;</div>
+        <div id="footer" __skip="skip">
+            <hr class="first"/>
+            <p class="panel">
+			For more information about GML Application Schema development refer to:<br/>
+                <a href="https://www.seegrid.csiro.au/wiki/bin/view/AppSchemas/UmlGml">UML models of GML Application Schemas</a>
+            </p>
+            <p class="panel">
+			For more general information about GML refer to:<br/>
+                <a href="http://www.opengis.net/gml/">GML - the Geography Markup Language</a>
+            </p>
+            <p class="panel">
+			The document set was auto-generated at 2008-09-04T23:36+10:00<br/>
+			using FullMoon - A processing framework for transforming XML models
+		</p>
+        </div>
+    </body>
+</html>

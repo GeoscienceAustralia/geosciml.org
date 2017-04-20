@@ -1,0 +1,158 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <title>GML Application Schema Package Summary - GeoSciML/LaboratoryAnalysis-Specimen/GeologicSpecimen</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <link href="../../../default.css" rel="stylesheet" type="text/css"/>
+
+    <body class="section-2">
+        <div id="header">
+            <div align="left">
+                <img src="../../../gas-banner.jpg" alt="GML Application Schema API Specification" width="1000" height="59"/>
+            </div>
+            <ul id="menu">
+                <li id="nav-1">
+                    <a href="../../../overview-summary.html">Overview</a>
+                </li>
+                <li id="nav-2">
+                    <a href="package-summary.html">Package</a>
+                </li>
+                <li id="nav-3">Class</li>
+                <li id="nav-4">
+                    <a href="../../../help-doc.html">Help</a>
+                </li>
+            </ul>
+        </div>
+        <div id="main">
+            <h1 class="first">Package <tt>GeoSciML/LaboratoryAnalysis-Specimen/GeologicSpecimen</tt>
+            </h1>
+            <p>The GeologicSpecimen package extends the ISO19156 O&amp;amp;M schema, and describes processes relevant to the sampling, preparation and analysis of geologic specimens.</p>
+            <table width="95%" class="details">
+                <tr>
+                    <td colspan="2">
+                        <h2>Class Summary</h2>
+                    </td>
+                </tr>
+                <tr class="stheader">
+                    <td colspan="2" class="stheader">
+                        <tt>&lt;&lt;</tt>FeatureType<tt>&gt;&gt;</tt> Classes
+							</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="GeologicSamplingMethod.html" title="Class in GeoSciML.LaboratoryAnalysis-Specimen.GeologicSpecimen.GeologicSamplingMethod">GeologicSamplingMethod</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Implementation of SF_Process to describe the method used to obtain a geologic specimen<br/>eg:<br/>diamond drilling<br/>percussion drilling<br/>piston core drilling<br/>vibro core drilling<br/>channel sampling<br/>sea floor dredging<br/>geological hammer</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="GeologicSpecimenPreparation.html" title="Class in GeoSciML.LaboratoryAnalysis-Specimen.GeologicSpecimen.GeologicSpecimenPreparation">GeologicSpecimenPreparation</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>An extension of OGC Specimen:PreparationStep to allow details of preparation steps to be delivered (eg, filtration and mesh size, chemical additives, crushing methods, drying parameters, etc)</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="ReferenceSpecimen.html" title="Class in GeoSciML.LaboratoryAnalysis-Specimen.GeologicSpecimen.ReferenceSpecimen">ReferenceSpecimen</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>A reference specimen is a specimen with known or accepted values of some property. The citation property describes the location of a published description of these values.  Reference specimens include analytical blanks.<br/>
+                        <br/>Analytical results from a reference specimen analysed during an AnalyticalSession are delivered in the same way as the results of other specimens analysed in that session.</td>
+                </tr>
+                <tr class="stheader">
+                    <td colspan="2" class="stheader">
+                        <tt>&lt;&lt;</tt>CodeList<tt>&gt;&gt;</tt> Classes
+							</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="GeologicSamplingMethodTerm.html" title="Class in GeoSciML.LaboratoryAnalysis-Specimen.GeologicSpecimen.GeologicSamplingMethodTerm">GeologicSamplingMethodTerm</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;CodeList&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Refers to a vocabulary of terms describing the samplingProcess used to obtain or create the Specimen. eg:<br/>diamond drilling<br/>percussion drilling<br/>piston core drilling<br/>vibro core drilling<br/>channel sampling<br/>sea floor dredging<br/>crushing<br/>mineral separation<br/>melting<br/>geological hammer</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="GeologicSpecimenPreparationTerm.html" title="Class in GeoSciML.LaboratoryAnalysis-Specimen.GeologicSpecimen.GeologicSpecimenPreparationTerm">GeologicSpecimenPreparationTerm</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;CodeList&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Refers to a vocabulary of terms to describe sample preparation applied to geologic specimens, typically in preparation for analytical processes like geochemistry or microscopy. eg: <br/>crush<br/>mineral separation<br/>thin section<br/>cut<br/>polish<br/>mount<br/>acid digestion<br/>
+                    </td>
+                </tr>
+            </table>
+    		&#160;
+    		<table width="95%" class="details">
+                <tr>
+                    <td colspan="3">
+                        <h2>Tagged Values</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="stheader">Tag</td>
+                    <td class="stheader">Value</td>
+                    <td class="stheader">Notes</td>
+                </tr>
+                <tr>
+                    <td>xsdDocument</td>
+                    <td>geologicSpecimen.xsd</td>
+                    <td>Description: Name of an XML Schema document to create representing the content of this package<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>xsdEncodingRule</td>
+                    <td>iso19136_2007</td>
+                    <td>Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br/>Default: iso19136_2007<br/>Description: XML Schema encoding rule to apply<br/>
+                    </td>
+                </tr>
+            </table>
+    		&#160;
+    		<p>
+                <h4>UML Diagram: Summary diagram: GeologicSpecimen</h4>
+                <img src="../../../Images/EAID_BD56823B_2220_4ee5_BE38_4772C1175236.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : GeologicSamplingMethod</h4>
+                <img src="../../../Images/EAID_585289E3_EF67_4a98_A426_A04531BE3DF8.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : ReferenceSpecimen</h4>
+                <img src="../../../Images/EAID_2D9182B5_97EF_4f1a_89E5_F1BA6B39D29F.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : GeologicSpecimenPreparation</h4>
+                <img src="../../../Images/EAID_7E7DFBF7_F2C9_402a_B52D_B828BDDF82B5.gif" alt="UML Diagram"/>
+            </p>
+        </div>
+        <div class="clearing">&#160;</div>
+        <div id="footer" __skip="skip">
+            <hr class="first"/>
+            <p class="panel">
+			For more information about GML Application Schema development refer to:<br/>
+                <a href="https://www.seegrid.csiro.au/wiki/bin/view/AppSchemas/UmlGml">UML models of GML Application Schemas</a>
+            </p>
+            <p class="panel">
+			For more general information about GML refer to:<br/>
+                <a href="http://www.opengis.net/gml/">GML - the Geography Markup Language</a>
+            </p>
+            <p class="panel">
+			The document set was auto-generated at 2011-09-30T10:00+<br/>
+			using FullMoon - A processing framework for transforming XML models
+		</p>
+        </div>
+    </body>
+</html>

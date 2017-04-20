@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:gsmlgu="http://xmlns.geosciml.org/GeologicUnit/3.0"
+	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0"
+	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0 http://projects.arcs.org.au/svn/fullmoon/trunk/resources/dependency-util/package-class-map.xsd"
+	id="ClassMap_GeologicUnit_GeoSciML_v3.xml">
+	<description>Provides a mapping of classes from the geologicUnit module of GeoSciML to elements from GeoSciML XML Schema Version 3.0.0</description>
+	<imports>
+		<schema prefix="gsmlgu" namespace="http://xmlns.geosciml.org/GeologicUnit/3.0" schemaLocation="http://schemas.geosciml.org/geologicunit/3.0/geologicunit.xsd" />  <!-- Note prefix is "gsmlgu", not "gsml"  -->
+	</imports>
+
+	
+<!-- ================================================================= -->
+<!-- GeologicUnit Leaf -->
+	
+	<!-- FeatureType -->
+	<entry>
+		<umlClass>GeologicUnit</umlClass>
+		<umlStereotype>FeatureType</umlStereotype>
+		<gmlObjectElement>gsmlgu:GeologicUnit</gmlObjectElement>
+		<gmlType>gsmlgu:GeologicUnitType</gmlType>
+		<gmlPropertyType>gsmlgu:GeologicUnitPropertyType</gmlPropertyType>
+	</entry>
+	
+	<!-- DataTypes -->
+	<entry>
+		<umlClass>BeddingDescription</umlClass>
+		<umlStereotype>DataType</umlStereotype>
+		<gmlObjectElement>gsmlgu:BeddingDescription</gmlObjectElement>
+		<gmlType>gsmlgu:BeddingDescriptionType</gmlType>
+		<gmlPropertyType>gsmlgu:BeddingDescriptionPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>CompositionPart</umlClass>
+		<umlStereotype>DataType</umlStereotype>
+		<gmlObjectElement>gsmlgu:CompositionPart</gmlObjectElement>
+		<gmlType>gsmlgu:CompositionPartType</gmlType>
+		<gmlPropertyType>gsmlgu:CompositionPartPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GeologicUnitPart</umlClass>
+		<umlStereotype>DataType</umlStereotype>
+		<gmlObjectElement>gsmlgu:GeologicUnitPart</gmlObjectElement>
+		<gmlType>gsmlgu:GeologicUnitPartType</gmlType>
+		<gmlPropertyType>gsmlgu:GeologicUnitPartPropertyType</gmlPropertyType>
+	</entry>
+	
+
+</mapping>

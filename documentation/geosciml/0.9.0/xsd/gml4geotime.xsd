@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.opengis.net/gml" elementFormDefault="qualified" version="1.00">
+	<annotation>
+		<documentation>
+    gml4geoTime.xsd
+    Utility schema which simply includes the GML schema documents required for geoTime schemas</documentation>
+	</annotation>
+	<!-- ==============================================================
+       includes and imports
+	============================================================== -->
+	<include schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/feature.xsd"/>
+	<include schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/temporalReferenceSystems.xsd"/>
+	<include schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/geometryAggregates.xsd"/>
+	<include schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/grids.xsd"/>
+</schema>

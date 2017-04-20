@@ -1,0 +1,64 @@
+<html  name="index/index-13" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><title>M-Index</title><meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+<link href="../default.css" rel="stylesheet"type="text/css"/></head><body><!-- ========= START OF TOP NAVBAR ======= -->
+<div align="left">
+<a name="navbar_top"><!-- --></a>
+<a href="#skip-navbar_top" title="Skip navigation links"></a>
+<table summary="" width="100%" border="0" cellpadding="1" cellspacing="0">
+<tbody>
+<tr>
+    <td class="NavBarCell1" bgcolor="#eeeeff">
+    <a name="navbar_top_firstrow"><!-- --></a>
+    <table summary="" border="0" cellpadding="0" cellspacing="3">
+      <tbody><tr valign="top" align="center">
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+
+      <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Index</B></FONT>&nbsp;</TD>
+
+      <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+
+     </tr>
+    </tbody></table>
+    </td>
+    <td rowspan=2 valign="top" align="right"><em>
+    <b>GeoSciML<br>3.0.0</b></em>
+    </td>
+</tr>
+<tr>
+<td class="NavBarCell2" bgcolor="white"><font size="-1">
+  <a href="../index.html?index/index-13.html" target="_top"><b>FRAMES</b></a>  &nbsp;
+&nbsp;<a href="index-13.html" target="_top"><b>NO FRAMES</b></a>  &nbsp;
+&nbsp;
+<script type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../allclasses-frame.html"><B>All Classes</B></A>');
+  }
+  //-->
+</script>
+
+
+</font></td>
+</tr>
+</tbody></table>
+<a name="skip-navbar_top"></a>
+
+<!-- ========= END OF TOP NAVBAR ========= -->
+  &nbsp;&nbsp;&nbsp;<a href="index-1.html">A</a> <a href="index-2.html">B</a> <a href="index-3.html">C</a> <a href="index-4.html">D</a> <a href="index-5.html">E</a> <a href="index-6.html">F</a> <a href="index-7.html">G</a> <a href="index-8.html">H</a> <a href="index-9.html">I</a> <a href="index-10.html">J</a> <a href="index-11.html">K</a> <a href="index-12.html">L</a> <a href="index-13.html">M</a> <a href="index-14.html">N</a> <a href="index-15.html">O</a> <a href="index-16.html">P</a> <a href="index-17.html">Q</a> <a href="index-18.html">R</a> <a href="index-19.html">S</a> <a href="index-20.html">T</a> <a href="index-21.html">U</a> <a href="index-22.html">V</a> <a href="index-23.html">W</a> <a href="index-24.html">X</a> <a href="index-25.html">Y</a> <a href="index-26.html">Z</a> <a href="index-27.html">_</a>
+  <br></br>
+    <hr>
+
+
+</div>
+<div id="main"><h2>M</h2><dl><dt><a href="../{382132EE-C90C-4af9-9CE5-C62354E2E355}/{35AEE937-C216-4d5a-8D68-3F780D9357AA}/{86FBA433-65F3-49e5-AB34-5D9B236128A2}/{B2F0A8FC-0291-4b72-A4DE-06D9C682A45F}.html">MappedFeature</a></dt><dd>A MappedFeature is part of a geological interpretation. <br/>It provides a link between a notional feature (description package) and one spatial representation of it, or part of it. (Exposures, Surface Traces and Intercepts, etc)<br/>    * the specific bounded occurrence, such as an outcrop or map polygon<br/>    * the Mapped Feature carries a geometry or shape<br/>          - the association with a Geologic Feature (legend item) provides specification of all the other descriptors<br/>          - the association with a Sampling Feature provides the context and dimensionality <br/><br/>A Mapped Feature is always associated with some sampling feature - e.g. a mapping surface, a section, a Borehole (see BoreHolesAndObservation) etc.  As noted on the diagram, if the associated sampling feature is a Borehole, then the shape associated with the MappedFeature will usually be either a point or an interval. This reconciles the 2-D ("map", section) and 1-D (borehole, traverse) viewpoints in a common abstraction. </dd></dl><dl><dt><a href="../{382132EE-C90C-4af9-9CE5-C62354E2E355}/{3B9AD201-5517-45a2-A68D-ACC35A6D5B40}/{3B885BF4-1A92-481d-98C5-23D9689F40D8}.html">MappedInterval</a></dt><dd>A special kind of Mapped Feature whose shape is 1-D interval and uses the SRS of the containing borehole</dd></dl><dl><dt><a href="../{382132EE-C90C-4af9-9CE5-C62354E2E355}/{5574AE3D-FBC8-49ff-8129-9E5B199D9D08}/{9FFA2AE1-F213-4ac2-856F-06ABDDF5F88E}.html">MaterialRelation</a></dt><dd>The MaterialRelation class describes the relationships between constituent parts in an Earth Material (eg: A mineral overgrowth on a phenocryst within a granite). <br/><br/>Relationships are always binary and directional.  There is always a single source and a single target. The relationship is always defined from the perspective of the Source and is generally an active verb.<br/><br/>Example:  Consider an overgrowth of albite on plagioclase in a granite.  The  Source would originate with the albite constituentPart description.  In this case, the Target would point to the plagioclase constituentPart description and the relationship attribute would be 'overgrowth' and the sourceRole is 'overgrows'.  Other appropriate role attributes might include: crosscuts, replaces, etc. for crosscutting and replacement relationships.<br/><br/>Inverse relationships must be explicitly recorded as well or else they are invisible.</dd></dl><dl><dt><a href="../{382132EE-C90C-4af9-9CE5-C62354E2E355}/{5574AE3D-FBC8-49ff-8129-9E5B199D9D08}/{CCC5655A-544B-4c29-8A61-1FFA5B424D83}.html">MetamorphicDescription</a></dt><dd>MetamorphicDescription describes the character of metamorphism applied to a CompoundMaterial or GeologicUnit using one or more properties including estimated intensity (grade; eg high grade, low grade), characteristic metamorphic mineral assemblages (facies; eg, greenschist, amphibolite), peak P-T estimates, and protolith material if known.</dd></dl><dl><dt><a href="../{382132EE-C90C-4af9-9CE5-C62354E2E355}/{5574AE3D-FBC8-49ff-8129-9E5B199D9D08}/{FF5C8FB4-BD7B-4a71-81A6-7D70D865376B}.html">Mineral</a></dt><dd>A naturally occurring inorganic element or compound having a periodically repeating arrangement of atoms and a characteristic chemical composition or range of compositions, resulting in distinctive physical properties.  Includes mercury as a general exception to the requirement of crystallinity.  Also includes crypto-crystalline materials such as chalcedony and amorphous silica.</dd></dl><dl><dt><a href="../{382132EE-C90C-4af9-9CE5-C62354E2E355}/{5574AE3D-FBC8-49ff-8129-9E5B199D9D08}/{ED9CCA91-8B52-4612-B8C3-02D8B5A3CEE3}.html">MineralNameTerm</a></dt><dd>Refers to a vocabulary of mineral names<br/></dd></dl><dl><dt><a href="../{382132EE-C90C-4af9-9CE5-C62354E2E355}/{FC92BBD8-B423-4892-A708-9E2536414C8F}/{0095F0B4-6FA1-43f0-900F-A2ACD660C2C4}.html">MovementSenseTerm</a></dt><dd>Refers to a vocabulary of terms describing the sense of movement on a shear displacement structure<br/></dd></dl><dl><dt><a href="../{382132EE-C90C-4af9-9CE5-C62354E2E355}/{FC92BBD8-B423-4892-A708-9E2536414C8F}/{FEC26777-AC72-460f-AE92-6D6046E0A26C}.html">MovementTypeTerm</a></dt><dd>Refers to a vocabulary of terms describing the type of movement  (eg, dip-slip, strike-slip)<br/></dd></dl></div></body><div class="clearing">&#160;</div>
+<div id="footer" __skip="skip">
+    <hr class="first"/>
+    <p class="panel">
+		The document set was auto-generated at 8 Jul 2013 14:27:05<br/>
+		using Solid Ground
+    </p>
+</div>
+</html>

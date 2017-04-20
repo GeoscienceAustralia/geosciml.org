@@ -1,0 +1,255 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <title>GML Application Schema Package Summary - Borehole</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <link href="../default.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-35254121-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script>
+
+    <body class="section-2">
+        <div id="header">
+            <div align="left">
+                <img src="../gas-banner.jpg" alt="GML Application Schema API Specification" width="1000" height="59"/>
+            </div>
+            <ul id="menu">
+                <li id="nav-1">
+                    <a href="../overview-summary.html">Overview</a>
+                </li>
+                <li id="nav-2">
+                    <a href="package-summary.html">Package</a>
+                </li>
+                <li id="nav-3">Class</li>
+                <li id="nav-4">
+                    <a href="../help-doc.html">Help</a>
+                </li>
+            </ul>
+        </div>
+        <div id="main">
+            <h1 class="first">Package <tt>Borehole</tt>
+            </h1>
+            <p>The GeoSciML Borehole package contains model elements for representing Boreholes. This is primarily through re-use of standard components from the (external) Observations and Measurements package. </p>
+            <table width="95%" class="details">
+                <tr>
+                    <td colspan="2">
+                        <h2>Class Summary</h2>
+                    </td>
+                </tr>
+                <tr class="stheader">
+                    <td colspan="2" class="stheader">
+                        <tt>&lt;&lt;</tt>FeatureType<tt>&gt;&gt;</tt> Classes
+							</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="Borehole.html" title="Class in Borehole.Borehole">Borehole</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>A borehole is the generalized term for any narrow shaft drilled in the ground, either vertically or horizontally.</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="MappedInterval.html" title="Class in Borehole.MappedInterval">MappedInterval</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>A special kind of Mapped Feature whose shape is 1-D interval and uses the SRS of the containing borehole</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="OriginPosition.html" title="Class in Borehole.OriginPosition">OriginPosition</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>A Borehole OriginPosition is a feature corresponding to the start point of a borehole log.  This may, but not necessarily, correspond to the borehole collar location (eg, kelly bush).<br/>
+                        <br/>If a text descripiton of the location is available, it should be placed in the gml:description for that feature.  If no GM_Point is available, an OGC nil value should be used.<br/>
+                        <br/>Implementers delivering 3-D origin locations should provide an elevation to improve interoperability. <br/>
+                        <br/>In situations where the origin position changes over the life of the borehole (eg, due to subsidence or destruction of the original collar), the origin position should be updated to the new location.</td>
+                </tr>
+                <tr class="stheader">
+                    <td colspan="2" class="stheader">
+                        <tt>&lt;&lt;</tt>DataType<tt>&gt;&gt;</tt> Classes
+							</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="BoreholeDetails.html" title="Class in Borehole.BoreholeDetails">BoreholeDetails</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Borehole specific index (or metadata) information</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="DrillingDetails.html" title="Class in Borehole.DrillingDetails">DrillingDetails</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td/>
+                </tr>
+                <tr class="stheader">
+                    <td colspan="2" class="stheader">
+                        <tt>&lt;&lt;</tt>CodeList<tt>&gt;&gt;</tt> Classes
+							</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="BoreholeDrillingMethodCode.html" title="Class in Borehole.BoreholeDrillingMethodCode">BoreholeDrillingMethodCode</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;CodeList&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>This class is an indicative placeholder only for a vocabulary of terms describing the borehole drilling method.  Users are encouraged to use a vocabulary of terms managed by the CGI vocabularies working group. For example:<br/>auger<br/>hand auger<br/>air core<br/>cable tool<br/>diamond core<br/>direct push<br/>hydraulic rotary<br/>rotary air blast<br/>percussion<br/>etc</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="BoreholeInclinationCode.html" title="Class in Borehole.BoreholeInclinationCode">BoreholeInclinationCode</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;CodeList&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>This class is an indicative placeholder only for a vocabulary of terms describing the general orientation of a borehole.  Users are encouraged to use a vocabulary of terms managed by the CGI vocabularies working group.<br/>
+                        <br/>For example:<br/>vertical<br/>horizontal<br/>inclined up<br/>inclined down</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="BoreholePurposeCode.html" title="Class in Borehole.BoreholePurposeCode">BoreholePurposeCode</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;CodeList&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Place holder for a vocabulary containing terms describing the purpose for which the borehole was drilled.  eg, mineral exploration, water pumping, site evaluation, stratigraphic research, etc</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="BoreholeStartPointCode.html" title="Class in Borehole.BoreholeStartPointCode">BoreholeStartPointCode</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;CodeList&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>This class is an indicative placeholder only for a vocabulary of terms describing the location of the start of a borehole.  Users are encouraged to use a vocabulary of terms managed by the CGI vocabularies working group.<br/>
+                        <br/>Examples may include:<br/>natural ground surface - drilling started from a natural topographic surface<br/>open pit floor or wall - drilling started from the wall of an open pit or quarry<br/>underground - drilling started from an underground location, such as a driveway, chamber or open-stope<br/>from pre-existing hole - new drill hole spudded off the wall of an existing hole</td>
+                </tr>
+            </table>
+    		&#160;
+    		<table width="95%" class="details">
+                <tr>
+                    <td colspan="3">
+                        <h2>Tagged Values</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="stheader">Tag</td>
+                    <td class="stheader">Value</td>
+                    <td class="stheader">Notes</td>
+                </tr>
+                <tr>
+                    <td>classMap</td>
+                    <td>https://www.seegrid.csiro.au/subversion/GeoSciML/borehole/trunk/classmap/ClassMap_Borehole_GeoSciML_v3.xml</td>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>gmlProfileSchema</td>
+                    <td>#NOTES#Description: URL of the schema location of a GML profile (optional)
+</td>
+                    <td>Description: URL of the schema location of a GML profile (optional)<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>owner</td>
+                    <td>IUGS Commission for the Management and Application of Geoscience Information</td>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>schemaLocation</td>
+                    <td>http://schemas.geosciml.org/borehole/3.0/borehole.xsd</td>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>targetNamespace</td>
+                    <td>http://xmlns.geosciml.org/Borehole/3.0</td>
+                    <td>Default: FIXME<br/>Description: Target XML namespace of the application schema<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>version</td>
+                    <td>3.0.0</td>
+                    <td>Default: FIXME<br/>Description: Current version of the application schema<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>xmlns</td>
+                    <td>gsmlbh</td>
+                    <td>Default: FIXME<br/>Description: Namespace prefix to be used as short form of the target namespace<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>xsdDocument</td>
+                    <td>borehole.xsd</td>
+                    <td>Default: FIXME<br/>Description: Name of an XML Schema document to create representing the content of this package<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>xsdEncodingRule</td>
+                    <td>iso19136_2007_INSPIRE_Extensions</td>
+                    <td>Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br/>Default: iso19136_2007<br/>Description: XML Schema encoding rule to apply<br/>
+                    </td>
+                </tr>
+            </table>
+    		&#160;
+    		<p>
+                <h4>UML Diagram: Context diagram: OriginPosition</h4>
+                <img src="../Images/EAID_296A93BD_AA25_4cef_9C97_119D7C9E6E49.png" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Summary diagram: Boreholes</h4>
+                <img src="../Images/EAID_3A402885_467D_4a2e_A4DD_E584CD60CAF4.png" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context diagram: MappedInterval</h4>
+                <img src="../Images/EAID_213E62CE_449E_4655_A0A3_EC83513C8287.png" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : Borehole</h4>
+                <img src="../Images/EAID_6135C407_EC75_417d_B400_877478C4C485.png" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : BoreholeDetails</h4>
+                <img src="../Images/EAID_4C530D1B_B227_4232_A60C_E5214CBBC262.png" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Borehole package dependencies</h4>
+                <img src="../Images/EAID_007567C8_6212_4f28_8E03_E831026B291A.png" alt="UML Diagram"/>
+            </p>
+        </div>
+        <div class="clearing">&#160;</div>
+        <div id="footer" __skip="skip">
+            <hr class="first"/>
+            <p class="panel">
+			For more information about GML Application Schema development refer to:<br/>
+                <a href="https://www.seegrid.csiro.au/wiki/bin/view/AppSchemas/UmlGml">UML models of GML Application Schemas</a>
+            </p>
+            <p class="panel">
+			For more general information about GML refer to:<br/>
+                <a href="http://www.opengis.net/gml/">GML - the Geography Markup Language</a>
+            </p>
+            <p class="panel">
+			The document set was auto-generated at 2011-10-05T14:16+<br/>
+			using FullMoon - A processing framework for transforming XML models
+		</p>
+        </div>
+    </body>
+</html>

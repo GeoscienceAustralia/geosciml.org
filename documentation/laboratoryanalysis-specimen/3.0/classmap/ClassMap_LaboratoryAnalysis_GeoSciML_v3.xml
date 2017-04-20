@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:gsmlla="http://xmlns.geosciml.org/LaboratoryAnalysis-Specimen/3.0"
+	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0"
+	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0 http://projects.arcs.org.au/svn/fullmoon/trunk/resources/dependency-util/package-class-map.xsd"
+	id="ClassMap_LaboratoryAnalysis_GeoSciML_v3.xml">
+	<description>Provides a mapping of classes from the LaboratoryAnalysis-Specimen module of GeoSciML to elements from GeoSciML XML Schema Version 3.0.</description>
+	<imports>
+		<schema prefix="gsmlla" namespace="http://xmlns.geosciml.org/LaboratoryAnalysis-Specimen/3.0" schemaLocation="http://schemas.geosciml.org/laboratoryanalysis-specimen/3.0/laboratoryAnalysis-Specimen.xsd" />
+	</imports>
+<!-- ============================================================================== -->
+<!-- Laboratory Analysis leaf -->
+     <!-- Feature types -->
+	<entry>
+		<umlClass>AnalyticalInstrument</umlClass>
+		<umlStereotype>FeatureType</umlStereotype>
+		<gmlObjectElement>gsmlla:AnalyticalInstrument</gmlObjectElement>
+		<gmlType>gsmlla:AnalyticalInstrumentType</gmlType>
+		<gmlPropertyType>gsmlla:AnalyticalInstrumentPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>AnalyticalProcess</umlClass>
+		<umlStereotype>FeatureType</umlStereotype>
+		<gmlObjectElement>gsmlla:AnalyticalProcess</gmlObjectElement>
+		<gmlType>gsmlla:AnalyticalProcessType</gmlType>
+		<gmlPropertyType>gsmlla:AnalyticalProcessPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>AnalyticalSession</umlClass>
+		<umlStereotype>FeatureType</umlStereotype>
+		<gmlObjectElement>gsmlla:AnalyticalSession</gmlObjectElement>
+		<gmlType>gsmlla:AnalyticalSessionType</gmlType>
+		<gmlPropertyType>gsmlla:AnalyticalSessionPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>Image</umlClass>
+		<umlStereotype>FeatureType</umlStereotype>
+		<gmlObjectElement>gsmlla:Image</gmlObjectElement>
+		<gmlType>gsmlla:ImageType</gmlType>
+		<gmlPropertyType>gsmlla:ImagePropertyType</gmlPropertyType>
+	</entry>
+      <!-- Types -->
+	<entry>
+		<umlClass>AnalyticalMethod</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>gsmlla:AnalyticalMethod</gmlObjectElement>
+		<gmlType>gsmlla:AnalyticalMethodType</gmlType>
+		<gmlPropertyType>gsmlla:AnalyticalMethodPropertyType</gmlPropertyType>
+	</entry>
+<!-- -=========================================================== -->
+<!-- GeologicSpecimen leaf -->
+	<entry>
+		<umlClass>GeologicSpecimenPreparation</umlClass>
+		<umlStereotype>FeatureType</umlStereotype>
+		<gmlObjectElement>gsmlla:GeologicSpecimenPreparation</gmlObjectElement>
+		<gmlType>gsmlla:GeologicSpecimenPreparationType</gmlType>
+		<gmlPropertyType>gsmlla:GeologicSpecimenPreparationPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GeologicSamplingMethod</umlClass>
+		<umlStereotype>FeatureType</umlStereotype>
+		<gmlObjectElement>gsmlla:GeologicSamplingMethod</gmlObjectElement>
+		<gmlType>gsmlla:GeologicSamplingMethodType</gmlType>
+		<gmlPropertyType>gsmlla:GeologicSamplingMethodPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>ReferenceSpecimen</umlClass>
+		<umlStereotype>FeatureType</umlStereotype>
+		<gmlObjectElement>gsmlla:ReferenceSpecimen</gmlObjectElement>
+		<gmlType>gsmlla:ReferenceSpecimenType</gmlType>
+		<gmlPropertyType>gsmlla:ReferenceSpecimenPropertyType</gmlPropertyType>
+	</entry>
+<!-- ===================================================== -->
+<!-- Geochronology leaf -->
+	<entry>
+		<umlClass>GeochronologicInterpretation</umlClass>
+		<umlStereotype>FeatureType</umlStereotype>
+		<gmlObjectElement>gsmlla:GeochronologicInterpretation</gmlObjectElement>
+		<gmlType>gsmlla:GeochronologicInterpretationType</gmlType>
+		<gmlPropertyType>gsmlla:GeochronologicInterpretationPropertyType</gmlPropertyType>
+	</entry>
+</mapping>

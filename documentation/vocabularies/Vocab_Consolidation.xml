@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gsml:GSML 
+xmlns:gsml="urn:cgi:xmlns:CGI:GeoSciML:2.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:gml="http://www.opengis.net/gml"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xsi:schemaLocation="urn:cgi:xmlns:CGI:GeoSciML:2.0 http://www.geosciml.org/schemas/geosciml/2.0_rc1/geosciml.xsd">
+<!--this vocabulary was downloaded from 
+http://tellus.brgm.fr/exist/brgm_geosciml/concept.xql?request=GetResource&resourcetype=vocabulary&resourcepath=CGI_ConsolidationDegree.xml
+and the namespace references and schema location were inserted to get the document to validate
+SMR May 2, 2008 -->
+<gsml:member>
+<gsml:GeologicVocabulary gml:id="CGI_ConsolidationDegree">
+
+	<gml:name codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008
+</gml:name>
+
+	<gml:definitionMember>
+
+	<gsml:ControlledConcept gml:id="deg_1">
+
+	<gml:description>
+Particulate constituents of a compound material do not adhere to each other strongly enough that the aggregate can be considered a solid in its own right.
+</gml:description>
+
+	<gml:name codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Unconsolidated
+</gml:name>
+
+	<gsml:identifier codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Unconsolidated
+</gsml:identifier>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="fr">Unconsolidated</gsml:name>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="eng">Unconsolidated</gsml:name>
+<gsml:vocabulary xlink:href="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008"/>
+</gsml:ControlledConcept>
+</gml:definitionMember>
+
+	<gml:definitionMember>
+
+	<gsml:ControlledConcept gml:id="deg_2">
+
+	<gml:description>
+Easily indented with fingers. Relative density 0.0-0.2 (NADMSLTTs 2004 after Bowles, 1984).
+</gml:description>
+
+	<gml:name codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Unconsolidated_very_loose
+</gml:name>
+
+	<gsml:identifier codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Unconsolidated_very_loose
+</gsml:identifier>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="fr">Unconsolidated, very loose</gsml:name>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="eng">Unconsolidated, very loose</gsml:name>
+<gsml:vocabulary xlink:href="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008"/>
+</gsml:ControlledConcept>
+</gml:definitionMember>
+
+	<gml:definitionMember>
+
+	<gsml:ControlledConcept gml:id="deg_3">
+
+	<gml:description>
+Easily shoveled, can be indented with fingers. Relative density 0.2-0.4 (NADMSLTTs 2004, after Bowles, 1984, slightly modified by SMR).
+</gml:description>
+
+	<gml:name codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Unconsolidated_loose
+</gml:name>
+
+	<gsml:identifier codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Unconsolidated_loose
+</gsml:identifier>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="fr">Unconsolidated, loose</gsml:name>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="eng">Unconsolidated, loose</gsml:name>
+<gsml:vocabulary xlink:href="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008"/>
+</gsml:ControlledConcept>
+</gml:definitionMember>
+
+	<gml:definitionMember>
+
+	<gsml:ControlledConcept gml:id="deg_4">
+
+	<gml:description>
+Shoveled with difficulty. relative density 0.4 - 0.7 (NADMSLTTs 2004, after Bowles, 1984).
+</gml:description>
+
+	<gml:name codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Incipient_consolidation 
+</gml:name>
+
+	<gsml:identifier codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Incipient_consolidation 
+</gsml:identifier>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="fr">Incipient consolidation </gsml:name>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="eng">Incipient consolidation </gsml:name>
+<gsml:vocabulary xlink:href="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008"/>
+</gsml:ControlledConcept>
+</gml:definitionMember>
+
+	<gml:definitionMember>
+
+	<gsml:ControlledConcept gml:id="deg_5">
+
+	<gml:description>
+Particulate constituents of a compound material adhere to each other strongly enough that the aggregate can be considered a solid material in its own right.
+</gml:description>
+
+	<gml:name codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Consolidated
+</gml:name>
+
+	<gsml:identifier codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Consolidated
+</gsml:identifier>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="fr">Consolidated</gsml:name>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="eng">Consolidated</gsml:name>
+<gsml:vocabulary xlink:href="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008"/>
+</gsml:ControlledConcept>
+</gml:definitionMember>
+
+	<gml:definitionMember>
+
+	<gsml:ControlledConcept gml:id="deg_6">
+
+	<gml:description>
+Requires pick to loosen for shoveling. relative density 0.7-0.9 (NADMSLTTs 2004 after Bowles, 1984).
+</gml:description>
+
+	<gml:name codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Well_consolidated
+</gml:name>
+
+	<gsml:identifier codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Well_consolidated
+</gsml:identifier>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="fr">Well consolidated</gsml:name>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="eng">Well consolidated</gsml:name>
+<gsml:vocabulary xlink:href="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008"/>
+</gsml:ControlledConcept>
+</gml:definitionMember>
+
+	<gml:definitionMember>
+
+	<gsml:ControlledConcept gml:id="deg_7">
+
+	<gml:description>
+Requires blasting or heavy equipment to loosen. Relative density 0.9-1.0 (NADM SLTTs 2004 after Bowles, 1984). Synonomous with lithified. Rings to blow of hammer.
+</gml:description>
+
+	<gml:name codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Indurated
+</gml:name>
+
+	<gsml:identifier codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Indurated
+</gsml:identifier>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="fr">Indurated</gsml:name>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="eng">Indurated</gsml:name>
+<gsml:vocabulary xlink:href="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008"/>
+</gsml:ControlledConcept>
+</gml:definitionMember>
+
+	<gml:definitionMember>
+
+	<gsml:ControlledConcept gml:id="deg_8">
+
+	<gml:description>
+Rock can be broken with single blow from standard rock hammer (less than 1 kg mass).
+</gml:description>
+
+	<gml:name codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Slightly_indurated
+</gml:name>
+
+	<gsml:identifier codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Slightly_indurated
+</gsml:identifier>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="fr">Slightly indurated</gsml:name>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="eng">Slightly indurated</gsml:name>
+<gsml:vocabulary xlink:href="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008"/>
+</gsml:ControlledConcept>
+</gml:definitionMember>
+
+	<gml:definitionMember>
+
+	<gsml:ControlledConcept gml:id="deg_9">
+
+	<gml:description>
+Multiple blows with standard rock hammer (less than 1 kg) are required to break rock.
+</gml:description>
+
+	<gml:name codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Moderately_indurated
+</gml:name>
+
+	<gsml:identifier codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Moderately_indurated
+</gsml:identifier>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="fr">Moderately indurated</gsml:name>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="eng">Moderately indurated</gsml:name>
+<gsml:vocabulary xlink:href="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008"/>
+</gsml:ControlledConcept>
+</gml:definitionMember>
+
+	<gml:definitionMember>
+
+	<gsml:ControlledConcept gml:id="deg_10">
+
+	<gml:description>
+Particles in the rock are strongly bound together such that rock surface can only be broken with great difficulty using standard rock hammer (less than 1 kg mass).
+</gml:description>
+
+	<gml:name codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Well_indurated
+</gml:name>
+
+	<gsml:identifier codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Well_indurated
+</gsml:identifier>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="fr">Well indurated</gsml:name>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="eng">Well indurated</gsml:name>
+<gsml:vocabulary xlink:href="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008"/>
+</gsml:ControlledConcept>
+</gml:definitionMember>
+
+	<gml:definitionMember>
+
+	<gsml:ControlledConcept gml:id="deg_11">
+
+	<gml:description>
+Material is lithified, but induration varies at scale of description.
+</gml:description>
+
+	<gml:name codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Variable_induration
+</gml:name>
+
+	<gsml:identifier codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Variable_induration
+</gsml:identifier>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="fr">Variable induration</gsml:name>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="eng">Variable induration</gsml:name>
+<gsml:vocabulary xlink:href="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008"/>
+</gsml:ControlledConcept>
+</gml:definitionMember>
+
+	<gml:definitionMember>
+
+	<gsml:ControlledConcept gml:id="deg_12">
+
+	<gml:description>
+Consolidation ranges from unconsolidated to indurated on scale of description
+</gml:description>
+
+	<gml:name codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Consolidation_variable
+</gml:name>
+
+	<gsml:identifier codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Consolidation_variable
+</gsml:identifier>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="fr">Consolidation variable</gsml:name>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="eng">Consolidation variable</gsml:name>
+<gsml:vocabulary xlink:href="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008"/>
+</gsml:ControlledConcept>
+</gml:definitionMember>
+
+	<gml:definitionMember>
+
+	<gsml:ControlledConcept gml:id="deg_13">
+
+	<gml:description>
+In normative descriptions, indicates that consolidation state is not a determining factor in identification, it may have any value.
+</gml:description>
+
+	<gml:name codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Consolidation_not_specified
+</gml:name>
+
+	<gsml:identifier codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Consolidation_not_specified
+</gsml:identifier>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="fr">Consolidation not specified</gsml:name>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="eng">Consolidation not specified</gsml:name>
+<gsml:vocabulary xlink:href="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008"/>
+</gsml:ControlledConcept>
+</gml:definitionMember>
+
+	<gml:definitionMember>
+
+	<gsml:ControlledConcept gml:id="deg_14">
+<gml:description>No data provided to specify consolidation state. 
+</gml:description>
+
+	<gml:name codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Consolidation_state_unknown
+</gml:name>
+
+	<gsml:identifier codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Consolidation_state_unknown
+</gsml:identifier>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="fr">Consolidation state unknown</gsml:name>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="eng">Consolidation state unknown</gsml:name>
+<gsml:vocabulary xlink:href="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008"/>
+</gsml:ControlledConcept>
+</gml:definitionMember>
+
+	<gml:definitionMember>
+
+	<gsml:ControlledConcept gml:id="deg_15">
+<gml:description>no data because none are available
+</gml:description>
+
+	<gml:name codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Not_Available 
+</gml:name>
+
+	<gsml:identifier codeSpace="urn:ietf:rfc:2141">
+urn:cgi:classifier:CGI:ConsolidationDegree:2008:Not_Available 
+</gsml:identifier>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="fr">Not Available </gsml:name>
+<gsml:name codeSpace="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008" xml:lang="eng">Not Available </gsml:name>
+<gsml:vocabulary xlink:href="urn:cgi:classifierScheme:CGI:ConsolidationDegree:2008"/>
+</gsml:ControlledConcept>
+</gml:definitionMember>
+</gsml:GeologicVocabulary>
+</gsml:member>
+
+</gsml:GSML>
+

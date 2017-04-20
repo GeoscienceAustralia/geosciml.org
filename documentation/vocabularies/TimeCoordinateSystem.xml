@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gml:TimeCoordinateSystem 
+xmlns:gml="http://www.opengis.net/gml" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.opengis.net/gml https://www.seegrid.csiro.au/subversion/GeoSciML/trunk/schema/GeoTime/geologicTime.xsd" gml:id="geologyMa">
+	<gml:description>Time coordinate system for geological time - millions of years</gml:description>
+	<gml:name>Geological coordinate system - Ma</gml:name>
+	<gml:domainOfValidity>Earth</gml:domainOfValidity>
+	<gml:origin>
+		<gml:TimeInstant gml:id="C14_Origin">
+			<gml:description xlink:href="http://www.c14dating.com/agecalc.html">Conventional origin used for carbon dating.  Equivalent to "present" for other radiometric dating techniques which have much lower precision.</gml:description>
+			<gml:timePosition frame="ISO-8601">1950</gml:timePosition>
+		</gml:TimeInstant>
+	</gml:origin>
+	<gml:interval unit="year" radix="10" factor="-6">1.0</gml:interval>
+</gml:TimeCoordinateSystem>

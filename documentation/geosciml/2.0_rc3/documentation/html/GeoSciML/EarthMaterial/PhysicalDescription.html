@@ -1,0 +1,287 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <title>GML Application Schema Class Details - PhysicalDescription</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <link href="../../default.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-35254121-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script>
+
+    <body class="section-3">
+        <div id="header">
+            <div align="left">
+                <img src="../../gas-banner.jpg" alt="GML Application Schema API Specification" width="1000" height="59"/>
+            </div>
+            <ul id="menu">
+                <li id="nav-1">
+                    <a href="../../overview-summary.html">Overview</a>
+                </li>
+                <li id="nav-2">
+                    <a href="package-summary.html">Package</a>
+                </li>
+                <li id="nav-3">
+                    <a href="PhysicalDescription.html">Class</a>
+                </li>
+                <li id="nav-4">
+                    <a href="../../help-doc.html">Help</a>
+                </li>
+            </ul>
+        </div>
+        <div id="main">
+            <h1 class="first">
+				Class <tt>&lt;&lt;DataType&gt;&gt;  PhysicalDescription </tt>
+            </h1>
+            <p>PhysicalDescription describes a limited but commonly used set of physical properties of Rocks and UnconsolidatedMaterials.  This set is an incomplete subset of potential physical properties that could be used to describe rocks and unconsolidated materials.  Revision/extension of this list is anticipated in future versions.</p><!-- Create a list of known local subclasses, if there are any -->
+            <b>Local Subclasses:</b> (none)<!-- Create a table to list class attributes, if there are any -->
+            <h2>Attributes</h2>
+            <table width="95%" class="details"><!-- Column 1: Name -->
+                <th>Name</th><!-- Column 2: Type -->
+                <th>Type</th><!-- Column 3: Bounds -->
+                <th>Bounds</th><!-- Column 4: From Class -->
+                <th>From Class</th><!-- Column 5: Notes-->
+                <th>Notes</th>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>density</b>
+                    </td><!-- Column 2: Type -->
+                    <td>
+                        <a href="../CGI_Value/CGI_Numeric.html">CGI_Numeric</a>
+                    </td><!-- Column 3: Bounds -->
+                    <td>0..*</td><!-- Column 4: From Class -->
+                    <td>PhysicalDescription</td><!-- Column 5: Notes -->
+                    <td>Material mass per unit volume</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>2</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>magneticSusceptibility</b>
+                    </td><!-- Column 2: Type -->
+                    <td>
+                        <a href="../CGI_Value/CGI_Value.html">CGI_Value</a>
+                    </td><!-- Column 3: Bounds -->
+                    <td>0..*</td><!-- Column 4: From Class -->
+                    <td>PhysicalDescription</td><!-- Column 5: Notes -->
+                    <td>Material magnetic susceptibility, customarily measured in SI units.  The ratio of induced magnetization to the strength of the magnetic field causing the magnetization.<br/>Note that volume magnetic susceptibility is dimensionless, being magnetization (magnetic dipole moment) in amperes per metre (SI) divided by the applied field, also in amperes per metre. However, many tables of magnetic susceptibility and some instruments give cgs values that rely on different definitions of the permeability of free space than SI values. The cgs value of susceptibility is multiplied by 4pi to give the SI susceptibility value. For example, the cgs volume magnetic susceptibility of water at 20°C is -7.19x10-7 which is -9.04x10-6 in SI. The xml encoding should specify whether the uom is SI or cgs, and if in cgs provide a &lt;gml:conversionToPreferredUnit&gt;.</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>3</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>permeability</b>
+                    </td><!-- Column 2: Type -->
+                    <td>
+                        <a href="../CGI_Value/CGI_Value.html">CGI_Value</a>
+                    </td><!-- Column 3: Bounds -->
+                    <td>0..*</td><!-- Column 4: From Class -->
+                    <td>PhysicalDescription</td><!-- Column 5: Notes -->
+                    <td>The measure of the capacity of a porous material to transmit a fluid under unequal pressure.  Customary unit of measure: millidarcy</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>porosity</b>
+                    </td><!-- Column 2: Type -->
+                    <td>
+                        <a href="../CGI_Value/CGI_Value.html">CGI_Value</a>
+                    </td><!-- Column 3: Bounds -->
+                    <td>0..*</td><!-- Column 4: From Class -->
+                    <td>PhysicalDescription</td><!-- Column 5: Notes -->
+                    <td>The percentage of the bulk volume of a material that is occupied by interstices, whether isolated or connected.</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>5</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+            </table>
+			&#160;
+			<!-- Create a table to list class associations, if there are any -->
+            <h2>Outbound Associations</h2>
+            <table width="95%" class="details">
+                <th>Name</th>
+                <th>Type</th>
+                <th>Multiplicity</th>
+                <th>From Class</th>
+                <th>Notes</th>
+            </table>
+			&#160;
+			<!-- Create a table to list class constraints, if there are any -->
+            <h2>Constraints</h2>
+            <table width="95%" class="details">
+                <th>Constraint</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Weight</th>
+            </table>
+			&#160;
+			<!-- Create a table to list class tagged values, if there are any -->
+            <h2>Tagged values</h2>
+            <table width="95%" class="details">
+                <th>Tag</th>
+                <th>Value</th>
+                <th>Notes</th>
+                <tr>
+                    <td>byValuePropertyType</td>
+                    <td>false</td>
+                    <td>Values: true,false<br/>Default: false<br/>Description: enforce the 'by value' property pattern without xl<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>hasXmlLang</td>
+                    <td>false</td>
+                    <td>Values: true | false<br/>Default: false<br/>Description: axml attribute xml:lang shall be generated for the type representing the class<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>isCollection</td>
+                    <td>false</td>
+                    <td>Values: true,false<br/>Default: false<br/>Description: attribute group gml:AggregationAttributeGroup is a<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>noPropertyType</td>
+                    <td>false</td>
+                    <td>Values: true,false<br/>Default: false<br/>Description: suppress automatic creation of *PropertyType compl<br/>
+                    </td>
+                </tr>
+            </table>
+			&#160;
+			<h2>GML-conformant XML Implementation Details</h2>
+            <table width="95%" border="0">
+                <td>
+                    <pre>&lt;xs:element xmlns:xs="http://www.w3.org/2001/XMLSchema" name="PhysicalDescription" type="gsml:PhysicalDescriptionType"&gt;
+    &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;PhysicalDescription describes a limited but commonly used set of physical properties of Rocks and UnconsolidatedMaterials.  This set is an incomplete subset of potential physical properties that could be used to describe rocks and unconsolidated materials.  Revision/extension of this list is anticipated in future versions.&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+&lt;/xs:element&gt;</pre>
+                    <pre>&lt;xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="PhysicalDescriptionType"&gt;
+    &lt;xs:sequence&gt;
+        &lt;xs:element name="density" type="gsml:CGI_NumericPropertyType" minOccurs="0" maxOccurs="unbounded"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Material mass per unit volume&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element name="magneticSusceptibility" type="gsml:CGI_ValuePropertyType" minOccurs="0" maxOccurs="unbounded"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;Material magnetic susceptibility, customarily measured in SI units.  The ratio of induced magnetization to the strength of the magnetic field causing the magnetization.
+Note that volume magnetic susceptibility is dimensionless, being magnetization (magnetic dipole moment) in amperes per metre (SI) divided by the applied field, also in amperes per metre. However, many tables of magnetic susceptibility and some instruments give cgs values that rely on different definitions of the permeability of free space than SI values. The cgs value of susceptibility is multiplied by 4pi to give the SI susceptibility value. For example, the cgs volume magnetic susceptibility of water at 20?C is -7.19x10-7 which is -9.04x10-6 in SI. The xml encoding should specify whether the uom is SI or cgs, and if in cgs provide a &amp;lt;gml:conversionToPreferredUnit&amp;gt;.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element name="permeability" type="gsml:CGI_ValuePropertyType" minOccurs="0" maxOccurs="unbounded"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;The measure of the capacity of a porous material to transmit a fluid under unequal pressure.  Customary unit of measure: millidarcy&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+        &lt;xs:element name="porosity" type="gsml:CGI_ValuePropertyType" minOccurs="0" maxOccurs="unbounded"&gt;
+            &lt;xs:annotation&gt;
+                &lt;xs:documentation&gt;The percentage of the bulk volume of a material that is occupied by interstices, whether isolated or connected.&lt;/xs:documentation&gt;
+            &lt;/xs:annotation&gt;
+        &lt;/xs:element&gt;
+    &lt;/xs:sequence&gt;
+&lt;/xs:complexType&gt;</pre>
+                    <pre>&lt;xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="PhysicalDescriptionPropertyType"&gt;
+    &lt;xs:sequence&gt;
+        &lt;xs:element ref="gsml:PhysicalDescription"/&gt;
+    &lt;/xs:sequence&gt;
+&lt;/xs:complexType&gt;</pre>
+                </td>
+            </table>&#160;</div>
+        <div class="clearing">&#160;</div>
+        <div id="footer" __skip="skip">
+            <hr class="first"/>
+            <p class="panel">
+			For more information about GML Application Schema development refer to:<br/>
+                <a href="https://www.seegrid.csiro.au/wiki/bin/view/AppSchemas/UmlGml">UML models of GML Application Schemas</a>
+            </p>
+            <p class="panel">
+			For more general information about GML refer to:<br/>
+                <a href="http://www.opengis.net/gml/">GML - the Geography Markup Language</a>
+            </p>
+            <p class="panel">
+			The document set was auto-generated at 2008-09-04T23:36+10:00<br/>
+			using FullMoon - A processing framework for transforming XML models
+		</p>
+        </div>
+    </body>
+</html>

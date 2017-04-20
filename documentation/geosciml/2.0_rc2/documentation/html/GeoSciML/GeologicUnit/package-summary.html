@@ -1,0 +1,236 @@
+<html>
+    <head>
+        <title>GML Application Schema Package Summary - GeoSciML/GeologicUnit</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <link href="../../default.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-35254121-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script>
+
+    <body class="section-2">
+        <div id="header">
+            <div align="left">
+                <img src="../../gas-banner.jpg" alt="GML Application Schema API Specification" width="1000" height="59"/>
+            </div>
+            <ul id="menu">
+                <li id="nav-1">
+                    <a href="../../overview-summary.html">Overview</a>
+                </li>
+                <li id="nav-2">
+                    <a href="package-summary.html">Package</a>
+                </li>
+                <li id="nav-3">Class</li>
+                <li id="nav-4">
+                    <a href="../../help-doc.html">Help</a>
+                </li>
+            </ul>
+        </div>
+        <div id="main">
+            <h1 class="first">Package <tt>GeoSciML/GeologicUnit</tt>
+            </h1>
+            <p>The GeoSciML GeologicUnit Package contains classes representing notional geologic units, whose complete and precise extent is inferred to exist. Explicit spatial properties are available through association with a MappedFeature. <br/>
+                <br/>Geologic units includes both formal units (i.e. formally adopted and named in the official lexicon) and informal units (i.e. named but not promoted to the lexicon) and unnamed units (i.e. recognisable and described and delineable in the field but not otherwise formalised).<br/>
+                <br/>A number of specialized unit classes are provided. </p>
+            <table width="95%" class="details">
+                <tr>
+                    <td colspan="2">
+                        <h2>Class Summary</h2>
+                    </td>
+                </tr>
+                <tr class="stheader">
+                    <td colspan="2" class="stheader">
+                        <tt>&lt;&lt;</tt>FeatureType<tt>&gt;&gt;</tt> Classes
+							</td>
+                </tr>
+                <tr xmlns="http://www.w3.org/1999/xhtml">
+                    <td width="15%">
+                        <b>
+                            <a href="ChronostratigraphicUnit.html" title="Class in GeoSciML.GeologicUnit.ChronostratigraphicUnit">ChronostratigraphicUnit</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>A Geologic Unit defined by its age. The by convention, the definingAge is the age of formation (deposition of sedimentary rock, crystallization of igneous rock).<br/>A chronostratigraphic unit may have properties characteristic of a LithostratigraphicUnit, thus the unitThickness and bedding properties are included in this element.<br/>
+                    </td>
+                </tr>
+                <tr xmlns="http://www.w3.org/1999/xhtml">
+                    <td width="15%">
+                        <b>
+                            <a href="DeformationUnit.html" title="Class in GeoSciML.GeologicUnit.DeformationUnit">DeformationUnit</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>GeologicUnit defined by containment of or association with some geologic structure. DeformationUnits may be predominantly brittle, discontinuous deformation, ductile/plastic deformation or a combination of these.  <br/>
+                        <br/>Includes fault zone, which is a body of rock characterized by deformation associated with some ShearDisplacementStructure feature, and mapped as such. If there are many faults contained in the DeformationUnit then these form a FaultSystem, so there is a zero to one association between DeformationUnit and ShearDisplacementStructure, with the ShearDisplacementStructure being either a FaultSystem, DuctileShearStructure or a Fault. The faults are not the geologic unit, the deformed rock is the geologic unit.<br/>
+                        <br/>A ShearDisplacementStructure may be associated with 0 to one DeformationUnit. Such a DeformationUnit may have 1 or more parts distinguished by different kinds of fault rocks. Zero represents the case in which the DeformationUnit is not mapped or described. <br/>
+                        <br/>DeformationUnits may also be defined by presence of cleavage, jointing, structures with a particular orientation (e.g. 'southeast-dipping bedding domain').</td>
+                </tr>
+                <tr xmlns="http://www.w3.org/1999/xhtml">
+                    <td width="15%">
+                        <b>
+                            <a href="GeologicUnit.html" title="Class in GeoSciML.GeologicUnit.GeologicUnit">GeologicUnit</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Operationally, the GeologicUnit element is a container used to associate geologic properties with some mapped occurrence (through GeologicFeature.occurrence -&gt; MappedFeature link), or with a geologic unit ControlledConcept in a vocabulary (through the GeologicUnit.classifier -&gt;ControlledConcept link).<br/>
+                        <br/>Conceptually, may represent a body of material in the Earth whose complete and precise extent is inferred to exist (NADM GeologicUnit, Stratigraphic unit in sense of NACSN or Intnl Stratigraphic Code), or a classifier used to characterize parts of the Earth (e.g. lithologic map unit like 'granitic rock' or 'alluvial deposit', surficial units like 'till' or 'old alluvium').<br/>
+                        <br/>Spatial properties are only available through association with a MappedFeature. Includes both formal units (i.e. formally adopted and named in the official lexicon) and informal units (i.e. named but not promoted to the lexicon) and unnamed units (i.e. recognisable and described and delineable in the field but not otherwise formalised). <br/>
+                        <br/>Will be made Abstract when a complete (enough) set of specialized subtypes is defined.</td>
+                </tr>
+                <tr xmlns="http://www.w3.org/1999/xhtml">
+                    <td width="15%">
+                        <b>
+                            <a href="LithodemicUnit.html" title="Class in GeoSciML.GeologicUnit.LithodemicUnit">LithodemicUnit</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>A geologicUnit that lacks stratification, and is defined by lithology<br/>Generally represents predominantly intrusive, highly deformed and/or metamorphosed rock<br/>
+                        <br/>
+                    </td>
+                </tr>
+                <tr xmlns="http://www.w3.org/1999/xhtml">
+                    <td width="15%">
+                        <b>
+                            <a href="LithologicUnit.html" title="Class in GeoSciML.GeologicUnit.LithologicUnit">LithologicUnit</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Element representing a GeologicUnit defined by lithology independent of subdividing external and internal boundaries. May be stratified or non-stratified. This concept corresponds to LithostratigraphicUnit in the sense of the International Stratigraphic Code. Usage here follows distinction of stratified and non-stratified units from North American Code of Stratigraphic Nomenclature to represent possible presence of stratification-related properties in stratified units, but the explicit absence of those properties in an non-stratified (Lithodemic) unit. <br/>
+                        <br/>May represent a particular body of rock (a NADM geologic unit), or may represent a 'kind' of rock body characterized by some internal sequence of rock types and the presence of various geologic (typically sedimentary) structures.<br/>
+                        <br/>This element will be made Abstract when a complete (enough) set of specialized data structures for subtypes is defined.<br/>
+                    </td>
+                </tr>
+                <tr xmlns="http://www.w3.org/1999/xhtml">
+                    <td width="15%">
+                        <b>
+                            <a href="LithostratigraphicUnit.html" title="Class in GeoSciML.GeologicUnit.LithostratigraphicUnit">LithostratigraphicUnit</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Geologic unit that has stratification, allowing specification of thickness and bedding-related properties. Note that while this usage corresponds to the formally definition of 'Lithostratigaphic unit' as defined in the North American Code of Stratigraphic Nomenclature, usage of this element does not denote definition or description of a unit in the sense of the code, only that stratification is present and can be described.</td>
+                </tr>
+                <tr class="stheader">
+                    <td colspan="2" class="stheader">
+                        <tt>&lt;&lt;</tt>DataType<tt>&gt;&gt;</tt> Classes
+							</td>
+                </tr>
+                <tr xmlns="http://www.w3.org/1999/xhtml">
+                    <td width="15%">
+                        <b>
+                            <a href="CompositionPart.html" title="Class in GeoSciML.GeologicUnit.CompositionPart">CompositionPart</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Element to represent composition of a geologic unit in terms of earth material constituents. </td>
+                </tr>
+                <tr xmlns="http://www.w3.org/1999/xhtml">
+                    <td width="15%">
+                        <b>
+                            <a href="GeologicUnitPart.html" title="Class in GeoSciML.GeologicUnit.GeologicUnitPart">GeologicUnitPart</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>GeologicUnitPart associates a GeologicUnit with another GeologicUnit that is a proper part of that unit. Parts may be formal or notional . Formal parts refer to a specific body of rock, as in formal stratigraphic members. Notional parts refer to assemblages of particular EarthMaterials with particular internal structure, which may be repeated in various places within a unit (e.g. 'turbidite sequence', 'point bar assemblage', 'leucosome veins')</td>
+                </tr>
+                <tr xmlns="http://www.w3.org/1999/xhtml">
+                    <td width="15%">
+                        <b>
+                            <a href="MetamorphicDescription.html" title="Class in GeoSciML.GeologicUnit.MetamorphicDescription">MetamorphicDescription</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>MetamorphicDescription describes the character of metamorphism applied to a CompoundMaterial or GeologicUnit using one or more properties including estimated intensity (grade; eg high grade, low grade), characteristic metamorphic mineral assemblages (facies; eg, greenschist, amphibolite), peak P-T estimates, and protolith material if known.</td>
+                </tr>
+                <tr xmlns="http://www.w3.org/1999/xhtml">
+                    <td width="15%">
+                        <b>
+                            <a href="PhysicalDescription.html" title="Class in GeoSciML.GeologicUnit.PhysicalDescription">PhysicalDescription</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>PhysicalDescription describes a limited but commonly used set of physical properties of Rocks and UnconsolidatedMaterials.  The Working Group recognizes that this set is an incomplete subset of potential physical properties that could be used to describe Rocks and UnconsolidatedMaterials, but it will likely cover most use cases for GeoSciML version 2.  Revision/extension of this list is antcipated in future versions.</td>
+                </tr>
+                <tr xmlns="http://www.w3.org/1999/xhtml">
+                    <td width="15%">
+                        <b>
+                            <a href="WeatheringDescription.html" title="Class in GeoSciML.GeologicUnit.WeatheringDescription">WeatheringDescription</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Data type is a container for properties describing the nature of a GeologicUnit at its interface with the atmosphere.  Soil profile description would have to be constructed as a GeologicUnit with parts representing the various horizons in the profile.</td>
+                </tr>
+                <tr class="stheader">
+                    <td colspan="2" class="stheader">
+                        <tt>&lt;&lt;</tt>CodeList<tt>&gt;&gt;</tt> Classes
+							</td>
+                </tr>
+                <tr xmlns="http://www.w3.org/1999/xhtml">
+                    <td width="15%">
+                        <b>
+                            <a href="GeologicUnitType.html" title="Class in GeoSciML.GeologicUnit.GeologicUnitType">GeologicUnitType</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;CodeList&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td/>
+                </tr>
+            </table>
+    		&#160;
+    		<table xmlns="http://www.w3.org/1999/xhtml" width="95%" class="details">
+                <tr>
+                    <td colspan="3">
+                        <h2>Tagged Values</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="stheader">Tag</td>
+                    <td class="stheader">Value</td>
+                    <td class="stheader">Notes</td>
+                </tr>
+                <tr>
+                    <td>xsdDocument</td>
+                    <td>geologicUnit.xsd</td>
+                    <td>Description: Relative path to XML Schema document corresponding to this package.<br/>
+                    </td>
+                </tr>
+            </table>
+    		&#160;
+    		<p xmlns="http://www.w3.org/1999/xhtml">
+                <h4>UML Diagram: Context diagram: GeologicUnit</h4>
+                <img src="../../Images/EAID_8A708452_33DA_4f25_AD8F_9406F5EC8B19.gif" alt="UML Diagram"/>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+                <h4>UML Diagram: Context diagram: LithologicUnit</h4>
+                <img src="../../Images/EAID_8D165AA6_9ED9_4967_BF5E_A33E5DC9B0A1.gif" alt="UML Diagram"/>
+            </p>
+            <p xmlns="http://www.w3.org/1999/xhtml">
+                <h4>UML Diagram: Summary diagram: Geologic Unit</h4>
+                <img src="../../Images/EAID_D8047CDE_683D_45ae_8E36_ABD1CA6D57CE.gif" alt="UML Diagram"/>
+            </p>
+        </div>
+        <div class="clearing">&#160;</div>
+        <div xmlns="http://www.w3.org/1999/xhtml" id="footer">
+            <hr class="first"/>
+            <p class="panel">For more information about GML Application Schema
+    		             development refer to:<br/>
+                <a href="https://www.seegrid.csiro.au/wiki/bin/view/AppSchemas/UmlGml">
+    		UML models of GML Application Schemas</a>
+            </p>
+            <p class="panel">For more general information about GML refer to:<br/>
+                <a href="http://www.opengis.net/gml/">GML - the Geography Markup Language</a>
+            </p>
+            <p class="panel">The document set was auto-generated at 2008-02-14T18:09+09:00<br/>
+    	                 using FullMoon - A processing framework for transforming XML models
+    	</p>
+            <p/>
+        </div>
+    </body>
+</html>

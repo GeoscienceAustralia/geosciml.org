@@ -1,0 +1,167 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <title>GML Application Schema Package Summary - GeoSciML/GeologicUnit</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <link href="../../default.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-35254121-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script>
+
+    <body class="section-2">
+        <div id="header">
+            <div align="left">
+                <img src="../../gas-banner.jpg" alt="GML Application Schema API Specification" width="1000" height="59"/>
+            </div>
+            <ul id="menu">
+                <li id="nav-1">
+                    <a href="../../overview-summary.html">Overview</a>
+                </li>
+                <li id="nav-2">
+                    <a href="package-summary.html">Package</a>
+                </li>
+                <li id="nav-3">Class</li>
+                <li id="nav-4">
+                    <a href="../../help-doc.html">Help</a>
+                </li>
+            </ul>
+        </div>
+        <div id="main">
+            <h1 class="first">Package <tt>GeoSciML/GeologicUnit</tt>
+            </h1>
+            <p>The GeoSciML GeologicUnit Package contains classes representing notional geologic units, whose complete and precise extent is inferred to exist. Explicit spatial properties are available through association with a MappedFeature. <br/>
+                <br/>Geologic units includes both formal units (i.e. formally adopted and named in the official lexicon) and informal units (i.e. named but not promoted to the lexicon) and unnamed units (i.e. recognisable and described and delineable in the field but not otherwise formalised).<br/>
+                <br/>A number of specialized unit classes are provided. </p>
+            <table width="95%" class="details">
+                <tr>
+                    <td colspan="2">
+                        <h2>Class Summary</h2>
+                    </td>
+                </tr>
+                <tr class="stheader">
+                    <td colspan="2" class="stheader">
+                        <tt>&lt;&lt;</tt>FeatureType<tt>&gt;&gt;</tt> Classes
+							</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="GeologicUnit.html" title="Class in GeoSciML.GeologicUnit.GeologicUnit">GeologicUnit</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Operationally, the GeologicUnit element is a container used to associate geologic properties with some mapped occurrence (through GeologicFeature.occurrence -&amp;gt; MappedFeature link), or with a geologic unit ControlledConcept in a vocabulary (through the GeologicUnit.classifier -&amp;gt;ControlledConcept link).<br/>
+                        <br/>Conceptually, may represent a body of material in the Earth whose complete and precise extent is inferred to exist (NADM GeologicUnit, Stratigraphic unit in sense of NACSN or Intnl Stratigraphic Code), or a classifier used to characterize parts of the Earth (e.g. lithologic map unit like 'granitic rock' or 'alluvial deposit', surficial units like 'till' or 'old alluvium').<br/>
+                        <br/>Spatial properties are only available through association with a MappedFeature. Includes both formal units (i.e. formally adopted and named in the official lexicon) and informal units (i.e. named but not promoted to the lexicon) and unnamed units (i.e. recognisable and described and delineable in the field but not otherwise formalised). <br/>
+                        <br/>Will be made Abstract when a complete (enough) set of specialized subtypes is defined.</td>
+                </tr>
+                <tr class="stheader">
+                    <td colspan="2" class="stheader">
+                        <tt>&lt;&lt;</tt>DataType<tt>&gt;&gt;</tt> Classes
+							</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="BeddingDescription.html" title="Class in GeoSciML.GeologicUnit.BeddingDescription">BeddingDescription</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Geologic unit that has stratification, allowing specification of thickness and bedding-related properties. Note that while this usage corresponds to the formally definition of 'Lithostratigaphic unit' as defined in the North American Code of Stratigraphic Nomenclature, usage of this element does not denote definition or description of a unit in the sense of the code, only that stratification is present and can be described.</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="CompositionPart.html" title="Class in GeoSciML.GeologicUnit.CompositionPart">CompositionPart</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Element to represent composition of a geologic unit in terms of earth material constituents. </td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="GeologicUnitPart.html" title="Class in GeoSciML.GeologicUnit.GeologicUnitPart">GeologicUnitPart</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>GeologicUnitPart associates a GeologicUnit with another GeologicUnit that is a proper part of that unit. Parts may be formal or notional . Formal parts refer to a specific body of rock, as in formal stratigraphic members. Notional parts refer to assemblages of particular EarthMaterials with particular internal structure, which may be repeated in various places within a unit (e.g. 'turbidite sequence', 'point bar assemblage', 'leucosome veins')</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="WeatheringDescription.html" title="Class in GeoSciML.GeologicUnit.WeatheringDescription">WeatheringDescription</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Data type is a container for properties describing the nature of a GeologicUnit at its interface with the atmosphere.  Soil profile description would have to be constructed as a GeologicUnit with parts representing the various horizons in the profile.</td>
+                </tr>
+                <tr class="stheader">
+                    <td colspan="2" class="stheader">
+                        <tt>&lt;&lt;</tt>CodeList<tt>&gt;&gt;</tt> Classes
+							</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="GeologicUnitType.html" title="Class in GeoSciML.GeologicUnit.GeologicUnitType">GeologicUnitType</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;CodeList&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td/>
+                </tr>
+            </table>
+    		&#160;
+    		<table width="95%" class="details">
+                <tr>
+                    <td colspan="3">
+                        <h2>Tagged Values</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="stheader">Tag</td>
+                    <td class="stheader">Value</td>
+                    <td class="stheader">Notes</td>
+                </tr>
+                <tr>
+                    <td>xsdDocument</td>
+                    <td>geologicUnit.xsd</td>
+                    <td>Description: Relative path to XML Schema document corresponding to this package.<br/>
+                    </td>
+                </tr>
+            </table>
+    		&#160;
+    		<p>
+                <h4>UML Diagram: Overview diagram: GeologicUnit</h4>
+                <img src="../../Images/EAID_698E0F3A_95EB_4f88_B0F0_F35CE5CDC21C.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context diagram: GeologicUnit</h4>
+                <img src="../../Images/EAID_8A708452_33DA_4f25_AD8F_9406F5EC8B19.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Summary diagram: Geologic Unit</h4>
+                <img src="../../Images/EAID_D8047CDE_683D_45ae_8E36_ABD1CA6D57CE.gif" alt="UML Diagram"/>
+            </p>
+        </div>
+        <div class="clearing">&#160;</div>
+        <div id="footer" __skip="skip">
+            <hr class="first"/>
+            <p class="panel">
+			For more information about GML Application Schema development refer to:<br/>
+                <a href="https://www.seegrid.csiro.au/wiki/bin/view/AppSchemas/UmlGml">UML models of GML Application Schemas</a>
+            </p>
+            <p class="panel">
+			For more general information about GML refer to:<br/>
+                <a href="http://www.opengis.net/gml/">GML - the Geography Markup Language</a>
+            </p>
+            <p class="panel">
+			The document set was auto-generated at 2008-09-04T23:36+10:00<br/>
+			using FullMoon - A processing framework for transforming XML models
+		</p>
+        </div>
+    </body>
+</html>

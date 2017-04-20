@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:gsml="http://xmlns.geosciml.org/GeoSciML-Core/3.0"
+	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0"
+	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0 http://projects.arcs.org.au/svn/fullmoon/trunk/resources/dependency-util/package-class-map.xsd"
+	id="ClassMap_Core_GeoSciML_v3.xml">
+	<description>Provides a mapping of classes from the core module of GeoSciML to elements from GeoSciML XML Schema Version 3.0.0</description>
+	<imports>
+		<schema prefix="gsml" namespace="http://xmlns.geosciml.org/GeoSciML-Core/3.0" schemaLocation="http://schemas.geosciml.org/geosciml-core/3.0/geosciml-core.xsd" />  <!-- Note prefix is "gsml", not "gsml-core"  -->
+	</imports>
+<!-- ================================================================= -->
+<!-- GeologicFeature Leaf -->
+	
+	<!-- FeatureType -->
+	<entry>
+		<umlClass>GeologicFeature</umlClass>
+		<umlStereotype>FeatureType</umlStereotype>
+		<gmlObjectElement>gsml:GeologicFeature</gmlObjectElement>
+		<gmlType>gsml:GeologicFeatureType</gmlType>
+		<gmlPropertyType>gsml:GeologicFeaturePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>MappedFeature</umlClass>
+		<umlStereotype>FeatureType</umlStereotype>
+		<gmlObjectElement>gsml:MappedFeature</gmlObjectElement>
+		<gmlType>gsml:MappedFeatureType</gmlType>
+		<gmlPropertyType>gsml:MappedFeaturePropertyType</gmlPropertyType>
+	</entry>
+
+
+<!-- ==================================================================== -->
+<!-- GeologicRelation Leaf -->	
+
+	<!-- Unstereotyped parent class -->
+	<entry>
+		<umlClass>GeologicRelation</umlClass>
+		<gmlObjectElement>gsml:GeologicRelation</gmlObjectElement>
+		<gmlType>gsml:GeologicRelationType</gmlType>
+		<gmlPropertyType>gsml:GeologicRelationPropertyType</gmlPropertyType>
+	</entry>	
+	<!-- Association class -->
+	<entry>
+		<umlClass>GeologicFeatureRelation</umlClass>
+		<gmlObjectElement>gsml:GeologicFeatureRelation</gmlObjectElement>
+		<gmlType>gsml:GeologicFeatureRelationType</gmlType>
+		<gmlPropertyType>gsml:GeologicFeatureRelationPropertyType</gmlPropertyType>
+	</entry>
+
+</mapping>

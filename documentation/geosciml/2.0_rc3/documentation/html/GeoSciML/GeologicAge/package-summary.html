@@ -1,0 +1,105 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <title>GML Application Schema Package Summary - GeoSciML/GeologicAge</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <link href="../../default.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-35254121-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script>
+
+    <body class="section-2">
+        <div id="header">
+            <div align="left">
+                <img src="../../gas-banner.jpg" alt="GML Application Schema API Specification" width="1000" height="59"/>
+            </div>
+            <ul id="menu">
+                <li id="nav-1">
+                    <a href="../../overview-summary.html">Overview</a>
+                </li>
+                <li id="nav-2">
+                    <a href="package-summary.html">Package</a>
+                </li>
+                <li id="nav-3">Class</li>
+                <li id="nav-4">
+                    <a href="../../help-doc.html">Help</a>
+                </li>
+            </ul>
+        </div>
+        <div id="main">
+            <h1 class="first">Package <tt>GeoSciML/GeologicAge</tt>
+            </h1>
+            <p>The GeoSciML GeologicAge package contains classes to support the description of geologic ages. <br/>
+                <br/>A geologic age is related to a particular GeologicEvent, during which one or more geological processes act to modify geological entities. <br/>
+                <br/>
+            </p>
+            <table width="95%" class="details">
+                <tr>
+                    <td colspan="2">
+                        <h2>Class Summary</h2>
+                    </td>
+                </tr>
+                <tr class="stheader">
+                    <td colspan="2" class="stheader">
+                        <tt>&lt;&lt;</tt>FeatureType<tt>&gt;&gt;</tt> Classes
+							</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="GeologicEvent.html" title="Class in GeoSciML.GeologicAge.GeologicEvent">GeologicEvent</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>An identifiable event during which one or more geological processes act to modify geological entities. A GeologicEvent must have a specified GeologicAge and may have specified environments and processes.  An example might be a cratonic uplift event during which erosion, sedimentation, and volcanism all take place.<br/>
+                        <br/>Geological history is an ordered aggregation of Geological Event objects, each of which may have an associated Geological Age, Geological Environment, and one or more Geological Process objects. Genesis typically pertains to some geological phenomenon (Geological Structure, Earth Material, Geological Unit, Fossil, etc.)<br/>
+                        <br/>In GeoSciML 2.0 this ordering cannot be specified.<br/>
+                        <br/>A GeologicEvent must have a specified eventAge, at least one eventProcess, and may have specified eventEnvironments.  An example might be a cratonic uplift event during which erosion, sedimentation, and volcanism all take place. Traditionally, geologists have described the age of a feature without explicitly specifying the event or processes the age related to. The GeologicEvent package allows for explicitly linking the three, without mandating it.<br/>
+                        <br/>The eventAge attribute is the age of a particular geological event or feature expressed in terms of years before present (absolute age), referred to the geological time scale, or by comparison with other geological events or features (relative age). An eventAge can represent an instant in time, an interval of time, or any combination of multiple instants or intervals. Specifications of age in years before present are based on determination of time durations based on interpretation of isotopic analyses of EarthMaterial (some other methods are used for geologically young materials). Ages referred to geological time scales are essentially based on correlation of a geological unit with a standard chronostratigraphic unit that serves as a reference. Relative ages are based on relationships between geological units such as superposition, intruded by, cross-cuts, or "contains inclusions of".</td>
+                </tr>
+            </table>
+    		&#160;
+    		<table width="95%" class="details">
+                <tr>
+                    <td colspan="3">
+                        <h2>Tagged Values</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="stheader">Tag</td>
+                    <td class="stheader">Value</td>
+                    <td class="stheader">Notes</td>
+                </tr>
+                <tr>
+                    <td>xsdDocument</td>
+                    <td>geologicAge.xsd</td>
+                    <td>Description: Relative path to XML Schema document corresponding to this package.<br/>
+                    </td>
+                </tr>
+            </table>
+    		&#160;
+    		<p>
+                <h4>UML Diagram: Context diagram: GeologicEvent</h4>
+                <img src="../../Images/EAID_6131605A_4CB3_4370_9568_704B41575099.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Summary diagram: Geologic Age</h4>
+                <img src="../../Images/EAID_429F26C7_FF64_42f3_B868_6DE16070BA85.gif" alt="UML Diagram"/>
+            </p>
+        </div>
+        <div class="clearing">&#160;</div>
+        <div id="footer" __skip="skip">
+            <hr class="first"/>
+            <p class="panel">
+			For more information about GML Application Schema development refer to:<br/>
+                <a href="https://www.seegrid.csiro.au/wiki/bin/view/AppSchemas/UmlGml">UML models of GML Application Schemas</a>
+            </p>
+            <p class="panel">
+			For more general information about GML refer to:<br/>
+                <a href="http://www.opengis.net/gml/">GML - the Geography Markup Language</a>
+            </p>
+            <p class="panel">
+			The document set was auto-generated at 2008-09-04T23:36+10:00<br/>
+			using FullMoon - A processing framework for transforming XML models
+		</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:gsmltrs="http://xmlns.geosciml.org/TemporalReferenceSystem/3.0"
+	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0"
+	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0 http://projects.arcs.org.au/svn/fullmoon/trunk/resources/dependency-util/package-class-map.xsd"
+	id="ClassMap_TRS_GeoSciML_v3.xml">
+	<description>Provides a mapping of elements specific to the Temporal Reference System package of GeosciML Version 3.0.0</description>
+	<imports>
+		<schema prefix="gsmltrs" namespace="http://xmlns.geosciml.org/TemporalReferenceSystem/3.0" schemaLocation="http://schemas.geosciml.org/temporalreferencesystem/3.0/trs.xsd" />
+	</imports>
+	<entry>
+		<umlClass>TimeOrdinalEra</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>gsmltrs:TimeOrdinalEra</gmlObjectElement>
+		<gmlType>gsmltrs:TimeOrdinalEraType</gmlType>
+		<gmlPropertyType>gsmltrs:TimeOrdinalEraPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TimeOrdinalEraBoundary</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>gsmltrs:TimeOrdinalEraBoundary</gmlObjectElement>
+		<gmlType>gsmltrs:TimeOrdinalEraBoundaryType</gmlType>
+		<gmlPropertyType>gsmltrs:TimeOrdinalEraBoundaryPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>TimeOrdinalReferenceSystem</umlClass>
+		<umlStereotype>Type</umlStereotype>
+		<gmlObjectElement>gsmltrs:TimeOrdinalReferenceSystem</gmlObjectElement>
+		<gmlType>gsmltrs:TimeOrdinalReferenceSystemType</gmlType>
+		<gmlPropertyType>gsmltrs:TimeOrdinalReferenceSystemPropertyType</gmlPropertyType>
+	</entry>
+</mapping>

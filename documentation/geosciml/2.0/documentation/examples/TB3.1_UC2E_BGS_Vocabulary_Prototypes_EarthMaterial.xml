@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Example of Earth Material vocabulary from BGS Rock Classification System.-->
+<gsml:GSML
+	xmlns="urn:cgi:xmlns:CGI:GeoSciML:2.0"
+	xmlns:gsml="urn:cgi:xmlns:CGI:GeoSciML:2.0"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:gml="http://www.opengis.net/gml"
+	xmlns:om="http://www.opengis.net/om/1.0"
+	xmlns:sa="http://www.opengis.net/sampling/1.0"
+	xmlns:geox="http://www.opengis.net/geomExt/0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="  urn:cgi:xmlns:CGI:GeoSciML:2.0
+	http://www.geosciml.org/geosciml/2.0/xsd/geosciml.xsd">
+	<!--The start of the vocabulary. The urns and names of the lithologies are given in the ControlledConcepts. I have used internal document referencing in the xlink of the prototype as the prototype definition is an integral part of the ControlledConcept and must therefore be in the document. The vocabulary contains VocabularyRelations defining the relationship between the ControlledConcept lithology terms-->
+	<gsml:member>
+		<gsml:GeologicVocabulary
+			gml:id="RCS">
+			<gml:name>codeSpace="http://www.cgi-iugs.org/uri">urn:cgi:classifier:BGS:RCS</gml:name>
+			<gml:definitionMember>
+				<gsml:ControlledConcept
+					gml:id="RCS1">
+					<gml:name
+						codeSpace="http://www.cgi-iugs.org/uri">urn:cgi:classifier:BGS:RCS:METR</gml:name>
+					<gsml:name
+						xml:lang="en"
+						codeSpace="urn:cgi:classifierScheme:BGS:RCS">METAMORPHIC ROCK</gsml:name>
+					<gsml:vocabulary
+						xlink:href="urn:cgi:classifierScheme:BGS:RCS"/>
+					<gsml:prototype
+						xlink:href="#ROCK1"/>
+				</gsml:ControlledConcept>
+			</gml:definitionMember>
+			<gml:definitionMember>
+				<gsml:ControlledConcept
+					gml:id="RCS3">
+					<gml:name
+						codeSpace="http://www.cgi-iugs.org/uri">urn:cgi:classifier:BGS:RCS:MSDR</gml:name>
+					<gsml:name
+						xml:lang="en"
+						codeSpace="urn:cgi:classifierScheme:BGS:RCS">METASEDIMENTARY ROCK</gsml:name>
+					<gsml:vocabulary
+						xlink:href="urn:cgi:classifierScheme:BGS:RCS"/>
+					<gsml:prototype
+						xlink:href="#ROCK2"/>
+				</gsml:ControlledConcept>
+			</gml:definitionMember>
+			<gml:definitionMember>
+				<gsml:VocabRelation
+					gml:id="ROCKRELATION1">
+					<gml:name>METAMORPHIC ROCKS BROADER THAN METASEDIMENT</gml:name>
+					<gsml:role
+						codeSpace="urn:cgi:classifierScheme:BGS:VocabRoleTerms">BROADER THAN</gsml:role>
+					<gsml:source
+						xlink:href="urn:cgi:classifier:BGS:RCS:METR"/>
+					<gsml:target
+						xlink:href="urn:cgi:classifier:BGS:RCS:MSDR"/>
+					<gsml:vocabulary
+						xlink:href="urn:cgi:classifierScheme:BGS:RCS"/>
+				</gsml:VocabRelation>
+			</gml:definitionMember>
+			<gml:definitionMember>
+				<gsml:ControlledConcept
+					gml:id="RCS5">
+					<gml:name
+						codeSpace="http://www.cgi-iugs.org/uri">urn:cgi:classifier:BGS:RCS:MLMST</gml:name>
+					<gsml:name
+						xml:lang="en"
+						codeSpace="urn:cgi:classifierScheme:BGS:RCS">METALIMESTONE</gsml:name>
+					<gsml:vocabulary
+						xlink:href="urn:cgi:classifierScheme:BGS:RCS"/>
+					<gsml:prototype
+						xlink:href="#ROCK3"/>
+				</gsml:ControlledConcept>
+			</gml:definitionMember>
+			<gml:definitionMember>
+				<gsml:VocabRelation
+					gml:id="ROCKRELATION2">
+					<gml:name>METASEDIMENT BROADER THAN METALIMESTONE</gml:name>
+					<gsml:role
+						codeSpace="urn:cgi:classifierScheme:BGS:VocabRoleTerms">BROADER THAN</gsml:role>
+					<gsml:source
+						xlink:href="urn:cgi:classifier:BGS:RCS:MSDR"/>
+					<gsml:target
+						xlink:href="urn:cgi:classifier:BGS:RCS:MLMST"/>
+					<gsml:vocabulary
+						xlink:href="urn:cgi:classifierScheme:BGS:RCS"/>
+				</gsml:VocabRelation>
+			</gml:definitionMember>
+			<gml:definitionMember>
+				<gsml:ControlledConcept
+					gml:id="RCS7">
+					<gml:name
+						codeSpace="http://www.cgi-iugs.org/uri">urn:cgi:classifier:BGS:RCS:CALSIR</gml:name>
+					<gsml:name
+						xml:lang="en"
+						codeSpace="urn:cgi:classifierScheme:BGS:RCS">CALCSILICATE ROCK</gsml:name>
+					<gsml:vocabulary
+						xlink:href="urn:cgi:classifierScheme:BGS:RCS"/>
+					<gsml:prototype
+						xlink:href="#ROCK4"/>
+				</gsml:ControlledConcept>
+			</gml:definitionMember>
+			<gml:definitionMember>
+				<gsml:VocabRelation
+					gml:id="ROCKRELATION3">
+					<gml:name>METASEDIMENT BROADER THAN CALCSILICATE ROCK</gml:name>
+					<gsml:role
+						codeSpace="urn:cgi:classifierScheme:BGS:VocabRoleTerms">BROADER THAN</gsml:role>
+					<gsml:source
+						xlink:href="urn:cgi:classifier:BGS:RCS:MSDR"/>
+					<gsml:target
+						xlink:href="urn:cgi:classifier:BGS:RCS:CALSIR"/>
+					<gsml:vocabulary
+						xlink:href="urn:cgi:classifierScheme:BGS:RCS"/>
+				</gsml:VocabRelation>
+			</gml:definitionMember>
+			<gml:definitionMember>
+				<gsml:ControlledConcept
+					gml:id="RCS9">
+					<gml:name
+						codeSpace="http://www.cgi-iugs.org/uri">urn:cgi:classifier:BGS:RCS:MECA</gml:name>
+					<gsml:name
+						xml:lang="en"
+						codeSpace="urn:cgi:classifierScheme:BGS:RCS">METALIMESTONE  WITH BANDS OF CALCSILICATE ROCK</gsml:name>
+					<gsml:vocabulary
+						xlink:href="urn:cgi:classifierScheme:BGS:RCS"/>
+					<gsml:prototype
+						xlink:href="#ROCK5"/>
+				</gsml:ControlledConcept>
+			</gml:definitionMember>
+			<gml:definitionMember>
+				<gsml:VocabRelation
+					gml:id="ROCKRELATION4">
+					<gml:name>METASEDIMENT BROADER THAN METALIMESTONE WITH BANDS OF CALCSILICATE ROCK</gml:name>
+					<gsml:role
+						codeSpace="urn:cgi:classifierScheme:BGS:VocabRoleTerms">BROADER THAN</gsml:role>
+					<gsml:source
+						xlink:href="urn:cgi:classifier:BGS:RCS:MSDR"/>
+					<gsml:target
+						xlink:href="urn:cgi:classifier:BGS:RCS:MECA"/>
+					<gsml:vocabulary
+						xlink:href="urn:cgi:classifierScheme:BGS:RCS"/>
+				</gsml:VocabRelation>
+			</gml:definitionMember>
+		</gsml:GeologicVocabulary>
+	</gsml:member>
+	<!-- The end of the vocabulary and the start of the prototype definitions. I have not given these names, just a gml:id, as they are an integral part of the ControlledConcept from which they are referenced-->
+	<gsml:member>
+		<gsml:RockMaterial
+			gml:id="ROCK1">
+			<gsml:purpose>definingNorm</gsml:purpose>
+			<gsml:geneticCategory>
+				<gsml:CGI_TermValue>
+					<gsml:value
+						codeSpace="urn:cgi:classifierScheme:BGS:geneticCatTerms">METAMORPHIC</gsml:value>
+				</gsml:CGI_TermValue>
+			</gsml:geneticCategory>
+			<gsml:consolidationDegree>
+				<gsml:CGI_TermValue>
+					<gsml:value
+						codeSpace="urn:cgi:classifierScheme:BGS:consolidationTerms">INDURATED</gsml:value>
+				</gsml:CGI_TermValue>
+			</gsml:consolidationDegree>
+			<!--This is circular - lithology should be non-mandatory for Earth Material norms-->
+			<gsml:lithology>
+				<gsml:ControlledConcept
+					gml:id="RCS2">
+					<gml:name
+						codeSpace="http://www.cgi-iugs.org/uri">urn:cgi:classifier:BGS:RCS:METR</gml:name>
+					<gsml:name
+						xml:lang="en"
+						codeSpace="urn:cgi:classifierScheme:BGS:RCS">METAMORPHIC ROCK</gsml:name>
+					<gsml:vocabulary
+						xlink:href="urn:cgi:classifierScheme:BGS:RCS"/>
+				</gsml:ControlledConcept>
+			</gsml:lithology>
+		</gsml:RockMaterial>
+	</gsml:member>
+	<gsml:member>
+		<gsml:RockMaterial
+			gml:id="ROCK2">
+			<gsml:purpose>definingNorm</gsml:purpose>
+			<gsml:geneticCategory>
+				<gsml:CGI_TermValue>
+					<gsml:value
+						codeSpace="urn:cgi:classifierScheme:BGS:geneticCatTerms">METAMORPHIC</gsml:value>
+				</gsml:CGI_TermValue>
+			</gsml:geneticCategory>
+			<gsml:consolidationDegree>
+				<gsml:CGI_TermValue>
+					<gsml:value
+						codeSpace="urn:cgi:classifierScheme:BGS:consolidationTerms">INDURATED</gsml:value>
+				</gsml:CGI_TermValue>
+			</gsml:consolidationDegree>
+			<!--This is circular - lithology should be non-mandatory for Earth Material norms-->
+			<gsml:lithology>
+				<gsml:ControlledConcept
+					gml:id="RCS4">
+					<gml:name
+						codeSpace="http://www.cgi-iugs.org/uri">urn:cgi:classifier:BGS:RCS:MSDR</gml:name>
+					<gsml:name
+						xml:lang="en"
+						codeSpace="urn:cgi:classifierScheme:BGS:RCS">METASEDIMENTARY ROCK</gsml:name>
+					<gsml:vocabulary
+						xlink:href="urn:cgi:classifierScheme:BGS:RCS"/>
+				</gsml:ControlledConcept>
+			</gsml:lithology>
+		</gsml:RockMaterial>
+	</gsml:member>
+	<gsml:member>
+		<gsml:RockMaterial
+			gml:id="ROCK3">
+			<gsml:purpose>definingNorm</gsml:purpose>
+			<gsml:geneticCategory>
+				<gsml:CGI_TermValue>
+					<gsml:value
+						codeSpace="urn:cgi:classifierScheme:BGS:geneticCatTerms">METAMORPHIC</gsml:value>
+				</gsml:CGI_TermValue>
+			</gsml:geneticCategory>
+			<gsml:consolidationDegree>
+				<gsml:CGI_TermValue>
+					<gsml:value
+						codeSpace="urn:cgi:classifierScheme:BGS:consolidationTerms">INDURATED</gsml:value>
+				</gsml:CGI_TermValue>
+			</gsml:consolidationDegree>
+			<!--This is circular - lithology should be non-mandatory for Earth Material norm-->
+			<gsml:lithology>
+				<gsml:ControlledConcept
+					gml:id="RCS6">
+					<gml:name
+						codeSpace="http://www.cgi-iugs.org/uri">urn:cgi:classifier:BGS:RCS:MLMST</gml:name>
+					<gsml:name
+						xml:lang="en"
+						codeSpace="urn:cgi:classifierScheme:BGS:RCS">METALIMESTONE</gsml:name>
+					<gsml:vocabulary
+						xlink:href="urn:cgi:classifierScheme:BGS:RCS"/>
+				</gsml:ControlledConcept>
+			</gsml:lithology>
+		</gsml:RockMaterial>
+	</gsml:member>
+	<gsml:member>
+		<gsml:RockMaterial
+			gml:id="ROCK4">
+			<gsml:purpose>definingNorm</gsml:purpose>
+			<gsml:geneticCategory>
+				<gsml:CGI_TermValue>
+					<gsml:value
+						codeSpace="urn:cgi:classifierScheme:BGS:geneticCatTerms">METAMORPHIC</gsml:value>
+				</gsml:CGI_TermValue>
+			</gsml:geneticCategory>
+			<gsml:consolidationDegree>
+				<gsml:CGI_TermValue>
+					<gsml:value
+						codeSpace="urn:cgi:classifierScheme:BGS:consolidationTerms">INDURATED</gsml:value>
+				</gsml:CGI_TermValue>
+			</gsml:consolidationDegree>
+			<!--This is circular - lithology should be non-mandatory for Earth Material norms-->
+			<gsml:lithology>
+				<gsml:ControlledConcept
+					gml:id="RCS8">
+					<gml:name
+						codeSpace="http://www.cgi-iugs.org/uri">urn:cgi:classifier:BGS:RCS:CALSIR</gml:name>
+					<gsml:name
+						xml:lang="en"
+						codeSpace="urn:cgi:classifierScheme:BGS:RCS">CALCSILICATE ROCK</gsml:name>
+					<gsml:vocabulary
+						xlink:href="urn:cgi:classifierScheme:BGS:RCS"/>
+				</gsml:ControlledConcept>
+			</gsml:lithology>
+		</gsml:RockMaterial>
+	</gsml:member>
+</gsml:GSML>

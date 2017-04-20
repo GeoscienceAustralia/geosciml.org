@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+  <!ENTITY iso-19115-codelists "http://www.geosciml.org/vocabularies/iso-19115-codelists.owl#">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+<rdf:RDF xml:base="http://www.geosciml.org/vocabularies/iso-19115-codelists.owl"
+         xmlns:iso-19115-codelists="&iso-19115-codelists;"
+         xmlns:owl="&owl;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;">
+
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about="">
+    <rdfs:comment rdf:datatype="&xsd;string">2008-03-10 version by Simon Cox, CSIRO Exploration and Mining. 
+1. Refactored Codelists and Enumerations into 2 ontology documents
+	* codelists - classes and supporting elements
+	* codes - instances of terms
+2. Replaced _shortname and _domainCode with Domain_code
+3. use rdfs:label for official class or instance name (N.B. id does not always match name as it sometimes has a "_" prepended to overcome name clashes)
+</rdfs:comment>
+    <rdfs:comment xml:lang="en">title- Ontology for Geographic Information Metadata -  ISO 19115:2003. creator- Akm Saiful Islam, Luis Bermudez, Bora Beran, Stephane Fellah, and Michael Piasecki. description- Ontology for ISO 19115. Vocabulary terms are declared using OWL language to support RDF applications. publisher- Drexel University . date- 2004-08-07. format - text/xml. language - English</rdfs:comment>
+    <owl:versionInfo rdf:datatype="&xsd;string">2.0</owl:versionInfo>
+  </owl:Ontology>
+
+<!-- Classes -->
+  <owl:Class rdf:about="#CI_DateTypeCode">
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">CodeList</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">identification of when a given event occurred</rdfs:comment>
+    <rdfs:label xml:lang="en">CI_DateTypeCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#CodeList"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#CI_OnLineFunctionCode">
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">CodeList</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">function performed by the resource</rdfs:comment>
+    <rdfs:label xml:lang="en">CI_OnLineFunctionCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#CodeList"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#CI_PresentationFormCode">
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">CodeList</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">mode in which the data is represented</rdfs:comment>
+    <rdfs:label xml:lang="en">CI_PresentationFormCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#CodeList"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#CI_RoleCode">
+    <iso-19115-codelists:Domain_code xml:lang="en">RoleCd</iso-19115-codelists:Domain_code>
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">CodeList</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">function performed by the responsible party</rdfs:comment>
+    <rdfs:label xml:lang="en">CI_RoleCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#CodeList"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#CodeList"/>
+  <owl:Class rdf:about="#CodeListsAndEnumerations">
+    <owl:unionOf rdf:parseType="Collection">
+      <rdf:Description rdf:about="#CodeList"/>
+      <rdf:Description rdf:about="#Enumeration"/>
+    </owl:unionOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="#DQ_EvaluationMethodTypeCode">
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">CodeList</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">type of method for evaluating an identified data quality measure</rdfs:comment>
+    <rdfs:label xml:lang="en">DQ_EvaluationMethodTypeCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#CodeList"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#DS_AssociationTypeCode">
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">CodeList</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">justification for the correlation of two datasets</rdfs:comment>
+    <rdfs:label xml:lang="en">DS_AssociationTypeCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#CodeList"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#DS_InitiativeTypeCode">
+    <iso-19115-codelists:Domain_code xml:lang="en">InitTypCd</iso-19115-codelists:Domain_code>
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">CodeList</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">type of aggregation activity in which datasets are related</rdfs:comment>
+    <rdfs:label xml:lang="en">DS_InitiativeTypeCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#CodeList"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#Enumeration"/>
+  <owl:Class rdf:about="#MD_CellGeometryCode">
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">CodeList</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">code indicating whether grid data is point or area</rdfs:comment>
+    <rdfs:label xml:lang="en">MD_CellGeometryCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#CodeList"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MD_CharacterSetCode">
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">CodeList</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">name of the character coding standard used for the resource</rdfs:comment>
+    <rdfs:label xml:lang="en">MD_CharacterSetCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#CodeList"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MD_ClassificationCode">
+    <iso-19115-codelists:Domain_code xml:lang="en">ClassificationCd</iso-19115-codelists:Domain_code>
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">CodeList</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">name of the handling restrictions on the dataset</rdfs:comment>
+    <rdfs:label xml:lang="en">MD_ClassificationCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#CodeList"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MD_CoverageContentTypeCode">
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">CodeList</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">specific type of information represented in the cell</rdfs:comment>
+    <rdfs:label xml:lang="en">MD_CoverageContentTypeCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#CodeList"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MD_DataTypeCode">
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">CodeList</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">datatype of element or entity</rdfs:comment>
+    <rdfs:label xml:lang="en">MD_DataTypeCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#CodeList"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MD_DimensionNameTypeCode">
+    <iso-19115-codelists:Domain_code rdf:datatype="&xsd;string">DimNameTypCd</iso-19115-codelists:Domain_code>
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">CodeList</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">name of the dimension</rdfs:comment>
+    <rdfs:label xml:lang="en">MD_DimensionNameTypeCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#CodeList"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MD_GeometricObjectTypeCode">
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">CodeList</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">name of point and vector spatial objects used to locate zero-, one-, and two-dimensional spatial locations in the dataset</rdfs:comment>
+    <rdfs:label xml:lang="en">MD_GeometricObjectTypeCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#CodeList"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MD_ImagingConditionCode">
+    <iso-19115-codelists:Domain_code xml:lang="en">ImgCondCd</iso-19115-codelists:Domain_code>
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">CodeList</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">code which indicates conditions which may affect the image</rdfs:comment>
+    <rdfs:label xml:lang="en">MD_ImagingConditionCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#CodeList"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MD_KeywordTypeCode">
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">CodeList</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">methods used to group similar keywords</rdfs:comment>
+    <rdfs:label xml:lang="en">MD_KeywordTypeCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#CodeList"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MD_MaintenanceFrequenceCode">
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">CodeList</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">frequency with which modifications and deletions are made to the data after it is first produced</rdfs:comment>
+    <rdfs:label xml:lang="en">MD_MaintenanceFrequenceCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#CodeList"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MD_MediumFormatCode">
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">CodeList</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">method used to write to the medium</rdfs:comment>
+    <rdfs:label xml:lang="en">MD_MediumFormatCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#CodeList"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MD_MediumNameCode">
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">CodeList</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">name of the medium</rdfs:comment>
+    <rdfs:label xml:lang="en">MD_MediumNameCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#CodeList"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MD_ObligationCode">
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">Enumeration</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">obligation of the element or entity</rdfs:comment>
+    <rdfs:label xml:lang="en">MD_ObligationCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Enumeration"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MD_PixelOrientationCode">
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">Enumeration</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">point in a pixel corresponding to the Earth location of the pixel</rdfs:comment>
+    <rdfs:label xml:lang="en">MD_PixelOrientationCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Enumeration"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MD_ProgressCode">
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">CodeList</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">status of the dataset or progress of a review</rdfs:comment>
+    <rdfs:label xml:lang="en">MD_ProgressCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#CodeList"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MD_RestrictionCode">
+    <iso-19115-codelists:Domain_code xml:lang="en">RestrictCd</iso-19115-codelists:Domain_code>
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">CodeList</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">limitation(s) placed upon the access or use of the data</rdfs:comment>
+    <rdfs:label xml:lang="en">MD_RestrictionCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#CodeList"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MD_ScopeCode">
+    <iso-19115-codelists:Domain_code xml:lang="en">ScopeCd</iso-19115-codelists:Domain_code>
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">CodeList</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">class of information to which the referencing entity applies</rdfs:comment>
+    <rdfs:label xml:lang="en">MD_ScopeCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#CodeList"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MD_SpatialRepresentationTypeCode">
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">CodeList</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">method used to represent geographic information in the dataset</rdfs:comment>
+    <rdfs:label xml:lang="en">MD_SpatialRepresentationTypeCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#CodeList"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MD_TopicCategoryCode">
+    <iso-19115-codelists:Domain_code rdf:datatype="&xsd;string">TopicCatCd</iso-19115-codelists:Domain_code>
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">Enumeration</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">high-level geographic data thematic classification to assist in the grouping and search of available geographic data sets. Can be used to group keywords as well. Listed examples are not exhaustive. NOTE It is understood there are overlaps between general categories and the user is encouraged to select the one most appropriate.</rdfs:comment>
+    <rdfs:label rdf:datatype="&xsd;string">MD_TopicCategoryCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Enumeration"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="#MD_TopologyLevelCode">
+    <iso-19115-codelists:stereotype rdf:datatype="&xsd;string">CodeList</iso-19115-codelists:stereotype>
+    <rdfs:comment xml:lang="en">degree of complexity of the spatial relationships</rdfs:comment>
+    <rdfs:label xml:lang="en">MD_TopologyLevelCode</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#CodeList"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&owl;Class"/>
+
+<!-- Datatypes -->
+  <rdfs:Datatype rdf:about="&xsd;string"/>
+
+<!-- Annotation Properties -->
+  <owl:AnnotationProperty rdf:about="#Domain_code">
+    <rdf:type rdf:resource="&owl;DatatypeProperty"/>
+    <rdfs:comment rdf:datatype="&xsd;string">Use for the "Domain code" as shown in ISO 19115 Annex B.5</rdfs:comment>
+    <rdfs:label rdf:datatype="&xsd;string">Domain code</rdfs:label>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="#stereotype">
+    <rdf:type rdf:resource="&owl;DatatypeProperty"/>
+    <rdfs:domain rdf:resource="&owl;Class"/>
+    <rdfs:range rdf:resource="&xsd;string"/>
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+  <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+  <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
+</rdf:RDF>

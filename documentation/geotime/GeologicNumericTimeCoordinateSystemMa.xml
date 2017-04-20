@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gml:TimeCoordinateSystem
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:gml="http://www.opengis.net/gml/3.2"
+	xmlns:xlink="http://www.w3.org/1999/xlink"	
+	xsi:schemaLocation="http://www.opengis.net/gml http://schemas.opengis.net/gml/3.2.1/temporalReferenceSystems.xsd"
+	gml:id="GeologicTimeCoordinateSystemMa">
+	
+<!-- ========================================================================== 	-->
+<!--                                                                                                                                                                          -->
+<!--  	Definition document for the Geologic Time Coordinate System                                                                     -->
+<!--  	CGI Interoperability Working Group, October 2012                                                                                      -->
+<!--                                                                                                                                                                          -->
+<!--	For use in the "frame" attribute of gml:TimeInstant when describing geologic numeric ages                      -->
+<!--                                                                                                                                                                          -->
+<!-- ========================================================================== 	-->
+	
+	<gml:description>Describes the origin and units (Ma) used to define geological numeric time in millions of years, measured backwards in time as an increasing number of years before 1950</gml:description>
+	<gml:descriptionReference xlink:href="http://trove.nla.gov.au/work/10442383" xlink:title="Gradstein, F.M., Ogg, J.G. and Smith, A.G., 2004. A Geologic Time Scale 2004, Cambridge Universtity Press. ISBN 0-521-78142-6"/>
+	<gml:identifier codeSpace="http://resource.geosciml.org/classifierscheme/cgi/temporalreferencesystem/2011">http://resource.geosciml.org/classifier/cgi/temporalreferencesystem/geologictimecoordinatesystemMa</gml:identifier>
+	<gml:name>Standard Geological Numerical Temporal Reference Frame (Ma)</gml:name>
+	<gml:domainOfValidity>Earth history</gml:domainOfValidity>
+	<gml:originPosition calendarEraName="1950"/>
+	<gml:interval unit="year" radix="10" factor="6">1</gml:interval>
+</gml:TimeCoordinateSystem>

@@ -1,0 +1,122 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <title>GML Application Schema Class Details - NumericEraBoundary</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <link href="../../default.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-35254121-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script>
+
+    <body class="section-3">
+        <div id="header">
+            <div align="left">
+                <img src="../../gas-banner.jpg" alt="GML Application Schema API Specification" width="1000" height="59"/>
+            </div>
+            <ul id="menu">
+                <li id="nav-1">
+                    <a href="../../overview-summary.html">Overview</a>
+                </li>
+                <li id="nav-2">
+                    <a href="package-summary.html">Package</a>
+                </li>
+                <li id="nav-3">
+                    <a href="NumericEraBoundary.html">Class</a>
+                </li>
+                <li id="nav-4">
+                    <a href="../../help-doc.html">Help</a>
+                </li>
+            </ul>
+        </div>
+        <div id="main">
+            <h1 class="first">
+				Class <tt>&lt;&lt;Type&gt;&gt;  NumericEraBoundary  (extends  TimeOrdinalEraBoundary )</tt>
+            </h1>
+            <p>Used for pre-Ediacaran and Pleistocene / Holocene boundaries in the standard timescale</p><!-- Create a list of known local subclasses, if there are any -->
+            <b>Local Subclasses:</b>
+            <a href="StandardGlobalNumericalAge.html">StandardGlobalNumericalAge</a><!-- Create a table to list class attributes, if there are any -->
+            <h2>Attributes</h2>
+            <table width="95%" class="details"><!-- Column 1: Name -->
+                <th>Name</th><!-- Column 2: Type -->
+                <th>Type</th><!-- Column 3: Bounds -->
+                <th>Bounds</th><!-- Column 4: From Class -->
+                <th>From Class</th><!-- Column 5: Notes-->
+                <th>Notes</th>
+            </table>
+			&#160;
+			<!-- Create a table to list class associations, if there are any -->
+            <h2>Outbound Associations</h2>
+            <table width="95%" class="details">
+                <th>Name</th>
+                <th>Type</th>
+                <th>Multiplicity</th>
+                <th>From Class</th>
+                <th>Notes</th>
+            </table>
+			&#160;
+			<!-- Create a table to list class constraints, if there are any -->
+            <h2>Constraints</h2>
+            <table width="95%" class="details">
+                <th>Constraint</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Weight</th>
+            </table>
+			&#160;
+			<!-- Create a table to list class tagged values, if there are any -->
+            <h2>Tagged values</h2>
+            <table width="95%" class="details">
+                <th>Tag</th>
+                <th>Value</th>
+                <th>Notes</th>
+                <tr>
+                    <td>byValuePropertyType</td>
+                    <td>false</td>
+                    <td>Values: true | false<br/>Default: false<br/>Description: enforce the 'by value' property pattern without xlinks<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>noPropertyType</td>
+                    <td>false</td>
+                    <td>Values: true | false<br/>Default: false<br/>Description: suppress automatic creation of *PropertyType complexType<br/>
+                    </td>
+                </tr>
+            </table>
+			&#160;
+			<h2>GML-conformant XML Implementation Details</h2>
+            <table width="95%" border="0">
+                <td>
+                    <pre>&lt;xs:element xmlns:xs="http://www.w3.org/2001/XMLSchema" name="NumericEraBoundary" substitutionGroup="gsmltrs:TimeOrdinalEraBoundary" type="gsmlgt:NumericEraBoundaryType"&gt;
+    &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;Used for pre-Ediacaran and Pleistocene / Holocene boundaries in the standard timescale&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+&lt;/xs:element&gt;</pre>
+                    <pre>&lt;xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="NumericEraBoundaryType"&gt;
+    &lt;xs:complexContent&gt;
+        &lt;xs:extension base="gsmltrs:TimeOrdinalEraBoundaryType"/&gt;
+    &lt;/xs:complexContent&gt;
+&lt;/xs:complexType&gt;</pre>
+                    <pre>&lt;xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="NumericEraBoundaryPropertyType"&gt;
+    &lt;xs:sequence minOccurs="0"&gt;
+        &lt;xs:element ref="gsmlgt:NumericEraBoundary"/&gt;
+    &lt;/xs:sequence&gt;
+    &lt;xs:attributeGroup ref="gml:AssociationAttributeGroup"/&gt;
+    &lt;xs:attributeGroup ref="gml:OwnershipAttributeGroup"/&gt;
+&lt;/xs:complexType&gt;</pre>
+                </td>
+            </table>&#160;</div>
+        <div class="clearing">&#160;</div>
+        <div id="footer" __skip="skip">
+            <hr class="first"/>
+            <p class="panel">
+			For more information about GML Application Schema development refer to:<br/>
+                <a href="https://www.seegrid.csiro.au/wiki/bin/view/AppSchemas/UmlGml">UML models of GML Application Schemas</a>
+            </p>
+            <p class="panel">
+			For more general information about GML refer to:<br/>
+                <a href="http://www.opengis.net/gml/">GML - the Geography Markup Language</a>
+            </p>
+            <p class="panel">
+			The document set was auto-generated at 2011-10-05T14:39+<br/>
+			using FullMoon - A processing framework for transforming XML models
+		</p>
+        </div>
+    </body>
+</html>

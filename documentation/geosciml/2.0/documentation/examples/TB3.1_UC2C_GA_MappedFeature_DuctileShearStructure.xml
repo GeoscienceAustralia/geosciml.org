@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfs:FeatureCollection
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.opengis.net/wfs  http://schemas.opengis.net/wfs/1.1.0/wfs.xsd
+	http://www.opengis.net/gml   http://schemas.opengis.net/gml/3.1.1/base/gml.xsd
+	urn:cgi:xmlns:CGI:GeoSciML:2.0 http://www.geosciml.org/geosciml/2.0/xsd/geosciml.xsd
+	http://www.opengis.net/om/1.0   http://schemas.opengis.net/om/1.0.0/om.xsd
+	http://www.opengis.net/sampling/1.0  http://schemas.opengis.net/sampling/1.0.0/sampling.xsd"
+	xmlns:gml="http://www.opengis.net/gml"
+	xmlns:wfs="http://www.opengis.net/wfs"
+	xmlns:gsml="urn:cgi:xmlns:CGI:GeoSciML:2.0"
+	xmlns:sa="http://www.opengis.net/sampling/1.0"
+	xmlns:om="http://www.opengis.net/om/1.0"
+	xmlns:cgu="urn:cgi:xmlns:CGI:Utilities:1.0"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	gml:id="GA_1M_DuctileShearStructures_Collection_000001">
+	<gml:boundedBy>
+		<gml:Envelope
+			srsName="urn:ogc:def:crs:EPSG:4326">
+			<gml:lowerCorner>137 -45</gml:lowerCorner>
+			<gml:upperCorner>155 -10</gml:upperCorner>
+		</gml:Envelope>
+	</gml:boundedBy>
+	<!--  ========================================================================================
+	####   This instance document describes MappedFeature lines of DuctileShearStructures from the Eastern Australia 1:1million scale data.  ####  
+	####   Geoscience Australia    -     14 October 2008     ####           
+=============================================================================================  -->
+	<gml:featureMember>
+		<gsml:MappedFeature
+			gml:id="GA_Mapped_Structure_123457">
+			<gsml:observationMethod>
+				<gsml:CGI_TermValue>
+					<gsml:value
+						codeSpace="urn:cgi:classifierScheme:GA:1MillionGeology_ObservationMethods">Blake, D.H., 1987, Mt Isa Inlier and Environs 1:500,000, Bureau of Mineral Resources</gsml:value>
+				</gsml:CGI_TermValue>
+			</gsml:observationMethod>
+			<gsml:positionalAccuracy>
+				<gsml:CGI_NumericValue>
+					<gsml:principalValue
+						uom="urn:ogc:def:uom:UCUM:m">1000</gsml:principalValue>
+				</gsml:CGI_NumericValue>
+			</gsml:positionalAccuracy>
+			<gsml:samplingFrame
+				xlink:href="urn:cgi:feature:CGI:EarthNaturalSurface"/>
+			<gsml:specification>
+				<gsml:DuctileShearStructure
+					gml:id="GA_Shear_123457">
+					<gml:description>Shear zone, concealed</gml:description>
+					<gml:name>WELLINGTON SHEAR ZONE</gml:name>
+					<gsml:observationMethod>
+						<gsml:CGI_TermValue>
+							<gsml:value
+								codeSpace="urn:cgi:classifierScheme:GA:ObservationMethods">published map</gsml:value>
+						</gsml:CGI_TermValue>
+					</gsml:observationMethod>
+					<gsml:purpose>instance</gsml:purpose>
+				</gsml:DuctileShearStructure>
+			</gsml:specification>
+			<gsml:shape>
+				<gml:LineString
+					srsName="urn:ogc:def:crs:EPSG:4326">
+					<gml:posList> 144.489331964981 -38.3184902482694 144.489931237995 -38.3183664057308 144.490906986438 -38.3181475108326 144.49188273488 -38.3179286159343 144.492858483323 -38.3177097210361 144.493834231766 -38.3174908261378 144.494809980209 -38.3172719312396 144.495785728651 -38.3170530363413 144.496761477094 -38.316834141443 144.497737225537 -38.3166152465448 144.49871297398 -38.3163963516465 144.499688722422 -38.3161774567483 144.499917071007 -38.3161262300817 144.500900074584 -38.315942643681 144.501320188152 -38.3158641829922 144.50231126013 -38.3157308550757 144.503302332109 -38.3155975271592 144.504293404087 -38.3154641992428 144.505284476066 -38.3153308713263 144.506275548045 -38.3151975434098 144.507266620023 -38.3150642154933 144.508257692002 -38.3149308875768 144.50924876398 -38.3147975596603 144.510239835959 -38.3146642317438 144.511230907937 -38.3145309038274 144.512221979916 -38.3143975759109 144.513213051894 -38.3142642479944 144.514204123873 -38.3141309200779
+        				144.515195195852 -38.3139975921614 144.51618626783 -38.3138642642449 145.516207765925 -38.3138613721278 </gml:posList>
+				</gml:LineString>
+			</gsml:shape>
+		</gsml:MappedFeature>
+	</gml:featureMember>
+	<gml:featureMember>
+		<gsml:MappedFeature
+			gml:id="GA_Mapped_Structure_123458">
+			<gsml:observationMethod>
+				<gsml:CGI_TermValue>
+					<gsml:value
+						codeSpace="urn:cgi:classifierScheme:GA:1MillionGeology_ObservationMethods">Blake, D.H., 1987, Mt Isa Inlier and Environs 1:500,000, Bureau of Mineral Resources</gsml:value>
+				</gsml:CGI_TermValue>
+			</gsml:observationMethod>
+			<gsml:positionalAccuracy>
+				<gsml:CGI_NumericValue>
+					<gsml:principalValue
+						uom="urn:ogc:def:uom:UCUM:m">1000</gsml:principalValue>
+				</gsml:CGI_NumericValue>
+			</gsml:positionalAccuracy>
+			<gsml:samplingFrame
+				xlink:href="urn:cgi:feature:CGI:EarthNaturalSurface"/>
+			<gsml:specification>
+				<gsml:DuctileShearStructure
+					gml:id="GA_Shear_123458">
+					<gml:description>Shear zone</gml:description>
+					<gml:name>ISA SHEAR</gml:name>
+					<gsml:observationMethod>
+						<gsml:CGI_TermValue>
+							<gsml:value
+								codeSpace="urn:cgi:classifierScheme:GA:ObservationMethods">published map</gsml:value>
+						</gsml:CGI_TermValue>
+					</gsml:observationMethod>
+					<gsml:purpose>instance</gsml:purpose>
+				</gsml:DuctileShearStructure>
+			</gsml:specification>
+			<gsml:shape>
+				<gml:LineString
+					srsName="urn:ogc:def:crs:EPSG:4326">
+					<gml:posList> 145.489331964981 -38.3184902482694 145.489931237995 -38.3183664057308 145.490906986438 -38.3181475108326 145.49188273488 -38.3179286159343 145.492858483323 -38.3177097210361 145.493834231766 -38.3174908261378 145.494809980209 -38.3172719312396 145.495785728651 -38.3170530363413 145.496761477094 -38.316834141443 145.497737225537 -38.3166152465448 145.49871297398 -38.3163963516465 145.499688722422 -38.3161774567483 145.499917071007 -38.3161262300817 145.500900074584 -38.315942643681 145.501320188152 -38.3158641829922 145.50231126013 -38.3157308550757 145.503302332109 -38.3155975271592 145.504293404087 -38.3154641992428 145.505284476066 -38.3153308713263 145.506275548045 -38.3151975434098 145.507266620023 -38.3150642154933 145.508257692002 -38.3149308875768 145.50924876398 -38.3147975596603 145.510239835959 -38.3146642317438 145.511230907937 -38.3145309038274 145.512221979916 -38.3143975759109 145.513213051894 -38.3142642479944 145.514204123873 -38.3141309200779
+						145.515195195852 -38.3139975921614 145.51618626783 -38.3138642642449 145.516207765925 -38.3138613721278 </gml:posList>
+				</gml:LineString>
+			</gsml:shape>
+		</gsml:MappedFeature>
+	</gml:featureMember>
+</wfs:FeatureCollection>

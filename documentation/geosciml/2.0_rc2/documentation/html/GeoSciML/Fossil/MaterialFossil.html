@@ -1,0 +1,505 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <title>GML Application Schema Class Details - MaterialFossil</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <link href="../../default.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-35254121-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script>
+
+    <body class="section-3">
+        <div id="header">
+            <div align="left">
+                <img src="../../gas-banner.jpg" alt="GML Application Schema API Specification" width="1000" height="59"/>
+            </div>
+            <ul id="menu">
+                <li id="nav-1">
+                    <a href="../../overview-summary.html">Overview</a>
+                </li>
+                <li id="nav-2">
+                    <a href="package-summary.html">Package</a>
+                </li>
+                <li id="nav-3">
+                    <a href="MaterialFossil.html">Class</a>
+                </li>
+                <li id="nav-4">
+                    <a href="../../help-doc.html">Help</a>
+                </li>
+            </ul>
+        </div>
+        <div id="main">
+            <h1 class="first">
+				Class <tt>&lt;&lt;Type&gt;&gt;  MaterialFossil  (extends <i>
+                        <a href="../EarthMaterial/CompoundMaterial.html">CompoundMaterial</a>
+                    </i>)</tt>
+            </h1>
+            <p>The preserved remains or replaced remains (casts) of plants and animals.  The MaterialFossil class describes fossils as a type of CompoundMaterial which may form a constituent part of another CompoundMaterial (such as a limestone rock).  A fossil type may have one or more described associated organisms.<br/>
+                <br/>Note: Trace fossils and molds are GeologicStructures and may be related to MaterialFossils through their associated organisms.  Individual fossil instances (ie, fossil specimens) are treated in this model as specimens composed of CompoundMaterial/MaterialFossil.</p><!-- Create a list of known local subclasses, if there are any -->
+            <b>Local Subclasses:</b>
+            <a href="../EarthMaterial/Cast.html">Cast</a>
+            <a href="PreservedRemain.html">PreservedRemain</a><!-- Create a table to list class attributes, if there are any -->
+            <h2>Attributes</h2>
+            <table width="95%" class="details"><!-- Column 1: Name -->
+                <th>Name</th><!-- Column 2: Type -->
+                <th>Type</th><!-- Column 3: Bounds -->
+                <th>Bounds</th><!-- Column 4: From Class -->
+                <th>From Class</th><!-- Column 5: Notes-->
+                <th>Notes</th>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>color</b>
+                    </td><!-- Column 2: Type -->
+                    <td>
+                        <a href="../CGI_Value/CGI_TermValue.html">CGI_TermValue</a>
+                    </td><!-- Column 3: Bounds -->
+                    <td>0..*</td><!-- Column 4: From Class -->
+                    <td>
+                        <a href="../EarthMaterial/EarthMaterial.html">EarthMaterial</a>
+                    </td><!-- Column 5: Notes -->
+                    <td>Terms to specify color of the earth material.  Color schemes such as the Munsell rock and soil color schemes could be used.</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>2</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>purpose</b>
+                    </td><!-- Column 2: Type -->
+                    <td>
+                        <a href="../GeologicFeature/DescriptionPurpose.html">DescriptionPurpose</a>
+                    </td><!-- Column 3: Bounds -->
+                    <td>1..1</td><!-- Column 4: From Class -->
+                    <td>
+                        <a href="../EarthMaterial/EarthMaterial.html">EarthMaterial</a>
+                    </td><!-- Column 5: Notes -->
+                    <td>Specification of the intended purpose/level of abstraction for the given EarthMaterial. Scoped name because intention is asserted by author of the data instance. <br/>Values: Instance, TypicalNorm, IdentifyingNorm.</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>3</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>compositionCategory</b>
+                    </td><!-- Column 2: Type -->
+                    <td>
+                        <a href="../CGI_Value/CGI_TermValue.html">CGI_TermValue</a>
+                    </td><!-- Column 3: Bounds -->
+                    <td>0..*</td><!-- Column 4: From Class -->
+                    <td>
+                        <a href="../EarthMaterial/CompoundMaterial.html">CompoundMaterial</a>
+                    </td><!-- Column 5: Notes -->
+                    <td>Term to specify the gross compositional character of a compound material. Composition as used here is loosely construed to include both chemical composition and petrograpic composition, thus multiple values may be applied to a single rock, e.g. metaluminous and alkalic, undersaturated and basic, etc. Terms would typically include broad chemical classifications such as silicate, carbonate, ferromagnesian, oxide.  However, this attribute may have different terminology for different kinds of rocks - for example sandstone petrographic classification terms (e.g. feldspathic) might be placed here.</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>2</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Column 1: Name -->
+                    <td rowspan="2">
+                        <b>geneticCategory</b>
+                    </td><!-- Column 2: Type -->
+                    <td>
+                        <a href="../CGI_Value/CGI_TermValue.html">CGI_TermValue</a>
+                    </td><!-- Column 3: Bounds -->
+                    <td>0..*</td><!-- Column 4: From Class -->
+                    <td>
+                        <a href="../EarthMaterial/CompoundMaterial.html">CompoundMaterial</a>
+                    </td><!-- Column 5: Notes -->
+                    <td>A term that represents a summary geologic history of the material. (ie, a genetic process classifier term)  Examples include igneous, sedimentary, metamorphic, shock metamorphic, volcanic, pyroclastic.</td>
+                </tr><!-- 2nd row contains embedded tables with tagged values and constraints for attribute -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Attribute tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>3</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+            </table>
+			&#160;
+			<!-- Create a table to list class associations, if there are any -->
+            <h2>Outbound Associations</h2>
+            <table width="95%" class="details">
+                <th>Name</th>
+                <th>Type</th>
+                <th>Multiplicity</th>
+                <th>From Class</th>
+                <th>Notes</th>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>metadata</b>
+                    </td><!-- Type -->
+                    <td>MD_Metadata</td><!-- Multiplicity -->
+                    <td>0..1</td><!-- From Class -->
+                    <td>
+                        <a href="../EarthMaterial/EarthMaterial.html">EarthMaterial</a>
+                    </td><!-- Notes -->
+                    <td/>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>inlineOrByReference</td>
+                                            <td>byReference</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>fabric</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="../EarthMaterial/FabricDescription.html">FabricDescription</a>
+                    </td><!-- Multiplicity -->
+                    <td>0..*</td><!-- From Class -->
+                    <td>
+                        <a href="../EarthMaterial/CompoundMaterial.html">CompoundMaterial</a>
+                    </td><!-- Notes -->
+                    <td>Contains the description of the fabric</td>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>metamorphicCharacter</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="../GeologicUnit/MetamorphicDescription.html">MetamorphicDescription</a>
+                    </td><!-- Multiplicity -->
+                    <td>0..1</td><!-- From Class -->
+                    <td>
+                        <a href="../EarthMaterial/CompoundMaterial.html">CompoundMaterial</a>
+                    </td><!-- Notes -->
+                    <td>Contains the description of the metamorphic character</td>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>5</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>part</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="../EarthMaterial/ConstituentPart.html">ConstituentPart</a>
+                    </td><!-- Multiplicity -->
+                    <td>0..*</td><!-- From Class -->
+                    <td>
+                        <a href="../EarthMaterial/CompoundMaterial.html">CompoundMaterial</a>
+                    </td><!-- Notes -->
+                    <td>Specifies the ConstituentPart that makes up part of the CompoundMaterial</td>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>6</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>particleGeometry</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="../EarthMaterial/ParticleGeometryDescription.html">ParticleGeometryDescription</a>
+                    </td><!-- Multiplicity -->
+                    <td>0..1</td><!-- From Class -->
+                    <td>
+                        <a href="../EarthMaterial/CompoundMaterial.html">CompoundMaterial</a>
+                    </td><!-- Notes -->
+                    <td>Describes the particle geometry of the CompoundMaterial</td>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>7</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+                <tr><!-- Name -->
+                    <td rowspan="2">
+                        <b>sourceOrganism</b>
+                    </td><!-- Type -->
+                    <td>
+                        <a href="Organism.html">Organism</a>
+                    </td><!-- Multiplicity -->
+                    <td>0..1</td><!-- From Class -->
+                    <td>MaterialFossil</td><!-- Notes -->
+                    <td>Specifies the related Organism that produced the fossil in the original substrate material</td>
+                </tr><!-- 2nd row contains embedded table with tagged values for association -->
+                <tr>
+                    <td colspan="5" style="background: #ffffff;">
+                        <table width="95%">
+                            <tr>
+                                <td width="35%">
+                                    <table width="100%" class="details">
+                                        <caption>Association tagged values</caption>
+                                        <th>Tag</th>
+                                        <th>Value</th>
+                                        <tr>
+                                            <td>sequenceNumber</td>
+                                            <td>2</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="65%"/>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td color="#cccccc" colspan="6"/>
+                </tr>
+            </table>
+			&#160;
+			<!-- Create a table to list class constraints, if there are any -->
+            <h2>Constraints</h2>
+            <table width="95%" class="details">
+                <th>Constraint</th>
+                <th>Type</th>
+                <th>Status</th>
+                <th>Weight</th>
+            </table>
+			&#160;
+			<!-- Create a table to list class tagged values, if there are any -->
+            <h2>Tagged values</h2>
+            <table width="95%" class="details">
+                <th>Tag</th>
+                <th>Value</th>
+                <th>Notes</th>
+                <tr>
+                    <td>byValuePropertyType</td>
+                    <td/>
+                    <td>Values: true,false<br/>Default: false<br/>Description: enforce the 'by value' property pattern without xl<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>hasXmlLang</td>
+                    <td>false</td>
+                    <td>Values: true | false<br/>Default: false<br/>Description: axml attribute xml:lang shall be generated for the type representing the class<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>isCollection</td>
+                    <td>false</td>
+                    <td>Values: true,false<br/>Default: false<br/>Description: attribute group gml:AggregationAttributeGroup is a<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>noPropertyType</td>
+                    <td>false</td>
+                    <td>Values: true,false<br/>Default: false<br/>Description: suppress automatic creation of *PropertyType compl<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>xmlSchemaType</td>
+                    <td/>
+                    <td>Description: no type shall be generated for the class, but the <br/>
+                    </td>
+                </tr>
+            </table>
+			&#160;
+			<h2>GML-conformant XML Implementation Details</h2>
+            <table width="95%" border="0">
+                <td>
+                    <pre>&lt;xs:element xmlns:xs="http://www.w3.org/2001/XMLSchema" name="MaterialFossil" substitutionGroup="gsml:CompoundMaterial" type="gsml:MaterialFossilType"&gt;
+    &lt;xs:annotation&gt;
+        &lt;xs:documentation&gt;The preserved remains or replaced remains (casts) of plants and animals.  The MaterialFossil class describes fossils as a type of CompoundMaterial which may form a constituent part of another CompoundMaterial (such as a limestone rock).  A fossil type may have one or more described associated organisms.
+
+Note: Trace fossils and molds are GeologicStructures and may be related to MaterialFossils through their associated organisms.  Individual fossil instances (ie, fossil specimens) are treated in this model as specimens composed of CompoundMaterial/MaterialFossil.&lt;/xs:documentation&gt;
+    &lt;/xs:annotation&gt;
+&lt;/xs:element&gt;</pre>
+                    <pre>&lt;xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="MaterialFossilType"&gt;
+    &lt;xs:complexContent&gt;
+        &lt;xs:extension base="gsml:CompoundMaterialType"&gt;
+            &lt;xs:sequence&gt;
+                &lt;xs:element maxOccurs="1" minOccurs="0" name="sourceOrganism" type="gsml:OrganismPropertyType"/&gt;
+            &lt;/xs:sequence&gt;
+        &lt;/xs:extension&gt;
+    &lt;/xs:complexContent&gt;
+&lt;/xs:complexType&gt;</pre>
+                    <pre>&lt;xs:complexType xmlns:xs="http://www.w3.org/2001/XMLSchema" name="MaterialFossilPropertyType"&gt;
+    &lt;xs:sequence minOccurs="0"&gt;
+        &lt;xs:element ref="gsml:MaterialFossil"/&gt;
+    &lt;/xs:sequence&gt;
+    &lt;xs:attributeGroup ref="gml:AssociationAttributeGroup"/&gt;
+&lt;/xs:complexType&gt;</pre>
+                </td>
+            </table>&#160;</div>
+        <div class="clearing">&#160;</div>
+        <div id="footer">
+            <hr class="first"/>
+            <p class="panel">For more information about GML Application Schema
+    		             development refer to:<br/>
+                <a href="https://www.seegrid.csiro.au/wiki/bin/view/AppSchemas/UmlGml">
+    		UML models of GML Application Schemas</a>
+            </p>
+            <p class="panel">For more general information about GML refer to:<br/>
+                <a href="http://www.opengis.net/gml/">GML - the Geography Markup Language</a>
+            </p>
+            <p class="panel">The document set was auto-generated at 2008-02-14T18:09+09:00<br/>
+    	                 using FullMoon - A processing framework for transforming XML models
+    	</p>
+            <p/>
+        </div>
+    </body>
+</html>

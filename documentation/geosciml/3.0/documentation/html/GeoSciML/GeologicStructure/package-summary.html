@@ -1,0 +1,523 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <title>GML Application Schema Package Summary - GeoSciML/GeologicStructure</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <link href="../../default.css" rel="stylesheet" type="text/css"/>
+
+    <body class="section-2">
+        <div id="header">
+            <div align="left">
+                <img src="../../gas-banner.jpg" alt="GML Application Schema API Specification" width="1000" height="59"/>
+            </div>
+            <ul id="menu">
+                <li id="nav-1">
+                    <a href="../../overview-summary.html">Overview</a>
+                </li>
+                <li id="nav-2">
+                    <a href="package-summary.html">Package</a>
+                </li>
+                <li id="nav-3">Class</li>
+                <li id="nav-4">
+                    <a href="../../help-doc.html">Help</a>
+                </li>
+            </ul>
+        </div>
+        <div id="main">
+            <h1 class="first">Package <tt>GeoSciML/GeologicStructure</tt>
+            </h1>
+            <p>GeologicStructures are a configuration of matter in the Earth based on describable inhomogeneity, pattern, or fracture in an Earth Material.  The scale of geological structures ranges from microscopic (micron-scale) to megascopic (km-scale). Examples of such inhomogeneities include fractures, mineral grain boundaries, and boundaries between parts of the rock with different particle geometry (texture) or composition. Geologic structure is grounded in relationships between parts of a rock or rock body. As used here, it includes sedimentary structures. The identity of a Geologic Structure is independent of the material that is the substrate for the structure. There are almost always strong dependencies between the nature of the Earth Material substrate and the kinds of Geological Structure that may be present. A disaggregated heap of particles does not have structure, and can only be described in terms of the mineralogy and geometrical character of the constituent particles.  Geologic Structures are more likely to be found in, and are more persistent in, consolidated materials than in unconsolidated materials. Properties like "clast-supported", "matrix-supported", and "graded bed" that do not involve orientation are considered kinds of Geologic Structure because they depend on the configuration of parts of a rock body.</p>
+            <table width="95%" class="details">
+                <tr>
+                    <td colspan="2">
+                        <h2>Class Summary</h2>
+                    </td>
+                </tr>
+                <tr class="stheader">
+                    <td colspan="2" class="stheader">
+                        <tt>&lt;&lt;</tt>FeatureType<tt>&gt;&gt;</tt> Classes
+							</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="Contact.html" title="Class in GeoSciML.GeologicStructure.Contact">Contact</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Very general concept representing any kind of surface separating two geologic units including primary boundaries such as depositional contacts, all kinds of unconformities, intrusive contacts, and gradational contacts, as well as faults that separate geologic units.<br/>
+                        <br/>Permeability of contacts still needs to be modeled; considered out of scope for GeoSciML2.<br/>
+                        <br/>Bedding measured as discrete surfaces in the case that those are the feature of interest (e.g. individual cross set surfaces for paleocurrent analysis) should be represented here.</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="DisplacementEvent.html" title="Class in GeoSciML.GeologicStructure.DisplacementEvent">DisplacementEvent</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td> A description of the age, environment and process of a shear displacement event</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="FaultSystem.html" title="Class in GeoSciML.GeologicStructure.FaultSystem">FaultSystem</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>A composite structure that is an aggregation of genetically related instances of Faults and/or DuctileShearStructures. A FaultSystem is composed of individually identified and mapped Faults and/or DuctileShearStructures that are considered distinct ShearDisplacementStructures, that generally form overlapping, anastomosing patterns in which, at any point along the fault system, multiple fault strands are identified and each considered important at the scale of description. Displacement and other descriptive data may be assigned at the 'fault segment', 'fault', or 'fault system level'. </td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="Fold.html" title="Class in GeoSciML.GeologicStructure.Fold">Fold</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>One or more systematically curved layers, surfaces, or lines in a rock body. Fold denotes a structure formed by the deformation of a GeologicStructure to form a structure that may be described by the translation of an abstract line (the fold axis) parallel to itself along some curvilinear path (the fold profile). Folds have a hinge zone (zone of maximum curvature along the surface) and limbs (parts of the deformed surface not in the hinge zone).  Folds are described by an axial surface, hinge line , profile geometry, the solid angle between the limbs, and the relationships between adjacent folded surfaces if the folded structure is a Layering fabric (similar, parallel).  <br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="FoldSystem.html" title="Class in GeoSciML.GeologicStructure.FoldSystem">FoldSystem</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>A collection of congruent folds  (axis and axial surface are parallel) produced by the same tectonic event. Sometimes referred to as a "Fold Train".</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="Foliation.html" title="Class in GeoSciML.GeologicStructure.Foliation">Foliation</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>A planar arrangement of textural or structural features in any type of rock.  Includes any of a wide variety of penetrative planar geological structures that may be present in a rock.  Examples include schistosity, mylonitic foliation, penetrative bedding structure (lamination), and cleavage.  Following the proposed definition of gneiss by the NADM Science Language Technical Team, penetrative planar foliation defined by layers &amp;gt; 5 mm thick is considered Layering. <br/>Bedding as a fabric representing the average orientation of paleodepositional surface should be encoded through the foliationType; might apply to bedding that is layering or a foliation without layering (e.g. clast alignment in amalgamated beds).<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="Fracture.html" title="Class in GeoSciML.GeologicStructure.Fracture">
+                                <i>Fracture</i>
+                            </a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Fractures are cracks in the earth surface. If there is no displacement it is a joint. If there is displacement and you are in the brittle zone it is a fault. In the ductile zone, a fracture with displacement with fracture is called a shear.  FaultSurface as a separate class is not considered necessary for GeoSciML 2.<br/>Recording observations on FaultSurface should be in observation and measurement. The observation needs to be able to distinguish the type of measurement made (PropertyType)<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="GeologicStructure.html" title="Class in GeoSciML.GeologicStructure.GeologicStructure">
+                                <i>GeologicStructure</i>
+                            </a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>A configuration of matter in the Earth based on describable inhomogeneity, pattern, or fracture in an EarthMaterial. <br/>The identity of a GeologicStructure is independent of the material that is the substrate for the structure. <br/>Properties like "clast-supported",  "matrix-supported", and "graded bed" that do not involve orientation are considered kinds of GeologicStructure <br/>because they depend on the configuration of parts of a rock body. Includes sedimentary structures.<br/>The general GeologicRelation is used to associate penetrative GeologicStructures with GeologicUnits.</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="Joint.html" title="Class in GeoSciML.GeologicStructure.Joint">Joint</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Fracture across which there is no displacement at the scale of interest. <br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="Layering.html" title="Class in GeoSciML.GeologicStructure.Layering">Layering</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Planar foliation defined by a tabular succession of layers &amp;gt; 5 mm thick. This definition is based on the proposed definition of gneiss by the NADM Science Language Technical Team, so that the GeologicStructure characteristic of gneiss is layering. The committee discussed the possibility that layering should be considered a kind of foliation, but the majority opinion was that it is a different kind of structure.  Kept so that instance documents have a "Layering" tag</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="Lineation.html" title="Class in GeoSciML.GeologicStructure.Lineation">Lineation</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>GeologicStructure defined by aligned elongate elements. Lineation connotes a pervasive linear structure. Includes: flow lines, scratches, striae, slickenlines, linear arrangements of<br/>elongate components in sediments, fold hinges (when abundant and closely spaced), elongate minerals, crinkles, and lines of intersection between penetrative planar structures.<br/>
+                        <br/>Class also includes discrete linear structures like boudin, channel axis, tool marks.<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="NonDirectionalStructure.html" title="Class in GeoSciML.GeologicStructure.NonDirectionalStructure">NonDirectionalStructure</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Structures present in geology that do not have a preferred orientation<br/>Includes small-scale structures that are characteristic of the geologic unit, e.g. herringbone crossbedding, mudcracks, graded bedding, planar lamination, miarolitic cavities, nebulitic structure, trace fossils, fossil molds</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="ShearDisplacementStructure.html" title="Class in GeoSciML.GeologicStructure.ShearDisplacementStructure">ShearDisplacementStructure</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>A shear displacement structure includes all brittle to ductile style structures along which displacement has occurred, from a simple, single 'planar' brittle or ductile surface to a fault system comprised of 10's of strands of both brittle and ductile nature. This structure may have some significant thickness (a deformation zone) and have an associated body of deformed rock that may be considered a DeformationUnit </td>
+                </tr>
+                <tr class="stheader">
+                    <td colspan="2" class="stheader">
+                        <tt>&lt;&lt;</tt>Type<tt>&gt;&gt;</tt> Classes
+							</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="BoundaryRelationship.html" title="Class in GeoSciML.GeologicStructure.BoundaryRelationship">BoundaryRelationship</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;Type&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Defines the two GeologicUnits that make up the relationship described by the Contact</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="DefiningStructure.html" title="Class in GeoSciML.GeologicStructure.DefiningStructure">DefiningStructure</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;Type&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Describes the related GeologicStructure which defines a DeformationUnit. That is, a geologic unit defined by its deformation character, eg a shear zone.</td>
+                </tr>
+                <tr class="stheader">
+                    <td colspan="2" class="stheader">
+                        <tt>&lt;&lt;</tt>DataType<tt>&gt;&gt;</tt> Classes
+							</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="DisplacementValue.html" title="Class in GeoSciML.GeologicStructure.DisplacementValue">DisplacementValue</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Trying to express the displacement on a fault with respect to a planar approximation of its shape<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="NetSlipValue.html" title="Class in GeoSciML.GeologicStructure.NetSlipValue">NetSlipValue</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>The total amount of slip displacement</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="SeparationValue.html" title="Class in GeoSciML.GeologicStructure.SeparationValue">SeparationValue</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>The amount of separation displacement</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="SlipComponents.html" title="Class in GeoSciML.GeologicStructure.SlipComponents">SlipComponents</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;DataType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Representation of slip as vector resolved into components resolved into reference frame in which horizontal axes are parallel and perpendicular to the strike of the fault.  At least one of heave, horizontalSlip, or throw must not be null.</td>
+                </tr>
+                <tr class="stheader">
+                    <td colspan="2" class="stheader">
+                        <tt>&lt;&lt;</tt>CodeList<tt>&gt;&gt;</tt> Classes
+							</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="ContactTypeTerm.html" title="Class in GeoSciML.GeologicStructure.ContactTypeTerm">ContactTypeTerm</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;CodeList&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Refers to a vocabulary of terms describing types of geological contacts<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="DeformationStyleTerm.html" title="Class in GeoSciML.GeologicStructure.DeformationStyleTerm">DeformationStyleTerm</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;CodeList&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>A vocabulary of terms to describe the style of deformation, ie brittle (fault, breccia), ductile (shear), brittle-ductile, unknown.</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="FaultTypeTerm.html" title="Class in GeoSciML.GeologicStructure.FaultTypeTerm">FaultTypeTerm</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;CodeList&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>A vocabulary of terms describing the type of shear displacement structure (eg; thrust fault, normal fault, wrench fault)</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="FoldProfileTypeTerm.html" title="Class in GeoSciML.GeologicStructure.FoldProfileTypeTerm">FoldProfileTypeTerm</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;CodeList&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Refers to a vocabulary of terms specifying concave/convex geometry of fold relative to earth surface, and relationship to younging direction in folded strata if known. antiform, synform, neutral, anticline, syncline, monocline, ptygmatic<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="FoliationTypeTerm.html" title="Class in GeoSciML.GeologicStructure.FoliationTypeTerm">FoliationTypeTerm</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;CodeList&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Refers to a vocabular of terms defining the type of foliation (eg, crenulation cleavage, gneissic layering, slaty cleavage, schistosity, etc)<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="LineationTypeTerm.html" title="Class in GeoSciML.GeologicStructure.LineationTypeTerm">LineationTypeTerm</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;CodeList&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Refers to a vocabulary of terms describing the type of lineation.  Examples include: flow lines, scratches, striae, slickenlines, linear arrangements of elongate components in sediments, elongate minerals, crinkles, and lines of intersection between penetrative planar structures.<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="MovementSenseTerm.html" title="Class in GeoSciML.GeologicStructure.MovementSenseTerm">MovementSenseTerm</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;CodeList&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Refers to a vocabulary of terms describing the sense of movement on a shear displacement structure<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="MovementTypeTerm.html" title="Class in GeoSciML.GeologicStructure.MovementTypeTerm">MovementTypeTerm</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;CodeList&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Refers to a vocabulary of terms describing the type of movement  (eg, dip-slip, strike-slip)<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="NonDirectionalStructureTypeTerm.html" title="Class in GeoSciML.GeologicStructure.NonDirectionalStructureTypeTerm">NonDirectionalStructureTypeTerm</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;CodeList&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Refers to a vocabulary of terms describing types of non-directional structures (eg, miarolitic cavity, flame structure, load cast, shatter cone, trace fossil, fossil mold, etc)</td>
+                </tr>
+            </table>
+    		&#160;
+    		<table width="95%" class="details">
+                <tr>
+                    <td colspan="3">
+                        <h2>Tagged Values</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="stheader">Tag</td>
+                    <td class="stheader">Value</td>
+                    <td class="stheader">Notes</td>
+                </tr>
+                <tr>
+                    <td>classMap</td>
+                    <td>https://www.seegrid.csiro.au/subversion/GeoSciML/geologicStructure/trunk/classmap/ClassMap_GeologicStructure_GeoSciML_v3.xml</td>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>gmlProfileSchema</td>
+                    <td>#NOTES#Description: URL of the schema location of a GML profile (optional)
+</td>
+                    <td>Description: URL of the schema location of a GML profile (optional)<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>owner</td>
+                    <td>IUGS Commission for the Management and Application of Geoscience Information</td>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>schemaLocation</td>
+                    <td>http://schemas.geosciml.org/geologicstructure/3.0/geologicStructure.xsd</td>
+                    <td/>
+                </tr>
+                <tr>
+                    <td>targetNamespace</td>
+                    <td>http://xmlns.geosciml.org/GeologicStructure/3.0</td>
+                    <td>Default: FIXME<br/>Description: Target XML namespace of the application schema<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>version</td>
+                    <td>3.0.0</td>
+                    <td>Default: FIXME<br/>Description: Current version of the application schema<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>xmlns</td>
+                    <td>gsmlst</td>
+                    <td>Default: FIXME<br/>Description: Namespace prefix to be used as short form of the target namespace<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>xsdDocument</td>
+                    <td>geologicStructure.xsd</td>
+                    <td>Default: FIXME<br/>Description: Name of an XML Schema document to create representing the content of this package<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>xsdEncodingRule</td>
+                    <td>iso19136_2007_INSPIRE_Extensions</td>
+                    <td>Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br/>Default: iso19136_2007<br/>Description: XML Schema encoding rule to apply<br/>
+                    </td>
+                </tr>
+            </table>
+    		&#160;
+    		<p>
+                <h4>UML Diagram: Context Diagram : NonDirectionalStructure</h4>
+                <img src="../../Images/EAID_C84C7D20_B6AE_4a72_940F_B2AD21C798C5.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : ShearDisplacementStructure</h4>
+                <img src="../../Images/EAID_420BBBB0_5BD2_4973_807D_62A2A543530F.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : Fold</h4>
+                <img src="../../Images/EAID_7F9C9F5E_4198_4e73_8545_30854F9DD109.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : Lineation</h4>
+                <img src="../../Images/EAID_D01D77D0_A78B_455d_82B0_FEDD0D208A34.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : Contact</h4>
+                <img src="../../Images/EAID_4EDC9FAC_D312_45e0_A1F6_62829EAADB97.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Summary Diagram : Geologic Structure</h4>
+                <img src="../../Images/EAID_F989E64A_F8B7_4ef1_A78E_8AC605A8C5AF.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : DisplacementValue</h4>
+                <img src="../../Images/EAID_9F695E62_C14A_405e_9AD7_C6F082C83384.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : FoldSystem</h4>
+                <img src="../../Images/EAID_FB8E7EF9_3164_4e18_B382_1177D261E89F.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : Foliation</h4>
+                <img src="../../Images/EAID_C91D80CD_65C8_4122_8EB5_59D49A866435.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : GeologicStructure</h4>
+                <img src="../../Images/EAID_AC424595_E3CB_4fc9_83B9_6CF2505C836F.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : FaultSystem</h4>
+                <img src="../../Images/EAID_26D85AB3_4BCD_428c_97E9_769D21328CC1.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : Fracture</h4>
+                <img src="../../Images/EAID_CB329092_BD95_4a1e_9E47_4850BF6E4EA9.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : Joint</h4>
+                <img src="../../Images/EAID_F6AB915F_24EA_4183_AD4A_BDA0DC2229FF.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : Layering</h4>
+                <img src="../../Images/EAID_A285683C_D216_4dae_8AE7_D243417BB18A.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : NetSlipValue</h4>
+                <img src="../../Images/EAID_3A9CA5B3_30A6_4c4d_AD7A_3A95D8746D0B.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : SeparationValue</h4>
+                <img src="../../Images/EAID_320AABBC_5928_4ded_9C9A_0D3002F7B06A.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : SlipComponents</h4>
+                <img src="../../Images/EAID_81D604D9_C92B_4c46_A7BE_74B8A614CA06.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : BoundaryRelationship</h4>
+                <img src="../../Images/EAID_2AB5B40A_B52B_483a_9B0F_5E820F5A725D.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : DefiningStructure</h4>
+                <img src="../../Images/EAID_347EC397_1B5E_48b4_8CA3_11964017EA7E.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: GeologicStructure package dependencies</h4>
+                <img src="../../Images/EAID_2652BAD5_D122_4027_81B9_AF0FF9924407.gif" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : DisplacementEvent</h4>
+                <img src="../../Images/EAID_7BBCDC8F_AD18_4012_BC5E_3E0472AEEE1D.gif" alt="UML Diagram"/>
+            </p>
+        </div>
+        <div class="clearing">&#160;</div>
+        <div id="footer" __skip="skip">
+            <hr class="first"/>
+            <p class="panel">
+			For more information about GML Application Schema development refer to:<br/>
+                <a href="https://www.seegrid.csiro.au/wiki/bin/view/AppSchemas/UmlGml">UML models of GML Application Schemas</a>
+            </p>
+            <p class="panel">
+			For more general information about GML refer to:<br/>
+                <a href="http://www.opengis.net/gml/">GML - the Geography Markup Language</a>
+            </p>
+            <p class="panel">
+			The document set was auto-generated at 2011-09-30T10:00+<br/>
+			using FullMoon - A processing framework for transforming XML models
+		</p>
+        </div>
+    </body>
+</html>

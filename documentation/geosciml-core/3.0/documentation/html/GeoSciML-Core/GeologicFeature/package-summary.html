@@ -1,0 +1,147 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <title>GML Application Schema Package Summary - GeoSciML-Core/GeologicFeature</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <link href="../../default.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript">var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-35254121-5']);_gaq.push(['_trackPageview']);(function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  })();</script>
+
+    <body class="section-2">
+        <div id="header">
+            <div align="left">
+                <img src="../../gas-banner.jpg" alt="GML Application Schema API Specification" width="1000" height="59"/>
+            </div>
+            <ul id="menu">
+                <li id="nav-1">
+                    <a href="../../overview-summary.html">Overview</a>
+                </li>
+                <li id="nav-2">
+                    <a href="package-summary.html">Package</a>
+                </li>
+                <li id="nav-3">Class</li>
+                <li id="nav-4">
+                    <a href="../../help-doc.html">Help</a>
+                </li>
+            </ul>
+        </div>
+        <div id="main">
+            <h1 class="first">Package <tt>GeoSciML-Core/GeologicFeature</tt>
+            </h1>
+            <p>The GeoSciML GeologicFeature package contains the root  Feature classes MappedFeature and GeologicFeature. <br/>
+                <br/>GeologicFeature represents a conceptual feature that is hypothesized to exist coherently in the world. Specializated geologic features are contained in other packages. </p>
+            <table width="95%" class="details">
+                <tr>
+                    <td colspan="2">
+                        <h2>Class Summary</h2>
+                    </td>
+                </tr>
+                <tr class="stheader">
+                    <td colspan="2" class="stheader">
+                        <tt>&lt;&lt;</tt>FeatureType<tt>&gt;&gt;</tt> Classes
+							</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="GeologicFeature.html" title="Class in GeoSciML-Core.GeologicFeature.GeologicFeature">
+                                <i>GeologicFeature</i>
+                            </a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>The abstract GeologicFeature class represents a conceptual feature that is hypothesized to exist coherently in the world.<br/>   * this corresponds with a "legend item" from a traditional geologic map<br/>   * while the bounding coordinates of a Geologic Feature may be described, its shape is not.<br/>
+                        <br/>The implemented Geologic Feature instance acts as the "description package"<br/>
+                        <br/>    * the description package is classified according to its purpose as an Instance, TypicalNorm, or DefiningNorm.</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="MappedFeature.html" title="Class in GeoSciML-Core.GeologicFeature.MappedFeature">MappedFeature</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;FeatureType&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>A MappedFeature is part of a geological interpretation. <br/>It provides a link between a notional feature (description package) and one spatial representation of it, or part of it. (Exposures, Surface Traces and Intercepts, etc)<br/>    * the specific bounded occurrence, such as an outcrop or map polygon<br/>    * the Mapped Feature carries a geometry or shape<br/>          - the association with a Geologic Feature (legend item) provides specification of all the other descriptors<br/>          - the association with a Sampling Feature provides the context and dimensionality <br/>
+                        <br/>A Mapped Feature is always associated with some sampling feature - e.g. a mapping surface, a section, a Borehole (see BoreHolesAndObservation) etc.  As noted on the diagram, if the associated sampling feature is a Borehole, then the shape associated with the MappedFeature will usually be either a point or an interval. This reconciles the 2-D ("map", section) and 1-D (borehole, traverse) viewpoints in a common abstraction. </td>
+                </tr>
+                <tr class="stheader">
+                    <td colspan="2" class="stheader">
+                        <tt>&lt;&lt;</tt>CodeList<tt>&gt;&gt;</tt> Classes
+							</td>
+                </tr>
+                <tr>
+                    <td width="15%">
+                        <b>
+                            <a href="DescriptionPurpose.html" title="Class in GeoSciML-Core.GeologicFeature.DescriptionPurpose">DescriptionPurpose</a>
+                            <br/>
+                            <code class="smallfont">&lt;&lt;CodeList&gt;&gt;</code>
+                        </b>
+                    </td>
+                    <td>Codes used for the specification of the intended purpose/level of abstraction for a given feature or object instance, ie the reason for the existence of the GeologicFeature. <br/>Values: instance, typicalNorm, definingNorm. </td>
+                </tr>
+            </table>
+    		&#160;
+    		<table width="95%" class="details">
+                <tr>
+                    <td colspan="3">
+                        <h2>Tagged Values</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="stheader">Tag</td>
+                    <td class="stheader">Value</td>
+                    <td class="stheader">Notes</td>
+                </tr>
+                <tr>
+                    <td>xsdDocument</td>
+                    <td>geologicFeature.xsd</td>
+                    <td>Description: Name of an XML Schema document to create representing the content of this package<br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>xsdEncodingRule</td>
+                    <td>iso19136_2007</td>
+                    <td>Values: iso19136_2007 | iso19139_2007 | iso19136_2007_INSPIRE_Extensions<br/>Default: iso19136_2007<br/>Description: XML Schema encoding rule to apply<br/>
+                    </td>
+                </tr>
+            </table>
+    		&#160;
+    		<p>
+                <h4>UML Diagram: Context Diagram : DescriptionPurpose</h4>
+                <img src="../../Images/EAID_02AACF79_C4B4_4cb3_A7C3_9F5B48D1131F.png" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : GeologicFeature</h4>
+                <img src="../../Images/EAID_B52347C3_398E_47ee_817F_EFCF6B258B48.png" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Summary Diagram : Geologic Feature</h4>
+                <img src="../../Images/EAID_2802251C_3EC7_4dda_A009_0D0C445DEA8E.png" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : MappedFeature</h4>
+                <img src="../../Images/EAID_E1D3A352_8E00_4404_B1D5_0E873FB35971.png" alt="UML Diagram"/>
+            </p>
+            <p>
+                <h4>UML Diagram: Context Diagram : SamplingFrame</h4>
+                <img src="../../Images/EAID_0372B29A_5065_4a1d_945A_5A3DD572F249.png" alt="UML Diagram"/>
+            </p>
+        </div>
+        <div class="clearing">&#160;</div>
+        <div id="footer" __skip="skip">
+            <hr class="first"/>
+            <p class="panel">
+			For more information about GML Application Schema development refer to:<br/>
+                <a href="https://www.seegrid.csiro.au/wiki/bin/view/AppSchemas/UmlGml">UML models of GML Application Schemas</a>
+            </p>
+            <p class="panel">
+			For more general information about GML refer to:<br/>
+                <a href="http://www.opengis.net/gml/">GML - the Geography Markup Language</a>
+            </p>
+            <p class="panel">
+			The document set was auto-generated at 2011-10-06T09:30+<br/>
+			using FullMoon - A processing framework for transforming XML models
+		</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:gsmlbh="http://xmlns.geosciml.org/Borehole/3.0" 
+	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0"
+	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0 http://projects.arcs.org.au/svn/fullmoon/trunk/resources/dependency-util/package-class-map.xsd"
+	id="ClassMap_Borehole_GeoSciML_v3.xml"> 
+	<description>Provides a mapping of classes from the Borehole module of GeoSciML to elements from GeoSciML XML Schema Version 3.0.</description>
+	<imports>
+		<schema prefix="gsmlbh" namespace="http://xmlns.geosciml.org/Borehole/3.0" schemaLocation="http://schemas.geosciml.org/borehole/3.0/borehole.xsd" />
+	</imports>
+<!-- ========================================================================= -->
+	<!-- FeatureTypes -->
+	<entry>
+		<umlClass>Borehole</umlClass>
+		<umlStereotype>FeatureType</umlStereotype>
+		<gmlObjectElement>gsmlbh:Borehole</gmlObjectElement>
+		<gmlType>gsmlbh:BoreholeType</gmlType>
+		<gmlPropertyType>gsmlbh:BoreholePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>OriginPosition</umlClass>
+		<umlStereotype>FeatureType</umlStereotype>
+		<gmlObjectElement>gsmlbh:OriginPosition</gmlObjectElement>
+		<gmlType>gsmlbh:OriginPositionType</gmlType>
+		<gmlPropertyType>gsmlbh:OriginPositionPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>MappedInterval</umlClass>
+		<umlStereotype>FeatureType</umlStereotype>
+		<gmlObjectElement>gsmlbh:MappedInterval</gmlObjectElement>
+		<gmlType>gsmlbh:MappedIntervalType</gmlType>
+		<gmlPropertyType>gsmlbh:MappedIntervalPropertyType</gmlPropertyType>
+	</entry>
+<!-- ========================================================================= -->
+	<!-- DataTypes -->
+	<entry>
+		<umlClass>BoreholeDetails</umlClass>
+		<umlStereotype>DataType</umlStereotype>
+		<gmlObjectElement>gsmlbh:BoreholeDetails</gmlObjectElement>
+		<gmlType>gsmlbh:BoreholeDetailsType</gmlType>
+		<gmlPropertyType>gsmlbh:BoreholeDetailsPropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>DrillingDetails</umlClass>
+		<umlStereotype>DataType</umlStereotype>
+		<gmlObjectElement>gsmlbh:DrillingDetails</gmlObjectElement>
+		<gmlType>gsmlbh:DrillingDetailsType</gmlType>
+		<gmlPropertyType>gsmlbh:DrillingDetailsPropertyType</gmlPropertyType>
+	</entry>
+<!-- ============================================================================= -->
+<!-- Unrealised codelists from the UML model -->		
+	<!--	<entry>
+		<umlClass>BoreholeDrillingMethodCode</umlClass>
+		<umlStereotype>CodeList</umlStereotype>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gsmlbh:BoreholeDrillingMethodCodeType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>BoreholeInclinationCode</umlClass>
+		<umlStereotype>CodeList</umlStereotype>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gsmlbh:BoreholeInclinationCodeType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>BoreholeStartPointCode</umlClass>
+		<umlStereotype>CodeList</umlStereotype>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gsmlbh:BoreholeStartPointCodeType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>BoreholePurposeCode</umlClass>
+		<umlStereotype>CodeList</umlStereotype>
+		<gmlObjectElement xsi:nil="true"/>
+		<gmlType xsi:nil="true"/>
+		<gmlPropertyType>gsmlbh:BoreholePurposeCodeType</gmlPropertyType>
+	</entry>
+	-->
+</mapping>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapping
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:gsmlgm="http://xmlns.geosciml.org/Geomorphology/3.0"
+	xmlns="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0"
+	xsi:schemaLocation="urn:x-auscope:xmlns:CSIRO:FullMoon:package-class-map:2.0 http://projects.arcs.org.au/svn/fullmoon/trunk/resources/dependency-util/package-class-map.xsd"
+	id="ClassMap_Geomorphology_GeoSciML_v3.xml">
+	<description>Provides a mapping of classes from the geomorphology module of GeoSciML to elements from GeoSciML XML Schema Version 3.0.0</description>
+	<imports>
+		<schema prefix="gsmlgm" namespace="http://xmlns.geosciml.org/Geomorphology/3.0" schemaLocation="http://schemas.geosciml.org/geomorphology/3.0/geomorphology.xsd" />  <!-- Note prefix is "gsmlgm", not "gsml"  -->
+	</imports>
+
+<!-- ================================================================= -->
+
+	<!-- Unstereotyped association class -->
+	<entry>
+		<umlClass>GeomorphologicRelation</umlClass>
+		<gmlObjectElement>gsmlgm:GeomorphologicRelation</gmlObjectElement>
+		<gmlType>gsmlgm:GeomorphologicRelationType</gmlType>
+		<gmlPropertyType>gsmlgm:GeomorphologicRelationPropertyType</gmlPropertyType>
+	</entry>
+	
+	<!-- Feature types -->
+	<entry>
+		<umlClass>AnthropogenicGeomorphologicFeature</umlClass>
+		<umlStereotype>FeatureType</umlStereotype>
+		<gmlObjectElement>gsmlgm:AnthropogenicGeomorphologicFeature</gmlObjectElement>
+		<gmlType>gsmlgm:AnthropogenicGeomorphologicFeatureType</gmlType>
+		<gmlPropertyType>gsmlgm:AnthropogenicGeomorphologicFeaturePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>GeomorphologicFeature</umlClass>
+		<umlStereotype>FeatureType</umlStereotype>
+		<gmlObjectElement>gsmlgm:GeomorphologicFeature</gmlObjectElement>
+		<gmlType>gsmlgm:GeomorphologicFeatureType</gmlType>
+		<gmlPropertyType>gsmlgm:GeomorphologicFeaturePropertyType</gmlPropertyType>
+	</entry>
+	<entry>
+		<umlClass>NaturalGeomorphologicFeature</umlClass>
+		<umlStereotype>FeatureType</umlStereotype>
+		<gmlObjectElement>gsmlgm:NaturalGeomorphologicFeature</gmlObjectElement>
+		<gmlType>gsmlgm:NaturalGeomorphologicFeatureType</gmlType>
+		<gmlPropertyType>gsmlgm:NaturalGeomorphologicFeaturePropertyType</gmlPropertyType>
+	</entry>
+
+</mapping>
