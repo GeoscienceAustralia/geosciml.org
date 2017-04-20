@@ -11,7 +11,7 @@
 GeoSciML version 4.0 is a data transfer standard  for geological data  - from basic  map data up to complex relational geological databases.
 * **GeoSciML model**
     * [Documentation](http://geosciml.org/doc/geosciml/4.0/documentation/html/) (HTML)
-    * [XML schemas and encoding examples](http://schemas.geosciml.org/doc/geosciml/4.0/)(XSD, XML)
+    * [XML schemas and encoding examples](http://schemas.geosciml.org/geosciml/4.0/)(XSD, XML)
     * [Enterprise Architect UML file](http://geosciml.org/doc/geosciml/4.0/documentation/uml) (EAP)
 * **Guides for building GeoSciML web feature services**
     * [How To Serve a GeoSciML v4.0 Web Feature Service (WFS) Using GeoServer](http://www.onegeology.org/docs/technical/OneGeologyWFSCookbook_v1.2.pdf)
