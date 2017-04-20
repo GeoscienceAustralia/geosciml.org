@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSpy v2015 rel. 4 sp1 (x64) (http://www.altova.com) by Eric Boisvert (Natural Resources Canada) -->
+<!-- Version 4.0.0 - published at schemas.geosciml.org - 1 December 2015 -->
+<!-- Version 4.0.1 - changed GeomophologicFeature-unitDescription association from 0..1 to 0..* - 1 February 2016 -->
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmlexr="http://www.opengis.net/gml/3.3/exr" xmlns:gsmlb="http://xmlns.geosciml.org/GeoSciML-Basic/4.0" xmlns:sam="http://www.opengis.net/sampling/2.0" xmlns:swe="http://www.opengis.net/swe/2.0" targetNamespace="http://xmlns.geosciml.org/GeoSciML-Basic/4.0" elementFormDefault="qualified" version="4.0.0">
 	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
 	<import namespace="http://www.opengis.net/gml/3.3/exr" schemaLocation="http://schemas.opengis.net/gml/3.3/extdEncRule.xsd"/>
@@ -669,7 +671,7 @@ Allows specifying direction by DirectionVector (eg Dip/Dip Direction), compass p
 			</element>
 			<element ref="sam:SF_SamplingFeature">
 				<annotation>
-					<documentation>The SF_SamplingFeatureItem attribute is a placeholder for the SamplingFeature class that is included as a member of a GSML Collection.</documentation>
+					<documentation>The samplingFeatureItem attribute is a placeholder for the SamplingFeature class that is included as a member of a GSML Collection.</documentation>
 				</annotation>
 			</element>
 		</choice>
@@ -983,7 +985,7 @@ Examples: group, subgroup, formation, member, bed, intrusion, complex, batholith
 		<complexContent>
 			<extension base="gsmlb:GeologicFeatureType">
 				<sequence>
-          <element minOccurs="0" name="unitDescription" type="gsmlb:GeologicUnitPropertyType">
+          <element maxOccurs="unbounded" minOccurs="0"  name="unitDescription" type="gsmlb:GeologicUnitPropertyType">
             <annotation>
               <documentation>For geological description of a geomorphological feature (eg, related stratigraphic units and earth materials)</documentation>
             </annotation>

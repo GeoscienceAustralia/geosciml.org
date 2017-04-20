@@ -18,10 +18,6 @@
  <let name="nilVocabulary" value="document('http://inspire.ec.europa.eu/codelist/VoidReasonValue/VoidReasonValue.en.xml')"/>
  <pattern id="nilReason">
   <title>Check nilReason is from INSPIRE VoidReasonValue code list</title>
-  <!-- INSPIRE GeoSciML cookbook has values "unpopulated", "unknown" and
-   "withheld" but INSPIRE code list has URIs. Also GML definition of nilReason
-   implies that these should be URIs if not following the fixed list or pattern
-   given in the GML schema although this isn't enforceable by validators -->
   <rule context="@nilReason">
    <assert test="$nilVocabulary//cl:containeditems/cl:value/@id[. = current()]">
     nilReason value <value-of select="."/> should come from the list
@@ -31,7 +27,6 @@
  </pattern>
  
  <!-- General pattern for testing simple by reference properties against list of URIs in vocabulary -->
- <!-- Will this fail if no xlink:href because nilReason? -->
  <pattern abstract="true" id="by-ref.property.vocabulary">
   <title>Abstract pattern for testing that by reference property href's come from a given vocabulary.</title>
   <p>Test that the specified property elements xlink:href attributes come from
@@ -46,8 +41,6 @@
 
  <!-- General pattern testing properties specified by inline swe:Category
   against list of URIs in vocabulary -->
- <!-- It seems a bit strange using an swe:Category element but not its value
-  property? -->
  <pattern abstract="true" id="swe_Category">
   <rule context="$category_path">
    <assert test="$vocabulary//cl:containeditems/cl:value/@id[ . = current()/swe:identifier]">
@@ -73,12 +66,6 @@
  <pattern id="inspire.vocabulary.GeochronologicEraValue" is-a="by-ref.property.vocabulary">
   <title>INSPIRE Vocabulary</title>
   <p>Check that property uses values from the appropriate INSPIRE vocabulary.</p>
-  <!-- Note that in GeoSciML v3.2 we mandated use of xsi:nil="true" on nilled
-  properties (overloading the XML Schema definition) but the current v4
-  properties are not generally nillable in XSD sense and seem to allow empty
-  content. Does this need changing? If the property allows by reference then it
-  can't be anyway and we are better off with Schematron checks that at least one
-  option is picked.-->
   <param name="property"
    value="//gsmlb:GeologicEvent/gsmlb:olderNamedAge[not(@nilReason)] | //gsmlb:GeologicEvent/gsmlb:youngerNamedAge[not(@nilReason)]"/>
   <param name="vocabulary"

@@ -18,7 +18,7 @@
 		<complexContent>
 			<extension base="gsmlgt:TimeOrdinalEraBoundaryType">
 				<sequence>
-          <element minOccurs="0" name="stratotype" type="gsmlgt:StratigraphicPointPropertyType">
+          <element minOccurs="0" name="stratotype" nillable="true" type="gsmlgt:StratigraphicPointPropertyType">
 						<annotation>
 							<documentation>Several StratigraphicPoints may be associated with a boundary, but only one may have GSSP ratified status. The others are proposed equivalent.</documentation>
 						</annotation>
@@ -47,7 +47,7 @@ Note that the "German School" defines stratigraphic eras conceptually, without r
 		<complexContent>
 			<extension base="gsmlgt:TimeOrdinalEraType">
 				<sequence>
-          <element minOccurs="0" name="rank" type="gml:ReferenceType">
+          <element minOccurs="0" name="rank" nillable="true" type="gml:ReferenceType">
 						<annotation>
 							<documentation>A term from a controlled vocabulary describing the rank of the time period (eg, eon, era, period, stage)</documentation>
 							<appinfo>
@@ -56,7 +56,7 @@ Note that the "German School" defines stratigraphic eras conceptually, without r
 							</appinfo>
 						</annotation>
 					</element>
-          <element minOccurs="0" name="stratotype" type="gsmlgt:StratigraphicSectionPropertyType">
+          <element minOccurs="0" name="stratotype" nillable="true" type="gsmlgt:StratigraphicSectionPropertyType">
             <annotation>
               <documentation>Type section that names the physical location or outcrop of a particular reference exposure of a stratigraphic sequence or stratigraphic boundary. A unit stratotype is the agreed reference point for a particular stratigraphic unit and a boundary stratotype the reference for a particular boundary between strata (Wikipedia)</documentation>
             </annotation>
@@ -176,20 +176,41 @@ Note that the "German School" defines stratigraphic eras conceptually, without r
 		<complexContent>
 			<extension base="sf:SF_SpatialSamplingFeatureType">
 				<sequence>
-          <element minOccurs="0" name="primaryGuidingCriterion" type="string">
+          <element minOccurs="0" name="primaryGuidingCriterion" nillable="true">
 						<annotation>
 							<documentation>A description of the primary criterion used to establish this stratigraphic point</documentation>
 						</annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="string">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
 					</element>
-          <element maxOccurs="unbounded" minOccurs="0" name="additionalCorrelationProperty" type="string">
+          <element maxOccurs="unbounded" minOccurs="0" name="additionalCorrelationProperty" nillable="true">
 						<annotation>
 							<documentation>Any additional criteria used to establish this stratigraphic point</documentation>
 						</annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="string">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
 					</element>
-          <element minOccurs="0" name="status" type="string">
+          <element minOccurs="0" name="status" nillable="true">
 						<annotation>
 							<documentation>A description of the status of stratigraphic point (eg, formally accepted, etc)</documentation>
 						</annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="string">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
 					</element>
 				</sequence>
 			</extension>
@@ -211,25 +232,53 @@ Note that the "German School" defines stratigraphic eras conceptually, without r
 		<complexContent>
 			<extension base="sf:SF_SpatialSamplingFeatureType">
 				<sequence>
-          <element minOccurs="0" name="geologicSetting" type="string">
+          <element minOccurs="0" name="geologicSetting" nillable="true">
 						<annotation>
 							<documentation>A description of the geologic setting of the stratigraphic section</documentation>
 						</annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="string">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
 					</element>
-          <element minOccurs="0" name="geologicDescription" type="string">
+          <element minOccurs="0" name="geologicDescription" nillable="true">
 						<annotation>
 							<documentation>A description of the geology of the stratigraphic section (eg, lithology, paleontology, paleogeography, etc)</documentation>
 						</annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="string">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
 					</element>
-          <element minOccurs="0" name="accessibility" type="string">
+          <element minOccurs="0" name="accessibility" nillable="true">
 						<annotation>
 							<documentation>A description of the ability to access the stratigraphic section</documentation>
 						</annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="string">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
 					</element>
-          <element minOccurs="0" name="conservation" type="string">
+          <element minOccurs="0" name="conservation" nillable="true">
 						<annotation>
 							<documentation>A description of measures to conserve the stratigraphic section</documentation>
 						</annotation>
+            <complexType>
+              <simpleContent>
+                <extension base="string">
+                  <attribute name="nilReason" type="gml:NilReasonType"/>
+                </extension>
+              </simpleContent>
+            </complexType>
 					</element>
 				</sequence>
 			</extension>
@@ -252,7 +301,7 @@ Note that the "German School" defines stratigraphic eras conceptually, without r
 		<complexContent>
 			<extension base="gml:AbstractGMLType">
 				<sequence>
-          <element minOccurs="0" name="start" type="gsmlgt:TimeOrdinalEraBoundaryPropertyType">
+          <element minOccurs="0" name="start" nillable="true" type="gsmlgt:TimeOrdinalEraBoundaryPropertyType">
 						<annotation>
 							<documentation>Older time boundary of an era</documentation>
 							<appinfo>
@@ -260,7 +309,7 @@ Note that the "German School" defines stratigraphic eras conceptually, without r
 							</appinfo>
 						</annotation>
 					</element>
-          <element minOccurs="0" name="end" type="gsmlgt:TimeOrdinalEraBoundaryPropertyType">
+          <element minOccurs="0" name="end" nillable="true" type="gsmlgt:TimeOrdinalEraBoundaryPropertyType">
 						<annotation>
 							<documentation>Younger time boundary of an era</documentation>
 							<appinfo>
@@ -293,7 +342,7 @@ Note that the "German School" defines stratigraphic eras conceptually, without r
 		<complexContent>
 			<extension base="gml:AbstractGMLType">
 				<sequence>
-          <element minOccurs="0" name="position" type="gml:TimeInstantPropertyType">
+          <element minOccurs="0" name="position" nillable="true" type="gml:TimeInstantPropertyType">
 						<annotation>
 							<documentation>A point in time corresponding to the era boundary</documentation>
 						</annotation>
@@ -303,7 +352,7 @@ Note that the "German School" defines stratigraphic eras conceptually, without r
               <documentation>Observation supporting the existence of the boundary (geochronology, paleontology, etc.)</documentation>
             </annotation>
           </element>
-          <element minOccurs="0" name="positionalUncertainty">
+          <element minOccurs="0" name="positionalUncertainty" nillable="true">
 						<annotation>
 							<documentation>A measure of the uncertainty in the estimate of the point in time of the era boundary</documentation>
 						</annotation>
@@ -318,7 +367,7 @@ Note that the "German School" defines stratigraphic eras conceptually, without r
 							</complexContent>
 						</complexType>
 					</element>
-          <element maxOccurs="unbounded" minOccurs="0" name="nextEra" type="gsmlgt:TimeOrdinalEraPropertyType">
+          <element maxOccurs="unbounded" minOccurs="0" name="nextEra" nillable="true" type="gsmlgt:TimeOrdinalEraPropertyType">
 						<annotation>
               <documentation>Succeeding era</documentation>
 							<appinfo>
@@ -326,7 +375,7 @@ Note that the "German School" defines stratigraphic eras conceptually, without r
 							</appinfo>
 						</annotation>
 					</element>
-          <element maxOccurs="unbounded" minOccurs="0" name="previousEra" type="gsmlgt:TimeOrdinalEraPropertyType">
+          <element maxOccurs="unbounded" minOccurs="0" name="previousEra" nillable="true" type="gsmlgt:TimeOrdinalEraPropertyType">
 						<annotation>
               <documentation>Preceding era</documentation>
 							<appinfo>
@@ -354,12 +403,12 @@ Note that the "German School" defines stratigraphic eras conceptually, without r
 		<complexContent>
 			<extension base="gml:TimeOrdinalReferenceSystemType">
 				<sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="component" type="gsmlgt:TimeOrdinalEraPropertyType">
+          <element maxOccurs="unbounded" minOccurs="0" name="component" nillable="true" type="gsmlgt:TimeOrdinalEraPropertyType">
             <annotation>
               <documentation>TimeOrdinalEra composing the TimeOrdinalReferenceSystem</documentation>
             </annotation>
           </element>
-          <element maxOccurs="unbounded" minOccurs="2" name="referencePoint" type="gsmlgt:TimeOrdinalEraBoundaryPropertyType">
+          <element maxOccurs="unbounded" minOccurs="2" name="referencePoint" nillable="true" type="gsmlgt:TimeOrdinalEraBoundaryPropertyType">
             <annotation>
               <documentation>Two reference points defining the extent of the system</documentation>
             </annotation>

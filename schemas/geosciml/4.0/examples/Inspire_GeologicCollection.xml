@@ -474,9 +474,6 @@
    <gsmlb:member>
     <gsmlbh:Borehole gml:id="bh.ns94se5">
      <gml:identifier codeSpace="http://data.bgs.ac.uk/id/Borehole">NS94SE5</gml:identifier>
-     <!-- Does INSPIRE WFS mapping guide imply that there should be one
-  sampledFeature for each logElement? Does this apply for GeoSciML in general or
-  just INSPIRE? Should I make a Schematron rule for this? -->
      <sam:sampledFeature xlink:href="#PEAT"/>
      <sam:sampledFeature xlink:href="#INV-MDST"/>
      <sams:shape>

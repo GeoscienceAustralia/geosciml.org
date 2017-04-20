@@ -68,9 +68,7 @@
 
  <pattern abstract="true" id="GeologicFeature.name.abstract">
   <title>Testing presence of gml:name</title>
-  <p>It isn't clear what should be done if there is no value as this is voidable
-   in INSPIRE but gml:name does not have a nilReason attribute. Would it be OK
-   to use a blank name or should it have at least "unnamed" in?</p>
+  <p>This is voidable in INSPIRE but gml:name does not have a nilReason attribute.</p>
   <rule context="$feature_path">
    <assert test="gml:name">Property {http://www.opengis.net/gml/3.2}name is
     mandatory - say "unnamed" if a value cannot be provided</assert>
@@ -312,8 +310,6 @@
    <assert test="gsmlb:proportion">Property
     {http://xmlns.geosciml.org/geologybasic/4.0}proportion is mandatory - use
     nil if a value cannot be provided</assert>
-   <!-- Do we want to enforce use of GSML_QuantityRange rather than
-  swe:QuantitityRange? INSPIRE Schema only has swe:QuantityRange -->
    <assert test="gsmlb:proportion/swe:QuantityRange or
     gsmlb:proportion/gsmlb:GSML_QuantityRange">Must use
     {http://www.opengis.net/swe/2.0}QuantityRange or
@@ -346,15 +342,6 @@
  <pattern id="Borehole.identifier" is-a="GeologicFeature.identifier.abstract">
   <param name="feature_path" value="//gsmlbh:Borehole"/>
  </pattern>
- <!-- Does INSPIRE WFS mapping guide imply that there should be one
-  sampledFeature for each logElement? Or there should be a sampledFeature
-  pointing to each feature in a logElement/BoreholeInterval/specification. 
-  Does this apply for GeoSciML in general or
-  just INSPIRE? Should I make a Schematron rule for this? -->
- <!-- Do we want to ensure that sams:shape is encoded inline rather than
-by reference? -->
- <!-- Do we want to check that shape is a gml:LineString with @gml:id (are there other
- linear geometry elements?) -->
  <pattern id="Borehole.referenceLocation">
   <title>Testing presence of gsmlbh:referenceLocation</title>
   <rule context="//gsmlbh:Borehole">
@@ -363,11 +350,6 @@ by reference? -->
     nil if a value cannot be provided</assert>
   </rule>
  </pattern>
- <!-- What other rules on location and elevation?
-  Make sure OriginPosition included inline?
-  Make sure have srsDimension = 2 for location and 1 for elevation?
-  location and elevation have different srs so can't both inherit from some
-  higher up element. Would best practice be to make sure both have an @srsName? -->
  <pattern id="Borehole.purpose">
   <title>Testing presence of at least one gsmlbh:purpose</title>
   <rule context="//gsmlbh:Borehole">
@@ -383,10 +365,6 @@ by reference? -->
     {http://xmlns.geosciml.org/borehole/4.0}indexData/{http://xmlns.geosciml.org/borehole/4.0}BoreholeDetails/{http://xmlns.geosciml.org/borehole/4.0}b
     oreholeLength is mandatory - use
     nil if a value cannot be provided</assert>
-   <!-- Probably should have some rules on having swe:Quantity inline and maybe
-    uom being an OGC URI, having an swe:value... -->
-   <!-- Should any sanity check be done on values found in
-    mappedInterval's being less that length? -->
   </rule>
  </pattern>
  <pattern id="Borehole.logElement">

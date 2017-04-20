@@ -21,7 +21,10 @@
   </gsmlb:GeologicUnit>
  </sam:sampledFeature>
  <sam:sampledFeature>
-  <gsmlb:GeologicUnit gml:id="Hooray.Sandstone"/>
+  <gsmlb:GeologicUnit gml:id="Hooray.Sandstone">
+   <gml:name>Hooray Sandstone</gml:name>
+   <gsmlb:geologicUnitType xlink:href="http://resource.geoscience.gov.xxx/vocabulary/geologicunittype" xlink:title="lithostratigraphic unit"/>
+  </gsmlb:GeologicUnit>
  </sam:sampledFeature>
  <sams:shape>
   <gml:LineString gml:id="bh.1.shape" srsName="http://spatialreference.org/ref/epsg/4979/">
