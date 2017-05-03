@@ -19,7 +19,7 @@ GeoSciML version 4.0 is a data transfer standard  for geological data  - from ba
 * **Reference database**
     * [An example database for mapping geological data to GeoSciML v3 web services](../reference_database/reference_database_2013-11-07.zip)
 
-GeoSciML v4.0 will be submitted as an Open Geospatial Consortium ([OGC](http://www.opengeospatial.org/)) specification in 2016.
+GeoSciML v4.0 was accepted as an Open Geospatial Consortium ([OGC](http://www.opengeospatial.org/)) specification in 2017.
 
 ---
 
