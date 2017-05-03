@@ -37,7 +37,7 @@ GeoSciML-Portrayal delivers a flat (denormalised) view of just a small core of t
     * [version 3.1](http://geosciml.org/doc/geosciml/3.1/documentation/)
     * [version 3.0](http://geosciml.org/doc/geosciml/3.0/documentation/) (2012)
     * [version 2.1](http://geosciml.org/doc/geosciml/2.1/)
-    * [version 2.0](http://geosciml.org/doc/geosciml/2.0/) (2009)
+* [version 2.0](http://geosciml.org/doc/geosciml/2.0/) (2009)
     * [version 1.1.1](http://geosciml.org/doc/geosciml/1.1.1/)
     * [version 1.1.0](http://geosciml.org/doc/geosciml/1.1.0/)
     * [version 1.0.0](http://geosciml.org/doc/geosciml/1.0.0/) (2005)
