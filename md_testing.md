@@ -8,6 +8,8 @@
 It's very easy to make some words **bold** and other words *italic* with Markdown. 
 You can even [link to Google!](http://google.com)
 
+-------------------------
+#### Lists
 * Item 1
 * Item 2
    * Item 2a
@@ -19,7 +21,21 @@ You can even [link to Google!](http://google.com)
    1. Item 3a
    1. Item 3b 
    
-   As Kanye West said:
+-------------------------
+#### Blockquotes  
+As Kanye West said:
 
 > We're living the future so
 > the present is our past.
+
+-------------------------
+
+#### Images
+![CGI Logo](http://geosciml.com/theme/img/logo-iugs.png)
+Format: ![Alt Text](url)
+
+----------------------------
+
+#### Links
+http://github.com - automatic!
+[GitHub](http://github.com)
