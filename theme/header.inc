@@ -22,8 +22,8 @@
                 <div id="ga-nav">
                     <a href="/">GeoSciML Home</a>
                     <a href="http://www.cgi-iugs.org/">CGI Home</a>
-                    <a href="http://resource.geosciml.org">CGI Resources</a>
-                    <a href="http://schemas.geosciml.org">CGI Schemas</a>
+                    <a href="http://resource.geosciml.org">Vocabularies</a>
+                    <a href="http://schemas.opengis.net/gsml">Schemas</a>
                 </div>
             </td>
         </tr>
