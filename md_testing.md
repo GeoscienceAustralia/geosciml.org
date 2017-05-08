@@ -11,9 +11,10 @@
 
 -------------------------------
 
-Get a linebreak, 
+Get a linebreak,  
+by using two spaces at the end of a line  
+instead of a paragraph break 
 
-instead of a paragraph break,   by using two spaces
 
 -------------------------------
 
