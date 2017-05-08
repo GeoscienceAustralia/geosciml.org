@@ -42,7 +42,7 @@ Any word wrapped with two tildes (like ~~this~~) will appear crossed out.
 1. Item 1
 7. Item 2
 1. Item 3
-    1. Item 3a (4 spaces indent)
+    * Item 3a (4 spaces indent)
     1. Item 3b 
    
 -------------------------
