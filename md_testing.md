@@ -1,4 +1,4 @@
-Test for out of sync file
+### TEST FORMATTING FOR MARKDOWN
 
 --------------------------------
 
@@ -8,6 +8,10 @@ Test for out of sync file
 #### This is an <h4> tag
 ##### This is an <h5> tag
 ###### This is an <h6> tag
+
+-------------------------------
+
+**Get a linebreak, instead of a paragraph break, by using two spaces **
 
 -------------------------------
 
@@ -50,13 +54,13 @@ As Kanye West said:
 #### Images
 ![CGI Logo](http://geosciml.com/theme/img/logo-iugs.png)
 
-Format: ![Alt Text](url)
+Format: ![Alt Text](Some alt text goes here?)
 
 ----------------------------
 
 #### Links
-http://github.com - automatic!
+http://github.com - this will automatically hyperlink
 
-[GitHub](http://github.com)
+or you can do this:  [GitHub](http://github.com)
 
 -------------------------
