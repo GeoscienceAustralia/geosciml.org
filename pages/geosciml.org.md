@@ -29,7 +29,6 @@ GeoSciML is a data model and data transfer standard  for geological data  - from
     * GeoSciML v4.1 differs from GeoSciML v4.0 in two respects:
         * XSD schemas are now located at the [OGC schema repository](http://schemas.opengis.net/gsml)
         * "GeoSciML-Portrayal", the package for simple WFS and WMS services, is now called "GeoSciML-Lite"
-
     * All other aspects of the v4.1 model and schemas are the same as v4.0.
 --- 
 
@@ -39,7 +38,7 @@ GeoSciML is a data model and data transfer standard  for geological data  - from
     * [version 3.2](http://geosciml.org/doc/geosciml/3.2/documentation/) (2013)
     * [version 3.1](http://geosciml.org/doc/geosciml/3.1/documentation/)
     * [version 3.0](http://geosciml.org/doc/geosciml/3.0/documentation/) (2012)
-      * an example database for mapping geological data to GeoSciML v3 web services [(zipfile)](../reference_database/reference_database_2013-11-07.zip)
+        * an example database for mapping geological data to GeoSciML v3 web services [(zipfile)](../reference_database/reference_database_2013-11-07.zip)
     * [version 2.1](http://geosciml.org/doc/geosciml/2.1/)
     * [version 2.0](http://geosciml.org/doc/geosciml/2.0/) (2009)
     * [version 1.1.1](http://geosciml.org/doc/geosciml/1.1.1/)
@@ -51,7 +50,7 @@ GeoSciML is a data model and data transfer standard  for geological data  - from
 2. GeoSciML-Portrayal (this is now the GeoSciML-Lite package of GeoSciML v4)
     * [version 2.0](http://geosciml.org/doc/geosciml-portrayal/2.0.1/) (2013)
     * [version 1.0](http://geosciml.org/doc/geosciml-portrayal/1.0/) (2011)
-      *  a guide for building GeoSciML-Portrayal (version 1) web services [(pdf)](http://repository.usgin.org/sites/default/files/dlio/files/2012/u11/geosciml-portrayalcookbook0.7.pdf) - &copy; [USGIN](http://usgin.org/USGIN)
+        *  a guide for building GeoSciML-Portrayal (version 1) web services [(pdf)](http://repository.usgin.org/sites/default/files/dlio/files/2012/u11/geosciml-portrayalcookbook0.7.pdf) - &copy; [USGIN](http://usgin.org/USGIN)
 
 3. Geologic Time
     * [version 2.0](http://schemas.geosciml.org/geotime/2.0/) (2009)
