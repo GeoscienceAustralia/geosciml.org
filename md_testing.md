@@ -50,12 +50,14 @@ As Kanye West said:
 
 #### Images
 ![CGI Logo](http://geosciml.com/theme/img/logo-iugs.png)
+
 Format: ![Alt Text](url)
 
 ----------------------------
 
 #### Links
 http://github.com - automatic!
+
 [GitHub](http://github.com)
 
 -------------------------
