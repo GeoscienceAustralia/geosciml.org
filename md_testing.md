@@ -37,13 +37,13 @@ Any word wrapped with two tildes (like ~~this~~) will appear crossed out.
 * Item 1
 * Item 2
     * Item 2a (4 spaces indent)
-   * Item 2b (3 space indent)
+   * Item 2b 
   
 1. Item 1
 1. Item 2
 1. Item 3
-    1. Item 3a (4 spaces indent)
-   1. Item 3b (3 space indent)
+    i. Item 3a (4 spaces indent)
+    ii. Item 3b 
    
 -------------------------
 #### Blockquotes  
@@ -57,7 +57,7 @@ As Kanye West said:
 #### Images
 ![CGI Logo](http://geosciml.com/theme/img/logo-iugs.png)
 
-Format: ![Alt Text](Some alt text goes here?)
+Format:  ![Alt Text goes here](url to image goes here)
 
 ----------------------------
 
