@@ -42,8 +42,7 @@ Any word wrapped with two tildes (like ~~this~~) will appear crossed out.
 #### Blockquotes  
 As Kanye West said:
 
-> We're living the future so
-
+> We're living the future so  
 > the present is our past.
 
 -------------------------
