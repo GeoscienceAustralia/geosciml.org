@@ -19,7 +19,7 @@ All other aspects of the model and schemas are the same.
 
 * **Data Model Documentation**
     * UML model [(html)](http://geosciml.org/doc/geosciml/4.1/documentation/html/)
-    * Enterprise Architect UML file [(eap)](http://geosciml.org/doc/geosciml/4.0/documentation/uml)
+    * Enterprise Architect UML file [(eap)](http://geosciml.org/doc/geosciml/4.1/documentation/uml)
     * UML summary poster [(pdf)](https://portal.opengeospatial.org/files/?artifact_id=72895)
 
 
@@ -51,7 +51,9 @@ All other aspects of the model and schemas are the same.
 2. GeoSciML-Portrayal (this is now the GeoSciML-Lite package of GeoSciML v4)
     * [version 2.0](http://geosciml.org/doc/geosciml-portrayal/2.0.1/) (2013)
     * [version 1.0](http://geosciml.org/doc/geosciml-portrayal/1.0/) (2011)
-      *  a guide for building GeoSciML-Portrayal (version 1) web services [pdf](http://repository.usgin.org/sites/default/files/dlio/files/2012/u11/geosciml-portrayalcookbook0.7.pdf) - &copy;[ USGIN](http://usgin.org/USGIN)
+      *  a guide for building GeoSciML-Portrayal (version 1) web services [pdf](http://repository.usgin.org/sites/default/files/dlio/files/2012/u11/geosciml-portrayalcookbook0.7.pdf) - &copy;[USGIN](http://usgin.org/USGIN)
+	  
+	  &copy; <a href="http://usgin.org/">USGIN</a>
 
 3. Geologic Time
     * [version 2.0](http://schemas.geosciml.org/geotime/2.0/) (2009)
