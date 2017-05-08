@@ -23,7 +23,7 @@ All other aspects of the model and schemas are the same.
     * UML summary poster [(pdf)](https://portal.opengeospatial.org/files/?artifact_id=72895)
 
 
-*  **OGC Modular Specification Document**  [(html)](http://www.geosciml.org/doc/geosciml/4.1/documentation/html/)
+* **OGC Implementation Specification Document**  [(html)](http://www.geosciml.org/doc/geosciml/4.1/documentation/html/)
 
 * **XML schemas and encoding examples** [(xsd, xml)](http://schemas.opengis.net/gsml/4.1/)
 
