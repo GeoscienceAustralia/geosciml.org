@@ -42,8 +42,8 @@ Any word wrapped with two tildes (like ~~this~~) will appear crossed out.
 1. Item 1
 7. Item 2
 1. Item 3
-    i. Item 3a (4 spaces indent)
-    i. Item 3b 
+    1. Item 3a (4 spaces indent)
+    1. Item 3b 
    
 -------------------------
 #### Blockquotes  
