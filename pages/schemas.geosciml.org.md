@@ -1,17 +1,18 @@
-# GeoSciML and GeoSciML-Portrayal
+## GeoSciML and GeoSciML-Lite (previously GeoSciML-Portrayal)
 
-### Schemas, schematrons, and XML examples for GeoSciML and GeoSciML-Portrayal
+### Schemas, schematrons, and XML examples
 
 ---
 
-### Current version of GeoSciML (includes GeoSciML-Portrayal)
-* [v 4.0](/geosciml/4.0) (2015)
+### Current version of GeoSciML (includes GeoSciML-Lite)
+* [GeoSciML v 4.1](http://schemas.opengis.net/gsml/4.1) (2017)
 
 ---
 
 ### Previous versions
-* [GeoSciML](/geosciml/)
+* [GeoSciML v3 and 4.0](/geosciml/)
+* [GeoSciML v2](http://www.geosciml.org/geosciml)
 * [GeoSciML-Portrayal](/geosciml-portrayal/)
-* [zip file of all current and previous GeoSciML and GeoSciML-Portrayal schemas](/zip_files/)
+* [ZIP file of all current and previous GeoSciML and GeoSciML-Portrayal schemas](/zip_files/)
 
 ---
