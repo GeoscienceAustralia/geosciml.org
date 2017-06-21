@@ -2,7 +2,7 @@
 
 ---
 
-####  ![new](http://www.geosciml.com/theme/img/new.gif) *New 2016 versions of [GeoSciML](http://resource.geosciml.org/vocabulary/cgi/2016/) and [EarthResourceML](http://resource.geosciml.org/vocabulary/earthresourceml/2016/) vocabulary files*
+####  ![new](http://geosciml.org/theme/img/new.gif) *New 2016 versions of [GeoSciML](http://resource.geosciml.org/vocabulary/cgi/2016/) and [EarthResourceML](http://resource.geosciml.org/vocabulary/earthresourceml/2016/) vocabulary files*
 
 ---
 

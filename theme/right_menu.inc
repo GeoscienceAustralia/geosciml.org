@@ -8,6 +8,6 @@
         echo $Parsedown->text($contents);
     ?>
 
-    <div style="display:block; width:300px; min-height:150px; background-image:url('/geosciml.org/theme/img/map_image2.jpg');"></div>
+    <div style="display:block; width:300px; min-height:150px; background-image:url('<?php echo $WEB_FOLDER; ?>theme/img/map_image2.jpg');"></div>
 
 </div><!-- #rightMenu -->
