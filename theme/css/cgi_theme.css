@@ -139,3 +139,8 @@ div#ga-nav a {
 div#ga-nav a:hover {
 	text-decoration:underline;
 }
+
+ul > li > p,
+ol > li > p {
+	margin: 0;
+}
