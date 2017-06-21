@@ -17,4 +17,4 @@
 * [Vocabularies for the International Stratigraphic Chart](http://resource.geosciml.org/vocabulary/timescale/) (RDF, TTL, HTML)
 * [International Stratigraphic Chart, 2008-2014 versions](http://www.stratigraphy.org/index.php/ics-chart-timescale) (PDF, JPG)
 
-These systems will be migrated to the same system as the CGI vocaularies soon.
+These systems will be migrated to the same system as the CGI vocabularies soon.
