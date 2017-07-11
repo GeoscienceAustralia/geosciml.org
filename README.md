@@ -39,7 +39,7 @@ The files in this main directory do the following things:
 * **news_archive.php**: the News Archive section of the website. Reads pages/news_archive.md
 * **README.md**: this file. The documentation entry point for this repository 
 * **settings.php**: global settings used by multiple PHP files
-* **TODO.txt**: a list of todo items provided to assist future developers of this repository .
+* **TODO.txt**: a list of todo items provided to assist future developers of this repository 
 
 ### Authors
 The authors of this content are:
