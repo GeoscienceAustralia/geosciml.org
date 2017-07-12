@@ -21,7 +21,8 @@
             <td>
                 <div id="ga-nav">
                     <a href="http://www.cgi-iugs.org">CGI Home</a>
-					<a href="http://www.geosciml.org">GeoSciML</a>
+					<a href="http://www.geosciml.org">GeoSciML Home</a>
+					<a href="http://external.opengeospatial.org/twiki_public/GeoSciMLswg/WebHome">GeoSciML Standards Working Group</a>
 					<a href="http://www.earthresourceml.org">EarthResourceML</a>
                     <a href="http://resource.geosciml.org">Vocabularies</a>
                 </div>
