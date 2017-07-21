@@ -1,7 +1,5 @@
 # Geoscience Vocabularies for Linked Data
 
-This website is currently undergoing some unscheduled maintenance for the next 24 hours. Some links may not work during that time. We apologise for the inconvenience.
-
 ---
 
 ####  ![new](http://geosciml.org/theme/img/new.gif) *New 2016 versions of [GeoSciML](http://resource.geosciml.org/vocabulary/cgi/2016/) and [EarthResourceML](http://resource.geosciml.org/vocabulary/earthresourceml/2016/) vocabulary files (rdf and spreadsheet formats)*
