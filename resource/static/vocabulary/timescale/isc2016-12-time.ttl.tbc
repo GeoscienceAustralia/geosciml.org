@@ -1,0 +1,183 @@
+# baseURI: null
+
+@prefix composite: <http://www.topbraid.org/2007/05/composite.owl#> .
+@prefix forms: <http://www.topbraid.org/2007/01/forms.owl#> .
+@prefix inference: <http://www.topbraid.org/2007/06/inference.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix visual: <http://topbraid.org/visual#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.w3.org/2006/time#TimePosition>
+  forms:keyProperties (
+      rdfs:label
+      rdfs:comment
+      <http://www.w3.org/2006/time#numericPosition>
+    ) ;
+.
+[
+  rdf:type visual:Graph ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://resource.geosciml.org/classifier/ics/ischart/Archean> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "97"^^xsd:int ;
+      visual:x "3813"^^xsd:int ;
+      visual:y "706"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://resource.geosciml.org/classifier/ics/ischart/Cambrian> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "105"^^xsd:int ;
+      visual:x "3410"^^xsd:int ;
+      visual:y "580"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://resource.geosciml.org/classifier/ics/ischart/Carboniferous> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "128"^^xsd:int ;
+      visual:x "2608"^^xsd:int ;
+      visual:y "412"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://resource.geosciml.org/classifier/ics/ischart/Cenozoic> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "102"^^xsd:int ;
+      visual:x "685"^^xsd:int ;
+      visual:y "412"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://resource.geosciml.org/classifier/ics/ischart/Cretaceous> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "112"^^xsd:int ;
+      visual:x "1666"^^xsd:int ;
+      visual:y "370"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://resource.geosciml.org/classifier/ics/ischart/Devonian> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "103"^^xsd:int ;
+      visual:x "2834"^^xsd:int ;
+      visual:y "454"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://resource.geosciml.org/classifier/ics/ischart/Hadean> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "94"^^xsd:int ;
+      visual:x "3998"^^xsd:int ;
+      visual:y "776"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://resource.geosciml.org/classifier/ics/ischart/Jurassic> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "93"^^xsd:int ;
+      visual:x "1872"^^xsd:int ;
+      visual:y "412"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://resource.geosciml.org/classifier/ics/ischart/Mesozoic> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "103"^^xsd:int ;
+      visual:x "1473"^^xsd:int ;
+      visual:y "452"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://resource.geosciml.org/classifier/ics/ischart/Neogene> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "101"^^xsd:int ;
+      visual:x "1082"^^xsd:int ;
+      visual:y "370"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://resource.geosciml.org/classifier/ics/ischart/Ordovician> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "111"^^xsd:int ;
+      visual:x "3206"^^xsd:int ;
+      visual:y "538"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://resource.geosciml.org/classifier/ics/ischart/Paleogene> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "108"^^xsd:int ;
+      visual:x "1273"^^xsd:int ;
+      visual:y "410"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://resource.geosciml.org/classifier/ics/ischart/Paleozoic> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "103"^^xsd:int ;
+      visual:x "2229"^^xsd:int ;
+      visual:y "524"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://resource.geosciml.org/classifier/ics/ischart/Permian> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "97"^^xsd:int ;
+      visual:x "2422"^^xsd:int ;
+      visual:y "370"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://resource.geosciml.org/classifier/ics/ischart/Phanerozoic> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "118"^^xsd:int ;
+      visual:x "472"^^xsd:int ;
+      visual:y "524"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://resource.geosciml.org/classifier/ics/ischart/Proterozoic> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "113"^^xsd:int ;
+      visual:x "3606"^^xsd:int ;
+      visual:y "662"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://resource.geosciml.org/classifier/ics/ischart/Quaternary> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "112"^^xsd:int ;
+      visual:x "877"^^xsd:int ;
+      visual:y "328"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://resource.geosciml.org/classifier/ics/ischart/Silurian> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "92"^^xsd:int ;
+      visual:x "3028"^^xsd:int ;
+      visual:y "496"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://resource.geosciml.org/classifier/ics/ischart/Triassic> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "91"^^xsd:int ;
+      visual:x "2052"^^xsd:int ;
+      visual:y "454"^^xsd:int ;
+    ] ;
+  visual:child [
+      rdf:type visual:Box ;
+      visual:depicts <http://resource.geosciml.org/vocabulary/timescale/isc2016-12> ;
+      visual:height "18"^^xsd:int ;
+      visual:width "296"^^xsd:int ;
+      visual:x "21"^^xsd:int ;
+      visual:y "734"^^xsd:int ;
+    ] ;
+  visual:depicts <http://resource.geosciml.org/vocabulary/timescale/isc2016-12> ;
+  rdfs:label "International Chronostratigraphic Chart (2016) Graph" ;
+].

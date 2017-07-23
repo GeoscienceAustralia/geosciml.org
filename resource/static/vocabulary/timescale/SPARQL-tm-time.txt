@@ -1,0 +1,253 @@
+2017-03-31
+Simon Cox
+
+SPARQL scripts used to convert geologic timescale data from gts-tm -> gts-time 
+(ISO dependencies -> OWL-Time and GeoSPARQL)
+
+CONSTRUCT {
+?s a time:ProperInterval ;
+time:hasBeginning ?b ;
+time:hasEnd ?e ;
+time:intervalIn ?cont ;
+time:intervalMeets ?next ;
+time:intervalMetBy ?prev ;
+.
+}
+WHERE {
+                ?p rdfs:subClassOf* thors:Era .
+           ?s a ?p . 
+            ?s thors:begin ?b .
+            ?s thors:end ?e .
+             OPTIONAL { ?cont thors:member ?s . }
+             OPTIONAL { ?s thors:end/thors:nextEra ?next . }
+             OPTIONAL { ?s thors:begin/thors:previousEra ?prev . }
+}
+
+On the basis of intervalIn relations and coincidence of begin and end, can now add more Allen relations: starts/startedBy, finishes/FinishedBy, during/contains
+To include all *transitive* relations add "+" after intervalIn in WHERE clause. 
+
+INSERT  { 
+  ?s1 time:intervalDuring ?s2.
+  ?s2 time:intervalContains ?s1.
+}
+WHERE {
+    ?s1 time:intervalIn ?s2 .
+    ?s1 time:hasBeginning ?b . 
+    ?s1 time:hasEnd ?e . 
+    NOT EXISTS {?s2 time:hasBeginning ?b }
+    NOT EXISTS {?s2 time:hasEnd ?e }
+}
+
+INSERT  { 
+  ?s1 time:intervalStarts ?s2.
+  ?s2 time:intervalStartedBy ?s1.
+}
+WHERE {
+    ?s1 time:intervalIn ?s2 .
+    ?s1 time:hasBeginning ?b . 
+    ?s1 time:hasEnd ?e . 
+    ?s2 time:hasBeginning ?b 
+    NOT EXISTS {?s2 time:hasEnd ?e }
+}
+
+INSERT  { 
+  ?s1 time:intervalFinishes ?s2.
+  ?s2 time:intervalFinishedBy ?s1.
+}
+WHERE {
+    ?s1 time:intervalIn ?s2 .
+    ?s1 time:hasBeginning ?b . 
+    ?s1 time:hasEnd ?e . 
+    NOT EXISTS { ?s2 time:hasBeginning ?b }
+    ?s2 time:hasEnd ?e 
+}
+
+---
+
+CONSTRUCT {
+?s a time:Instant ;
+time:inTemporalPosition ?tempP ;
+time:inTimePosition ?timeP ;
+.
+}
+WHERE {
+                ?p rdfs:subClassOf* thors:EraBoundary .
+                ?s a ?p .
+            OPTIONAL { ?s tm:temporalPosition ?tempP . }
+            OPTIONAL { ?s tm:geometry ?timeP . }
+}
+
+---
+
+CONSTRUCT{ ?s time:inXSDDate ?t . }
+WHERE {
+                 ?p rdfs:subClassOf* thors:EraBoundary .
+                ?s a ?p .
+              ?s tm:temporalPosition ?d .
+               ?d a tm:CalDate .
+               ?d tm:value ?t .
+}
+
+---
+
+CONSTRUCT {
+                ?s a time:TRS ;
+                time:hasMember ?o ;
+                .
+}
+WHERE {
+                 { ?s thors:component ?o } UNION { ?s thors:referencePoint ?o }  UNION { ?o thors:system ?s }
+}
+
+---
+
+CONSTRUCT{ ?s a time:Duration ;
+time:unitType ?u ;
+time:numericDuration ?d . }
+WHERE {
+            ?s a basic:Time .
+             ?s basic:uom ?u .
+             ?s basic:value ?d .
+}
+
+---
+
+INSERT { ?s gts:positionalUncertainty ?o}
+WHERE {
+                ?s thors:positionalUncertainty ?o .
+}
+
+DELETE { ?s thors:positionalUncertainty ?o}
+WHERE {
+                ?s thors:positionalUncertainty ?o .
+}
+---
+
+GeoSPARQL 
+
+INSERT {
+   ?s samfl:shape ?o .
+   o? a geo:Geometry .}
+WHERE {
+                ?s sam:shape ?o .
+}
+
+DELETE { ?s sam:shape ?o }
+WHERE {
+                ?s sam:shape ?o .
+}
+
+INSERT  { ?s a sf:Point . }
+WHERE {
+                ?s a gm:Point .
+}
+
+DELETE  { ?s a ?p . }
+WHERE {
+                ?s a ?p .
+                ?p rdfs:subClassOf* gm:Object .
+}
+
+INSERT  { ?s geo:asWKT ?l . }
+WHERE {
+                ?s gm:position ?o .
+                ?o gm:coordinates ?x .
+                BIND ( CONCAT ( "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(", str(?x) , ")") as ?l )
+}
+
+DELETE  {
+                ?s gm:position ?o .
+                ?o ?p ?oo .
+}
+WHERE {
+                ?s gm:position ?o .
+                ?o ?p ?oo .
+}
+Then add ^^geowktLiteral to WKT literals
+
+---
+
+CONSTRUCT{ ?s a time:TimePosition ;
+time:hasTRS ?trs ;
+time:numericPosition ?t . }
+WHERE {
+            ?s a tm:Coordinate.
+             ?s tm:frame ?trs .
+              ?s tm:value ?t .
+}
+
+and change ^^basic:Number -> time:Number
+---
+
+DELETE { ?s ?p ?o . }
+WHERE {
+                ?s ?p ?o .
+                BIND ( "http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#" as ?ns )
+                FILTER ( strstarts( str( ?p ) , ?ns ) || strstarts( str( ?o ) , ?ns ) )
+}
+
+---
+
+DELETE { ?s ?p ?o . }
+WHERE {
+                ?s ?p ?o .
+                BIND ( "http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#" as ?ns )
+                FILTER ( strstarts( str( ?p ) , ?ns ) || strstarts( str( ?o ) , ?ns ) )
+}
+
+---
+
+DELETE { ?s ?p ?o . }
+WHERE {
+                VALUES ?p { thors:begin thors:component thors:end thors:member  thors:nextEra thors:previousEra thors:referencePoint thors:system }
+                ?s ?p ?o .
+}
+
+---
+
+INSERT { ?p a thors:EraBoundary }  
+WHERE {
+	{ ?p a gts:GeochronologicBoundary } UNION { ?p a gts:NumericEraBoundary } 
+}
+
+INSERT { <http://resource.geosciml.org/vocabulary/timescale/isc2016-12> thors:referencePoint ?p }
+WHERE {
+	?p a thors:EraBoundary 
+}
+
+---
+
+DELETE { ?p skos:broaderTransitive ?b }
+WHERE {
+  ?p skos:broader ?b . 
+  ?p skos:broaderTransitive ?b . 
+}
+
+DELETE { ?p skos:narrowerTransitive ?b }
+WHERE {
+  ?p skos:narrower ?b . 
+  ?p skos:narrowerTransitive ?b . 
+}
+
+---
+
+Copy the numeric values across to comments
+
+CONSTRUCT { ?s rdfs:comment ?bs .  ?s rdfs:comment ?es . }
+WHERE {
+  ?s a gts:GeochronologicEra .
+  ?s time:hasBeginning/time:inTemporalPosition/time:numericPosition ?b . 
+  OPTIONAL { ?s time:hasBeginning/time:inTemporalPosition/gts:positionalUncertainty/time:numericDuration ?bu . }
+  BIND ( IF( bound(?bu) , CONCAT( " +|-", STR(?bu) ), "" ) as ?bus  )  
+  ?s time:hasEnd/time:inTemporalPosition/time:numericPosition ?e . 
+  OPTIONAL { ?s time:hasEnd/time:inTemporalPosition/gts:positionalUncertainty/time:numericDuration ?eu . } 
+  BIND ( IF( bound(?eu) , CONCAT( " +|-", STR(?eu) ), "" ) as ?eus  )  
+  BIND( STRLANG( CONCAT( "older bound -", STR(?b) , ?bus, " Ma" ) , "en" ) as ?bs )
+  BIND( STRLANG( CONCAT( "younger bound -", STR(?e) , ?eus, " Ma" ), "en")  as ?es )
+}
+
+---
+
+TODO - disentagle Carboniferous equals vs in mess
+
+---
