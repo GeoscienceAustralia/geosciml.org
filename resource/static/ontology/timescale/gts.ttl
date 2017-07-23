@@ -28,28 +28,6 @@
   dc:source "Cox, S.J.D, & Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137." ;
   dc:title "Geologic Timescale model" ;
   dct:created "2011-01-01"^^xsd:date ;
-  dct:hasPart <http://def.seegrid.csiro.au/isotc211/iso19115/2003/dataquality> ;
-  dct:hasPart gts:EraCode ;
-  dct:hasPart gts:GeochronologicBoundary ;
-  dct:hasPart gts:GeochronologicEra ;
-  dct:hasPart gts:GeochronologicEraRank ;
-  dct:hasPart gts:GeologicTimescale ;
-  dct:hasPart gts:NumericEraBoundary ;
-  dct:hasPart gts:StratigraphicEvent ;
-  dct:hasPart gts:StratigraphicPoint ;
-  dct:hasPart gts:StratigraphicSection ;
-  dct:hasPart gts:boundary ;
-  dct:hasPart gts:boundaryLevel ;
-  dct:hasPart gts:correlatesWith ;
-  dct:hasPart gts:correlationEvent ;
-  dct:hasPart gts:era ;
-  dct:hasPart gts:event ;
-  dct:hasPart gts:geologicDescription ;
-  dct:hasPart gts:geologicSetting ;
-  dct:hasPart gts:manifestedBy ;
-  dct:hasPart gts:ratifiedGSSP ;
-  dct:hasPart gts:status ;
-  dct:hasPart gts:stratotype ;
   dct:license <http://creativecommons.org/licenses/by/3.0/> ;
   dct:modified "2017-04-28"^^xsd:date ;
   vann:preferredNamespacePrefix "gts" ;
@@ -59,8 +37,8 @@
   rdfs:seeAlso <http://geosphere.gsapubs.org/cgi/doi/10.1130/GES00022.1> ;
   rdfs:seeAlso <http://www.geosciml.org> ;
   owl:imports <http://resource.geosciml.org/ontology/timescale/thors> ;
-  owl:priorVersion <https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201305/Geoscience/GeologicTimeScale/gts-30.rdf> ;
-  owl:versionIRI <https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201402/Geoscience/GeologicTimeScale/gts.rdf> ;
+  owl:priorVersion <https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201402/Geoscience/GeologicTimeScale/gts.rdf> ;
+  owl:versionIRI <https://github.com/GeoscienceAustralia/geosciml.org/commit/24d302bf3f0fa315c1dddc2c734b84f52299cd02#diff-73b17e22072459ab7e06e9ab664a9d48> ;
   skos:changeNote "2017-04-28 - removed imports ISO ontologies" ;
 .
 gts:Age
