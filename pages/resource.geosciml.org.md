@@ -1,7 +1,6 @@
 # Geoscience Vocabularies for Linked Data
 
-* for description of geological features, geological time, mineral occurrences, and mining-related features
----
+For description of geological features, geological time, mineral occurrences, and mining-related features
 
 #### **Vocabularies for GeoSciML and EarthResourceML**
 * [Full list of all CGI vocabularies](http://resource.geosciml.org/def/voc/)
