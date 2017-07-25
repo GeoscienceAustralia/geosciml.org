@@ -1,0 +1,68 @@
+# baseURI: http://resource.geosciml.org/ontology/timescale/thors/w3c
+# imports: http://resource.geosciml.org/ontology/timescale/thors
+# imports: http://www.w3.org/2006/time
+
+<http://resource.geosciml.org/ontology/timescale/thors#previousEra> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://resource.geosciml.org/ontology/timescale/thors#previousEra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DeprecatedProperty> .
+<http://resource.geosciml.org/ontology/timescale/thors#EraBoundary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2006/time#Instant> .
+<http://resource.geosciml.org/ontology/timescale/thors/w3c> <http://purl.org/dc/terms/creator> <http://orcid.org/0000-0002-3884-3420> .
+<http://resource.geosciml.org/ontology/timescale/thors/w3c> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://resource.geosciml.org/ontology/timescale/thors/w3c> <http://www.w3.org/2000/01/rdf-schema#comment> "This graph provides an alignment of the THORS ontology with OWL-Time, as an alternative to the use of ISO 19108 classes as the basis for the ontology. \n\nWhere appropriate, THORS classes and properties are related to OWL-Time classes and properties using rdfs:subClassOf, rdfs:subPropertyOf and owl:equivalentProperty axioms. Where the latter apply, the THORS properties are also annotated \"deprecated\" with the expectation that the OWL-Time properties will be used instead. " .
+<http://resource.geosciml.org/ontology/timescale/thors/w3c> <http://purl.org/dc/terms/created> "2017-03-31" .
+<http://resource.geosciml.org/ontology/timescale/thors/w3c> <http://www.w3.org/2002/07/owl#imports> <http://resource.geosciml.org/ontology/timescale/thors> .
+<http://resource.geosciml.org/ontology/timescale/thors/w3c> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2006/time> .
+<http://resource.geosciml.org/ontology/timescale/thors/w3c> <http://purl.org/dc/elements/1.1/rights> "Copyright © 2017 CSIRO" .
+<http://resource.geosciml.org/ontology/timescale/thors/w3c> <http://purl.org/dc/elements/1.1/creator> "Simon J D Cox" .
+<http://resource.geosciml.org/ontology/timescale/thors/w3c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://resource.geosciml.org/ontology/timescale/thors/w3c> <http://purl.org/dc/terms/modified> "2017-07-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://resource.geosciml.org/ontology/timescale/thors#member> <http://www.w3.org/2002/07/owl#equivalentProperty> _:B5d568cb8ccee6b0ab15fd782f7fe5b75 .
+<http://resource.geosciml.org/ontology/timescale/thors#member> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://resource.geosciml.org/ontology/timescale/thors#member> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DeprecatedProperty> .
+<http://resource.geosciml.org/ontology/timescale/thors#system> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://resource.geosciml.org/ontology/timescale/thors#system> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> _:Be04ac99639f5cbe0bbe92bfbad7d644e .
+<http://resource.geosciml.org/ontology/timescale/thors#system> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DeprecatedProperty> .
+_:B5d568cb8ccee6b0ab15fd782f7fe5b75 <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/2006/time#intervalIn> .
+_:B5d568cb8ccee6b0ab15fd782f7fe5b75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://resource.geosciml.org/ontology/timescale/thors#referencePoint> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://resource.geosciml.org/ontology/timescale/thors#referencePoint> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2006/time#hasMember> .
+<http://resource.geosciml.org/ontology/timescale/thors#referencePoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DeprecatedProperty> .
+<http://resource.geosciml.org/ontology/timescale/thors#ReferenceSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:B361a2c37cd6e1adc8446ed4e812bc45c .
+<http://resource.geosciml.org/ontology/timescale/thors#ReferenceSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:Bd5d91f81614331b3bd6cd2da07e8af5f .
+<http://resource.geosciml.org/ontology/timescale/thors#ReferenceSystem> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2006/time#TRS> .
+<http://resource.geosciml.org/ontology/timescale/thors#end> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://www.w3.org/2006/time#hasEnd> .
+<http://resource.geosciml.org/ontology/timescale/thors#end> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://resource.geosciml.org/ontology/timescale/thors#end> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DeprecatedProperty> .
+<http://www.w3.org/2006/time#intervalStartedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://resource.geosciml.org/ontology/timescale/thors#member> .
+_:Bd5d91f81614331b3bd6cd2da07e8af5f <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#hasMember> .
+_:Bd5d91f81614331b3bd6cd2da07e8af5f <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2006/time#ProperInterval> .
+_:Bd5d91f81614331b3bd6cd2da07e8af5f <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:Bd5d91f81614331b3bd6cd2da07e8af5f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:BX2D73b412c8X3A15d76e76fcaX3A7535 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:BX2D73b412c8X3A15d76e76fcaX3A7535 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/thors#previousEra> .
+<http://resource.geosciml.org/ontology/timescale/thors#nextEra> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://resource.geosciml.org/ontology/timescale/thors#nextEra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DeprecatedProperty> .
+_:BX2D73b412c8X3A15d76e76fcaX3A7534 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:BX2D73b412c8X3A15d76e76fcaX3A7535 .
+_:BX2D73b412c8X3A15d76e76fcaX3A7534 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/thors#begin> .
+_:Be04ac99639f5cbe0bbe92bfbad7d644e <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/2006/time#hasMember> .
+_:Be04ac99639f5cbe0bbe92bfbad7d644e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://resource.geosciml.org/ontology/timescale/thors#begin> <http://www.w3.org/2002/07/owl#equivalentProperty> <http://www.w3.org/2006/time#hasBeginning> .
+<http://resource.geosciml.org/ontology/timescale/thors#begin> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://resource.geosciml.org/ontology/timescale/thors#begin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DeprecatedProperty> .
+<http://www.w3.org/2006/time#intervalFinishedBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://resource.geosciml.org/ontology/timescale/thors#member> .
+_:B361a2c37cd6e1adc8446ed4e812bc45c <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/time#hasMember> .
+_:B361a2c37cd6e1adc8446ed4e812bc45c <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2006/time#Instant> .
+_:B361a2c37cd6e1adc8446ed4e812bc45c <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:B361a2c37cd6e1adc8446ed4e812bc45c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/2006/time#intervalMetBy> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:BX2D73b412c8X3A15d76e76fcaX3A7534 .
+<http://resource.geosciml.org/ontology/timescale/thors#positionalUncertainty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#Duration> .
+<http://resource.geosciml.org/ontology/timescale/thors#positionalUncertainty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2006/time#TimePosition> .
+<http://www.w3.org/2006/time#intervalMeets> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:BX2D73b412c8X3A15d76e76fcaX3A7532 .
+_:BX2D73b412c8X3A15d76e76fcaX3A7533 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:BX2D73b412c8X3A15d76e76fcaX3A7533 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/thors#nextEra> .
+<http://resource.geosciml.org/ontology/timescale/thors#component> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://resource.geosciml.org/ontology/timescale/thors#component> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2006/time#hasMember> .
+<http://resource.geosciml.org/ontology/timescale/thors#component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DeprecatedProperty> .
+<http://resource.geosciml.org/ontology/timescale/thors#Era> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2006/time#ProperInterval> .
+<http://www.w3.org/2006/time#intervalContains> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://resource.geosciml.org/ontology/timescale/thors#member> .
+_:BX2D73b412c8X3A15d76e76fcaX3A7532 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:BX2D73b412c8X3A15d76e76fcaX3A7533 .
+_:BX2D73b412c8X3A15d76e76fcaX3A7532 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://resource.geosciml.org/ontology/timescale/thors#end> .

@@ -1,0 +1,108 @@
+{
+  "@graph" : [ {
+    "@id" : "thors:Era",
+    "subClassOf" : [ "tm:OrdinalEra", "tm:Edge" ]
+  }, {
+    "@id" : "thors:EraBoundary",
+    "subClassOf" : "tm:Node"
+  }, {
+    "@id" : "thors:ReferenceSystem",
+    "subClassOf" : [ "tm:TopologicalComplex", "tm:OrdinalReferenceSystem" ]
+  }, {
+    "@id" : "thors:begin",
+    "subPropertyOf" : "tm:begin"
+  }, {
+    "@id" : "thors:component",
+    "subPropertyOf" : [ "tm:primitive", "tm:component" ]
+  }, {
+    "@id" : "thors:end",
+    "subPropertyOf" : "tm:end"
+  }, {
+    "@id" : "thors:member",
+    "subPropertyOf" : "tm:member"
+  }, {
+    "@id" : "thors:nextEra",
+    "subPropertyOf" : "tm:nextEdge"
+  }, {
+    "@id" : "thors:positionalUncertainty",
+    "domain" : "tm:TemporalPosition",
+    "range" : "basic:Time",
+    "subPropertyOf" : "basic:measure"
+  }, {
+    "@id" : "thors:previousEra",
+    "subPropertyOf" : "tm:previousEdge"
+  }, {
+    "@id" : "thors:referencePoint",
+    "subPropertyOf" : "tm:primitive"
+  }, {
+    "@id" : "thors:system",
+    "subPropertyOf" : [ "tm:system", "tm:complex" ]
+  }, {
+    "@id" : "http://resource.geosciml.org/ontology/timescale/thors/iso",
+    "@type" : "owl:Ontology",
+    "creator" : "Simon Jonathan David COX, CSIRO Australia",
+    "description" : "Temporal Hierarchical Ordinal Reference System model aligned to OWL implementation of ISO 19108 & ISO 19156",
+    "rights" : "Copyright © 2017 CSIRO",
+    "title" : "Temporal Hierarchical Ordinal Reference System model aligned to ISO 19108 & ISO 19156",
+    "created" : "2017-04-28",
+    "license" : "https://creativecommons.org/licenses/by/4.0/",
+    "modified" : "2017-07-23",
+    "imports" : [ "http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal", "http://resource.geosciml.org/ontology/timescale/thors" ]
+  } ],
+  "@context" : {
+    "subPropertyOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+      "@type" : "@id"
+    },
+    "range" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type" : "@id"
+    },
+    "domain" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
+      "@type" : "@id"
+    },
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports",
+      "@type" : "@id"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "dct" : "http://purl.org/dc/terms/",
+    "iso" : "http://resource.geosciml.org/ontology/timescale/thors/iso#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "tm" : "http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "basic" : "http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#",
+    "dc" : "http://purl.org/dc/elements/1.1/",
+    "thors" : "http://resource.geosciml.org/ontology/timescale/thors#"
+  }
+}

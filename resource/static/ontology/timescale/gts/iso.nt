@@ -1,0 +1,21 @@
+# baseURI: http://resource.geosciml.org/ontology/timescale/gts/iso
+# imports: http://def.seegrid.csiro.au/isotc211/iso19156/2011/sampling
+# imports: http://resource.geosciml.org/ontology/timescale/gts
+# imports: http://resource.geosciml.org/ontology/timescale/thors/iso
+# prefix: iso
+
+<http://resource.geosciml.org/ontology/timescale/gts#StratigraphicSection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://def.seegrid.csiro.au/isotc211/iso19156/2011/sampling#SamplingCurve> .
+<http://resource.geosciml.org/ontology/timescale/gts/iso> <http://purl.org/dc/elements/1.1/creator> "Simon Jonathan David COX, CSIRO Australia" .
+<http://resource.geosciml.org/ontology/timescale/gts/iso> <http://www.w3.org/2002/07/owl#imports> <http://resource.geosciml.org/ontology/timescale/thors/iso> .
+<http://resource.geosciml.org/ontology/timescale/gts/iso> <http://www.w3.org/2002/07/owl#imports> <http://def.seegrid.csiro.au/isotc211/iso19156/2011/sampling> .
+<http://resource.geosciml.org/ontology/timescale/gts/iso> <http://purl.org/vocab/vann/preferredNamespacePrefix> "thors" .
+<http://resource.geosciml.org/ontology/timescale/gts/iso> <http://www.w3.org/2002/07/owl#imports> <http://resource.geosciml.org/ontology/timescale/gts> .
+<http://resource.geosciml.org/ontology/timescale/gts/iso> <http://purl.org/dc/elements/1.1/title> "Geological Timescale model aligned to ISO 19108 & ISO 19156" .
+<http://resource.geosciml.org/ontology/timescale/gts/iso> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://resource.geosciml.org/ontology/timescale/thors#> .
+<http://resource.geosciml.org/ontology/timescale/gts/iso> <http://purl.org/dc/terms/modified> "2017-07-23"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://resource.geosciml.org/ontology/timescale/gts/iso> <http://purl.org/dc/terms/created> "2017-04-28"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://resource.geosciml.org/ontology/timescale/gts/iso> <http://purl.org/dc/elements/1.1/rights> "Copyright © 2017 CSIRO" .
+<http://resource.geosciml.org/ontology/timescale/gts/iso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://resource.geosciml.org/ontology/timescale/gts/iso> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://resource.geosciml.org/ontology/timescale/gts/iso> <http://purl.org/dc/elements/1.1/description> "Geological Timescale model aligned to OWL implementation of ISO 19108 & ISO 19156" .
+<http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://def.seegrid.csiro.au/isotc211/iso19156/2011/sampling#SamplingPoint> .
