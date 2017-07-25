@@ -5,7 +5,7 @@
 ?>
 
     <div id="container-content">
-        <?php include $PROJECT_HOME_DIR . 'theme/right_menu.inc'; ?>
+        <!--?php include $PROJECT_HOME_DIR . 'theme/right_menu.inc'; ?-->
 
         <?php
             // read file contents from Markdown (.md) file

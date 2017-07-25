@@ -11,20 +11,20 @@
 <div id="header">
     <table>
         <tr>
-            <td>
-                <a href="http://www.cgi-iugs.org/"><img src="<?php print $WEB_FOLDER; ?>theme/img/logo-iugs.png" height="100px"/></a>
-                <a href="http://www.cgi-iugs.org/"><img src="<?php print $WEB_FOLDER; ?>theme/img/title.jpg" height="100px"/></a>
-                <a href="http://www.geosciml.net"><img src="<?php print $WEB_FOLDER; ?>theme/img/logo-geosciml.png" height="100px"/></a>
+            <td style="text-align:center;">
+                <a href="http://www.cgi-iugs.org/"><img src="<?php print $WEB_FOLDER; ?>theme/img/logo-iugs.png" height="75px"/></a>
+                <a href="http://www.cgi-iugs.org/"><img src="<?php print $WEB_FOLDER; ?>theme/img/title.jpg" height="75px"/></a>
+                <a href="http://www.geosciml.net"><img src="<?php print $WEB_FOLDER; ?>theme/img/logo-geosciml.png" height="75px"/></a>
             </td>
         </tr>
         <tr>
             <td>
                 <div id="ga-nav">
-                    <a href="http://www.cgi-iugs.org">CGI Home</a>
-					<a href="http://www.geosciml.org">GeoSciML Home</a>
-					<a href="http://external.opengeospatial.org/twiki_public/GeoSciMLswg/WebHome">GeoSciML Standards Working Group</a>
-					<a href="http://www.earthresourceml.org">EarthResourceML</a>
-                    <a href="http://resource.geosciml.org">Vocabularies</a>
+                        <a href="http://www.cgi-iugs.org">CGI Home</a> |
+			<a href="http://www.geosciml.org">GeoSciML Home</a> |
+			<a href="http://external.opengeospatial.org/twiki_public/GeoSciMLswg/WebHome">GeoSciML Wiki</a> |
+			<a href="http://www.earthresourceml.org">EarthResourceML</a> |
+                        <a href="http://resource.geosciml.org">Vocabularies</a>
                 </div>
             </td>
         </tr>
