@@ -1,0 +1,191 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b0",
+    "@type" : "owl:ObjectProperty",
+    "inverseOf" : "time:intervalIn"
+  }, {
+    "@id" : "_:b1",
+    "@type" : "owl:ObjectProperty",
+    "inverseOf" : "time:hasMember"
+  }, {
+    "@id" : "_:b2",
+    "@type" : "owl:Restriction",
+    "minQualifiedCardinality" : "2",
+    "onClass" : "time:Instant",
+    "onProperty" : "time:hasMember"
+  }, {
+    "@id" : "_:b3",
+    "@type" : "owl:Restriction",
+    "minQualifiedCardinality" : "1",
+    "onClass" : "time:ProperInterval",
+    "onProperty" : "time:hasMember"
+  }, {
+    "@id" : "thors:Era",
+    "subClassOf" : "time:ProperInterval"
+  }, {
+    "@id" : "thors:EraBoundary",
+    "subClassOf" : "time:Instant"
+  }, {
+    "@id" : "thors:ReferenceSystem",
+    "subClassOf" : [ "_:b2", "_:b3", "time:TRS" ]
+  }, {
+    "@id" : "thors:begin",
+    "@type" : "owl:DeprecatedProperty",
+    "owl:deprecated" : true,
+    "equivalentProperty" : "time:hasBeginning"
+  }, {
+    "@id" : "thors:component",
+    "@type" : "owl:DeprecatedProperty",
+    "subPropertyOf" : "time:hasMember",
+    "owl:deprecated" : true
+  }, {
+    "@id" : "thors:end",
+    "@type" : "owl:DeprecatedProperty",
+    "owl:deprecated" : true,
+    "equivalentProperty" : "time:hasEnd"
+  }, {
+    "@id" : "thors:member",
+    "@type" : "owl:DeprecatedProperty",
+    "owl:deprecated" : true,
+    "equivalentProperty" : "_:b0"
+  }, {
+    "@id" : "thors:nextEra",
+    "@type" : "owl:DeprecatedProperty",
+    "owl:deprecated" : true
+  }, {
+    "@id" : "thors:positionalUncertainty",
+    "domain" : "time:TimePosition",
+    "range" : "time:Duration"
+  }, {
+    "@id" : "thors:previousEra",
+    "@type" : "owl:DeprecatedProperty",
+    "owl:deprecated" : true
+  }, {
+    "@id" : "thors:referencePoint",
+    "@type" : "owl:DeprecatedProperty",
+    "subPropertyOf" : "time:hasMember",
+    "owl:deprecated" : true
+  }, {
+    "@id" : "thors:system",
+    "@type" : "owl:DeprecatedProperty",
+    "subPropertyOf" : "_:b1",
+    "owl:deprecated" : true
+  }, {
+    "@id" : "http://resource.geosciml.org/ontology/timescale/thors/w3c",
+    "@type" : "owl:Ontology",
+    "dc:creator" : "Simon J D Cox",
+    "rights" : "Copyright © 2017 CSIRO",
+    "created" : "2017-03-31",
+    "creator" : "http://orcid.org/0000-0002-3884-3420",
+    "license" : "https://creativecommons.org/licenses/by/4.0/",
+    "modified" : "2017-07-23",
+    "comment" : "This graph provides an alignment of the THORS ontology with OWL-Time, as an alternative to the use of ISO 19108 classes as the basis for the ontology. \n\nWhere appropriate, THORS classes and properties are related to OWL-Time classes and properties using rdfs:subClassOf, rdfs:subPropertyOf and owl:equivalentProperty axioms. Where the latter apply, the THORS properties are also annotated \"deprecated\" with the expectation that the OWL-Time properties will be used instead. ",
+    "imports" : [ "http://resource.geosciml.org/ontology/timescale/thors", "http://www.w3.org/2006/time" ]
+  }, {
+    "@id" : "time:intervalContains",
+    "subPropertyOf" : "thors:member"
+  }, {
+    "@id" : "time:intervalFinishedBy",
+    "subPropertyOf" : "thors:member"
+  }, {
+    "@id" : "time:intervalMeets",
+    "propertyChainAxiom" : {
+      "@list" : [ "thors:end", "thors:nextEra" ]
+    }
+  }, {
+    "@id" : "time:intervalMetBy",
+    "propertyChainAxiom" : {
+      "@list" : [ "thors:begin", "thors:previousEra" ]
+    }
+  }, {
+    "@id" : "time:intervalStartedBy",
+    "subPropertyOf" : "thors:member"
+  } ],
+  "@context" : {
+    "deprecated" : {
+      "@id" : "http://www.w3.org/2002/07/owl#deprecated",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator",
+      "@type" : "@id"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports",
+      "@type" : "@id"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "equivalentProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#equivalentProperty",
+      "@type" : "@id"
+    },
+    "subPropertyOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+      "@type" : "@id"
+    },
+    "inverseOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#inverseOf",
+      "@type" : "@id"
+    },
+    "onProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onProperty",
+      "@type" : "@id"
+    },
+    "onClass" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onClass",
+      "@type" : "@id"
+    },
+    "minQualifiedCardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#minQualifiedCardinality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "rest" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+      "@type" : "@id"
+    },
+    "first" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+      "@type" : "@id"
+    },
+    "propertyChainAxiom" : {
+      "@id" : "http://www.w3.org/2002/07/owl#propertyChainAxiom",
+      "@type" : "@id"
+    },
+    "range" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type" : "@id"
+    },
+    "domain" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
+      "@type" : "@id"
+    },
+    "dct" : "http://purl.org/dc/terms/",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "time" : "http://www.w3.org/2006/time#",
+    "dc" : "http://purl.org/dc/elements/1.1/",
+    "thors" : "http://resource.geosciml.org/ontology/timescale/thors#"
+  }
+}
