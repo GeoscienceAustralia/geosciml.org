@@ -1,0 +1,72 @@
+{
+  "@graph" : [ {
+    "@id" : "gts:StratigraphicPoint",
+    "subClassOf" : "sam:SamplingPoint"
+  }, {
+    "@id" : "gts:StratigraphicSection",
+    "subClassOf" : "sam:SamplingCurve"
+  }, {
+    "@id" : "http://resource.geosciml.org/ontology/timescale/gts/iso",
+    "@type" : "owl:Ontology",
+    "creator" : "Simon Jonathan David COX, CSIRO Australia",
+    "description" : "Geological Timescale model aligned to OWL implementation of ISO 19108 & ISO 19156",
+    "rights" : "Copyright © 2017 CSIRO",
+    "title" : "Geological Timescale model aligned to ISO 19108 & ISO 19156",
+    "created" : "2017-04-28",
+    "license" : "https://creativecommons.org/licenses/by/4.0/",
+    "modified" : "2017-07-23",
+    "preferredNamespacePrefix" : "thors",
+    "preferredNamespaceUri" : "http://resource.geosciml.org/ontology/timescale/thors#",
+    "imports" : [ "http://resource.geosciml.org/ontology/timescale/thors/iso", "http://def.seegrid.csiro.au/isotc211/iso19156/2011/sampling", "http://resource.geosciml.org/ontology/timescale/gts" ]
+  } ],
+  "@context" : {
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "iso" : "http://resource.geosciml.org/ontology/timescale/gts/iso#",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "gts" : "http://resource.geosciml.org/ontology/timescale/gts#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "dcterms" : "http://purl.org/dc/terms/",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "sam" : "http://def.seegrid.csiro.au/isotc211/iso19156/2011/sampling#",
+    "dc" : "http://purl.org/dc/elements/1.1/"
+  }
+}
