@@ -13,7 +13,7 @@ GeoSciML is a data model and data transfer standard  for geological data  - from
 ### GeoSciML - current version 4.1 
 
 * **Data Model Documentation**
-    * OGC Implementation Specification Document [(html)](http://www.geosciml.org/doc/geosciml/4.1/documentation/html/)
+    * OGC Implementation Specification Document [(html)](http://docs.opengeospatial.org/is/16-008/16-008.html) 
     * UML model [(html)](http://geosciml.org/doc/geosciml/4.1/documentation/html/)
     * Enterprise Architect UML file [(eap)](http://geosciml.org/doc/geosciml/4.1/documentation/uml)
     * UML summary wall poster [(pdf)](https://portal.opengeospatial.org/files/?artifact_id=72895)

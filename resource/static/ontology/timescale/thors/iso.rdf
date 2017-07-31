@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:basic="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#"
+    xmlns:iso="http://resource.geosciml.org/ontology/timescale/thors/iso#"
+    xmlns:tm="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:thors="http://resource.geosciml.org/ontology/timescale/thors#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xml:base="http://resource.geosciml.org/ontology/timescale/thors/iso">
+  <owl:Ontology rdf:about="">
+    <dc:title>Temporal Hierarchical Ordinal Reference System model aligned to ISO 19108 &amp; ISO 19156</dc:title>
+    <dc:creator>Simon Jonathan David COX, CSIRO Australia</dc:creator>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dc:description>Temporal Hierarchical Ordinal Reference System model aligned to OWL implementation of ISO 19108 &amp; ISO 19156</dc:description>
+    <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2017-04-28</dct:created>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2017-07-23</dct:modified>
+    <owl:imports rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal"/>
+    <owl:imports rdf:resource="http://resource.geosciml.org/ontology/timescale/thors"/>
+    <dc:rights>Copyright © 2017 CSIRO</dc:rights>
+  </owl:Ontology>
+  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/thors#end">
+    <rdfs:subPropertyOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#end"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/thors#component">
+    <rdfs:subPropertyOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#primitive"/>
+    <rdfs:subPropertyOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#component"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/thors#positionalUncertainty">
+    <rdfs:subPropertyOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#measure"/>
+    <rdfs:range rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#Time"/>
+    <rdfs:domain rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#TemporalPosition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/thors#Era">
+    <rdfs:subClassOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#OrdinalEra"/>
+    <rdfs:subClassOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Edge"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/thors#member">
+    <rdfs:subPropertyOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#member"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/thors#referencePoint">
+    <rdfs:subPropertyOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#primitive"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/thors#EraBoundary">
+    <rdfs:subClassOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#Node"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/thors#nextEra">
+    <rdfs:subPropertyOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#nextEdge"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/thors#begin">
+    <rdfs:subPropertyOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#begin"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/thors#ReferenceSystem">
+    <rdfs:subClassOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#TopologicalComplex"/>
+    <rdfs:subClassOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#OrdinalReferenceSystem"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/thors#system">
+    <rdfs:subPropertyOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#system"/>
+    <rdfs:subPropertyOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#complex"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/thors#previousEra">
+    <rdfs:subPropertyOf rdf:resource="http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#previousEdge"/>
+  </rdf:Description>
+</rdf:RDF>
+
+<!-- Created with TopBraid -->

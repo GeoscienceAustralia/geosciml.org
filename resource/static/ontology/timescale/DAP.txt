@@ -1,0 +1,30 @@
+A set of RDFgraphs representing the International [Chrono]stratigraphic Chart, comprising Turtle serializations of data from the 2016 version, along with updated ontologies that define the structure of the data. 
+
+In this version the Geological Timescale Model is aligned with the W3C OWL-Time ontology https://www.w3.org/TR/owl-time/ for the temporal topology, with OGC GeoSPARQL http://www.opengeospatial.org/standards/geosparql for location data, and with the W3C SOSA/SSN ontology for samples.
+
+
+Updated to match the 2016 International Chronostratigraphic Chart. 
+
+Ontology aligned woth OWL-Time, GeoSPARQL and SOSA.  
+
+Original data scraped from the website of the International Commission for Stratigraphy, http://www.stratigraphy.org Transcribed into RDF by Cox & Richard. Multilingual labels entered by SMR and Marshall Ma (RPI - now University of Idaho)
+
+geologic timescale, RDF, OWL, vocabulary, reference system, stratigraphy, OWL-Time, SOSA, SSN, GeoSPARQL
+
+FOR Code	FOR Subcategory Description	 
+040311	Stratigraphy (incl. Biostratigraphy and Sequence Stratigraphy)	Delete
+080505	Web Technologies (excl. Web Search)	Delete
+080607	Information Engineering and Theory	Delete
+080612	Interorganisational Information Systems and Web Services	Delete
+
+
+Software
+
+ *Environment
+ Requirements:
+SPARQL, Triple store
+ 
+ *Language
+ (Programming):
+OWL2, RDFS
+ 

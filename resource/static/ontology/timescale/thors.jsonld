@@ -1,0 +1,287 @@
+{
+  "@graph" : [ {
+    "@id" : "_:b0",
+    "@type" : "owl:Restriction",
+    "minCardinality" : "1",
+    "onProperty" : "thors:previousEra"
+  }, {
+    "@id" : "_:b1",
+    "@type" : "owl:Restriction",
+    "minCardinality" : "1",
+    "onProperty" : "thors:nextEra"
+  }, {
+    "@id" : "_:b2",
+    "@type" : "owl:Restriction",
+    "minCardinality" : "2",
+    "onProperty" : "thors:referencePoint"
+  }, {
+    "@id" : "_:b3",
+    "@type" : "owl:Restriction",
+    "minCardinality" : "1",
+    "onProperty" : "thors:component"
+  }, {
+    "@id" : "_:b4",
+    "@type" : "owl:Class",
+    "unionOf" : "_:b5"
+  }, {
+    "@id" : "_:b6",
+    "@type" : "owl:Restriction",
+    "cardinality" : "1",
+    "onProperty" : "thors:begin"
+  }, {
+    "@id" : "_:b7",
+    "@type" : "owl:Restriction",
+    "cardinality" : "1",
+    "onProperty" : "thors:end"
+  }, {
+    "@id" : "http://resource.geosciml.org/ontology/timescale/thors",
+    "@type" : [ "voaf:Vocabulary", "owl:Ontology" ],
+    "creator" : "Simon Jonathan David COX, CSIRO Australia",
+    "description" : "An OWL representation of the model for Temporal Ordinal Reference Systems defined in GeoSciML v3. ",
+    "rights" : "Copyright © 2012-2017 CSIRO",
+    "source" : "Simon J.D. Cox and Stephen M. Richard, A formal model for the geologic time scale and global stratotype section and point, compatible with geospatial information transfer standards, Geosphere, 1, 119-137 (2005)",
+    "title" : "Temporal Hierarchical Ordinal Reference System model",
+    "created" : "2011-01-01",
+    "license" : "https://creativecommons.org/licenses/by/4.0/",
+    "modified" : "2017-04-28",
+    "preferredNamespacePrefix" : "thors",
+    "preferredNamespaceUri" : "http://resource.geosciml.org/ontology/timescale/thors#",
+    "comment" : "This model is related to the model for TORS in ISO 19108:2002, except that boundaries between eras are first class objects, supporting multiple properties, rather than being just time coordinates. It is also linked to the ISO 19108 Temporal Topology model. ",
+    "seeAlso" : [ "http://www.geosciml.org", "http://dx.doi.org/10.1130/GES00022.1", "doi:10.1130/GES00022.1", "http://geosphere.gsapubs.org/cgi/doi/10.1130/GES00022.1" ],
+    "imports" : "http://purl.org/dc/elements/1.1/",
+    "priorVersion" : "https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201402/Geoscience/GeologicTimeScale/thors.rdf",
+    "versionIRI" : "https://github.com/GeoscienceAustralia/geosciml.org/commit/24d302bf3f0fa315c1dddc2c734b84f52299cd02#diff-73b17e22072459ab7e06e9ab664a9d48",
+    "changeNote" : "2017-04-28 - removed imports of ISO ontologies "
+  }, {
+    "@id" : "thors:Era",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/thors",
+    "label" : "Time Ordinal Era or Interval",
+    "subClassOf" : [ "_:b7", "_:b6", "skos:Concept" ]
+  }, {
+    "@id" : "thors:EraBoundary",
+    "@type" : "owl:Class",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/thors",
+    "label" : "Time Ordinal Era Boundary",
+    "subClassOf" : [ "_:b0", "_:b1", "skos:Concept" ]
+  }, {
+    "@id" : "thors:ReferenceSystem",
+    "@type" : "owl:Class",
+    "comment" : "A temporal ordinal reference system is a constrained temporal topological complex, in which the edges are called 'eras'. Each era may be subdivided into one set of eras of the next finer rank. This constraint is required to establish a mono-hierarchy, so that a set of temporal positions defined relative to the reference system may be uniquely ordered.",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/thors",
+    "label" : "Hierarchical Time Ordinal Reference System",
+    "subClassOf" : [ "_:b2", "_:b3", "skos:ConceptScheme" ]
+  }, {
+    "@id" : "thors:begin",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "era or interval beginning or start",
+    "domain" : "thors:Era",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/thors",
+    "label" : {
+      "@language" : "en",
+      "@value" : "era beginning"
+    },
+    "range" : "thors:EraBoundary",
+    "subPropertyOf" : "skos:semanticRelation",
+    "inverseOf" : "thors:nextEra"
+  }, {
+    "@id" : "thors:component",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "thors:ReferenceSystem",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/thors",
+    "label" : {
+      "@language" : "en",
+      "@value" : "temporal reference system component"
+    },
+    "range" : "thors:Era",
+    "subPropertyOf" : "skos:hasTopConcept",
+    "inverseOf" : "thors:system"
+  }, {
+    "@id" : "thors:end",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "thors:Era",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/thors",
+    "label" : {
+      "@language" : "en",
+      "@value" : "era end"
+    },
+    "range" : "thors:EraBoundary",
+    "subPropertyOf" : "skos:semanticRelation",
+    "inverseOf" : "thors:previousEra"
+  }, {
+    "@id" : "thors:member",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "thors:Era",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/thors",
+    "label" : {
+      "@language" : "en",
+      "@value" : "era member / sub-era"
+    },
+    "range" : "thors:Era",
+    "subPropertyOf" : "skos:narrower"
+  }, {
+    "@id" : "thors:nextEra",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "thors:EraBoundary",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/thors",
+    "label" : {
+      "@language" : "en",
+      "@value" : "next era"
+    },
+    "range" : "thors:Era",
+    "subPropertyOf" : "skos:semanticRelation",
+    "inverseOf" : "thors:begin"
+  }, {
+    "@id" : "thors:positionalUncertainty",
+    "@type" : "owl:DatatypeProperty",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/thors",
+    "label" : {
+      "@language" : "en",
+      "@value" : "uncertainty in temporal position"
+    }
+  }, {
+    "@id" : "thors:previousEra",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "thors:EraBoundary",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/thors",
+    "label" : {
+      "@language" : "en",
+      "@value" : "previous era"
+    },
+    "range" : "thors:Era",
+    "subPropertyOf" : "skos:semanticRelation",
+    "inverseOf" : "thors:end"
+  }, {
+    "@id" : "thors:referencePoint",
+    "@type" : "owl:ObjectProperty",
+    "domain" : "thors:ReferenceSystem",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/thors",
+    "label" : "reference point in timescale",
+    "range" : "thors:EraBoundary",
+    "subPropertyOf" : "skos:hasTopConcept"
+  }, {
+    "@id" : "thors:system",
+    "@type" : "owl:ObjectProperty",
+    "comment" : "reference system that this era belongs to",
+    "domain" : "thors:Era",
+    "isDefinedBy" : "http://resource.geosciml.org/ontology/timescale/thors",
+    "label" : {
+      "@language" : "en",
+      "@value" : "system"
+    },
+    "range" : "thors:ReferenceSystem",
+    "subPropertyOf" : "skos:topConceptOf",
+    "inverseOf" : "thors:component"
+  } ],
+  "@context" : {
+    "inverseOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#inverseOf",
+      "@type" : "@id"
+    },
+    "subPropertyOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subPropertyOf",
+      "@type" : "@id"
+    },
+    "range" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+      "@type" : "@id"
+    },
+    "domain" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
+      "@type" : "@id"
+    },
+    "subClassOf" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "@type" : "@id"
+    },
+    "onProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#onProperty",
+      "@type" : "@id"
+    },
+    "minCardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#minCardinality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "unionOf" : {
+      "@id" : "http://www.w3.org/2002/07/owl#unionOf",
+      "@type" : "@id"
+    },
+    "cardinality" : {
+      "@id" : "http://www.w3.org/2002/07/owl#cardinality",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "priorVersion" : {
+      "@id" : "http://www.w3.org/2002/07/owl#priorVersion",
+      "@type" : "@id"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license",
+      "@type" : "@id"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+      "@type" : "@id"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "changeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#changeNote"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "imports" : {
+      "@id" : "http://www.w3.org/2002/07/owl#imports",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "versionIRI" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/elements/1.1/source"
+    },
+    "dct" : "http://purl.org/dc/terms/",
+    "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "owl" : "http://www.w3.org/2002/07/owl#",
+    "xsd" : "http://www.w3.org/2001/XMLSchema#",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "voaf" : "http://purl.org/vocommons/voaf#",
+    "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
+    "vann" : "http://purl.org/vocab/vann/",
+    "dc" : "http://purl.org/dc/elements/1.1/",
+    "thors" : "http://resource.geosciml.org/ontology/timescale/thors#"
+  }
+}

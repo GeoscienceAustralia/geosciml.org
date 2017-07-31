@@ -1,0 +1,698 @@
+# baseURI: file:/C:/Users/cox075/dev/GeologicTimeScale/isc2016-in
+# imports: http://resource.geosciml.org/ontology/timescale/thors/w3c
+
+@prefix isc2016-in: <file:///C:/Users/cox075/dev/GeologicTimeScale/isc2016-in#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<file:///C:/Users/cox075/dev/GeologicTimeScale/isc2016-in>
+  rdf:type owl:Ontology ;
+  owl:imports <http://resource.geosciml.org/vocabulary/timescale/isc2016-12> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+<file:/C:/Users/cox075/dev/GeologicTimeScale/isc2016-in>
+  owl:imports <http://resource.geosciml.org/ontology/timescale/thors/w3c> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Aalenian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/MiddleJurassic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Aeronian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Llandovery> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Albian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/LowerCretaceous> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Anisian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/MiddleTriassic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Aptian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/LowerCretaceous> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Aquitanian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Miocene> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Archean>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Mesoarchean> ;
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Paleoarchean> ;
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Precambrian> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Neoarchean> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Eoarchean> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Artinskian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Cisuralian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Asselian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Cisuralian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Bajocian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/MiddleJurassic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Barremian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/LowerCretaceous> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Bartonian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Eocene> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Bathonian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/MiddleJurassic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Berriasian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/LowerCretaceous> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Burdigalian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Miocene> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Calabrian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Pleistocene> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Callovian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/MiddleJurassic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Calymmian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Mesoproterozoic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Cambrian>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/CambrianSeries2> ;
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/CambrianSeries3> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Furongian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Terreneuvian> ;
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Paleozoic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/CambrianSeries2>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Cambrian> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/CambrianStage4> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/CambrianStage3> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/CambrianSeries3>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Drumian> ;
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Cambrian> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Guzhangian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/CambrianStage5> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/CambrianStage10>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Furongian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/CambrianStage2>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Terreneuvian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/CambrianStage3>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/CambrianSeries2> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/CambrianStage4>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/CambrianSeries2> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/CambrianStage5>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/CambrianSeries3> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Campanian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/UpperCretaceous> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Capitanian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Guadalupian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Carboniferous>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Paleozoic> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Pennsylvanian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Mississippian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Carnian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/UpperTriassic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Cenomanian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/UpperCretaceous> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Cenozoic>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Neogene> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Quaternary> ;
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Phanerozoic> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Paleogene> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Changhsingian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Lopingian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Chattian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Oligocene> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Cisuralian>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Artinskian> ;
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Sakmarian> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Kungurian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Asselian> ;
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Permian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Coniacian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/UpperCretaceous> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Cretaceous>
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/UpperCretaceous> ;
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Mesozoic> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/LowerCretaceous> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Cryogenian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Neoproterozoic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Danian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Paleocene> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Dapingian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/MiddleOrdovician> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Darriwilian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/MiddleOrdovician> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Devonian>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/MiddleDevonian> ;
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Paleozoic> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/UpperDevonian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/LowerDevonian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Drumian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/CambrianSeries3> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Ectasian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Mesoproterozoic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Ediacaran>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Neoproterozoic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Eifelian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/MiddleDevonian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Emsian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/LowerDevonian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Eoarchean>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Archean> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Eocene>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Bartonian> ;
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Lutetian> ;
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Paleogene> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Priabonian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Ypresian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Famennian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/UpperDevonian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Floian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/LowerOrdovician> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Fortunian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Terreneuvian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Frasnian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/UpperDevonian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Furongian>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Jiangshanian> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/CambrianStage10> ;
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Cambrian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Paibian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Gelasian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Pleistocene> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Givetian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/MiddleDevonian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Gorstian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Ludlow> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Guadalupian>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Capitanian> ;
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Wordian> ;
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Permian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Roadian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Guzhangian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/CambrianSeries3> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Gzhelian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/UpperPennsylvanian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Hadean>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Precambrian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Hauterivian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/LowerCretaceous> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Hettangian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/LowerJurassic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Hirnantian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/UpperOrdovician> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Holocene>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Quaternary> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Homerian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Wenlock> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Induan>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/LowerTriassic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Jiangshanian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Furongian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Jurassic>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/MiddleJurassic> ;
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Mesozoic> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/UpperJurassic> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/LowerJurassic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Kasimovian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/UpperPennsylvanian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Katian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/UpperOrdovician> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Kimmeridgian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/UpperJurassic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Kungurian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Cisuralian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Ladinian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/MiddleTriassic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Langhian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Miocene> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Llandovery>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Aeronian> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Telychian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Rhuddanian> ;
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Silurian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Lochkovian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/LowerDevonian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Lopingian>
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Changhsingian> ;
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Permian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Wuchiapingian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/LowerCretaceous>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Aptian> ;
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Barremian> ;
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Hauterivian> ;
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Valanginian> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Albian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Berriasian> ;
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Cretaceous> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/LowerDevonian>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Pragian> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Emsian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Lochkovian> ;
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Devonian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/LowerJurassic>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Pliensbachian> ;
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Sinemurian> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Toarcian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Hettangian> ;
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Jurassic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/LowerMississippian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Mississippian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/LowerOrdovician>
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Floian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Tremadocian> ;
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Ordovician> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/LowerPennsylvanian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Pennsylvanian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/LowerTriassic>
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Olenekian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Induan> ;
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Triassic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Ludfordian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Ludlow> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Ludlow>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Silurian> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Ludfordian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Gorstian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Lutetian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Eocene> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Maastrichtian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/UpperCretaceous> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Mesoarchean>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Archean> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Mesoproterozoic>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Ectasian> ;
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Proterozoic> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Stenian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Calymmian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Mesozoic>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Jurassic> ;
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Phanerozoic> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Cretaceous> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Triassic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Messinian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Miocene> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/MiddleDevonian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Devonian> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Givetian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Eifelian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/MiddleJurassic>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Bajocian> ;
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Bathonian> ;
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Jurassic> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Callovian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Aalenian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/MiddleMississippian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Mississippian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/MiddleOrdovician>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Ordovician> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Darriwilian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Dapingian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/MiddlePennsylvanian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Pennsylvanian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/MiddlePleistocene>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Pleistocene> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/MiddleTriassic>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Triassic> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Ladinian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Anisian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Miocene>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Burdigalian> ;
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Langhian> ;
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Serravallian> ;
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Tortonian> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Messinian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Aquitanian> ;
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Neogene> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Mississippian>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/MiddleMississippian> ;
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/UpperMississippian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/LowerMississippian> ;
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Carboniferous> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Neoarchean>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Archean> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Neogene>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Cenozoic> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Pliocene> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Miocene> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Neoproterozoic>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Cryogenian> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Ediacaran> ;
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Proterozoic> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Tonian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Norian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/UpperTriassic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Olenekian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/LowerTriassic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Oligocene>
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Chattian> ;
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Paleogene> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Rupelian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Ordovician>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/MiddleOrdovician> ;
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Paleozoic> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/UpperOrdovician> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/LowerOrdovician> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Orosirian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Paleoproterozoic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Oxfordian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/UpperJurassic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Paibian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Furongian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Paleoarchean>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Archean> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Paleocene>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Selandian> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Thanetian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Danian> ;
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Paleogene> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Paleogene>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Eocene> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Oligocene> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Paleocene> ;
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Cenozoic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Paleoproterozoic>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Orosirian> ;
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Rhyacian> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Statherian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Siderian> ;
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Proterozoic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Paleozoic>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Carboniferous> ;
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Devonian> ;
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Ordovician> ;
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Silurian> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Permian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Cambrian> ;
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Phanerozoic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Pennsylvanian>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/MiddlePennsylvanian> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/UpperPennsylvanian> ;
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Carboniferous> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/LowerPennsylvanian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Permian>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Guadalupian> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Lopingian> ;
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Paleozoic> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Cisuralian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Phanerozoic>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Mesozoic> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Cenozoic> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Paleozoic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Piacenzian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Pliocene> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Pleistocene>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Calabrian> ;
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/MiddlePleistocene> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/UpperPleistocene> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Gelasian> ;
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Quaternary> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Pliensbachian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/LowerJurassic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Pliocene>
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Piacenzian> ;
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Neogene> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Zanclean> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Pragian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/LowerDevonian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Precambrian>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Archean> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Proterozoic> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Hadean> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Priabonian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Eocene> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Pridoli>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Silurian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Proterozoic>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Mesoproterozoic> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Neoproterozoic> ;
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Precambrian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Paleoproterozoic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Quaternary>
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Holocene> ;
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Cenozoic> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Pleistocene> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Rhaetian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/UpperTriassic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Rhuddanian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Llandovery> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Rhyacian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Paleoproterozoic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Roadian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Guadalupian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Rupelian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Oligocene> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Sakmarian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Cisuralian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Sandbian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/UpperOrdovician> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Santonian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/UpperCretaceous> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Selandian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Paleocene> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Serpukhovian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/UpperMississippian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Serravallian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Miocene> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Sheinwoodian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Wenlock> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Siderian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Paleoproterozoic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Silurian>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Ludlow> ;
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Wenlock> ;
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Paleozoic> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Pridoli> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Llandovery> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Sinemurian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/LowerJurassic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Statherian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Paleoproterozoic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Stenian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Mesoproterozoic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Telychian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Llandovery> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Terreneuvian>
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/CambrianStage2> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Fortunian> ;
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Cambrian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Thanetian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Paleocene> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Tithonian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/UpperJurassic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Toarcian>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/LowerJurassic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Tonian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Neoproterozoic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Tortonian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Miocene> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Tremadocian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/LowerOrdovician> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Triassic>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/MiddleTriassic> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/UpperTriassic> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/LowerTriassic> ;
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Mesozoic> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Turonian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/UpperCretaceous> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/UpperCretaceous>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Campanian> ;
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Coniacian> ;
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Santonian> ;
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Turonian> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Maastrichtian> ;
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Cretaceous> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Cenomanian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/UpperDevonian>
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Famennian> ;
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Devonian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Frasnian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/UpperJurassic>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Kimmeridgian> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Tithonian> ;
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Jurassic> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Oxfordian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/UpperMississippian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Mississippian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Serpukhovian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/UpperOrdovician>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Katian> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Hirnantian> ;
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Ordovician> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Sandbian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/UpperPennsylvanian>
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Gzhelian> ;
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Pennsylvanian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Kasimovian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/UpperPleistocene>
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Pleistocene> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/UpperTriassic>
+  time:intervalContains <http://resource.geosciml.org/classifier/ics/ischart/Norian> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Rhaetian> ;
+  time:intervalFinishes <http://resource.geosciml.org/classifier/ics/ischart/Triassic> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Carnian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Valanginian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/LowerCretaceous> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Wenlock>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Silurian> ;
+  time:intervalFinishedBy <http://resource.geosciml.org/classifier/ics/ischart/Homerian> ;
+  time:intervalStartedBy <http://resource.geosciml.org/classifier/ics/ischart/Sheinwoodian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Wordian>
+  time:intervalDuring <http://resource.geosciml.org/classifier/ics/ischart/Guadalupian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Wuchiapingian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Lopingian> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Ypresian>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Eocene> ;
+.
+<http://resource.geosciml.org/classifier/ics/ischart/Zanclean>
+  time:intervalStarts <http://resource.geosciml.org/classifier/ics/ischart/Pliocene> ;
+.

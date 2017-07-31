@@ -1,0 +1,70 @@
+# baseURI: http://resource.geosciml.org/ontology/timescale/thors/iso
+# imports: http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal
+# imports: http://resource.geosciml.org/ontology/timescale/thors
+# prefix: iso
+
+@prefix basic: <http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix iso: <http://resource.geosciml.org/ontology/timescale/thors/iso#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix thors: <http://resource.geosciml.org/ontology/timescale/thors#> .
+@prefix tm: <http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+thors:Era
+  rdfs:subClassOf tm:Edge ;
+  rdfs:subClassOf tm:OrdinalEra ;
+.
+thors:EraBoundary
+  rdfs:subClassOf tm:Node ;
+.
+thors:ReferenceSystem
+  rdfs:subClassOf tm:OrdinalReferenceSystem ;
+  rdfs:subClassOf tm:TopologicalComplex ;
+.
+thors:begin
+  rdfs:subPropertyOf tm:begin ;
+.
+thors:component
+  rdfs:subPropertyOf tm:component ;
+  rdfs:subPropertyOf tm:primitive ;
+.
+thors:end
+  rdfs:subPropertyOf tm:end ;
+.
+thors:member
+  rdfs:subPropertyOf tm:member ;
+.
+thors:nextEra
+  rdfs:subPropertyOf tm:nextEdge ;
+.
+thors:positionalUncertainty
+  rdfs:domain tm:TemporalPosition ;
+  rdfs:range basic:Time ;
+  rdfs:subPropertyOf basic:measure ;
+.
+thors:previousEra
+  rdfs:subPropertyOf tm:previousEdge ;
+.
+thors:referencePoint
+  rdfs:subPropertyOf tm:primitive ;
+.
+thors:system
+  rdfs:subPropertyOf tm:complex ;
+  rdfs:subPropertyOf tm:system ;
+.
+<http://resource.geosciml.org/ontology/timescale/thors/iso>
+  rdf:type owl:Ontology ;
+  dc:creator "Simon Jonathan David COX, CSIRO Australia" ;
+  dc:description "Temporal Hierarchical Ordinal Reference System model aligned to OWL implementation of ISO 19108 & ISO 19156" ;
+  dc:rights "Copyright © 2017 CSIRO" ;
+  dc:title "Temporal Hierarchical Ordinal Reference System model aligned to ISO 19108 & ISO 19156" ;
+  dct:created "2017-04-28"^^xsd:date ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dct:modified "2017-07-23"^^xsd:date ;
+  owl:imports <http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal> ;
+  owl:imports <http://resource.geosciml.org/ontology/timescale/thors> ;
+.

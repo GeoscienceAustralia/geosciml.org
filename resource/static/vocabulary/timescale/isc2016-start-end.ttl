@@ -1,0 +1,1577 @@
+# baseURI: file:/C:/Users/cox075/dev/GeologicTimeScale/isc2016-start-end
+# imports: http://resource.geosciml.org/ontology/timescale/thors/w3c
+
+@prefix gts: <http://resource.geosciml.org/ontology/timescale/gts#> .
+@prefix isc: <http://resource.geosciml.org/classifier/ics/ischart/> .
+@prefix isc2016-start-end: <file:///C:/Users/cox075/dev/GeologicTimeScale/isc2016-start-end#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix thors: <http://resource.geosciml.org/ontology/timescale/thors#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<file:///C:/Users/cox075/dev/GeologicTimeScale/isc2016-start-end>
+  rdf:type owl:Ontology ;
+  owl:imports <http://resource.geosciml.org/vocabulary/timescale/isc2016-12> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+<file:/C:/Users/cox075/dev/GeologicTimeScale/isc2016-start-end>
+  owl:imports <http://resource.geosciml.org/ontology/timescale/thors/w3c> ;
+.
+isc:Aalenian
+  time:intervalDuring isc:Jurassic ;
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStarts isc:MiddleJurassic ;
+.
+isc:Aeronian
+  time:intervalDuring isc:Llandovery ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalDuring isc:Silurian ;
+.
+isc:Albian
+  time:intervalDuring isc:Cretaceous ;
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:LowerCretaceous ;
+.
+isc:Anisian
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalDuring isc:Triassic ;
+  time:intervalStarts isc:MiddleTriassic ;
+.
+isc:Aptian
+  time:intervalDuring isc:Cretaceous ;
+  time:intervalDuring isc:LowerCretaceous ;
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+.
+isc:Aquitanian
+  time:intervalDuring isc:Cenozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStarts isc:Miocene ;
+  time:intervalStarts isc:Neogene ;
+.
+isc:Archean
+  time:intervalContains isc:Mesoarchean ;
+  time:intervalContains isc:Paleoarchean ;
+  time:intervalDuring isc:Precambrian ;
+  time:intervalFinishedBy isc:Neoarchean ;
+  time:intervalStartedBy isc:Eoarchean ;
+.
+isc:Artinskian
+  time:intervalDuring isc:Cisuralian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Permian ;
+  time:intervalDuring isc:Phanerozoic ;
+.
+isc:Asselian
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStarts isc:Cisuralian ;
+  time:intervalStarts isc:Permian ;
+.
+isc:Bajocian
+  time:intervalDuring isc:Jurassic ;
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:MiddleJurassic ;
+  time:intervalDuring isc:Phanerozoic ;
+.
+isc:Barremian
+  time:intervalDuring isc:Cretaceous ;
+  time:intervalDuring isc:LowerCretaceous ;
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+.
+isc:Bartonian
+  time:intervalDuring isc:Cenozoic ;
+  time:intervalDuring isc:Eocene ;
+  time:intervalDuring isc:Paleogene ;
+  time:intervalDuring isc:Phanerozoic ;
+.
+isc:Bashkirian
+  time:intervalDuring isc:Carboniferous ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:LowerPennsylvanian ;
+  time:intervalStarts isc:LowerPennsylvanian ;
+  time:intervalStarts isc:Pennsylvanian ;
+.
+isc:Bathonian
+  time:intervalDuring isc:Jurassic ;
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:MiddleJurassic ;
+  time:intervalDuring isc:Phanerozoic ;
+.
+isc:Berriasian
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStarts isc:Cretaceous ;
+  time:intervalStarts isc:LowerCretaceous ;
+.
+isc:Burdigalian
+  time:intervalDuring isc:Cenozoic ;
+  time:intervalDuring isc:Miocene ;
+  time:intervalDuring isc:Neogene ;
+  time:intervalDuring isc:Phanerozoic ;
+.
+isc:Calabrian
+  time:intervalDuring isc:Cenozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalDuring isc:Pleistocene ;
+  time:intervalDuring isc:Quaternary ;
+.
+isc:Callovian
+  time:intervalDuring isc:Jurassic ;
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:MiddleJurassic ;
+.
+isc:Calymmian
+  time:intervalDuring isc:Precambrian ;
+  time:intervalDuring isc:Proterozoic ;
+  time:intervalStarts isc:Mesoproterozoic ;
+.
+isc:Cambrian
+  time:intervalContains isc:CambrianSeries2 ;
+  time:intervalContains isc:CambrianSeries3 ;
+  time:intervalContains isc:CambrianStage2 ;
+  time:intervalContains isc:CambrianStage3 ;
+  time:intervalContains isc:CambrianStage4 ;
+  time:intervalContains isc:CambrianStage5 ;
+  time:intervalContains isc:Drumian ;
+  time:intervalContains isc:Guzhangian ;
+  time:intervalContains isc:Jiangshanian ;
+  time:intervalContains isc:Paibian ;
+  time:intervalFinishedBy isc:CambrianStage10 ;
+  time:intervalFinishedBy isc:Furongian ;
+  time:intervalStartedBy isc:Fortunian ;
+  time:intervalStartedBy isc:Terreneuvian ;
+  time:intervalStarts isc:Paleozoic ;
+  time:intervalStarts isc:Phanerozoic ;
+.
+isc:CambrianSeries2
+  time:intervalDuring isc:Cambrian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:CambrianStage4 ;
+  time:intervalStartedBy isc:CambrianStage3 ;
+.
+isc:CambrianSeries3
+  time:intervalContains isc:Drumian ;
+  time:intervalDuring isc:Cambrian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Guzhangian ;
+  time:intervalStartedBy isc:CambrianStage5 ;
+.
+isc:CambrianStage10
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:Cambrian ;
+  time:intervalFinishes isc:Furongian ;
+.
+isc:CambrianStage2
+  time:intervalDuring isc:Cambrian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:Terreneuvian ;
+.
+isc:CambrianStage3
+  time:intervalDuring isc:Cambrian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStarts isc:CambrianSeries2 ;
+.
+isc:CambrianStage4
+  time:intervalDuring isc:Cambrian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:CambrianSeries2 ;
+.
+isc:CambrianStage5
+  time:intervalDuring isc:Cambrian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStarts isc:CambrianSeries3 ;
+.
+isc:Campanian
+  time:intervalDuring isc:Cretaceous ;
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalDuring isc:UpperCretaceous ;
+.
+isc:Capitanian
+  time:intervalDuring isc:Guadalupian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Permian ;
+  time:intervalDuring isc:Phanerozoic ;
+.
+isc:Carboniferous
+  time:intervalContains isc:Bashkirian ;
+  time:intervalContains isc:Kasimovian ;
+  time:intervalContains isc:LowerPennsylvanian ;
+  time:intervalContains isc:MiddleMississippian ;
+  time:intervalContains isc:MiddlePennsylvanian ;
+  time:intervalContains isc:Moscovian ;
+  time:intervalContains isc:Serpukhovian ;
+  time:intervalContains isc:Visean ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Gzhelian ;
+  time:intervalFinishedBy isc:Pennsylvanian ;
+  time:intervalFinishedBy isc:UpperMississippian ;
+  time:intervalFinishedBy isc:UpperPennsylvanian ;
+  time:intervalStartedBy isc:LowerMississippian ;
+  time:intervalStartedBy isc:Mississippian ;
+  time:intervalStartedBy isc:Tournaisian ;
+.
+isc:Carnian
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalDuring isc:Triassic ;
+  time:intervalStarts isc:UpperTriassic ;
+.
+isc:Cenomanian
+  time:intervalDuring isc:Cretaceous ;
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStarts isc:UpperCretaceous ;
+.
+isc:Cenozoic
+  time:intervalContains isc:Aquitanian ;
+  time:intervalContains isc:Bartonian ;
+  time:intervalContains isc:Burdigalian ;
+  time:intervalContains isc:Calabrian ;
+  time:intervalContains isc:Chattian ;
+  time:intervalContains isc:Eocene ;
+  time:intervalContains isc:Gelasian ;
+  time:intervalContains isc:Langhian ;
+  time:intervalContains isc:Lutetian ;
+  time:intervalContains isc:Messinian ;
+  time:intervalContains isc:MiddlePleistocene ;
+  time:intervalContains isc:Miocene ;
+  time:intervalContains isc:Neogene ;
+  time:intervalContains isc:Oligocene ;
+  time:intervalContains isc:Piacenzian ;
+  time:intervalContains isc:Pleistocene ;
+  time:intervalContains isc:Pliocene ;
+  time:intervalContains isc:Priabonian ;
+  time:intervalContains isc:Rupelian ;
+  time:intervalContains isc:Selandian ;
+  time:intervalContains isc:Serravallian ;
+  time:intervalContains isc:Thanetian ;
+  time:intervalContains isc:Tortonian ;
+  time:intervalContains isc:UpperPleistocene ;
+  time:intervalContains isc:Ypresian ;
+  time:intervalContains isc:Zanclean ;
+  time:intervalFinishedBy isc:Holocene ;
+  time:intervalFinishedBy isc:Quaternary ;
+  time:intervalFinishes isc:Phanerozoic ;
+  time:intervalStartedBy isc:Danian ;
+  time:intervalStartedBy isc:Paleocene ;
+  time:intervalStartedBy isc:Paleogene ;
+.
+isc:Changhsingian
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:Lopingian ;
+  time:intervalFinishes isc:Paleozoic ;
+  time:intervalFinishes isc:Permian ;
+.
+isc:Chattian
+  time:intervalDuring isc:Cenozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:Oligocene ;
+  time:intervalFinishes isc:Paleogene ;
+.
+isc:Cisuralian
+  time:intervalContains isc:Artinskian ;
+  time:intervalContains isc:Sakmarian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Kungurian ;
+  time:intervalStartedBy isc:Asselian ;
+  time:intervalStarts isc:Permian ;
+.
+isc:Coniacian
+  time:intervalDuring isc:Cretaceous ;
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalDuring isc:UpperCretaceous ;
+.
+isc:Cretaceous
+  time:intervalContains isc:Albian ;
+  time:intervalContains isc:Aptian ;
+  time:intervalContains isc:Barremian ;
+  time:intervalContains isc:Campanian ;
+  time:intervalContains isc:Cenomanian ;
+  time:intervalContains isc:Coniacian ;
+  time:intervalContains isc:Hauterivian ;
+  time:intervalContains isc:Santonian ;
+  time:intervalContains isc:Turonian ;
+  time:intervalContains isc:Valanginian ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Maastrichtian ;
+  time:intervalFinishedBy isc:UpperCretaceous ;
+  time:intervalFinishes isc:Mesozoic ;
+  time:intervalStartedBy isc:Berriasian ;
+  time:intervalStartedBy isc:LowerCretaceous ;
+.
+isc:Cryogenian
+  time:intervalDuring isc:Neoproterozoic ;
+  time:intervalDuring isc:Precambrian ;
+  time:intervalDuring isc:Proterozoic ;
+.
+isc:Danian
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStarts isc:Cenozoic ;
+  time:intervalStarts isc:Paleocene ;
+  time:intervalStarts isc:Paleogene ;
+.
+isc:Dapingian
+  time:intervalDuring isc:Ordovician ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStarts isc:MiddleOrdovician ;
+.
+isc:Darriwilian
+  time:intervalDuring isc:Ordovician ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:MiddleOrdovician ;
+.
+isc:Devonian
+  time:intervalContains isc:Eifelian ;
+  time:intervalContains isc:Emsian ;
+  time:intervalContains isc:Frasnian ;
+  time:intervalContains isc:Givetian ;
+  time:intervalContains isc:MiddleDevonian ;
+  time:intervalContains isc:Pragian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Famennian ;
+  time:intervalFinishedBy isc:UpperDevonian ;
+  time:intervalStartedBy isc:Lochkovian ;
+  time:intervalStartedBy isc:LowerDevonian ;
+.
+isc:Drumian
+  time:intervalDuring isc:Cambrian ;
+  time:intervalDuring isc:CambrianSeries3 ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+.
+isc:Ectasian
+  time:intervalDuring isc:Mesoproterozoic ;
+  time:intervalDuring isc:Precambrian ;
+  time:intervalDuring isc:Proterozoic ;
+.
+isc:Ediacaran
+  time:intervalFinishes isc:Neoproterozoic ;
+  time:intervalFinishes isc:Precambrian ;
+  time:intervalFinishes isc:Proterozoic ;
+.
+isc:Eifelian
+  time:intervalDuring isc:Devonian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStarts isc:MiddleDevonian ;
+.
+isc:Emsian
+  time:intervalDuring isc:Devonian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:LowerDevonian ;
+.
+isc:Eoarchean
+  time:intervalDuring isc:Precambrian ;
+  time:intervalStarts isc:Archean ;
+.
+isc:Eocene
+  time:intervalContains isc:Bartonian ;
+  time:intervalContains isc:Lutetian ;
+  time:intervalDuring isc:Cenozoic ;
+  time:intervalDuring isc:Paleogene ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Priabonian ;
+  time:intervalStartedBy isc:Ypresian ;
+.
+isc:Famennian
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:Devonian ;
+  time:intervalFinishes isc:UpperDevonian ;
+.
+isc:Floian
+  time:intervalDuring isc:Ordovician ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:LowerOrdovician ;
+.
+isc:Fortunian
+  time:intervalStarts isc:Cambrian ;
+  time:intervalStarts isc:Paleozoic ;
+  time:intervalStarts isc:Phanerozoic ;
+  time:intervalStarts isc:Terreneuvian ;
+.
+isc:Frasnian
+  time:intervalDuring isc:Devonian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStarts isc:UpperDevonian ;
+.
+isc:Furongian
+  time:intervalContains isc:Jiangshanian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:CambrianStage10 ;
+  time:intervalFinishes isc:Cambrian ;
+  time:intervalStartedBy isc:Paibian ;
+.
+isc:Gelasian
+  time:intervalDuring isc:Cenozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStarts isc:Pleistocene ;
+  time:intervalStarts isc:Quaternary ;
+.
+isc:Givetian
+  time:intervalDuring isc:Devonian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:MiddleDevonian ;
+.
+isc:Gorstian
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalDuring isc:Silurian ;
+  time:intervalStarts isc:Ludlow ;
+.
+isc:Guadalupian
+  time:intervalContains isc:Capitanian ;
+  time:intervalContains isc:Wordian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Permian ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStartedBy isc:Roadian ;
+.
+isc:Guzhangian
+  time:intervalDuring isc:Cambrian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:CambrianSeries3 ;
+.
+isc:Gzhelian
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:Carboniferous ;
+  time:intervalFinishes isc:Pennsylvanian ;
+  time:intervalFinishes isc:UpperPennsylvanian ;
+.
+isc:Hadean
+  time:intervalStarts isc:Precambrian ;
+.
+isc:Hauterivian
+  time:intervalDuring isc:Cretaceous ;
+  time:intervalDuring isc:LowerCretaceous ;
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+.
+isc:Hettangian
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStarts isc:Jurassic ;
+  time:intervalStarts isc:LowerJurassic ;
+.
+isc:Hirnantian
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:Ordovician ;
+  time:intervalFinishes isc:UpperOrdovician ;
+.
+isc:Holocene
+  time:intervalFinishes isc:Cenozoic ;
+  time:intervalFinishes isc:Phanerozoic ;
+  time:intervalFinishes isc:Quaternary ;
+.
+isc:Homerian
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalDuring isc:Silurian ;
+  time:intervalFinishes isc:Wenlock ;
+.
+isc:Induan
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStarts isc:LowerTriassic ;
+  time:intervalStarts isc:Mesozoic ;
+  time:intervalStarts isc:Triassic ;
+.
+isc:Jiangshanian
+  time:intervalDuring isc:Cambrian ;
+  time:intervalDuring isc:Furongian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+.
+isc:Jurassic
+  time:intervalContains isc:Aalenian ;
+  time:intervalContains isc:Bajocian ;
+  time:intervalContains isc:Bathonian ;
+  time:intervalContains isc:Callovian ;
+  time:intervalContains isc:Kimmeridgian ;
+  time:intervalContains isc:MiddleJurassic ;
+  time:intervalContains isc:Oxfordian ;
+  time:intervalContains isc:Pliensbachian ;
+  time:intervalContains isc:Sinemurian ;
+  time:intervalContains isc:Toarcian ;
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Tithonian ;
+  time:intervalFinishedBy isc:UpperJurassic ;
+  time:intervalStartedBy isc:Hettangian ;
+  time:intervalStartedBy isc:LowerJurassic ;
+.
+isc:Kasimovian
+  time:intervalDuring isc:Carboniferous ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Pennsylvanian ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStarts isc:UpperPennsylvanian ;
+.
+isc:Katian
+  time:intervalDuring isc:Ordovician ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalDuring isc:UpperOrdovician ;
+.
+isc:Kimmeridgian
+  time:intervalDuring isc:Jurassic ;
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalDuring isc:UpperJurassic ;
+.
+isc:Kungurian
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Permian ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:Cisuralian ;
+.
+isc:Ladinian
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalDuring isc:Triassic ;
+  time:intervalFinishes isc:MiddleTriassic ;
+.
+isc:Langhian
+  time:intervalDuring isc:Cenozoic ;
+  time:intervalDuring isc:Miocene ;
+  time:intervalDuring isc:Neogene ;
+  time:intervalDuring isc:Phanerozoic ;
+.
+isc:Llandovery
+  time:intervalContains isc:Aeronian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Telychian ;
+  time:intervalStartedBy isc:Rhuddanian ;
+  time:intervalStarts isc:Silurian ;
+.
+isc:Lochkovian
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStarts isc:Devonian ;
+  time:intervalStarts isc:LowerDevonian ;
+.
+isc:Lopingian
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Changhsingian ;
+  time:intervalFinishes isc:Paleozoic ;
+  time:intervalFinishes isc:Permian ;
+  time:intervalStartedBy isc:Wuchiapingian ;
+.
+isc:LowerCretaceous
+  time:intervalContains isc:Aptian ;
+  time:intervalContains isc:Barremian ;
+  time:intervalContains isc:Hauterivian ;
+  time:intervalContains isc:Valanginian ;
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Albian ;
+  time:intervalStartedBy isc:Berriasian ;
+  time:intervalStarts isc:Cretaceous ;
+.
+isc:LowerDevonian
+  time:intervalContains isc:Pragian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Emsian ;
+  time:intervalStartedBy isc:Lochkovian ;
+  time:intervalStarts isc:Devonian ;
+.
+isc:LowerJurassic
+  time:intervalContains isc:Pliensbachian ;
+  time:intervalContains isc:Sinemurian ;
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Toarcian ;
+  time:intervalStartedBy isc:Hettangian ;
+  time:intervalStarts isc:Jurassic ;
+.
+isc:LowerMississippian
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Tournaisian ;
+  time:intervalStartedBy isc:Tournaisian ;
+  time:intervalStarts isc:Carboniferous ;
+  time:intervalStarts isc:Mississippian ;
+.
+isc:LowerOrdovician
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Floian ;
+  time:intervalStartedBy isc:Tremadocian ;
+  time:intervalStarts isc:Ordovician ;
+.
+isc:LowerPennsylvanian
+  time:intervalDuring isc:Carboniferous ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Bashkirian ;
+  time:intervalStartedBy isc:Bashkirian ;
+  time:intervalStarts isc:Pennsylvanian ;
+.
+isc:LowerTriassic
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Olenekian ;
+  time:intervalStartedBy isc:Induan ;
+  time:intervalStarts isc:Mesozoic ;
+  time:intervalStarts isc:Triassic ;
+.
+isc:Ludfordian
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalDuring isc:Silurian ;
+  time:intervalFinishes isc:Ludlow ;
+.
+isc:Ludlow
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalDuring isc:Silurian ;
+  time:intervalFinishedBy isc:Ludfordian ;
+  time:intervalStartedBy isc:Gorstian ;
+.
+isc:Lutetian
+  time:intervalDuring isc:Cenozoic ;
+  time:intervalDuring isc:Eocene ;
+  time:intervalDuring isc:Paleogene ;
+  time:intervalDuring isc:Phanerozoic ;
+.
+isc:Maastrichtian
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:Cretaceous ;
+  time:intervalFinishes isc:Mesozoic ;
+  time:intervalFinishes isc:UpperCretaceous ;
+.
+isc:Mesoarchean
+  time:intervalDuring isc:Archean ;
+  time:intervalDuring isc:Precambrian ;
+.
+isc:Mesoproterozoic
+  time:intervalContains isc:Ectasian ;
+  time:intervalDuring isc:Precambrian ;
+  time:intervalDuring isc:Proterozoic ;
+  time:intervalFinishedBy isc:Stenian ;
+  time:intervalStartedBy isc:Calymmian ;
+.
+isc:Mesozoic
+  time:intervalContains isc:Aalenian ;
+  time:intervalContains isc:Albian ;
+  time:intervalContains isc:Anisian ;
+  time:intervalContains isc:Aptian ;
+  time:intervalContains isc:Bajocian ;
+  time:intervalContains isc:Barremian ;
+  time:intervalContains isc:Bathonian ;
+  time:intervalContains isc:Berriasian ;
+  time:intervalContains isc:Callovian ;
+  time:intervalContains isc:Campanian ;
+  time:intervalContains isc:Carnian ;
+  time:intervalContains isc:Cenomanian ;
+  time:intervalContains isc:Coniacian ;
+  time:intervalContains isc:Hauterivian ;
+  time:intervalContains isc:Hettangian ;
+  time:intervalContains isc:Jurassic ;
+  time:intervalContains isc:Kimmeridgian ;
+  time:intervalContains isc:Ladinian ;
+  time:intervalContains isc:LowerCretaceous ;
+  time:intervalContains isc:LowerJurassic ;
+  time:intervalContains isc:MiddleJurassic ;
+  time:intervalContains isc:MiddleTriassic ;
+  time:intervalContains isc:Norian ;
+  time:intervalContains isc:Olenekian ;
+  time:intervalContains isc:Oxfordian ;
+  time:intervalContains isc:Pliensbachian ;
+  time:intervalContains isc:Rhaetian ;
+  time:intervalContains isc:Santonian ;
+  time:intervalContains isc:Sinemurian ;
+  time:intervalContains isc:Tithonian ;
+  time:intervalContains isc:Toarcian ;
+  time:intervalContains isc:Turonian ;
+  time:intervalContains isc:UpperJurassic ;
+  time:intervalContains isc:UpperTriassic ;
+  time:intervalContains isc:Valanginian ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Cretaceous ;
+  time:intervalFinishedBy isc:Maastrichtian ;
+  time:intervalFinishedBy isc:UpperCretaceous ;
+  time:intervalStartedBy isc:Induan ;
+  time:intervalStartedBy isc:LowerTriassic ;
+  time:intervalStartedBy isc:Triassic ;
+.
+isc:Messinian
+  time:intervalDuring isc:Cenozoic ;
+  time:intervalDuring isc:Neogene ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:Miocene ;
+.
+isc:MiddleDevonian
+  time:intervalDuring isc:Devonian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Givetian ;
+  time:intervalStartedBy isc:Eifelian ;
+.
+isc:MiddleJurassic
+  time:intervalContains isc:Bajocian ;
+  time:intervalContains isc:Bathonian ;
+  time:intervalDuring isc:Jurassic ;
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Callovian ;
+  time:intervalStartedBy isc:Aalenian ;
+.
+isc:MiddleMississippian
+  time:intervalDuring isc:Carboniferous ;
+  time:intervalDuring isc:Mississippian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Visean ;
+  time:intervalStartedBy isc:Visean ;
+.
+isc:MiddleOrdovician
+  time:intervalDuring isc:Ordovician ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Darriwilian ;
+  time:intervalStartedBy isc:Dapingian ;
+.
+isc:MiddlePennsylvanian
+  time:intervalDuring isc:Carboniferous ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Pennsylvanian ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Moscovian ;
+  time:intervalStartedBy isc:Moscovian ;
+.
+isc:MiddlePleistocene
+  time:intervalDuring isc:Cenozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalDuring isc:Pleistocene ;
+  time:intervalDuring isc:Quaternary ;
+.
+isc:MiddleTriassic
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalDuring isc:Triassic ;
+  time:intervalFinishedBy isc:Ladinian ;
+  time:intervalStartedBy isc:Anisian ;
+.
+isc:Miocene
+  time:intervalContains isc:Burdigalian ;
+  time:intervalContains isc:Langhian ;
+  time:intervalContains isc:Serravallian ;
+  time:intervalContains isc:Tortonian ;
+  time:intervalDuring isc:Cenozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Messinian ;
+  time:intervalStartedBy isc:Aquitanian ;
+  time:intervalStarts isc:Neogene ;
+.
+isc:Mississippian
+  time:intervalContains isc:MiddleMississippian ;
+  time:intervalContains isc:UpperMississippian ;
+  time:intervalContains isc:Visean ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Serpukhovian ;
+  time:intervalStartedBy isc:LowerMississippian ;
+  time:intervalStartedBy isc:Tournaisian ;
+  time:intervalStarts isc:Carboniferous ;
+.
+isc:Moscovian
+  time:intervalDuring isc:Carboniferous ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Pennsylvanian ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:MiddlePennsylvanian ;
+  time:intervalStarts isc:MiddlePennsylvanian ;
+.
+isc:Neoarchean
+  time:intervalDuring isc:Precambrian ;
+  time:intervalFinishes isc:Archean ;
+.
+isc:Neogene
+  time:intervalContains isc:Burdigalian ;
+  time:intervalContains isc:Langhian ;
+  time:intervalContains isc:Messinian ;
+  time:intervalContains isc:Serravallian ;
+  time:intervalContains isc:Tortonian ;
+  time:intervalContains isc:Zanclean ;
+  time:intervalDuring isc:Cenozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Piacenzian ;
+  time:intervalFinishedBy isc:Pliocene ;
+  time:intervalStartedBy isc:Aquitanian ;
+  time:intervalStartedBy isc:Miocene ;
+.
+isc:Neoproterozoic
+  time:intervalContains isc:Cryogenian ;
+  time:intervalFinishedBy isc:Ediacaran ;
+  time:intervalFinishes isc:Precambrian ;
+  time:intervalFinishes isc:Proterozoic ;
+  time:intervalStartedBy isc:Tonian ;
+.
+isc:Norian
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalDuring isc:Triassic ;
+  time:intervalDuring isc:UpperTriassic ;
+.
+isc:Olenekian
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalDuring isc:Triassic ;
+  time:intervalFinishes isc:LowerTriassic ;
+.
+isc:Oligocene
+  time:intervalDuring isc:Cenozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Chattian ;
+  time:intervalFinishes isc:Paleogene ;
+  time:intervalStartedBy isc:Rupelian ;
+.
+isc:Ordovician
+  time:intervalContains isc:Dapingian ;
+  time:intervalContains isc:Darriwilian ;
+  time:intervalContains isc:Floian ;
+  time:intervalContains isc:Katian ;
+  time:intervalContains isc:MiddleOrdovician ;
+  time:intervalContains isc:Sandbian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Hirnantian ;
+  time:intervalFinishedBy isc:UpperOrdovician ;
+  time:intervalStartedBy isc:LowerOrdovician ;
+  time:intervalStartedBy isc:Tremadocian ;
+.
+isc:Orosirian
+  time:intervalDuring isc:Paleoproterozoic ;
+  time:intervalDuring isc:Precambrian ;
+  time:intervalDuring isc:Proterozoic ;
+.
+isc:Oxfordian
+  time:intervalDuring isc:Jurassic ;
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStarts isc:UpperJurassic ;
+.
+isc:Paibian
+  time:intervalDuring isc:Cambrian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStarts isc:Furongian ;
+.
+isc:Paleoarchean
+  time:intervalDuring isc:Archean ;
+  time:intervalDuring isc:Precambrian ;
+.
+isc:Paleocene
+  time:intervalContains isc:Selandian ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Thanetian ;
+  time:intervalStartedBy isc:Danian ;
+  time:intervalStarts isc:Cenozoic ;
+  time:intervalStarts isc:Paleogene ;
+.
+isc:Paleogene
+  time:intervalContains isc:Bartonian ;
+  time:intervalContains isc:Eocene ;
+  time:intervalContains isc:Lutetian ;
+  time:intervalContains isc:Priabonian ;
+  time:intervalContains isc:Rupelian ;
+  time:intervalContains isc:Selandian ;
+  time:intervalContains isc:Thanetian ;
+  time:intervalContains isc:Ypresian ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Chattian ;
+  time:intervalFinishedBy isc:Oligocene ;
+  time:intervalStartedBy isc:Danian ;
+  time:intervalStartedBy isc:Paleocene ;
+  time:intervalStarts isc:Cenozoic ;
+.
+isc:Paleoproterozoic
+  time:intervalContains isc:Orosirian ;
+  time:intervalContains isc:Rhyacian ;
+  time:intervalDuring isc:Precambrian ;
+  time:intervalFinishedBy isc:Statherian ;
+  time:intervalStartedBy isc:Siderian ;
+  time:intervalStarts isc:Proterozoic ;
+.
+isc:Paleozoic
+  time:intervalContains isc:Aeronian ;
+  time:intervalContains isc:Artinskian ;
+  time:intervalContains isc:Asselian ;
+  time:intervalContains isc:Bashkirian ;
+  time:intervalContains isc:CambrianSeries2 ;
+  time:intervalContains isc:CambrianSeries3 ;
+  time:intervalContains isc:CambrianStage10 ;
+  time:intervalContains isc:CambrianStage2 ;
+  time:intervalContains isc:CambrianStage3 ;
+  time:intervalContains isc:CambrianStage4 ;
+  time:intervalContains isc:CambrianStage5 ;
+  time:intervalContains isc:Capitanian ;
+  time:intervalContains isc:Carboniferous ;
+  time:intervalContains isc:Cisuralian ;
+  time:intervalContains isc:Dapingian ;
+  time:intervalContains isc:Darriwilian ;
+  time:intervalContains isc:Devonian ;
+  time:intervalContains isc:Drumian ;
+  time:intervalContains isc:Eifelian ;
+  time:intervalContains isc:Emsian ;
+  time:intervalContains isc:Famennian ;
+  time:intervalContains isc:Floian ;
+  time:intervalContains isc:Frasnian ;
+  time:intervalContains isc:Furongian ;
+  time:intervalContains isc:Givetian ;
+  time:intervalContains isc:Gorstian ;
+  time:intervalContains isc:Guadalupian ;
+  time:intervalContains isc:Guzhangian ;
+  time:intervalContains isc:Gzhelian ;
+  time:intervalContains isc:Hirnantian ;
+  time:intervalContains isc:Homerian ;
+  time:intervalContains isc:Jiangshanian ;
+  time:intervalContains isc:Kasimovian ;
+  time:intervalContains isc:Katian ;
+  time:intervalContains isc:Kungurian ;
+  time:intervalContains isc:Llandovery ;
+  time:intervalContains isc:Lochkovian ;
+  time:intervalContains isc:LowerDevonian ;
+  time:intervalContains isc:LowerMississippian ;
+  time:intervalContains isc:LowerOrdovician ;
+  time:intervalContains isc:LowerPennsylvanian ;
+  time:intervalContains isc:Ludfordian ;
+  time:intervalContains isc:Ludlow ;
+  time:intervalContains isc:MiddleDevonian ;
+  time:intervalContains isc:MiddleMississippian ;
+  time:intervalContains isc:MiddleOrdovician ;
+  time:intervalContains isc:MiddlePennsylvanian ;
+  time:intervalContains isc:Mississippian ;
+  time:intervalContains isc:Moscovian ;
+  time:intervalContains isc:Ordovician ;
+  time:intervalContains isc:Paibian ;
+  time:intervalContains isc:Pennsylvanian ;
+  time:intervalContains isc:Pragian ;
+  time:intervalContains isc:Pridoli ;
+  time:intervalContains isc:Rhuddanian ;
+  time:intervalContains isc:Roadian ;
+  time:intervalContains isc:Sakmarian ;
+  time:intervalContains isc:Sandbian ;
+  time:intervalContains isc:Serpukhovian ;
+  time:intervalContains isc:Sheinwoodian ;
+  time:intervalContains isc:Silurian ;
+  time:intervalContains isc:Telychian ;
+  time:intervalContains isc:Tournaisian ;
+  time:intervalContains isc:Tremadocian ;
+  time:intervalContains isc:UpperDevonian ;
+  time:intervalContains isc:UpperMississippian ;
+  time:intervalContains isc:UpperOrdovician ;
+  time:intervalContains isc:UpperPennsylvanian ;
+  time:intervalContains isc:Visean ;
+  time:intervalContains isc:Wenlock ;
+  time:intervalContains isc:Wordian ;
+  time:intervalContains isc:Wuchiapingian ;
+  time:intervalFinishedBy isc:Changhsingian ;
+  time:intervalFinishedBy isc:Lopingian ;
+  time:intervalFinishedBy isc:Permian ;
+  time:intervalStartedBy isc:Cambrian ;
+  time:intervalStartedBy isc:Fortunian ;
+  time:intervalStartedBy isc:Terreneuvian ;
+  time:intervalStarts isc:Phanerozoic ;
+.
+isc:Pennsylvanian
+  time:intervalContains isc:Kasimovian ;
+  time:intervalContains isc:MiddlePennsylvanian ;
+  time:intervalContains isc:Moscovian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Gzhelian ;
+  time:intervalFinishedBy isc:UpperPennsylvanian ;
+  time:intervalFinishes isc:Carboniferous ;
+  time:intervalStartedBy isc:Bashkirian ;
+  time:intervalStartedBy isc:LowerPennsylvanian ;
+.
+isc:Permian
+  time:intervalContains isc:Artinskian ;
+  time:intervalContains isc:Capitanian ;
+  time:intervalContains isc:Guadalupian ;
+  time:intervalContains isc:Kungurian ;
+  time:intervalContains isc:Roadian ;
+  time:intervalContains isc:Sakmarian ;
+  time:intervalContains isc:Wordian ;
+  time:intervalContains isc:Wuchiapingian ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Changhsingian ;
+  time:intervalFinishedBy isc:Lopingian ;
+  time:intervalFinishes isc:Paleozoic ;
+  time:intervalStartedBy isc:Asselian ;
+  time:intervalStartedBy isc:Cisuralian ;
+.
+isc:Phanerozoic
+  time:intervalContains isc:Aalenian ;
+  time:intervalContains isc:Aeronian ;
+  time:intervalContains isc:Albian ;
+  time:intervalContains isc:Anisian ;
+  time:intervalContains isc:Aptian ;
+  time:intervalContains isc:Aquitanian ;
+  time:intervalContains isc:Artinskian ;
+  time:intervalContains isc:Asselian ;
+  time:intervalContains isc:Bajocian ;
+  time:intervalContains isc:Barremian ;
+  time:intervalContains isc:Bartonian ;
+  time:intervalContains isc:Bashkirian ;
+  time:intervalContains isc:Bathonian ;
+  time:intervalContains isc:Berriasian ;
+  time:intervalContains isc:Burdigalian ;
+  time:intervalContains isc:Calabrian ;
+  time:intervalContains isc:Callovian ;
+  time:intervalContains isc:CambrianSeries2 ;
+  time:intervalContains isc:CambrianSeries3 ;
+  time:intervalContains isc:CambrianStage10 ;
+  time:intervalContains isc:CambrianStage2 ;
+  time:intervalContains isc:CambrianStage3 ;
+  time:intervalContains isc:CambrianStage4 ;
+  time:intervalContains isc:CambrianStage5 ;
+  time:intervalContains isc:Campanian ;
+  time:intervalContains isc:Capitanian ;
+  time:intervalContains isc:Carboniferous ;
+  time:intervalContains isc:Carnian ;
+  time:intervalContains isc:Cenomanian ;
+  time:intervalContains isc:Changhsingian ;
+  time:intervalContains isc:Chattian ;
+  time:intervalContains isc:Cisuralian ;
+  time:intervalContains isc:Coniacian ;
+  time:intervalContains isc:Cretaceous ;
+  time:intervalContains isc:Danian ;
+  time:intervalContains isc:Dapingian ;
+  time:intervalContains isc:Darriwilian ;
+  time:intervalContains isc:Devonian ;
+  time:intervalContains isc:Drumian ;
+  time:intervalContains isc:Eifelian ;
+  time:intervalContains isc:Emsian ;
+  time:intervalContains isc:Eocene ;
+  time:intervalContains isc:Famennian ;
+  time:intervalContains isc:Floian ;
+  time:intervalContains isc:Frasnian ;
+  time:intervalContains isc:Furongian ;
+  time:intervalContains isc:Gelasian ;
+  time:intervalContains isc:Givetian ;
+  time:intervalContains isc:Gorstian ;
+  time:intervalContains isc:Guadalupian ;
+  time:intervalContains isc:Guzhangian ;
+  time:intervalContains isc:Gzhelian ;
+  time:intervalContains isc:Hauterivian ;
+  time:intervalContains isc:Hettangian ;
+  time:intervalContains isc:Hirnantian ;
+  time:intervalContains isc:Homerian ;
+  time:intervalContains isc:Induan ;
+  time:intervalContains isc:Jiangshanian ;
+  time:intervalContains isc:Jurassic ;
+  time:intervalContains isc:Kasimovian ;
+  time:intervalContains isc:Katian ;
+  time:intervalContains isc:Kimmeridgian ;
+  time:intervalContains isc:Kungurian ;
+  time:intervalContains isc:Ladinian ;
+  time:intervalContains isc:Langhian ;
+  time:intervalContains isc:Llandovery ;
+  time:intervalContains isc:Lochkovian ;
+  time:intervalContains isc:Lopingian ;
+  time:intervalContains isc:LowerCretaceous ;
+  time:intervalContains isc:LowerDevonian ;
+  time:intervalContains isc:LowerJurassic ;
+  time:intervalContains isc:LowerMississippian ;
+  time:intervalContains isc:LowerOrdovician ;
+  time:intervalContains isc:LowerPennsylvanian ;
+  time:intervalContains isc:LowerTriassic ;
+  time:intervalContains isc:Ludfordian ;
+  time:intervalContains isc:Ludlow ;
+  time:intervalContains isc:Lutetian ;
+  time:intervalContains isc:Maastrichtian ;
+  time:intervalContains isc:Mesozoic ;
+  time:intervalContains isc:Messinian ;
+  time:intervalContains isc:MiddleDevonian ;
+  time:intervalContains isc:MiddleJurassic ;
+  time:intervalContains isc:MiddleMississippian ;
+  time:intervalContains isc:MiddleOrdovician ;
+  time:intervalContains isc:MiddlePennsylvanian ;
+  time:intervalContains isc:MiddlePleistocene ;
+  time:intervalContains isc:MiddleTriassic ;
+  time:intervalContains isc:Miocene ;
+  time:intervalContains isc:Mississippian ;
+  time:intervalContains isc:Moscovian ;
+  time:intervalContains isc:Neogene ;
+  time:intervalContains isc:Norian ;
+  time:intervalContains isc:Olenekian ;
+  time:intervalContains isc:Oligocene ;
+  time:intervalContains isc:Ordovician ;
+  time:intervalContains isc:Oxfordian ;
+  time:intervalContains isc:Paibian ;
+  time:intervalContains isc:Paleocene ;
+  time:intervalContains isc:Paleogene ;
+  time:intervalContains isc:Pennsylvanian ;
+  time:intervalContains isc:Permian ;
+  time:intervalContains isc:Piacenzian ;
+  time:intervalContains isc:Pleistocene ;
+  time:intervalContains isc:Pliensbachian ;
+  time:intervalContains isc:Pliocene ;
+  time:intervalContains isc:Pragian ;
+  time:intervalContains isc:Priabonian ;
+  time:intervalContains isc:Pridoli ;
+  time:intervalContains isc:Rhaetian ;
+  time:intervalContains isc:Rhuddanian ;
+  time:intervalContains isc:Roadian ;
+  time:intervalContains isc:Rupelian ;
+  time:intervalContains isc:Sakmarian ;
+  time:intervalContains isc:Sandbian ;
+  time:intervalContains isc:Santonian ;
+  time:intervalContains isc:Selandian ;
+  time:intervalContains isc:Serpukhovian ;
+  time:intervalContains isc:Serravallian ;
+  time:intervalContains isc:Sheinwoodian ;
+  time:intervalContains isc:Silurian ;
+  time:intervalContains isc:Sinemurian ;
+  time:intervalContains isc:Telychian ;
+  time:intervalContains isc:Thanetian ;
+  time:intervalContains isc:Tithonian ;
+  time:intervalContains isc:Toarcian ;
+  time:intervalContains isc:Tortonian ;
+  time:intervalContains isc:Tournaisian ;
+  time:intervalContains isc:Tremadocian ;
+  time:intervalContains isc:Triassic ;
+  time:intervalContains isc:Turonian ;
+  time:intervalContains isc:UpperCretaceous ;
+  time:intervalContains isc:UpperDevonian ;
+  time:intervalContains isc:UpperJurassic ;
+  time:intervalContains isc:UpperMississippian ;
+  time:intervalContains isc:UpperOrdovician ;
+  time:intervalContains isc:UpperPennsylvanian ;
+  time:intervalContains isc:UpperPleistocene ;
+  time:intervalContains isc:UpperTriassic ;
+  time:intervalContains isc:Valanginian ;
+  time:intervalContains isc:Visean ;
+  time:intervalContains isc:Wenlock ;
+  time:intervalContains isc:Wordian ;
+  time:intervalContains isc:Wuchiapingian ;
+  time:intervalContains isc:Ypresian ;
+  time:intervalContains isc:Zanclean ;
+  time:intervalFinishedBy isc:Cenozoic ;
+  time:intervalFinishedBy isc:Holocene ;
+  time:intervalFinishedBy isc:Quaternary ;
+  time:intervalStartedBy isc:Cambrian ;
+  time:intervalStartedBy isc:Fortunian ;
+  time:intervalStartedBy isc:Paleozoic ;
+  time:intervalStartedBy isc:Terreneuvian ;
+.
+isc:Piacenzian
+  time:intervalDuring isc:Cenozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:Neogene ;
+  time:intervalFinishes isc:Pliocene ;
+.
+isc:Pleistocene
+  time:intervalContains isc:Calabrian ;
+  time:intervalContains isc:MiddlePleistocene ;
+  time:intervalDuring isc:Cenozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:UpperPleistocene ;
+  time:intervalStartedBy isc:Gelasian ;
+  time:intervalStarts isc:Quaternary ;
+.
+isc:Pliensbachian
+  time:intervalDuring isc:Jurassic ;
+  time:intervalDuring isc:LowerJurassic ;
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+.
+isc:Pliocene
+  time:intervalDuring isc:Cenozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Piacenzian ;
+  time:intervalFinishes isc:Neogene ;
+  time:intervalStartedBy isc:Zanclean ;
+.
+isc:Pragian
+  time:intervalDuring isc:Devonian ;
+  time:intervalDuring isc:LowerDevonian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+.
+isc:Precambrian
+  time:intervalContains isc:Archean ;
+  time:intervalContains isc:Calymmian ;
+  time:intervalContains isc:Cryogenian ;
+  time:intervalContains isc:Ectasian ;
+  time:intervalContains isc:Eoarchean ;
+  time:intervalContains isc:Mesoarchean ;
+  time:intervalContains isc:Mesoproterozoic ;
+  time:intervalContains isc:Neoarchean ;
+  time:intervalContains isc:Orosirian ;
+  time:intervalContains isc:Paleoarchean ;
+  time:intervalContains isc:Paleoproterozoic ;
+  time:intervalContains isc:Rhyacian ;
+  time:intervalContains isc:Siderian ;
+  time:intervalContains isc:Statherian ;
+  time:intervalContains isc:Stenian ;
+  time:intervalContains isc:Tonian ;
+  time:intervalFinishedBy isc:Ediacaran ;
+  time:intervalFinishedBy isc:Neoproterozoic ;
+  time:intervalFinishedBy isc:Proterozoic ;
+  time:intervalStartedBy isc:Hadean ;
+.
+isc:Priabonian
+  time:intervalDuring isc:Cenozoic ;
+  time:intervalDuring isc:Paleogene ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:Eocene ;
+.
+isc:Pridoli
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:Silurian ;
+.
+isc:Proterozoic
+  time:intervalContains isc:Calymmian ;
+  time:intervalContains isc:Cryogenian ;
+  time:intervalContains isc:Ectasian ;
+  time:intervalContains isc:Mesoproterozoic ;
+  time:intervalContains isc:Orosirian ;
+  time:intervalContains isc:Rhyacian ;
+  time:intervalContains isc:Statherian ;
+  time:intervalContains isc:Stenian ;
+  time:intervalContains isc:Tonian ;
+  time:intervalFinishedBy isc:Ediacaran ;
+  time:intervalFinishedBy isc:Neoproterozoic ;
+  time:intervalFinishes isc:Precambrian ;
+  time:intervalStartedBy isc:Paleoproterozoic ;
+  time:intervalStartedBy isc:Siderian ;
+.
+isc:Quaternary
+  time:intervalContains isc:Calabrian ;
+  time:intervalContains isc:MiddlePleistocene ;
+  time:intervalContains isc:UpperPleistocene ;
+  time:intervalFinishedBy isc:Holocene ;
+  time:intervalFinishes isc:Cenozoic ;
+  time:intervalFinishes isc:Phanerozoic ;
+  time:intervalStartedBy isc:Gelasian ;
+  time:intervalStartedBy isc:Pleistocene ;
+.
+isc:Rhaetian
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:Triassic ;
+  time:intervalFinishes isc:UpperTriassic ;
+.
+isc:Rhuddanian
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStarts isc:Llandovery ;
+  time:intervalStarts isc:Silurian ;
+.
+isc:Rhyacian
+  time:intervalDuring isc:Paleoproterozoic ;
+  time:intervalDuring isc:Precambrian ;
+  time:intervalDuring isc:Proterozoic ;
+.
+isc:Roadian
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Permian ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStarts isc:Guadalupian ;
+.
+isc:Rupelian
+  time:intervalDuring isc:Cenozoic ;
+  time:intervalDuring isc:Paleogene ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStarts isc:Oligocene ;
+.
+isc:Sakmarian
+  time:intervalDuring isc:Cisuralian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Permian ;
+  time:intervalDuring isc:Phanerozoic ;
+.
+isc:Sandbian
+  time:intervalDuring isc:Ordovician ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStarts isc:UpperOrdovician ;
+.
+isc:Santonian
+  time:intervalDuring isc:Cretaceous ;
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalDuring isc:UpperCretaceous ;
+.
+isc:Selandian
+  time:intervalDuring isc:Cenozoic ;
+  time:intervalDuring isc:Paleocene ;
+  time:intervalDuring isc:Paleogene ;
+  time:intervalDuring isc:Phanerozoic ;
+.
+isc:Serpukhovian
+  time:intervalDuring isc:Carboniferous ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:Mississippian ;
+  time:intervalStarts isc:UpperMississippian ;
+.
+isc:Serravallian
+  time:intervalDuring isc:Cenozoic ;
+  time:intervalDuring isc:Miocene ;
+  time:intervalDuring isc:Neogene ;
+  time:intervalDuring isc:Phanerozoic ;
+.
+isc:Sheinwoodian
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalDuring isc:Silurian ;
+  time:intervalStarts isc:Wenlock ;
+.
+isc:Siderian
+  time:intervalDuring isc:Precambrian ;
+  time:intervalStarts isc:Paleoproterozoic ;
+  time:intervalStarts isc:Proterozoic ;
+.
+isc:Silurian
+  time:intervalContains isc:Aeronian ;
+  time:intervalContains isc:Gorstian ;
+  time:intervalContains isc:Homerian ;
+  time:intervalContains isc:Ludfordian ;
+  time:intervalContains isc:Ludlow ;
+  time:intervalContains isc:Sheinwoodian ;
+  time:intervalContains isc:Telychian ;
+  time:intervalContains isc:Wenlock ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Pridoli ;
+  time:intervalStartedBy isc:Llandovery ;
+  time:intervalStartedBy isc:Rhuddanian ;
+.
+isc:Sinemurian
+  time:intervalDuring isc:Jurassic ;
+  time:intervalDuring isc:LowerJurassic ;
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+.
+isc:Statherian
+  time:intervalDuring isc:Precambrian ;
+  time:intervalDuring isc:Proterozoic ;
+  time:intervalFinishes isc:Paleoproterozoic ;
+.
+isc:Stenian
+  time:intervalDuring isc:Precambrian ;
+  time:intervalDuring isc:Proterozoic ;
+  time:intervalFinishes isc:Mesoproterozoic ;
+.
+isc:Telychian
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalDuring isc:Silurian ;
+  time:intervalFinishes isc:Llandovery ;
+.
+isc:Terreneuvian
+  time:intervalFinishedBy isc:CambrianStage2 ;
+  time:intervalStartedBy isc:Fortunian ;
+  time:intervalStarts isc:Cambrian ;
+  time:intervalStarts isc:Paleozoic ;
+  time:intervalStarts isc:Phanerozoic ;
+.
+isc:Thanetian
+  time:intervalDuring isc:Cenozoic ;
+  time:intervalDuring isc:Paleogene ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:Paleocene ;
+.
+isc:Tithonian
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:Jurassic ;
+  time:intervalFinishes isc:UpperJurassic ;
+.
+isc:Toarcian
+  time:intervalDuring isc:Jurassic ;
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:LowerJurassic ;
+.
+isc:Tonian
+  time:intervalDuring isc:Precambrian ;
+  time:intervalDuring isc:Proterozoic ;
+  time:intervalStarts isc:Neoproterozoic ;
+.
+isc:Tortonian
+  time:intervalDuring isc:Cenozoic ;
+  time:intervalDuring isc:Miocene ;
+  time:intervalDuring isc:Neogene ;
+  time:intervalDuring isc:Phanerozoic ;
+.
+isc:Tournaisian
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:LowerMississippian ;
+  time:intervalStarts isc:Carboniferous ;
+  time:intervalStarts isc:LowerMississippian ;
+  time:intervalStarts isc:Mississippian ;
+.
+isc:Tremadocian
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStarts isc:LowerOrdovician ;
+  time:intervalStarts isc:Ordovician ;
+.
+isc:Triassic
+  time:intervalContains isc:Anisian ;
+  time:intervalContains isc:Carnian ;
+  time:intervalContains isc:Ladinian ;
+  time:intervalContains isc:MiddleTriassic ;
+  time:intervalContains isc:Norian ;
+  time:intervalContains isc:Olenekian ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Rhaetian ;
+  time:intervalFinishedBy isc:UpperTriassic ;
+  time:intervalStartedBy isc:Induan ;
+  time:intervalStartedBy isc:LowerTriassic ;
+  time:intervalStarts isc:Mesozoic ;
+.
+isc:Turonian
+  time:intervalDuring isc:Cretaceous ;
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalDuring isc:UpperCretaceous ;
+.
+isc:UpperCretaceous
+  time:intervalContains isc:Campanian ;
+  time:intervalContains isc:Coniacian ;
+  time:intervalContains isc:Santonian ;
+  time:intervalContains isc:Turonian ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Maastrichtian ;
+  time:intervalFinishes isc:Cretaceous ;
+  time:intervalFinishes isc:Mesozoic ;
+  time:intervalStartedBy isc:Cenomanian ;
+.
+isc:UpperDevonian
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Famennian ;
+  time:intervalFinishes isc:Devonian ;
+  time:intervalStartedBy isc:Frasnian ;
+.
+isc:UpperJurassic
+  time:intervalContains isc:Kimmeridgian ;
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Tithonian ;
+  time:intervalFinishes isc:Jurassic ;
+  time:intervalStartedBy isc:Oxfordian ;
+.
+isc:UpperMississippian
+  time:intervalDuring isc:Mississippian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:Carboniferous ;
+  time:intervalStartedBy isc:Serpukhovian ;
+.
+isc:UpperOrdovician
+  time:intervalContains isc:Katian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Hirnantian ;
+  time:intervalFinishes isc:Ordovician ;
+  time:intervalStartedBy isc:Sandbian ;
+.
+isc:UpperPennsylvanian
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Gzhelian ;
+  time:intervalFinishes isc:Carboniferous ;
+  time:intervalFinishes isc:Pennsylvanian ;
+  time:intervalStartedBy isc:Kasimovian ;
+.
+isc:UpperPleistocene
+  time:intervalDuring isc:Cenozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalDuring isc:Quaternary ;
+  time:intervalFinishes isc:Pleistocene ;
+.
+isc:UpperTriassic
+  time:intervalContains isc:Norian ;
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishedBy isc:Rhaetian ;
+  time:intervalFinishes isc:Triassic ;
+  time:intervalStartedBy isc:Carnian ;
+.
+isc:Valanginian
+  time:intervalDuring isc:Cretaceous ;
+  time:intervalDuring isc:LowerCretaceous ;
+  time:intervalDuring isc:Mesozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+.
+isc:Visean
+  time:intervalDuring isc:Carboniferous ;
+  time:intervalDuring isc:Mississippian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalFinishes isc:MiddleMississippian ;
+  time:intervalStarts isc:MiddleMississippian ;
+.
+isc:Wenlock
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalDuring isc:Silurian ;
+  time:intervalFinishedBy isc:Homerian ;
+  time:intervalStartedBy isc:Sheinwoodian ;
+.
+isc:Wordian
+  time:intervalDuring isc:Guadalupian ;
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Permian ;
+  time:intervalDuring isc:Phanerozoic ;
+.
+isc:Wuchiapingian
+  time:intervalDuring isc:Paleozoic ;
+  time:intervalDuring isc:Permian ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStarts isc:Lopingian ;
+.
+isc:Ypresian
+  time:intervalDuring isc:Cenozoic ;
+  time:intervalDuring isc:Paleogene ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStarts isc:Eocene ;
+.
+isc:Zanclean
+  time:intervalDuring isc:Cenozoic ;
+  time:intervalDuring isc:Neogene ;
+  time:intervalDuring isc:Phanerozoic ;
+  time:intervalStarts isc:Pliocene ;
+.

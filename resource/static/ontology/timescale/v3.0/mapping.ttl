@@ -1,0 +1,120 @@
+# baseURI: http://resource.geosciml.org/ontology/timescale/mapping
+# imports: http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal
+# imports: http://resource.geosciml.org/ontology/timescale/gtrs-30
+# imports: http://resource.geosciml.org/ontology/timescale/gts
+# imports: http://resource.geosciml.org/ontology/timescale/gts-30
+# imports: http://resource.geosciml.org/ontology/timescale/thors
+
+@prefix mapping:  <http://resource.geosciml.org/ontology/timescale/mapping#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<http://resource.geosciml.org/ontology/timescale/gts#EraCode>
+      owl:equivalentClass <http://resource.geosciml.org/ontology/timescale/gts-30#EraCode> .
+
+<http://resource.geosciml.org/ontology/timescale/gts#GeochronologicBoundary>
+      owl:equivalentClass <http://resource.geosciml.org/ontology/timescale/gts-30#GeochronologicBoundary> .
+
+<http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEra>
+      owl:equivalentClass <http://resource.geosciml.org/ontology/timescale/gts-30#GeochronologicEra> .
+
+<http://resource.geosciml.org/ontology/timescale/gts#GeochronologicEraRank>
+      owl:equivalentClass <http://resource.geosciml.org/ontology/timescale/gts-30#GeochronologicEraRank> .
+
+<http://resource.geosciml.org/ontology/timescale/gts#GeologicTimescale>
+      owl:equivalentClass <http://resource.geosciml.org/ontology/timescale/gts-30#GeologicTimescale> .
+
+<http://resource.geosciml.org/ontology/timescale/gts#NumericEraBoundary>
+      owl:equivalentClass <http://resource.geosciml.org/ontology/timescale/gts-30#NumericEraBoundary> .
+
+<http://resource.geosciml.org/ontology/timescale/gts#StratigraphicPoint>
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:unionOf (<http://resource.geosciml.org/ontology/timescale/gts-30#GlobalStratotypePoint> <http://resource.geosciml.org/ontology/timescale/gts-30#StratigraphicPoint>)
+              ] .
+
+<http://resource.geosciml.org/ontology/timescale/gts#StratigraphicSection>
+      owl:equivalentClass
+              [ rdf:type owl:Class ;
+                owl:unionOf (<http://resource.geosciml.org/ontology/timescale/gts-30#GlobalStratotypeSection> <http://resource.geosciml.org/ontology/timescale/gts-30#StratigraphicSection>)
+              ] .
+
+<http://resource.geosciml.org/ontology/timescale/gts#boundaryLevel>
+      owl:equivalentProperty
+              <http://resource.geosciml.org/ontology/timescale/gts-30#boundaryLevel> .
+
+<http://resource.geosciml.org/ontology/timescale/gts#correlationEvent>
+      owl:equivalentProperty
+              <http://resource.geosciml.org/ontology/timescale/gts-30#primaryGuidingCriterion> .
+
+<http://resource.geosciml.org/ontology/timescale/gts#geologicDescription>
+      owl:equivalentProperty
+              <http://resource.geosciml.org/ontology/timescale/gts-30#geologicDescription> .
+
+<http://resource.geosciml.org/ontology/timescale/gts#geologicSetting>
+      owl:equivalentProperty
+              <http://resource.geosciml.org/ontology/timescale/gts-30#geologicSetting> .
+
+<http://resource.geosciml.org/ontology/timescale/gts#rank>
+      owl:equivalentProperty
+              <http://resource.geosciml.org/ontology/timescale/gts-30#rank> .
+
+<http://resource.geosciml.org/ontology/timescale/gts#status>
+      owl:equivalentProperty
+              <http://resource.geosciml.org/ontology/timescale/gts-30#status> .
+
+<http://resource.geosciml.org/ontology/timescale/gts#stratotype>
+      owl:equivalentProperty
+              <http://resource.geosciml.org/ontology/timescale/gts-30#stratotype> .
+
+<http://resource.geosciml.org/ontology/timescale/mapping>
+      rdf:type owl:Ontology ;
+      owl:imports <http://def.seegrid.csiro.au/isotc211/iso19108/2002/temporal> , <http://resource.geosciml.org/ontology/timescale/gtrs-30> , <http://resource.geosciml.org/ontology/timescale/gts-30> , <http://resource.geosciml.org/ontology/timescale/gts> , <http://resource.geosciml.org/ontology/timescale/thors> ;
+      owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+<http://resource.geosciml.org/ontology/timescale/thors#Era>
+      owl:equivalentClass <http://resource.geosciml.org/ontology/timescale/gtrs-30#TimeOrdinalEra> .
+
+<http://resource.geosciml.org/ontology/timescale/thors#EraBoundary>
+      owl:equivalentClass <http://resource.geosciml.org/ontology/timescale/gtrs-30#TimeOrdinalEraBoundary> .
+
+<http://resource.geosciml.org/ontology/timescale/thors#ReferenceSystem>
+      owl:equivalentClass <http://resource.geosciml.org/ontology/timescale/gtrs-30#TimeOrdinalReferenceSystem> .
+
+<http://resource.geosciml.org/ontology/timescale/thors#begin>
+      owl:equivalentProperty
+              <http://resource.geosciml.org/ontology/timescale/gtrs-30#start> .
+
+<http://resource.geosciml.org/ontology/timescale/thors#component>
+      owl:equivalentProperty
+              <http://resource.geosciml.org/ontology/timescale/gtrs-30#component> .
+
+<http://resource.geosciml.org/ontology/timescale/thors#end>
+      owl:equivalentProperty
+              <http://resource.geosciml.org/ontology/timescale/gtrs-30#end> .
+
+<http://resource.geosciml.org/ontology/timescale/thors#member>
+      owl:equivalentProperty
+              <http://resource.geosciml.org/ontology/timescale/gtrs-30#member> .
+
+<http://resource.geosciml.org/ontology/timescale/thors#nextEra>
+      owl:equivalentProperty
+              <http://resource.geosciml.org/ontology/timescale/gtrs-30#nextEra> .
+
+<http://resource.geosciml.org/ontology/timescale/thors#positionalUncertainty>
+      owl:equivalentProperty
+              <http://resource.geosciml.org/ontology/timescale/gtrs-30#positionalUncertainty> .
+
+<http://resource.geosciml.org/ontology/timescale/thors#previousEra>
+      owl:equivalentProperty
+              <http://resource.geosciml.org/ontology/timescale/gtrs-30#previousEra> .
+
+<http://resource.geosciml.org/ontology/timescale/thors#referencePoint>
+      owl:equivalentProperty
+              <http://resource.geosciml.org/ontology/timescale/gts-30#referencePoint> .
+
+<http://resource.geosciml.org/ontology/timescale/thors#system>
+      owl:equivalentProperty
+              <http://resource.geosciml.org/ontology/timescale/gtrs-30#system> .
