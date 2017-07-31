@@ -41,13 +41,13 @@ h4, p, li {
 	font-weight:normal;
 }
 
-p, li {
+p, li, th, td {
 	color: #000000;
 	padding: 0 0 0.25em 0;
 }
 
-p a,
-ul li a {
+a {
+        font-family:Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	color: #0f4a84;
 }
 
