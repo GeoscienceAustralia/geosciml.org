@@ -1,8 +1,8 @@
 # CGI Vocabularies Register
 
-This is the static register (index) of CGI's vocabularies. Its purpose is to present the static URIs to each of the vocabularies. This list is particularly useful for machines that wish to automatically index the CGI vocabularies.
+This is the static register (index) of CGI's vocabularies whose purpose is to present the static URIs to each of the vocabularies. This list is particularly useful for machines that wish to automatically index the CGI vocabularies.
 
-You can also find this list of vocabularies in [Semantic Web machine-readable TTL format](http://resource.geosciml.org/vocabs.php?_format=text/turtle).
+You can also find this list of vocabularies in [Semantic Web machine-readable TTL format](http://resource.geosciml.org/def/voc/?_format=text/turtle).
 
 The vocabularies are also published at the [Research Vocabularies Australia Portal](https://vocabs.ands.org.au/search/#!/?q=&p=1&publisher=CGI%20Geoscience%20Terminology%20Working%20Group).
 
@@ -59,12 +59,12 @@ List of terms  | Vocabulary metadata  |
 [Exploration Result](http://52.63.163.95/cgi/sissvoc/exploration-result/concept.html?_pageSize=50&_page=0&_view=concept&_sort=prefLabel)   |  [metadata](http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result)    |
 [Mine Status](http://52.63.163.95/cgi/sissvoc/mine-status/concept.html?_pageSize=50&_page=0&_view=concept&_sort=prefLabel)   |  [metadata](http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status)  |
 [Mineral Occurrence Type](http://52.63.163.95/cgi/sissvoc/mineral-occurrence-type/concept.html?_pageSize=50&_page=0&_view=concept&_sort=prefLabel)   |  [metadata](http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-occurrence-type)    |
-[Mineral Resource Reporting Classification Method](http://52.63.163.95/cgi/sissvoc/mineral-resource-reporting-classification-method/concept.html?_pageSize=50&_page=0&_view=concept&_sort=prefLabel)   |  [metadata](http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-resource-reporting-classification-method)    |
-[Mining Activity](http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity)  |
+[Mineral Resource Reporting Classification Method](http://52.63.163.95/cgi/sissvoc/mineral-resource-reporting-classification-method/concept.html?_pageSize=50&_page=0&_view=concept&_sort=prefLabel)   |  [metadata](http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used)    |
+[Mining Activity](http://52.63.163.95/cgi/sissvoc/mining-activity/concept.html?_pageSize=50&_page=0&_view=concept&_sort=prefLabel) | [metadata](http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity)  |
 [Processing Activity](http://52.63.163.95/cgi/sissvoc/processing-activity/concept.html?_pageSize=50&_page=0&_view=concept&_sort=prefLabel)  |[metadata](http://resource.geosciml.org/classifierscheme/cgi/2016.01/processing-activity) |
 [Raw Material Role](http://52.63.163.95/cgi/sissvoc/raw-material-role/concept.html?_pageSize=50&_page=0&_view=concept&_sort=prefLabel)   |  [metadata](http://resource.geosciml.org/classifierscheme/cgi/2016.01/raw-material-role) |
-[Reserve Assessment Category](http://resource.geosciml.org/classifierscheme/cgi/2016.01/reserve-assessment-category)|
-[Resource Assessment Category](http://resource.geosciml.org/classifierscheme/cgi/2016.01/resource-assessment-category) |
+[Reserve Assessment Category](http://52.63.163.95/cgi/sissvoc/reserve-assessment-category/concept.html?_pageSize=50&_page=0&_view=concept&_sort=prefLabel) | [metadata](http://resource.geosciml.org/classifierscheme/cgi/2016.01/reserve-assessment-category)|
+[Resource Assessment Category](http://52.63.163.95/cgi/sissvoc/resource-assessment-category/concept.html?_pageSize=50&_page=0&_view=concept&_sort=prefLabel) | [metadata](http://resource.geosciml.org/classifierscheme/cgi/2016.01/resource-assessment-category) |
 [UNFC Code](http://52.63.163.95/cgi/sissvoc/unfc-code/concept.html?_pageSize=50&_page=0&_view=concept&_sort=prefLabel)   |  [metadata](http://resource.geosciml.org/classifierscheme/cgi/2016.01/unfc-code)  |
 [Waste Storage](http://52.63.163.95/cgi/sissvoc/waste-storage/concept.html?_pageSize=50&_page=0&_view=concept&_sort=prefLabel)   |  [metadata](http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage)    ||
 

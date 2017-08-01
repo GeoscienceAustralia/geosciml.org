@@ -1,0 +1,292 @@
+@prefix dcat: <https://www.w3.org/ns/dcat#> .
+@prefix dpr: <http://promsns.org/def/dpr#> .
+@prefix gapd: <http://pid.geoscience.gov.au/def/ont/gapd#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg: <http://purl.org/linked-data/registry#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<http://www.cgi-iugs.org> a dpr:DataProviderRegister, org:Organisation;
+	rdfs:label "Commission for Geoscience Information"@en;
+	rdfs:comment "CGI's mission is to foster the interoperability and exchange of geoscience information, by active community leadership, collaboration, education, and the development and promotion of geoscience information standards and best practice."@en;
+	dpr:isLDR "true"^^xsd:boolean;
+	reg:subregister <http://pid.geoscience.gov.au/def/voc/>
+.
+
+<http://pid.geoscience.gov.au/def/voc/> a dpr:Register;
+	rdfs:label "CGI's Vocabulary register"@en;
+	rdfs:comment "This is the Commission for Geoscience Information's vocabularies register."@en;
+	dpr:isLDR "false"^^xsd:boolean;
+	reg:containedItemClass skos:ConceptScheme;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype> a skos:ConceptScheme ;
+    rdfs:label "Alteration Type"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> a skos:ConceptScheme ;
+    rdfs:label "Borehole Drilling Method"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory> a skos:ConceptScheme ;
+    rdfs:label "Composition Category"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/compoundmaterialconstituentpartrole> a skos:ConceptScheme ;
+    rdfs:label "Compound Material Constituent Part"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree> a skos:ConceptScheme ;
+    rdfs:label "Consolidation Degree"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/contacttype> a skos:ConceptScheme ;
+    rdfs:label "Contact Type"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/conventioncode> a skos:ConceptScheme ;
+    rdfs:label "Convention Code for Strike and Dip Measurements"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle> a skos:ConceptScheme ;
+    rdfs:label "Deformation Style"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose> a skos:ConceptScheme ;
+    rdfs:label "Description Purpose"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment> a skos:ConceptScheme ;
+    rdfs:label "Event Environment"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventprocess> a skos:ConceptScheme ;
+    rdfs:label "Event Process"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense> a skos:ConceptScheme ;
+    rdfs:label "Fault Movement Sense"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementtype> a skos:ConceptScheme ;
+    rdfs:label "Fault Movement Type"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/faulttype> a skos:ConceptScheme ;
+    rdfs:label "Fault Type"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/foliationtype> a skos:ConceptScheme ;
+    rdfs:label "Foliation Type"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/geneticcategory> a skos:ConceptScheme ;
+    rdfs:label "Genetic Category"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitmorphology> a skos:ConceptScheme ;
+    rdfs:label "Geologic Unit Morphology"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole> a skos:ConceptScheme ;
+    rdfs:label "Geologic Unit Part Role"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype> a skos:ConceptScheme ;
+    rdfs:label "Geologic Unit Type"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype> a skos:ConceptScheme ;
+    rdfs:label "Lineation Type"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies> a skos:ConceptScheme ;
+    rdfs:label "Metamorphic Facies"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphic-grade> a skos:ConceptScheme ;
+    rdfs:label "Metamorphic Grade"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicfeatureobservationmethod> a skos:ConceptScheme ;
+    rdfs:label "Observation Method Geologic Feature"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/mappedfeatureobservationmethod> a skos:ConceptScheme ;
+    rdfs:label "Observation Method Mapped Feature"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation> a skos:ConceptScheme ;
+    rdfs:label "Orientation Determination Method"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/particleaspectratio> a skos:ConceptScheme ;
+    rdfs:label "Particle Aspect Ratio"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/particleshape> a skos:ConceptScheme ;
+    rdfs:label "Particle Shape"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype> a skos:ConceptScheme ;
+    rdfs:label "Particle Type"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm> a skos:ConceptScheme ;
+    rdfs:label "Proportion Term"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology> a skos:ConceptScheme ;
+    rdfs:label "Simple Lithology"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank> a skos:ConceptScheme ;
+    rdfs:label "Stratigraphic Rank"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier> a skos:ConceptScheme ;
+    rdfs:label "Value Qualifier"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation> a skos:ConceptScheme ;
+    rdfs:label "Vocabulary Relation"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code> a skos:ConceptScheme ;
+    rdfs:label "Commodity Code"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression> a skos:ConceptScheme ;
+    rdfs:label "Earth Resource Expression"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form> a skos:ConceptScheme ;
+    rdfs:label "Earth Resource Form"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-material-role> a skos:ConceptScheme ;
+    rdfs:label "Earth Resource Material Role"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-shape> a skos:ConceptScheme ;
+    rdfs:label "Earth Resource Shape"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/end-use-potential> a skos:ConceptScheme ;
+    rdfs:label "End Use Potential"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/environmental-impact> a skos:ConceptScheme ;
+    rdfs:label "Environmental Impact"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-activity-type> a skos:ConceptScheme ;
+    rdfs:label "Exploration Activity Type"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/exploration-result> a skos:ConceptScheme ;
+    rdfs:label "Exploration Result"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status> a skos:ConceptScheme ;
+    rdfs:label "Mine Status"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-occurrence-type> a skos:ConceptScheme ;
+    rdfs:label "Mineral Occurrence Type"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/mineral-resource-reporting-classification-method> a skos:ConceptScheme ;
+    rdfs:label "Mineral Resource Reporting Classification Method"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity> a skos:ConceptScheme ;
+    rdfs:label "Mining Activity"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/processing-activity> a skos:ConceptScheme ;
+    rdfs:label "Processing Activity"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/raw-material-role> a skos:ConceptScheme ;
+    rdfs:label "Raw Material Role"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/reserve-assessment-category> a skos:ConceptScheme ;
+    rdfs:label "Reserve Assessment Category"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/resource-assessment-category> a skos:ConceptScheme ;
+    rdfs:label "Resource Assessment Category"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/unfc-code> a skos:ConceptScheme ;
+    rdfs:label "UNFC Code"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage> a skos:ConceptScheme ;
+    rdfs:label "Waste Storage"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+
+<http://resource.geosciml.org/vocabulary/timescale/isc2016-12> a skos:ConceptScheme ;
+    rdfs:label "International Chronostratigraphic Chart - 2016"^^xsd:string ;
+	reg:register <http://resource.geosciml.org/def/voc/> ;
+.
+

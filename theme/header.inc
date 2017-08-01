@@ -14,7 +14,7 @@
             <td style="text-align:center;">
                 <a href="http://www.cgi-iugs.org/"><img src="<?php print $WEB_FOLDER; ?>theme/img/logo-iugs.png" height="75px"/></a>
                 <a href="http://www.cgi-iugs.org/"><img src="<?php print $WEB_FOLDER; ?>theme/img/title.jpg" height="75px"/></a>
-                <a href="http://www.geosciml.net"><img src="<?php print $WEB_FOLDER; ?>theme/img/logo-geosciml.png" height="75px"/></a>
+                <a href="http://www.geosciml.org"><img src="<?php print $WEB_FOLDER; ?>theme/img/logo-geosciml.png" height="75px"/></a>
             </td>
         </tr>
         <tr>
