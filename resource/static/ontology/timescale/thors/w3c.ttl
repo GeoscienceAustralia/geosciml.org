@@ -1,10 +1,12 @@
 # baseURI: http://resource.geosciml.org/ontology/timescale/thors/w3c
 # imports: http://resource.geosciml.org/ontology/timescale/thors
 # imports: http://www.w3.org/2006/time
+# imports: http://www.w3.org/ns/prov-o#
 
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix thors: <http://resource.geosciml.org/ontology/timescale/thors#> .
@@ -93,6 +95,7 @@ thors:system
 Where appropriate, THORS classes and properties are related to OWL-Time classes and properties using rdfs:subClassOf, rdfs:subPropertyOf and owl:equivalentProperty axioms. Where the latter apply, the THORS properties are also annotated \"deprecated\" with the expectation that the OWL-Time properties will be used instead. """ ;
   owl:imports <http://resource.geosciml.org/ontology/timescale/thors> ;
   owl:imports <http://www.w3.org/2006/time> ;
+  owl:imports <http://www.w3.org/ns/prov-o#> ;
 .
 time:intervalContains
   rdfs:subPropertyOf thors:member ;

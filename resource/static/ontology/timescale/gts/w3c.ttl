@@ -1,12 +1,14 @@
 # baseURI: http://resource.geosciml.org/ontology/timescale/gts/w3c
 # imports: http://resource.geosciml.org/ontology/timescale/gts
 # imports: http://resource.geosciml.org/ontology/timescale/thors/w3c
+# imports: http://www.w3.org/ns/prov-o#
 # imports: http://www.w3.org/ns/sosa/
 
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix gts: <http://resource.geosciml.org/ontology/timescale/gts#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sosa: <http://www.w3.org/ns/sosa/> .
@@ -18,12 +20,6 @@ gts:Age
       rdf:type owl:Restriction ;
       owl:onClass gts:Epoch ;
       owl:onProperty time:intervalIn ;
-      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-    ] ;
-  rdfs:subClassOf [
-      rdf:type owl:Restriction ;
-      owl:onClass gts:Epoch ;
-      owl:onProperty time:intervalStarts ;
       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
@@ -87,21 +83,6 @@ gts:Age
             ) ;
         ] ;
       owl:onProperty time:intervalIn ;
-      owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
-    ] ;
-  rdfs:subClassOf [
-      rdf:type owl:Restriction ;
-      owl:onClass [
-          rdf:type owl:Class ;
-          owl:unionOf (
-              gts:Sub-Period
-              gts:Period
-              gts:Era
-              gts:Eon
-              gts:Super-Eon
-            ) ;
-        ] ;
-      owl:onProperty time:intervalStarts ;
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
 .
@@ -180,7 +161,6 @@ gts:Eon
               gts:Epoch
               gts:Era
               gts:Age
-              gts:Super-Eon
             ) ;
         ] ;
       owl:onProperty time:intervalIn ;
@@ -234,6 +214,22 @@ gts:Epoch
             ) ;
         ] ;
       owl:onProperty time:intervalContains ;
+      owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onClass [
+          rdf:type owl:Class ;
+          owl:unionOf (
+              gts:Eon
+              gts:Era
+              gts:Epoch
+              gts:Period
+              gts:Sub-Period
+              gts:Super-Eon
+            ) ;
+        ] ;
+      owl:onProperty time:intervalFinishedBy ;
       owl:qualifiedCardinality "0"^^xsd:nonNegativeInteger ;
     ] ;
   rdfs:subClassOf [
@@ -464,7 +460,7 @@ gts:Period
     ] ;
 .
 gts:StratigraphicEvent
-  rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+  rdfs:subClassOf prov:Activity ;
 .
 gts:StratigraphicPoint
   rdfs:subClassOf sosa:Sample ;
@@ -660,5 +656,6 @@ gts:positionalUncertainty
   rdfs:comment "This graph provides an alignment of the GTS ontology with OWL-Time, as an alternative to the use of ISO 19108 classes as the basis for the ontology. This is primarily accomplished transitively, through import of the THORS/OWL-Time mapping. " ;
   owl:imports <http://resource.geosciml.org/ontology/timescale/gts> ;
   owl:imports <http://resource.geosciml.org/ontology/timescale/thors/w3c> ;
+  owl:imports <http://www.w3.org/ns/prov-o#> ;
   owl:imports sosa: ;
 .
