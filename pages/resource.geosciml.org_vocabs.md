@@ -10,7 +10,7 @@ The vocabularies are also published at the [Research Vocabularies Australia Port
 
 List of terms | All Concepts | Vocabulary metadata | 
  ------------ |  ------------ | ----------- |
-Alteration Type  | [/classifier/cgi/alterationtype](http://resource.geosciml.org/classifier/cgi/alterationtype) | [/classifierscheme/cgi/2016.01/alterationtype](http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype) |
+Alteration Type | [/classifier/cgi/alterationtype](http://resource.geosciml.org/classifier/cgi/alterationtype) | [/classifierscheme/cgi/2016.01/alterationtype](http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype) |
 Borehole Drilling Method | [/classifier/cgi/boreholedrillingmethod](http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod) | [/classifierscheme/cgi/2016.01/boreholedrillingmethod](http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod) | 
 Composition Category | [/classifier/cgi/compositioncategory](http://resource.geosciml.org/classifier/cgi/compositioncategory) | [/classifierscheme/cgi/2016.01/compositioncategory](http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory) |
 Compound Material Constituent Part | [/classifier/cgi/compoundmaterialconstituentpartrole](http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole) | [/classifierscheme/cgi/2016.01/compoundmaterialconstituentpartrole](http://resource.geosciml.org/classifierscheme/cgi/2016.01/compoundmaterialconstituentpartrole) |
