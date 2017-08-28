@@ -1,5 +1,4 @@
 # CGI Vocabularies Register
-
 This is the static register (index) of CGI's vocabularies whose purpose is to present the static URIs to each of the vocabularies. This list is particularly useful for machines that wish to automatically index the CGI vocabularies.
 
 You can also find this list of vocabularies in [Semantic Web machine-readable TTL format](http://resource.geosciml.org/def/voc/?_format=text/turtle).
