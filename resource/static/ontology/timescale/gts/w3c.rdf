@@ -5,6 +5,7 @@
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:time="http://www.w3.org/2006/time#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:prov="http://www.w3.org/ns/prov#"
     xmlns:sosa="http://www.w3.org/ns/sosa/"
     xmlns:gts="http://resource.geosciml.org/ontology/timescale/gts#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -15,6 +16,7 @@
     <owl:imports rdf:resource="http://www.w3.org/ns/sosa/"/>
     <rdfs:comment>This graph provides an alignment of the GTS ontology with OWL-Time, as an alternative to the use of ISO 19108 classes as the basis for the ontology. This is primarily accomplished transitively, through import of the THORS/OWL-Time mapping. </rdfs:comment>
     <dcterms:created>2017-03-31</dcterms:created>
+    <owl:imports rdf:resource="http://www.w3.org/ns/prov-o#"/>
     <owl:imports rdf:resource="http://resource.geosciml.org/ontology/timescale/gts"/>
     <dc:creator>Simon J D Cox</dc:creator>
     <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
@@ -39,825 +41,821 @@
   <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom>
-          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era">
-            <rdfs:subClassOf>
-              <owl:Restriction>
-                <owl:someValuesFrom>
-                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period">
-                    <rdfs:subClassOf>
-                      <owl:Restriction>
-                        <owl:someValuesFrom>
-                          <owl:Class>
-                            <owl:unionOf rdf:parseType="Collection">
-                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch">
-                                <rdfs:subClassOf>
-                                  <owl:Restriction>
-                                    <owl:someValuesFrom>
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age">
-                                        <rdfs:subClassOf>
-                                          <owl:Restriction>
-                                            <owl:qualifiedCardinality
-                                             rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                            >0</owl:qualifiedCardinality>
-                                            <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStarts"/>
-                                            <owl:onClass>
-                                              <owl:Class>
-                                                <owl:unionOf rdf:parseType="Collection">
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period">
-                                                    <rdfs:subClassOf>
-                                                      <owl:Restriction>
-                                                        <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
-                                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
-                                                      </owl:Restriction>
-                                                    </rdfs:subClassOf>
-                                                    <rdfs:subClassOf>
-                                                      <owl:Restriction>
-                                                        <owl:qualifiedCardinality
-                                                         rdf:datatype=
-                                                        "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                                        >0</owl:qualifiedCardinality>
-                                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
-                                                        <owl:onClass>
-                                                          <owl:Class>
-                                                            <owl:unionOf rdf:parseType="Collection">
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon">
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
-        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >0</owl:qualifiedCardinality>
-        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
         <owl:onClass>
           <owl:Class>
             <owl:unionOf rdf:parseType="Collection">
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon">
+              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period">
                 <rdfs:subClassOf>
                   <owl:Restriction>
-                    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                    >0</owl:qualifiedCardinality>
-                    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
-                    <owl:onClass>
-                      <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon">
-                            <rdfs:subClassOf>
-                              <owl:Restriction>
-                                <owl:qualifiedCardinality rdf:datatype=
-                                "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                >0</owl:qualifiedCardinality>
-                                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
-                                <owl:onClass>
-                                  <owl:Class>
-                                    <owl:unionOf rdf:parseType="Collection">
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon">
-                                        <rdfs:subClassOf>
-                                          <owl:Restriction>
-                                            <owl:qualifiedCardinality
-                                             rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                            >0</owl:qualifiedCardinality>
-                                            <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
-                                            <owl:onClass>
-                                              <owl:Class>
-                                                <owl:unionOf rdf:parseType="Collection">
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon">
-                                                    <rdfs:subClassOf>
-                                                      <owl:Restriction>
-                                                        <owl:qualifiedCardinality
-                                                         rdf:datatype=
-                                                        "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                                        >1</owl:qualifiedCardinality>
-                                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
-                                                        <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
-                                                      </owl:Restriction>
-                                                    </rdfs:subClassOf>
-                                                    <rdfs:subClassOf>
-                                                      <owl:Restriction>
-                                                        <owl:qualifiedCardinality
-                                                         rdf:datatype=
-                                                        "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                                        >1</owl:qualifiedCardinality>
-                                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
-                                                        <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
-                                                      </owl:Restriction>
-                                                    </rdfs:subClassOf>
-                                                  </rdf:Description>
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon">
-                                                    <rdfs:subClassOf>
-                                                      <owl:Restriction>
-                                                        <owl:qualifiedCardinality
-                                                         rdf:datatype=
-                                                        "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                                        >0</owl:qualifiedCardinality>
-                                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
-                                                        <owl:onClass>
-                                                          <owl:Class>
-                                                            <owl:unionOf rdf:parseType="Collection">
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period">
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >0</owl:qualifiedCardinality>
-        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
-        <owl:onClass>
-          <owl:Class>
-            <owl:unionOf rdf:parseType="Collection">
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon">
-                <rdfs:subClassOf>
-                  <owl:Restriction>
-                    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                    >0</owl:qualifiedCardinality>
-                    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
-                    <owl:onClass>
-                      <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period">
-                            <rdfs:subClassOf>
-                              <owl:Restriction>
-                                <owl:qualifiedCardinality rdf:datatype=
-                                "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                >0</owl:qualifiedCardinality>
-                                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
-                                <owl:onClass>
-                                  <owl:Class>
-                                    <owl:unionOf rdf:parseType="Collection">
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon">
-                                        <rdfs:subClassOf>
-                                          <owl:Restriction>
-                                            <owl:qualifiedCardinality
-                                             rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                            >0</owl:qualifiedCardinality>
-                                            <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
-                                            <owl:onClass>
-                                              <owl:Class>
-                                                <owl:unionOf rdf:parseType="Collection">
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch">
-                                                    <rdfs:subClassOf>
-                                                      <owl:Restriction>
-                                                        <owl:qualifiedCardinality
-                                                         rdf:datatype=
-                                                        "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                                        >1</owl:qualifiedCardinality>
-                                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
-                                                        <owl:onClass>
-                                                          <owl:Class>
-                                                            <owl:unionOf rdf:parseType="Collection">
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period">
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >0</owl:qualifiedCardinality>
-        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
-        <owl:onClass>
-          <owl:Class>
-            <owl:unionOf rdf:parseType="Collection">
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon">
-                <rdfs:subClassOf>
-                  <owl:Restriction>
-                    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                    >0</owl:qualifiedCardinality>
-                    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
-                    <owl:onClass>
-                      <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch">
-                            <rdfs:subClassOf>
-                              <owl:Restriction>
-                                <owl:qualifiedCardinality rdf:datatype=
-                                "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                >0</owl:qualifiedCardinality>
-                                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
-                                <owl:onClass>
-                                  <owl:Class>
-                                    <owl:unionOf rdf:parseType="Collection">
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon">
-                                        <rdfs:subClassOf>
-                                          <owl:Restriction>
-                                            <owl:qualifiedCardinality
-                                             rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                            >1</owl:qualifiedCardinality>
-                                            <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
-                                            <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
-                                          </owl:Restriction>
-                                        </rdfs:subClassOf>
-                                        <rdfs:subClassOf>
-                                          <owl:Restriction>
-                                            <owl:qualifiedCardinality
-                                             rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                            >1</owl:qualifiedCardinality>
-                                            <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
-                                            <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
-                                          </owl:Restriction>
-                                        </rdfs:subClassOf>
-                                        <rdfs:subClassOf>
-                                          <owl:Restriction>
-                                            <owl:qualifiedCardinality
-                                             rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                            >1</owl:qualifiedCardinality>
-                                            <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
-                                            <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
-                                          </owl:Restriction>
-                                        </rdfs:subClassOf>
-                                      </rdf:Description>
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era">
-                                        <rdfs:subClassOf>
-                                          <owl:Restriction>
-                                            <owl:qualifiedCardinality
-                                             rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                            >0</owl:qualifiedCardinality>
-                                            <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
-                                            <owl:onClass>
-                                              <owl:Class>
-                                                <owl:unionOf rdf:parseType="Collection">
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era">
-                                                    <rdfs:subClassOf>
-                                                      <owl:Restriction>
-                                                        <owl:qualifiedCardinality
-                                                         rdf:datatype=
-                                                        "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                                        >0</owl:qualifiedCardinality>
-                                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
-                                                        <owl:onClass>
-                                                          <owl:Class>
-                                                            <owl:unionOf rdf:parseType="Collection">
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era">
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >0</owl:qualifiedCardinality>
-        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
-        <owl:onClass>
-          <owl:Class>
-            <owl:unionOf rdf:parseType="Collection">
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era">
-                <rdfs:subClassOf>
-                  <owl:Restriction>
-                    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                    >0</owl:qualifiedCardinality>
-                    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
-                    <owl:onClass>
-                      <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
-                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
-                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era">
-                            <rdfs:subClassOf>
-                              <owl:Restriction>
-                                <owl:qualifiedCardinality rdf:datatype=
-                                "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                >1</owl:qualifiedCardinality>
-                                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
-                                <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
-                              </owl:Restriction>
-                            </rdfs:subClassOf>
-                            <rdfs:subClassOf>
-                              <owl:Restriction>
-                                <owl:qualifiedCardinality rdf:datatype=
-                                "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                >1</owl:qualifiedCardinality>
-                                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
-                                <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
-                              </owl:Restriction>
-                            </rdfs:subClassOf>
-                            <rdfs:subClassOf>
-                              <owl:Restriction>
-                                <owl:qualifiedCardinality rdf:datatype=
-                                "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                >1</owl:qualifiedCardinality>
-                                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
-                                <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
-                              </owl:Restriction>
-                            </rdfs:subClassOf>
-                          </rdf:Description>
-                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period">
-                            <rdfs:subClassOf>
-                              <owl:Restriction>
-                                <owl:qualifiedCardinality rdf:datatype=
-                                "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                >0</owl:qualifiedCardinality>
-                                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
-                                <owl:onClass>
-                                  <owl:Class>
-                                    <owl:unionOf rdf:parseType="Collection">
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period">
-                                        <rdfs:subClassOf>
-                                          <owl:Restriction>
-                                            <owl:qualifiedCardinality
-                                             rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                            >0</owl:qualifiedCardinality>
-                                            <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
-                                            <owl:onClass>
-                                              <owl:Class>
-                                                <owl:unionOf rdf:parseType="Collection">
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
+                    <owl:someValuesFrom>
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch">
+                        <rdfs:subClassOf>
+                          <owl:Restriction>
+                            <owl:onClass>
+                              <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon">
+                                    <rdfs:subClassOf>
+                                      <owl:Restriction>
+                                        <owl:someValuesFrom>
+                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era">
+                                            <rdfs:subClassOf>
+                                              <owl:Restriction>
+                                                <owl:someValuesFrom>
                                                   <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period">
                                                     <rdfs:subClassOf>
                                                       <owl:Restriction>
-                                                        <owl:qualifiedCardinality
-                                                         rdf:datatype=
-                                                        "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                                        >0</owl:qualifiedCardinality>
-                                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
-                                                        <owl:onClass>
+                                                        <owl:someValuesFrom>
                                                           <owl:Class>
                                                             <owl:unionOf rdf:parseType="Collection">
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period">
+                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >0</owl:qualifiedCardinality>
-        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
-        <owl:onClass>
-          <owl:Class>
-            <owl:unionOf rdf:parseType="Collection">
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period">
-                <rdfs:subClassOf>
-                  <owl:Restriction>
-                    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                    >1</owl:qualifiedCardinality>
-                    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
-                    <owl:onClass>
-                      <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch">
-                            <rdfs:subClassOf>
-                              <owl:Restriction>
-                                <owl:qualifiedCardinality rdf:datatype=
-                                "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                >0</owl:qualifiedCardinality>
-                                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
-                                <owl:onClass>
-                                  <owl:Class>
-                                    <owl:unionOf rdf:parseType="Collection">
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch">
-                                        <rdfs:subClassOf>
-                                          <owl:Restriction>
-                                            <owl:qualifiedCardinality
-                                             rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                            >0</owl:qualifiedCardinality>
-                                            <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
-                                            <owl:onClass>
-                                              <owl:Class>
-                                                <owl:unionOf rdf:parseType="Collection">
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch">
-                                                    <rdfs:subClassOf>
-                                                      <owl:Restriction>
-                                                        <owl:qualifiedCardinality
-                                                         rdf:datatype=
-                                                        "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                                        >1</owl:qualifiedCardinality>
-                                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
-                                                        <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
-                                                      </owl:Restriction>
-                                                    </rdfs:subClassOf>
-                                                    <rdfs:subClassOf>
-                                                      <owl:Restriction>
-                                                        <owl:qualifiedCardinality
-                                                         rdf:datatype=
-                                                        "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                                        >1</owl:qualifiedCardinality>
-                                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
-                                                        <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
-                                                      </owl:Restriction>
-                                                    </rdfs:subClassOf>
-                                                  </rdf:Description>
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age">
-                                                    <rdfs:subClassOf>
-                                                      <owl:Restriction>
-                                                        <owl:qualifiedCardinality
-                                                         rdf:datatype=
-                                                        "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                                        >0</owl:qualifiedCardinality>
-                                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
-                                                        <owl:onClass>
-                                                          <owl:Class>
-                                                            <owl:unionOf rdf:parseType="Collection">
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period">
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:qualifiedCardinality>
-        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
-        <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:qualifiedCardinality>
-        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
-        <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:qualifiedCardinality>
-        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
-        <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>                                        </rdf:Description>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period">
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:qualifiedCardinality>
-        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
-        <owl:onClass>
-          <owl:Class>
-            <owl:unionOf rdf:parseType="Collection">
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
-            </owl:unionOf>
-          </owl:Class>
-        </owl:onClass>
-      </owl:Restriction>
-    </rdfs:subClassOf>
-    <rdfs:subClassOf>
-      <owl:Restriction>
-        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-        >1</owl:qualifiedCardinality>
-        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
-        <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
-      </owl:Restriction>
-    </rdfs:subClassOf>                                        </rdf:Description>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
-                                                            </owl:unionOf>
-                                                          </owl:Class>
-                                                        </owl:onClass>
-                                                      </owl:Restriction>
-                                                    </rdfs:subClassOf>
-                                                    <rdfs:subClassOf>
-                                                      <owl:Restriction>
-                                                        <owl:qualifiedCardinality
-                                                         rdf:datatype=
-                                                        "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                                        >0</owl:qualifiedCardinality>
-                                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
-                                                        <owl:onClass>
-                                                          <owl:Class>
-                                                            <owl:unionOf rdf:parseType="Collection">
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
-                                                            </owl:unionOf>
-                                                          </owl:Class>
-                                                        </owl:onClass>
-                                                      </owl:Restriction>
-                                                    </rdfs:subClassOf>
-                                                    <rdfs:subClassOf>
-                                                      <owl:Restriction>
-                                                        <owl:qualifiedCardinality
-                                                         rdf:datatype=
-                                                        "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                                        >0</owl:qualifiedCardinality>
-                                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
-                                                        <owl:onClass>
-                                                          <owl:Class>
-                                                            <owl:unionOf rdf:parseType="Collection">
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
-                                                            </owl:unionOf>
-                                                          </owl:Class>
-                                                        </owl:onClass>
-                                                      </owl:Restriction>
-                                                    </rdfs:subClassOf>
-                                                    <rdfs:subClassOf>
-                                                      <owl:Restriction>
-                                                        <owl:qualifiedCardinality
-                                                         rdf:datatype=
-                                                        "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                                        >0</owl:qualifiedCardinality>
-                                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
-                                                        <owl:onClass>
-                                                          <owl:Class>
-                                                            <owl:unionOf rdf:parseType="Collection">
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
-                                                            </owl:unionOf>
-                                                          </owl:Class>
-                                                        </owl:onClass>
-                                                      </owl:Restriction>
-                                                    </rdfs:subClassOf>
-                                                    <rdfs:subClassOf>
-                                                      <owl:Restriction>
-                                                        <owl:qualifiedCardinality
-                                                         rdf:datatype=
-                                                        "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                                        >1</owl:qualifiedCardinality>
-                                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStarts"/>
-                                                        <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
-                                                      </owl:Restriction>
-                                                    </rdfs:subClassOf>
-                                                    <rdfs:subClassOf>
-                                                      <owl:Restriction>
-                                                        <owl:qualifiedCardinality
-                                                         rdf:datatype=
-                                                        "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-                                                        >1</owl:qualifiedCardinality>
-                                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
-                                                        <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
-                                                      </owl:Restriction>
-                                                    </rdfs:subClassOf>
-                                                  </rdf:Description>
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
-                                                </owl:unionOf>
-                                              </owl:Class>
-                                            </owl:onClass>
-                                          </owl:Restriction>
-                                        </rdfs:subClassOf>
-                                      </rdf:Description>
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
-                                    </owl:unionOf>
-                                  </owl:Class>
-                                </owl:onClass>
-                              </owl:Restriction>
-                            </rdfs:subClassOf>
-                          </rdf:Description>
-                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
-                        </owl:unionOf>
-                      </owl:Class>
-                    </owl:onClass>
-                  </owl:Restriction>
-                </rdfs:subClassOf>
-              </rdf:Description>
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
-            </owl:unionOf>
-          </owl:Class>
-        </owl:onClass>
-      </owl:Restriction>
-    </rdfs:subClassOf>                                        </rdf:Description>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
-                                                            </owl:unionOf>
-                                                          </owl:Class>
-                                                        </owl:onClass>
-                                                      </owl:Restriction>
-                                                    </rdfs:subClassOf>
-                                                  </rdf:Description>
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
-                                                </owl:unionOf>
-                                              </owl:Class>
-                                            </owl:onClass>
-                                          </owl:Restriction>
-                                        </rdfs:subClassOf>
-                                      </rdf:Description>
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
-                                    </owl:unionOf>
-                                  </owl:Class>
-                                </owl:onClass>
-                              </owl:Restriction>
-                            </rdfs:subClassOf>
-                          </rdf:Description>
-                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
-                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
-                        </owl:unionOf>
-                      </owl:Class>
-                    </owl:onClass>
-                  </owl:Restriction>
-                </rdfs:subClassOf>
-              </rdf:Description>
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
-            </owl:unionOf>
-          </owl:Class>
-        </owl:onClass>
-      </owl:Restriction>
-    </rdfs:subClassOf>                                        </rdf:Description>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
-                                                            </owl:unionOf>
-                                                          </owl:Class>
-                                                        </owl:onClass>
-                                                      </owl:Restriction>
-                                                    </rdfs:subClassOf>
-                                                  </rdf:Description>
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
-                                                </owl:unionOf>
-                                              </owl:Class>
-                                            </owl:onClass>
-                                          </owl:Restriction>
-                                        </rdfs:subClassOf>
-                                      </rdf:Description>
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
-                                    </owl:unionOf>
-                                  </owl:Class>
-                                </owl:onClass>
-                              </owl:Restriction>
-                            </rdfs:subClassOf>
-                          </rdf:Description>
-                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
-                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
-                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
-                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
-                        </owl:unionOf>
-                      </owl:Class>
-                    </owl:onClass>
-                  </owl:Restriction>
-                </rdfs:subClassOf>
-              </rdf:Description>
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
-            </owl:unionOf>
-          </owl:Class>
-        </owl:onClass>
-      </owl:Restriction>
-    </rdfs:subClassOf>                                        </rdf:Description>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
-                                                            </owl:unionOf>
-                                                          </owl:Class>
-                                                        </owl:onClass>
-                                                      </owl:Restriction>
-                                                    </rdfs:subClassOf>
-                                                  </rdf:Description>
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
-                                                </owl:unionOf>
-                                              </owl:Class>
-                                            </owl:onClass>
-                                          </owl:Restriction>
-                                        </rdfs:subClassOf>
-                                      </rdf:Description>
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
-                                    </owl:unionOf>
-                                  </owl:Class>
-                                </owl:onClass>
-                              </owl:Restriction>
-                            </rdfs:subClassOf>
-                          </rdf:Description>
-                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
-                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
-                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
-                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
-                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
-                        </owl:unionOf>
-                      </owl:Class>
-                    </owl:onClass>
-                  </owl:Restriction>
-                </rdfs:subClassOf>
-              </rdf:Description>
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
-            </owl:unionOf>
-          </owl:Class>
-        </owl:onClass>
-      </owl:Restriction>
-    </rdfs:subClassOf>                                        </rdf:Description>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
-                                                            </owl:unionOf>
-                                                          </owl:Class>
-                                                        </owl:onClass>
-                                                      </owl:Restriction>
-                                                    </rdfs:subClassOf>
-                                                  </rdf:Description>
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
-                                                </owl:unionOf>
-                                              </owl:Class>
-                                            </owl:onClass>
-                                          </owl:Restriction>
-                                        </rdfs:subClassOf>
-                                      </rdf:Description>
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
-                                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
-                                    </owl:unionOf>
-                                  </owl:Class>
-                                </owl:onClass>
-                              </owl:Restriction>
-                            </rdfs:subClassOf>
-                          </rdf:Description>
-                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
-                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
-                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
-                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
-                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
-                        </owl:unionOf>
-                      </owl:Class>
-                    </owl:onClass>
-                  </owl:Restriction>
-                </rdfs:subClassOf>
-              </rdf:Description>
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
-              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
-            </owl:unionOf>
-          </owl:Class>
-        </owl:onClass>
-      </owl:Restriction>
-    </rdfs:subClassOf>                                        </rdf:Description>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
-                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
-                                                            </owl:unionOf>
-                                                          </owl:Class>
-                                                        </owl:onClass>
-                                                      </owl:Restriction>
-                                                    </rdfs:subClassOf>
-                                                  </rdf:Description>
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
-                                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
-                                                </owl:unionOf>
-                                              </owl:Class>
-                                            </owl:onClass>
-                                          </owl:Restriction>
-                                        </rdfs:subClassOf>
-                                      </rdf:Description>
-                                    </owl:someValuesFrom>
-                                    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
-                                  </owl:Restriction>
-                                </rdfs:subClassOf>
-                              </rdf:Description>
-                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
-                            </owl:unionOf>
-                          </owl:Class>
-                        </owl:someValuesFrom>
-                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
-                      </owl:Restriction>
-                    </rdfs:subClassOf>
-                  </rdf:Description>
-                </owl:someValuesFrom>
+        <owl:someValuesFrom>
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age">
+            <rdfs:subClassOf>
+              <owl:Restriction>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                >0</owl:qualifiedCardinality>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
+                <owl:onClass>
+                  <owl:Class>
+                    <owl:unionOf rdf:parseType="Collection">
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch">
+                        <rdfs:subClassOf>
+                          <owl:Restriction>
+                            <owl:qualifiedCardinality rdf:datatype=
+                            "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                            >1</owl:qualifiedCardinality>
+                            <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
+                            <owl:onClass>
+                              <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period">
+                                    <rdfs:subClassOf>
+                                      <owl:Restriction>
+                                        <owl:qualifiedCardinality
+                                         rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                        >0</owl:qualifiedCardinality>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
+                                        <owl:onClass>
+                                          <owl:Class>
+                                            <owl:unionOf rdf:parseType="Collection">
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon">
+                                                <rdfs:subClassOf>
+                                                  <owl:Restriction>
+                                                    <owl:someValuesFrom rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
+                                                    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+                                                  </owl:Restriction>
+                                                </rdfs:subClassOf>
+                                                <rdfs:subClassOf>
+                                                  <owl:Restriction>
+                                                    <owl:qualifiedCardinality
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                                    >0</owl:qualifiedCardinality>
+                                                    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
+                                                    <owl:onClass>
+                                                      <owl:Class>
+                                                        <owl:unionOf rdf:parseType="Collection">
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon">
+                                                            <rdfs:subClassOf>
+                                                              <owl:Restriction>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    >0</owl:qualifiedCardinality>
+    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
+    <owl:onClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon">
+            <rdfs:subClassOf>
+              <owl:Restriction>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                >0</owl:qualifiedCardinality>
                 <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+                <owl:onClass>
+                  <owl:Class>
+                    <owl:unionOf rdf:parseType="Collection">
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon">
+                        <rdfs:subClassOf>
+                          <owl:Restriction>
+                            <owl:qualifiedCardinality rdf:datatype=
+                            "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                            >0</owl:qualifiedCardinality>
+                            <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
+                            <owl:onClass>
+                              <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon">
+                                    <rdfs:subClassOf>
+                                      <owl:Restriction>
+                                        <owl:qualifiedCardinality
+                                         rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                        >1</owl:qualifiedCardinality>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
+                                        <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
+                                      </owl:Restriction>
+                                    </rdfs:subClassOf>
+                                    <rdfs:subClassOf>
+                                      <owl:Restriction>
+                                        <owl:qualifiedCardinality
+                                         rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                        >1</owl:qualifiedCardinality>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
+                                        <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
+                                      </owl:Restriction>
+                                    </rdfs:subClassOf>
+                                  </rdf:Description>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon">
+                                    <rdfs:subClassOf>
+                                      <owl:Restriction>
+                                        <owl:qualifiedCardinality
+                                         rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                        >0</owl:qualifiedCardinality>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+                                        <owl:onClass>
+                                          <owl:Class>
+                                            <owl:unionOf rdf:parseType="Collection">
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period">
+                                                <rdfs:subClassOf>
+                                                  <owl:Restriction>
+                                                    <owl:qualifiedCardinality
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                                    >0</owl:qualifiedCardinality>
+                                                    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
+                                                    <owl:onClass>
+                                                      <owl:Class>
+                                                        <owl:unionOf rdf:parseType="Collection">
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon">
+                                                            <rdfs:subClassOf>
+                                                              <owl:Restriction>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    >0</owl:qualifiedCardinality>
+    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
+    <owl:onClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch">
+            <rdfs:subClassOf>
+              <owl:Restriction>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                >0</owl:qualifiedCardinality>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
+                <owl:onClass>
+                  <owl:Class>
+                    <owl:unionOf rdf:parseType="Collection">
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon">
+                        <rdfs:subClassOf>
+                          <owl:Restriction>
+                            <owl:qualifiedCardinality rdf:datatype=
+                            "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                            >0</owl:qualifiedCardinality>
+                            <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
+                            <owl:onClass>
+                              <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch">
+                                    <rdfs:subClassOf>
+                                      <owl:Restriction>
+                                        <owl:qualifiedCardinality
+                                         rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                        >0</owl:qualifiedCardinality>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+                                        <owl:onClass>
+                                          <owl:Class>
+                                            <owl:unionOf rdf:parseType="Collection">
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon">
+                                                <rdfs:subClassOf>
+                                                  <owl:Restriction>
+                                                    <owl:qualifiedCardinality
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                                    >1</owl:qualifiedCardinality>
+                                                    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
+                                                    <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
+                                                  </owl:Restriction>
+                                                </rdfs:subClassOf>
+                                                <rdfs:subClassOf>
+                                                  <owl:Restriction>
+                                                    <owl:qualifiedCardinality
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                                    >1</owl:qualifiedCardinality>
+                                                    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
+                                                    <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
+                                                  </owl:Restriction>
+                                                </rdfs:subClassOf>
+                                                <rdfs:subClassOf>
+                                                  <owl:Restriction>
+                                                    <owl:qualifiedCardinality
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                                    >1</owl:qualifiedCardinality>
+                                                    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
+                                                    <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
+                                                  </owl:Restriction>
+                                                </rdfs:subClassOf>
+                                              </rdf:Description>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era">
+                                                <rdfs:subClassOf>
+                                                  <owl:Restriction>
+                                                    <owl:qualifiedCardinality
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                                    >0</owl:qualifiedCardinality>
+                                                    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
+                                                    <owl:onClass>
+                                                      <owl:Class>
+                                                        <owl:unionOf rdf:parseType="Collection">
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era">
+                                                            <rdfs:subClassOf>
+                                                              <owl:Restriction>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    >0</owl:qualifiedCardinality>
+    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
+    <owl:onClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era">
+            <rdfs:subClassOf>
+              <owl:Restriction>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                >0</owl:qualifiedCardinality>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
+                <owl:onClass>
+                  <owl:Class>
+                    <owl:unionOf rdf:parseType="Collection">
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era">
+                        <rdfs:subClassOf>
+                          <owl:Restriction>
+                            <owl:qualifiedCardinality rdf:datatype=
+                            "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                            >0</owl:qualifiedCardinality>
+                            <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+                            <owl:onClass>
+                              <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era">
+                                    <rdfs:subClassOf>
+                                      <owl:Restriction>
+                                        <owl:qualifiedCardinality
+                                         rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                        >1</owl:qualifiedCardinality>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
+                                        <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
+                                      </owl:Restriction>
+                                    </rdfs:subClassOf>
+                                    <rdfs:subClassOf>
+                                      <owl:Restriction>
+                                        <owl:qualifiedCardinality
+                                         rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                        >1</owl:qualifiedCardinality>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
+                                        <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
+                                      </owl:Restriction>
+                                    </rdfs:subClassOf>
+                                    <rdfs:subClassOf>
+                                      <owl:Restriction>
+                                        <owl:qualifiedCardinality
+                                         rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                        >1</owl:qualifiedCardinality>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
+                                        <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
+                                      </owl:Restriction>
+                                    </rdfs:subClassOf>
+                                  </rdf:Description>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period">
+                                    <rdfs:subClassOf>
+                                      <owl:Restriction>
+                                        <owl:qualifiedCardinality
+                                         rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                        >0</owl:qualifiedCardinality>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
+                                        <owl:onClass>
+                                          <owl:Class>
+                                            <owl:unionOf rdf:parseType="Collection">
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period">
+                                                <rdfs:subClassOf>
+                                                  <owl:Restriction>
+                                                    <owl:qualifiedCardinality
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                                    >0</owl:qualifiedCardinality>
+                                                    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
+                                                    <owl:onClass>
+                                                      <owl:Class>
+                                                        <owl:unionOf rdf:parseType="Collection">
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period">
+                                                            <rdfs:subClassOf>
+                                                              <owl:Restriction>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    >0</owl:qualifiedCardinality>
+    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
+    <owl:onClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period">
+            <rdfs:subClassOf>
+              <owl:Restriction>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                >0</owl:qualifiedCardinality>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+                <owl:onClass>
+                  <owl:Class>
+                    <owl:unionOf rdf:parseType="Collection">
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period">
+                        <rdfs:subClassOf>
+                          <owl:Restriction>
+                            <owl:qualifiedCardinality rdf:datatype=
+                            "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                            >1</owl:qualifiedCardinality>
+                            <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
+                            <owl:onClass>
+                              <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch">
+                                    <rdfs:subClassOf>
+                                      <owl:Restriction>
+                                        <owl:qualifiedCardinality
+                                         rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                        >0</owl:qualifiedCardinality>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
+                                        <owl:onClass>
+                                          <owl:Class>
+                                            <owl:unionOf rdf:parseType="Collection">
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch">
+                                                <rdfs:subClassOf>
+                                                  <owl:Restriction>
+                                                    <owl:qualifiedCardinality
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                                    >1</owl:qualifiedCardinality>
+                                                    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
+                                                    <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
+                                                  </owl:Restriction>
+                                                </rdfs:subClassOf>
+                                                <rdfs:subClassOf>
+                                                  <owl:Restriction>
+                                                    <owl:qualifiedCardinality
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                                    >1</owl:qualifiedCardinality>
+                                                    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
+                                                    <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
+                                                  </owl:Restriction>
+                                                </rdfs:subClassOf>
+                                              </rdf:Description>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age">
+                                                <rdfs:subClassOf>
+                                                  <owl:Restriction>
+                                                    <owl:qualifiedCardinality
+                                                     rdf:datatype=
+                                                    "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                                    >0</owl:qualifiedCardinality>
+                                                    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
+                                                    <owl:onClass>
+                                                      <owl:Class>
+                                                        <owl:unionOf rdf:parseType="Collection">
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period">
+                                                            <rdfs:subClassOf>
+                                                              <owl:Restriction>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    >0</owl:qualifiedCardinality>
+    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
+    <owl:onClass>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period">
+            <rdfs:subClassOf>
+              <owl:Restriction>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                >1</owl:qualifiedCardinality>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
+                <owl:onClass>
+                  <owl:Class>
+                    <owl:unionOf rdf:parseType="Collection">
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period">
+                        <rdfs:subClassOf>
+                          <owl:Restriction>
+                            <owl:qualifiedCardinality rdf:datatype=
+                            "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                            >0</owl:qualifiedCardinality>
+                            <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+                            <owl:onClass>
+                              <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period">
+                                    <rdfs:subClassOf>
+                                      <owl:Restriction>
+                                        <owl:qualifiedCardinality
+                                         rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                        >1</owl:qualifiedCardinality>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
+                                        <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
+                                      </owl:Restriction>
+                                    </rdfs:subClassOf>
+                                  </rdf:Description>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period">
+                                    <rdfs:subClassOf>
+                                      <owl:Restriction>
+                                        <owl:qualifiedCardinality
+                                         rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                        >1</owl:qualifiedCardinality>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
+                                        <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
+                                      </owl:Restriction>
+                                    </rdfs:subClassOf>
+                                    <rdfs:subClassOf>
+                                      <owl:Restriction>
+                                        <owl:qualifiedCardinality
+                                         rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                        >1</owl:qualifiedCardinality>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalStartedBy"/>
+                                        <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
+                                      </owl:Restriction>
+                                    </rdfs:subClassOf>
+                                    <rdfs:subClassOf>
+                                      <owl:Restriction>
+                                        <owl:qualifiedCardinality
+                                         rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                        >1</owl:qualifiedCardinality>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
+                                        <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
+                                      </owl:Restriction>
+                                    </rdfs:subClassOf>
+                                  </rdf:Description>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age">
+                                    <rdfs:subClassOf>
+                                      <owl:Restriction>
+                                        <owl:qualifiedCardinality
+                                         rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                        >0</owl:qualifiedCardinality>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+                                        <owl:onClass>
+                                          <owl:Class>
+                                            <owl:unionOf rdf:parseType="Collection">
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
+                                            </owl:unionOf>
+                                          </owl:Class>
+                                        </owl:onClass>
+                                      </owl:Restriction>
+                                    </rdfs:subClassOf>
+                                    <rdfs:subClassOf>
+                                      <owl:Restriction>
+                                        <owl:qualifiedCardinality
+                                         rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                        >0</owl:qualifiedCardinality>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
+                                        <owl:onClass>
+                                          <owl:Class>
+                                            <owl:unionOf rdf:parseType="Collection">
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
+                                            </owl:unionOf>
+                                          </owl:Class>
+                                        </owl:onClass>
+                                      </owl:Restriction>
+                                    </rdfs:subClassOf>
+                                    <rdfs:subClassOf>
+                                      <owl:Restriction>
+                                        <owl:qualifiedCardinality
+                                         rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                                        >1</owl:qualifiedCardinality>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
+                                        <owl:onClass rdf:resource="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
+                                      </owl:Restriction>
+                                    </rdfs:subClassOf>
+                                  </rdf:Description>
+                                </owl:unionOf>
+                              </owl:Class>
+                            </owl:onClass>
+                          </owl:Restriction>
+                        </rdfs:subClassOf>
+                      </rdf:Description>
+                    </owl:unionOf>
+                  </owl:Class>
+                </owl:onClass>
+              </owl:Restriction>
+            </rdfs:subClassOf>
+          </rdf:Description>
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:onClass>                                            </owl:Restriction>
+                                                            </rdfs:subClassOf>
+                                                          </rdf:Description>
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
+                                                        </owl:unionOf>
+                                                      </owl:Class>
+                                                    </owl:onClass>
+                                                  </owl:Restriction>
+                                                </rdfs:subClassOf>
+                                              </rdf:Description>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
+                                            </owl:unionOf>
+                                          </owl:Class>
+                                        </owl:onClass>
+                                      </owl:Restriction>
+                                    </rdfs:subClassOf>
+                                  </rdf:Description>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
+                                </owl:unionOf>
+                              </owl:Class>
+                            </owl:onClass>
+                          </owl:Restriction>
+                        </rdfs:subClassOf>
+                      </rdf:Description>
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
+                    </owl:unionOf>
+                  </owl:Class>
+                </owl:onClass>
+              </owl:Restriction>
+            </rdfs:subClassOf>
+          </rdf:Description>
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:onClass>                                            </owl:Restriction>
+                                                            </rdfs:subClassOf>
+                                                          </rdf:Description>
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
+                                                        </owl:unionOf>
+                                                      </owl:Class>
+                                                    </owl:onClass>
+                                                  </owl:Restriction>
+                                                </rdfs:subClassOf>
+                                              </rdf:Description>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
+                                            </owl:unionOf>
+                                          </owl:Class>
+                                        </owl:onClass>
+                                      </owl:Restriction>
+                                    </rdfs:subClassOf>
+                                  </rdf:Description>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
+                                </owl:unionOf>
+                              </owl:Class>
+                            </owl:onClass>
+                          </owl:Restriction>
+                        </rdfs:subClassOf>
+                      </rdf:Description>
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
+                    </owl:unionOf>
+                  </owl:Class>
+                </owl:onClass>
+              </owl:Restriction>
+            </rdfs:subClassOf>
+          </rdf:Description>
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:onClass>                                            </owl:Restriction>
+                                                            </rdfs:subClassOf>
+                                                          </rdf:Description>
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
+                                                        </owl:unionOf>
+                                                      </owl:Class>
+                                                    </owl:onClass>
+                                                  </owl:Restriction>
+                                                </rdfs:subClassOf>
+                                              </rdf:Description>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
+                                            </owl:unionOf>
+                                          </owl:Class>
+                                        </owl:onClass>
+                                      </owl:Restriction>
+                                    </rdfs:subClassOf>
+                                  </rdf:Description>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
+                                </owl:unionOf>
+                              </owl:Class>
+                            </owl:onClass>
+                          </owl:Restriction>
+                        </rdfs:subClassOf>
+                      </rdf:Description>
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
+                    </owl:unionOf>
+                  </owl:Class>
+                </owl:onClass>
+              </owl:Restriction>
+            </rdfs:subClassOf>
+          </rdf:Description>
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:onClass>                                            </owl:Restriction>
+                                                            </rdfs:subClassOf>
+                                                          </rdf:Description>
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
+                                                        </owl:unionOf>
+                                                      </owl:Class>
+                                                    </owl:onClass>
+                                                  </owl:Restriction>
+                                                </rdfs:subClassOf>
+                                              </rdf:Description>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
+                                            </owl:unionOf>
+                                          </owl:Class>
+                                        </owl:onClass>
+                                      </owl:Restriction>
+                                    </rdfs:subClassOf>
+                                  </rdf:Description>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
+                                </owl:unionOf>
+                              </owl:Class>
+                            </owl:onClass>
+                          </owl:Restriction>
+                        </rdfs:subClassOf>
+                      </rdf:Description>
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
+                    </owl:unionOf>
+                  </owl:Class>
+                </owl:onClass>
+              </owl:Restriction>
+            </rdfs:subClassOf>
+          </rdf:Description>
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
+          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
+        </owl:unionOf>
+      </owl:Class>
+    </owl:onClass>                                            </owl:Restriction>
+                                                            </rdfs:subClassOf>
+                                                          </rdf:Description>
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
+                                                          <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
+                                                        </owl:unionOf>
+                                                      </owl:Class>
+                                                    </owl:onClass>
+                                                  </owl:Restriction>
+                                                </rdfs:subClassOf>
+                                              </rdf:Description>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
+                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
+                                            </owl:unionOf>
+                                          </owl:Class>
+                                        </owl:onClass>
+                                      </owl:Restriction>
+                                    </rdfs:subClassOf>
+                                  </rdf:Description>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
+                                </owl:unionOf>
+                              </owl:Class>
+                            </owl:onClass>
+                          </owl:Restriction>
+                        </rdfs:subClassOf>
+                      </rdf:Description>
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Eon"/>
+                      <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
+                    </owl:unionOf>
+                  </owl:Class>
+                </owl:onClass>
               </owl:Restriction>
             </rdfs:subClassOf>
           </rdf:Description>
         </owl:someValuesFrom>
         <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>                                        </rdf:Description>
+                                                              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
+                                                            </owl:unionOf>
+                                                          </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+                                                      </owl:Restriction>
+                                                    </rdfs:subClassOf>
+                                                  </rdf:Description>
+                                                </owl:someValuesFrom>
+                                                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+                                              </owl:Restriction>
+                                            </rdfs:subClassOf>
+                                          </rdf:Description>
+                                        </owl:someValuesFrom>
+                                        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+                                      </owl:Restriction>
+                                    </rdfs:subClassOf>
+                                  </rdf:Description>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Sub-Period"/>
+                                  <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Super-Eon"/>
+                                </owl:unionOf>
+                              </owl:Class>
+                            </owl:onClass>
+                            <owl:qualifiedCardinality rdf:datatype=
+                            "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+                            >0</owl:qualifiedCardinality>
+                            <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalFinishedBy"/>
+                          </owl:Restriction>
+                        </rdfs:subClassOf>
+                      </rdf:Description>
+                    </owl:someValuesFrom>
+                    <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalContains"/>
+                  </owl:Restriction>
+                </rdfs:subClassOf>
+              </rdf:Description>
+              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Period"/>
+              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Epoch"/>
+              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Era"/>
+              <rdf:Description rdf:about="http://resource.geosciml.org/ontology/timescale/gts#Age"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:onClass>
+        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >0</owl:qualifiedCardinality>
+        <owl:onProperty rdf:resource="http://www.w3.org/2006/time#intervalIn"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </rdf:Description>

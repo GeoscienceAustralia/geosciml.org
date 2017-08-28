@@ -1,526 +1,520 @@
 {
   "@graph" : [ {
-    "@id" : "_:b0",
+    "@id" : "_:b104",
     "@type" : "owl:Restriction",
-    "onClass" : "_:b1",
+    "onClass" : "_:b105",
     "onProperty" : "time:intervalStartedBy",
     "qualifiedCardinality" : "0"
   }, {
-    "@id" : "_:b1",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Epoch", "gts:Sub-Period", "gts:Period", "gts:Age", "gts:Super-Eon" ]
-    }
-  }, {
-    "@id" : "_:b101",
-    "@type" : "owl:Restriction",
-    "onClass" : "_:b102",
-    "onProperty" : "time:intervalIn",
-    "qualifiedCardinality" : "1"
-  }, {
-    "@id" : "_:b102",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Period", "gts:Sub-Period" ]
-    }
-  }, {
-    "@id" : "_:b109",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era", "gts:Period", "gts:Sub-Period", "gts:Age" ]
-    }
-  }, {
-    "@id" : "_:b111",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era", "gts:Period", "gts:Sub-Period", "gts:Age" ]
-    }
-  }, {
-    "@id" : "_:b118",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Epoch", "gts:Sub-Period" ]
-    }
-  }, {
-    "@id" : "_:b12",
-    "@type" : "owl:Restriction",
-    "onProperty" : "time:intervalContains",
-    "someValuesFrom" : "_:b21"
-  }, {
-    "@id" : "_:b123",
-    "@type" : "owl:Restriction",
-    "onClass" : "_:b124",
-    "onProperty" : "time:intervalFinishedBy",
-    "qualifiedCardinality" : "0"
-  }, {
-    "@id" : "_:b124",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Epoch", "gts:Sub-Period", "gts:Period", "gts:Era", "gts:Eon", "gts:Super-Eon" ]
-    }
-  }, {
-    "@id" : "_:b125",
-    "@type" : "owl:Restriction",
-    "onClass" : "_:b126",
-    "onProperty" : "time:intervalStartedBy",
-    "qualifiedCardinality" : "0"
-  }, {
-    "@id" : "_:b126",
+    "@id" : "_:b105",
     "@type" : "owl:Class",
     "unionOf" : {
       "@list" : [ "gts:Eon", "gts:Era", "gts:Epoch", "gts:Period", "gts:Sub-Period", "gts:Super-Eon" ]
     }
   }, {
-    "@id" : "_:b127",
+    "@id" : "_:b112",
     "@type" : "owl:Restriction",
-    "onClass" : "_:b128",
-    "onProperty" : "time:intervalStarts",
+    "onClass" : "_:b113",
+    "onProperty" : "time:intervalFinishedBy",
     "qualifiedCardinality" : "0"
   }, {
-    "@id" : "_:b128",
+    "@id" : "_:b113",
     "@type" : "owl:Class",
     "unionOf" : {
-      "@list" : [ "gts:Sub-Period", "gts:Period", "gts:Era", "gts:Eon", "gts:Super-Eon" ]
+      "@list" : [ "gts:Eon", "gts:Era", "gts:Epoch", "gts:Period", "gts:Sub-Period", "gts:Super-Eon" ]
     }
   }, {
-    "@id" : "_:b13",
-    "@type" : "owl:Restriction",
-    "onClass" : "_:b202",
-    "onProperty" : "time:intervalIn",
-    "qualifiedCardinality" : "0"
-  }, {
-    "@id" : "_:b131",
+    "@id" : "_:b128",
     "@type" : "owl:Class",
     "unionOf" : {
       "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era", "gts:Period", "gts:Age" ]
     }
   }, {
-    "@id" : "_:b136",
+    "@id" : "_:b130",
     "@type" : "owl:Restriction",
-    "onClass" : "gts:Age",
-    "onProperty" : "time:intervalStartedBy",
+    "onClass" : "gts:Era",
+    "onProperty" : "time:intervalFinishedBy",
     "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b131",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b132",
+    "onProperty" : "time:intervalFinishedBy",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b132",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Epoch", "gts:Sub-Period", "gts:Period", "gts:Age", "gts:Super-Eon" ]
+    }
   }, {
     "@id" : "_:b14",
     "@type" : "owl:Restriction",
-    "onClass" : "_:b59",
-    "onProperty" : "time:intervalStartedBy",
-    "qualifiedCardinality" : "0"
+    "onProperty" : "time:intervalContains",
+    "someValuesFrom" : "gts:Epoch"
   }, {
-    "@id" : "_:b144",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Epoch", "gts:Sub-Period", "gts:Period", "gts:Era", "gts:Eon", "gts:Super-Eon" ]
-    }
-  }, {
-    "@id" : "_:b15",
-    "@type" : "owl:Restriction",
-    "onClass" : "_:b131",
-    "onProperty" : "time:intervalFinishedBy",
-    "qualifiedCardinality" : "0"
-  }, {
-    "@id" : "_:b151",
+    "@id" : "_:b142",
     "@type" : "owl:Restriction",
     "onProperty" : "time:intervalContains",
-    "someValuesFrom" : "gts:Period"
+    "someValuesFrom" : "gts:Age"
   }, {
-    "@id" : "_:b152",
+    "@id" : "_:b147",
     "@type" : "owl:Restriction",
-    "onClass" : "_:b186",
-    "onProperty" : "time:intervalIn",
-    "qualifiedCardinality" : "0"
-  }, {
-    "@id" : "_:b153",
-    "@type" : "owl:Restriction",
-    "onClass" : "_:b86",
+    "onClass" : "_:b148",
     "onProperty" : "time:intervalStartedBy",
     "qualifiedCardinality" : "0"
   }, {
-    "@id" : "_:b154",
-    "@type" : "owl:Restriction",
-    "onClass" : "_:b178",
-    "onProperty" : "time:intervalFinishedBy",
-    "qualifiedCardinality" : "0"
-  }, {
-    "@id" : "_:b155",
-    "@type" : "owl:Restriction",
-    "onClass" : "_:b212",
-    "onProperty" : "time:intervalContains",
-    "qualifiedCardinality" : "0"
-  }, {
-    "@id" : "_:b156",
-    "@type" : "owl:Restriction",
-    "onClass" : "gts:Period",
-    "onProperty" : "time:intervalStartedBy",
-    "qualifiedCardinality" : "1"
-  }, {
-    "@id" : "_:b157",
-    "@type" : "owl:Restriction",
-    "onClass" : "gts:Period",
-    "onProperty" : "time:intervalFinishedBy",
-    "qualifiedCardinality" : "1"
-  }, {
-    "@id" : "_:b158",
-    "@type" : "owl:Restriction",
-    "onClass" : "gts:Eon",
-    "onProperty" : "time:intervalIn",
-    "qualifiedCardinality" : "1"
-  }, {
-    "@id" : "_:b16",
-    "@type" : "owl:Restriction",
-    "onClass" : "_:b68",
-    "onProperty" : "time:intervalContains",
-    "qualifiedCardinality" : "0"
-  }, {
-    "@id" : "_:b17",
-    "@type" : "owl:Restriction",
-    "onClass" : "_:b118",
-    "onProperty" : "time:intervalStartedBy",
-    "qualifiedCardinality" : "1"
-  }, {
-    "@id" : "_:b171",
-    "@type" : "owl:Restriction",
-    "onClass" : "_:b172",
-    "onProperty" : "time:intervalStartedBy",
-    "qualifiedCardinality" : "0"
-  }, {
-    "@id" : "_:b172",
+    "@id" : "_:b148",
     "@type" : "owl:Class",
     "unionOf" : {
-      "@list" : [ "gts:Epoch", "gts:Sub-Period", "gts:Period", "gts:Era", "gts:Eon", "gts:Super-Eon" ]
+      "@list" : [ "gts:Epoch", "gts:Sub-Period", "gts:Period", "gts:Age", "gts:Super-Eon" ]
     }
   }, {
-    "@id" : "_:b174",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Sub-Period", "gts:Period", "gts:Epoch", "gts:Eon", "gts:Age", "gts:Super-Eon" ]
-    }
-  }, {
-    "@id" : "_:b176",
-    "@type" : "owl:Restriction",
-    "onClass" : "_:b177",
-    "onProperty" : "time:intervalContains",
-    "qualifiedCardinality" : "0"
-  }, {
-    "@id" : "_:b177",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Eon", "gts:Era", "gts:Epoch", "gts:Period", "gts:Sub-Period", "gts:Super-Eon" ]
-    }
-  }, {
-    "@id" : "_:b178",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era", "gts:Sub-Period", "gts:Epoch", "gts:Age" ]
-    }
-  }, {
-    "@id" : "_:b18",
-    "@type" : "owl:Restriction",
-    "onClass" : "_:b253",
-    "onProperty" : "time:intervalFinishedBy",
-    "qualifiedCardinality" : "1"
-  }, {
-    "@id" : "_:b184",
-    "@type" : "owl:Restriction",
-    "onClass" : "_:b47",
-    "onProperty" : "time:intervalIn",
-    "qualifiedCardinality" : "0"
-  }, {
-    "@id" : "_:b186",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Super-Eon", "gts:Era", "gts:Period", "gts:Sub-Period", "gts:Epoch", "gts:Age" ]
-    }
-  }, {
-    "@id" : "_:b187",
-    "@type" : "owl:Restriction",
-    "onClass" : "_:b188",
-    "onProperty" : "time:intervalIn",
-    "qualifiedCardinality" : "0"
-  }, {
-    "@id" : "_:b188",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era", "gts:Sub-Period", "gts:Epoch", "gts:Age" ]
-    }
-  }, {
-    "@id" : "_:b189",
-    "@type" : "owl:Restriction",
-    "onClass" : "gts:Super-Eon",
-    "onProperty" : "time:intervalIn",
-    "qualifiedCardinality" : "1"
-  }, {
-    "@id" : "_:b19",
-    "@type" : "owl:Restriction",
-    "onClass" : "gts:Era",
-    "onProperty" : "time:intervalIn",
-    "qualifiedCardinality" : "1"
-  }, {
-    "@id" : "_:b191",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Super-Eon", "gts:Era", "gts:Period", "gts:Sub-Period", "gts:Epoch", "gts:Age" ]
-    }
-  }, {
-    "@id" : "_:b194",
-    "@type" : "owl:Restriction",
-    "onClass" : "gts:Epoch",
-    "onProperty" : "time:intervalStartedBy",
-    "qualifiedCardinality" : "1"
-  }, {
-    "@id" : "_:b202",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Period", "gts:Sub-Period", "gts:Epoch", "gts:Age" ]
-    }
-  }, {
-    "@id" : "_:b207",
-    "@type" : "owl:Restriction",
-    "onProperty" : "time:intervalContains",
-    "someValuesFrom" : "gts:Era"
-  }, {
-    "@id" : "_:b21",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Epoch", "gts:Sub-Period" ]
-    }
-  }, {
-    "@id" : "_:b212",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era", "gts:Sub-Period", "gts:Epoch", "gts:Age" ]
-    }
-  }, {
-    "@id" : "_:b214",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Super-Eon", "gts:Era", "gts:Period", "gts:Sub-Period", "gts:Epoch", "gts:Age" ]
-    }
-  }, {
-    "@id" : "_:b224",
-    "@type" : "owl:Restriction",
-    "onClass" : "gts:Age",
-    "onProperty" : "time:intervalFinishedBy",
-    "qualifiedCardinality" : "1"
-  }, {
-    "@id" : "_:b225",
+    "@id" : "_:b149",
     "@type" : "owl:Restriction",
     "onClass" : "_:b51",
     "onProperty" : "time:intervalIn",
     "qualifiedCardinality" : "0"
   }, {
-    "@id" : "_:b235",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era", "gts:Period", "gts:Sub-Period", "gts:Epoch", "gts:Age" ]
-    }
-  }, {
-    "@id" : "_:b238",
-    "@type" : "owl:Restriction",
-    "onClass" : "_:b174",
-    "onProperty" : "time:intervalContains",
-    "qualifiedCardinality" : "0"
-  }, {
-    "@id" : "_:b240",
+    "@id" : "_:b152",
     "@type" : "owl:Restriction",
     "onClass" : "gts:Period",
-    "onProperty" : "time:intervalIn",
+    "onProperty" : "time:intervalFinishedBy",
     "qualifiedCardinality" : "1"
   }, {
-    "@id" : "_:b241",
+    "@id" : "_:b153",
     "@type" : "owl:Restriction",
-    "onClass" : "_:b111",
+    "onClass" : "_:b200",
+    "onProperty" : "time:intervalIn",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b154",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b232",
     "onProperty" : "time:intervalStartedBy",
     "qualifiedCardinality" : "0"
   }, {
-    "@id" : "_:b243",
+    "@id" : "_:b155",
     "@type" : "owl:Restriction",
-    "onClass" : "_:b109",
-    "onProperty" : "time:intervalContains",
-    "qualifiedCardinality" : "0"
-  }, {
-    "@id" : "_:b245",
-    "@type" : "owl:Restriction",
-    "onClass" : "gts:Epoch",
-    "onProperty" : "time:intervalIn",
-    "qualifiedCardinality" : "1"
-  }, {
-    "@id" : "_:b246",
-    "@type" : "owl:Restriction",
-    "onClass" : "gts:Era",
-    "onProperty" : "time:intervalFinishedBy",
-    "qualifiedCardinality" : "1"
-  }, {
-    "@id" : "_:b247",
-    "@type" : "owl:Restriction",
-    "onProperty" : "time:intervalContains",
-    "someValuesFrom" : "gts:Epoch"
-  }, {
-    "@id" : "_:b248",
-    "@type" : "owl:Restriction",
-    "onClass" : "gts:Epoch",
-    "onProperty" : "time:intervalFinishedBy",
-    "qualifiedCardinality" : "1"
-  }, {
-    "@id" : "_:b250",
-    "@type" : "owl:Restriction",
-    "onClass" : "_:b66",
+    "onClass" : "_:b236",
     "onProperty" : "time:intervalFinishedBy",
     "qualifiedCardinality" : "0"
   }, {
-    "@id" : "_:b252",
+    "@id" : "_:b156",
     "@type" : "owl:Restriction",
-    "onClass" : "_:b144",
+    "onClass" : "_:b225",
     "onProperty" : "time:intervalContains",
     "qualifiedCardinality" : "0"
   }, {
-    "@id" : "_:b253",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Epoch", "gts:Sub-Period" ]
-    }
-  }, {
-    "@id" : "_:b36",
+    "@id" : "_:b157",
     "@type" : "owl:Restriction",
-    "onProperty" : "time:intervalContains",
-    "someValuesFrom" : "gts:Eon"
-  }, {
-    "@id" : "_:b37",
-    "@type" : "owl:Restriction",
-    "onClass" : "_:b69",
-    "onProperty" : "time:intervalStartedBy",
-    "qualifiedCardinality" : "0"
-  }, {
-    "@id" : "_:b38",
-    "@type" : "owl:Restriction",
-    "onClass" : "_:b214",
-    "onProperty" : "time:intervalFinishedBy",
-    "qualifiedCardinality" : "0"
-  }, {
-    "@id" : "_:b39",
-    "@type" : "owl:Restriction",
-    "onClass" : "_:b191",
-    "onProperty" : "time:intervalContains",
-    "qualifiedCardinality" : "0"
-  }, {
-    "@id" : "_:b40",
-    "@type" : "owl:Restriction",
-    "onClass" : "_:b235",
-    "onProperty" : "time:intervalIn",
-    "qualifiedCardinality" : "0"
-  }, {
-    "@id" : "_:b41",
-    "@type" : "owl:Restriction",
-    "onClass" : "gts:Eon",
+    "onClass" : "gts:Period",
     "onProperty" : "time:intervalStartedBy",
     "qualifiedCardinality" : "1"
   }, {
-    "@id" : "_:b42",
+    "@id" : "_:b166",
     "@type" : "owl:Restriction",
-    "onClass" : "gts:Eon",
-    "onProperty" : "time:intervalFinishedBy",
+    "onClass" : "gts:Super-Eon",
+    "onProperty" : "time:intervalIn",
     "qualifiedCardinality" : "1"
   }, {
-    "@id" : "_:b47",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Eon", "gts:Epoch", "gts:Age", "gts:Era", "gts:Super-Eon" ]
-    }
-  }, {
-    "@id" : "_:b51",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Sub-Period", "gts:Period", "gts:Epoch", "gts:Era", "gts:Age", "gts:Super-Eon" ]
-    }
-  }, {
-    "@id" : "_:b59",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era", "gts:Period", "gts:Age" ]
-    }
-  }, {
-    "@id" : "_:b66",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Epoch", "gts:Sub-Period", "gts:Period", "gts:Age", "gts:Super-Eon" ]
-    }
-  }, {
-    "@id" : "_:b68",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era", "gts:Period", "gts:Age" ]
-    }
-  }, {
-    "@id" : "_:b69",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Super-Eon", "gts:Era", "gts:Period", "gts:Sub-Period", "gts:Epoch", "gts:Age" ]
-    }
-  }, {
-    "@id" : "_:b73",
-    "@type" : "owl:Restriction",
-    "onProperty" : "time:intervalContains",
-    "someValuesFrom" : "gts:Age"
-  }, {
-    "@id" : "_:b79",
-    "@type" : "owl:Restriction",
-    "onClass" : "_:b80",
-    "onProperty" : "time:intervalIn",
-    "qualifiedCardinality" : "0"
-  }, {
-    "@id" : "_:b80",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Sub-Period", "gts:Period", "gts:Era", "gts:Eon", "gts:Super-Eon" ]
-    }
-  }, {
-    "@id" : "_:b81",
-    "@type" : "owl:Restriction",
-    "onClass" : "_:b82",
-    "onProperty" : "time:intervalFinishedBy",
-    "qualifiedCardinality" : "0"
-  }, {
-    "@id" : "_:b82",
-    "@type" : "owl:Class",
-    "unionOf" : {
-      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era", "gts:Period", "gts:Sub-Period", "gts:Age" ]
-    }
-  }, {
-    "@id" : "_:b86",
+    "@id" : "_:b167",
     "@type" : "owl:Class",
     "unionOf" : {
       "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era", "gts:Sub-Period", "gts:Epoch", "gts:Age" ]
     }
   }, {
-    "@id" : "_:b90",
+    "@id" : "_:b17",
     "@type" : "owl:Restriction",
-    "onClass" : "gts:Epoch",
-    "onProperty" : "time:intervalStarts",
-    "qualifiedCardinality" : "1"
+    "onProperty" : "time:intervalContains",
+    "someValuesFrom" : "_:b214"
   }, {
-    "@id" : "_:b98",
+    "@id" : "_:b175",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b176",
+    "onProperty" : "time:intervalContains",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b176",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Eon", "gts:Era", "gts:Epoch", "gts:Period", "gts:Sub-Period", "gts:Super-Eon" ]
+    }
+  }, {
+    "@id" : "_:b18",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b223",
+    "onProperty" : "time:intervalIn",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b185",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b167",
+    "onProperty" : "time:intervalIn",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b187",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era", "gts:Period", "gts:Sub-Period", "gts:Epoch", "gts:Age" ]
+    }
+  }, {
+    "@id" : "_:b19",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b239",
+    "onProperty" : "time:intervalStartedBy",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b193",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era", "gts:Period", "gts:Age" ]
+    }
+  }, {
+    "@id" : "_:b194",
     "@type" : "owl:Restriction",
     "onClass" : "gts:Era",
     "onProperty" : "time:intervalStartedBy",
     "qualifiedCardinality" : "1"
   }, {
+    "@id" : "_:b20",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b128",
+    "onProperty" : "time:intervalFinishedBy",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b200",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Super-Eon", "gts:Era", "gts:Period", "gts:Sub-Period", "gts:Epoch", "gts:Age" ]
+    }
+  }, {
+    "@id" : "_:b201",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Super-Eon", "gts:Era", "gts:Period", "gts:Sub-Period", "gts:Epoch", "gts:Age" ]
+    }
+  }, {
+    "@id" : "_:b202",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Epoch", "gts:Sub-Period" ]
+    }
+  }, {
+    "@id" : "_:b204",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Period",
+    "onProperty" : "time:intervalIn",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b21",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b193",
+    "onProperty" : "time:intervalContains",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b213",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Epoch", "gts:Sub-Period", "gts:Period", "gts:Era", "gts:Eon", "gts:Super-Eon" ]
+    }
+  }, {
+    "@id" : "_:b214",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Epoch", "gts:Sub-Period" ]
+    }
+  }, {
+    "@id" : "_:b217",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Age",
+    "onProperty" : "time:intervalFinishedBy",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b22",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b73",
+    "onProperty" : "time:intervalStartedBy",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b223",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Period", "gts:Sub-Period", "gts:Epoch", "gts:Age" ]
+    }
+  }, {
+    "@id" : "_:b224",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Epoch",
+    "onProperty" : "time:intervalStartedBy",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b225",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era", "gts:Sub-Period", "gts:Epoch", "gts:Age" ]
+    }
+  }, {
+    "@id" : "_:b228",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b229",
+    "onProperty" : "time:intervalIn",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b229",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Eon", "gts:Epoch", "gts:Age", "gts:Era", "gts:Super-Eon" ]
+    }
+  }, {
+    "@id" : "_:b23",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b202",
+    "onProperty" : "time:intervalFinishedBy",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b230",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b74",
+    "onProperty" : "time:intervalFinishedBy",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b231",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b213",
+    "onProperty" : "time:intervalContains",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b232",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era", "gts:Sub-Period", "gts:Epoch", "gts:Age" ]
+    }
+  }, {
+    "@id" : "_:b233",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b234",
+    "onProperty" : "time:intervalContains",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b234",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era", "gts:Period", "gts:Sub-Period", "gts:Age" ]
+    }
+  }, {
+    "@id" : "_:b235",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b34",
+    "onProperty" : "time:intervalFinishedBy",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b236",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era", "gts:Sub-Period", "gts:Epoch", "gts:Age" ]
+    }
+  }, {
+    "@id" : "_:b239",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era", "gts:Period", "gts:Age" ]
+    }
+  }, {
+    "@id" : "_:b24",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Era",
+    "onProperty" : "time:intervalIn",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b241",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b92",
+    "onProperty" : "time:intervalIn",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b243",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Epoch",
+    "onProperty" : "time:intervalFinishedBy",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b244",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Epoch", "gts:Sub-Period", "gts:Period", "gts:Era", "gts:Eon", "gts:Super-Eon" ]
+    }
+  }, {
+    "@id" : "_:b246",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b244",
+    "onProperty" : "time:intervalStartedBy",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b247",
+    "@type" : "owl:Restriction",
+    "onProperty" : "time:intervalContains",
+    "someValuesFrom" : "gts:Era"
+  }, {
+    "@id" : "_:b248",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b90",
+    "onProperty" : "time:intervalContains",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b25",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Period", "gts:Sub-Period" ]
+    }
+  }, {
+    "@id" : "_:b250",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Super-Eon", "gts:Era", "gts:Period", "gts:Sub-Period", "gts:Epoch", "gts:Age" ]
+    }
+  }, {
+    "@id" : "_:b252",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Age",
+    "onProperty" : "time:intervalStartedBy",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b27",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Eon",
+    "onProperty" : "time:intervalIn",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b28",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Super-Eon", "gts:Era", "gts:Period", "gts:Sub-Period", "gts:Epoch", "gts:Age" ]
+    }
+  }, {
+    "@id" : "_:b34",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Epoch", "gts:Sub-Period", "gts:Period", "gts:Era", "gts:Eon", "gts:Super-Eon" ]
+    }
+  }, {
+    "@id" : "_:b51",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Sub-Period", "gts:Period", "gts:Epoch", "gts:Era", "gts:Age" ]
+    }
+  }, {
+    "@id" : "_:b53",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b54",
+    "onProperty" : "time:intervalStartedBy",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b54",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era", "gts:Period", "gts:Sub-Period", "gts:Age" ]
+    }
+  }, {
+    "@id" : "_:b55",
+    "@type" : "owl:Restriction",
+    "onProperty" : "time:intervalContains",
+    "someValuesFrom" : "gts:Eon"
+  }, {
+    "@id" : "_:b56",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b28",
+    "onProperty" : "time:intervalStartedBy",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b57",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b250",
+    "onProperty" : "time:intervalFinishedBy",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b58",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b201",
+    "onProperty" : "time:intervalContains",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b59",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b187",
+    "onProperty" : "time:intervalIn",
+    "qualifiedCardinality" : "0"
+  }, {
+    "@id" : "_:b60",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Eon",
+    "onProperty" : "time:intervalStartedBy",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b61",
+    "@type" : "owl:Restriction",
+    "onClass" : "_:b25",
+    "onProperty" : "time:intervalIn",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b7",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Eon",
+    "onProperty" : "time:intervalFinishedBy",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b73",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Epoch", "gts:Sub-Period" ]
+    }
+  }, {
+    "@id" : "_:b74",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Super-Eon", "gts:Eon", "gts:Era", "gts:Period", "gts:Sub-Period", "gts:Age" ]
+    }
+  }, {
+    "@id" : "_:b90",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Sub-Period", "gts:Period", "gts:Epoch", "gts:Eon", "gts:Age", "gts:Super-Eon" ]
+    }
+  }, {
+    "@id" : "_:b91",
+    "@type" : "owl:Restriction",
+    "onClass" : "gts:Epoch",
+    "onProperty" : "time:intervalIn",
+    "qualifiedCardinality" : "1"
+  }, {
+    "@id" : "_:b92",
+    "@type" : "owl:Class",
+    "unionOf" : {
+      "@list" : [ "gts:Sub-Period", "gts:Period", "gts:Era", "gts:Eon", "gts:Super-Eon" ]
+    }
+  }, {
+    "@id" : "_:b94",
+    "@type" : "owl:Restriction",
+    "onProperty" : "time:intervalContains",
+    "someValuesFrom" : "gts:Period"
+  }, {
     "@id" : "gts:Age",
-    "subClassOf" : [ "_:b127", "_:b79", "_:b171", "_:b123", "_:b252", "_:b90", "_:b245" ]
+    "subClassOf" : [ "_:b246", "_:b235", "_:b231", "_:b241", "_:b91" ]
   }, {
     "@id" : "gts:Eon",
-    "subClassOf" : [ "_:b207", "_:b225", "_:b238", "_:b0", "_:b250", "_:b189", "_:b98", "_:b246" ]
+    "subClassOf" : [ "_:b149", "_:b247", "_:b248", "_:b147", "_:b131", "_:b166", "_:b194", "_:b130" ]
   }, {
     "@id" : "gts:Epoch",
-    "subClassOf" : [ "_:b73", "_:b101", "_:b125", "_:b176", "_:b184", "_:b136", "_:b224" ]
+    "subClassOf" : [ "_:b112", "_:b142", "_:b61", "_:b104", "_:b175", "_:b228", "_:b252", "_:b217" ]
   }, {
     "@id" : "gts:Era",
-    "subClassOf" : [ "_:b151", "_:b152", "_:b153", "_:b154", "_:b155", "_:b156", "_:b157", "_:b158" ]
+    "subClassOf" : [ "_:b94", "_:b153", "_:b154", "_:b155", "_:b156", "_:b157", "_:b152", "_:b27" ]
   }, {
     "@id" : "gts:Period",
-    "subClassOf" : [ "_:b12", "_:b13", "_:b14", "_:b15", "_:b16", "_:b17", "_:b18", "_:b19" ]
+    "subClassOf" : [ "_:b17", "_:b18", "_:b19", "_:b20", "_:b21", "_:b22", "_:b23", "_:b24" ]
   }, {
     "@id" : "gts:StratigraphicEvent",
-    "subClassOf" : "http://www.w3.org/ns/prov#Activity"
+    "subClassOf" : "prov:Activity"
   }, {
     "@id" : "gts:StratigraphicPoint",
     "subClassOf" : "sosa:Sample"
@@ -529,10 +523,10 @@
     "subClassOf" : "sosa:Sample"
   }, {
     "@id" : "gts:Sub-Period",
-    "subClassOf" : [ "_:b247", "_:b187", "_:b241", "_:b81", "_:b243", "_:b240", "_:b194", "_:b248" ]
+    "subClassOf" : [ "_:b14", "_:b185", "_:b53", "_:b230", "_:b233", "_:b204", "_:b224", "_:b243" ]
   }, {
     "@id" : "gts:Super-Eon",
-    "subClassOf" : [ "_:b36", "_:b37", "_:b38", "_:b39", "_:b40", "_:b41", "_:b42" ]
+    "subClassOf" : [ "_:b55", "_:b56", "_:b57", "_:b58", "_:b59", "_:b60", "_:b7" ]
   }, {
     "@id" : "gts:positionalUncertainty",
     "domain" : "time:TemporalPosition",
@@ -547,9 +541,17 @@
     "license" : "https://creativecommons.org/licenses/by/4.0/",
     "modified" : "2017-07-23",
     "comment" : "This graph provides an alignment of the GTS ontology with OWL-Time, as an alternative to the use of ISO 19108 classes as the basis for the ontology. This is primarily accomplished transitively, through import of the THORS/OWL-Time mapping. ",
-    "imports" : [ "http://www.w3.org/ns/sosa/", "http://resource.geosciml.org/ontology/timescale/gts", "http://resource.geosciml.org/ontology/timescale/thors/w3c" ]
+    "imports" : [ "http://www.w3.org/ns/sosa/", "http://www.w3.org/ns/prov-o#", "http://resource.geosciml.org/ontology/timescale/gts", "http://resource.geosciml.org/ontology/timescale/thors/w3c" ]
   } ],
   "@context" : {
+    "rest" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+      "@type" : "@id"
+    },
+    "first" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+      "@type" : "@id"
+    },
     "qualifiedCardinality" : {
       "@id" : "http://www.w3.org/2002/07/owl#qualifiedCardinality",
       "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
@@ -562,20 +564,12 @@
       "@id" : "http://www.w3.org/2002/07/owl#onClass",
       "@type" : "@id"
     },
-    "rest" : {
-      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
-      "@type" : "@id"
-    },
-    "first" : {
-      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
+    "someValuesFrom" : {
+      "@id" : "http://www.w3.org/2002/07/owl#someValuesFrom",
       "@type" : "@id"
     },
     "subClassOf" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#subClassOf",
-      "@type" : "@id"
-    },
-    "someValuesFrom" : {
-      "@id" : "http://www.w3.org/2002/07/owl#someValuesFrom",
       "@type" : "@id"
     },
     "unionOf" : {
@@ -622,6 +616,7 @@
     "dcterms" : "http://purl.org/dc/terms/",
     "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
     "time" : "http://www.w3.org/2006/time#",
+    "prov" : "http://www.w3.org/ns/prov#",
     "dc" : "http://purl.org/dc/elements/1.1/",
     "sosa" : "http://www.w3.org/ns/sosa/"
   }
