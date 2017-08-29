@@ -7,7 +7,7 @@ The vocabularies are also published at the [Research Vocabularies Australia Port
 
 ### GeoSciML Vocabularies
 
-| Collection of terms | Concept scheme metadata | SPARQL endpoint |
+| Collection of terms | Concept scheme metadata | &nbsp;&nbsp;SPARQL endpoint |
 |---------------------|:-----------------------:|:---------------:|
 [Alteration Type](http://resource.geosciml.org/classifier/cgi/alterationtype) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_alteration-type_v0-1) |
 [Borehole Drilling Method](http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_borehole-drilling-method_v0-1) |
@@ -45,7 +45,7 @@ The vocabularies are also published at the [Research Vocabularies Australia Port
 
 ### EarthResourceML Vocabularies
 
-| Collection of terms | Concept scheme metadata | SPARQL endpoint |
+| Collection of terms | Concept scheme metadata | &nbsp;&nbsp;SPARQL endpoint |
 |---------------------|:-----------------------:|:---------------:|
 [Commodity Code](http://resource.geosciml.org/classifier/cgi/commodity-code) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_commodity-code_v0-2) |
 [Earth Resource Expression](http://resource.geosciml.org/classifier/cgi/earth-resource-expression) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_earth-resource-expression_v0-1) |
@@ -69,6 +69,6 @@ The vocabularies are also published at the [Research Vocabularies Australia Port
 
 ### Geologic Time Vocabulary
 
-| Collection of terms | Concept scheme metadata |
+| Collection of terms | &nbsp;Concept scheme metadata |
 |---------------------|:-----------------------:|
 [International Chronostratigraphic Chart - 2016](http://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart-2016/2016-12-v3/collection) | [v2016.12](http://resource.geosciml.org/vocabulary/timescale/isc2016-12) ||
