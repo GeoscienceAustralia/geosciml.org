@@ -7,7 +7,7 @@ The vocabularies are also published at the [Research Vocabularies Australia Port
 
 ### GeoSciML Vocabularies
 
-Collection of terms | Concept scheme metadata | SPARQL endpoint |
+Collection of terms | Concept scheme metadata     | SPARQL endpoint |
  --------------------- | ----------------------- | ------------------ | 
 [Alteration Type](http://resource.geosciml.org/classifier/cgi/alterationtype) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_alteration-type_v0-1) |
 [Borehole Drilling Method](http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_borehole-drilling-method_v0-1) |
@@ -15,7 +15,7 @@ Collection of terms | Concept scheme metadata | SPARQL endpoint |
 [Compound Material Constituent Part](http://resource.geosciml.org/classifier/cgi/compoundmaterialconstituentpartrole) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/compoundmaterialconstituentpartrole) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_compound-material-constituent-part_v0-2) |
 [Consolidation Degree](http://resource.geosciml.org/classifier/cgi/consolidationdegree) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_consolidation-degree_v0-1) |
 [Contact Type](http://resource.geosciml.org/classifier/cgi/contacttype) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/contacttype) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_contact-type_v0-1) |
-[Convention Code for Strike and Dip Measurements](http://resource.geosciml.org/classifier/cgi/conventioncode) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/conventioncode) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_convention-code-for-strike-and-dip-measurements_v0-1) |
+[Convention for Strike and Dip Measurements    ](http://resource.geosciml.org/classifier/cgi/conventioncode) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/conventioncode) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_convention-code-for-strike-and-dip-measurements_v0-1) |
 [Deformation Style](http://resource.geosciml.org/classifier/cgi/deformationstyle) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/deformationstyle) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_deformation-style_v0-1) |
 [Description Purpose](http://resource.geosciml.org/classifier/cgi/descriptionpurpose) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/descriptionpurpose) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_description-purpose_v0-1) |
 [Event Environment](http://resource.geosciml.org/classifier/cgi/eventenvironment) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/eventenvironment) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_event-environment_v0-1) |
@@ -45,7 +45,7 @@ Collection of terms | Concept scheme metadata | SPARQL endpoint |
 
 ### EarthResourceML Vocabularies
 
-Collection of terms | Concept scheme metadata | SPARQL endpoint |
+Collection of terms | Concept scheme metadata    | SPARQL endpoint |
  --------------------- | ----------------------- | ------------------ | 
 [Commodity Code](http://resource.geosciml.org/classifier/cgi/commodity-code) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_commodity-code_v0-2) |
 [Earth Resource Expression](http://resource.geosciml.org/classifier/cgi/earth-resource-expression) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_earth-resource-expression_v0-1) |
@@ -61,7 +61,7 @@ Collection of terms | Concept scheme metadata | SPARQL endpoint |
 [Mining Activity](http://resource.geosciml.org/classifier/cgi/mining-activity) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_mining-activity_v0-1) |
 [Processing Activity](http://resource.geosciml.org/classifier/cgi/mining-processing-activity) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_processing-activity_v0-1) |
 [Raw Material Role](http://resource.geosciml.org/classifier/cgi/raw-material-role) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/raw-material-role) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_raw-material-role_v0-1) |
-[Reporting Classification Method](http://resource.geosciml.org/classifier/cgi/classification-method-used) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_mineral-resource-reporting-classification-method_v0-1) |
+[Reporting Classification Method    ](http://resource.geosciml.org/classifier/cgi/classification-method-used) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_mineral-resource-reporting-classification-method_v0-1) |
 [Reserve Assessment Category](http://resource.geosciml.org/classifier/cgi/reserve-assessment-category) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/reserve-assessment-category) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_reserve-assessment-category_v0-1) |
 [Resource Assessment Category](http://resource.geosciml.org/classifier/cgi/resource-assessment-category) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/resource-assessment-category) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_resource-assessment-category_v0-1) |
 [UNFC Code](http://resource.geosciml.org/classifier/cgi/unfc) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/unfc) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_unfc-code_v0-1) |
