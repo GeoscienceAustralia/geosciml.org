@@ -7,8 +7,8 @@ The vocabularies are also published at the [Research Vocabularies Australia Port
 
 ### GeoSciML Vocabularies
 
-Collection of terms | Concept scheme metadata     | SPARQL endpoint |
- --------------------- | ----------------------- | ------------------ | 
+| Collection of terms | Concept scheme metadata | SPARQL endpoint |
+|---------------------|:-----------------------:|:---------------:|
 [Alteration Type](http://resource.geosciml.org/classifier/cgi/alterationtype) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_alteration-type_v0-1) |
 [Borehole Drilling Method](http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_borehole-drilling-method_v0-1) |
 [Composition Category](http://resource.geosciml.org/classifier/cgi/compositioncategory) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/compositioncategory) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_composition-category_v0-2) |
@@ -45,8 +45,8 @@ Collection of terms | Concept scheme metadata     | SPARQL endpoint |
 
 ### EarthResourceML Vocabularies
 
-Collection of terms | Concept scheme metadata    | SPARQL endpoint |
- --------------------- | ----------------------- | ------------------ | 
+| Collection of terms | Concept scheme metadata | SPARQL endpoint |
+|---------------------|:-----------------------:|:---------------:|
 [Commodity Code](http://resource.geosciml.org/classifier/cgi/commodity-code) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/commodity-code) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_commodity-code_v0-2) |
 [Earth Resource Expression](http://resource.geosciml.org/classifier/cgi/earth-resource-expression) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/earth-resource-expression) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_earth-resource-expression_v0-1) |
 [Earth Resource Form](http://resource.geosciml.org/classifier/cgi/earth-resource-form) | [v2016.02](http://resource.geosciml.org/classifierscheme/cgi/2016.02/earth-resource-form) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_earth-resource-form_v0-1) |
@@ -61,7 +61,7 @@ Collection of terms | Concept scheme metadata    | SPARQL endpoint |
 [Mining Activity](http://resource.geosciml.org/classifier/cgi/mining-activity) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-activity) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_mining-activity_v0-1) |
 [Processing Activity](http://resource.geosciml.org/classifier/cgi/mining-processing-activity) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/mining-processing-activity) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_processing-activity_v0-1) |
 [Raw Material Role](http://resource.geosciml.org/classifier/cgi/raw-material-role) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/raw-material-role) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_raw-material-role_v0-1) |
-[Reporting Classification Method &nbsp;&nbsp;&nbsp;](http://resource.geosciml.org/classifier/cgi/classification-method-used) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_mineral-resource-reporting-classification-method_v0-1) |
+[Reporting Classification Method](http://resource.geosciml.org/classifier/cgi/classification-method-used) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/classification-method-used) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_mineral-resource-reporting-classification-method_v0-1) |
 [Reserve Assessment Category](http://resource.geosciml.org/classifier/cgi/reserve-assessment-category) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/reserve-assessment-category) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_reserve-assessment-category_v0-1) |
 [Resource Assessment Category](http://resource.geosciml.org/classifier/cgi/resource-assessment-category) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/resource-assessment-category) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_resource-assessment-category_v0-1) |
 [UNFC Code](http://resource.geosciml.org/classifier/cgi/unfc) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/unfc) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_unfc-code_v0-1) |
@@ -69,6 +69,6 @@ Collection of terms | Concept scheme metadata    | SPARQL endpoint |
 
 ### Geologic Time Vocabulary
 
-Collection of terms | Concept scheme metadata |
- --------------------- | ----------------------- |
-[International Chronostratigraphic Chart - 2016](http://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart-2016/2016-12-v3/collection) | [v2016-12](http://resource.geosciml.org/vocabulary/timescale/isc2016-12) ||
+| Collection of terms | Concept scheme metadata |
+|---------------------|:-----------------------:|
+[International Chronostratigraphic Chart - 2016](http://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart-2016/2016-12-v3/collection) | [v2016.12](http://resource.geosciml.org/vocabulary/timescale/isc2016-12) ||
