@@ -5,7 +5,7 @@
  mode as some of the INSPIRE code list documents accessed are not Schema
  valid and so stop the processing. 2015-05-21. -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
-
+ 
  <ns prefix="xlink" uri="http://www.w3.org/1999/xlink"/>
  <ns prefix="xsi" uri="http://www.w3.org/2001/XMLSchema-instance" />
  <ns prefix="gsmlb" uri="http://www.opengis.net/gsml/4.1/GeoSciML-Basic"/>

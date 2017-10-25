@@ -6,7 +6,7 @@
  <xsl:import-schema schema-location="geoSciMLBasic.xsd"
   namespace="http://www.opengis.net/gsml/4.1/GeoSciML-Basic"/>
  -->
- <!-- To Do
+ <!-- To Do 
   - For complex properties should ensure they have content or are nil
  -->
  <title>Properties mandatory for INSPIRE</title>
