@@ -3,7 +3,7 @@
  GeoSciML properties to which they apply.
  This Schematron cannot currently be used with a processor in Schema aware
  mode as some of the INSPIRE code list documents accessed are not Schema
- valid and so stop the processing. 2015-05-21. -->
+ valid and so stop the processing. 2015-05-21.  -->
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
  
  <ns prefix="xlink" uri="http://www.w3.org/1999/xlink"/>

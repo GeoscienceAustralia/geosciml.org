@@ -2,7 +2,7 @@
 <schema xmlns="http://purl.oclc.org/dsdl/schematron"
  xmlns:fn="http://www.w3.org/2005/xpath-functions"
  xmlns:xsl="http://www.w3.org/1999/XSL/Transform" queryBinding="xslt2">
- <!-- Only for use with Schema aware processor
+ <!-- Only for use with Schema aware processor 
  <xsl:import-schema schema-location="geoSciMLBasic.xsd"
   namespace="http://www.opengis.net/gsml/4.1/GeoSciML-Basic"/>
  -->
