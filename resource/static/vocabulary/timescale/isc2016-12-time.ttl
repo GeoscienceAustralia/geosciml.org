@@ -3140,7 +3140,10 @@ isc:BaseUpperOrdovician-location
   rdfs:label "Location of Stratotype Point Base of Upper Ordovician"@en ;
 .
 isc:BaseUpperOrdovicianTime
+  rdf:type time:TimePosition ;
   gts:positionalUncertainty isc:BaseUpperOrdovicianUncertainty ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
+  time:numericPosition 458.4 ;
 .
 isc:BaseUpperOrdovicianUncertainty
   rdf:type time:Duration ;
@@ -13374,7 +13377,7 @@ isc:Zanclean
   owl:imports <http://resource.geosciml.org/ontology/timescale/gts/w3c> ;
   owl:imports <http://www.opengis.net/ont/geosparql> ;
   owl:sameAs <http://resource.geosciml.org/classifierscheme/ics/2016/ischart> ;
-  skos:changeNote """1. THORS ontology updated to align with OWL-Time (instead of ISO 19108). 
+  skos:changeNote """1. THORS ontology updated to align with OWL-Time (instead of ISO 19108).
 2. GTS ontology updated to use sam-lite (instead of OWL implementation of ISO 19156) with a lightweight SOSA alignment
 3. Spatial data uses GeoSPARQL (instead of OWL implementation of ISO 19107)""" ;
   skos:changeNote "See <http://stratigraphy.org/ICSchart/ChangeLog2012-2013-2014-2015-2016.txt> for changes from prior versions"@en ;
