@@ -4,12 +4,12 @@ This repository contains all of the static website code for the [www.geosciml.or
 * [resource.geosciml.org](http://resource.geosciml.org)
 * [schemas.geosciml.org](http://schemas.geosciml.org)
 
-### Copyright & License
+## License
 This site's code and this repository are copyright the [IUGS Commission for the Management and Application of Geoscience Information (CGI)](http://www.cgi-iugs.org/)
 
 This site's code and all the textual content are licensed for reuse under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) license. See [LICENSE](LICENSE) for a copy of the deed.
 
-### Tools used
+## Tools used
 
 This site contains: 
 
@@ -19,7 +19,7 @@ This site contains:
 * RDF files generated in tools such as Protege, TopBraid, Oxygen, and XSLT translators
 * The 5 or so main pages of this website are pages rendered into HTML by PHP which interprets Markdown text files using the Parsedown PHP plugin. 
 
-### Project Structure
+## Project Structure
 The following directories in this repository manage the following content:
 
 * **pages**: all of the Markdown files used to make site HTML pages
@@ -41,7 +41,7 @@ The files in this main directory do the following things:
 * **settings.php**: global settings used by multiple PHP files
 * **TODO.txt**: a list of todo items provided to assist future developers of this repository 
 
-### Authors
+## Contacts
 The authors of this content are:
 
 * **CGI members**
