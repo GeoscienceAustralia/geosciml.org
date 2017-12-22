@@ -79,7 +79,7 @@ isc:Aalenian
   time:intervalMetBy isc:LowerJurassic ;
   time:intervalMetBy isc:Toarcian ;
   time:intervalStarts isc:MiddleJurassic ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Aalenian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Aalenian> ;
 .
 isc:Aeronian
   rdf:type gts:Age ;
@@ -123,7 +123,7 @@ isc:Aeronian
   time:intervalIn isc:Llandovery ;
   time:intervalMeets isc:Telychian ;
   time:intervalMetBy isc:Rhuddanian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Aeronian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Aeronian> ;
 .
 isc:Ages
   rdf:type xkos:ClassificationLevel ;
@@ -272,7 +272,7 @@ isc:Albian
   time:intervalMeets isc:Cenomanian ;
   time:intervalMeets isc:UpperCretaceous ;
   time:intervalMetBy isc:Aptian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Albian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Albian> ;
 .
 isc:Anisian
   rdf:type gts:Age ;
@@ -317,7 +317,7 @@ isc:Anisian
   time:intervalMetBy isc:LowerTriassic ;
   time:intervalMetBy isc:Olenekian ;
   time:intervalStarts isc:MiddleTriassic ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Anisian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Anisian> ;
 .
 isc:Aptian
   rdf:type gts:Age ;
@@ -361,7 +361,7 @@ isc:Aptian
   time:intervalIn isc:LowerCretaceous ;
   time:intervalMeets isc:Albian ;
   time:intervalMetBy isc:Barremian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Aptian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Aptian> ;
 .
 isc:Aquitanian
   rdf:type gts:Age ;
@@ -407,7 +407,7 @@ isc:Aquitanian
   time:intervalMetBy isc:Oligocene ;
   time:intervalMetBy isc:Paleogene ;
   time:intervalStarts isc:Miocene ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Aquitanian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Aquitanian> ;
 .
 isc:Archean
   rdf:type gts:Eon ;
@@ -461,7 +461,7 @@ isc:Archean
   time:intervalMeets isc:Siderian ;
   time:intervalMetBy isc:Hadean ;
   time:intervalStartedBy isc:Eoarchean ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Archean> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Archean> ;
 .
 isc:Artinskian
   rdf:type gts:Age ;
@@ -505,7 +505,7 @@ isc:Artinskian
   time:intervalIn isc:Cisuralian ;
   time:intervalMeets isc:Kungurian ;
   time:intervalMetBy isc:Sakmarian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Artinskian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Artinskian> ;
 .
 isc:Asselian
   rdf:type gts:Age ;
@@ -553,7 +553,7 @@ isc:Asselian
   time:intervalMetBy isc:UpperMississippian ;
   time:intervalMetBy isc:UpperPennsylvanian ;
   time:intervalStarts isc:Cisuralian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Asselian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Asselian> ;
 .
 isc:Bajocian
   rdf:type gts:Age ;
@@ -597,7 +597,7 @@ isc:Bajocian
   time:intervalIn isc:MiddleJurassic ;
   time:intervalMeets isc:Bathonian ;
   time:intervalMetBy isc:Aalenian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Bajocian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Bajocian> ;
 .
 isc:Barremian
   rdf:type gts:Age ;
@@ -641,7 +641,7 @@ isc:Barremian
   time:intervalIn isc:LowerCretaceous ;
   time:intervalMeets isc:Aptian ;
   time:intervalMetBy isc:Hauterivian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Barremian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Barremian> ;
 .
 isc:Bartonian
   rdf:type gts:Age ;
@@ -685,7 +685,7 @@ isc:Bartonian
   time:intervalIn isc:Eocene ;
   time:intervalMeets isc:Priabonian ;
   time:intervalMetBy isc:Lutetian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Bartonian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Bartonian> ;
 .
 isc:BaseAeronian
   rdf:type gts:GeochronologicBoundary ;
@@ -4393,7 +4393,7 @@ isc:Bashkirian
   time:intervalMeets isc:Moscovian ;
   time:intervalMetBy isc:Mississippian ;
   time:intervalMetBy isc:Serpukhovian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Bashkirian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Bashkirian> ;
 .
 isc:Bathonian
   rdf:type gts:Age ;
@@ -4437,7 +4437,7 @@ isc:Bathonian
   time:intervalIn isc:MiddleJurassic ;
   time:intervalMeets isc:Callovian ;
   time:intervalMetBy isc:Bajocian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Bathonian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Bathonian> ;
 .
 isc:Berriasian
   rdf:type gts:Age ;
@@ -4483,7 +4483,7 @@ isc:Berriasian
   time:intervalMetBy isc:Tithonian ;
   time:intervalMetBy isc:UpperJurassic ;
   time:intervalStarts isc:LowerCretaceous ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Berriasian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Berriasian> ;
 .
 isc:Boundaries
   rdf:type skos:OrderedCollection ;
@@ -4889,7 +4889,7 @@ isc:Burdigalian
   time:intervalIn isc:Miocene ;
   time:intervalMeets isc:Langhian ;
   time:intervalMetBy isc:Aquitanian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Burdigalian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Burdigalian> ;
 .
 isc:Calabrian
   rdf:type gts:Age ;
@@ -4933,7 +4933,7 @@ isc:Calabrian
   time:intervalIn isc:Pleistocene ;
   time:intervalMeets isc:MiddlePleistocene ;
   time:intervalMetBy isc:Gelasian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Calabrian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Calabrian> ;
 .
 isc:Callovian
   rdf:type gts:Age ;
@@ -4978,7 +4978,7 @@ isc:Callovian
   time:intervalMeets isc:Oxfordian ;
   time:intervalMeets isc:UpperJurassic ;
   time:intervalMetBy isc:Bathonian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Callovian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Callovian> ;
 .
 isc:Calymmian
   rdf:type gts:GeochronologicEra ;
@@ -5022,7 +5022,7 @@ isc:Calymmian
   time:intervalMetBy isc:Paleoproterozoic ;
   time:intervalMetBy isc:Statherian ;
   time:intervalStarts isc:Mesoproterozoic ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Calymmian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Calymmian> ;
 .
 isc:Cambrian
   rdf:type gts:GeochronologicEra ;
@@ -5087,7 +5087,7 @@ isc:Cambrian
   time:intervalMetBy isc:Proterozoic ;
   time:intervalStartedBy isc:Terreneuvian ;
   time:intervalStarts isc:Paleozoic ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Cambrian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Cambrian> ;
 .
 isc:CambrianSeries2
   rdf:type gts:Epoch ;
@@ -5443,7 +5443,7 @@ isc:Campanian
   time:intervalIn isc:UpperCretaceous ;
   time:intervalMeets isc:Maastrichtian ;
   time:intervalMetBy isc:Santonian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Campanian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Campanian> ;
 .
 isc:Capitanian
   rdf:type gts:Age ;
@@ -5488,7 +5488,7 @@ isc:Capitanian
   time:intervalMeets isc:Guadalupian ;
   time:intervalMeets isc:Roadian ;
   time:intervalMetBy isc:Wordian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Capitanian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Capitanian> ;
 .
 isc:Carboniferous
   rdf:type gts:GeochronologicEra ;
@@ -5551,7 +5551,7 @@ isc:Carboniferous
   time:intervalMetBy isc:Famennian ;
   time:intervalMetBy isc:UpperDevonian ;
   time:intervalStartedBy isc:Mississippian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Carboniferous> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Carboniferous> ;
 .
 isc:Carnian
   rdf:type gts:Age ;
@@ -5596,7 +5596,7 @@ isc:Carnian
   time:intervalMetBy isc:Ladinian ;
   time:intervalMetBy isc:MiddleTriassic ;
   time:intervalStarts isc:UpperTriassic ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Carnian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Carnian> ;
 .
 isc:Cenomanian
   rdf:type gts:Age ;
@@ -5641,7 +5641,7 @@ isc:Cenomanian
   time:intervalMetBy isc:Albian ;
   time:intervalMetBy isc:LowerCretaceous ;
   time:intervalStarts isc:UpperCretaceous ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Cenomanian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Cenomanian> ;
 .
 isc:Cenozoic
   rdf:type gts:Era ;
@@ -5720,7 +5720,7 @@ isc:Cenozoic
   time:intervalMetBy isc:Mesozoic ;
   time:intervalMetBy isc:UpperCretaceous ;
   time:intervalStartedBy isc:Paleogene ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Cenozoic> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Cenozoic> ;
 .
 isc:Changhsingian
   rdf:type gts:Age ;
@@ -5767,7 +5767,7 @@ isc:Changhsingian
   time:intervalMeets isc:Mesozoic ;
   time:intervalMeets isc:Triassic ;
   time:intervalMetBy isc:Wuchiapingian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Changhsingian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Changhsingian> ;
 .
 isc:Chattian
   rdf:type gts:Age ;
@@ -5813,7 +5813,7 @@ isc:Chattian
   time:intervalMeets isc:Miocene ;
   time:intervalMeets isc:Neogene ;
   time:intervalMetBy isc:Rupelian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Chattian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Chattian> ;
 .
 isc:Cisuralian
   rdf:type gts:Epoch ;
@@ -5869,7 +5869,7 @@ isc:Cisuralian
   time:intervalMetBy isc:UpperPennsylvanian ;
   time:intervalStartedBy isc:Asselian ;
   time:intervalStarts isc:Permian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Cisuralian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Cisuralian> ;
 .
 isc:Coniacian
   rdf:type gts:Age ;
@@ -5913,7 +5913,7 @@ isc:Coniacian
   time:intervalIn isc:UpperCretaceous ;
   time:intervalMeets isc:Santonian ;
   time:intervalMetBy isc:Turonian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Coniacian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Coniacian> ;
 .
 isc:Cretaceous
   rdf:type gts:GeochronologicEra ;
@@ -5976,7 +5976,7 @@ isc:Cretaceous
   time:intervalMetBy isc:Tithonian ;
   time:intervalMetBy isc:UpperJurassic ;
   time:intervalStartedBy isc:LowerCretaceous ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Cretaceous> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Cretaceous> ;
 .
 isc:Cryogenian
   rdf:type gts:GeochronologicEra ;
@@ -6019,7 +6019,7 @@ isc:Cryogenian
   time:intervalIn isc:Neoproterozoic ;
   time:intervalMeets isc:Ediacaran ;
   time:intervalMetBy isc:Tonian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Cryogenian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Cryogenian> ;
 .
 isc:Danian
   rdf:type gts:Age ;
@@ -6066,7 +6066,7 @@ isc:Danian
   time:intervalMetBy isc:Mesozoic ;
   time:intervalMetBy isc:UpperCretaceous ;
   time:intervalStarts isc:Paleocene ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Danian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Danian> ;
 .
 isc:Dapingian
   rdf:type gts:Age ;
@@ -6111,7 +6111,7 @@ isc:Dapingian
   time:intervalMetBy isc:Floian ;
   time:intervalMetBy isc:LowerOrdovician ;
   time:intervalStarts isc:MiddleOrdovician ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Dapingian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Dapingian> ;
 .
 isc:Darriwilian
   rdf:type gts:Age ;
@@ -6154,7 +6154,7 @@ isc:Darriwilian
   time:intervalMeets isc:Sandbian ;
   time:intervalMeets isc:UpperOrdovician ;
   time:intervalMetBy isc:Dapingian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Darriwilian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Darriwilian> ;
 .
 isc:Devonian
   rdf:type gts:GeochronologicEra ;
@@ -6213,7 +6213,7 @@ isc:Devonian
   time:intervalMetBy isc:Pridoli ;
   time:intervalMetBy isc:Silurian ;
   time:intervalStartedBy isc:LowerDevonian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Devonian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Devonian> ;
 .
 isc:Drumian
   rdf:type gts:Age ;
@@ -6257,7 +6257,7 @@ isc:Drumian
   time:intervalIn isc:CambrianSeries3 ;
   time:intervalMeets isc:Guzhangian ;
   time:intervalMetBy isc:CambrianStage5 ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Drumian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Drumian> ;
 .
 isc:Ectasian
   rdf:type gts:GeochronologicEra ;
@@ -6300,7 +6300,7 @@ isc:Ectasian
   time:intervalIn isc:Mesoproterozoic ;
   time:intervalMeets isc:Stenian ;
   time:intervalMetBy isc:Calymmian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Ectasian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Ectasian> ;
 .
 isc:Ediacaran
   rdf:type gts:GeochronologicEra ;
@@ -6348,7 +6348,7 @@ isc:Ediacaran
   time:intervalMeets isc:Phanerozoic ;
   time:intervalMeets isc:Terreneuvian ;
   time:intervalMetBy isc:Cryogenian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Ediacaran> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Ediacaran> ;
 .
 isc:Eifelian
   rdf:type gts:Age ;
@@ -6393,7 +6393,7 @@ isc:Eifelian
   time:intervalMetBy isc:Emsian ;
   time:intervalMetBy isc:LowerDevonian ;
   time:intervalStarts isc:MiddleDevonian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Eifelian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Eifelian> ;
 .
 isc:Emsian
   rdf:type gts:Age ;
@@ -6438,7 +6438,7 @@ isc:Emsian
   time:intervalMeets isc:Eifelian ;
   time:intervalMeets isc:MiddleDevonian ;
   time:intervalMetBy isc:Pragian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Emsian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Emsian> ;
 .
 isc:Eoarchean
   rdf:type gts:Era ;
@@ -6482,7 +6482,7 @@ isc:Eoarchean
   time:intervalMeets isc:Paleoarchean ;
   time:intervalMetBy isc:Hadean ;
   time:intervalStarts isc:Archean ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Eoarchean> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Eoarchean> ;
 .
 isc:Eocene
   rdf:type gts:Epoch ;
@@ -6535,7 +6535,7 @@ isc:Eocene
   time:intervalMetBy isc:Paleocene ;
   time:intervalMetBy isc:Thanetian ;
   time:intervalStartedBy isc:Ypresian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Eocene> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Eocene> ;
 .
 isc:Eons
   rdf:type xkos:ClassificationLevel ;
@@ -6652,7 +6652,7 @@ isc:Famennian
   time:intervalMeets isc:Mississippian ;
   time:intervalMeets isc:Tournaisian ;
   time:intervalMetBy isc:Frasnian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Famennian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Famennian> ;
 .
 isc:Floian
   rdf:type gts:Age ;
@@ -6696,7 +6696,7 @@ isc:Floian
   time:intervalMeets isc:Dapingian ;
   time:intervalMeets isc:MiddleOrdovician ;
   time:intervalMetBy isc:Tremadocian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Floian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Floian> ;
 .
 isc:FormationOfEarth
   rdf:type thors:EraBoundary ;
@@ -6766,7 +6766,7 @@ isc:Fortunian
   time:intervalMetBy isc:Precambrian ;
   time:intervalMetBy isc:Proterozoic ;
   time:intervalStarts isc:Terreneuvian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Fortunian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Fortunian> ;
 .
 isc:Frasnian
   rdf:type gts:Age ;
@@ -6811,7 +6811,7 @@ isc:Frasnian
   time:intervalMetBy isc:Givetian ;
   time:intervalMetBy isc:MiddleDevonian ;
   time:intervalStarts isc:UpperDevonian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Frasnian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Frasnian> ;
 .
 isc:Furongian
   rdf:type gts:Epoch ;
@@ -6863,7 +6863,7 @@ isc:Furongian
   time:intervalMetBy isc:CambrianSeries3 ;
   time:intervalMetBy isc:Guzhangian ;
   time:intervalStartedBy isc:Paibian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Furongian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Furongian> ;
 .
 isc:Gelasian
   rdf:type gts:Age ;
@@ -6908,7 +6908,7 @@ isc:Gelasian
   time:intervalMetBy isc:Piacenzian ;
   time:intervalMetBy isc:Pliocene ;
   time:intervalStarts isc:Pleistocene ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Gelasian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Gelasian> ;
 .
 isc:GeochronologicEras
   rdf:type xkos:ClassificationLevel ;
@@ -7136,7 +7136,7 @@ isc:Givetian
   time:intervalMeets isc:Frasnian ;
   time:intervalMeets isc:UpperDevonian ;
   time:intervalMetBy isc:Eifelian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Givetian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Givetian> ;
 .
 isc:Gorstian
   rdf:type gts:Age ;
@@ -7181,7 +7181,7 @@ isc:Gorstian
   time:intervalMetBy isc:Homerian ;
   time:intervalMetBy isc:Wenlock ;
   time:intervalStarts isc:Ludlow ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Gorstian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Gorstian> ;
 .
 isc:Guadalupian
   rdf:type gts:Epoch ;
@@ -7233,7 +7233,7 @@ isc:Guadalupian
   time:intervalMetBy isc:Cisuralian ;
   time:intervalMetBy isc:Kungurian ;
   time:intervalStartedBy isc:Roadian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Guadalupian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Guadalupian> ;
 .
 isc:Guzhangian
   rdf:type gts:Age ;
@@ -7278,7 +7278,7 @@ isc:Guzhangian
   time:intervalMeets isc:Furongian ;
   time:intervalMeets isc:Paibian ;
   time:intervalMetBy isc:Drumian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Guzhangian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Guzhangian> ;
 .
 isc:Gzhelian
   rdf:type gts:Age ;
@@ -7325,7 +7325,7 @@ isc:Gzhelian
   time:intervalMeets isc:Cisuralian ;
   time:intervalMeets isc:Permian ;
   time:intervalMetBy isc:Kasimovian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Gzhelian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Gzhelian> ;
 .
 isc:Hadean
   rdf:type gts:Eon ;
@@ -7366,7 +7366,7 @@ isc:Hadean
   time:intervalMeets isc:Archean ;
   time:intervalMeets isc:Eoarchean ;
   time:intervalStarts isc:Precambrian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Hadean> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Hadean> ;
 .
 isc:Hauterivian
   rdf:type gts:Age ;
@@ -7410,7 +7410,7 @@ isc:Hauterivian
   time:intervalIn isc:LowerCretaceous ;
   time:intervalMeets isc:Barremian ;
   time:intervalMetBy isc:Valanginian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Hauterivian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Hauterivian> ;
 .
 isc:Hettangian
   rdf:type gts:Age ;
@@ -7456,7 +7456,7 @@ isc:Hettangian
   time:intervalMetBy isc:Triassic ;
   time:intervalMetBy isc:UpperTriassic ;
   time:intervalStarts isc:LowerJurassic ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Hettangian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Hettangian> ;
 .
 isc:Hirnantian
   rdf:type gts:Age ;
@@ -7502,7 +7502,7 @@ isc:Hirnantian
   time:intervalMeets isc:Rhuddanian ;
   time:intervalMeets isc:Silurian ;
   time:intervalMetBy isc:Katian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Hirnantian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Hirnantian> ;
 .
 isc:Holocene
   rdf:type gts:Epoch ;
@@ -7545,7 +7545,7 @@ isc:Holocene
   time:intervalIn isc:Quaternary ;
   time:intervalMetBy isc:Pleistocene ;
   time:intervalMetBy isc:UpperPleistocene ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Holocene> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Holocene> ;
 .
 isc:Homerian
   rdf:type gts:Age ;
@@ -7590,7 +7590,7 @@ isc:Homerian
   time:intervalMeets isc:Gorstian ;
   time:intervalMeets isc:Ludlow ;
   time:intervalMetBy isc:Sheinwoodian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Homerian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Homerian> ;
 .
 isc:Induan
   rdf:type gts:Age ;
@@ -7637,7 +7637,7 @@ isc:Induan
   time:intervalMetBy isc:Paleozoic ;
   time:intervalMetBy isc:Permian ;
   time:intervalStarts isc:LowerTriassic ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Induan> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Induan> ;
 .
 isc:Ionian
   rdf:type gts:GeochronologicEra ;
@@ -7751,7 +7751,7 @@ isc:Jurassic
   time:intervalMetBy isc:Triassic ;
   time:intervalMetBy isc:UpperTriassic ;
   time:intervalStartedBy isc:LowerJurassic ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Jurassic> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Jurassic> ;
 .
 isc:Kasimovian
   rdf:type gts:Age ;
@@ -7797,7 +7797,7 @@ isc:Kasimovian
   time:intervalMetBy isc:MiddlePennsylvanian ;
   time:intervalMetBy isc:Moscovian ;
   time:intervalStarts isc:UpperPennsylvanian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Kasimovian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Kasimovian> ;
 .
 isc:Katian
   rdf:type gts:Age ;
@@ -7841,7 +7841,7 @@ isc:Katian
   time:intervalIn isc:UpperOrdovician ;
   time:intervalMeets isc:Hirnantian ;
   time:intervalMetBy isc:Sandbian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Katian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Katian> ;
 .
 isc:Kimmeridgian
   rdf:type gts:Age ;
@@ -7885,7 +7885,7 @@ isc:Kimmeridgian
   time:intervalIn isc:UpperJurassic ;
   time:intervalMeets isc:Tithonian ;
   time:intervalMetBy isc:Oxfordian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Kimmeridgian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Kimmeridgian> ;
 .
 isc:Kungurian
   rdf:type gts:Age ;
@@ -7930,7 +7930,7 @@ isc:Kungurian
   time:intervalMeets isc:Guadalupian ;
   time:intervalMeets isc:Roadian ;
   time:intervalMetBy isc:Artinskian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Kungurian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Kungurian> ;
 .
 isc:Ladinian
   rdf:type gts:Age ;
@@ -7975,7 +7975,7 @@ isc:Ladinian
   time:intervalMeets isc:Carnian ;
   time:intervalMeets isc:UpperTriassic ;
   time:intervalMetBy isc:Anisian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Ladinian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Ladinian> ;
 .
 isc:Langhian
   rdf:type gts:Age ;
@@ -8019,7 +8019,7 @@ isc:Langhian
   time:intervalIn isc:Miocene ;
   time:intervalMeets isc:Serravallian ;
   time:intervalMetBy isc:Burdigalian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Langhian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Langhian> ;
 .
 isc:Llandovery
   rdf:type gts:Epoch ;
@@ -8071,7 +8071,7 @@ isc:Llandovery
   time:intervalMetBy isc:UpperOrdovician ;
   time:intervalStartedBy isc:Rhuddanian ;
   time:intervalStarts isc:Silurian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Llandovery> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Llandovery> ;
 .
 isc:Lochkovian
   rdf:type gts:Age ;
@@ -8116,7 +8116,7 @@ isc:Lochkovian
   time:intervalMetBy isc:Pridoli ;
   time:intervalMetBy isc:Silurian ;
   time:intervalStarts isc:LowerDevonian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Lochkovian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Lochkovian> ;
 .
 isc:Lopingian
   rdf:type gts:Epoch ;
@@ -8166,7 +8166,7 @@ isc:Lopingian
   time:intervalMeets isc:Triassic ;
   time:intervalMetBy isc:Guadalupian ;
   time:intervalStartedBy isc:Wuchiapingian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Lopingian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Lopingian> ;
 .
 isc:LowerCretaceous
   rdf:type gts:Epoch ;
@@ -8226,7 +8226,7 @@ isc:LowerCretaceous
   time:intervalMetBy isc:UpperJurassic ;
   time:intervalStartedBy isc:Berriasian ;
   time:intervalStarts isc:Cretaceous ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#LowerCretaceous> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/LowerCretaceous> ;
 .
 isc:LowerDevonian
   rdf:type gts:Epoch ;
@@ -8279,7 +8279,7 @@ isc:LowerDevonian
   time:intervalMetBy isc:Silurian ;
   time:intervalStartedBy isc:Lochkovian ;
   time:intervalStarts isc:Devonian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#LowerDevonian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/LowerDevonian> ;
 .
 isc:LowerJurassic
   rdf:type gts:Epoch ;
@@ -8335,7 +8335,7 @@ isc:LowerJurassic
   time:intervalMetBy isc:UpperTriassic ;
   time:intervalStartedBy isc:Hettangian ;
   time:intervalStarts isc:Jurassic ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#LowerJurassic> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/LowerJurassic> ;
 .
 isc:LowerMississippian
   rdf:type gts:Epoch ;
@@ -8366,7 +8366,7 @@ isc:LowerMississippian
   time:intervalMetBy isc:Famennian ;
   time:intervalMetBy isc:UpperDevonian ;
   time:intervalStarts isc:Mississippian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#LowerMississippian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/LowerMississippian> ;
 .
 isc:LowerOrdovician
   rdf:type gts:Epoch ;
@@ -8418,7 +8418,7 @@ isc:LowerOrdovician
   time:intervalMetBy isc:Furongian ;
   time:intervalStartedBy isc:Tremadocian ;
   time:intervalStarts isc:Ordovician ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#LowerOrdovician> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/LowerOrdovician> ;
 .
 isc:LowerPennsylvanian
   rdf:type gts:Epoch ;
@@ -8448,7 +8448,7 @@ isc:LowerPennsylvanian
   time:intervalMetBy isc:Mississippian ;
   time:intervalMetBy isc:Serpukhovian ;
   time:intervalStarts isc:Pennsylvanian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#LowerPennsylvanian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/LowerPennsylvanian> ;
 .
 isc:LowerTriassic
   rdf:type gts:Epoch ;
@@ -8501,7 +8501,7 @@ isc:LowerTriassic
   time:intervalMetBy isc:Permian ;
   time:intervalStartedBy isc:Induan ;
   time:intervalStarts isc:Triassic ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#LowerTriassic> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/LowerTriassic> ;
 .
 isc:Ludfordian
   rdf:type gts:Age ;
@@ -8545,7 +8545,7 @@ isc:Ludfordian
   time:intervalIn isc:Ludlow ;
   time:intervalMeets isc:Pridoli ;
   time:intervalMetBy isc:Gorstian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Ludfordian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Ludfordian> ;
 .
 isc:Ludlow
   rdf:type gts:Epoch ;
@@ -8593,7 +8593,7 @@ isc:Ludlow
   time:intervalMetBy isc:Homerian ;
   time:intervalMetBy isc:Wenlock ;
   time:intervalStartedBy isc:Gorstian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Ludlow> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Ludlow> ;
 .
 isc:Lutetian
   rdf:type gts:Age ;
@@ -8637,7 +8637,7 @@ isc:Lutetian
   time:intervalIn isc:Eocene ;
   time:intervalMeets isc:Bartonian ;
   time:intervalMetBy isc:Ypresian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Lutetian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Lutetian> ;
 .
 isc:Maastrichtian
   rdf:type gts:Age ;
@@ -8684,7 +8684,7 @@ isc:Maastrichtian
   time:intervalMeets isc:Paleocene ;
   time:intervalMeets isc:Paleogene ;
   time:intervalMetBy isc:Campanian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Maastrichtian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Maastrichtian> ;
 .
 isc:Mesoarchean
   rdf:type gts:Era ;
@@ -8728,7 +8728,7 @@ isc:Mesoarchean
   time:intervalIn isc:Archean ;
   time:intervalMeets isc:Neoarchean ;
   time:intervalMetBy isc:Paleoarchean ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Mesoarchean> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Mesoarchean> ;
 .
 isc:Mesoproterozoic
   rdf:type gts:Era ;
@@ -8778,7 +8778,7 @@ isc:Mesoproterozoic
   time:intervalMetBy isc:Paleoproterozoic ;
   time:intervalMetBy isc:Statherian ;
   time:intervalStartedBy isc:Calymmian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Mesoproterozoic> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Mesoproterozoic> ;
 .
 isc:Mesozoic
   rdf:type gts:Era ;
@@ -8869,7 +8869,7 @@ isc:Mesozoic
   time:intervalMetBy isc:Paleozoic ;
   time:intervalMetBy isc:Permian ;
   time:intervalStartedBy isc:Triassic ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Mesozoic> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Mesozoic> ;
 .
 isc:Messinian
   rdf:type gts:Age ;
@@ -8914,7 +8914,7 @@ isc:Messinian
   time:intervalMeets isc:Pliocene ;
   time:intervalMeets isc:Zanclean ;
   time:intervalMetBy isc:Tortonian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Messinian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Messinian> ;
 .
 isc:MiddleDevonian
   rdf:type gts:Epoch ;
@@ -8965,7 +8965,7 @@ isc:MiddleDevonian
   time:intervalMetBy isc:Emsian ;
   time:intervalMetBy isc:LowerDevonian ;
   time:intervalStartedBy isc:Eifelian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#MiddleDevonian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/MiddleDevonian> ;
 .
 isc:MiddleJurassic
   rdf:type gts:Epoch ;
@@ -9020,7 +9020,7 @@ isc:MiddleJurassic
   time:intervalMetBy isc:LowerJurassic ;
   time:intervalMetBy isc:Toarcian ;
   time:intervalStartedBy isc:Aalenian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#MiddleJurassic> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/MiddleJurassic> ;
 .
 isc:MiddleMississippian
   rdf:type gts:Epoch ;
@@ -9050,7 +9050,7 @@ isc:MiddleMississippian
   time:intervalMeets isc:UpperMississippian ;
   time:intervalMetBy isc:LowerMississippian ;
   time:intervalMetBy isc:Tournaisian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#MiddleMississippian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/MiddleMississippian> ;
 .
 isc:MiddleOrdovician
   rdf:type gts:Epoch ;
@@ -9099,7 +9099,7 @@ isc:MiddleOrdovician
   time:intervalMetBy isc:Floian ;
   time:intervalMetBy isc:LowerOrdovician ;
   time:intervalStartedBy isc:Dapingian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#MiddleOrdovician> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/MiddleOrdovician> ;
 .
 isc:MiddlePennsylvanian
   rdf:type gts:Epoch ;
@@ -9129,7 +9129,7 @@ isc:MiddlePennsylvanian
   time:intervalMeets isc:UpperPennsylvanian ;
   time:intervalMetBy isc:Bashkirian ;
   time:intervalMetBy isc:LowerPennsylvanian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#MiddlePennsylvanian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/MiddlePennsylvanian> ;
 .
 isc:MiddlePleistocene
   rdf:type gts:Age ;
@@ -9195,7 +9195,7 @@ isc:MiddlePleistocene
   time:intervalIn isc:Pleistocene ;
   time:intervalMeets isc:UpperPleistocene ;
   time:intervalMetBy isc:Calabrian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Ionian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Ionian> ;
 .
 isc:MiddleTriassic
   rdf:type gts:Epoch ;
@@ -9246,7 +9246,7 @@ isc:MiddleTriassic
   time:intervalMetBy isc:LowerTriassic ;
   time:intervalMetBy isc:Olenekian ;
   time:intervalStartedBy isc:Anisian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#MiddleTriassic> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/MiddleTriassic> ;
 .
 isc:Miocene
   rdf:type gts:Epoch ;
@@ -9304,7 +9304,7 @@ isc:Miocene
   time:intervalMetBy isc:Paleogene ;
   time:intervalStartedBy isc:Aquitanian ;
   time:intervalStarts isc:Neogene ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Miocene> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Miocene> ;
 .
 isc:Mississippian
   rdf:type gts:GeochronologicEra ;
@@ -9360,7 +9360,7 @@ isc:Mississippian
   time:intervalMetBy isc:UpperDevonian ;
   time:intervalStartedBy isc:LowerMississippian ;
   time:intervalStarts isc:Carboniferous ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Mississippian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Mississippian> ;
 .
 isc:Moscovian
   rdf:type gts:Age ;
@@ -9407,7 +9407,7 @@ isc:Moscovian
   time:intervalMeets isc:UpperPennsylvanian ;
   time:intervalMetBy isc:Bashkirian ;
   time:intervalMetBy isc:LowerPennsylvanian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Moscovian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Moscovian> ;
 .
 isc:Neoarchean
   rdf:type gts:Era ;
@@ -9453,7 +9453,7 @@ isc:Neoarchean
   time:intervalMeets isc:Proterozoic ;
   time:intervalMeets isc:Siderian ;
   time:intervalMetBy isc:Mesoarchean ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Neoarchean> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Neoarchean> ;
 .
 isc:Neogene
   rdf:type gts:GeochronologicEra ;
@@ -9511,7 +9511,7 @@ isc:Neogene
   time:intervalMetBy isc:Oligocene ;
   time:intervalMetBy isc:Paleogene ;
   time:intervalStartedBy isc:Miocene ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Neogene> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Neogene> ;
 .
 isc:Neoproterozoic
   rdf:type gts:Era ;
@@ -9564,7 +9564,7 @@ isc:Neoproterozoic
   time:intervalMetBy isc:Mesoproterozoic ;
   time:intervalMetBy isc:Stenian ;
   time:intervalStartedBy isc:Tonian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Neoproterozoic> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Neoproterozoic> ;
 .
 isc:Norian
   rdf:type gts:Age ;
@@ -9608,7 +9608,7 @@ isc:Norian
   time:intervalIn isc:UpperTriassic ;
   time:intervalMeets isc:Rhaetian ;
   time:intervalMetBy isc:Carnian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Norian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Norian> ;
 .
 isc:Olenekian
   rdf:type gts:Age ;
@@ -9653,7 +9653,7 @@ isc:Olenekian
   time:intervalMeets isc:Anisian ;
   time:intervalMeets isc:MiddleTriassic ;
   time:intervalMetBy isc:Induan ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Olenekian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Olenekian> ;
 .
 isc:Oligocene
   rdf:type gts:Epoch ;
@@ -9703,7 +9703,7 @@ isc:Oligocene
   time:intervalMetBy isc:Eocene ;
   time:intervalMetBy isc:Priabonian ;
   time:intervalStartedBy isc:Rupelian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Oligocene> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Oligocene> ;
 .
 isc:Ordovician
   rdf:type gts:GeochronologicEra ;
@@ -9762,7 +9762,7 @@ isc:Ordovician
   time:intervalMetBy isc:CambrianStage10 ;
   time:intervalMetBy isc:Furongian ;
   time:intervalStartedBy isc:LowerOrdovician ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Ordovician> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Ordovician> ;
 .
 isc:Orosirian
   rdf:type gts:GeochronologicEra ;
@@ -9805,7 +9805,7 @@ isc:Orosirian
   time:intervalIn isc:Paleoproterozoic ;
   time:intervalMeets isc:Statherian ;
   time:intervalMetBy isc:Rhyacian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Orosirian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Orosirian> ;
 .
 isc:Oxfordian
   rdf:type gts:Age ;
@@ -9850,7 +9850,7 @@ isc:Oxfordian
   time:intervalMetBy isc:Callovian ;
   time:intervalMetBy isc:MiddleJurassic ;
   time:intervalStarts isc:UpperJurassic ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Oxfordian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Oxfordian> ;
 .
 isc:Paibian
   rdf:type gts:Age ;
@@ -9895,7 +9895,7 @@ isc:Paibian
   time:intervalMetBy isc:CambrianSeries3 ;
   time:intervalMetBy isc:Guzhangian ;
   time:intervalStarts isc:Furongian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Paibian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Paibian> ;
 .
 isc:Paleoarchean
   rdf:type gts:Era ;
@@ -9939,7 +9939,7 @@ isc:Paleoarchean
   time:intervalIn isc:Archean ;
   time:intervalMeets isc:Mesoarchean ;
   time:intervalMetBy isc:Eoarchean ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Paleoarchean> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Paleoarchean> ;
 .
 isc:Paleocene
   rdf:type gts:Epoch ;
@@ -9994,7 +9994,7 @@ isc:Paleocene
   time:intervalMetBy isc:UpperCretaceous ;
   time:intervalStartedBy isc:Danian ;
   time:intervalStarts isc:Paleogene ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Paleocene> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Paleocene> ;
 .
 isc:Paleogene
   rdf:type gts:GeochronologicEra ;
@@ -10058,7 +10058,7 @@ isc:Paleogene
   time:intervalMetBy isc:UpperCretaceous ;
   time:intervalStartedBy isc:Paleocene ;
   time:intervalStarts isc:Cenozoic ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Paleogene> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Paleogene> ;
 .
 isc:Paleoproterozoic
   rdf:type gts:Era ;
@@ -10112,7 +10112,7 @@ isc:Paleoproterozoic
   time:intervalMetBy isc:Neoarchean ;
   time:intervalStartedBy isc:Siderian ;
   time:intervalStarts isc:Proterozoic ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Paleoproterozoic> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Paleoproterozoic> ;
 .
 isc:Paleozoic
   rdf:type gts:Era ;
@@ -10245,7 +10245,7 @@ isc:Paleozoic
   time:intervalMetBy isc:Proterozoic ;
   time:intervalStartedBy isc:Cambrian ;
   time:intervalStarts isc:Phanerozoic ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Paleozoic> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Paleozoic> ;
 .
 isc:Pennsylvanian
   rdf:type gts:GeochronologicEra ;
@@ -10301,7 +10301,7 @@ isc:Pennsylvanian
   time:intervalMetBy isc:Mississippian ;
   time:intervalMetBy isc:Serpukhovian ;
   time:intervalStartedBy isc:LowerPennsylvanian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Pennsylvanian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Pennsylvanian> ;
 .
 isc:Periods
   rdf:type xkos:ClassificationLevel ;
@@ -10393,7 +10393,7 @@ isc:Permian
   time:intervalMetBy isc:UpperMississippian ;
   time:intervalMetBy isc:UpperPennsylvanian ;
   time:intervalStartedBy isc:Cisuralian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Permian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Permian> ;
 .
 isc:Phanerozoic
   rdf:type gts:Eon ;
@@ -10590,7 +10590,7 @@ isc:Phanerozoic
   time:intervalMetBy isc:Precambrian ;
   time:intervalMetBy isc:Proterozoic ;
   time:intervalStartedBy isc:Paleozoic ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Phanerozoic> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Phanerozoic> ;
 .
 isc:Piacenzian
   rdf:type gts:Age ;
@@ -10636,7 +10636,7 @@ isc:Piacenzian
   time:intervalMeets isc:Pleistocene ;
   time:intervalMeets isc:Quaternary ;
   time:intervalMetBy isc:Zanclean ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Piacenzian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Piacenzian> ;
 .
 isc:Pleistocene
   rdf:type gts:Epoch ;
@@ -10689,7 +10689,7 @@ isc:Pleistocene
   time:intervalMetBy isc:Pliocene ;
   time:intervalStartedBy isc:Gelasian ;
   time:intervalStarts isc:Quaternary ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Pleistocene> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Pleistocene> ;
 .
 isc:Pliensbachian
   rdf:type gts:Age ;
@@ -10733,7 +10733,7 @@ isc:Pliensbachian
   time:intervalIn isc:LowerJurassic ;
   time:intervalMeets isc:Toarcian ;
   time:intervalMetBy isc:Sinemurian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Pliensbachian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Pliensbachian> ;
 .
 isc:Pliocene
   rdf:type gts:Epoch ;
@@ -10783,7 +10783,7 @@ isc:Pliocene
   time:intervalMetBy isc:Messinian ;
   time:intervalMetBy isc:Miocene ;
   time:intervalStartedBy isc:Zanclean ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Pliocene> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Pliocene> ;
 .
 isc:Pragian
   rdf:type gts:Age ;
@@ -10827,7 +10827,7 @@ isc:Pragian
   time:intervalIn isc:LowerDevonian ;
   time:intervalMeets isc:Emsian ;
   time:intervalMetBy isc:Lochkovian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Pragian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Pragian> ;
 .
 isc:Precambrian
   rdf:type gts:GeochronologicEra ;
@@ -10891,7 +10891,7 @@ isc:Precambrian
   time:intervalMeets isc:Phanerozoic ;
   time:intervalMeets isc:Terreneuvian ;
   time:intervalStartedBy isc:Hadean ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Precambrian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Precambrian> ;
 .
 isc:Present
   rdf:type thors:EraBoundary ;
@@ -10951,7 +10951,7 @@ isc:Priabonian
   time:intervalMeets isc:Oligocene ;
   time:intervalMeets isc:Rupelian ;
   time:intervalMetBy isc:Bartonian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Priabonian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Priabonian> ;
 .
 isc:Pridoli
   rdf:type gts:Epoch ;
@@ -10997,7 +10997,7 @@ isc:Pridoli
   time:intervalMeets isc:LowerDevonian ;
   time:intervalMetBy isc:Ludfordian ;
   time:intervalMetBy isc:Ludlow ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Pridoli> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Pridoli> ;
 .
 isc:Proterozoic
   rdf:type gts:Eon ;
@@ -11060,7 +11060,7 @@ isc:Proterozoic
   time:intervalMetBy isc:Archean ;
   time:intervalMetBy isc:Neoarchean ;
   time:intervalStartedBy isc:Paleoproterozoic ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Proterozoic> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Proterozoic> ;
 .
 isc:Quaternary
   rdf:type gts:GeochronologicEra ;
@@ -11111,7 +11111,7 @@ isc:Quaternary
   time:intervalMetBy isc:Piacenzian ;
   time:intervalMetBy isc:Pliocene ;
   time:intervalStartedBy isc:Pleistocene ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Quaternary> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Quaternary> ;
 .
 isc:Ranks
   rdf:type skos:Collection ;
@@ -11169,7 +11169,7 @@ isc:Rhaetian
   time:intervalMeets isc:Jurassic ;
   time:intervalMeets isc:LowerJurassic ;
   time:intervalMetBy isc:Norian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Rhaetian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Rhaetian> ;
 .
 isc:Rhuddanian
   rdf:type gts:Age ;
@@ -11215,7 +11215,7 @@ isc:Rhuddanian
   time:intervalMetBy isc:Ordovician ;
   time:intervalMetBy isc:UpperOrdovician ;
   time:intervalStarts isc:Llandovery ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Rhuddanian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Rhuddanian> ;
 .
 isc:Rhyacian
   rdf:type gts:GeochronologicEra ;
@@ -11258,7 +11258,7 @@ isc:Rhyacian
   time:intervalIn isc:Paleoproterozoic ;
   time:intervalMeets isc:Orosirian ;
   time:intervalMetBy isc:Siderian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Rhyacian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Rhyacian> ;
 .
 isc:Roadian
   rdf:type gts:Age ;
@@ -11304,7 +11304,7 @@ isc:Roadian
   time:intervalMetBy isc:Cisuralian ;
   time:intervalMetBy isc:Kungurian ;
   time:intervalStarts isc:Guadalupian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Roadian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Roadian> ;
 .
 isc:Rupelian
   rdf:type gts:Age ;
@@ -11349,7 +11349,7 @@ isc:Rupelian
   time:intervalMetBy isc:Eocene ;
   time:intervalMetBy isc:Priabonian ;
   time:intervalStarts isc:Oligocene ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Rupelian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Rupelian> ;
 .
 isc:Sakmarian
   rdf:type gts:Age ;
@@ -11393,7 +11393,7 @@ isc:Sakmarian
   time:intervalIn isc:Cisuralian ;
   time:intervalMeets isc:Artinskian ;
   time:intervalMetBy isc:Asselian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Sakmarian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Sakmarian> ;
 .
 isc:Sandbian
   rdf:type gts:Age ;
@@ -11436,7 +11436,7 @@ isc:Sandbian
   time:intervalMetBy isc:Darriwilian ;
   time:intervalMetBy isc:MiddleOrdovician ;
   time:intervalStarts isc:UpperOrdovician ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Sandbian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Sandbian> ;
 .
 isc:Santonian
   rdf:type gts:Age ;
@@ -11480,7 +11480,7 @@ isc:Santonian
   time:intervalIn isc:UpperCretaceous ;
   time:intervalMeets isc:Campanian ;
   time:intervalMetBy isc:Coniacian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Santonian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Santonian> ;
 .
 isc:Selandian
   rdf:type gts:Age ;
@@ -11524,7 +11524,7 @@ isc:Selandian
   time:intervalIn isc:Paleocene ;
   time:intervalMeets isc:Thanetian ;
   time:intervalMetBy isc:Danian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Selandian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Selandian> ;
 .
 isc:Serpukhovian
   rdf:type gts:Age ;
@@ -11573,7 +11573,7 @@ isc:Serpukhovian
   time:intervalMetBy isc:MiddleMississippian ;
   time:intervalMetBy isc:Visean ;
   time:intervalStarts isc:UpperMississippian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Serpukhovian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Serpukhovian> ;
 .
 isc:Serravallian
   rdf:type gts:Age ;
@@ -11617,7 +11617,7 @@ isc:Serravallian
   time:intervalIn isc:Miocene ;
   time:intervalMeets isc:Tortonian ;
   time:intervalMetBy isc:Langhian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Serravallian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Serravallian> ;
 .
 isc:Sheinwoodian
   rdf:type gts:Age ;
@@ -11662,7 +11662,7 @@ isc:Sheinwoodian
   time:intervalMetBy isc:Llandovery ;
   time:intervalMetBy isc:Telychian ;
   time:intervalStarts isc:Wenlock ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Sheinwoodian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Sheinwoodian> ;
 .
 isc:Siderian
   rdf:type gts:GeochronologicEra ;
@@ -11706,7 +11706,7 @@ isc:Siderian
   time:intervalMetBy isc:Archean ;
   time:intervalMetBy isc:Neoarchean ;
   time:intervalStarts isc:Paleoproterozoic ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Siderian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Siderian> ;
 .
 isc:Silurian
   rdf:type gts:GeochronologicEra ;
@@ -11768,7 +11768,7 @@ isc:Silurian
   time:intervalMetBy isc:Ordovician ;
   time:intervalMetBy isc:UpperOrdovician ;
   time:intervalStartedBy isc:Llandovery ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Silurian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Silurian> ;
 .
 isc:Sinemurian
   rdf:type gts:Age ;
@@ -11812,7 +11812,7 @@ isc:Sinemurian
   time:intervalIn isc:LowerJurassic ;
   time:intervalMeets isc:Pliensbachian ;
   time:intervalMetBy isc:Hettangian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Sinemurian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Sinemurian> ;
 .
 isc:Statherian
   rdf:type gts:GeochronologicEra ;
@@ -11856,7 +11856,7 @@ isc:Statherian
   time:intervalMeets isc:Calymmian ;
   time:intervalMeets isc:Mesoproterozoic ;
   time:intervalMetBy isc:Orosirian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Statherian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Statherian> ;
 .
 isc:Stenian
   rdf:type gts:GeochronologicEra ;
@@ -11900,7 +11900,7 @@ isc:Stenian
   time:intervalMeets isc:Neoproterozoic ;
   time:intervalMeets isc:Tonian ;
   time:intervalMetBy isc:Ectasian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Stenian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Stenian> ;
 .
 isc:StratigraphicPoints
   rdf:type skos:OrderedCollection ;
@@ -12166,7 +12166,7 @@ isc:Telychian
   time:intervalMeets isc:Sheinwoodian ;
   time:intervalMeets isc:Wenlock ;
   time:intervalMetBy isc:Aeronian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Telychian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Telychian> ;
 .
 isc:Terreneuvian
   rdf:type gts:Epoch ;
@@ -12217,7 +12217,7 @@ isc:Terreneuvian
   time:intervalMetBy isc:Proterozoic ;
   time:intervalStartedBy isc:Fortunian ;
   time:intervalStarts isc:Cambrian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Terreneuvian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Terreneuvian> ;
 .
 isc:Thanetian
   rdf:type gts:Age ;
@@ -12262,7 +12262,7 @@ isc:Thanetian
   time:intervalMeets isc:Eocene ;
   time:intervalMeets isc:Ypresian ;
   time:intervalMetBy isc:Selandian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Thanetian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Thanetian> ;
 .
 isc:TimePositions
   rdf:type skos:Collection ;
@@ -12428,7 +12428,7 @@ isc:Tithonian
   time:intervalMeets isc:Cretaceous ;
   time:intervalMeets isc:LowerCretaceous ;
   time:intervalMetBy isc:Kimmeridgian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Tithonian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Tithonian> ;
 .
 isc:Toarcian
   rdf:type gts:Age ;
@@ -12473,7 +12473,7 @@ isc:Toarcian
   time:intervalMeets isc:Aalenian ;
   time:intervalMeets isc:MiddleJurassic ;
   time:intervalMetBy isc:Pliensbachian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Toarcian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Toarcian> ;
 .
 isc:Tonian
   rdf:type gts:GeochronologicEra ;
@@ -12517,7 +12517,7 @@ isc:Tonian
   time:intervalMetBy isc:Mesoproterozoic ;
   time:intervalMetBy isc:Stenian ;
   time:intervalStarts isc:Neoproterozoic ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Tonian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Tonian> ;
 .
 isc:Tortonian
   rdf:type gts:Age ;
@@ -12561,7 +12561,7 @@ isc:Tortonian
   time:intervalIn isc:Miocene ;
   time:intervalMeets isc:Messinian ;
   time:intervalMetBy isc:Serravallian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Tortonian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Tortonian> ;
 .
 isc:Tournaisian
   rdf:type gts:Age ;
@@ -12609,7 +12609,7 @@ isc:Tournaisian
   time:intervalMetBy isc:Devonian ;
   time:intervalMetBy isc:Famennian ;
   time:intervalMetBy isc:UpperDevonian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Tournaisian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Tournaisian> ;
 .
 isc:Tremadocian
   rdf:type gts:Age ;
@@ -12655,7 +12655,7 @@ isc:Tremadocian
   time:intervalMetBy isc:CambrianStage10 ;
   time:intervalMetBy isc:Furongian ;
   time:intervalStarts isc:LowerOrdovician ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Tremadocian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Tremadocian> ;
 .
 isc:Triassic
   rdf:type gts:GeochronologicEra ;
@@ -12715,7 +12715,7 @@ isc:Triassic
   time:intervalMetBy isc:Permian ;
   time:intervalStartedBy isc:LowerTriassic ;
   time:intervalStarts isc:Mesozoic ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Triassic> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Triassic> ;
 .
 isc:Turonian
   rdf:type gts:Age ;
@@ -12759,7 +12759,7 @@ isc:Turonian
   time:intervalIn isc:UpperCretaceous ;
   time:intervalMeets isc:Coniacian ;
   time:intervalMetBy isc:Cenomanian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Turonian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Turonian> ;
 .
 isc:UpperCretaceous
   rdf:type gts:Epoch ;
@@ -12820,7 +12820,7 @@ isc:UpperCretaceous
   time:intervalMetBy isc:Albian ;
   time:intervalMetBy isc:LowerCretaceous ;
   time:intervalStartedBy isc:Cenomanian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#UpperCretaceous> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/UpperCretaceous> ;
 .
 isc:UpperDevonian
   rdf:type gts:Epoch ;
@@ -12873,7 +12873,7 @@ isc:UpperDevonian
   time:intervalMetBy isc:Givetian ;
   time:intervalMetBy isc:MiddleDevonian ;
   time:intervalStartedBy isc:Frasnian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#UpperDevonian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/UpperDevonian> ;
 .
 isc:UpperJurassic
   rdf:type gts:Epoch ;
@@ -12927,7 +12927,7 @@ isc:UpperJurassic
   time:intervalMetBy isc:Callovian ;
   time:intervalMetBy isc:MiddleJurassic ;
   time:intervalStartedBy isc:Oxfordian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#UpperJurassic> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/UpperJurassic> ;
 .
 isc:UpperMississippian
   rdf:type gts:Epoch ;
@@ -12959,7 +12959,7 @@ isc:UpperMississippian
   time:intervalMetBy isc:MiddleMississippian ;
   time:intervalMetBy isc:Visean ;
   time:intervalStartedBy isc:Serpukhovian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#UpperMississippian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/UpperMississippian> ;
 .
 isc:UpperOrdovician
   rdf:type gts:Epoch ;
@@ -13011,7 +13011,7 @@ isc:UpperOrdovician
   time:intervalMetBy isc:Darriwilian ;
   time:intervalMetBy isc:MiddleOrdovician ;
   time:intervalStartedBy isc:Sandbian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#UpperOrdovician> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/UpperOrdovician> ;
 .
 isc:UpperPennsylvanian
   rdf:type gts:Epoch ;
@@ -13064,7 +13064,7 @@ isc:UpperPennsylvanian
   time:intervalMetBy isc:MiddlePennsylvanian ;
   time:intervalMetBy isc:Moscovian ;
   time:intervalStartedBy isc:Kasimovian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#UpperPennsylvanian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/UpperPennsylvanian> ;
 .
 isc:UpperPleistocene
   rdf:type gts:Age ;
@@ -13111,7 +13111,7 @@ isc:UpperPleistocene
   time:intervalIn isc:Pleistocene ;
   time:intervalMeets isc:Holocene ;
   time:intervalMetBy isc:MiddlePleistocene ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#UpperPleistocene> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/UpperPleistocene> ;
 .
 isc:UpperTriassic
   rdf:type gts:Epoch ;
@@ -13165,7 +13165,7 @@ isc:UpperTriassic
   time:intervalMetBy isc:Ladinian ;
   time:intervalMetBy isc:MiddleTriassic ;
   time:intervalStartedBy isc:Carnian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#UpperTriassic> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/UpperTriassic> ;
 .
 isc:Valanginian
   rdf:type gts:Age ;
@@ -13209,7 +13209,7 @@ isc:Valanginian
   time:intervalIn isc:LowerCretaceous ;
   time:intervalMeets isc:Hauterivian ;
   time:intervalMetBy isc:Berriasian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Valanginian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Valanginian> ;
 .
 isc:Visean
   rdf:type gts:Age ;
@@ -13256,7 +13256,7 @@ isc:Visean
   time:intervalMeets isc:UpperMississippian ;
   time:intervalMetBy isc:LowerMississippian ;
   time:intervalMetBy isc:Tournaisian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Visean> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Visean> ;
 .
 isc:Wenlock
   rdf:type gts:Epoch ;
@@ -13305,7 +13305,7 @@ isc:Wenlock
   time:intervalMetBy isc:Llandovery ;
   time:intervalMetBy isc:Telychian ;
   time:intervalStartedBy isc:Sheinwoodian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Wenlock> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Wenlock> ;
 .
 isc:Wordian
   rdf:type gts:Age ;
@@ -13349,7 +13349,7 @@ isc:Wordian
   time:intervalIn isc:Guadalupian ;
   time:intervalMeets isc:Capitanian ;
   time:intervalMetBy isc:Roadian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Wordian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Wordian> ;
 .
 isc:Wuchiapingian
   rdf:type gts:Age ;
@@ -13393,7 +13393,7 @@ isc:Wuchiapingian
   time:intervalMeets isc:Changhsingian ;
   time:intervalMetBy isc:Guadalupian ;
   time:intervalStarts isc:Lopingian ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Wuchiapingian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Wuchiapingian> ;
 .
 isc:Ypresian
   rdf:type gts:Age ;
@@ -13438,7 +13438,7 @@ isc:Ypresian
   time:intervalMetBy isc:Paleocene ;
   time:intervalMetBy isc:Thanetian ;
   time:intervalStarts isc:Eocene ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Ypresian> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Ypresian> ;
 .
 isc:Zanclean
   rdf:type gts:Age ;
@@ -13483,7 +13483,7 @@ isc:Zanclean
   time:intervalMetBy isc:Messinian ;
   time:intervalMetBy isc:Miocene ;
   time:intervalStarts isc:Pliocene ;
-  foaf:irimaryTopicOfSP <http://sweet.jpl.nasa.gov/2.2/stateTimeGeologic.owl#Zanclean> ;
+  foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Zanclean> ;
 .
 ts:isc2017-02
   rdf:type void:Dataset ;
