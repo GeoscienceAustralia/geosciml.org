@@ -1,0 +1,26 @@
+# baseURI: http://resource.geosciml.org/ontology/timescale/thors/xkos
+# imports: http://rdf-vocabulary.ddialliance.org/xkos
+# imports: http://resource.geosciml.org/ontology/timescale/thors/w3c
+# prefix: xkos
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xkos: <http://resource.geosciml.org/ontology/timescale/thors/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://resource.geosciml.org/ontology/timescale/thors/xkos>
+  rdf:type owl:Ontology ;
+  owl:imports <http://rdf-vocabulary.ddialliance.org/xkos> ;
+  owl:imports <http://resource.geosciml.org/ontology/timescale/thors/w3c> ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+<http://www.w3.org/2006/time#TemporalEntity>
+  rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
+.
+<http://www.w3.org/2006/time#after>
+  owl:equivalentProperty <http://rdf-vocabulary.ddialliance.org/xkos#after> ;
+.
+<http://www.w3.org/2006/time#before>
+  owl:equivalentProperty <http://rdf-vocabulary.ddialliance.org/xkos#before> ;
+.
