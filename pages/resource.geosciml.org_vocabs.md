@@ -43,6 +43,11 @@ The vocabularies are also published at the [Research Vocabularies Australia Port
 [Value Qualifier](http://resource.geosciml.org/classifier/cgi/valuequalifier) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_value-qualifier_v0-1) |
 [Vocabulary Relation](http://resource.geosciml.org/classifier/cgi/vocabularyrelation) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_vocabulary-relation_v0-1) ||
 
+[comment]: # "ADD NEW VOCABULARIES WHEN READY -- [Planar Polarity Code](http://resource.geosciml.org/classifier/cgi/planarpolaritycode) | [v2017.01](http://resource.geosciml.org/classifierscheme/cgi/2017.01/planarpolaritycode) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_planar-polarity-code_v0-1) |"
+
+[comment]: # "ADD NEW VOCABULARIES WHEN READY -- [Mapping Frame](http://resource.geosciml.org/classifier/cgi/mappingframe) | [v2017.01](http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_mapping-frame_v0-1) |"
+
+
 ### EarthResourceML Vocabularies
 
 | Collection of terms | Concept scheme metadata | &nbsp;&nbsp;&nbsp;&nbsp;SPARQL endpoint |
