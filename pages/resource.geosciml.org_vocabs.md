@@ -29,6 +29,7 @@ The vocabularies are also published at the [Research Vocabularies Australia Port
 [Geologic Unit Part Role](http://resource.geosciml.org/classifier/cgi/geologicunitpartrole) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunitpartrole) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_geologic-unit-part-role_v0-1) |
 [Geologic Unit Type](http://resource.geosciml.org/classifier/cgi/geologicunittype) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicunittype) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_geologic-unit-type_v0-1) |
 [Lineation Type](http://resource.geosciml.org/classifier/cgi/lineationtype) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/lineationtype) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_lineation-type_v0-1) |
+[Mapping Frame](http://resource.geosciml.org/classifier/cgi/mappingframe) | [v2017.01](http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_mapping-frame_v0-1) |
 [Metamorphic Facies](http://resource.geosciml.org/classifier/cgi/metamorphicfacies) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphicfacies) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_metamorphic-facies_v0-1) |
 [Metamorphic Grade](http://resource.geosciml.org/classifier/cgi/metamorphicgrade) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/metamorphic-grade) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_metamorphic-grade_v0-1) |
 [Observation Method (Geologic Feature)](http://resource.geosciml.org/classifier/cgi/geologicfeatureobservationmethod) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/geologicfeatureobservationmethod) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_geologic-feature-observation-method_v0-1) |
@@ -37,16 +38,14 @@ The vocabularies are also published at the [Research Vocabularies Australia Port
 [Particle Aspect Ratio](http://resource.geosciml.org/classifier/cgi/particleaspectratio) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/particleaspectratio) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_particle-aspect-ratio_v0-1) |
 [Particle Shape](http://resource.geosciml.org/classifier/cgi/particleshape) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/particleshape) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_particle-shape_v0-1) |
 [Particle Type](http://resource.geosciml.org/classifier/cgi/particletype) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/particletype) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_particle-type_v0-1) |
+[Planar Polarity Code](http://resource.geosciml.org/classifier/cgi/planarpolaritycode) | [v2017.01](http://resource.geosciml.org/classifierscheme/cgi/2017.01/planarpolaritycode) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_planar-polarity-code_v0-1) |
 [Proportion Term](http://resource.geosciml.org/classifier/cgi/proportionterm) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/proportionterm) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_proportion-term_v0-1) |
 [Simple Lithology](http://resource.geosciml.org/classifier/cgi/lithology) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/simplelithology) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_simple-lithology_v0-1) |
 [Stratigraphic Rank](http://resource.geosciml.org/classifier/cgi/stratigraphicrank) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_stratigraphic-rank_v0-1) |
 [Value Qualifier](http://resource.geosciml.org/classifier/cgi/valuequalifier) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_value-qualifier_v0-1) |
 [Vocabulary Relation](http://resource.geosciml.org/classifier/cgi/vocabularyrelation) | [v2016.01](http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_vocabulary-relation_v0-1) ||
 
-[comment]: # "ADD NEW VOCABULARIES WHEN READY -- [Planar Polarity Code](http://resource.geosciml.org/classifier/cgi/planarpolaritycode) | [v2017.01](http://resource.geosciml.org/classifierscheme/cgi/2017.01/planarpolaritycode) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_planar-polarity-code_v0-1) |"
-
-[comment]: # "ADD NEW VOCABULARIES WHEN READY -- [Mapping Frame](http://resource.geosciml.org/classifier/cgi/mappingframe) | [v2017.01](http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_mapping-frame_v0-1) |"
-
+[comment]: # "ADD MORE NEW VOCABULARIES WHEN READY -- [Mapping Frame](http://resource.geosciml.org/classifier/cgi/mappingframe) | [v2017.01](http://resource.geosciml.org/classifierscheme/cgi/2017.01/mappingframe) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/ga_mapping-frame_v0-1) |"
 
 ### EarthResourceML Vocabularies
 
