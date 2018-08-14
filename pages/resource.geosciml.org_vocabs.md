@@ -75,4 +75,4 @@ The vocabularies are also published at the [Research Vocabularies Australia Port
 
 | Collection of terms | &nbsp;&nbsp;&nbsp;Concept scheme metadata |
 |---------------------|:-----------------------:|
-[International Chronostratigraphic Chart - 2016](http://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart-2016/2016-12-v3/collection) | [v2016.12](http://resource.geosciml.org/vocabulary/timescale/isc2016-12) ||
+[International Chronostratigraphic Chart - 2017](http://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2017/concept.html?_page=0&_view=concept&_sort=label) | [2017](http://resource.geosciml.org/vocabulary/timescale/isc2017) ||
