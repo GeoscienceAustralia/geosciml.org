@@ -1,6 +1,5 @@
 # baseURI: http://resource.geosciml.org/ontology/timescale/thors
 # imports: http://purl.org/dc/elements/1.1/
-# imports: http://resource.geosciml.org/ontology/timescale/thors/xkos
 # prefix: thors
 
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
@@ -33,7 +32,6 @@
   rdfs:seeAlso <http://geosphere.gsapubs.org/cgi/doi/10.1130/GES00022.1> ;
   rdfs:seeAlso <http://www.geosciml.org> ;
   owl:imports dc: ;
-  owl:imports <http://resource.geosciml.org/ontology/timescale/thors/xkos> ;
   owl:priorVersion <https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/201402/Geoscience/GeologicTimeScale/thors.rdf> ;
   owl:versionIRI <https://github.com/GeoscienceAustralia/geosciml.org/commit/24d302bf3f0fa315c1dddc2c734b84f52299cd02#diff-73b17e22072459ab7e06e9ab664a9d48> ;
   skos:changeNote "2017-04-28 - removed imports of ISO ontologies " ;
@@ -164,7 +162,3 @@ thors:system
   rdfs:subPropertyOf skos:topConceptOf ;
   owl:inverseOf thors:component ;
 .
-[
-  rdf:type owl:Class ;
-  owl:unionOf [] ;
-].

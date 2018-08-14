@@ -73,6 +73,6 @@ The vocabularies are also published at the [Research Vocabularies Australia Port
 
 ### Geologic Time Vocabulary
 
-| Collection of terms | &nbsp;&nbsp;&nbsp;Concept scheme metadata | &nbsp;&nbsp;&nbsp;&nbsp;SPARQL endpoint
-|---------------------|:-----------------------:|:-----------------------:|
-[International Chronostratigraphic Chart - 2017](http://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart-2017/2017/collection) | [v2017.02](http://resource.geosciml.org/vocabulary/timescale/isc2017-02) | [sparql](http://vocabs.ands.org.au/repository/api/sparql/csiro_international-chronostratigraphic-chart-2017_2017) ||
+| Collection of terms | &nbsp;&nbsp;&nbsp;Concept scheme metadata |
+|---------------------|:-----------------------:|
+[International Chronostratigraphic Chart - 2017](http://vocabs.ands.org.au/repository/api/lda/csiro/international-chronostratigraphic-chart/2017/concept.html?_page=0&_view=concept&_sort=label) | [2017](http://resource.geosciml.org/vocabulary/timescale/isc2017) ||

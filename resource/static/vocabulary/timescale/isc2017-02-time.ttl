@@ -1,11 +1,11 @@
 # baseURI: http://resource.geosciml.org/vocabulary/timescale/isc2017-02
 # imports: http://resource.geosciml.org/ontology/timescale/gts/w3c
-# imports: http://www.opengis.net/ont/geoarqlSP
+# imports: http://www.opengis.net/ont/geosparql
 
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix geo: <http://www.opengis.net/ont/geoarqlSP#> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix gts: <http://resource.geosciml.org/ontology/timescale/gts#> .
 @prefix isc: <http://resource.geosciml.org/classifier/ics/ischart/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -13651,7 +13651,7 @@ ts:isc2017-02
   rdfs:seeAlso <http://www.episodes.co.in/contents/2013/september/p199-204.pdf> ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
   owl:imports <http://resource.geosciml.org/ontology/timescale/gts/w3c> ;
-  owl:imports <http://www.opengis.net/ont/geoarqlSP> ;
+  owl:imports <http://www.opengis.net/ont/geosparql> ;
   owl:sameAs <http://resource.geosciml.org/classifierscheme/ics/2017/ischart> ;
   skos:changeNote """1. THORS ontology updated to align with OWL-Time (instead of ISO 19108).
 2. GTS ontology updated to use sam-lite (instead of OWL implementation of ISO 19156) with a lightweight SOSA alignment
