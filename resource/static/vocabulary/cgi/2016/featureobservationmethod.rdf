@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#">
    <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod">
       <dcterms:title xml:lang="en">Observation Method (Geologic Feature)</dcterms:title>
@@ -11,7 +11,8 @@
       <skos:changeNote xml:lang="en">2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme.</skos:changeNote>
       <skos:changeNote xml:lang="en">2012-11-24 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types.</skos:changeNote>
       <skos:changeNote xml:lang="en">2016-10-18 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. No changes to terms from the previous 2012 version.</skos:changeNote>
-      <dcterms:date>2016-10-19</dcterms:date>
+      <skos:changeNote xml:lang="en">2018-08-03 SMR replace spaces with '_' in URIs for outcrop observation, direct observation, drill core observation. Also remove invisible BOM characters from beginning of file.</skos:changeNote>
+      <dcterms:date>2018-08-03</dcterms:date>
       <dcterms:creator>CGI Geoscience Terminology Working Group</dcterms:creator>
    </skos:ConceptScheme>
    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/borehole_cuttings_observation">
@@ -64,7 +65,7 @@
       <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod"/>
       <skos:definition xml:lang="en">Data collected through observation of a single drill core interval.</skos:definition>
       <skos:prefLabel xml:lang="en">drill core observation</skos:prefLabel>
-      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/direct observation"/>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/direct_observation"/>
       <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation_estimated_values"/>
       <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation_measured_values"/>
       <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
@@ -73,14 +74,14 @@
       <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod"/>
       <skos:definition xml:lang="en">Values for properties are estimated by observer.</skos:definition>
       <skos:prefLabel xml:lang="en">drill core observation estimated values</skos:prefLabel>
-      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill core observation"/>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation"/>
       <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
    </skos:Concept>
    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation_measured_values">
       <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod"/>
-      <skos:definition xml:lang="en">Values for properties are measured using a device (compass, jacob staff, scintillometer, clinometer, ruler…)</skos:definition>
+      <skos:definition xml:lang="en">Values for properties are measured using a device (compass, jacob staff, scintillometer, clinometer, ruler, etc.)</skos:definition>
       <skos:prefLabel xml:lang="en">drill core observation measured values</skos:prefLabel>
-      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill core observation"/>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation"/>
       <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
    </skos:Concept>
    <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod">
@@ -108,14 +109,14 @@
       <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod"/>
       <skos:definition xml:lang="en">Values for properties are estimated by observer.</skos:definition>
       <skos:prefLabel xml:lang="en">outcrop observation estimated values</skos:prefLabel>
-      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop observation"/>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation"/>
       <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
    </skos:Concept>
    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation_measured_values">
       <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod"/>
-      <skos:definition xml:lang="en">Values for properties are measured using a device (compass, jacob staff, scintillometer, clinometer, ruler…)</skos:definition>
+      <skos:definition xml:lang="en">Values for properties are measured using a device (compass, jacob staff, scintillometer, clinometer, ruler, etc.)</skos:definition>
       <skos:prefLabel xml:lang="en">outcrop observation measured values</skos:prefLabel>
-      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop observation"/>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation"/>
       <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
    </skos:Concept>
    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/remotely_sensed_data">

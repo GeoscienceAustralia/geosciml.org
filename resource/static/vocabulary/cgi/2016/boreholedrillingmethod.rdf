@@ -7,7 +7,8 @@
       <skos:changeNote xml:lang="en">Original SKOS implementation, 03-FEB-2016</skos:changeNote>
       <skos:changeNote xml:lang="en">Amended SKOS for migration to new vocabulary repository, 11-MAY-2016</skos:changeNote>
       <skos:changeNote xml:lang="en">Corrected error in "broader" values for hand auger, power auger, sonic core. 2-JUN-2016</skos:changeNote>
-      <dcterms:date>2016-06-02</dcterms:date>
+      <skos:changeNote xml:lang="en">2018-08-03 SMR remove spurious space character at end of URI for cone_penetrometer_test_probe.</skos:changeNote>
+      <dcterms:date>2018-08-03</dcterms:date>
       <dcterms:creator>CGI Geoscience Terminology Working Group</dcterms:creator>
    </skos:ConceptScheme>
    <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod">
@@ -343,7 +344,7 @@
       <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core_bullet"/></skos:member>
       <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core_mechanical"/></skos:member>
       <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/probe"/></skos:member>
-      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/cone_penetrometer_test_probe "/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/cone_penetrometer_test_probe"/></skos:member>
       <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/mackintosh_probe"/></skos:member>
    </skos:Collection>
    
