@@ -9,7 +9,8 @@
       <skos:changeNote xml:lang="en">2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme.</skos:changeNote>
       <skos:changeNote xml:lang="en">2012-11-24 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types.</skos:changeNote>
       <skos:changeNote xml:lang="en">2016-11-22 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. Minor corrections to hierarchy from the previous 2012 version.</skos:changeNote>
-      <dcterms:date>2016-11-22</dcterms:date>
+	  <skos:changeNote xml:lang="en">2018-08-03 SMR replace spaces with '_' in URI for ductile shear banding foliation.</skos:changeNote>
+      <dcterms:date>2018-08-03</dcterms:date>
       <dcterms:creator>CGI Geoscience Terminology Working Group</dcterms:creator>
    </skos:ConceptScheme>
    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/foliationtype/anastomosing_spaced_cleavage">
@@ -592,7 +593,7 @@
       <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/s_fabric"/>
       <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/tectonic_layering"/>
       <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/cleavage"/>
-      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/ductile shear banding foliation"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/ductile_shear_banding_foliation"/>
       <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/foliationtype/schistosity"/>
       <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
    </skos:Concept>
