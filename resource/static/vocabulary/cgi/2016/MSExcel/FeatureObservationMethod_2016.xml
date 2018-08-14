@@ -190,6 +190,16 @@
   <Style ss:ID="s91">
    <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="9" ss:Color="#000000"/>
   </Style>
+  <Style ss:ID="s92" ss:Parent="s62">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s93" ss:Parent="s62">
+   <Alignment ss:Vertical="Center"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+  </Style>
  </Styles>
  <Names>
   <NamedRange ss:Name="Classifier_Prefix" ss:RefersTo="=Notes!R17C2"/>
@@ -6423,7 +6433,7 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">drill core observation</Data></Cell>
     <Cell ss:StyleID="s88"><Data ss:Type="String">Data collected through observation of a single drill core interval.</Data></Cell>
     <Cell ss:StyleID="s87"><Data ss:Type="String">this vocabulary</Data></Cell>
-    <Cell ss:Index="7" ss:StyleID="s87"><Data ss:Type="String">direct observation</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s92"><Data ss:Type="String">direct_observation</Data></Cell>
     <Cell ss:Index="9" ss:StyleID="s78"><Data ss:Type="String">http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0006</Data></Cell>
     <Cell ss:StyleID="s80"/>
     <Cell ss:StyleID="s80"/>
@@ -6435,7 +6445,7 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">drill core observation  estimated values</Data></Cell>
     <Cell ss:StyleID="s88"><Data ss:Type="String">Values for properties are estimated by observer.</Data></Cell>
     <Cell ss:StyleID="s87"><Data ss:Type="String">this vocabulary</Data></Cell>
-    <Cell ss:Index="7" ss:StyleID="s87"><Data ss:Type="String">drill core observation</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s92"><Data ss:Type="String">drill_core_observation</Data></Cell>
     <Cell ss:Index="9" ss:StyleID="s78"><Data ss:Type="String">http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0007</Data></Cell>
     <Cell ss:StyleID="s80"/>
     <Cell ss:StyleID="s80"/>
@@ -6445,7 +6455,7 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">drill core observation  measured values</Data></Cell>
     <Cell ss:StyleID="s88"><Data ss:Type="String">Values for properties are measured using a device (compass, jacob staff, scintillometer, clinometer, ruler…)</Data></Cell>
     <Cell ss:StyleID="s87"><Data ss:Type="String">this vocabulary</Data></Cell>
-    <Cell ss:Index="7" ss:StyleID="s87"><Data ss:Type="String">drill core observation</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s92"><Data ss:Type="String">drill_core_observation</Data></Cell>
     <Cell ss:Index="9" ss:StyleID="s78"><Data ss:Type="String">http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0008</Data></Cell>
     <Cell ss:StyleID="s80"/>
     <Cell ss:StyleID="s80"/>
@@ -6479,7 +6489,7 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">outcrop observation  estimated values</Data></Cell>
     <Cell><Data ss:Type="String">Values for properties are estimated by observer.</Data></Cell>
     <Cell ss:StyleID="s89"><Data ss:Type="String">this vocabulary</Data></Cell>
-    <Cell ss:Index="7" ss:StyleID="s90"><Data ss:Type="String">outcrop observation</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s93"><Data ss:Type="String">outcrop_observation</Data></Cell>
     <Cell ss:Index="9" ss:StyleID="s78"><Data ss:Type="String">http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0011</Data></Cell>
     <Cell ss:StyleID="s80"/>
     <Cell ss:StyleID="s80"/>
@@ -6489,7 +6499,7 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">outcrop observation  measured values</Data></Cell>
     <Cell><Data ss:Type="String">Values for properties are measured using a device (compass, jacob staff, scintillometer, clinometer, ruler…)</Data></Cell>
     <Cell ss:StyleID="s89"><Data ss:Type="String">this vocabulary</Data></Cell>
-    <Cell ss:Index="7" ss:StyleID="s90"><Data ss:Type="String">outcrop observation</Data></Cell>
+    <Cell ss:Index="7" ss:StyleID="s93"><Data ss:Type="String">outcrop_observation</Data></Cell>
     <Cell ss:Index="9" ss:StyleID="s78"><Data ss:Type="String">http://resource.geosciml.org/classifier/cgi/featureobservationmethod/0012</Data></Cell>
     <Cell ss:StyleID="s80"/>
     <Cell ss:StyleID="s80"/>
@@ -6827,8 +6837,8 @@
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>30</ActiveRow>
-     <ActiveCol>1</ActiveCol>
+     <ActiveRow>28</ActiveRow>
+     <ActiveCol>10</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -6839,97 +6849,97 @@
   <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="19" x:FullColumns="1"
    x:FullRows="1" ss:DefaultRowHeight="15">
    <Column ss:StyleID="s91" ss:Width="762"/>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;skos:Collection rdf:about=&quot;&quot;&quot;&amp;FeatureObservationMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;FeatureObservationMethod_2016.xml!ConceptScheme_ID&amp;&quot;&quot;&quot;&quot;&amp;&quot;&gt;&quot;"><Data
       ss:Type="String">&lt;skos:Collection rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/featureobservationmethod&quot;&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;dcterms:title xml:lang=&quot;&quot;en&quot;&quot;&gt;&quot;&amp;FeatureObservationMethod_2016.xml!ConceptScheme_prefLabel&amp;&quot; - All Concepts&lt;/dcterms:title&gt;&quot;"><Data
       ss:Type="String">&lt;dcterms:title xml:lang=&quot;en&quot;&gt;Observation Method (Geologic Feature) - All Concepts&lt;/dcterms:title&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;FeatureObservationMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;FeatureObservationMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/featureobservationmethod/borehole_cuttings_observation&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;FeatureObservationMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;FeatureObservationMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/featureobservationmethod/borehole_geophysical_log_measurements&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;FeatureObservationMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;FeatureObservationMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/featureobservationmethod/data_from_single_published_description&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;FeatureObservationMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;FeatureObservationMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/featureobservationmethod/digital_conversion_from_published_source&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;FeatureObservationMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;FeatureObservationMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/featureobservationmethod/direct_observation&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;FeatureObservationMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;FeatureObservationMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;FeatureObservationMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;FeatureObservationMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation_estimated_values&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;FeatureObservationMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;FeatureObservationMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation_measured_values&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;FeatureObservationMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;FeatureObservationMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/featureobservationmethod/indirect_method&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;FeatureObservationMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;FeatureObservationMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;FeatureObservationMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;FeatureObservationMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation_estimated_values&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;FeatureObservationMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;FeatureObservationMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation_measured_values&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;FeatureObservationMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;FeatureObservationMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/featureobservationmethod/remotely_sensed_data&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;FeatureObservationMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;FeatureObservationMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_from_multiple_sources&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;FeatureObservationMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;FeatureObservationMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_of_multiple_outcrop_observations&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;FeatureObservationMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;FeatureObservationMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_of_multiple_published_descriptions&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">&lt;/skos:Collection&gt;</Data></Cell>
    </Row>
   </Table>
@@ -6939,6 +6949,7 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
+   <Unsynced/>
    <Print>
     <ValidPrinterInfo/>
     <PaperSizeIndex>9</PaperSizeIndex>
@@ -6948,7 +6959,7 @@
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>28</ActiveRow>
+     <ActiveRow>26</ActiveRow>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

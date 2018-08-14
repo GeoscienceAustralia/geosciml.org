@@ -9,32 +9,15 @@
   <Author>Raymond Oliver</Author>
   <LastAuthor>Ollie Raymond</LastAuthor>
   <Created>2016-06-01T23:47:01Z</Created>
-  <LastSaved>2016-12-12T03:44:59Z</LastSaved>
+  <LastSaved>2017-02-15T07:22:38Z</LastSaved>
   <Version>14.00</Version>
  </DocumentProperties>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <SupBook>
-   <Path>\users\oraymond\information_management\3. Vocabularies\GTWG - Geoscience Terminology CGI\ERML vocabs\2016\finalised\with_collections\EarthResourceExpression_2016.xml</Path>
-   <SheetName>Notes</SheetName>
-   <SheetName>Vocabulary Terms</SheetName>
-   <SheetName>Collection</SheetName>
-   <Xct>
-    <Count>0</Count>
-    <SheetIndex>0</SheetIndex>
-   </Xct>
-   <Xct>
-    <Count>0</Count>
-    <SheetIndex>1</SheetIndex>
-   </Xct>
-   <Xct>
-    <Count>0</Count>
-    <SheetIndex>2</SheetIndex>
-   </Xct>
-  </SupBook>
   <WindowHeight>15015</WindowHeight>
   <WindowWidth>27495</WindowWidth>
   <WindowTopX>630</WindowTopX>
   <WindowTopY>615</WindowTopY>
+  <TabRatio>435</TabRatio>
   <ActiveSheet>1</ActiveSheet>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -6086,7 +6069,7 @@
     <Cell ss:StyleID="s81"><Data ss:Type="String">box_core</Data></Cell>
     <Cell ss:StyleID="s81"><Data ss:Type="String">box core</Data></Cell>
     <Cell ss:StyleID="s82"><Data ss:Type="String">A sampling method that obtains a large volume or large surface area core with shallow penetration and minimum disturbance. Commonly uses a double spade system.</Data></Cell>
-    <Cell ss:StyleID="s82"><Data ss:Type="String">This vocabulary</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">This vocabulary </Data></Cell>
     <Cell ss:StyleID="s81"/>
     <Cell ss:StyleID="s81"/>
     <Cell ss:StyleID="s81"><Data ss:Type="String">top</Data></Cell>
@@ -6227,7 +6210,7 @@
     <Cell ss:StyleID="s81"/>
     <Cell ss:StyleID="s81"><Data ss:Type="String">top</Data></Cell>
     <Cell ss:StyleID="s81"/>
-    <Cell ss:StyleID="s81"><Data ss:Type="String">cone_penetrometer_test_probe </Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">cone_penetrometer_test_probe</Data></Cell>
     <Cell ss:StyleID="s82"><Data ss:Type="String">mackintosh_probe</Data></Cell>
     <Cell ss:StyleID="s81"/>
     <Cell ss:StyleID="s81"/>
@@ -6253,7 +6236,7 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="48">
     <Cell ss:StyleID="s84"><Data ss:Type="String">9.1</Data></Cell>
-    <Cell ss:StyleID="s81"><Data ss:Type="String">cone_penetrometer_test_probe </Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">cone_penetrometer_test_probe</Data></Cell>
     <Cell ss:StyleID="s81"><Data ss:Type="String">cone penetrometer test probe</Data></Cell>
     <Cell ss:StyleID="s82"><Data ss:Type="String">A metal rod with an instrumented cone tip pushed by hammering or hydraulically into weakly consolidated ground at a controlled rate. Tip resistance, sleeve friction and water pressure are commonly measured parameters. Includes static and dynamic cone penetration tests.</Data></Cell>
     <Cell ss:StyleID="s82"><Data ss:Type="String">https://en.wikipedia.org/wiki/Cone_penetration_test</Data></Cell>
@@ -6371,7 +6354,7 @@
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
-   <TopRowBottomPane>7</TopRowBottomPane>
+   <TopRowBottomPane>22</TopRowBottomPane>
    <ActivePane>2</ActivePane>
    <Panes>
     <Pane>
@@ -6379,8 +6362,8 @@
     </Pane>
     <Pane>
      <Number>2</Number>
-     <ActiveRow>3</ActiveRow>
-     <ActiveCol>9</ActiveCol>
+     <ActiveRow>25</ActiveRow>
+     <ActiveCol>4</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -6390,170 +6373,171 @@
  <Worksheet ss:Name="Collection">
   <Table ss:ExpandedColumnCount="17" ss:ExpandedRowCount="33" x:FullColumns="1"
    x:FullRows="1" ss:DefaultRowHeight="15">
-   <Row>
+   <Column ss:AutoFitWidth="0" ss:Width="737.25"/>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:Collection rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;&quot;&quot;&quot;&amp;&quot;&gt;&quot;"><Data
       ss:Type="String">&lt;skos:Collection rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod&quot;&gt;</Data></Cell>
     <Cell ss:Index="17" ss:StyleID="s88"/>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;dcterms:title xml:lang=&quot;&quot;en&quot;&quot;&gt;&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_prefLabel&amp;&quot; - All Concepts&lt;/dcterms:title&gt;&quot;"><Data
       ss:Type="String">&lt;dcterms:title xml:lang=&quot;en&quot;&gt;Borehole Drilling Method - All Concepts&lt;/dcterms:title&gt;</Data></Cell>
     <Cell ss:Index="17" ss:StyleID="s88"/>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/auger&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
     <Cell ss:Index="17" ss:StyleID="s88"/>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/hand_auger&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/power_auger&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/percussion_drilling&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/cable_tool_drilling&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/RAB_drilling&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/rotary_hammer_drilling&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/reverse_circulation_drilling&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/hydraulic_rotary_drilling&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/core_drilling&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/diamond_core&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/conventional_core&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/direct_push&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/delft_sampler&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/geoprobe_core&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/gravity_core&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/kasten_core&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/mackereth_core&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/piston_core&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/window_sampler&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sonic&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/vibrocore&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/air_core&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/box_core&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core_bullet&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core_mechanical&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/probe&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
-      ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/cone_penetrometer_test_probe &quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
+      ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/cone_penetrometer_test_probe&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88"
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;BoreholeDrillingMethod_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;BoreholeDrillingMethod_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C[1]&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/mackintosh_probe&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s88" ss:Formula="=&quot;&lt;/skos:Collection&gt;&quot;"><Data
       ss:Type="String">&lt;/skos:Collection&gt;</Data></Cell>
    </Row>
@@ -6564,6 +6548,7 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
+   <Unsynced/>
    <Print>
     <ValidPrinterInfo/>
     <PaperSizeIndex>9</PaperSizeIndex>
@@ -6573,8 +6558,7 @@
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveCol>16</ActiveCol>
-     <RangeSelection>R1C17:R3C17</RangeSelection>
+     <ActiveRow>31</ActiveRow>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
