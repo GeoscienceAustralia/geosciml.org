@@ -1,4 +1,4 @@
-# GeoSciML Resource Repository
+# GeoSciML News Archive
 
 
 
