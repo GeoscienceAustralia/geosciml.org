@@ -1,5 +1,11 @@
 # GeoSciML Resource Repository
 
+
+
+* **March 2017** - [GeoSciML version 4.1 is now an official OGC standard](http://www.opengeospatial.org/standards/geosciml).  Read the official OGC Press release [here](http://www.opengeospatial.org/pressroom/pressreleases/2563).
+
+---
+
 * **August 2014** - [An example database is now available to demonstrate mapping of geological data to GeoSciML v3 WFS schemas](../reference_database/reference_database_2013-11-07.zip)
 
 ---
