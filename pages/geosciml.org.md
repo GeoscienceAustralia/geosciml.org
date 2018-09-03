@@ -2,9 +2,9 @@
 
 GeoSciML is a data model and data transfer standard  for geological data  - from basic  map data to complex relational geological databases.
 
-###  ![new](http://www.geosciml.org/theme/img/new.gif) [GeoSciML version 4.1 is now an official OGC standard](http://www.opengeospatial.org/standards/geosciml)
+###  ![new](http://www.geosciml.org/theme/img/new.gif) [Chinese translation of the GeoSciML v4.1 OGC documentation](http://www.geosciml.org/doc/geosciml/4.1/documentation/ogc_spec_translations/16-008_OGC_Geoscience_Markup_Language_GSML4.1-CN2018.08.18.docx) 
 
-* **[GeoSciML v4.1 OGC Press release](http://www.opengeospatial.org/pressroom/pressreleases/2563)**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Many thanks to the China Geological Survey for their great work.
 
 * **[GeoSciML News Archive](http://www.geosciml.org/news_archive.php)**
 
@@ -14,8 +14,8 @@ GeoSciML is a data model and data transfer standard  for geological data  - from
 
 * **Data Model Documentation**
     * OGC Implementation Specification Document [(html)](http://docs.opengeospatial.org/is/16-008/16-008.html) 
-    * UML model [(html)](http://geosciml.org/doc/geosciml/4.1/documentation/html/)
-    * Enterprise Architect UML file [(eap)](http://geosciml.org/doc/geosciml/4.1/documentation/uml)
+    * UML model [(html)](http://www.geosciml.org/doc/geosciml/4.1/documentation/html/)
+    * Enterprise Architect UML file [(eap)](http://www.geosciml.org/doc/geosciml/4.1/documentation/uml)
     * UML summary wall poster [(pdf)](https://portal.opengeospatial.org/files/?artifact_id=72895)
 
 * **XML schemas and encoding examples** [(xsd, xml)](http://schemas.opengis.net/gsml/4.1/)
