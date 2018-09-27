@@ -16731,6 +16731,10 @@ Positions in geologic time are conventionally denoted in millions of years, meas
     <dc:rights xml:lang="en">This Ontology is made available under the Open Data Commons Attribution License: http://opendatacommons.org/licenses/by/1.0</dc:rights>
     <void:dataDump rdf:resource="https://github.com/GeoscienceAustralia/geosciml.org/blob/master/resource/static/vocabulary/timescale/isc2017.ttl"/>
     <thors:referencePoint rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseMesoarchean"/>
+    <skos:editorialNote rdf:datatype="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+    >&lt;p&gt;This dataset is being &lt;a href="https://github.com/GeoscienceAustralia/geosciml.org/blob/master/resource/static/vocabulary/timescale/"&gt;maintained in GitHub&lt;/a&gt;&lt;/p&gt; &#xD;
+&#xD;
+&lt;p&gt;Please report errors, or propose improvements, using the &lt;a href="https://github.com/GeoscienceAustralia/geosciml.org/issues"&gt;GitHub issue-tracker&lt;/a&gt;.</skos:editorialNote>
     <thors:referencePoint rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseCretaceous"/>
     <thors:referencePoint rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseStenian"/>
     <skos:changeNote xml:lang="en">Added informal definition of chronometric temporal reference system - Millions of years, counting backwards from 1950</skos:changeNote>
@@ -16776,6 +16780,7 @@ Positions in geologic time are conventionally denoted in millions of years, meas
     <thors:referencePoint rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseHomerian"/>
     <thors:referencePoint rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseThanetian"/>
     <void:vocabulary rdf:resource="http://resource.geosciml.org/ontology/timescale/rank"/>
+    <owl:versionInfo>isc2017:2018-09-27</owl:versionInfo>
     <thors:referencePoint rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseStatherian"/>
     <dc:source xml:lang="en">International Chronostratigraphic Chart 2017</dc:source>
     <thors:referencePoint rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseLutetian"/>
@@ -17009,66 +17014,6 @@ removed all boundaries as TopConcepts, leaving on PreCambrian and Phanerozoic as
         <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseMiddleTriassicSP"/>
         <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseSinemurianSP"/>
         <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseUpperTriassicSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseCambrianSeries3SP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseGuzhangianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseNeogeneSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseAlbianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseHomerianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BasePermianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseNorianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseOrdovicianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseBajocianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseOligoceneSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseMessinianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseLadinianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseSilurianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseMiddleDevonianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseKatianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseEoceneSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseCenozoicSP"/>
-        <skos:member>
-          <gts:StratigraphicPoint rdf:about="http://resource.geosciml.org/classifier/ics/ischart/BaseUpperJurassicSP">
-            <rdfs:seeAlso rdf:resource="http://www.stratigraphy.org/GSSP/index.html"/>
-            <rdfs:label xml:lang="en">Stratotype Point Base of Upper Jurassic</rdfs:label>
-            <rdfs:comment xml:lang="en">candidates are Redcliff Point (Dorset, SW England) and Savouron (Provence, SE France)</rdfs:comment>
-            <gts:correlationEvent xml:lang="en">Ammonite Cardioceras redcliffense Horizon at Base of the Cardioceras scarburgense Subzone (Quenstedtoceras mariae Zone)</gts:correlationEvent>
-          </gts:StratigraphicPoint>
-        </skos:member>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BasePhanerozoicSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseGivetianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BasePriabonianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseFurongianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseCambrianStage10SP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseHauterivianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseTortonianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseKimmeridgianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseConiacianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BasePridoliSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseLopingianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseUpperDevonianSP"/>
-        <skos:member>
-          <gts:StratigraphicPoint rdf:about="http://resource.geosciml.org/classifier/ics/ischart/BaseCryogenianSP">
-            <rdfs:seeAlso rdf:resource="http://www.stratigraphy.org/GSSP/index.html"/>
-            <rdfs:label xml:lang="en">Stratotype Point Base of Cryogenian</rdfs:label>
-            <rdfs:comment xml:lang="en">Defined chronometrically; but will be replaced by GSSP. First glacial episode occurred after 750 Ma</rdfs:comment>
-          </gts:StratigraphicPoint>
-        </skos:member>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseAptianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseCallovianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseMiddleMississippianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseGzhelianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseBathonianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseWenlockSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseCambrianStage4SP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseCambrianSeries2SP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BasePragianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseRhaetianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseHirnantianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseMiddleOrdovicianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BasePlioceneSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseLanghianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseLudfordianSP"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseBarremianSP"/>
         <skos:memberList rdf:parseType="Collection">
           <gts:StratigraphicPoint rdf:about="http://resource.geosciml.org/classifier/ics/ischart/BaseEdiacaranSP"/>
           <gts:StratigraphicPoint rdf:about="http://resource.geosciml.org/classifier/ics/ischart/BasePhanerozoicSP"/>
@@ -17139,7 +17084,12 @@ removed all boundaries as TopConcepts, leaving on PreCambrian and Phanerozoic as
           <gts:StratigraphicPoint rdf:about="http://resource.geosciml.org/classifier/ics/ischart/BaseBajocianSP"/>
           <gts:StratigraphicPoint rdf:about="http://resource.geosciml.org/classifier/ics/ischart/BaseBathonianSP"/>
           <gts:StratigraphicPoint rdf:about="http://resource.geosciml.org/classifier/ics/ischart/BaseCallovianSP"/>
-          <gts:StratigraphicPoint rdf:about="http://resource.geosciml.org/classifier/ics/ischart/BaseUpperJurassicSP"/>
+          <gts:StratigraphicPoint rdf:about="http://resource.geosciml.org/classifier/ics/ischart/BaseUpperJurassicSP">
+            <rdfs:seeAlso rdf:resource="http://www.stratigraphy.org/GSSP/index.html"/>
+            <rdfs:label xml:lang="en">Stratotype Point Base of Upper Jurassic</rdfs:label>
+            <rdfs:comment xml:lang="en">candidates are Redcliff Point (Dorset, SW England) and Savouron (Provence, SE France)</rdfs:comment>
+            <gts:correlationEvent xml:lang="en">Ammonite Cardioceras redcliffense Horizon at Base of the Cardioceras scarburgense Subzone (Quenstedtoceras mariae Zone)</gts:correlationEvent>
+          </gts:StratigraphicPoint>
           <gts:StratigraphicPoint rdf:about="http://resource.geosciml.org/classifier/ics/ischart/BaseKimmeridgianSP"/>
           <gts:StratigraphicPoint rdf:about="http://resource.geosciml.org/classifier/ics/ischart/BaseTithonianSP"/>
           <gts:StratigraphicPoint rdf:about="http://resource.geosciml.org/classifier/ics/ischart/BaseCretaceousSP"/>
@@ -17175,6 +17125,59 @@ removed all boundaries as TopConcepts, leaving on PreCambrian and Phanerozoic as
           <gts:StratigraphicPoint rdf:about="http://resource.geosciml.org/classifier/ics/ischart/BaseCalabrianSP"/>
           <gts:StratigraphicPoint rdf:about="http://resource.geosciml.org/classifier/ics/ischart/BaseHoloceneSP"/>
         </skos:memberList>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseCambrianSeries3SP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseGuzhangianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseNeogeneSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseAlbianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseHomerianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BasePermianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseNorianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseOrdovicianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseBajocianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseOligoceneSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseMessinianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseLadinianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseSilurianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseMiddleDevonianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseKatianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseEoceneSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseCenozoicSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseUpperJurassicSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BasePhanerozoicSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseGivetianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BasePriabonianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseFurongianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseCambrianStage10SP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseHauterivianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseTortonianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseKimmeridgianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseConiacianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BasePridoliSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseLopingianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseUpperDevonianSP"/>
+        <skos:member>
+          <gts:StratigraphicPoint rdf:about="http://resource.geosciml.org/classifier/ics/ischart/BaseCryogenianSP">
+            <rdfs:seeAlso rdf:resource="http://www.stratigraphy.org/GSSP/index.html"/>
+            <rdfs:label xml:lang="en">Stratotype Point Base of Cryogenian</rdfs:label>
+            <rdfs:comment xml:lang="en">Defined chronometrically; but will be replaced by GSSP. First glacial episode occurred after 750 Ma</rdfs:comment>
+          </gts:StratigraphicPoint>
+        </skos:member>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseAptianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseCallovianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseMiddleMississippianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseGzhelianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseBathonianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseWenlockSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseCambrianStage4SP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseCambrianSeries2SP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BasePragianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseRhaetianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseHirnantianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseMiddleOrdovicianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BasePlioceneSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseLanghianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseLudfordianSP"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseBarremianSP"/>
         <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseJurassicSP"/>
         <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseTithonianSP"/>
         <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseMiddlePennsylvanianSP"/>
@@ -17469,12 +17472,6 @@ removed all boundaries as TopConcepts, leaving on PreCambrian and Phanerozoic as
         <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseGivetian"/>
         <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseToarcian"/>
         <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseRhyacian"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseStenian"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseSantonian"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseMiddleJurassic"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseMesoarchean"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseBathonian"/>
-        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseBarremian"/>
         <skos:memberList rdf:parseType="Collection">
           <time:Instant rdf:about="http://resource.geosciml.org/classifier/ics/ischart/FormationOfEarth"/>
           <time:Instant rdf:about="http://resource.geosciml.org/classifier/ics/ischart/BaseArchean"/>
@@ -17593,6 +17590,12 @@ removed all boundaries as TopConcepts, leaving on PreCambrian and Phanerozoic as
           <time:Instant rdf:about="http://resource.geosciml.org/classifier/ics/ischart/BaseHolocene"/>
           <time:Instant rdf:about="http://resource.geosciml.org/classifier/ics/ischart/Present"/>
         </skos:memberList>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseStenian"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseSantonian"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseMiddleJurassic"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseMesoarchean"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseBathonian"/>
+        <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseBarremian"/>
         <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseWordian"/>
         <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseMiddlePleistocene"/>
         <skos:member rdf:resource="http://resource.geosciml.org/classifier/ics/ischart/BaseCambrianStage2"/>

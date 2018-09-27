@@ -13664,6 +13664,7 @@ ts:isc2017
   owl:imports <http://www.opengis.net/ont/geosparql> ;
   owl:imports <https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/19108/2006/iso19108TemporalReferenceSystem.rdf> ;
   owl:sameAs <http://resource.geosciml.org/classifierscheme/ics/2017/ischart> ;
+  owl:versionInfo "isc2017:2018-09-27" ;
   skos:changeNote """1. THORS ontology updated to align with OWL-Time (instead of ISO 19108).
 2. GTS ontology updated to use sam-lite (instead of OWL implementation of ISO 19156) with a lightweight SOSA alignment
 3. Spatial data uses GeoSPARQL (instead of OWL implementation of ISO 19107)""" ;

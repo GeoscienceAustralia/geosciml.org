@@ -21950,6 +21950,7 @@
     "seeAlso" : [ "http://stratigraphy.org/ICSchart/ChronostratChart2017-02.pdf", "http://www.episodes.co.in/contents/2013/september/p199-204.pdf", "http://www.stratigraphy.org/GSSP/index.html", "http://stratigraphy.org/GSSP/index.html", "isc:2017" ],
     "imports" : [ "https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/19108/2006/iso19108TemporalReferenceSystem.rdf", "http://resource.geosciml.org/ontology/timescale/gts/w3c", "http://www.opengis.net/ont/geosparql" ],
     "sameAs" : "http://resource.geosciml.org/classifierscheme/ics/2017/ischart",
+    "versionInfo" : "isc2017:2018-09-27",
     "changeNote" : [ "2018-09-27 fixed some broken namespaces and prefixes, mostly related to SPARQL - some kind of search/replace error", {
       "@language" : "en",
       "@value" : "Added informal definition of chronometric temporal reference system - Millions of years, counting backwards from 1950"
@@ -21957,6 +21958,7 @@
       "@language" : "en",
       "@value" : "See <http://stratigraphy.org/ICSchart/ChangeLog2012-2013-2014-2015-2016-2017.txt> for changes from prior versions"
     }, "2017-02-22 Added additional collections for eras of each rank;\r\nclassified rank-based collections using XKOS;\r\ncleaned out legacy Base* instances that did not have links;\r\nrenamed *[GS]SP individuals to *SP;\r\nremoved all boundaries as TopConcepts, leaving on PreCambrian and Phanerozoic as TopConcepts", "2017/02 - Paleogene: Base of Chattian: The numeric age is updated to that at the ratified GSSP (27.82 Ma; Nanno et al. exp. 2017; by request of Simonetti Monechi)" ],
+    "editorialNote" : "<p>This dataset is being <a href=\"https://github.com/GeoscienceAustralia/geosciml.org/blob/master/resource/static/vocabulary/timescale/\">maintained in GitHub</a></p> \r\n\r\n<p>Please report errors, or propose improvements, using the <a href=\"https://github.com/GeoscienceAustralia/geosciml.org/issues\">GitHub issue-tracker</a>.",
     "hasTopConcept" : [ "isc:Phanerozoic", "isc:Precambrian" ],
     "prefLabel" : {
       "@language" : "en",
@@ -21964,14 +21966,6 @@
     }
   } ],
   "@context" : {
-    "rest" : {
-      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
-      "@type" : "@id"
-    },
-    "first" : {
-      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
-      "@type" : "@id"
-    },
     "intervalMetBy" : {
       "@id" : "http://www.w3.org/2006/time#intervalMetBy",
       "@type" : "@id"
@@ -22047,6 +22041,14 @@
     },
     "intervalIn" : {
       "@id" : "http://www.w3.org/2006/time#intervalIn",
+      "@type" : "@id"
+    },
+    "rest" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#rest",
+      "@type" : "@id"
+    },
+    "first" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#first",
       "@type" : "@id"
     },
     "inTemporalPosition" : {
@@ -22186,6 +22188,10 @@
       "@id" : "http://rdfs.org/ns/void#dataDump",
       "@type" : "@id"
     },
+    "editorialNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#editorialNote",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"
+    },
     "replaces" : {
       "@id" : "http://purl.org/dc/terms/replaces",
       "@type" : "@id"
@@ -22205,6 +22211,9 @@
     "vocabulary" : {
       "@id" : "http://rdfs.org/ns/void#vocabulary",
       "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
     },
     "rootResource" : {
       "@id" : "http://rdfs.org/ns/void#rootResource",
