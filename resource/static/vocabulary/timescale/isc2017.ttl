@@ -8216,8 +8216,8 @@ isc:LowerCretaceous
   skos:prefLabel "Wczesna/Dolna Kreda"@pl ;
   skos:prefLabel "cretacico inferiore"@it ;
   skos:prefLabel "kora/alsó-kréta"@hu ;
-  skos:prefLabel "spodní křída"@cs ;
   skos:prefLabel "raná/spodná  krieda"@sk ;
+  skos:prefLabel "spodní křída"@cs ;
   skos:prefLabel "zgodnja/spodnja kreda"@sl ;
   skos:prefLabel "äldre/undre krita"@sv ;
   skos:prefLabel "Ранна/Долна Креда"@bg ;
@@ -8273,8 +8273,8 @@ isc:LowerDevonian
   skos:prefLabel "Wczesny/Dolny Dewon"@pl ;
   skos:prefLabel "devoniano inferiore"@it ;
   skos:prefLabel "kora/alsó-devon"@hu ;
-  skos:prefLabel "spodní devon"@cs ;
   skos:prefLabel "raný/spodný devón"@sk ;
+  skos:prefLabel "spodní devon"@cs ;
   skos:prefLabel "zgodnji/spodnji devon"@sl ;
   skos:prefLabel "äldre/undre devon"@sv ;
   skos:prefLabel "Ранен/Долен Девон"@bg ;
@@ -8327,8 +8327,8 @@ isc:LowerJurassic
   skos:prefLabel "Wczesna/Dolna Jura"@pl ;
   skos:prefLabel "giurassico inferiore"@it ;
   skos:prefLabel "kora/alsó-ura"@hu ;
-  skos:prefLabel "spodní jura"@cs ;
   skos:prefLabel "raná/spodná  jura"@sk ;
+  skos:prefLabel "spodní jura"@cs ;
   skos:prefLabel "zgodnja/spodnja kreda"@sl ;
   skos:prefLabel "äldre/undre jura"@sv ;
   skos:prefLabel "Ранна/Долна Юра"@bg ;
@@ -8411,9 +8411,9 @@ isc:LowerOrdovician
   skos:prefLabel "Vroeg/Onder Ordovicium"@nl ;
   skos:prefLabel "Wczesny/Dolny Ordowik"@pl ;
   skos:prefLabel "kora/alsó-ordovícium"@hu ;
-  skos:prefLabel "spodní ordovik"@cs ;
   skos:prefLabel "ordoviciano inferiore"@it ;
   skos:prefLabel "raný/spodný ordovik"@sk ;
+  skos:prefLabel "spodní ordovik"@cs ;
   skos:prefLabel "zgodnji/spodnji ordovicij"@sl ;
   skos:prefLabel "äldre/undre ordovicium"@sv ;
   skos:prefLabel "Ранен/Долен Ордовик"@bg ;
@@ -8493,8 +8493,8 @@ isc:LowerTriassic
   skos:prefLabel "Vroeg/Onder Trias"@nl ;
   skos:prefLabel "Wczesny/Dolny Trias"@pl ;
   skos:prefLabel "kora/alsó-triász"@hu ;
-  skos:prefLabel "spodní trias"@cs ;
   skos:prefLabel "raný/spodný trias"@sk ;
+  skos:prefLabel "spodní trias"@cs ;
   skos:prefLabel "triassico inferiore"@it ;
   skos:prefLabel "zgodnji/spodnji trias"@sl ;
   skos:prefLabel "äldre/undre trias"@sv ;
@@ -13664,7 +13664,6 @@ ts:isc2017
   owl:imports <http://www.opengis.net/ont/geosparql> ;
   owl:imports <https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/19108/2006/iso19108TemporalReferenceSystem.rdf> ;
   owl:sameAs <http://resource.geosciml.org/classifierscheme/ics/2017/ischart> ;
-  skos:changeNote "2018-09-27 fixed some broken namespaces and prefixes, mostly related to SPARQL - some kind of search/replace error" ;
   skos:changeNote """1. THORS ontology updated to align with OWL-Time (instead of ISO 19108).
 2. GTS ontology updated to use sam-lite (instead of OWL implementation of ISO 19156) with a lightweight SOSA alignment
 3. Spatial data uses GeoSPARQL (instead of OWL implementation of ISO 19107)""" ;
@@ -13674,8 +13673,12 @@ cleaned out legacy Base* instances that did not have links;
 renamed *[GS]SP individuals to *SP;
 removed all boundaries as TopConcepts, leaving on PreCambrian and Phanerozoic as TopConcepts""" ;
   skos:changeNote "2017/02 - Paleogene: Base of Chattian: The numeric age is updated to that at the ratified GSSP (27.82 Ma; Nanno et al. exp. 2017; by request of Simonetti Monechi)" ;
+  skos:changeNote "2018-09-27 fixed some broken namespaces and prefixes, mostly related to SPARQL - some kind of search/replace error" ;
   skos:changeNote "Added informal definition of chronometric temporal reference system - Millions of years, counting backwards from 1950"@en ;
   skos:changeNote "See <http://stratigraphy.org/ICSchart/ChangeLog2012-2013-2014-2015-2016-2017.txt> for changes from prior versions"@en ;
+  skos:editorialNote """<p>This dataset is being <a href=\"https://github.com/GeoscienceAustralia/geosciml.org/blob/master/resource/static/vocabulary/timescale/\">maintained in GitHub</a></p> 
+
+<p>Please report errors, or propose improvements, using the <a href=\"https://github.com/GeoscienceAustralia/geosciml.org/issues\">GitHub issue-tracker</a>."""^^rdf:HTML ;
   skos:hasTopConcept isc:Phanerozoic ;
   skos:hasTopConcept isc:Precambrian ;
   skos:prefLabel "International Chronostratigraphic Chart (2017)"@en ;
