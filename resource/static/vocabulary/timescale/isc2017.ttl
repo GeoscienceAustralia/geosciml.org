@@ -3,7 +3,6 @@
 # imports: http://www.opengis.net/ont/geosparql
 # imports: https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/19108/2006/iso19108TemporalReferenceSystem.rdf
 
-@prefix TemporalReferenceSystem: <http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -754,7 +753,7 @@ isc:BaseAlbian
 .
 isc:BaseAlbianSP
   rdf:type gts:StratigraphicPoint ;
-  gts:correlationEvent "Candidates include: (1) calcareous nannofossil FAD of PraediscohaeraSP columnata (= P. cretacea of some earlier studies), (2) carbon-isotope excursion (black-shale episode), (3) ammonite"@en ;
+  gts:correlationEvent "Candidates include: (1) calcareous nannofossil FAD of Praediscosphaera columnata (= P. cretacea of some earlier studies), (2) carbon-isotope excursion (black-shale episode), (3) ammonite"@en ;
   gts:ratifiedGSSP "true"^^xsd:boolean ;
   gts:status "Ratified 2016-04-08" ;
   rdfs:comment "Southeastern France"@en ;
@@ -865,7 +864,7 @@ isc:BaseBajocianSP
   samfl:shape isc:BaseBajocian-location ;
   dc:source "Episodes 20/1, p.16  22, 1997"@en ;
   gts:boundaryLevel "Base of Bed AB 11 "@en ;
-  gts:correlationEvent "Ammonite FAD Hyperlioceras mundum, Hyperlioceras furcatum, Braunsina aeraSP, and Braunsina elegantula"@en ;
+  gts:correlationEvent "Ammonite FAD Hyperlioceras mundum, Hyperlioceras furcatum, Braunsina aspera, and Braunsina elegantula"@en ;
   gts:ratifiedGSSP "true"^^xsd:boolean ;
   gts:status "Ratified 1996"@en ;
   rdfs:comment "Murtinheira Section, Cabo Mondego, Portugal "@en ;
@@ -896,8 +895,8 @@ isc:BaseBarremian
 .
 isc:BaseBarremianSP
   rdf:type gts:StratigraphicPoint ;
-  gts:correlationEvent "Ammonite FAD itidiscusSP hugii – itidiscusSP vandeckii group"@en ;
-  rdfs:comment "candidate is Río Argos near Caravaca, Murcia Province, ainSP"@en ;
+  gts:correlationEvent "Ammonite FAD Spitidiscus hugii – Spitidiscus vandeckii group"@en ;
+  rdfs:comment "candidate is Río Argos near Caravaca, Murcia Province, Spain"@en ;
   rdfs:label "Stratotype Point Base of Barremian"@en ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
 .
@@ -1091,7 +1090,7 @@ isc:BaseCambrianSeries3
 isc:BaseCambrianSeries3SP
   rdf:type gts:StratigraphicPoint ;
   gts:correlationEvent "Trilobite, potentially FAD of Oryctocephalus indicus"@en ;
-  rdfs:comment "candidate sections are Wuliu-Zengjiayan (east Guizhou, China) and litSP Mountain (Nevada, USA)"@en ;
+  rdfs:comment "candidate sections are Wuliu-Zengjiayan (east Guizhou, China) and Split Mountain (Nevada, USA)"@en ;
   rdfs:label "Stratotype Point Base of Cambrian Stage 5"@en ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
 .
@@ -1134,7 +1133,7 @@ isc:BaseCambrianStage2
 .
 isc:BaseCambrianStage2SP
   rdf:type gts:StratigraphicPoint ;
-  gts:correlationEvent "Small Shelly Fossils, or Archaeocyathid eciesSP"@en ;
+  gts:correlationEvent "Small Shelly Fossils, or Archaeocyathid species"@en ;
   rdfs:label "Stratotype Point Base of Cambrian Stage 2"@en ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
 .
@@ -1607,7 +1606,7 @@ isc:BaseEdiacaranSP
   gts:status "Ratified 1990"@en ;
   rdfs:comment "Enorama Creek, Flinders Ranges, South Australia"@en ;
   rdfs:label "Stratotype Point Base of Ediacaran"@en ;
-  rdfs:seeAlso <http://stratigraphy.science.purdue.edu/references/Ediacaran_Lethaia060SP.pdf> ;
+  rdfs:seeAlso <http://stratigraphy.science.purdue.edu/references/EdiacaranGSSP_Lethaia060.pdf> ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/Ediacaran.pdf> ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
 .
@@ -1964,7 +1963,7 @@ isc:BaseHauterivian
 .
 isc:BaseHauterivianSP
   rdf:type gts:StratigraphicPoint ;
-  gts:correlationEvent "Ammonite FAD of genus Acanthodiscus (eeciallySP A. radiatus)"@en ;
+  gts:correlationEvent "Ammonite FAD of genus Acanthodiscus (especially A. radiatus)"@en ;
   rdfs:comment "candidate is La Charce village, Drôme Province, southeast France"@en ;
   rdfs:label "Stratotype Point Base of Barremian"@en ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
@@ -2037,12 +2036,12 @@ isc:BaseHoloceneSP
   dc:source "Episodes 31/2, 2008"@en ;
   dc:source "J. Quaternary Sci., Vol. 24 pp. 3–17, 2009"@en ;
   gts:boundaryLevel "1492.45m depth in Borehole NGRIP2"@en ;
-  gts:correlationEvent "Climatic -- End of the Younger Dryas cold ellSP, which is reflected in a shift in deuterium excess values"@en ;
+  gts:correlationEvent "Climatic -- End of the Younger Dryas cold spell, which is reflected in a shift in deuterium excess values"@en ;
   gts:ratifiedGSSP "true"^^xsd:boolean ;
   gts:status "Ratified 2008"@en ;
   rdfs:comment "NorthGRIP ice core, central Greenland"@en ;
   rdfs:label "Stratotype Point Base of Holocene"@en ;
-  rdfs:seeAlso <http://stratigraphy.science.purdue.edu/references/Holocene_JQuatSci090SP.pdf> ;
+  rdfs:seeAlso <http://stratigraphy.science.purdue.edu/references/HoloceneGSSP_JQuatSci090.pdf> ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/Holocene.pdf> ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
 .
@@ -2151,7 +2150,7 @@ isc:BaseJurassicSP
   samfl:shape isc:BaseJurassic-location ;
   dc:source "Episodes 36/3, p. 162-198, 2013"@en ;
   gts:boundaryLevel "5.80 m above top of Koessen Formation"@en ;
-  gts:correlationEvent "FO of ammonite Psiloceras elaeSP tirolicum, FO of aragonitic foraminifer Praegubkinella turgescens"@en ;
+  gts:correlationEvent "FO of ammonite Psiloceras spelae tirolicum, FO of aragonitic foraminifer Praegubkinella turgescens"@en ;
   gts:ratifiedGSSP "true"^^xsd:boolean ;
   gts:status "Ratified 2010"@en ;
   rdfs:comment "Kuhjoch section,Tyrol, Austria "@en ;
@@ -2483,7 +2482,7 @@ isc:BaseLutetianSP
   gts:correlationEvent "LO of calcareous nannofossil Blackites inflatus (CP12a/b boundary); middle of polarity Chron C21r"@en ;
   gts:ratifiedGSSP "true"^^xsd:boolean ;
   gts:status "Ratified 2011"@en ;
-  rdfs:comment "Gorrondatxe section, Basque Country, ainSP"@en ;
+  rdfs:comment "Gorrondatxe section, Basque Country, Spain"@en ;
   rdfs:label "Stratotype Point Base of Lutetian"@en ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/Lutetian.pdf> ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
@@ -2710,7 +2709,7 @@ isc:BaseMiddleJurassicSP
   gts:correlationEvent "Ammonite FAD Leioceras opalinum and Leioceras lineatum"@en ;
   gts:ratifiedGSSP "true"^^xsd:boolean ;
   gts:status "Ratified 2000"@en ;
-  rdfs:comment "Fuentelsaz, ainSP "@en ;
+  rdfs:comment "Fuentelsaz, Spain "@en ;
   rdfs:label "Stratotype Point Base of Middle Jurassic"@en ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/Aalenian.pdf> ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
@@ -2999,9 +2998,9 @@ isc:BaseOlenekianSP
   samfl:shape isc:BaseOlenekianLocation ;
   dc:source "Albertiana 36, 2007"@en ;
   gts:boundaryLevel "Base of Bed 13A-2, about 4.8m up in Mikin Formation., Section M04 (~4000 m elevation)"@en ;
-  gts:correlationEvent "Conodont FAD NeoathodusSP waageni, just above Base of Rohillites rohilla ammonite zone, and below lowest occurrence of Flemingites and Euflemingites ammonite genera. Within a prominent positive Carbon-13 peak, and just above widely recognizable sequence boundary."@en ;
+  gts:correlationEvent "Conodont FAD Neospathodus waageni, just above Base of Rohillites rohilla ammonite zone, and below lowest occurrence of Flemingites and Euflemingites ammonite genera. Within a prominent positive Carbon-13 peak, and just above widely recognizable sequence boundary."@en ;
   gts:status "Anticipated 2009"@en ;
-  rdfs:comment "Candidate Stratotype Point Mud (Muth) village, itiSP valley, northwest India"@en ;
+  rdfs:comment "Candidate Stratotype Point Mud (Muth) village, Spiti valley, northwest India"@en ;
   rdfs:label "Stratotype Point Base of Olenekian"@en ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
 .
@@ -3140,7 +3139,7 @@ isc:BasePennsylvanianSP
   rdf:type gts:StratigraphicPoint ;
   samfl:shape isc:BasePennsylvanian-location ;
   dc:source "Episodes 22/4, p. 272 283, 1999"@en ;
-  gts:boundaryLevel "82.9m above the top of the Battleship Formation in the lower Bird ringSP Formation"@en ;
+  gts:boundaryLevel "82.9m above the top of the Battleship Formation in the lower Bird Spring Formation"@en ;
   gts:correlationEvent "Conodont FAD Declinognathodus noduliferus"@en ;
   gts:ratifiedGSSP "true"^^xsd:boolean ;
   gts:status "Ratified 1996 "@en ;
@@ -3342,7 +3341,7 @@ isc:BasePlioceneSP
   rdf:type gts:StratigraphicPoint ;
   samfl:shape isc:BasePliocene-location ;
   dc:source "Episodes 23/3, p. 179  187, 2000"@en ;
-  gts:boundaryLevel "Base of the Trubi Formation which correondsSP to Insolation cycle 510 "@en ;
+  gts:boundaryLevel "Base of the Trubi Formation which corresponds to Insolation cycle 510 "@en ;
   gts:correlationEvent "Magnetic Base of the Thvera magnetic event  (C3n.4n) is only 96 kyr (5 precession cycles) younger than the GSSP."@en ;
   gts:ratifiedGSSP "true"^^xsd:boolean ;
   gts:status "Ratified 2000"@en ;
@@ -3528,7 +3527,7 @@ isc:BaseRhaetian
 .
 isc:BaseRhaetianSP
   rdf:type gts:StratigraphicPoint ;
-  gts:correlationEvent "Near FAD of ammonite Cochloceras, conodonts Misikella pSP. and Epigondolella mosheri, and radiolarian Proparvicingula moniliformis"@en ;
+  gts:correlationEvent "Near FAD of ammonite Cochloceras, conodonts Misikella spp. and Epigondolella mosheri, and radiolarian Proparvicingula moniliformis"@en ;
   rdfs:comment "Key sections in Austria, British Columbia (Canada), and Turkey"@en ;
   rdfs:label "Stratotype Point Base of Rhaetian"@en ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
@@ -3606,7 +3605,7 @@ isc:BaseSantonianSP
   gts:correlationEvent "The FO of the inoceramid bivalve Platyceramus undulatoplicatus"@en ;
   gts:ratifiedGSSP "true"^^xsd:boolean ;
   gts:status "Ratified 2013"@en ;
-  rdfs:comment "Olazagutia, Navarra, ainSP"@en ;
+  rdfs:comment "Olazagutia, Navarra, Spain"@en ;
   rdfs:label "Stratotype Point Base of Santonian"@en ;
   rdfs:seeAlso <http://www.episodes.co.in/contents/2014/march/pp2-13.pdf> ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
@@ -3646,7 +3645,7 @@ isc:BaseSelandianSP
   gts:correlationEvent "Onset of a carbon isotope shift and sealevel drop"@en ;
   gts:ratifiedGSSP "true"^^xsd:boolean ;
   gts:status "Ratified 2008"@en ;
-  rdfs:comment "Zumaia section, northern ainSP"@en ;
+  rdfs:comment "Zumaia section, northern Spain"@en ;
   rdfs:label "Stratotype Point Base of Selandian"@en ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/Selandian&Thanetian.pdf> ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
@@ -3677,7 +3676,7 @@ isc:BaseSerravallianSP
   samfl:shape isc:BaseSerravallian-location ;
   dc:source "Episodes, 32/3, 152 - 166, 2009"@en ;
   gts:boundaryLevel "formation boundary between the Globigerina Limestone and Blue Clay"@en ;
-  gts:correlationEvent "Oxygen isotopic event (global cooling episode) Mi3b near calcareous nannofossil LAD of henolithusSP heteromorphus"@en ;
+  gts:correlationEvent "Oxygen isotopic event (global cooling episode) Mi3b near calcareous nannofossil LAD of Sphenolithus heteromorphus"@en ;
   gts:ratifiedGSSP "true"^^xsd:boolean ;
   gts:status "Ratified 2007"@en ;
   rdfs:comment "Ras il Pellegrin section, Fomm Ir- Rih Bay, west coast of Malta"@en ;
@@ -3870,7 +3869,7 @@ isc:BaseThanetianSP
   gts:correlationEvent "Magnetic Base of Chron C26n"@en ;
   gts:ratifiedGSSP "true"^^xsd:boolean ;
   gts:status "Ratified 2008"@en ;
-  rdfs:comment "Zumaia section, northern ainSP"@en ;
+  rdfs:comment "Zumaia section, northern Spain"@en ;
   rdfs:label "Stratotype Point Base of Thanetian"@en ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/Selandian&Thanetian.pdf> ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/Sinemurian.pdf> ;
@@ -4161,7 +4160,7 @@ isc:BaseUpperOrdovicianSP
   rdf:type gts:StratigraphicPoint ;
   samfl:shape isc:BaseUpperOrdovician-location ;
   dc:source "Episodes 23/2, p. 102 109, 2000"@en ;
-  gts:boundaryLevel "1.4m below a phohoriteSP marker bed in the E14b outcrop"@en ;
+  gts:boundaryLevel "1.4m below a phosphorite marker bed in the E14b outcrop"@en ;
   gts:correlationEvent "Graptolite FAD Nemagraptus gracilis"@en ;
   gts:ratifiedGSSP "true"^^xsd:boolean ;
   gts:status "Ratified 2002"@en ;
@@ -4271,7 +4270,7 @@ isc:BaseValanginian
 isc:BaseValanginianSP
   rdf:type gts:StratigraphicPoint ;
   gts:correlationEvent "Calpionellid FAD Calpionellites darderi (Base of Calpionellid Zone E); followed by ammonite FAD “Thurmanniceras” pertransiens"@en ;
-  rdfs:comment "candidates are near Montbrunles- Bains (Drôme province, SE France) and Cañada Luenga (Betic Cordillera, S. ainSP)"@en ;
+  rdfs:comment "candidates are near Montbrunles- Bains (Drôme province, SE France) and Cañada Luenga (Betic Cordillera, S. Spain)"@en ;
   rdfs:label "Stratotype Point Base of Albian"@en ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
 .
@@ -4304,7 +4303,7 @@ isc:BaseWenlockSP
   dc:source "Geol. Series, Nat. Mus. Wales, 9, p. 51 73, 1989"@en ;
   dc:source "Lethaia 14"@en ;
   gts:boundaryLevel "Base of the Buildwas Formation"@en ;
-  gts:correlationEvent "Imprecise. Between the Base of acritarch biozone 5 and LAD of conodont PteroathodusSP amorphognathoides. The current Stratotype Point does not coincide with the Base of the Cyrtograptus centrifugus Biozone, as was supposed when the Stratotype Point was defined. Restudy recommends a slightly higher and correlatable level on condonts  the Ireviken datum 2, which coincides approximately with the Base of the murchisoni Graptolite Biozone"@en ;
+  gts:correlationEvent "Imprecise. Between the Base of acritarch biozone 5 and LAD of conodont Pterospathodus amorphognathoides. The current Stratotype Point does not coincide with the Base of the Cyrtograptus centrifugus Biozone, as was supposed when the Stratotype Point was defined. Restudy recommends a slightly higher and correlatable level on condonts  the Ireviken datum 2, which coincides approximately with the Base of the murchisoni Graptolite Biozone"@en ;
   gts:ratifiedGSSP "true"^^xsd:boolean ;
   gts:status "Ratified 1980"@en ;
   rdfs:comment "Hughley Brook, UK"@en ;
@@ -6320,7 +6319,7 @@ isc:Ediacaran
   rdf:type gts:Period ;
   rdf:type skos:Concept ;
   rdf:type time:ProperInterval ;
-  dc:description "Enorama Creek, Flinders Ranges, South Australia |  31.3314 S 138.6334 E |  Base of the Marinoan cap Carbonate |  (1) rapid decay of Marinoan ice sheets and onset of distinct cap carbonates throughout the world, and (2) the beginning of a distinctive pattern of secular changes in carbon isotopes. |  Ratified 1990 |  Lethaia 39, p.13 30, 2006 | http://stratigraphy.science.purdue.edu/references/Ediacaran_Lethaia060SP.pdf"@en ;
+  dc:description "Enorama Creek, Flinders Ranges, South Australia |  31.3314 S 138.6334 E |  Base of the Marinoan cap Carbonate |  (1) rapid decay of Marinoan ice sheets and onset of distinct cap carbonates throughout the world, and (2) the beginning of a distinctive pattern of secular changes in carbon isotopes. |  Ratified 1990 |  Lethaia 39, p.13 30, 2006 | http://stratigraphy.science.purdue.edu/references/EdiacaranGSSP_Lethaia060.pdf"@en ;
   rdfs:comment "older bound -635 Ma"@en ;
   rdfs:comment "younger bound -541.0 +|-1.0 Ma"@en ;
   rdfs:label "Ediacaran Period"@en ;
@@ -7364,7 +7363,7 @@ isc:Hadean
   skos:prefLabel "Hadeánico"@es ;
   skos:prefLabel "Hadeïcum"@nl ;
   skos:prefLabel "Hadéen"@fr ;
-  skos:prefLabel "Hád (odnSPí hranice není definována)"@cs ;
+  skos:prefLabel "Hád (spodní hranice není definována)"@cs ;
   skos:prefLabel "adeano"@it ;
   skos:prefLabel "hadaikum"@sk ;
   skos:prefLabel "hadei"@hu ;
@@ -8217,9 +8216,9 @@ isc:LowerCretaceous
   skos:prefLabel "Wczesna/Dolna Kreda"@pl ;
   skos:prefLabel "cretacico inferiore"@it ;
   skos:prefLabel "kora/alsó-kréta"@hu ;
-  skos:prefLabel "odnSPí křída"@cs ;
-  skos:prefLabel "raná/odnSPá  krieda"@sk ;
-  skos:prefLabel "zgodnja/odnjaSP kreda"@sl ;
+  skos:prefLabel "spodní křída"@cs ;
+  skos:prefLabel "raná/spodná  krieda"@sk ;
+  skos:prefLabel "zgodnja/spodnja kreda"@sl ;
   skos:prefLabel "äldre/undre krita"@sv ;
   skos:prefLabel "Ранна/Долна Креда"@bg ;
   skos:prefLabel "前期白亜紀"@ja ;
@@ -8274,9 +8273,9 @@ isc:LowerDevonian
   skos:prefLabel "Wczesny/Dolny Dewon"@pl ;
   skos:prefLabel "devoniano inferiore"@it ;
   skos:prefLabel "kora/alsó-devon"@hu ;
-  skos:prefLabel "odnSPí devon"@cs ;
-  skos:prefLabel "raný/odnSPý devón"@sk ;
-  skos:prefLabel "zgodnji/odnjiSP devon"@sl ;
+  skos:prefLabel "spodní devon"@cs ;
+  skos:prefLabel "raný/spodný devón"@sk ;
+  skos:prefLabel "zgodnji/spodnji devon"@sl ;
   skos:prefLabel "äldre/undre devon"@sv ;
   skos:prefLabel "Ранен/Долен Девон"@bg ;
   skos:prefLabel "前期デボン紀"@ja ;
@@ -8328,9 +8327,9 @@ isc:LowerJurassic
   skos:prefLabel "Wczesna/Dolna Jura"@pl ;
   skos:prefLabel "giurassico inferiore"@it ;
   skos:prefLabel "kora/alsó-ura"@hu ;
-  skos:prefLabel "odnSPí jura"@cs ;
-  skos:prefLabel "raná/odnSPá  jura"@sk ;
-  skos:prefLabel "zgodnja/odnjaSP kreda"@sl ;
+  skos:prefLabel "spodní jura"@cs ;
+  skos:prefLabel "raná/spodná  jura"@sk ;
+  skos:prefLabel "zgodnja/spodnja kreda"@sl ;
   skos:prefLabel "äldre/undre jura"@sv ;
   skos:prefLabel "Ранна/Долна Юра"@bg ;
   skos:prefLabel "前期ジュラ紀"@ja ;
@@ -8412,10 +8411,10 @@ isc:LowerOrdovician
   skos:prefLabel "Vroeg/Onder Ordovicium"@nl ;
   skos:prefLabel "Wczesny/Dolny Ordowik"@pl ;
   skos:prefLabel "kora/alsó-ordovícium"@hu ;
-  skos:prefLabel "odnSPí ordovik"@cs ;
+  skos:prefLabel "spodní ordovik"@cs ;
   skos:prefLabel "ordoviciano inferiore"@it ;
-  skos:prefLabel "raný/odnSPý ordovik"@sk ;
-  skos:prefLabel "zgodnji/odnjiSP ordovicij"@sl ;
+  skos:prefLabel "raný/spodný ordovik"@sk ;
+  skos:prefLabel "zgodnji/spodnji ordovicij"@sl ;
   skos:prefLabel "äldre/undre ordovicium"@sv ;
   skos:prefLabel "Ранен/Долен Ордовик"@bg ;
   skos:prefLabel "前期オルドビス紀"@ja ;
@@ -8494,10 +8493,10 @@ isc:LowerTriassic
   skos:prefLabel "Vroeg/Onder Trias"@nl ;
   skos:prefLabel "Wczesny/Dolny Trias"@pl ;
   skos:prefLabel "kora/alsó-triász"@hu ;
-  skos:prefLabel "odnSPí trias"@cs ;
-  skos:prefLabel "raný/odnSPý trias"@sk ;
+  skos:prefLabel "spodní trias"@cs ;
+  skos:prefLabel "raný/spodný trias"@sk ;
   skos:prefLabel "triassico inferiore"@it ;
-  skos:prefLabel "zgodnji/odnjiSP trias"@sl ;
+  skos:prefLabel "zgodnji/spodnji trias"@sl ;
   skos:prefLabel "äldre/undre trias"@sv ;
   skos:prefLabel "Раннен/долен Триаѿ"@bg ;
   skos:prefLabel "前期三畳紀"@ja ;
@@ -11732,7 +11731,7 @@ isc:Silurian
   owl:sameAs <http://dbpedia.org/resource/Silurian> ;
   skos:broader isc:Paleozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
-  skos:definition "The Silurian is a geologic period and system that extends from the end of the Ordovician Period, about 443.7 ± 1.5 million years ago (mya), to the beginning of the Devonian Period, about 416.0 ± 2.8 mya. As with other geologic periods, the rock beds that define the period's start and end are well identified, but the exact dates are uncertain by several million years. The Base of the Silurian is set at a major extinction event when 60% of marine eciesSP were wiped out."@en ;
+  skos:definition "The Silurian is a geologic period and system that extends from the end of the Ordovician Period, about 443.7 ± 1.5 million years ago (mya), to the beginning of the Devonian Period, about 416.0 ± 2.8 mya. As with other geologic periods, the rock beds that define the period's start and end are well identified, but the exact dates are uncertain by several million years. The Base of the Silurian is set at a major extinction event when 60% of marine species were wiped out."@en ;
   skos:inScheme ts:isc2017 ;
   skos:narrower isc:Llandovery ;
   skos:narrower isc:Ludlow ;
@@ -13518,15 +13517,13 @@ ts:isc2017
   dc:title "International Chronostratigraphic Chart (2017)"@en ;
   dcterms:created "2017-03-31"^^xsd:date ;
   dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-  dcterms:modified "2018-02-09"^^xsd:date ;
+  dcterms:modified "2018-09-27"^^xsd:date ;
   dcterms:replaces <http://resource.geosciml.org/classifierscheme/ics/2014/ischart> ;
   dcterms:replaces ts:isc2014 ;
   dcterms:subject <http://dbpedia.org/page/Geologic_time_scale> ;
-  vann:preferredNameacePrefixSP "isc"@en ;
-  vann:preferredNameaceUriSP <http://resource.geosciml.org/classifierscheme/ics/ischart/> ;
-  void:arqlEndpointSP <http://resource.geosciml.org/arqlSP/isc2017> ;
-  void:dataDump <http://resource.geosciml.org/vocabulary/timescale/isc2017-02.rdf> ;
-  void:dataDump <http://resource.geosciml.org/vocabulary/timescale/isc2017-02.ttl> ;
+  vann:preferredNamespacePrefix "isc"@en ;
+  vann:preferredNamespaceUri <http://resource.geosciml.org/classifierscheme/ics/ischart/> ;
+  void:dataDump <https://github.com/GeoscienceAustralia/geosciml.org/blob/master/resource/static/vocabulary/timescale/isc2017.ttl> ;
   void:exampleResource isc:BaseOrdovician ;
   void:exampleResource isc:BaseOrdovicianSP ;
   void:exampleResource isc:BaseOrdovicianTime ;
@@ -13534,7 +13531,7 @@ ts:isc2017
   void:feature <http://www.w3.org/ns/formats/RDF_XML> ;
   void:feature <http://www.w3.org/ns/formats/Turtle> ;
   void:rootResource <http://resource.geosciml.org/classifier/ics/ischart/2017> ;
-  void:uriaceSP "http://resource.geosciml.org/classifier/ics/ischart/"^^rdf:PlainLiteral ;
+  void:uriSpace "http://resource.geosciml.org/classifier/ics/ischart/"^^rdf:PlainLiteral ;
   void:vocabulary <http://resource.geosciml.org/ontology/timescale/gts> ;
   void:vocabulary <http://resource.geosciml.org/ontology/timescale/rank> ;
   void:vocabulary <http://resource.geosciml.org/ontology/timescale/thors> ;
@@ -13667,13 +13664,14 @@ ts:isc2017
   owl:imports <http://www.opengis.net/ont/geosparql> ;
   owl:imports <https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/19108/2006/iso19108TemporalReferenceSystem.rdf> ;
   owl:sameAs <http://resource.geosciml.org/classifierscheme/ics/2017/ischart> ;
+  skos:changeNote "2018-09-27 fixed some broken namespaces and prefixes, mostly related to SPARQL - some kind of search/replace error" ;
   skos:changeNote """1. THORS ontology updated to align with OWL-Time (instead of ISO 19108).
 2. GTS ontology updated to use sam-lite (instead of OWL implementation of ISO 19156) with a lightweight SOSA alignment
-3. atialSP data uses GeoARQLSP (instead of OWL implementation of ISO 19107)""" ;
+3. Spatial data uses GeoSPARQL (instead of OWL implementation of ISO 19107)""" ;
   skos:changeNote """2017-02-22 Added additional collections for eras of each rank;
 classified rank-based collections using XKOS;
 cleaned out legacy Base* instances that did not have links;
-renamed [GS]SP* individuals to *SP;
+renamed *[GS]SP individuals to *SP;
 removed all boundaries as TopConcepts, leaving on PreCambrian and Phanerozoic as TopConcepts""" ;
   skos:changeNote "2017/02 - Paleogene: Base of Chattian: The numeric age is updated to that at the ratified GSSP (27.82 Ma; Nanno et al. exp. 2017; by request of Simonetti Monechi)" ;
   skos:changeNote "Added informal definition of chronometric temporal reference system - Millions of years, counting backwards from 1950"@en ;
