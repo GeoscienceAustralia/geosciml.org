@@ -98,7 +98,7 @@
    </skos:Concept>
    <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation">
       <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod"/>
-      <skos:definition xml:lang="en">Data collected in field through direct observation of a single outcrop. Observer defines scope of 'single outcrop' - may be one point location, or averaged over an extended but connected) area, e.g. a single polygon on a map. Direct observation may include observation using a remote camera (e.g. downhole viewer, submarine camera)</skos:definition>
+      <skos:definition xml:lang="en">Data collected in field through direct observation of a single outcrop. Observer defines scope of 'single outcrop' - may be one point location, or averaged over an extended but connected) area, e.g. a single polygon on a map.  Direct observation may include observation using a remote camera (e.g. downhole viewer, submarine camera)</skos:definition>
       <skos:prefLabel xml:lang="en">outcrop observation</skos:prefLabel>
       <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/direct_observation"/>
       <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation_estimated_values"/>
