@@ -9,7 +9,6 @@
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix gts: <http://resource.geosciml.org/ontology/timescale/gts#> .
 @prefix isc: <http://resource.geosciml.org/classifier/ics/ischart/> .
-@prefix iso-trs: <http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rank: <http://resource.geosciml.org/ontology/timescale/rank/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -27,7 +26,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://resource.geosciml.org/classifier/cgi/geologicage/ma>
-  rdf:type iso-trs:TM_CoordinateSystem ;
+  rdf:type <http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem#TM_CoordinateSystem> ;
   rdf:type time:TRS ;
   <http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem#TM_CoordinateSystem.interval> "Ma" ;
   <http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem#TM_CoordinateSystem.origin> "1950-01-01T00:00:00"^^xsd:dateTime ;
@@ -13677,7 +13676,7 @@ removed all boundaries as TopConcepts, leaving on PreCambrian and Phanerozoic as
   skos:changeNote "2018-09-27 fixed some broken namespaces and prefixes, mostly related to SPARQL - some kind of search/replace error" ;
   skos:changeNote "Added informal definition of chronometric temporal reference system - Millions of years, counting backwards from 1950"@en ;
   skos:changeNote "See <http://stratigraphy.org/ICSchart/ChangeLog2012-2013-2014-2015-2016-2017.txt> for changes from prior versions"@en ;
-  skos:editorialNote """<p>This dataset is being <a href=\"https://github.com/GeoscienceAustralia/geosciml.org/blob/master/resource/static/vocabulary/timescale/\">maintained in GitHub</a></p> 
+  skos:editorialNote """<p>This dataset is being <a href=\"https://github.com/GeoscienceAustralia/geosciml.org/blob/master/resource/static/vocabulary/timescale/\">maintained in GitHub</a></p>
 
 <p>Please report errors, or propose improvements, using the <a href=\"https://github.com/GeoscienceAustralia/geosciml.org/issues\">GitHub issue-tracker</a>."""^^rdf:HTML ;
   skos:hasTopConcept isc:Phanerozoic ;
