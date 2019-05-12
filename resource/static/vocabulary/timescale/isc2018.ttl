@@ -2553,7 +2553,7 @@ isc:BaseMeghalayanSP
   samfl:shape isc:BaseMiddleOrdovician-location ;
   dc:source "International Commission on Stratigraphy - Formal subdivision of the Holocene Series/Epoch"@en ;
   gts:ratifiedGSSP true ;
-  gts:status "Ratified 2018"@en ;
+  gts:status "Ratified 2018-06-26"@en ;
   rdfs:comment "Mawmluh Cave speleothem, Meghalaya, India."@en ;
   rdfs:label "Stratotype Point Base of Meghalayan"@en ;
   rdfs:seeAlso <http://stratigraphy.org/index.php/ics-news-and-meetings/125-formal-subdivision-of-the-holocene-series-epoch> ;
@@ -2691,7 +2691,9 @@ isc:BaseMiaolingian
 isc:BaseMiaolingianSP
   a gts:StratigraphicPoint ;
   gts:correlationEvent "Trilobite, potentially FAD of Oryctocephalus indicus"@en ;
-  rdfs:comment "candidate sections are Wuliu-Zengjiayan (east Guizhou, China) and Split Mountain (Nevada, USA)"@en ;
+  gts:ratifiedGSSP true ;
+  gts:status "Ratified 2018-06-26" ;
+  rdfs:comment "Wuliu-Zengjiayan (east Guizhou, China)"@en ;
   rdfs:label "Stratotype Point Base of Miaolingian"@en ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
 .
@@ -3054,7 +3056,7 @@ isc:BaseNorthgrippianSP
   a gts:StratigraphicPoint ;
   dc:source "International Commission on Stratigraphy - Formal subdivision of the Holocene Series/Epoch"@en ;
   gts:ratifiedGSSP true ;
-  gts:status "Ratified 2018"@en ;
+  gts:status "Ratified 2018-06-26"@en ;
   rdfs:comment "Global AuxiliaryStratotype: Gruta do Padre Cave speleothem, Brazil"@en ;
   rdfs:comment "NorthGRIP1 ice core, Greenland"@en ;
   rdfs:comment "NorthGRIP1 ice core, Greenland."@en ;
@@ -3655,8 +3657,9 @@ isc:BaseSakmarian
 isc:BaseSakmarianSP
   a gts:StratigraphicPoint ;
   gts:correlationEvent "Near conodont FAD Sweetognathus merrelli"@en ;
-  gts:status "Anticipated 2009"@en ;
-  rdfs:comment "candidate is at Kondurovsky, Orenburg Province, Russia."@en ;
+  gts:ratifiedGSSP true ;
+  gts:status "Ratified 2018-07-21"@en ;
+  rdfs:comment "Kondurovsky, Orenburg Province, Russia."@en ;
   rdfs:label "Stratotype Point Base of Sakmarian"@en ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
 .
