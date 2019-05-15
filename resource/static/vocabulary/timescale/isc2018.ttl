@@ -45,7 +45,6 @@ isc:
   rdfs:label "Geologic Timescale Elements in the International Chronostratigraphic Chart"@en ;
   skos:member isc:Boundaries ;
   skos:member isc:GeochronologicEras ;
-  skos:member isc:StratigraphicPoints ;
   skos:prefLabel "Geologic Timescale Elements in the International Chronostratigraphic Chart"@en ;
 .
 isc:Aalenian
@@ -138,7 +137,6 @@ isc:Aeronian
   foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Aeronian> ;
 .
 isc:Ages
-  a xkos:ClassificationLevel ;
   a skos:Collection ;
   xkos:depth "7"^^xsd:positiveInteger ;
   rdfs:label "GeochronologicEras of rank \"Age\"" ;
@@ -183,6 +181,7 @@ isc:Ages
   skos:member isc:Gelasian ;
   skos:member isc:Givetian ;
   skos:member isc:Gorstian ;
+  skos:member isc:Greenlandian ;
   skos:member isc:Guzhangian ;
   skos:member isc:Gzhelian ;
   skos:member isc:Hauterivian ;
@@ -201,10 +200,12 @@ isc:Ages
   skos:member isc:Ludfordian ;
   skos:member isc:Lutetian ;
   skos:member isc:Maastrichtian ;
+  skos:member isc:Meghalayan ;
   skos:member isc:Messinian ;
   skos:member isc:MiddlePleistocene ;
   skos:member isc:Moscovian ;
   skos:member isc:Norian ;
+  skos:member isc:Northgrippian ;
   skos:member isc:Olenekian ;
   skos:member isc:Oxfordian ;
   skos:member isc:Paibian ;
@@ -4648,6 +4649,7 @@ isc:Boundaries
   skos:member isc:BaseLudlow ;
   skos:member isc:BaseLutetian ;
   skos:member isc:BaseMaastrichtian ;
+  skos:member isc:BaseMeghalayan ;
   skos:member isc:BaseMesoarchean ;
   skos:member isc:BaseMesoproterozoic ;
   skos:member isc:BaseMesozoic ;
@@ -4664,6 +4666,7 @@ isc:Boundaries
   skos:member isc:BaseNeogene ;
   skos:member isc:BaseNeoproterozoic ;
   skos:member isc:BaseNorian ;
+  skos:member isc:BaseNorthgrippian ;
   skos:member isc:BaseOlenekian ;
   skos:member isc:BaseOligocene ;
   skos:member isc:BaseOrdovician ;
@@ -4825,6 +4828,8 @@ isc:Boundaries
       isc:BaseMiddlePleistocene
       isc:BaseUpperPleistocene
       isc:BaseHolocene
+      isc:BaseNorthgrippian
+      isc:BaseMeghalayan
       isc:Present
     ) ;
   skos:prefLabel "Boundaries in the International Chronostratigraphic Chart"@en ;
@@ -6617,7 +6622,6 @@ isc:Eocene
   foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Eocene> ;
 .
 isc:Eons
-  a xkos:ClassificationLevel ;
   a skos:Collection ;
   xkos:depth "3"^^xsd:positiveInteger ;
   rdfs:label "GeochronologicEras of rank \"Eon\"" ;
@@ -6627,7 +6631,6 @@ isc:Eons
   skos:member isc:Proterozoic ;
 .
 isc:Epochs
-  a xkos:ClassificationLevel ;
   a skos:Collection ;
   xkos:depth "6"^^xsd:positiveInteger ;
   rdfs:label "GeochronologicEras of rank \"Epoch\"" ;
@@ -6671,7 +6674,6 @@ isc:Epochs
   skos:member isc:Wenlock ;
 .
 isc:Eras
-  a xkos:ClassificationLevel ;
   a skos:Collection ;
   xkos:depth "4"^^xsd:positiveInteger ;
   rdfs:label "GeochronologicEras of rank \"Era\"" ;
@@ -6990,186 +6992,16 @@ isc:Gelasian
   foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Gelasian> ;
 .
 isc:GeochronologicEras
-  a xkos:ClassificationLevel ;
   a skos:Collection ;
   xkos:depth "1"^^xsd:positiveInteger ;
   rdfs:label "GeochronologicEras (all ranks) in the International Chronostratigraphic Chart"@en ;
-  skos:member isc:Aalenian ;
-  skos:member isc:Aeronian ;
-  skos:member isc:Albian ;
-  skos:member isc:Anisian ;
-  skos:member isc:Aptian ;
-  skos:member isc:Aquitanian ;
-  skos:member isc:Archean ;
-  skos:member isc:Artinskian ;
-  skos:member isc:Asselian ;
-  skos:member isc:Bajocian ;
-  skos:member isc:Barremian ;
-  skos:member isc:Bartonian ;
-  skos:member isc:Bashkirian ;
-  skos:member isc:Bathonian ;
-  skos:member isc:Berriasian ;
-  skos:member isc:Burdigalian ;
-  skos:member isc:Calabrian ;
-  skos:member isc:Callovian ;
-  skos:member isc:Calymmian ;
-  skos:member isc:Cambrian ;
-  skos:member isc:CambrianSeries2 ;
-  skos:member isc:CambrianStage10 ;
-  skos:member isc:CambrianStage2 ;
-  skos:member isc:CambrianStage3 ;
-  skos:member isc:CambrianStage4 ;
-  skos:member isc:Campanian ;
-  skos:member isc:Capitanian ;
-  skos:member isc:Carboniferous ;
-  skos:member isc:Carnian ;
-  skos:member isc:Cenomanian ;
-  skos:member isc:Cenozoic ;
-  skos:member isc:Changhsingian ;
-  skos:member isc:Chattian ;
-  skos:member isc:Cisuralian ;
-  skos:member isc:Coniacian ;
-  skos:member isc:Cretaceous ;
-  skos:member isc:Cryogenian ;
-  skos:member isc:Danian ;
-  skos:member isc:Dapingian ;
-  skos:member isc:Darriwilian ;
-  skos:member isc:Devonian ;
-  skos:member isc:Drumian ;
-  skos:member isc:Ectasian ;
-  skos:member isc:Ediacaran ;
-  skos:member isc:Eifelian ;
-  skos:member isc:Emsian ;
-  skos:member isc:Eoarchean ;
-  skos:member isc:Eocene ;
-  skos:member isc:Famennian ;
-  skos:member isc:Floian ;
-  skos:member isc:Fortunian ;
-  skos:member isc:Frasnian ;
-  skos:member isc:Furongian ;
-  skos:member isc:Gelasian ;
-  skos:member isc:Givetian ;
-  skos:member isc:Gorstian ;
-  skos:member isc:Guadalupian ;
-  skos:member isc:Guzhangian ;
-  skos:member isc:Gzhelian ;
-  skos:member isc:Hadean ;
-  skos:member isc:Hauterivian ;
-  skos:member isc:Hettangian ;
-  skos:member isc:Hirnantian ;
-  skos:member isc:Holocene ;
-  skos:member isc:Homerian ;
-  skos:member isc:Induan ;
-  skos:member isc:Ionian ;
-  skos:member isc:Jiangshanian ;
-  skos:member isc:Jurassic ;
-  skos:member isc:Kasimovian ;
-  skos:member isc:Katian ;
-  skos:member isc:Kimmeridgian ;
-  skos:member isc:Kungurian ;
-  skos:member isc:Ladinian ;
-  skos:member isc:Langhian ;
-  skos:member isc:Llandovery ;
-  skos:member isc:Lochkovian ;
-  skos:member isc:Lopingian ;
-  skos:member isc:LowerCretaceous ;
-  skos:member isc:LowerDevonian ;
-  skos:member isc:LowerJurassic ;
-  skos:member isc:LowerMississippian ;
-  skos:member isc:LowerOrdovician ;
-  skos:member isc:LowerPennsylvanian ;
-  skos:member isc:LowerTriassic ;
-  skos:member isc:Ludfordian ;
-  skos:member isc:Ludlow ;
-  skos:member isc:Lutetian ;
-  skos:member isc:Maastrichtian ;
-  skos:member isc:Mesoarchean ;
-  skos:member isc:Mesoproterozoic ;
-  skos:member isc:Mesozoic ;
-  skos:member isc:Messinian ;
-  skos:member isc:Miaolingian ;
-  skos:member isc:MiddleDevonian ;
-  skos:member isc:MiddleJurassic ;
-  skos:member isc:MiddleMississippian ;
-  skos:member isc:MiddleOrdovician ;
-  skos:member isc:MiddlePennsylvanian ;
-  skos:member isc:MiddlePleistocene ;
-  skos:member isc:MiddleTriassic ;
-  skos:member isc:Miocene ;
-  skos:member isc:Mississippian ;
-  skos:member isc:Moscovian ;
-  skos:member isc:Neoarchean ;
-  skos:member isc:Neogene ;
-  skos:member isc:Neoproterozoic ;
-  skos:member isc:Norian ;
-  skos:member isc:Olenekian ;
-  skos:member isc:Oligocene ;
-  skos:member isc:Ordovician ;
-  skos:member isc:Orosirian ;
-  skos:member isc:Oxfordian ;
-  skos:member isc:Paibian ;
-  skos:member isc:Paleoarchean ;
-  skos:member isc:Paleocene ;
-  skos:member isc:Paleogene ;
-  skos:member isc:Paleoproterozoic ;
-  skos:member isc:Paleozoic ;
-  skos:member isc:Pennsylvanian ;
-  skos:member isc:Permian ;
-  skos:member isc:Phanerozoic ;
-  skos:member isc:Piacenzian ;
-  skos:member isc:Pleistocene ;
-  skos:member isc:Pliensbachian ;
-  skos:member isc:Pliocene ;
-  skos:member isc:Pragian ;
-  skos:member isc:Precambrian ;
-  skos:member isc:Priabonian ;
-  skos:member isc:Pridoli ;
-  skos:member isc:Proterozoic ;
-  skos:member isc:Quaternary ;
-  skos:member isc:Rhaetian ;
-  skos:member isc:Rhuddanian ;
-  skos:member isc:Rhyacian ;
-  skos:member isc:Roadian ;
-  skos:member isc:Rupelian ;
-  skos:member isc:Sakmarian ;
-  skos:member isc:Sandbian ;
-  skos:member isc:Santonian ;
-  skos:member isc:Selandian ;
-  skos:member isc:Serpukhovian ;
-  skos:member isc:Serravallian ;
-  skos:member isc:Sheinwoodian ;
-  skos:member isc:Siderian ;
-  skos:member isc:Silurian ;
-  skos:member isc:Sinemurian ;
-  skos:member isc:Statherian ;
-  skos:member isc:Stenian ;
-  skos:member isc:Telychian ;
-  skos:member isc:Terreneuvian ;
-  skos:member isc:Thanetian ;
-  skos:member isc:Tithonian ;
-  skos:member isc:Toarcian ;
-  skos:member isc:Tonian ;
-  skos:member isc:Tortonian ;
-  skos:member isc:Tournaisian ;
-  skos:member isc:Tremadocian ;
-  skos:member isc:Triassic ;
-  skos:member isc:Turonian ;
-  skos:member isc:UpperCretaceous ;
-  skos:member isc:UpperDevonian ;
-  skos:member isc:UpperJurassic ;
-  skos:member isc:UpperMississippian ;
-  skos:member isc:UpperOrdovician ;
-  skos:member isc:UpperPennsylvanian ;
-  skos:member isc:UpperPleistocene ;
-  skos:member isc:UpperTriassic ;
-  skos:member isc:Valanginian ;
-  skos:member isc:Visean ;
-  skos:member isc:Wenlock ;
-  skos:member isc:Wordian ;
-  skos:member isc:Wuchiapingian ;
-  skos:member isc:Wuliuan ;
-  skos:member isc:Ypresian ;
-  skos:member isc:Zanclean ;
+  skos:member isc:Ages ;
+  skos:member isc:Eons ;
+  skos:member isc:Epochs ;
+  skos:member isc:Eras ;
+  skos:member isc:Periods ;
+  skos:member isc:Sub-Periods ;
+  skos:member isc:Super-Eons ;
   skos:prefLabel "GeochronologicEras (all ranks) in the International Chronostratigraphic Chart"@en ;
 .
 isc:Givetian
@@ -10492,7 +10324,6 @@ isc:Pennsylvanian
   foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Pennsylvanian> ;
 .
 isc:Periods
-  a xkos:ClassificationLevel ;
   a skos:Collection ;
   xkos:depth "5"^^xsd:positiveInteger ;
   rdfs:label "GeochronologicEras of rank \"Period\"" ;
@@ -11301,18 +11132,6 @@ isc:Quaternary
   time:intervalStartedBy isc:Pleistocene ;
   foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Quaternary> ;
 .
-isc:Ranks
-  a skos:Collection ;
-  rdfs:label "Rank values in International Chronostratigraphic Chart"@en ;
-  skos:member gts:Age ;
-  skos:member gts:Eon ;
-  skos:member gts:Epoch ;
-  skos:member gts:Era ;
-  skos:member gts:Period ;
-  skos:member gts:Sub-Period ;
-  skos:member gts:Super-Eon ;
-  skos:prefLabel "Rank values in International Chronostratigraphic Chart"@en ;
-.
 isc:Rhaetian
   a gts:Age ;
   a gts:GeochronologicEra ;
@@ -12090,214 +11909,6 @@ isc:Stenian
   time:intervalMetBy isc:Ectasian ;
   foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Stenian> ;
 .
-isc:StratigraphicPoints
-  a skos:OrderedCollection ;
-  rdfs:comment "Stratigraphic Points used to calibrate boundaries in the International Chronostratigraphic Chart"@en ;
-  rdfs:label "Stratigraphic Points in the International Chronostratigraphic Chart"@en ;
-  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
-  skos:member isc:BaseAeronianSP ;
-  skos:member isc:BaseAlbianSP ;
-  skos:member isc:BaseAptianSP ;
-  skos:member isc:BaseArtinskianSP ;
-  skos:member isc:BaseBajocianSP ;
-  skos:member isc:BaseBarremianSP ;
-  skos:member isc:BaseBartonianSP ;
-  skos:member isc:BaseBathonianSP ;
-  skos:member isc:BaseBurdigalianSP ;
-  skos:member isc:BaseCalabrianSP ;
-  skos:member isc:BaseCallovianSP ;
-  skos:member isc:BaseCambrianSeries2SP ;
-  skos:member isc:BaseCambrianStage10SP ;
-  skos:member isc:BaseCambrianStage2SP ;
-  skos:member isc:BaseCambrianStage4SP ;
-  skos:member isc:BaseCampanianSP ;
-  skos:member isc:BaseCapitanianSP ;
-  skos:member isc:BaseCarboniferousSP ;
-  skos:member isc:BaseCenozoicSP ;
-  skos:member isc:BaseChanghsingianSP ;
-  skos:member isc:BaseChattianSP ;
-  skos:member isc:BaseConiacianSP ;
-  skos:member isc:BaseCretaceousSP ;
-  skos:member isc:BaseCryogenianSP ;
-  skos:member isc:BaseDarriwilianSP ;
-  skos:member isc:BaseDevonianSP ;
-  skos:member isc:BaseDrumianSP ;
-  skos:member isc:BaseEdiacaranSP ;
-  skos:member isc:BaseEmsianSP ;
-  skos:member isc:BaseEoceneSP ;
-  skos:member isc:BaseFamennianSP ;
-  skos:member isc:BaseFloianSP ;
-  skos:member isc:BaseFurongianSP ;
-  skos:member isc:BaseGivetianSP ;
-  skos:member isc:BaseGuadalupianSP ;
-  skos:member isc:BaseGuzhangianSP ;
-  skos:member isc:BaseGzhelianSP ;
-  skos:member isc:BaseHauterivianSP ;
-  skos:member isc:BaseHirnantianSP ;
-  skos:member isc:BaseHoloceneSP ;
-  skos:member isc:BaseHomerianSP ;
-  skos:member isc:BaseJiangshanianSP ;
-  skos:member isc:BaseJurassicSP ;
-  skos:member isc:BaseKatianSP ;
-  skos:member isc:BaseKimmeridgianSP ;
-  skos:member isc:BaseKungurianSP ;
-  skos:member isc:BaseLadinianSP ;
-  skos:member isc:BaseLanghianSP ;
-  skos:member isc:BaseLopingianSP ;
-  skos:member isc:BaseLudfordianSP ;
-  skos:member isc:BaseLudlowSP ;
-  skos:member isc:BaseLutetianSP ;
-  skos:member isc:BaseMaastrichtianSP ;
-  skos:member isc:BaseMesozoicSP ;
-  skos:member isc:BaseMessinianSP ;
-  skos:member isc:BaseMiaolingianSP ;
-  skos:member isc:BaseMiddleDevonianSP ;
-  skos:member isc:BaseMiddleJurassicSP ;
-  skos:member isc:BaseMiddleMississippianSP ;
-  skos:member isc:BaseMiddleOrdovicianSP ;
-  skos:member isc:BaseMiddlePennsylvanianSP ;
-  skos:member isc:BaseMiddleTriassicSP ;
-  skos:member isc:BaseNeogeneSP ;
-  skos:member isc:BaseNorianSP ;
-  skos:member isc:BaseOlenekianSP ;
-  skos:member isc:BaseOligoceneSP ;
-  skos:member isc:BaseOrdovicianSP ;
-  skos:member isc:BasePennsylvanianSP ;
-  skos:member isc:BasePermianSP ;
-  skos:member isc:BasePhanerozoicSP ;
-  skos:member isc:BasePiacenzianSP ;
-  skos:member isc:BasePliensbachianSP ;
-  skos:member isc:BasePlioceneSP ;
-  skos:member isc:BasePragianSP ;
-  skos:member isc:BasePriabonianSP ;
-  skos:member isc:BasePridoliSP ;
-  skos:member isc:BaseQuaternarySP ;
-  skos:member isc:BaseRhaetianSP ;
-  skos:member isc:BaseSakmarianSP ;
-  skos:member isc:BaseSantonianSP ;
-  skos:member isc:BaseSelandianSP ;
-  skos:member isc:BaseSerravallianSP ;
-  skos:member isc:BaseSilurianSP ;
-  skos:member isc:BaseSinemurianSP ;
-  skos:member isc:BaseTelychianSP ;
-  skos:member isc:BaseThanetianSP ;
-  skos:member isc:BaseTithonianSP ;
-  skos:member isc:BaseToarcianSP ;
-  skos:member isc:BaseTortonianSP ;
-  skos:member isc:BaseTuronianSP ;
-  skos:member isc:BaseUpperCretaceousSP ;
-  skos:member isc:BaseUpperDevonianSP ;
-  skos:member isc:BaseUpperJurassicSP ;
-  skos:member isc:BaseUpperMississippianSP ;
-  skos:member isc:BaseUpperOrdovicianSP ;
-  skos:member isc:BaseUpperPennsylvanianSP ;
-  skos:member isc:BaseUpperTriassicSP ;
-  skos:member isc:BaseValanginianSP ;
-  skos:member isc:BaseWenlockSP ;
-  skos:member isc:BaseWordianSP ;
-  skos:memberList (
-      isc:BaseEdiacaranSP
-      isc:BasePhanerozoicSP
-      isc:BaseCambrianStage2SP
-      isc:BaseCambrianSeries2SP
-      isc:BaseCambrianStage4SP
-      isc:BaseMiaolingianSP
-      isc:BaseDrumianSP
-      isc:BaseGuzhangianSP
-      isc:BaseFurongianSP
-      isc:BaseJiangshanianSP
-      isc:BaseCambrianStage10SP
-      isc:BaseOrdovicianSP
-      isc:BaseFloianSP
-      isc:BaseMiddleOrdovicianSP
-      isc:BaseDarriwilianSP
-      isc:BaseUpperOrdovicianSP
-      isc:BaseKatianSP
-      isc:BaseHirnantianSP
-      isc:BaseSilurianSP
-      isc:BaseAeronianSP
-      isc:BaseTelychianSP
-      isc:BaseWenlockSP
-      isc:BaseHomerianSP
-      isc:BaseLudlowSP
-      isc:BaseLudfordianSP
-      isc:BasePridoliSP
-      isc:BaseDevonianSP
-      isc:BasePragianSP
-      isc:BaseEmsianSP
-      isc:BaseMiddleDevonianSP
-      isc:BaseGivetianSP
-      isc:BaseUpperDevonianSP
-      isc:BaseFamennianSP
-      isc:BaseCarboniferousSP
-      isc:BaseMiddleMississippianSP
-      isc:BaseUpperMississippianSP
-      isc:BasePennsylvanianSP
-      isc:BaseMiddlePennsylvanianSP
-      isc:BaseUpperPennsylvanianSP
-      isc:BaseGzhelianSP
-      isc:BasePermianSP
-      isc:BaseSakmarianSP
-      isc:BaseArtinskianSP
-      isc:BaseKungurianSP
-      isc:BaseGuadalupianSP
-      isc:BaseWordianSP
-      isc:BaseCapitanianSP
-      isc:BaseLopingianSP
-      isc:BaseChanghsingianSP
-      isc:BaseMesozoicSP
-      isc:BaseOlenekianSP
-      isc:BaseMiddleTriassicSP
-      isc:BaseLadinianSP
-      isc:BaseUpperTriassicSP
-      isc:BaseNorianSP
-      isc:BaseRhaetianSP
-      isc:BaseJurassicSP
-      isc:BaseSinemurianSP
-      isc:BasePliensbachianSP
-      isc:BaseToarcianSP
-      isc:BaseMiddleJurassicSP
-      isc:BaseBajocianSP
-      isc:BaseBathonianSP
-      isc:BaseCallovianSP
-      isc:BaseUpperJurassicSP
-      isc:BaseKimmeridgianSP
-      isc:BaseTithonianSP
-      isc:BaseCretaceousSP
-      isc:BaseValanginianSP
-      isc:BaseHauterivianSP
-      isc:BaseBarremianSP
-      isc:BaseAptianSP
-      isc:BaseAlbianSP
-      isc:BaseUpperCretaceousSP
-      isc:BaseTuronianSP
-      isc:BaseConiacianSP
-      isc:BaseSantonianSP
-      isc:BaseCampanianSP
-      isc:BaseMaastrichtianSP
-      isc:BaseCenozoicSP
-      isc:BaseSelandianSP
-      isc:BaseThanetianSP
-      isc:BaseEoceneSP
-      isc:BaseLutetianSP
-      isc:BaseBartonianSP
-      isc:BasePriabonianSP
-      isc:BaseOligoceneSP
-      isc:BaseChattianSP
-      isc:BaseNeogeneSP
-      isc:BaseBurdigalianSP
-      isc:BaseLanghianSP
-      isc:BaseSerravallianSP
-      isc:BaseTortonianSP
-      isc:BaseMessinianSP
-      isc:BasePlioceneSP
-      isc:BasePiacenzianSP
-      isc:BaseQuaternarySP
-      isc:BaseCalabrianSP
-      isc:BaseHoloceneSP
-    ) ;
-  skos:prefLabel "Stratigraphic Points in the International Chronostratigraphic Chart"@en ;
-.
 isc:Sub-Periods
   a skos:Collection ;
   rdfs:label "GeochronologicEras of rank \"Sub-Period\"" ;
@@ -12451,126 +12062,6 @@ isc:Thanetian
   time:intervalMeets isc:Ypresian ;
   time:intervalMetBy isc:Selandian ;
   foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Thanetian> ;
-.
-isc:TimePositions
-  a skos:Collection ;
-  rdfs:label "Time positions of boundaries in the chronostratigraphic chart" ;
-  skos:member isc:BaseAeronianTime ;
-  skos:member isc:BaseAlbianTime ;
-  skos:member isc:BaseAptianTime ;
-  skos:member isc:BaseArcheanTime ;
-  skos:member isc:BaseArtinskianTime ;
-  skos:member isc:BaseBajocianTime ;
-  skos:member isc:BaseBarremianTime ;
-  skos:member isc:BaseBartonianTime ;
-  skos:member isc:BaseBathonianTime ;
-  skos:member isc:BaseBurdigalianTime ;
-  skos:member isc:BaseCalabrianTime ;
-  skos:member isc:BaseCallovianTime ;
-  skos:member isc:BaseCambrianSeries2Time ;
-  skos:member isc:BaseCambrianStage10Time ;
-  skos:member isc:BaseCambrianStage2Time ;
-  skos:member isc:BaseCambrianStage4Time ;
-  skos:member isc:BaseCampanianTime ;
-  skos:member isc:BaseCapitanianTime ;
-  skos:member isc:BaseCarboniferousTime ;
-  skos:member isc:BaseCenozoicTime ;
-  skos:member isc:BaseChanghsingianTime ;
-  skos:member isc:BaseChattianTime ;
-  skos:member isc:BaseConiacianTime ;
-  skos:member isc:BaseCretaceousTime ;
-  skos:member isc:BaseCryogenianTime ;
-  skos:member isc:BaseDarriwilianTime ;
-  skos:member isc:BaseDevonianTime ;
-  skos:member isc:BaseDrumianTime ;
-  skos:member isc:BaseEctasianTime ;
-  skos:member isc:BaseEdiacaranTime ;
-  skos:member isc:BaseEmsianTime ;
-  skos:member isc:BaseEoceneTime ;
-  skos:member isc:BaseFamennianTime ;
-  skos:member isc:BaseFloianTime ;
-  skos:member isc:BaseFurongianTime ;
-  skos:member isc:BaseGivetianTime ;
-  skos:member isc:BaseGuadalupianTime ;
-  skos:member isc:BaseGuzhangianTime ;
-  skos:member isc:BaseGzhelianTime ;
-  skos:member isc:BaseHauterivianTime ;
-  skos:member isc:BaseHirnantianTime ;
-  skos:member isc:BaseHoloceneTime ;
-  skos:member isc:BaseHomerianTime ;
-  skos:member isc:BaseJiangshanianTime ;
-  skos:member isc:BaseJurassicTime ;
-  skos:member isc:BaseKatianTime ;
-  skos:member isc:BaseKimmeridgianTime ;
-  skos:member isc:BaseKungurianTime ;
-  skos:member isc:BaseLadinianTime ;
-  skos:member isc:BaseLanghianTime ;
-  skos:member isc:BaseLopingianTime ;
-  skos:member isc:BaseLudfordianTime ;
-  skos:member isc:BaseLudlowPosition ;
-  skos:member isc:BaseLutetianTime ;
-  skos:member isc:BaseMaastrichtianTime ;
-  skos:member isc:BaseMesoarcheanTime ;
-  skos:member isc:BaseMesoproterozoicTime ;
-  skos:member isc:BaseMesozoicTime ;
-  skos:member isc:BaseMessinianTime ;
-  skos:member isc:BaseMiddleDevonianTime ;
-  skos:member isc:BaseMiddleJurassicTime ;
-  skos:member isc:BaseMiddleMississippianTime ;
-  skos:member isc:BaseMiddleOrdovicianTime ;
-  skos:member isc:BaseMiddlePennsylvanianTime ;
-  skos:member isc:BaseMiddlePleistoceneTime ;
-  skos:member isc:BaseMiddleTriassicTime ;
-  skos:member isc:BaseNeoarcheanTime ;
-  skos:member isc:BaseNeogeneTime ;
-  skos:member isc:BaseNeoproterozoicTime ;
-  skos:member isc:BaseNorianTime ;
-  skos:member isc:BaseOlenekianTime ;
-  skos:member isc:BaseOligoceneTime ;
-  skos:member isc:BaseOrdovicianTime ;
-  skos:member isc:BaseOrosirianTime ;
-  skos:member isc:BasePaleoarcheanTime ;
-  skos:member isc:BasePennsylvanianTime ;
-  skos:member isc:BasePermianTime ;
-  skos:member isc:BasePhanerozoicTime ;
-  skos:member isc:BasePiacenzianTime ;
-  skos:member isc:BasePliensbachianTime ;
-  skos:member isc:BasePlioceneTime ;
-  skos:member isc:BasePragianTime ;
-  skos:member isc:BasePriabonianTime ;
-  skos:member isc:BasePridoliTime ;
-  skos:member isc:BaseProterozoicTime ;
-  skos:member isc:BaseQuaternaryTime ;
-  skos:member isc:BaseRhaetianTime ;
-  skos:member isc:BaseRhyacianTime ;
-  skos:member isc:BaseSakmarianTime ;
-  skos:member isc:BaseSantonianTime ;
-  skos:member isc:BaseSelandianTime ;
-  skos:member isc:BaseSerravallianTime ;
-  skos:member isc:BaseSilurianTime ;
-  skos:member isc:BaseSinemurianTime ;
-  skos:member isc:BaseStatherianTime ;
-  skos:member isc:BaseStenianTime ;
-  skos:member isc:BaseTelychianTime ;
-  skos:member isc:BaseThanetianTime ;
-  skos:member isc:BaseTithonianTime ;
-  skos:member isc:BaseToarcianTime ;
-  skos:member isc:BaseTortonianTime ;
-  skos:member isc:BaseTuronianTime ;
-  skos:member isc:BaseUpperCretaceousTime ;
-  skos:member isc:BaseUpperDevonianTime ;
-  skos:member isc:BaseUpperJurassicTime ;
-  skos:member isc:BaseUpperMississippianTime ;
-  skos:member isc:BaseUpperOrdovicianTime ;
-  skos:member isc:BaseUpperPennsylvanianTime ;
-  skos:member isc:BaseUpperPleistoceneTime ;
-  skos:member isc:BaseUpperTriassicTime ;
-  skos:member isc:BaseValanginianTime ;
-  skos:member isc:BaseWenlockTime ;
-  skos:member isc:BaseWordianTime ;
-  skos:member isc:FormationOfEarthTime ;
-  skos:member isc:MiaolingianTime ;
-  skos:member isc:PresentTime ;
 .
 isc:Tithonian
   a gts:Age ;
