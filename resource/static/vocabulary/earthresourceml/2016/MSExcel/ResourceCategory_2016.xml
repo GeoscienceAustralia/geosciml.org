@@ -9,15 +9,18 @@
   <Author>Adrian Sonnenschein</Author>
   <LastAuthor>Ollie Raymond</LastAuthor>
   <Created>2012-03-28T18:35:34Z</Created>
-  <LastSaved>2016-11-29T05:10:16Z</LastSaved>
-  <Version>14.00</Version>
+  <LastSaved>2019-05-02T15:24:06Z</LastSaved>
+  <Version>16.00</Version>
  </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>6690</WindowHeight>
-  <WindowWidth>17205</WindowWidth>
-  <WindowTopX>270</WindowTopX>
-  <WindowTopY>60</WindowTopY>
-  <ActiveSheet>1</ActiveSheet>
+  <WindowHeight>11850</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ActiveSheet>2</ActiveSheet>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
  </ExcelWorkbook>
@@ -444,7 +447,7 @@
     <Cell ss:StyleID="s63"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s71"><Data ss:Type="String">ConceptScheme_creation_date</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">ConceptScheme_date</Data></Cell>
     <Cell ss:StyleID="s72"><Data ss:Type="String">2016-11-29</Data><NamedCell
       ss:Name="ConceptScheme_date"/></Cell>
     <Cell ss:StyleID="s73"><Data ss:Type="String">Date of the last change to the concepts in this scheme</Data></Cell>
@@ -6320,7 +6323,7 @@
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>30</ActiveRow>
+     <ActiveRow>13</ActiveRow>
      <ActiveCol>1</ActiveCol>
     </Pane>
    </Panes>
@@ -7126,19 +7129,17 @@
     <VerticalResolution>600</VerticalResolution>
    </Print>
    <Zoom>90</Zoom>
-   <Selected/>
-   <SplitHorizontal>570</SplitHorizontal>
+   <SplitHorizontal>525</SplitHorizontal>
    <TopRowBottomPane>0</TopRowBottomPane>
    <ActivePane>2</ActivePane>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <RangeSelection>R1:R1048576</RangeSelection>
+     <ActiveCol>7</ActiveCol>
     </Pane>
     <Pane>
      <Number>2</Number>
-     <ActiveRow>1</ActiveRow>
-     <ActiveCol>2</ActiveCol>
+     <ActiveRow>3</ActiveRow>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -7149,52 +7150,52 @@
   <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="10" x:FullColumns="1"
    x:FullRows="1" ss:DefaultRowHeight="15">
    <Column ss:Width="889.5"/>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;skos:Collection rdf:about=&quot;&quot;&quot;&amp;ResourceCategory_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;ResourceCategory_2016.xml!ConceptScheme_ID&amp;&quot;&quot;&quot;&quot;&amp;&quot;&gt;&quot;"><Data
       ss:Type="String">&lt;skos:Collection rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/resource-assessment-category&quot;&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;dcterms:title xml:lang=&quot;&quot;en&quot;&quot;&gt;&quot;&amp;ResourceCategory_2016.xml!ConceptScheme_prefLabel&amp;&quot; - All Concepts&lt;/dcterms:title&gt;&quot;"><Data
       ss:Type="String">&lt;dcterms:title xml:lang=&quot;en&quot;&gt;Resource Assessment Category - All Concepts&lt;/dcterms:title&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;ResourceCategory_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;ResourceCategory_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/resource-assessment-category/measured-mineral-resource&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;ResourceCategory_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;ResourceCategory_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/resource-assessment-category/indicated-mineral-resource&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;ResourceCategory_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;ResourceCategory_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/resource-assessment-category/inferred-mineral-resource&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;ResourceCategory_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;ResourceCategory_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/resource-assessment-category/measured-and-indicated-mineral-resource&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;ResourceCategory_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;ResourceCategory_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/resource-assessment-category/measured-indicated-inferred-mineral-resource&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;ResourceCategory_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;ResourceCategory_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/resource-assessment-category/indicated-and-inferred-mineral-resource&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell
      ss:Formula="=&quot;&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;&quot;&quot;&amp;ResourceCategory_2016.xml!Classifier_Prefix&amp;&quot;/&quot;&amp;ResourceCategory_2016.xml!ConceptScheme_ID&amp;&quot;/&quot;&amp;'Vocabulary Terms'!R[-1]C&amp;&quot;&quot;&quot;&quot;&amp;&quot;/&gt;&lt;/skos:member&gt;&quot;"><Data
       ss:Type="String">&lt;skos:member&gt;&lt;skos:Concept rdf:about=&quot;http://resource.geosciml.org/classifier/cgi/resource-assessment-category/poorly-estimated-mineral-resource&quot;/&gt;&lt;/skos:member&gt;</Data></Cell>
    </Row>
-   <Row>
+   <Row ss:AutoFitHeight="0">
     <Cell><Data ss:Type="String">&lt;/skos:Collection&gt;</Data></Cell>
    </Row>
   </Table>
@@ -7204,17 +7205,19 @@
     <Footer x:Margin="0.3"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
+   <Unsynced/>
    <Print>
     <ValidPrinterInfo/>
     <PaperSizeIndex>9</PaperSizeIndex>
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
+   <Selected/>
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>9</ActiveRow>
-     <RangeSelection>R1C1:R10C1</RangeSelection>
+     <ActiveRow>2</ActiveRow>
+     <RangeSelection>R3C1:R9C1</RangeSelection>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
