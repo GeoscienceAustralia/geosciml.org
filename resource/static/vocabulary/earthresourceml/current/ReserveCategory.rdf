@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#">
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/reserve-assessment-category">
+      <dcterms:title xml:lang="en">Reserve Assessment Category</dcterms:title>
+      <dcterms:description xml:lang="en">This file contains the CGI Reserve Assessment Category vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. The vocabulary defines concepts for classifying reserve types associated with Earth resource occurrences. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme.</dcterms:description>
+      <skos:editorialNote xml:lang="en">This file contains the 2016 SKOS-RDF version of the CGI Reserve Assessment Category vocabulary. Compilation and review in Google doc spreadsheet; adopted June 2013 at GTWG face to face in St. Petersburg, Russia; converted to MS Excel XML for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt</skos:editorialNote>
+      <skos:changeNote xml:lang="en">2014-03-19 Original SKOS implementation, SMR</skos:changeNote>
+      <skos:changeNote xml:lang="en">2015-01-08 OLR Edits to fix typos and remove '201403' from rdf file name.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2016-11-29 OLR Regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions.</skos:changeNote>
+      <dcterms:date>2016-11-29</dcterms:date>
+      <dcterms:creator>CGI Geoscience Terminology Working Group</dcterms:creator>
+   </skos:ConceptScheme>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/reserve-assessment-category">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/reserve-assessment-category/proved-ore-reserves"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/reserve-assessment-category/proved-ore-reserves">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/reserve-assessment-category"/>
+      <skos:definition xml:lang="en">A ‘Proved Ore Reserve’ is the economically mineable part of a Measured Mineral Resource. It includes diluting materials and allowances for losses which may occur when the material is mined. Appropriate assessments and studies have been carried out, and include consideration of and modification by realistically assumed mining, metallurgical, economic, marketing, legal, environmental, social and governmental factors. These assessments demonstrate at the time of reporting that extraction could reasonably be justified</skos:definition>
+      <skos:prefLabel xml:lang="en">proved ore reserves</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">01</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/reserve-assessment-category"/>
+      <dcterms:source xml:lang="en">CRIRSCO Code; JORC 2004</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/reserve-assessment-category">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/reserve-assessment-category/probable-ore-reserves"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/reserve-assessment-category/probable-ore-reserves">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/reserve-assessment-category"/>
+      <skos:definition xml:lang="en">A ‘Probable Ore Reserve’ is the economically mineable part of an Indicated, and in some circumstances, a Measured Mineral Resource. It includes diluting materials and allowances for losses which may occur when the material is mined. Appropriate assessments and studies have been carried out, and include consideration of and modification by realistically assumed mining, metallurgical, economic, marketing, legal, environmental, social and governmental factors These assessments demonstrate at the time of reporting that extraction could reasonably be justified.</skos:definition>
+      <skos:prefLabel xml:lang="en">probable ore reserves</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">02</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/reserve-assessment-category"/>
+      <dcterms:source xml:lang="en">CRIRSCO Code; JORC 2004</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/reserve-assessment-category">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/reserve-assessment-category/proved-and-probable-ore-reserves"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/reserve-assessment-category/proved-and-probable-ore-reserves">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/reserve-assessment-category"/>
+      <skos:definition xml:lang="en">A mixture of the economically mineable part of an Indicated, and a Measured Mineral Resource. It includes diluting materials and allowances for losses which may occur when the material is mined. Appropriate assessments and studies have been carried out, and include consideration of and modification by realistically assumed mining, metallurgical, economic, marketing, legal, environmental, social and governmental factors These assessments demonstrate at the time of reporting that extraction could reasonably be justified.</skos:definition>
+      <skos:prefLabel xml:lang="en">proved and probable ore reserves</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">03</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/reserve-assessment-category"/>
+      <dcterms:source xml:lang="en">CRIRSCO Code; JORC 2004</dcterms:source>
+   </skos:Concept>
+   <skos:Collection rdf:about="http://resource.geosciml.org/classifier/cgi/reserve-assessment-category">
+      <dcterms:title xml:lang="en">Reserve Assessment Category - All Concepts</dcterms:title>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/reserve-assessment-category/proved-ore-reserves"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/reserve-assessment-category/probable-ore-reserves"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/reserve-assessment-category/proved-and-probable-ore-reserves"/></skos:member>
+   </skos:Collection>
+</rdf:RDF>

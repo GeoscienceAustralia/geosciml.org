@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#">
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage">
+      <dcterms:title xml:lang="en">Waste Storage</dcterms:title>
+      <dcterms:description xml:lang="en">This file contains the CGI Waste Storage vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. The vocabulary defines concepts for categorizing approaches to material waste storage associated with Earth Resource extraction. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme.</dcterms:description>
+      <skos:editorialNote xml:lang="en">This file contains the 2016 SKOS-RDF version of the CGI Waste Storage vocabulary. Compilation and review in Google doc spreadsheet; adopted June 2013 at GTWG face to face in St. Petersburg, Russia; converted to MS Excel XML for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt</skos:editorialNote>
+      <skos:changeNote xml:lang="en">2014-03-19 Original SKOS implementation, SMR</skos:changeNote>
+      <skos:changeNote xml:lang="en">2015-01-08 OLR Edits to fix typos and remove '201403' from rdf file name.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2016-11-29 OLR Regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions.</skos:changeNote>
+      <dcterms:date>2016-11-29</dcterms:date>
+      <dcterms:creator>CGI Geoscience Terminology Working Group</dcterms:creator>
+   </skos:ConceptScheme>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/waste-storage/surface"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/waste-storage/surface">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage"/>
+      <skos:definition xml:lang="en">Mining waste storage at open-sky environment (ground level)</skos:definition>
+      <skos:prefLabel xml:lang="en">surface</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">01</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/waste-storage/covered"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/waste-storage/covered">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage"/>
+      <skos:definition xml:lang="en">Covered mining waste storage at ground level</skos:definition>
+      <skos:prefLabel xml:lang="en">covered</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">01.1</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/waste-storage/surface"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/waste-storage/underground"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/waste-storage/underground">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage"/>
+      <skos:definition xml:lang="en">Mining waste storage at underground environment</skos:definition>
+      <skos:prefLabel xml:lang="en">underground</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">02</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/waste-storage/underwater"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/waste-storage/underwater">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage"/>
+      <skos:definition xml:lang="en">Mining waste deposited at sea or lake floor (e.g. sea bed mining)</skos:definition>
+      <skos:prefLabel xml:lang="en">underwater</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">03</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/waste-storage"/>
+      <dcterms:source xml:lang="en">Australia GGIC</dcterms:source>
+   </skos:Concept>
+   <skos:Collection rdf:about="http://resource.geosciml.org/classifier/cgi/waste-storage">
+      <dcterms:title xml:lang="en">Waste Storage - All Concepts</dcterms:title>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/waste-storage/surface"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/waste-storage/covered"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/waste-storage/underground"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/waste-storage/underwater"/></skos:member>
+   </skos:Collection>
+</rdf:RDF>

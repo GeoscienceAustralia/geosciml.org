@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#">
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status">
+      <dcterms:title xml:lang="en">Mine Status</dcterms:title>
+      <dcterms:description xml:lang="en">This file contains the CGI Mine Status vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. The vocabulary defines the operating status of a mine at a specified date, or if no date is specified, the current opertaing status. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme.</dcterms:description>
+      <skos:editorialNote xml:lang="en">This file contains the 2016 SKOS-RDF version of the CGI Mine Status vocabulary. Compilation and review in Google doc spreadsheet; adopted 2013-06 in St. Petersburg, Russia; converted to MS Excel XML for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt</skos:editorialNote>
+      <skos:changeNote xml:lang="en">2013-11-29 SMR Original conversion to SKOS.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2015-01-08 OLR Edits to fix typos and remove '201403' from rdf file name.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2016-11-29 OLR Regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to previous concepts definitions.</skos:changeNote>
+      <dcterms:date>2016-11-29</dcterms:date>
+      <dcterms:creator>CGI Geoscience Terminology Working Group</dcterms:creator>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status/closed">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status"/>
+      <skos:definition xml:lang="en">A mine can be closed for several reasons, e.g. technical, economical or technico-economical. For example, it may be re-opened if the price of the exploited commodity increases.</skos:definition>
+      <skos:prefLabel xml:lang="en">closed</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">02.1..</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mine-status/not-operating"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status/abandoned">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status"/>
+      <skos:definition xml:lang="en">A mine is abandoned - one reason or another</skos:definition>
+      <skos:prefLabel xml:lang="en">abandoned</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">02.2..</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mine-status/not-operating"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status/care-and-maintenance">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status"/>
+      <skos:definition xml:lang="en">A mine is under care and maintenance</skos:definition>
+      <skos:prefLabel xml:lang="en">care and maintenance</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">02.3..</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mine-status/not-operating"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status/retention">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status"/>
+      <skos:definition xml:lang="en">A mine can be kept unexploited until the price of contained commodity(ies) makes it economical.</skos:definition>
+      <skos:prefLabel xml:lang="en">retention</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">02.4..</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mine-status/not-operating"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status/historic">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status"/>
+      <skos:definition xml:lang="en">An 'old' mine which has been exploited before 1900, e.g. during Roman times, the Middle Ages, etc.</skos:definition>
+      <skos:prefLabel xml:lang="en">historic</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">02.5..</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mine-status/not-operating"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status/operating-continuously">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status"/>
+      <skos:definition xml:lang="en">A mine is operating continuously</skos:definition>
+      <skos:prefLabel xml:lang="en">operating continuously</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">01.1..</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mine-status/operating"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status/operating-intermittently">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status"/>
+      <skos:definition xml:lang="en">A mine is operating intermittently</skos:definition>
+      <skos:prefLabel xml:lang="en">operating intermittently</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">01.2..</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mine-status/operating"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/mine-status/operating"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status/operating">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status"/>
+      <skos:definition xml:lang="en">A mine is operating</skos:definition>
+      <skos:prefLabel xml:lang="en">operating</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">01..</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mine-status/operating-continuously"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mine-status/operating-intermittently"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/mine-status/not-operating"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status/not-operating">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status"/>
+      <skos:definition xml:lang="en">A mine has been operating and then closed or suspended</skos:definition>
+      <skos:prefLabel xml:lang="en">not operating</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">02..</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mine-status/closed"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mine-status/abandoned"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mine-status/care-and-maintenance"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mine-status/retention"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mine-status/historic"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/mine-status/under-development"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status/under-development">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status"/>
+      <skos:definition xml:lang="en">A mine is under development - e.g feasibilty</skos:definition>
+      <skos:prefLabel xml:lang="en">under development</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">03..</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mine-status/construction"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mine-status/pending-approval"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/mine-status/feasibility"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status/construction">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status"/>
+      <skos:definition xml:lang="en">A mine is under construction after obtaining licenses/permits</skos:definition>
+      <skos:prefLabel xml:lang="en">construction</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">03.1..</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mine-status/under-development"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status/pending-approval">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status"/>
+      <skos:definition xml:lang="en">Waiting for the exploitation authorization, generally given by a State Mining Engineering Department.</skos:definition>
+      <skos:prefLabel xml:lang="en">pending approval</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">03.2..</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mine-status/under-development"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status/feasibility">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/mine-status"/>
+      <skos:definition xml:lang="en">Technical economic study aimed at assessing the possibility to launching a mine venture.</skos:definition>
+      <skos:prefLabel xml:lang="en">feasibility</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">03.3..</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/mine-status/under-development"/>
+      <dcterms:source xml:lang="en">Dictionnaire thématique des mines et carrières, SIM Editor.</dcterms:source>
+   </skos:Concept>
+   <skos:Collection rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status">
+      <dcterms:title xml:lang="en">Mine Status - All Concepts</dcterms:title>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status/closed"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status/abandoned"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status/care-and-maintenance"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status/retention"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status/historic"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status/operating-continuously"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status/operating-intermittently"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status/operating"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status/not-operating"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status/under-development"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status/construction"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status/pending-approval"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/mine-status/feasibility"/></skos:member>
+   </skos:Collection>
+</rdf:RDF>
