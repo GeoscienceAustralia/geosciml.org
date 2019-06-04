@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#">
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod">
+      <dcterms:title xml:lang="en">Observation Method (Geologic Feature)</dcterms:title>
+      <dcterms:description xml:lang="en">This scheme contains concepts used to specify the approach to acquiring the collection of attributes to describe an individual feature instance, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. Observation method is a convienence property that provides a quick approach to shortcut use of more comprehensive observation and measurement construct when data are reported using a feature view (as opposed to observation view). By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme.</dcterms:description>
+      <skos:editorialNote xml:lang="en">This file contains the 2016 SKOS-RDF version of the CGI Feature Observation Method vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt</skos:editorialNote>
+      <skos:changeNote xml:lang="en">2010-02-04 SMR Start file produced from excel spreadsheet version of FeatureObservationMethod200811, using P. Golodonic xl2xml.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2010-02-04 SMR Updated from 2010 01 version by adding broader categories for 'digital conversion...', Direct observation, indirect method, and 'synthesis....'</skos:changeNote>
+      <skos:changeNote xml:lang="en">2010-02-11 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2010-11-28 SMR replace URN with http URI identifiers according to CGI URI scheme</skos:changeNote>
+      <skos:changeNote xml:lang="en">2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2012-11-24 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2016-10-18 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. No changes to terms from the previous 2012 version.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2018-08-03 SMR replace spaces with '_' in URIs for outcrop observation, direct observation, drill core observation. Also remove invisible BOM characters from beginning of file.</skos:changeNote>
+      <dcterms:date>2018-08-03</dcterms:date>
+      <dcterms:creator>CGI Geoscience Terminology Working Group</dcterms:creator>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/borehole_cuttings_observation">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod"/>
+      <skos:definition xml:lang="en">Data based on interpretation of borehole cuttings</skos:definition>
+      <skos:prefLabel xml:lang="en">borehole cuttings observation</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/direct_observation"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/borehole_geophysical_log_measurements">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod"/>
+      <skos:definition xml:lang="en">Data based on interpretation of geophysical measurement obtained by borehole logging tools.</skos:definition>
+      <skos:prefLabel xml:lang="en">borehole geophysical log measurements</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/indirect_method"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/data_from_single_published_description">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod"/>
+      <skos:definition xml:lang="en">Data are extracted from a publised description of the feature</skos:definition>
+      <skos:prefLabel xml:lang="en">data from single published description</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/digital_conversion_from_published_source"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/digital_conversion_from_published_source"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/digital_conversion_from_published_source">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod"/>
+      <skos:definition xml:lang="en">Feature observation is based on published information, converted to a digital representation for database application</skos:definition>
+      <skos:prefLabel xml:lang="en">digital conversion from published source</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/data_from_single_published_description"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_of_multiple_published_descriptions"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/direct_observation"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/direct_observation">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod"/>
+      <skos:definition xml:lang="en">Feature observation is result of direct visual observation by a geologist</skos:definition>
+      <skos:prefLabel xml:lang="en">direct observation</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/borehole_cuttings_observation"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod"/>
+      <skos:definition xml:lang="en">Data collected through observation of a single drill core interval.</skos:definition>
+      <skos:prefLabel xml:lang="en">drill core observation</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/direct_observation"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation_estimated_values"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation_measured_values"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation_estimated_values">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod"/>
+      <skos:definition xml:lang="en">Values for properties are estimated by observer.</skos:definition>
+      <skos:prefLabel xml:lang="en">drill core observation estimated values</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation_measured_values">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod"/>
+      <skos:definition xml:lang="en">Values for properties are measured using a device (compass, jacob staff, scintillometer, clinometer, ruler, etc.)</skos:definition>
+      <skos:prefLabel xml:lang="en">drill core observation measured values</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/indirect_method"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/indirect_method">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod"/>
+      <skos:definition xml:lang="en">Feature observation based on inference from proxy observation</skos:definition>
+      <skos:prefLabel xml:lang="en">indirect method</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/borehole_geophysical_log_measurements"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/remotely_sensed_data"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod"/>
+      <skos:definition xml:lang="en">Data collected in field through direct observation of a single outcrop. Observer defines scope of 'single outcrop' - may be one point location, or averaged over an extended but connected) area, e.g. a single polygon on a map.  Direct observation may include observation using a remote camera (e.g. downhole viewer, submarine camera)</skos:definition>
+      <skos:prefLabel xml:lang="en">outcrop observation</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/direct_observation"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation_estimated_values"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation_measured_values"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation_estimated_values">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod"/>
+      <skos:definition xml:lang="en">Values for properties are estimated by observer.</skos:definition>
+      <skos:prefLabel xml:lang="en">outcrop observation estimated values</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation_measured_values">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod"/>
+      <skos:definition xml:lang="en">Values for properties are measured using a device (compass, jacob staff, scintillometer, clinometer, ruler, etc.)</skos:definition>
+      <skos:prefLabel xml:lang="en">outcrop observation measured values</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/remotely_sensed_data">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod"/>
+      <skos:definition xml:lang="en">Geologic unit or structure characterized based on remotely sensed data.</skos:definition>
+      <skos:prefLabel xml:lang="en">remotely sensed data</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/indirect_method"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_from_multiple_sources"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_from_multiple_sources">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod"/>
+      <skos:definition xml:lang="en">Feature observation is based on a synthesis of other observations by some compiler. The compiler may be the same individual that made the source observations.</skos:definition>
+      <skos:prefLabel xml:lang="en">synthesis from multiple sources</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_of_multiple_outcrop_observations"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_of_multiple_published_descriptions"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_of_multiple_outcrop_observations">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod"/>
+      <skos:definition xml:lang="en">Data are the result of synthesis from multiple direct observations, posibly by more than one observer</skos:definition>
+      <skos:prefLabel xml:lang="en">synthesis of multiple outcrop observations</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_from_multiple_sources"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_of_multiple_published_descriptions">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/featureobservationmethod"/>
+      <skos:definition xml:lang="en">Data are the result of synthesis from multiple published descriptions</skos:definition>
+      <skos:prefLabel xml:lang="en">synthesis of multiple published descriptions</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_from_multiple_sources"/>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/digital_conversion_from_published_source"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+
+
+<skos:Collection rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod">
+<dcterms:title xml:lang="en">Observation Method (Geologic Feature) - All Concepts</dcterms:title>
+<skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/borehole_cuttings_observation"/></skos:member>
+<skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/borehole_geophysical_log_measurements"/></skos:member>
+<skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/data_from_single_published_description"/></skos:member>
+<skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/digital_conversion_from_published_source"/></skos:member>
+<skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/direct_observation"/></skos:member>
+<skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation"/></skos:member>
+<skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation_estimated_values"/></skos:member>
+<skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/drill_core_observation_measured_values"/></skos:member>
+<skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/indirect_method"/></skos:member>
+<skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation"/></skos:member>
+<skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation_estimated_values"/></skos:member>
+<skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/outcrop_observation_measured_values"/></skos:member>
+<skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/remotely_sensed_data"/></skos:member>
+<skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_from_multiple_sources"/></skos:member>
+<skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_of_multiple_outcrop_observations"/></skos:member>
+<skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/featureobservationmethod/synthesis_of_multiple_published_descriptions"/></skos:member>
+</skos:Collection>
+
+</rdf:RDF>

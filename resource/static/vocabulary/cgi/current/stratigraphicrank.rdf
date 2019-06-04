@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#">
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank">
+      <dcterms:title xml:lang="en">Stratigraphic Rank</dcterms:title>
+      <dcterms:description xml:lang="en">This scheme specifies concepts used to categorize the stratigraphic rank of geologic units, as compiled by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme.</dcterms:description>
+      <skos:editorialNote xml:lang="en">This file contains the 2016.01 SKOS-RDF version of the CGI Stratigraphic Rank vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using GSML_SKOS_fromXLS_2016.02.xslt.</skos:editorialNote>
+      <skos:changeNote xml:lang="en">2009-07-14 Generate SKOS encoding of vocabulary from Excel spreadsheet.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2009-12-07 SMR Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2010-02-08 SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2010-11-28 SMR replace URN with http URI constructed according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)</skos:changeNote>
+      <skos:changeNote xml:lang="en">2011-02-16 SMR Add broader/narrower relations according to stratigraphic code. These are not meant to be formal isA or PartOf relations, rather should be read something like 'broader in local intention' or 'may be part of'. Add term 'complex' to vocabulary</skos:changeNote>
+      <skos:changeNote xml:lang="en">2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2012-02-27 SMR add skos:exactMatch triples to map URIs for concepts in this vocabulary to number-token URIs in 201012 version of same concepts.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2012-11-24 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2016-07-15 OLR - reformat SKOS-RDF for new repository</skos:changeNote>
+      <dcterms:date>2012-11-24</dcterms:date>
+      <dcterms:creator>CGI Geoscience Terminology Working Group</dcterms:creator>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/bed">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank"/>
+      <skos:definition xml:lang="en">The smallest formal lithostratigraphic unit; usually a distinctive lithic entity which can be distinguished from adjacent rocks by one or more physical characteristics.</skos:definition>
+      <skos:prefLabel xml:lang="en">bed</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/member"/>
+      <dcterms:source xml:lang="en">North American Commission on Stratigraphic Nomenclature; 2005; Salvador; 1994</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/complex"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/complex">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank"/>
+      <skos:definition xml:lang="en">A lithostratigraphic unit composed of diverse types of any class or classes of rock (sedimentary; igneous; metamorphic); and characterized by irregularly mixed lithology or by hightly complicated structure relations to the extent that the original sequence of the component rocks may be obscured and the individual rocks or rock sequence cannot be readily mapped.</skos:definition>
+      <skos:prefLabel xml:lang="en">complex</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/lithodeme"/>
+      <dcterms:source xml:lang="en">Salvador; A.; ed. 1994. International Stratigraphic Guide: International Union of Geological Sciences; Trondheim; NO; 214 p.</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/formation">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank"/>
+      <skos:definition xml:lang="en">A body of rock identified by lithic characteristics and stratigraphic position; it is usually but not necessarily tabular and is mappable at the Earth's surface or traceable in the subsurface.</skos:definition>
+      <skos:prefLabel xml:lang="en">formation</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/subgroup"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/member"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/lithodeme"/>
+      <dcterms:source xml:lang="en">North American Commission on Stratigraphic Nomenclature; 2005; Salvador; 1994</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/group">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank"/>
+      <skos:definition xml:lang="en">A group is the lithostratigraphic unit next higher in rank to either subgroup or formation. A groups may consist of two or more subgroups or two or more formations or a combination of both.</skos:definition>
+      <skos:prefLabel xml:lang="en">group</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supergroup"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/subgroup"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/suite"/>
+      <dcterms:source xml:lang="en">North American Commission on Stratigraphic Nomenclature; 2005; Salvador; 1994</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/lithodeme">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank"/>
+      <skos:definition xml:lang="en">A body of predominantly intrusivehighly deformed and/or highly metamorphosed rock; distinguished and delimited on the basis of rock characteristics.</skos:definition>
+      <skos:prefLabel xml:lang="en">lithodeme</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/suite"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/complex"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/sequence"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/formation"/>
+      <dcterms:source xml:lang="en">North American Commission on Stratigraphic Nomenclature; 2005</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/megasequence"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/megasequence">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank"/>
+      <skos:definition xml:lang="en">A succession of strata comprising two or more supersequences. A large-scale sequence-stratigraphic unit deposited during one distinct phase of basin evolution; separated by major unconformities that mark a change in fundamental basin-controlling processes.</skos:definition>
+      <skos:prefLabel xml:lang="en">megasequence</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supersequence"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supersuite"/>
+      <dcterms:source xml:lang="en">Haq; B.U.hardenbol; J.; and Vail; P.R.; 1988; Mesozoic and Cenozoic chronostratigraphy an dcycles of sea-level changes; in Wilgus; C.K.; et al.; eds; Sea-level Changes: an Integrated Approach: Society of Sedimentary Geology Special Publication 42; p. 71-108.</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/member">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank"/>
+      <skos:definition xml:lang="en">A formal lithostratigraphic unit next in rank below a formation; and always part of a formation. It is a named entity within a formation because it possesses characteristics distinguishing it from adjacent parts of the formation.</skos:definition>
+      <skos:prefLabel xml:lang="en">member</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/formation"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/bed"/>
+      <dcterms:source xml:lang="en">North American Commission on Stratigraphic Nomenclature; 2005; Salvador; 1994</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/rank_not_specified"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/rank_not_specified">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank"/>
+      <skos:definition xml:lang="en">unit is not part of a defined stratigraphic hierarchy.</skos:definition>
+      <skos:prefLabel xml:lang="en">not specified</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/sequence">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank"/>
+      <skos:definition xml:lang="en">A genetically related succession of strata bounded by unconformites or their correlative conformable contacts; and typically having a thickness of 10-100 metres.</skos:definition>
+      <skos:prefLabel xml:lang="en">sequence</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supersequence"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/lithodeme"/>
+      <dcterms:source xml:lang="en">Van Wagoner; J.C.; Posamentierh.W.; Mitchum; R.M.; Vail; P.R.; Sarg; J.F.; Loutit; T.S.hardenbol; J.; 1988; An overview of sequence stratigraphy and key definitions. In: Wilgus; C.K.hastings; B.S.; Kendall; C.G.St.C.; Posamentierh.W.; Ross; C.A.; Van Wagoner; J.C. (Eds.); Sea Level Changes––An Integrated Approach; vol. 42. SEPM Special Publication; pp. 39–45.</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/subgroup">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank"/>
+      <skos:definition xml:lang="en">A subgroup is the lithostratigraphic unit next higher in rank to formation. A subgroup usually consists of several formations.</skos:definition>
+      <skos:prefLabel xml:lang="en">subgroup</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/group"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/formation"/>
+      <dcterms:source xml:lang="en">Salvador; 1994</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/suite">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank"/>
+      <skos:definition xml:lang="en">A formal lithodemic unit next higher in rank to lithodeme. It comprises two or more associated lithodemes of the same class (e.g.; plutonic; metamorphic).</skos:definition>
+      <skos:prefLabel xml:lang="en">suite</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supersuite"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/lithodeme"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/group"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supersequence"/>
+      <dcterms:source xml:lang="en">North American Commission on Stratigraphic Nomenclature; 2005</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supergroup"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supergroup">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank"/>
+      <skos:definition xml:lang="en">A supergroup is a formal assemblage of related or superposed groups or of groups and formations</skos:definition>
+      <skos:prefLabel xml:lang="en">supergroup</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/group"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supersuite"/>
+      <dcterms:source xml:lang="en">North American Commission on Stratigraphic Nomenclature; 2005; Salvador; 1994</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supersequence">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank"/>
+      <skos:definition xml:lang="en">A succession of strata comprising two or more sequences</skos:definition>
+      <skos:prefLabel xml:lang="en">supersequence</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/megasequence"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/sequence"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/suite"/>
+      <dcterms:source xml:lang="en">Haq; B.U.hardenbol; J.; and Vail; P.R.; 1988; Mesozoic and Cenozoic chronostratigraphy an dcycles of sea-level changes; in Wilgus; C.K.; et al.; eds; Sea-level Changes: an Integrated Approach: Society of Sedimentary Geology Special Publication 42; p. 71-108.</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supersuite"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supersuite">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank"/>
+      <skos:definition xml:lang="en">A formal lithodemic unit next higher in rank to suite. It comprises two or more suites having a degree of natural relationship to one another</skos:definition>
+      <skos:prefLabel xml:lang="en">supersuite</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/stratigraphicrank"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/suite"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/megasequence"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supergroup"/>
+      <dcterms:source xml:lang="en">North American Commission on Stratigraphic Nomenclature; 2005</dcterms:source>
+   </skos:Concept>
+   <skos:Collection rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank">
+      <dcterms:title xml:lang="en">Stratigraphic Rank - All Concepts</dcterms:title>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/bed"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/complex"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/formation"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/group"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/lithodeme"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/megasequence"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/member"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/rank_not_specified"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/sequence"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/subgroup"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/suite"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supergroup"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supersequence"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/stratigraphicrank/supersuite"/></skos:member>
+   </skos:Collection>
+   
+</rdf:RDF>

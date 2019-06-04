@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#">
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation">
+      <dcterms:title xml:lang="en">Vocabulary Relation</dcterms:title>
+      <dcterms:description xml:lang="en">This file contains the CGI Vocabulary Relation vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. Use National Information Standards Organization (NISO), 2005, Guidelines for the construction, format, and management of monolingual controlled vocabularies: ANSI/NISO Z39.19-2005, Bethesda Md., NISO Press, 184 pages, ISBN: 1-880124-65-3. (accessed at http://www.niso.org/standards/resources/Z39-19-2005.pdf, 6/19/06) for semantic relationships between vocabulary terms, supplemented by Allen and Ferguson (1994) temporal relationships (1 dimensional topology) that are needed to express ordering relationships between time ordinal eras in a time scale or events in an event vocabulary. Narrower term relationship is deprecated in favor of usage of broader term links for hierarchical relationships. This makes searching easier because hierarchy links are always from a narrow (child) term to a broader (parent) terms. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme.</dcterms:description>
+      <skos:editorialNote xml:lang="en">This file contains the 2016 SKOS-RDF version of the CGI Vocabulary Relation vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt</skos:editorialNote>
+      <skos:changeNote xml:lang="en">2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2010-02-08. SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2010-11-28 SMR Replace URN identifiers with http URI identifiers constructed according to CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)</skos:changeNote>
+      <skos:changeNote xml:lang="en">2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2012-11-24 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2016-11-25 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to 2012 concepts.</skos:changeNote>
+      <dcterms:date>2016-11-25</dcterms:date>
+      <dcterms:creator>CGI Geoscience Terminology Working Group</dcterms:creator>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/broader_generic_relation">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation"/>
+      <skos:definition xml:lang="en">This relationship identifies the link between a source class term and target members or species. This type of relationship is often called 'IsA'. A simple way to apply the test for validity described above is to formulate the statement '[narrower term] is a [broader term].' This relationship is also amenable to a logical \all-and-some\ test. An example that passes this test is that some members of the class succulent plants are known as cacti and that all cacti, by definition and regardless of context, are succulent plants. An example that fails the test is that some members of the class 'desert plants' are known as 'cacti', some, but not all, 'cacti' are 'desert plants'. These terms should therefore be assigned to different hierarchies in the controlled vocabulary, and both terms should be assigned to the same content object when indexing a work on \cacti as desert plants..\ Inverse relationship 'narrower generic term' is not included in this</skos:definition>
+      <skos:prefLabel xml:lang="en">broader generic relation</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/broader_term"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/most_specific_subsuming_term"/>
+      <dcterms:source xml:lang="en">National Information Standards Organization (NISO), 2005, Guidelines for the construction, format, and management of monolingual controlled vocabularies: ANSI/NISO Z39.19-2005, Bethesda Md., NISO Press, 184 pages, ISBN: 1-880124-65-3. (accessed at http://www.niso.org/standards/resources/Z39-19-2005.pdf, 6/19/06)</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/broader_term"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/broader_term">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation"/>
+      <skos:definition xml:lang="en">Link from a source term to a superordinate (more general or parent) target term. General hierarchical relationship, more specific subtype relationships (generic, instance, and whole-part) should be used whenever possible.</skos:definition>
+      <skos:prefLabel xml:lang="en">broader term</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/broader_generic_relation"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/instance_of"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/part_of"/>
+      <dcterms:source xml:lang="en">National Information Standards Organization (NISO), 2005, Guidelines for the construction, format, and management of monolingual controlled vocabularies: ANSI/NISO Z39.19-2005, Bethesda Md., NISO Press, 184 pages, ISBN: 1-880124-65-3. (accessed at http://www.niso.org/standards/resources/Z39-19-2005.pdf, 6/19/06)</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/during"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/during">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation"/>
+      <skos:definition xml:lang="en">Beginning and end of source interval are both after the beginning of the target interval and before the end of the target interval.</skos:definition>
+      <skos:prefLabel xml:lang="en">during</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation"/>
+      <dcterms:source xml:lang="en">Allen and Ferguson, 1994</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/instance_of">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation"/>
+      <skos:definition xml:lang="en">This relationship identifies the link between an individual instance of a category, often a proper name, and a term for a general category of things or events, expressed by a common noun. This type of relationship is also known as an 'IsA' relationship. Example: Alps/mountain regions In the above example, the Alps are assigned to subordinate positions in a hierarchy, yet they are neither kinds nor parts of mountain regions, but represent specific examples or instances.</skos:definition>
+      <skos:prefLabel xml:lang="en">instance of</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/broader_term"/>
+      <dcterms:source xml:lang="en">National Information Standards Organization (NISO), 2005, Guidelines for the construction, format, and management of monolingual controlled vocabularies: ANSI/NISO Z39.19-2005, Bethesda Md., NISO Press, 184 pages, ISBN: 1-880124-65-3. (accessed at http://www.niso.org/standards/resources/Z39-19-2005.pdf, 6/19/06)</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/interval_finishes"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/interval_finishes">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation"/>
+      <skos:definition xml:lang="en">Source and target interval share same ending instant (moment in Allen and Ferguson, 1994 terms), and target interval beginning is before source interval beginning.</skos:definition>
+      <skos:prefLabel xml:lang="en">interval finishes</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation"/>
+      <dcterms:source xml:lang="en">Allen and Ferguson, 1994</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/interval_starts"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/interval_starts">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation"/>
+      <skos:definition xml:lang="en">Source and target intervals have same starting instant (moment in Allen and Ferguson, 1994 terms), and end of target interval is after end of source interval.</skos:definition>
+      <skos:prefLabel xml:lang="en">interval starts</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation"/>
+      <dcterms:source xml:lang="en">Allen and Ferguson, 1994</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/lexical_variant"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/lexical_variant">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation"/>
+      <skos:definition xml:lang="en">Lexical variants differ from synonyms in that synonyms are different terms for the same concept, while lexical variants are different word forms for the same expression. These forms may derive from spelling or grammatical variation or from abbreviated formats. E.g. radar antennas / antennas, radar, Romania / Rumania / Roumania, ground water / ground-water / groundwater, online / on-line pediatrics / paediatrics</skos:definition>
+      <skos:prefLabel xml:lang="en">lexical variant</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation"/>
+      <dcterms:source xml:lang="en">National Information Standards Organization (NISO), 2005, Guidelines for the construction, format, and management of monolingual controlled vocabularies: ANSI/NISO Z39.19-2005, Bethesda Md., NISO Press, 184 pages, ISBN: 1-880124-65-3. (accessed at http://www.niso.org/standards/resources/Z39-19-2005.pdf, 6/19/06)</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/most_specific_subsuming_term">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation"/>
+      <skos:definition xml:lang="en">First role is term, second role is most specific subsuming term. Special case of 'broader term' thesaurus relationship.</skos:definition>
+      <skos:prefLabel xml:lang="en">most specific subsuming term</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/broader_generic_relation"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/near_synonym"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/near_synonym">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation"/>
+      <skos:definition xml:lang="en">Near-synonyms are terms whose meanings are generally regarded as different, but which are treated as equivalents for the purposes of a controlled vocabulary. The extent to which terms are treated as near-synonyms depends in large measure upon the domain covered by the controlled vocabulary and its size. Near-synonyms may include antonyms or represent points on a continuum. Examples: sea water / salt water [variant terms] meteors / meteorites / meteoroids [points on a continuum] smoothness / roughness [antonyms] For each of these sets of near synonyms, a vocabulary developer might decide to designate one of the terms as the preferred term with the understanding that it will retrieve all content described by the other terms as well. As a general rule, terms should be treated as near-synonyms only in subject areas that are peripheral to the domain of the controlled vocabulary. When concepts can be distinguished in the controlled vocabulary domain with sufficient precision to justify their representation as separate terms, they should be individually defined and retained. If two concepts cannot be consistently and reliably differentiated from each otherhowever, a term for one concept should be selected as the preferred term and a USE reference made from the other.</skos:definition>
+      <skos:prefLabel xml:lang="en">near synonym</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation"/>
+      <dcterms:source xml:lang="en">National Information Standards Organization (NISO), 2005, Guidelines for the construction, format, and management of monolingual controlled vocabularies: ANSI/NISO Z39.19-2005, Bethesda Md., NISO Press, 184 pages, ISBN: 1-880124-65-3. (accessed at http://www.niso.org/standards/resources/Z39-19-2005.pdf, 6/19/06)</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/part_of">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation"/>
+      <skos:definition xml:lang="en">This relationship covers situations in which one concept (source) is inherently included in another (target), regardless of context, so that the terms can be organized into logical hierarchies, with the whole treated as a broader term. This relationship can be applied to several types of term, the three types enumerated below are not intended to be exhaustive. For time interval concepts (ordinal eras) (Allen and Ferguson, 1994), this relationship subsumes ‘During’, ‘Interval starts’, and ‘Interval finishes’. Examples: brain/central nervous system/nervous system, Ottawa/Ontario/Canada, regiment/battalion/military division/army, Cambrian/Paleozoic/Phanerozoic.</skos:definition>
+      <skos:prefLabel xml:lang="en">part of</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/broader_term"/>
+      <dcterms:source xml:lang="en">National Information Standards Organization (NISO), 2005, Guidelines for the construction, format, and management of monolingual controlled vocabularies: ANSI/NISO Z39.19-2005, Bethesda Md., NISO Press, 184 pages, ISBN: 1-880124-65-3. (accessed at http://www.niso.org/standards/resources/Z39-19-2005.pdf, 6/19/06), Allen and Ferguson, 1994.</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/related_term"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/related_term">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation"/>
+      <skos:definition xml:lang="en">\This relationship covers associations between terms that are neither equivalent nor hierarchical, yet the terms are semantically or conceptually associated to such an extent that the link between them should be made explicit in the controlled vocabulary, on the grounds that it may suggest additional terms for use in indexing or retrieval. \ \As a general guideline, whenever one term is used, the other should always be implied within the common frames of reference shared by the users of the controlled vocabulary. Moreover, one of the terms is often a necessary component in any explanation or definition of the other, the term cells, for example, forms a necessary part of the definition of cytology.\</skos:definition>
+      <skos:prefLabel xml:lang="en">related term</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation"/>
+      <dcterms:source xml:lang="en">National Information Standards Organization (NISO), 2005, Guidelines for the construction, format, and management of monolingual controlled vocabularies: ANSI/NISO Z39.19-2005, Bethesda Md., NISO Press, 184 pages, ISBN: 1-880124-65-3. (accessed at http://www.niso.org/standards/resources/Z39-19-2005.pdf, 6/19/06)</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/synonym"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/synonym">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation"/>
+      <skos:definition xml:lang="en">\Synonyms are terms whose meanings are regarded as the same or nearly the same in a wide range of contexts. True synonyms are rare in natural language. Although the terms are interchangeable in many circumstances, usage can vary as a result of such factors as level of formality, professional vs. lay context, or pejorative vs. neutral vs. complimentary connotation.\</skos:definition>
+      <skos:prefLabel xml:lang="en">synonym</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation"/>
+      <dcterms:source xml:lang="en">National Information Standards Organization (NISO), 2005, Guidelines for the construction, format, and management of monolingual controlled vocabularies: ANSI/NISO Z39.19-2005, Bethesda Md., NISO Press, 184 pages, ISBN: 1-880124-65-3. (accessed at http://www.niso.org/standards/resources/Z39-19-2005.pdf, 6/19/06)</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/target_follows_source"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/target_follows_source">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation"/>
+      <skos:definition xml:lang="en">Relationship for partial ordering of concepts in a vocabulary that has some sort of ordering, for example a time scale consisting of time ordinal eras (geologic time scale). Equivalent to 'Intervals meet' relation of Allen and Ferguson (1994). Intervals are conterminous. End of source interval is same time instant (moment in terms of Allen and Ferguson, 1994) as beginning of target interval.</skos:definition>
+      <skos:prefLabel xml:lang="en">target follows source</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/vocabularyrelation"/>
+      <dcterms:source xml:lang="en">Based on Allen and Ferguson, 1994</dcterms:source>
+   </skos:Concept>
+   <skos:Collection rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation">
+      <dcterms:title xml:lang="en">Vocabulary Relation - All Concepts</dcterms:title>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/broader_generic_relation"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/broader_term"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/during"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/instance_of"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/interval_finishes"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/interval_starts"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/lexical_variant"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/most_specific_subsuming_term"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/near_synonym"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/part_of"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/related_term"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/synonym"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/vocabularyrelation/target_follows_source"/></skos:member>
+   </skos:Collection>
+</rdf:RDF>

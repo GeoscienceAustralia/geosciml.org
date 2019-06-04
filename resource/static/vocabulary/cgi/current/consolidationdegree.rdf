@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#">
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree">
+      <dcterms:title xml:lang="en">Consolidation Degree</dcterms:title>
+      <dcterms:description xml:lang="en">This scheme describes the concept space for Earth Material Consolidation Degree concepts, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Designed for populating the consolidationDegree property in GeoSciML RockMaterialDescription elements.</dcterms:description>
+      <skos:editorialNote xml:lang="en">This file contains the 2016 SKOS-RDF version of the CGI Consolidation Degree vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using GSML_SKOS_fromXLS_2016.01.xslt.</skos:editorialNote>
+      <skos:changeNote xml:lang="en">2009-07-14. create rdf/skos from excel spreadsheet.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2010-02-08. SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2010-02-12 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2010-11-27 SMR. URIs mapped from CGI URNs in 200811 version to http URIs according to CGI URI scheme (https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices#Example_Instances)</skos:changeNote>
+      <skos:changeNote xml:lang="en">2011-07-07. GD - Clean up topConcept associations, remove the 'transitive' characteristic of the 'hasTopConcept' object property.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2012-02-04 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types. Add missing for missing definitions.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2012-02-27 SMR add skos:exactMatch triples to map URIs for concepts in this vocabulary to number-token URIs in 201012 version of same concepts.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2013-02-04 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types. Add missing for missing definitions.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2016-06-15 OLR - redo Excel spreadsheet to work with XSLT, to make consistent SKOS-RDF with all CGI vocabularies. Generate new SKOS-RDF file.</skos:changeNote>
+      <dcterms:date>2012-11-24</dcterms:date>
+      <dcterms:creator>CGI Concept Definition Task Group</dcterms:creator>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree/indurated">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree"/>
+      <skos:definition xml:lang="en">Requires blasting or heavy equipment to loosen, Relative density 0.9-1.0. Rings to blow of hammer.</skos:definition>
+      <skos:prefLabel xml:lang="en">indurated</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/consolidationdegree/consolidated"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/consolidationdegree/moderately_indurated"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/consolidationdegree/slightly_indurated"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/consolidationdegree/variable_induration"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/consolidationdegree/well_indurated"/>
+      <dcterms:source xml:lang="en">NADM SLTTs 2004 after Bowles 1987</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree/well_consolidated">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree"/>
+      <skos:definition xml:lang="en">Requires pick to loosen for shoveling, relative density 0.7-0.9.</skos:definition>
+      <skos:prefLabel xml:lang="en">well consolidated</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/consolidationdegree/consolidated"/>
+      <dcterms:source xml:lang="en">NADM SLTTs 2004 after Bowles 1986</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree/consolidated">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree"/>
+      <skos:definition xml:lang="en">Particulate constituents of a compound material adhere to each other strongly enough that the aggregate can be considered a solid material in its own right.</skos:definition>
+      <skos:prefLabel xml:lang="en">consolidated</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/consolidationdegree/consolidation_not_specified"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/consolidationdegree/indurated"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/consolidationdegree/well_consolidated"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree/consolidation_variable">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree"/>
+      <skos:definition xml:lang="en">Consolidation ranges from unconsolidated to indurated on scale of description</skos:definition>
+      <skos:prefLabel xml:lang="en">consolidation variable</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/consolidationdegree/consolidation_not_specified"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree/unconsolidated">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree"/>
+      <skos:definition xml:lang="en">Particulate constituents of a compound material do not adhere to each other strongly enough that the aggregate can be considered a solid in its own right.</skos:definition>
+      <skos:prefLabel xml:lang="en">unconsolidated</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/consolidationdegree/consolidation_not_specified"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/consolidationdegree/incipient_consolidation"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/consolidationdegree/unconsolidated_loose"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/consolidationdegree/unconsolidated_very_loose"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree/moderately_indurated">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree"/>
+      <skos:definition xml:lang="en">Multiple blows with standard rock hammer (less than 1 kg) are required to break rock.</skos:definition>
+      <skos:prefLabel xml:lang="en">moderately indurated</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/consolidationdegree/indurated"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree/slightly_indurated">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree"/>
+      <skos:definition xml:lang="en">Rock can be broken with single blow from standard rock hammer (less than 1 kg mass).</skos:definition>
+      <skos:prefLabel xml:lang="en">slightly indurated</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/consolidationdegree/indurated"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree/variable_induration">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree"/>
+      <skos:definition xml:lang="en">Material is lithified, but induration varies at scale of description.</skos:definition>
+      <skos:prefLabel xml:lang="en">variable induration</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/consolidationdegree/indurated"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree/well_indurated">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree"/>
+      <skos:definition xml:lang="en">Particles in the rock are strongly bound together such that rock surface can only be broken with great difficulty using standard rock hammer (less than 1 kg mass).</skos:definition>
+      <skos:prefLabel xml:lang="en">well indurated</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/consolidationdegree/indurated"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/consolidationdegree/consolidation_not_specified"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree/consolidation_not_specified">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree"/>
+      <skos:definition xml:lang="en">In normative descriptions, indicates that consolidation state is not a determining factor in identification, it may have any value.</skos:definition>
+      <skos:prefLabel xml:lang="en">consolidation not specified</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/consolidationdegree/consolidated"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/consolidationdegree/consolidation_variable"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/consolidationdegree/unconsolidated"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree/incipient_consolidation">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree"/>
+      <skos:definition xml:lang="en">Shoveled with difficulty, relative density 0.4 - 0.7.</skos:definition>
+      <skos:prefLabel xml:lang="en">incipient consolidation</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/consolidationdegree/unconsolidated"/>
+      <dcterms:source xml:lang="en">NADM SLTTs 2004 after Bowles 1986</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree/unconsolidated_loose">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree"/>
+      <skos:definition xml:lang="en">Easily shoveled, can be indented with fingers, Relative density 0.2-0.4.</skos:definition>
+      <skos:prefLabel xml:lang="en">unconsolidated loose</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/consolidationdegree/unconsolidated"/>
+      <dcterms:source xml:lang="en">NADM SLTTs 2004 after Bowles 1985</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree/unconsolidated_very_loose">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/consolidationdegree"/>
+      <skos:definition xml:lang="en">Easily indented with fingers, Relative density 0.0-0.2.</skos:definition>
+      <skos:prefLabel xml:lang="en">unconsolidated very loose</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/consolidationdegree/unconsolidated"/>
+      <dcterms:source xml:lang="en">NADM SLTTs 2004 after Bowles 1984</dcterms:source>
+   </skos:Concept>
+   <skos:Collection rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree">
+      <dcterms:title xml:lang="en">Consolidation Degree - All Concepts</dcterms:title>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree/indurated"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree/well_consolidated"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree/consolidated"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree/consolidation_variable"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree/unconsolidated"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree/moderately_indurated"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree/slightly_indurated"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree/variable_induration"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree/well_indurated"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree/consolidation_not_specified"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree/incipient_consolidation"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree/unconsolidated_loose"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/consolidationdegree/unconsolidated_very_loose"/></skos:member>
+   </skos:Collection>
+   
+</rdf:RDF>
