@@ -7711,6 +7711,7 @@ isc:Greenlandian
   skos:broaderTransitive isc:Quaternary ;
   skos:inScheme ts:gts2018 ;
   skos:notation "a1.1.1.1.1.3"^^gts:EraCode ;
+  skos:prefLabel "Greenlandian"@en ;
   time:hasBeginning isc:BaseHolocene ;
   time:hasEnd isc:BaseNorthgrippian ;
   time:intervalIn isc:Holocene ;
@@ -14104,8 +14105,7 @@ ts:gts2018
   dct:description "RDF/OWL representation of the 2018-08 edition of the International Chronostratigraphic Chart from the International Commission on Stratigraphy."@en ;
   dct:license <https://creativecommons.org/licenses/by/4.0/> ;
   dct:modified "2019-06-10"^^xsd:date ;
-  dct:replaces <http://resource.geosciml.org/classifierscheme/ics/2014/ischart> ;
-  dct:replaces ts:isc2014 ;
+  dct:replaces ts:isc2018 ;
   dct:rights "Original version Copyright © 2018 International Commission on Stratigraphy"@en ;
   dct:rights "RDF version Copyright © 2019 CSIRO, Arizona Geological Survey, IUGS"@en ;
   dct:rights "This Ontology is made available under the Open Data Commons Attribution License: http://opendatacommons.org/licenses/by/1.0"@en ;
@@ -14114,7 +14114,7 @@ ts:gts2018
   dct:subject <http://dbpedia.org/page/Geologic_time_scale> ;
   dct:title "International Chronostratigraphic Chart (2018)"@en ;
   vann:preferredNamespacePrefix "isc"@en ;
-  vann:preferredNamespaceUri <http://resource.geosciml.org/classifierscheme/ics/ischart/> ;
+  vann:preferredNamespaceUri isc: ;
   void:dataDump <https://github.com/GeoscienceAustralia/geosciml.org/blob/master/resource/static/vocabulary/timescale/isc2018-1.ttl> ;
   void:exampleResource isc:BaseOrdovician ;
   void:exampleResource isc:BaseOrdovicianSP ;
@@ -14122,7 +14122,7 @@ ts:gts2018
   void:exampleResource isc:Ordovician ;
   void:feature <http://www.w3.org/ns/formats/RDF_XML> ;
   void:feature <http://www.w3.org/ns/formats/Turtle> ;
-  void:rootResource <http://resource.geosciml.org/classifier/ics/ischart/2018> ;
+  void:rootResource isc: ;
   void:uriSpace "http://resource.geosciml.org/classifier/ics/ischart/"^^rdf:PlainLiteral ;
   void:vocabulary <http://resource.geosciml.org/ontology/timescale/gts> ;
   void:vocabulary <http://resource.geosciml.org/ontology/timescale/rank> ;
