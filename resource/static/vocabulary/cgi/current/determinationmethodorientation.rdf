@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#">
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation">
+      <dcterms:title xml:lang="en">Orientation Determination Method</dcterms:title>
+      <dcterms:description xml:lang="en">This scheme specifies concepts used to describe the method used to determine the planar or linear orientation of a GeologicFeature (eg, the dip of a fault), as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Designed for use in the determinationMethod property in GeoSciML GSML_PlanarOrientation and GSML_LinearOrientation elements.</dcterms:description>
+      <skos:editorialNote xml:lang="en">This file contains the 2016 SKOS-RDF version of the CGI Orientation Determination Method vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using GSML_SKOS_fromXLS_2016.01.xslt.</skos:editorialNote>
+      <skos:changeNote xml:lang="en">2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2010 11 27 SMR convert identifiers from URN to http URI according to CGI URI scheme.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2010-02-08. SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2010-02-12 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2012-02-27 SMR add skos:exactMatch triples to map URIs for concepts in this vocabulary to number-token URIs in 201012 version of same concepts.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2012-11-24 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2016-06-15 OLR - reformat Excel spreadsheet to work with XSLT, to make consistent SKOS-RDF with all CGI vocabularies. Removed "method unknown" - should use generic OGC nil values for unknown values. Generated new SKOS-RDF file.</skos:changeNote>
+      <dcterms:date>2016-06-15</dcterms:date>
+      <dcterms:creator>CGI Geoscience Terminology Working Group</dcterms:creator>
+   </skos:ConceptScheme>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/calculated_average_orientation"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/calculated_average_orientation">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation"/>
+      <skos:definition xml:lang="en">Orientation value is specified using a calculated average of a collection of related orientations (computer generalization).</skos:definition>
+      <skos:prefLabel xml:lang="en">calculated average orientation</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/estimate_from_air_photo"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/estimate_from_air_photo">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation"/>
+      <skos:definition xml:lang="en">Orientation of a geologic structure estimated based on inspection or measurements on an air photograph.</skos:definition>
+      <skos:prefLabel xml:lang="en">estimate from air photo</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/estimate_from_distance"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/estimate_from_distance">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation"/>
+      <skos:definition xml:lang="en">Orientation of a geologic structure based on observation from a distance great enough to preclude direct inspection of the structure to determine orientation.</skos:definition>
+      <skos:prefLabel xml:lang="en">estimate from distance</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/measure_on_outcrop"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/measure_on_outcrop">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation"/>
+      <skos:definition xml:lang="en">Orientation of surface or line is measured on an outcrop of that surface or line directly, e.g. by measuring a particular bedding surface, a 3-D exposure of a fold hinge, a particular stretched mineral grain in a foliation surface.</skos:definition>
+      <skos:prefLabel xml:lang="en">measure on outcrop</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/standard_on_site_measure"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/visual_surface_estimation_on_outcrop"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/photogeologic_determination"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/photogeologic_determination">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation"/>
+      <skos:definition xml:lang="en">Orientation determined based on measurements from aerial photography or satellite imagery (in conjunction with an elevation model.</skos:definition>
+      <skos:prefLabel xml:lang="en">photogeologic determination</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/standard_on_site_measure">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation"/>
+      <skos:definition xml:lang="en">Orientation measured using compass or other instrument directly on or at an outcrop of the structure.</skos:definition>
+      <skos:prefLabel xml:lang="en">standard on site measure</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/measure_on_outcrop"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/three_point_determination"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/three_point_determination">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation"/>
+      <skos:definition xml:lang="en">Orientation determined by fitting a plane to three or more points located on the geologic surface of interest.</skos:definition>
+      <skos:prefLabel xml:lang="en">three point determination</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/visual_surface_estimation_on_outcrop">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/determinationmethodorientation"/>
+      <skos:definition xml:lang="en">Orientation of a surface is measured by visually averaging across one or more outcrops in a small area--e.g. approximating dip by looking down strike of beds, approximating strike by outcrop trace of one or more beds.</skos:definition>
+      <skos:prefLabel xml:lang="en">visual surface estimation on outcrop</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/measure_on_outcrop"/>
+      <dcterms:source xml:lang="en">this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Collection rdf:about="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation">
+      <dcterms:title xml:lang="en">Orientation Determination Method - All Concepts</dcterms:title>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/calculated_average_orientation"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/estimate_from_air_photo"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/estimate_from_distance"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/measure_on_outcrop"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/photogeologic_determination"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/standard_on_site_measure"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/three_point_determination"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/determinationmethodorientation/visual_surface_estimation_on_outcrop"/></skos:member>
+   </skos:Collection>
+   
+</rdf:RDF>

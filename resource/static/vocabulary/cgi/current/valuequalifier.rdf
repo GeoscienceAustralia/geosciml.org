@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#">
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier">
+      <dcterms:title xml:lang="en">Value Qualifier</dcterms:title>
+      <dcterms:description xml:lang="en">This file contains the CGI Value Qualifier vocabulary, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. These terms are taken from the enumeration for values that may be assigned as the valueQualifier on CGI_Value. Definitions are proposed. This codelist includes qualifiers of several sorts: 1. frequence of occurrence--qualifiers that indicate how many occurrences of a described feature are expected to have a reported value. E.g. 'commonly red, sometimes brown'; 2. kinds of statistical procedure used to determine a single value to report based on a collection of observed values, e.g. mean, median, mode.; 3. kinds of nil values; 4. kind of value--a limiting value or the actual estimated value. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme.</dcterms:description>
+      <skos:editorialNote xml:lang="en">This file contains the 2016 SKOS-RDF version of the CGI Value Qualifier vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt</skos:editorialNote>
+      <skos:changeNote xml:lang="en">2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2009-12-07 SMR Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2010-02-08. SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2010-11-28 SMR remove terms deprecated for use in GeoSciML V3. Replace URN identifiers with http URI identifiers following CGI URI scheme (see https://www.seegrid.csiro.au/wiki/bin/view/CGIModel/PersistentIdentifiersInGeoSciMLServices)</skos:changeNote>
+      <skos:changeNote xml:lang="en">2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2012-02-27 SMR add skos:exactMatch triples to relate URI for concept in this vocabulary to URI in 201012 vocabulary</skos:changeNote>
+      <skos:changeNote xml:lang="en">2012-11-24 SMR Update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2016-11-25 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. No change to 2012 concepts.</skos:changeNote>
+      <dcterms:date>2016-11-25</dcterms:date>
+      <dcterms:creator>CGI Geoscience Terminology Working Group</dcterms:creator>
+   </skos:ConceptScheme>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/valuequalifier/always"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/valuequalifier/always">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier"/>
+      <skos:definition xml:lang="en">All instances of the observed entity have this property value</skos:definition>
+      <skos:prefLabel xml:lang="en">always</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier"/>
+      <dcterms:source xml:lang="en">GeoSciML UML model, definition this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/valuequalifier/approximate"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/valuequalifier/approximate">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier"/>
+      <skos:definition xml:lang="en">Specified value is approximate</skos:definition>
+      <skos:prefLabel xml:lang="en">approximate</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier"/>
+      <dcterms:source xml:lang="en">GeoSciML UML model, definition this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/valuequalifier/common"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/valuequalifier/common">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier"/>
+      <skos:definition xml:lang="en">Reported property value is commonly observered</skos:definition>
+      <skos:prefLabel xml:lang="en">common</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier"/>
+      <dcterms:source xml:lang="en">GeoSciML UML model, definition this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/valuequalifier/equalTo"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/valuequalifier/equalTo">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier"/>
+      <skos:definition xml:lang="en">Reported property value is the observered value</skos:definition>
+      <skos:prefLabel xml:lang="en">equalTo</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier"/>
+      <dcterms:source xml:lang="en">GeoSciML UML model, definition this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/valuequalifier/greaterThan"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/valuequalifier/greaterThan">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier"/>
+      <skos:definition xml:lang="en">Reported property value is lower bound</skos:definition>
+      <skos:prefLabel xml:lang="en">greaterThan</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier"/>
+      <dcterms:source xml:lang="en">GeoSciML UML model, definition this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/valuequalifier/lessThan"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/valuequalifier/lessThan">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier"/>
+      <skos:definition xml:lang="en">Reported property value is upper bound</skos:definition>
+      <skos:prefLabel xml:lang="en">lessThan</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier"/>
+      <dcterms:source xml:lang="en">GeoSciML UML model, definition this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/valuequalifier/never"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/valuequalifier/never">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier"/>
+      <skos:definition xml:lang="en">Reported property value is never observed</skos:definition>
+      <skos:prefLabel xml:lang="en">never</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier"/>
+      <dcterms:source xml:lang="en">GeoSciML UML model, definition this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/valuequalifier/rare"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/valuequalifier/rare">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier"/>
+      <skos:definition xml:lang="en">Reported property value is rarely observed</skos:definition>
+      <skos:prefLabel xml:lang="en">rare</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier"/>
+      <dcterms:source xml:lang="en">GeoSciML UML model, definition this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/valuequalifier/sometimes"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/valuequalifier/sometimes">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier"/>
+      <skos:definition xml:lang="en">Reported property value is observed occasionally</skos:definition>
+      <skos:prefLabel xml:lang="en">sometimes</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/valuequalifier"/>
+      <dcterms:source xml:lang="en">GeoSciML UML model, definition this vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Collection rdf:about="http://resource.geosciml.org/classifier/cgi/valuequalifier">
+      <dcterms:title xml:lang="en">Value Qualifier - All Concepts</dcterms:title>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/valuequalifier/always"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/valuequalifier/approximate"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/valuequalifier/common"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/valuequalifier/equalTo"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/valuequalifier/greaterThan"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/valuequalifier/lessThan"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/valuequalifier/never"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/valuequalifier/rare"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/valuequalifier/sometimes"/></skos:member>
+   </skos:Collection>
+</rdf:RDF>

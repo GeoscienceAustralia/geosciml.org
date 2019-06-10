@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#">
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense">
+      <dcterms:title xml:lang="en">Fault Movement Sense</dcterms:title>
+      <dcterms:description xml:lang="en">This scheme specifies concepts used to describe the relative direction of movement of bodies of rock across a fault (GeoSciML ShearDisplacementStructure) surface, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. Examples include 'sinistral', 'dextral', 'normal', 'reverse'. By extension, this vocabulary includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Designed for use in the movementSense property in GeoSciML DisplacementValue elements.</dcterms:description>
+      <skos:editorialNote xml:lang="en">This file contains the 2016 SKOS-RDF version of the CGI Fault Movement Sense vocabulary. Compilation and review in MS Excel spreadsheet, converted to MS Excel for SKOS generation using SKOS_for_GA_from_XLS_2016.03.xslt</skos:editorialNote>
+      <skos:changeNote xml:lang="en">2009-07-14. Generate SKOS encoding of vocabulary from Excel spreadsheet.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2009-12-07 SMR Update metadata properties for version, creator, title, and format. Change skos:HistoryNote to dc:source for information on origin of terms and definitions.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2010-02-08. SMR Clean up namespace declarations so concept URI's follow CGI URN scheme; concepts have URN, are not document fragments.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2010-02-13 Add narrower relationship links by adding skos:narrower link in Protege, defining skos:narrower as inverse of skos:broader, calculating with Pellet reasoner to add inferred axioms, and using 'file/Export inferred axioms as ontology' in Protege.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2010-11-27 SMR replace URN identifiers with http URI according to CGI URI scheme</skos:changeNote>
+      <skos:changeNote xml:lang="en">2012-02-07 SMR update URI to replace numeric final token with English-language string as in original URN scheme.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2012-02-27 SMR add skos:exactMatch triples to map URIs for concepts in this vocabulary to number-token URIs in 201012 version of same concepts.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2013-02-04 SMR Check update to 201211 version; add collection entity, check all pref labels are lower case, remove owl:NamedIndividual and Owl:Thing rdf:types. Add missing for missing definitions.</skos:changeNote>
+      <skos:changeNote xml:lang="en">2016-10-18 OLR regenerate SKOS-RDF file as part of migration to new vocabulary server. No changes to terms from the previous 2012 version.</skos:changeNote>
+      <dcterms:date>2016-10-18</dcterms:date>
+      <dcterms:creator>CGI Geoscience Terminology Working Group</dcterms:creator>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/detachment">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+      <skos:definition xml:lang="en">A regional-scale low-angle normal fault.</skos:definition>
+      <skos:prefLabel xml:lang="en">detachment</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">détachement</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal"/>
+      <dcterms:source xml:lang="en">GGIC vocabularies working group (Australia)</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/dextral"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/dextral">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+      <skos:definition xml:lang="en">Right-lateral separation sense, in plan view, the side opposite the observer appears displaced to the right.,</skos:definition>
+      <skos:prefLabel xml:lang="en">dextral</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">dextre</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_dextral"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_dextral"/>
+      <dcterms:source xml:lang="en">GGIC vocabularies working group (Australia)</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/generic_decollement"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/generic_decollement">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+      <skos:definition xml:lang="en">A large-displacement (kilometers or tens of kilometers) shallowly dipping to subhorizontal fault or shear zone.</skos:definition>
+      <skos:prefLabel xml:lang="en">generic decollement</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">decollement</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+      <dcterms:source xml:lang="en">Neuendorf et al. 2005</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/no_movement_sense"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/no_movement_sense">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+      <skos:definition xml:lang="en">The fault-parallel displacement is effectively zero, as in an extraction fault.</skos:definition>
+      <skos:prefLabel xml:lang="en">no movement sense</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+      <dcterms:source xml:lang="en">Froitzheim, N., Pleuger, J. &amp; Nagel, T.J., 2006. Extraction faults. Journal of Structural Geology v28, pp. 1388-1395.</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+      <skos:definition xml:lang="en">The hanging wall appears to have moved down relative to the footwall, dip of fault usually 45-90 degrees.</skos:definition>
+      <skos:prefLabel xml:lang="en">normal</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/detachment"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_dextral"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_sinistral"/>
+      <dcterms:source xml:lang="en">GGIC vocabularies working group (Australia)</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_dextral"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_dextral">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+      <skos:definition xml:lang="en">The movement sense includes both normal and dextral components.</skos:definition>
+      <skos:prefLabel xml:lang="en">normal dextral</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/dextral"/>
+      <dcterms:source xml:lang="en">GGIC vocabularies working group (Australia)</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_sinistral"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_sinistral">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+      <skos:definition xml:lang="en">The movement sense includes both normal and sinistral components.</skos:definition>
+      <skos:prefLabel xml:lang="en">normal sinistral</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/sinistral"/>
+      <dcterms:source xml:lang="en">GGIC vocabularies working group (Australia)</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+      <skos:definition xml:lang="en">The hanging wall appears to have moved down relative to the footwall, dip of fault usually greater than 45 degrees.</skos:definition>
+      <skos:prefLabel xml:lang="en">reverse</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">inverse</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/thrust"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_dextral"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_sinistral"/>
+      <dcterms:source xml:lang="en">GGIC vocabularies working group (Australia)</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_dextral"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_dextral">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+      <skos:definition xml:lang="en">The movement sense includes both reverse and dextral components.</skos:definition>
+      <skos:prefLabel xml:lang="en">reverse dextral</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/dextral"/>
+      <dcterms:source xml:lang="en">GGIC vocabularies working group (Australia)</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_sinistral"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_sinistral">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+      <skos:definition xml:lang="en">The movement sense includes both reverse and sinistral components.</skos:definition>
+      <skos:prefLabel xml:lang="en">reverse sinistral</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/sinistral"/>
+      <dcterms:source xml:lang="en">GGIC vocabularies working group (Australia)</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/sinistral"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/sinistral">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+      <skos:definition xml:lang="en">Left-lateral separation sense, in plan view, the side opposite the observer appears displaced to the left.</skos:definition>
+      <skos:prefLabel xml:lang="en">sinistral</skos:prefLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_sinistral"/>
+      <skos:related rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_sinistral"/>
+      <dcterms:source xml:lang="en">GGIC vocabularies working group (Australia)</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/thrust">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+      <skos:definition xml:lang="en">Reverse fault with dip typically less than 45 degrees, horizontal compression, rather than vertical displacement is characteristic.</skos:definition>
+      <skos:prefLabel xml:lang="en">thrust</skos:prefLabel>
+      <skos:prefLabel xml:lang="fr">décrochement</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/thrust_decollement"/>
+      <dcterms:source xml:lang="en">GGIC vocabularies working group (Australia)</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/thrust_decollement">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/faultmovementsense"/>
+      <skos:definition xml:lang="en">A regional-scale low-angle thrust fault.</skos:definition>
+      <skos:prefLabel xml:lang="en">thrust decollement</skos:prefLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/faultmovementsense/thrust"/>
+      <dcterms:source xml:lang="en">GeoScience Victoria and others</dcterms:source>
+   </skos:Concept>
+   <skos:Collection rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense">
+      <dcterms:title xml:lang="en">Fault Movement Sense - All Concepts</dcterms:title>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/detachment"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/dextral"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/generic_decollement"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/no_movement_sense"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_dextral"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/normal_sinistral"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_dextral"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/reverse_sinistral"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/sinistral"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/thrust"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/faultmovementsense/thrust_decollement"/></skos:member>
+   </skos:Collection>
+   
+</rdf:RDF>

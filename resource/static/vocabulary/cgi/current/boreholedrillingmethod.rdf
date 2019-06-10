@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#">
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod">
+      <dcterms:title xml:lang="en">Borehole Drilling Method</dcterms:title>
+      <dcterms:description xml:lang="en">This scheme specifies concepts used to describe methods used to drill a borehole, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme.</dcterms:description>
+      <skos:editorialNote xml:lang="en">This file contains the 2016.06 version of the CGI Borehole Drilling Method vocabulary. Vocabulary Shepherd: Ollie Raymond. Compilation and review in Google doc spreadsheet, converted to MS Excel, then SKOS generation using SKOS_for_GA_from_XLS_2016.02.xslt.</skos:editorialNote>
+      <skos:changeNote xml:lang="en">Original SKOS implementation, 03-FEB-2016</skos:changeNote>
+      <skos:changeNote xml:lang="en">Amended SKOS for migration to new vocabulary repository, 11-MAY-2016</skos:changeNote>
+      <skos:changeNote xml:lang="en">Corrected error in "broader" values for hand auger, power auger, sonic core. 2-JUN-2016</skos:changeNote>
+      <skos:changeNote xml:lang="en">2018-08-03 SMR remove spurious space character at end of URI for cone_penetrometer_test_probe.</skos:changeNote>
+      <dcterms:date>2018-08-03</dcterms:date>
+      <dcterms:creator>CGI Geoscience Terminology Working Group</dcterms:creator>
+   </skos:ConceptScheme>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/auger"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/auger">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">Auger drilling is done with a helical screw which is driven into the ground with rotation; the earth is lifted up the borehole by the blade of the screw. Auger drills may be either rotated by hand or mechanically driven. Hollow stem auger drilling is used for softer ground such as swamps where the hole will not stay open by itself for environmental drilling, geotechnical drilling, soil engineering and geochemistry reconnaissance work in exploration for mineral deposits. Solid flight augers/bucket augers are used in harder ground construction drilling. In some cases, mine shafts are dug with auger drills. Small augers can be mounted on the back of a utility truck, with large augers used for sinking piles for bridge foundations.</skos:definition>
+      <skos:prefLabel xml:lang="en">auger</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">1</skos:notation>
+      <skos:altLabel xml:lang="en">continuous flight auger</skos:altLabel>
+      <skos:altLabel xml:lang="en">solid stem auger</skos:altLabel>
+      <skos:altLabel xml:lang="en">hollow stem auger</skos:altLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/hand_auger"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/power_auger"/>
+      <dcterms:source xml:lang="en">https://en.wikipedia.org/wiki/Drilling_rig#Auger_drilling</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/hand_auger">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">A hand auger consists of extendable steel rods, rotated by hand. Various steel augers can be attached at the bottom end of the drill rods. The augers are rotated into the ground until they are filled, and then lifted out of the borehole to be emptied.</skos:definition>
+      <skos:prefLabel xml:lang="en">hand auger</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">1.1</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/auger"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/power_auger">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">Mechanically-driven auger drilling, typically used in hard ground or for holes that are too wide or deep for hand auger drilling. Auger drilling is done with a helical screw which is driven into the ground with rotation; the earth is lifted up the borehole by the blade of the screw. Small power augers can be portable or mounted on the back of a utility truck, with larger auger rigs used for construction, like sinking piles for bridge foundations or mine shafts.</skos:definition>
+      <skos:prefLabel xml:lang="en">power auger</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">1.2</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/auger"/>
+      <dcterms:source xml:lang="en">https://en.wikipedia.org/wiki/Drilling_rig#Auger_drilling</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/percussion_drilling"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/percussion_drilling">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">A drilling method whereby rock or sediment chips or fragments (cuttings) are derived by use of a percussion (hammer) method, with or without rotary action.</skos:definition>
+      <skos:prefLabel xml:lang="en">percussion drilling</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">2</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/cable_tool_drilling"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/RAB_drilling"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/rotary_hammer_drilling"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/reverse_circulation_drilling"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/cable_tool_drilling">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">A percussion drilling method that uses a heavy drilling tool that is raised and lowered with enough force to pulverise the rock, with the debris removed by a bailer. Although this drilling method has largely been supplanted in recent years by other, faster drilling techniques, it is still the most practicable drilling method for large diameter, deep bedrock wells, and in widespread use for small rural water supply wells. The impact of the drill bit fractures the rock and in many shale rock situations increases the water flow into a well over rotary. Many large diameter water supply wells, especially deep wells completed in bedrock aquifers, were completed using this drilling method.</skos:definition>
+      <skos:prefLabel xml:lang="en">cable tool drilling</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">2.1</skos:notation>
+      <skos:altLabel xml:lang="en">cable percussion drilling</skos:altLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/percussion_drilling"/>
+      <dcterms:source xml:lang="en">https://en.wikipedia.org/wiki/Drilling_rig#Cable_tool_drilling</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/RAB_drilling">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">Percussion rotary air blast drilling (RAB) drilling is an 'open hole' rotary percussion drilling method where rock or sediment chips are derived by using a drag bit or pneumatic reciprocating piston-driven hammer, and the cuttings are blown up the outside of the drill rods by air, or a combination of air and foam, and collected at the surface. It is used most frequently in the mineral exploration industry.</skos:definition>
+      <skos:prefLabel xml:lang="en">rotary air blast drilling</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">2.2</skos:notation>
+      <skos:altLabel xml:lang="en">RAB drilling</skos:altLabel>
+      <skos:altLabel xml:lang="en">percussion rotary air blast</skos:altLabel>
+      <skos:altLabel xml:lang="en">down-the-hole drilling</skos:altLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/percussion_drilling"/>
+      <dcterms:source xml:lang="en">https://en.wikipedia.org/wiki/Drilling_rig#Percussion_rotary_air_blast_drilling_.28RAB.29</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/rotary_hammer_drilling">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">A percussion drilling method using a cutting tool powered by compressed air that creates a rapid percussion effect coupled with rotary action to drill hard rocks.</skos:definition>
+      <skos:prefLabel xml:lang="en">rotary hammer drilling</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">2.3</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/percussion_drilling"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/reverse_circulation_drilling">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">The drilling mechanism for reverse circulation (RC) drilling is a pneumatic reciprocating piston known as a "hammer" driving a tungsten-steel drill bit. Compressed air passes down to the drill bit along the annular space between an outer and inner drill rod to return to the surface carrying drill cuttings. This is the reverse of the air path employed in normal ‘open hole’ rotary percussion drilling (including RAB drilling). At the top of the hole, the air and drill cuttings are passed through a cyclone to collect the cuttings for sampling. The RC drilling technique prevents the upcoming sample from being contaminated with material from the wall of the hole above the sampling depth. RC drilling utilises much larger rigs and machinery and depths of up to 500 metres are routinely achieved.</skos:definition>
+      <skos:prefLabel xml:lang="en">reverse circulation drilling</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">2.4</skos:notation>
+      <skos:altLabel xml:lang="en">RC</skos:altLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/percussion_drilling"/>
+      <dcterms:source xml:lang="en">https://en.wikipedia.org/wiki/Drilling_rig#Reverse_circulation_.28RC.29_drilling</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/hydraulic_rotary_drilling"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/hydraulic_rotary_drilling">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">A drilling method using a drill stem equipped with a bit that is rotated to cut and grind the rock with a fluid pumped down the stem to force cuttings up through the annular space between the stem and the wall of the hole. Oil well drilling of this type utilises tri-cone roller, carbide embedded, fixed-cutter diamond, or diamond-impregnated drill bits. This is preferred because there is no need to return intact samples to surface for assay as the objective is to reach a formation containing oil or natural gas. Sizable machinery is used, enabling depths of several kilometres to be penetrated. Rotating hollow drill pipes carry down bentonite and barite infused drilling muds to lubricate, cool, and clean the drilling bit, control downhole pressures, stabilize the wall of the borehole and remove drill cuttings.</skos:definition>
+      <skos:prefLabel xml:lang="en">hydraulic rotary drilling</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">3</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <dcterms:source xml:lang="en">https://en.wikipedia.org/wiki/Drilling_rig#Hydraulic_rotary_drilling</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/core_drilling"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/core_drilling">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">A core of sediment, soil, or rock is derived by an unspecified core drilling method.</skos:definition>
+      <skos:prefLabel xml:lang="en">core drilling</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">4</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/diamond_core"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/direct_push"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/vibrocore"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/diamond_core">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">Diamond core drilling (or diamond drilling) utilizes an annular diamond- or tungsten-carbide-impregnated drill bit attached to the end of hollow drill rods to cut a cylindrical core of solid rock. The diamonds used are fine to microfine industrial grade diamonds. They are set within a matrix of varying hardness, from brass to high-grade steel. Matrix hardness, diamond size and dosing can be varied according to the rock which must be cut. Holes within the bit allow water to be delivered to the cutting face. This provides three essential functions: lubrication, cooling, and removal of drill cuttings from the hole. Core samples are retrieved via the use of a core tube, a hollow tube placed inside the rod string and pumped with water until it locks into the core barrel. As the core is drilled, the core barrel slides over the core as it is cut. An "overshot" attached to the end of the winch cable is lowered inside the rod string and locks on to the backend (aka head assembly), located on the top end of the core barrel. The winch is retracted, pulling the core tube to the surface. The core does not drop out of the inside of the core tube when lifted because either a split ring core lifter or basket retainer allow the core to move into, but not back out of the tube.</skos:definition>
+      <skos:prefLabel xml:lang="en">diamond core</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">4.1</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/core_drilling"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/conventional_core"/>
+      <dcterms:source xml:lang="en">https://en.wikipedia.org/wiki/Drilling_rig#Diamond_core_drilling</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/conventional_core">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">Core drilling using a diamond or tungsten carbide bit and a core barrel with fibreglass inner sleeves. To retrieve the core samples, the complete rod string and core barrel assembly has to be removed from the hole. Conventional coring is much more time consuming than wireline coring, as each rod has to be removed from the hole individually, then lowered back into the hole to continue to advance the boring and collect the next core sample. Used in the oil industry.</skos:definition>
+      <skos:prefLabel xml:lang="en">conventional core</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">4.1.1</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/diamond_core"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/direct_push">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">Direct push technology includes several types of drilling rigs and drilling equipment which advances a drill string by pushing or hammering without rotating the drill string. Direct push rigs include both cone penetration testing rigs and direct push sampling rigs such as a PowerProbe or Geoprobe. Direct push rigs typically are limited to drilling in unconsolidated soil materials and very soft rock. Direct push drilling rigs use hydraulic cylinders and a hydraulic hammer in advancing a hollow core sampler, typically no longer than 2 metres, to gather soil and groundwater samples. The core pipe has a valve on top that is used to create a vacuum at the top of the core when pulling the core out of the sediment. The method can be used in up to 5m of water.</skos:definition>
+      <skos:prefLabel xml:lang="en">direct push</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">4.2</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/core_drilling"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/delft_sampler"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/geoprobe_core"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/gravity_core"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/kasten_core"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/mackereth_core"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/piston_core"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/window_sampler"/>
+      <dcterms:source xml:lang="en">https://en.wikipedia.org/wiki/Drilling_rig#Direct_push_rigs</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/delft_sampler">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">The Delft continuous sampler, developed by GeoDelft, is used for obtaining high quality samples within very soft cohesive soils. The sampling system is available in two sizes to take continuous samples, 29 or 66mm in diameter, normally with a maximum penetration of about 18m. A steel outer tube is pushed into the ground using standard CPT (cone penetrometer test) equipment and the soil sample core is fed into a thin-walled plastic inner tube as the sampler advances. After extraction, the samples are cut into 1 m lengths and placed in purpose-made cases, being retained in the plastic tubes.</skos:definition>
+      <skos:prefLabel xml:lang="en">Delft sampler</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">4.2.1</skos:notation>
+      <skos:altLabel xml:lang="en">Delft continuous sampler</skos:altLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/direct_push"/>
+      <dcterms:source xml:lang="en">Begemann, H.K., 1974. The delft continuous soilsampler.</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/geoprobe_core">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">A proprietary type of direct push drilling. High quality core is extracted by hydraulic power. Used in rough terrain, soft sand, mud, shallow water, or tight, congested areas. Long high quality cores.</skos:definition>
+      <skos:prefLabel xml:lang="en">Geoprobe core</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">4.2.2</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/direct_push"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/gravity_core">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">Used only where short cores are required. Core barrel is gravity forced into poorly consolidated material, producing near surface high quality core.</skos:definition>
+      <skos:prefLabel xml:lang="en">gravity core</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">4.2.3</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/direct_push"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/kasten_core">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">Large volume, relatively undisturbed sediment core (~3m long) from a Kasten Corer. The corer is constructed of stainless steel and is square in cross-section. A weight of several hundred kilograms on top of the corer pushes it 2-3 metres into the seabed.</skos:definition>
+      <skos:prefLabel xml:lang="en">Kasten core</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">4.2.4</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/direct_push"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/mackereth_core">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">The Mackereth corer (Mackereth, 1958; Smith, 1959) is a pneumatic device that consists of a cylindrical aluminum chamber ~1.2m long and 0.5m in diameter. The apparatus is lowered to the lake floor on a rope, and air hoses connect the chamber to the vessel at the water surface. Compressed air is used to pump the water out of the chamber and then to force the inner core barrel downward through the chamber and into the sediment. The method can recover single-drive moderate (up to 12 m) cores from lakes of diverse depths.  Mackereth cores can be deployed on virtually any small craft and can be used in water depths up to 100 metres.</skos:definition>
+      <skos:prefLabel xml:lang="en">Mackereth core</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">4.2.5</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/direct_push"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/piston_core">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">A drilling method that uses a piston to drive the core barrel. Produces high quality long cores.</skos:definition>
+      <skos:prefLabel xml:lang="en">piston core</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">4.2.6</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/direct_push"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/window_sampler">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">Window or windowless sampling uses either drop weight or hydraulic hammer to drive 1m or 2m long sample tubes into the ground. The sample tubes have open slots or “windows" along their length to allow for logging and sampling. In windowless sampling, the sample tube contains a liner which retains the sample and reduces potential for cross contamination of soils during the drilling process. Window or windowless sampling is used to bore through shallow soft soils to investigate the substrata in order to gain a profile of the ground conditions and to facilitate soil sampling for chemical and geotechnical analysis.</skos:definition>
+      <skos:prefLabel xml:lang="en">window sampler</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">4.2.7</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/direct_push"/>
+      <dcterms:source xml:lang="en">http://geotechnicalservices.co.uk/Window-Sampling.php</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sonic"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sonic">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">A sonic or vibratory drill head works by sending high frequency resonant vibrations down the drill string to the drill bit, while the operator controls these frequencies to suit the specific conditions of the soil/rock geology. Vibrations may also be generated within the drill head. The frequency is generally between 50 and 180 hertz (cycles per second) and can be varied by the operator. Resonance magnifies the amplitude of the drill bit, which fluidizes the soil particles at the bit face, allowing for fast and easy penetration through most geological formations. An internal spring system isolates these vibrational forces from the rest of the drill rig.</skos:definition>
+      <skos:prefLabel xml:lang="en">sonic</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">5</skos:notation>
+      <skos:altLabel xml:lang="en">vibratory</skos:altLabel>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/vibrocore"/>
+      <dcterms:source xml:lang="en">Powers et al, 2007. Construction Dewatering and Groundwater Control: New Methods and Applications</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/vibrocore">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">A core tube is attached to a source of mechanical vibration (the power head) and lowered into sediment. The vibrations provide energy for rearranging the particles within the sediment in such a way that the core tube penetrates under the static weight of the vibracoring apparatus. Samples include stiff and stony clays, soft rock and sands, and saturated sediments which can not be sampled using gravity or piston corers. Also know as VIBRA.</skos:definition>
+      <skos:prefLabel xml:lang="en">vibrocore</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">5.1</skos:notation>
+      <skos:altLabel xml:lang="en">vibracore</skos:altLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sonic"/>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/core_drilling"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/air_core"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/air_core">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">Air core drilling and related methods use hardened steel or tungsten blades to bore a hole into unconsolidated ground. The drill bit has three blades arranged around the bit head, which cut the unconsolidated ground. The rods are hollow and contain an inner tube which sits inside the hollow outer rod barrel. The drill cuttings are removed by injection of compressed air into the hole via the annular area between the innertube and the drill rod. The cuttings are then blown back to surface up the inner tube where they pass through the sample separating system and are collected if needed. Drilling continues with the addition of rods to the top of the drill string. Air core drilling can occasionally produce small chunks of cored rock.</skos:definition>
+      <skos:prefLabel xml:lang="en">air core</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">6</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <dcterms:source xml:lang="en">https://en.wikipedia.org/wiki/Drilling_rig#Air_core_drilling</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/box_core"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/box_core">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">A sampling method that obtains a large volume or large surface area core with shallow penetration and minimum disturbance. Commonly uses a double spade system.</skos:definition>
+      <skos:prefLabel xml:lang="en">box core</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">7</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">A method to extract a core or plug from the sidewall of a borehole.</skos:definition>
+      <skos:prefLabel xml:lang="en">sidewall core</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">8</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core_bullet"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core_mechanical"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core_bullet">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">Percussion cores are taken by firing hollow bullets into the formation. The bullets are attached to the tool by fasteners, and are retrieved, along with the core inside, by pulling up the tool and the fasteners. Percussion coring tools typically hold 20 to 30 bullets, but two or three tools can be combined on one run in the hole.</skos:definition>
+      <skos:prefLabel xml:lang="en">sidewall core bullet</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">8.1</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core_mechanical">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">Mechanical tools use hollow rotary drills to cut and then pull out core plugs. Up to 75 plugs can be recovered on one run. With full recovery, cores from typical percussion tools are 2.5 cm in diameter by 4.4 cm long, while those from mechanical tools are 2.3 cm in diameter by 5 cm long. The latter are also known as rotary sidewall cores.</skos:definition>
+      <skos:prefLabel xml:lang="en">sidewall core mechanical</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">8.2</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:ConceptScheme rdf:about="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod">
+      <skos:hasTopConcept rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/probe"/>
+   </skos:ConceptScheme>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/probe">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">An object (eg, penetrometer) inserted into the substrate that records material properties without taking physical samples.</skos:definition>
+      <skos:prefLabel xml:lang="en">probe</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">9</skos:notation>
+      <skos:topConceptOf rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/cone_penetrometer_test_probe"/>
+      <skos:narrower rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/mackintosh_probe"/>
+      <dcterms:source xml:lang="en">This vocabulary</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/cone_penetrometer_test_probe">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">A metal rod with an instrumented cone tip pushed by hammering or hydraulically into weakly consolidated ground at a controlled rate. Tip resistance, sleeve friction and water pressure are commonly measured parameters. Includes static and dynamic cone penetration tests.</skos:definition>
+      <skos:prefLabel xml:lang="en">cone penetrometer test probe</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">9.1</skos:notation>
+      <skos:altLabel xml:lang="en">CPT probe</skos:altLabel>
+      <skos:altLabel xml:lang="en">Dutch cone test</skos:altLabel>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/probe"/>
+      <dcterms:source xml:lang="en">https://en.wikipedia.org/wiki/Cone_penetration_test</dcterms:source>
+   </skos:Concept>
+   <skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/mackintosh_probe">
+      <skos:inScheme rdf:resource="http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod"/>
+      <skos:definition xml:lang="en">The Mackintosh tool consists of rods which can be threaded together with barrel connectors and which are normally fitted with a driving point at their base, and a light hand-operated driving hammer at their top. The tool provides a very economical method of determining the thickness of soft deposits such as peat. The driving point is streamlined in longitudinal section with a maximum diameter of 27mm. The drive hammer has a total weight of about 4kg. The rods are 1.2m long and 12mm diameter. The device is often used to provide a depth profile by driving the point and rods into the ground with equal blows of the full drop height available from the hammer: the number of blows for each 150mm of penetration is recorded.</skos:definition>
+      <skos:prefLabel xml:lang="en">Mackintosh probe</skos:prefLabel>
+      <skos:notation rdf:datatype="LocalHierarchyKey">9.2</skos:notation>
+      <skos:broader rdf:resource="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/probe"/>
+      <dcterms:source xml:lang="en">Clayton, C.R.I., Matthews, M.C., and Simons, N.E., 1995. Site investigation. Oxford Blackwell Science 1995</dcterms:source>
+   </skos:Concept>
+   <skos:Collection rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod">
+      <dcterms:title xml:lang="en">Borehole Drilling Method - All Concepts</dcterms:title>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/auger"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/hand_auger"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/power_auger"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/percussion_drilling"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/cable_tool_drilling"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/RAB_drilling"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/rotary_hammer_drilling"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/reverse_circulation_drilling"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/hydraulic_rotary_drilling"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/core_drilling"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/diamond_core"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/conventional_core"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/direct_push"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/delft_sampler"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/geoprobe_core"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/gravity_core"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/kasten_core"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/mackereth_core"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/piston_core"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/window_sampler"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sonic"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/vibrocore"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/air_core"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/box_core"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core_bullet"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/sidewall_core_mechanical"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/probe"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/cone_penetrometer_test_probe"/></skos:member>
+      <skos:member><skos:Concept rdf:about="http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/mackintosh_probe"/></skos:member>
+   </skos:Collection>
+   
+</rdf:RDF>
