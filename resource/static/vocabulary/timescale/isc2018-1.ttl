@@ -1257,7 +1257,7 @@ isc:BaseCarboniferous
   a time:Instant ;
   gts:stratotype isc:BaseCarboniferousSP ;
   rdfs:label "Base of Carboniferous"@en ;
-  skos:altLabel "Base of Lower Mississippian"@en ;
+  skos:altLabel "Base of Early Mississippian"@en ;
   skos:altLabel "Base of Mississippian"@en ;
   skos:altLabel "Base of Tournaisian"@en ;
   skos:prefLabel "Base of Carboniferous"@en ;
@@ -2416,7 +2416,7 @@ isc:BaseLateDevonian
   gts:stratotype isc:BaseUpperDevonianSP ;
   rdfs:label "Base of Late Devonian"@en ;
   skos:altLabel "Base of Frasnian"@en ;
-  skos:prefLabel "Base of Upper Devonian"@en ;
+  skos:prefLabel "Base of Late Devonian"@en ;
   time:inTemporalPosition isc:BaseLateDevonianTime ;
 .
 isc:BaseLateDevonian-location
@@ -5778,7 +5778,7 @@ isc:Capitanian
   a skos:Concept ;
   a time:ProperInterval ;
   rdfs:comment "older bound -265.1 +|-0.4 Ma"@en ;
-  rdfs:comment "younger bound -272.95 +|-0.11 Ma"@en ;
+  rdfs:comment "younger bound -259.1 +|-0.5 Ma"@en ;
   rdfs:label "Capitanian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Capitanian> ;
   skos:broader isc:Guadalupian ;
@@ -6101,7 +6101,7 @@ isc:Chattian
   a gts:GeochronologicEra ;
   a skos:Concept ;
   a time:ProperInterval ;
-  rdfs:comment "older bound -28.1 Ma"@en ;
+  rdfs:comment "older bound -27.82 Ma"@en ;
   rdfs:comment "younger bound -23.03 Ma"@en ;
   rdfs:label "Chattian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Chattian> ;
@@ -6445,6 +6445,8 @@ isc:Darriwilian
   a gts:GeochronologicEra ;
   a skos:Concept ;
   a time:ProperInterval ;
+  rdfs:comment "older bound 467.3 +|-1.1 Ma" ;
+  rdfs:comment "younger bound 458.4 +|-0.9 Ma" ;
   rdfs:label "Darriwilian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Darriwilian> ;
   skos:broader isc:MiddleOrdovician ;
@@ -6771,6 +6773,7 @@ isc:EarlyMississippian
   skos:broaderTransitive isc:Phanerozoic ;
   skos:inScheme ts:gts2018 ;
   skos:narrower isc:Tournaisian ;
+  skos:notation "x1.1.3.2.2.3"^^gts:EraCode ;
   skos:prefLabel "Early Mississippian"@en ;
   skos:prefLabel "前期ミシシッピアン紀"@ja ;
   skos:prefLabel "早密西西比世"@zh ;
@@ -6852,6 +6855,7 @@ isc:EarlyPennsylvanian
   skos:broaderTransitive isc:Phanerozoic ;
   skos:inScheme ts:gts2018 ;
   skos:narrower isc:Bashkirian ;
+  skos:notation "x1.1.3.2.1.3"^^gts:EraCode ;
   skos:prefLabel "Early Pennsylvanian"@en ;
   skos:prefLabel "前期ペンシルバニア紀"@ja ;
   skos:prefLabel "早宾夕法尼亚世"@zh ;
@@ -7363,7 +7367,7 @@ isc:FormationOfEarth
   gts:positionalUncertainty isc:FormationOfEarthUncertainty ;
   rdfs:label "Formation of the Earth"@en ;
   skos:inScheme ts:gts2018 ;
-  skos:prefLabel "Formation of the earth"@en ;
+  skos:prefLabel "Formation of the Earth"@en ;
   time:inTemporalPosition isc:FormationOfEarthTime ;
 .
 isc:FormationOfEarthTime
@@ -8720,6 +8724,7 @@ isc:LateMississippian
   skos:broaderTransitive isc:Phanerozoic ;
   skos:inScheme ts:gts2018 ;
   skos:narrower isc:Serpukhovian ;
+  skos:notation "x1.1.3.2.2.1"^^gts:EraCode ;
   skos:prefLabel "Late Mississippian"@en ;
   skos:prefLabel "後期ミシシッピアン紀"@ja ;
   skos:prefLabel "晚密西西比世"@zh ;
@@ -8809,7 +8814,7 @@ isc:LatePennsylvanian
   skos:inScheme ts:gts2018 ;
   skos:narrower isc:Gzhelian ;
   skos:narrower isc:Kasimovian ;
-  skos:notation "a1.1.3.2.1.1"^^gts:EraCode ;
+  skos:notation "x1.1.3.2.1.1"^^gts:EraCode ;
   skos:prefLabel "Hilis-Pennsylvania"@et ;
   skos:prefLabel "Laat Pennsylvaniën"@nl ;
   skos:prefLabel "Late Pennsylvanian"@en ;
@@ -9086,18 +9091,12 @@ isc:Lopingian
   foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Lopingian> ;
 .
 isc:LowerCretaceous
-  a gts:Epoch ;
   a gts:GeochronologicEra ;
-  a time:ProperInterval ;
-  rdfs:comment "older bound -145.0 Ma"@en ;
-  rdfs:comment "younger bound -100.5 Ma"@en ;
+  dct:isReplacedBy isc:EarlyCretaceous ;
   rdfs:label "Lower Cretaceous Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/LowerCretaceous> ;
   skos:altLabel "下白垩统"@zh ;
   skos:altLabel "白亜紀前期"@ja ;
-  skos:broaderTransitive isc:Mesozoic ;
-  skos:broaderTransitive isc:Phanerozoic ;
-  skos:inScheme ts:gts2018 ;
   skos:prefLabel "Ankstyvoji/Apatinė Kreida"@lt ;
   skos:prefLabel "Cretácico Inferior"@es ;
   skos:prefLabel "Cretácico Inferior"@pt ;
@@ -9119,8 +9118,6 @@ isc:LowerCretaceous
   skos:prefLabel "Ранна/Долна Креда"@bg ;
   skos:prefLabel "前期白亜紀"@ja ;
   skos:prefLabel "早白垩世"@zh ;
-  time:hasBeginning isc:BaseCretaceous ;
-  time:hasEnd isc:BaseLateCretaceous ;
   foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/LowerCretaceous> ;
 .
 isc:LowerDevonian
@@ -9870,6 +9867,7 @@ isc:MiddleMississippian
   skos:broaderTransitive isc:Phanerozoic ;
   skos:inScheme ts:gts2018 ;
   skos:narrower isc:Visean ;
+  skos:notation "x1.1.3.2.2.2" ;
   skos:prefLabel "Middle Mississippian"@en ;
   skos:prefLabel "中密西西比世"@zh ;
   skos:prefLabel "中期ミシシッピアン紀"@ja ;
@@ -9888,6 +9886,8 @@ isc:MiddleOrdovician
   a gts:GeochronologicEra ;
   a skos:Concept ;
   a time:ProperInterval ;
+  rdfs:comment "older bound -470.0 +|-1.4 Ma" ;
+  rdfs:comment "younger bound -458.4 +|-0.9 Ma" ;
   rdfs:label "Middle Ordovician Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/MiddleOrdovician> ;
   skos:altLabel "オルドビス紀中期"@ja ;
@@ -9949,6 +9949,7 @@ isc:MiddlePennsylvanian
   skos:broaderTransitive isc:Phanerozoic ;
   skos:inScheme ts:gts2018 ;
   skos:narrower isc:Moscovian ;
+  skos:notation "x1.1.3.2.1.2" ;
   skos:prefLabel "Middle Pennsylvanian"@en ;
   skos:prefLabel "中宾夕法尼亚世"@zh ;
   skos:prefLabel "中期ペンシルバニア紀"@ja ;
@@ -11688,7 +11689,7 @@ isc:Precambrian
   a time:ProperInterval ;
   rdfs:comment "older bound -4567 +|-1 Ma"@en ;
   rdfs:comment "younger bound -541.0 +|-1.0 Ma"@en ;
-  rdfs:label "Precambrian Supereon"@en ;
+  rdfs:label "precambrian supereon"^^rdf:langString ;
   owl:sameAs <http://dbpedia.org/resource/Precambrian> ;
   skos:inScheme ts:gts2018 ;
   skos:narrower isc:Archean ;
@@ -12240,6 +12241,8 @@ isc:Sandbian
   a gts:GeochronologicEra ;
   a skos:Concept ;
   a time:ProperInterval ;
+  rdfs:comment "older bound -458.4 +|-0.9 Ma"@en ;
+  rdfs:comment "younger bound -453.0 +|-0.7 Ma"@en ;
   rdfs:label "Sandbian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Sandbian> ;
   skos:broader isc:LateOrdovician ;
@@ -14077,7 +14080,7 @@ ts:gts2018
   dct:contributor "S M Richard"@en ;
   dct:created "2017-03-31"^^xsd:date ;
   dct:creator "Simon J D COX, CSIRO"@en ;
-  dct:description "RDF/OWL representation of the 2018-08 edition of the International Chronostratigraphic Chart from the International Commission on Stratigraphy."@en ;
+  dct:description "RDF representation of the Geologic Time Scale, as defined in the International Chronostratigraphic Chart (ICC) from the International Commission on Stratigraphy (ICS). The ICC embraces both chronostratigraphic (time-rock) units and their equivalent geochronologic (geologic-time) units, the former being related to the ‘Stratigraphic points’ referred to below, and the latter (geochronologic units) being employed in this RDF representation."@en ;
   dct:license <https://creativecommons.org/licenses/by/4.0/> ;
   dct:modified "2019-06-10"^^xsd:date ;
   dct:replaces ts:isc2018 ;
@@ -14087,7 +14090,7 @@ ts:gts2018
   dct:source "Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; updated) The ICS International Chronostratigraphic Chart. Episodes 36: 199-204."@en ;
   dct:source "International Chronostratigraphic Chart 2018"@en ;
   dct:subject <http://dbpedia.org/page/Geologic_time_scale> ;
-  dct:title "International Chronostratigraphic Chart (2018)"@en ;
+  dct:title "Geologic Time Scale (2018)"@en ;
   vann:preferredNamespacePrefix "isc"@en ;
   vann:preferredNamespaceUri isc: ;
   void:dataDump <https://github.com/GeoscienceAustralia/geosciml.org/blob/master/resource/static/vocabulary/timescale/isc2018-1.ttl> ;
@@ -14221,7 +14224,7 @@ ts:gts2018
   thors:referencePoint isc:FormationOfEarth ;
   thors:referencePoint isc:Present ;
   rdfs:isDefinedBy ts:gts2018 ;
-  rdfs:label "Geological Timescale (2018)"@en ;
+  rdfs:label "Geologic Time Scale (2018)"@en ;
   rdfs:seeAlso <http://resource.geosciml.org/classifier/ics/ischart/2018> ;
   rdfs:seeAlso <http://stratigraphy.org/GSSP/index.html> ;
   rdfs:seeAlso <http://stratigraphy.org/ICSchart/ChronostratChart2018-08.pdf> ;
@@ -14247,9 +14250,8 @@ removed all boundaries as TopConcepts, leaving on PreCambrian and Phanerozoic as
   skos:changeNote """2019-05-01 - Updated to 2018-08 version; 
 removed StratigraphicPoints, Ranks, TimePositions collections; 
 nested sub-collections in GeochronologicEra""" ;
-  skos:changeNote """2019-06-10 - Adjusted naming or elements to chronologic (early, late) rather stratigraphic (lower, upper); 
-Renamed vocabulary to 'Geological timescale', and cleaned up prefLabel/altLabels to match; 
-changed samfl:shape --> geo:hasGeometry""" ;
+  skos:changeNote """2019-06-10 - This revision adjusts the nomenclature of units to use only chronologic terminology rather than stratigraphic terminology [e.g. Cambrian-Age 2 in place of Cambrian-Stage 2; Cambrian-Epoch 2 in place of Cambrian-Series 2; Early/Late in place of Lower/Upper (namely in application to Epoch/time units rather than their equivalent Series/stratigraphic units—e.g. Early Jurassic Epoch rather than Lower Jurassic Series)]; and the whole artefact is renamed ‘Geologic Time Scale’. 
+Also: changed samfl:shape --> geo:hasGeometry""" ;
   skos:changeNote "Added informal definition of chronometric temporal reference system - Millions of years, counting backwards from 1950"@en ;
   skos:changeNote "See <http://stratigraphy.org/ICSchart/ChangeLog2012-2013-2014-2015-2016-2017-2018.txt> for changes from prior versions"@en ;
   skos:editorialNote """<p>This dataset is being <a href=\"https://github.com/GeoscienceAustralia/geosciml.org/blob/master/resource/static/vocabulary/timescale/\">maintained in GitHub</a></p>
