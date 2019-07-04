@@ -22,19 +22,37 @@
 @prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<http://resource.geosciml.org/classifier/cgi/geologicage/bp>
+  a iso-trs:TM_CoordinateSystem ;
+  a time:TRS ;
+  <http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem#TM_CoordinateSystem.interval> "31556925.445s" ;
+  <http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem#TM_CoordinateSystem.interval> "365.24219265d" ;
+  <http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem#TM_CoordinateSystem.interval> "a" ;
+  <http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem#TM_CoordinateSystem.origin> "1950-01-01T00:00:00"^^xsd:dateTime ;
+  dct:description """Temporal position expressed numerically scaled in years increasing backwards relative to 1950.
+
+Positions in archeologic and 'recent' geologic time are conventionally denoted in years, measured backwards from the present, which is fixed to 1950 when the precision requires it."""@en ;
+  rdfs:comment "Positions in archeologic and 'recent' geologic time are conventionally denoted in years, measured backwards from the present, which is fixed to 1950 when the precision requires it" ;
+  rdfs:label "Years before present (1950)" ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Before_Present> ;
+  skos:definition "Temporal position expressed numerically scaled in years increasing backwards relative to 1950"@en ;
+  skos:prefLabel "Years before present (1950)"@en ;
+.
 <http://resource.geosciml.org/classifier/cgi/geologicage/ma>
   a iso-trs:TM_CoordinateSystem ;
   a time:TRS ;
   <http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem#TM_CoordinateSystem.interval> "Ma" ;
-  <http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem#TM_CoordinateSystem.origin> "1950-01-01T00:00:00"^^xsd:dateTime ;
-  dct:description """Temporal position expressed numerically scaled in millions of years increasing backwards relative to 1950.
+  <http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem#TM_CoordinateSystem.origin> "2000-01-01T00:00:00"^^xsd:dateTime ;
+  dct:description """Temporal position expressed numerically scaled in millions of years increasing backwards from the present.
 
-Positions in geologic time are conventionally denoted in millions of years, measured backwards from the present, which is fixed to 1950 when the precision requires it."""@en ;
-  rdfs:comment "Positions in geologic time are conventionally denoted in millions of years, measured backwards from the present, which is fixed to 1950 when the precision requires it" ;
-  rdfs:label "Geologic time - millions of years" ;
+Positions in geologic time are conventionally denoted in millions of years, measured backwards from the present."""@en ;
+  rdfs:comment "Positions in geologic time are conventionally denoted in millions of years, measured backwards from the present. " ;
+  rdfs:label "Millions of years ago" ;
+  rdfs:seeAlso <https://doi.org/10.1351%2FPAC-REC-09-01-22> ;
+  rdfs:seeAlso <https://en.wikipedia.org/wiki/Year#SI_prefix_multipliers> ;
   owl:sameAs <http://www.opengis.net/def/crs/OGC/0/ChronometricGeologicTime> ;
-  skos:definition "Temporal position expressed numerically scaled in millions of years increasing backwards relative to 1950"@en ;
-  skos:prefLabel "Geologic time - millions of years"@en ;
+  skos:definition "Temporal position expressed numerically scaled in millions of years increasing backwards from the present"@en ;
+  skos:prefLabel "Millions of years ago"@en ;
 .
 isc:
   a skos:Collection ;
@@ -2073,8 +2091,8 @@ isc:BaseHoloceneSP
 .
 isc:BaseHoloceneTime
   a time:TimePosition ;
-  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
-  time:numericPosition 0.0117 ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/bp> ;
+  time:numericPosition "11700"^^xsd:decimal ;
 .
 isc:BaseHomerian
   a gts:GeochronologicBoundary ;
@@ -2371,7 +2389,7 @@ isc:BaseLateCretaceous
   a skos:Concept ;
   a time:Instant ;
   dct:replaces isc:BaseUpperCretaceous ;
-  gts:stratotype isc:BaseLateCretaceousSP ;
+  gts:stratotype isc:BaseUpperCretaceousSP ;
   rdfs:label "Base of Late Cretaceous"@en ;
   skos:altLabel "Base of Cenomanian"@en ;
   skos:prefLabel "Base of Late Cretaceous"@en ;
@@ -2382,21 +2400,6 @@ isc:BaseLateCretaceous-location
   a sf:Point ;
   geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(44.3925 5.5119)"^^geo:wktLiteral ;
   rdfs:label "Location of Stratotype Point Base of Upper Cretaceous"@en ;
-.
-isc:BaseLateCretaceousSP
-  a gts:StratigraphicPoint ;
-  dct:replaces isc:BaseUpperCretaceousSP ;
-  dct:source "Episodes 27/1, p. 21 32, 2004"@en ;
-  gts:boundaryLevel "36 meters below the top of the Marnes Bleues Formation on the south side of Mont Risou "@en ;
-  gts:correlationEvent "Planktonic foraminifer FAD Rotalipora globotruncanoides"@en ;
-  gts:ratifiedGSSP true ;
-  gts:status "Ratified 2002"@en ;
-  geo:hasGeometry isc:BaseLateCretaceous-location ;
-  rdfs:comment "Mount Risou, Hautes Alpes, France"@en ;
-  rdfs:label "Stratotype Point Base of Late Cretaceous"@en ;
-  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/Cenomanian.pdf> ;
-  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
-  skos:prefLabel "Stratotype Point Base of Upper Cretaceous"@en ;
 .
 isc:BaseLateCretaceousTime
   a time:TimePosition ;
@@ -2410,7 +2413,7 @@ isc:BaseLateDevonian
   a skos:Concept ;
   a time:Instant ;
   dct:replaces isc:BaseUpperDevonian ;
-  gts:stratotype isc:BaseLateDevonianSP ;
+  gts:stratotype isc:BaseUpperDevonianSP ;
   rdfs:label "Base of Late Devonian"@en ;
   skos:altLabel "Base of Frasnian"@en ;
   skos:prefLabel "Base of Upper Devonian"@en ;
@@ -2421,21 +2424,6 @@ isc:BaseLateDevonian-location
   a sf:Point ;
   geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(43.5032 3.0868)"^^geo:wktLiteral ;
   rdfs:label "Location of Stratotype Point Base of Upper Devonian"@en ;
-.
-isc:BaseLateDevonianSP
-  a gts:StratigraphicPoint ;
-  dct:replaces isc:BaseUpperDevonianSP ;
-  dct:source "Episodes 10/2, p. 97101, 1987"@en ;
-  gts:boundaryLevel "Base of Bed 42  at Col du Puech de la Suque section E"@en ;
-  gts:correlationEvent "Conodont FAD Ancyrodella rotundiloba"@en ;
-  gts:ratifiedGSSP true ;
-  gts:status "Ratified 1986"@en ;
-  geo:hasGeometry isc:BaseLateDevonian-location ;
-  rdfs:comment "Col du Puech de la Suque, Montage Noire, France"@en ;
-  rdfs:label "Stratotype Point Base of Late Devonian"@en ;
-  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/Frasnian.pdf> ;
-  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
-  skos:prefLabel "Stratotype Point Base of Upper Devonian"@en ;
 .
 isc:BaseLateDevonianTime
   a time:TimePosition ;
@@ -2455,19 +2443,11 @@ isc:BaseLateJurassic
   a skos:Concept ;
   a time:Instant ;
   dct:replaces isc:BaseUpperJurassic ;
+  gts:stratotype isc:BaseUpperJurassicSP ;
   rdfs:label "Base of Late Jurassic"@en ;
   skos:altLabel "Base of Oxfordian"@en ;
   skos:prefLabel "Base of Late Jurassic"@en ;
   time:inTemporalPosition isc:BaseLateJurassicTime ;
-.
-isc:BaseLateJurassicSP
-  a gts:StratigraphicPoint ;
-  dct:replaces isc:BaseUpperJurassicSP ;
-  gts:correlationEvent "Ammonite Cardioceras redcliffense Horizon at Base of the Cardioceras scarburgense Subzone (Quenstedtoceras mariae Zone)"@en ;
-  rdfs:comment "candidates are Redcliff Point (Dorset, SW England) and Savouron (Provence, SE France)"@en ;
-  rdfs:label "Stratotype Point Base of Late Jurassic"@en ;
-  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
-  skos:prefLabel "Stratotype Point Base of Upper Jurassic"@en ;
 .
 isc:BaseLateJurassicTime
   a time:TimePosition ;
@@ -2487,20 +2467,11 @@ isc:BaseLateMississippian
   a skos:Concept ;
   a time:Instant ;
   dct:replaces isc:BaseUpperMississippian ;
+  gts:stratotype isc:BaseUpperMississippianSP ;
   rdfs:label "Base of Late Mississippian"@en ;
   skos:altLabel "Base of Serpukhovian"@en ;
   skos:prefLabel "Base of Late Mississippian"@en ;
   time:inTemporalPosition isc:BaseLateMississippianTime ;
-.
-isc:BaseLateMississippianSP
-  a gts:StratigraphicPoint ;
-  dct:replaces isc:BaseUpperMississippianSP ;
-  gts:correlationEvent "Conodont FAD Lochriea ziegleri"@en ;
-  gts:status "Anticipated 2009"@en ;
-  rdfs:comment "candidates are Verkhnyaya Kardailovka (Urals) or Nashui (China)"@en ;
-  rdfs:label "Stratotype Point Base of Late Mississippian"@en ;
-  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
-  skos:prefLabel "Stratotype Point Base of Late Mississippian"@en ;
 .
 isc:BaseLateMississippianTime
   a time:TimePosition ;
@@ -2520,7 +2491,7 @@ isc:BaseLateOrdovician
   a skos:Concept ;
   a time:Instant ;
   dct:replaces isc:BaseUpperOrdovician ;
-  gts:stratotype isc:BaseLateOrdovicianSP ;
+  gts:stratotype isc:BaseUpperOrdovicianSP ;
   rdfs:label "Base of Late Ordovician"@en ;
   skos:altLabel "Base of Sandbian"@en ;
   skos:prefLabel "Base of Late Ordovician"@en ;
@@ -2531,21 +2502,6 @@ isc:BaseLateOrdovician-location
   a sf:Point ;
   geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(55.7137 13.3255)"^^geo:wktLiteral ;
   rdfs:label "Location of Stratotype Point Base of Upper Ordovician"@en ;
-.
-isc:BaseLateOrdovicianSP
-  a gts:StratigraphicPoint ;
-  dct:replaces isc:BaseUpperOrdovicianSP ;
-  dct:source "Episodes 23/2, p. 102 109, 2000"@en ;
-  gts:boundaryLevel "1.4m below a phosphorite marker bed in the E14b outcrop"@en ;
-  gts:correlationEvent "Graptolite FAD Nemagraptus gracilis"@en ;
-  gts:ratifiedGSSP true ;
-  gts:status "Ratified 2002"@en ;
-  geo:hasGeometry isc:BaseLateOrdovician-location ;
-  rdfs:comment "Sularp Brook, Fagelsang, Sweden"@en ;
-  rdfs:label "Stratotype Point Base of Late Ordovician"@en ;
-  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/Sandbian.pdf> ;
-  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
-  skos:prefLabel "Stratotype Point Base of Late Ordovician"@en ;
 .
 isc:BaseLateOrdovicianTime
   a time:TimePosition ;
@@ -2565,19 +2521,11 @@ isc:BaseLatePennsylvanian
   a skos:Concept ;
   a time:Instant ;
   dct:replaces isc:BaseUpperPennsylvanian ;
+  gts:stratotype isc:BaseUpperPennsylvanianSP ;
   rdfs:label "Base of Late Pennsylvanian"@en ;
   skos:altLabel "Base of Kasimovian"@en ;
   skos:prefLabel "Base of Late Pennsylvanian"@en ;
   time:inTemporalPosition isc:BaseLatePennsylvanianTime ;
-.
-isc:BaseLatePennsylvanianSP
-  a gts:StratigraphicPoint ;
-  dct:replaces isc:BaseUpperPennsylvanianSP ;
-  gts:correlationEvent "Fusulinid FAD Protriticites, which is near ammonoid FAD Eothalossoceras. Alternative (higher) Base of is fusulinid FAD Montiparus montiparus, which is near conodont FAD Idiognathodus sagittalis. Age given here is the higher version; the lower one is about 1 myr older."@en ;
-  rdfs:comment "candidates are in southern Urals, southwest USA and Nashui (south China)."@en ;
-  rdfs:label "Stratotype Point Base of Late Pennsylvanian"@en ;
-  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
-  skos:prefLabel "Stratotype Point Base of Late Pennsylvanian"@en ;
 .
 isc:BaseLatePennsylvanianTime
   a time:TimePosition ;
@@ -2604,8 +2552,8 @@ isc:BaseLatePleistocene
 isc:BaseLatePleistoceneTime
   a time:TimePosition ;
   dct:replaces isc:BaseUpperPleistoceneTime ;
-  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
-  time:numericPosition 0.126 ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/bp> ;
+  time:numericPosition "126000"^^xsd:decimal ;
 .
 isc:BaseLateTriassic
   a gts:GeochronologicBoundary ;
@@ -2613,7 +2561,7 @@ isc:BaseLateTriassic
   a skos:Concept ;
   a time:Instant ;
   dct:replaces isc:BaseUpperTriassic ;
-  gts:stratotype isc:BaseLateTriassicSP ;
+  gts:stratotype isc:BaseUpperTriassicSP ;
   rdfs:label "Base of Late Triassic"@en ;
   skos:altLabel "Base of Carnian"@en ;
   skos:prefLabel "Base of Late Triassic"@en ;
@@ -2624,21 +2572,6 @@ isc:BaseLateTriassic-location
   a sf:Point ;
   geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(46.5269 11.9303)"^^geo:wktLiteral ;
   rdfs:label "Location of Stratotype Point Base of Upper Triassic"@en ;
-.
-isc:BaseLateTriassicSP
-  a gts:StratigraphicPoint ;
-  dct:replaces isc:BaseUpperTriassicSP ;
-  dct:source "Episodes 35/3, p. 414 –430, 2012"@en ;
-  gts:boundaryLevel "Base of marly limestone bed SW4, 45m from Base of San Cassiano Formation"@en ;
-  gts:correlationEvent "FAD of the ammonoid Daxatina canadensis; just below FO of conodont Paragondolella polygnathiformis and Base of normal-polarity magnetic zone S2n"@en ;
-  gts:ratifiedGSSP true ;
-  gts:status "Ratified 2008"@en ;
-  geo:hasGeometry isc:BaseLateTriassic-location ;
-  rdfs:comment "Prati di Stuores, Dolomites, Italy"@en ;
-  rdfs:label "Stratotype Point Base of Late Triassic"@en ;
-  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/Carnian.pdf> ;
-  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
-  skos:prefLabel "Stratotype Point Base of Late Triassic"@en ;
 .
 isc:BaseLateTriassicTime
   a time:TimePosition ;
@@ -2894,8 +2827,8 @@ isc:BaseMeghalayanSP
 .
 isc:BaseMeghalayanTime
   a time:TimePosition ;
-  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
-  time:numericPosition 0.0042 ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/bp> ;
+  time:numericPosition "4200"^^xsd:decimal ;
 .
 isc:BaseMesoarchean
   a gts:NumericEraBoundary ;
@@ -3411,8 +3344,8 @@ isc:BaseNorthgrippianSP
 .
 isc:BaseNorthgrippianTime
   a time:TimePosition ;
-  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/ma> ;
-  time:numericPosition 0.008276 ;
+  time:hasTRS <http://resource.geosciml.org/classifier/cgi/geologicage/bp> ;
+  time:numericPosition "8276"^^xsd:decimal ;
 .
 isc:BaseOlenekian
   a gts:GeochronologicBoundary ;
@@ -4475,7 +4408,7 @@ isc:BaseUpperCretaceous
   a thors:EraBoundary ;
   a time:Instant ;
   dct:isReplacedBy "isc:BaseLateCretaceous" ;
-  gts:stratotype isc:BaseLateCretaceousSP ;
+  gts:stratotype isc:BaseUpperCretaceousSP ;
   rdfs:label "Base of Upper Cretaceous"@en ;
   skos:altLabel "Base of Cenomanian"@en ;
   skos:prefLabel "Base of Upper Cretaceous"@en ;
@@ -4483,8 +4416,16 @@ isc:BaseUpperCretaceous
 .
 isc:BaseUpperCretaceousSP
   a gts:StratigraphicPoint ;
-  dct:isReplacedBy isc:BaseLateCretaceousSP ;
+  dct:source "Episodes 27/1, p. 21 32, 2004"@en ;
+  gts:boundaryLevel "36 meters below the top of the Marnes Bleues Formation on the south side of Mont Risou "@en ;
+  gts:correlationEvent "Planktonic foraminifer FAD Rotalipora globotruncanoides"@en ;
+  gts:ratifiedGSSP true ;
+  gts:status "Ratified 2002"@en ;
+  geo:hasGeometry isc:BaseLateCretaceous-location ;
+  rdfs:comment "Mount Risou, Hautes Alpes, France"@en ;
   rdfs:label "Stratotype Point Base of Upper Cretaceous"@en ;
+  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/Cenomanian.pdf> ;
+  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
   skos:prefLabel "Stratotype Point Base of Upper Cretaceous"@en ;
 .
 isc:BaseUpperCretaceousTime
@@ -4496,7 +4437,7 @@ isc:BaseUpperDevonian
   a thors:EraBoundary ;
   a time:Instant ;
   dct:isReplacedBy isc:BaseLateDevonian ;
-  gts:stratotype isc:BaseLateDevonianSP ;
+  gts:stratotype isc:BaseUpperDevonianSP ;
   rdfs:label "Base of Upper Devonian"@en ;
   skos:altLabel "Base of Frasnian"@en ;
   skos:prefLabel "Base of Upper Devonian"@en ;
@@ -4504,8 +4445,16 @@ isc:BaseUpperDevonian
 .
 isc:BaseUpperDevonianSP
   a gts:StratigraphicPoint ;
-  dct:isReplacedBy isc:BaseLateDevonianSP ;
-  rdfs:label "Stratotype Point Base of Upper Devonian"@en ;
+  dct:source "Episodes 10/2, p. 97101, 1987"@en ;
+  gts:boundaryLevel "Base of Bed 42  at Col du Puech de la Suque section E"@en ;
+  gts:correlationEvent "Conodont FAD Ancyrodella rotundiloba"@en ;
+  gts:ratifiedGSSP true ;
+  gts:status "Ratified 1986"@en ;
+  geo:hasGeometry isc:BaseLateDevonian-location ;
+  rdfs:comment "Col du Puech de la Suque, Montage Noire, France"@en ;
+  rdfs:label "Stratotype Point Base of Late Devonian"@en ;
+  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/Frasnian.pdf> ;
+  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
   skos:prefLabel "Stratotype Point Base of Upper Devonian"@en ;
 .
 isc:BaseUpperDevonianTime
@@ -4517,6 +4466,7 @@ isc:BaseUpperJurassic
   a thors:EraBoundary ;
   a time:Instant ;
   dct:isReplacedBy isc:BaseLateJurassic ;
+  gts:stratotype isc:BaseUpperJurassicSP ;
   rdfs:label "Base of Upper Jurassic"@en ;
   skos:altLabel "Base of Oxfordian"@en ;
   skos:prefLabel "Base of Upper Jurassic"@en ;
@@ -4524,8 +4474,10 @@ isc:BaseUpperJurassic
 .
 isc:BaseUpperJurassicSP
   a gts:StratigraphicPoint ;
-  dct:isReplacedBy isc:BaseLateJurassicSP ;
+  gts:correlationEvent "Ammonite Cardioceras redcliffense Horizon at Base of the Cardioceras scarburgense Subzone (Quenstedtoceras mariae Zone)"@en ;
+  rdfs:comment "candidates are Redcliff Point (Dorset, SW England) and Savouron (Provence, SE France)"@en ;
   rdfs:label "Stratotype Point Base of Upper Jurassic"@en ;
+  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
   skos:prefLabel "Stratotype Point Base of Upper Jurassic"@en ;
 .
 isc:BaseUpperJurassicTime
@@ -4537,6 +4489,7 @@ isc:BaseUpperMississippian
   a thors:EraBoundary ;
   a time:Instant ;
   dct:isReplacedBy isc:BaseLateMississippian ;
+  gts:stratotype isc:BaseUpperMississippianSP ;
   rdfs:label "Base of Upper Mississippian"@en ;
   skos:altLabel "Base of Serpukhovian"@en ;
   skos:prefLabel "Base of Upper Mississippian"@en ;
@@ -4544,8 +4497,11 @@ isc:BaseUpperMississippian
 .
 isc:BaseUpperMississippianSP
   a gts:StratigraphicPoint ;
-  dct:isReplacedBy isc:BaseLateMississippianSP ;
+  gts:correlationEvent "Conodont FAD Lochriea ziegleri"@en ;
+  gts:status "Anticipated 2009"@en ;
+  rdfs:comment "candidates are Verkhnyaya Kardailovka (Urals) or Nashui (China)"@en ;
   rdfs:label "Stratotype Point Base of Upper Mississippian"@en ;
+  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
   skos:prefLabel "Stratotype Point Base of Upper Mississippian"@en ;
 .
 isc:BaseUpperMississippianTime
@@ -4557,7 +4513,7 @@ isc:BaseUpperOrdovician
   a thors:EraBoundary ;
   a time:Instant ;
   dct:isReplacedBy isc:BaseLateOrdovician ;
-  gts:stratotype isc:BaseLateOrdovicianSP ;
+  gts:stratotype isc:BaseUpperOrdovicianSP ;
   rdfs:label "Base of Upper Ordovician"@en ;
   skos:altLabel "Base of Sandbian"@en ;
   skos:prefLabel "Base of Upper Ordovician"@en ;
@@ -4565,8 +4521,16 @@ isc:BaseUpperOrdovician
 .
 isc:BaseUpperOrdovicianSP
   a gts:StratigraphicPoint ;
-  dct:isReplacedBy isc:BaseLateOrdovicianSP ;
+  dct:source "Episodes 23/2, p. 102 109, 2000"@en ;
+  gts:boundaryLevel "1.4m below a phosphorite marker bed in the E14b outcrop"@en ;
+  gts:correlationEvent "Graptolite FAD Nemagraptus gracilis"@en ;
+  gts:ratifiedGSSP true ;
+  gts:status "Ratified 2002"@en ;
+  geo:hasGeometry isc:BaseLateOrdovician-location ;
+  rdfs:comment "Sularp Brook, Fagelsang, Sweden"@en ;
   rdfs:label "Stratotype Point Base of Upper Ordovician"@en ;
+  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/Sandbian.pdf> ;
+  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
   skos:prefLabel "Stratotype Point Base of Upper Ordovician"@en ;
 .
 isc:BaseUpperOrdovicianTime
@@ -4578,6 +4542,7 @@ isc:BaseUpperPennsylvanian
   a thors:EraBoundary ;
   a time:Instant ;
   dct:isReplacedBy isc:BaseLatePennsylvanian ;
+  gts:stratotype isc:BaseUpperPennsylvanianSP ;
   rdfs:label "Base of Upper Pennsylvanian"@en ;
   skos:altLabel "Base of Kasimovian"@en ;
   skos:prefLabel "Base of Upper Pennsylvanian"@en ;
@@ -4585,8 +4550,10 @@ isc:BaseUpperPennsylvanian
 .
 isc:BaseUpperPennsylvanianSP
   a gts:StratigraphicPoint ;
-  dct:isReplacedBy isc:BaseLatePennsylvanianSP ;
+  gts:correlationEvent "Fusulinid FAD Protriticites, which is near ammonoid FAD Eothalossoceras. Alternative (higher) Base of is fusulinid FAD Montiparus montiparus, which is near conodont FAD Idiognathodus sagittalis. Age given here is the higher version; the lower one is about 1 myr older."@en ;
+  rdfs:comment "candidates are in southern Urals, southwest USA and Nashui (south China)."@en ;
   rdfs:label "Stratotype Point Base of Upper Pennsylvanian"@en ;
+  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
   skos:prefLabel "Stratotype Point Base of Upper Pennsylvanian"@en ;
 .
 isc:BaseUpperPennsylvanianTime
@@ -4611,7 +4578,7 @@ isc:BaseUpperTriassic
   a thors:EraBoundary ;
   a time:Instant ;
   dct:isReplacedBy isc:BaseLateTriassic ;
-  gts:stratotype isc:BaseLateTriassicSP ;
+  gts:stratotype isc:BaseUpperTriassicSP ;
   rdfs:label "Base of Upper Triassic"@en ;
   skos:altLabel "Base of Carnian"@en ;
   skos:prefLabel "Base of Upper Triassic"@en ;
@@ -4619,8 +4586,16 @@ isc:BaseUpperTriassic
 .
 isc:BaseUpperTriassicSP
   a gts:StratigraphicPoint ;
-  dct:isReplacedBy isc:BaseLateTriassicSP ;
+  dct:source "Episodes 35/3, p. 414 –430, 2012"@en ;
+  gts:boundaryLevel "Base of marly limestone bed SW4, 45m from Base of San Cassiano Formation"@en ;
+  gts:correlationEvent "FAD of the ammonoid Daxatina canadensis; just below FO of conodont Paragondolella polygnathiformis and Base of normal-polarity magnetic zone S2n"@en ;
+  gts:ratifiedGSSP true ;
+  gts:status "Ratified 2008"@en ;
+  geo:hasGeometry isc:BaseLateTriassic-location ;
+  rdfs:comment "Prati di Stuores, Dolomites, Italy"@en ;
   rdfs:label "Stratotype Point Base of Upper Triassic"@en ;
+  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/Carnian.pdf> ;
+  rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
   skos:prefLabel "Stratotype Point Base of Upper Triassic"@en ;
 .
 isc:BaseUpperTriassicTime
@@ -5834,11 +5809,11 @@ isc:Capitanian
   skos:prefLabel "カピタニアン期"@ja ;
   skos:prefLabel "卡匹敦期"@zh ;
   time:hasBeginning isc:BaseCapitanian ;
-  time:hasEnd isc:BaseGuadalupian ;
+  time:hasEnd isc:BaseLopingian ;
   time:intervalDuring isc:Guadalupian ;
   time:intervalIn isc:Guadalupian ;
-  time:intervalMeets isc:Guadalupian ;
-  time:intervalMeets isc:Roadian ;
+  time:intervalMeets isc:Lopingian ;
+  time:intervalMeets isc:Wuchiapingian ;
   time:intervalMetBy isc:Wordian ;
   foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Capitanian> ;
 .
@@ -8749,12 +8724,12 @@ isc:LateMississippian
   skos:prefLabel "後期ミシシッピアン紀"@ja ;
   skos:prefLabel "晚密西西比世"@zh ;
   time:hasBeginning isc:BaseLateMississippian ;
-  time:hasEnd isc:BasePermian ;
+  time:hasEnd isc:BasePennsylvanian ;
   time:intervalDuring isc:Mississippian ;
   time:intervalIn isc:Mississippian ;
-  time:intervalMeets isc:Asselian ;
-  time:intervalMeets isc:Cisuralian ;
-  time:intervalMeets isc:Permian ;
+  time:intervalMeets isc:Bashkirian ;
+  time:intervalMeets isc:EarlyPennsylvanian ;
+  time:intervalMeets isc:Pennsylvanian ;
   time:intervalMetBy isc:MiddleMississippian ;
   time:intervalMetBy isc:Visean ;
   time:intervalStartedBy isc:Serpukhovian ;
@@ -12820,13 +12795,6 @@ isc:Stratotype-unspecified
   skos:narrower isc:BaseKungurianSP ;
   skos:narrower isc:BaseLadinianSP ;
   skos:narrower isc:BaseLanghianSP ;
-  skos:narrower isc:BaseLateCretaceousSP ;
-  skos:narrower isc:BaseLateDevonianSP ;
-  skos:narrower isc:BaseLateJurassicSP ;
-  skos:narrower isc:BaseLateMississippianSP ;
-  skos:narrower isc:BaseLateOrdovicianSP ;
-  skos:narrower isc:BaseLatePennsylvanianSP ;
-  skos:narrower isc:BaseLateTriassicSP ;
   skos:narrower isc:BaseLopingianSP ;
   skos:narrower isc:BaseLudfordianSP ;
   skos:narrower isc:BaseLudlowSP ;
@@ -12873,6 +12841,13 @@ isc:Stratotype-unspecified
   skos:narrower isc:BaseToarcianSP ;
   skos:narrower isc:BaseTortonianSP ;
   skos:narrower isc:BaseTuronianSP ;
+  skos:narrower isc:BaseUpperCretaceousSP ;
+  skos:narrower isc:BaseUpperDevonianSP ;
+  skos:narrower isc:BaseUpperJurassicSP ;
+  skos:narrower isc:BaseUpperMississippianSP ;
+  skos:narrower isc:BaseUpperOrdovicianSP ;
+  skos:narrower isc:BaseUpperPennsylvanianSP ;
+  skos:narrower isc:BaseUpperTriassicSP ;
   skos:narrower isc:BaseValanginianSP ;
   skos:narrower isc:BaseWenlockSP ;
   skos:narrower isc:BaseWordianSP ;
@@ -12930,13 +12905,6 @@ isc:Stratotypes
   skos:member isc:BaseKungurianSP ;
   skos:member isc:BaseLadinianSP ;
   skos:member isc:BaseLanghianSP ;
-  skos:member isc:BaseLateCretaceousSP ;
-  skos:member isc:BaseLateDevonianSP ;
-  skos:member isc:BaseLateJurassicSP ;
-  skos:member isc:BaseLateMississippianSP ;
-  skos:member isc:BaseLateOrdovicianSP ;
-  skos:member isc:BaseLatePennsylvanianSP ;
-  skos:member isc:BaseLateTriassicSP ;
   skos:member isc:BaseLopingianSP ;
   skos:member isc:BaseLudfordianSP ;
   skos:member isc:BaseLudlowSP ;
@@ -12983,6 +12951,13 @@ isc:Stratotypes
   skos:member isc:BaseToarcianSP ;
   skos:member isc:BaseTortonianSP ;
   skos:member isc:BaseTuronianSP ;
+  skos:member isc:BaseUpperCretaceousSP ;
+  skos:member isc:BaseUpperDevonianSP ;
+  skos:member isc:BaseUpperJurassicSP ;
+  skos:member isc:BaseUpperMississippianSP ;
+  skos:member isc:BaseUpperOrdovicianSP ;
+  skos:member isc:BaseUpperPennsylvanianSP ;
+  skos:member isc:BaseUpperTriassicSP ;
   skos:member isc:BaseValanginianSP ;
   skos:member isc:BaseWenlockSP ;
   skos:member isc:BaseWordianSP ;

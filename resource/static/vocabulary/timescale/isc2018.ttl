@@ -5670,11 +5670,11 @@ isc:Capitanian
   skos:prefLabel "カピタニアン期"@ja ;
   skos:prefLabel "卡匹敦期"@zh ;
   time:hasBeginning isc:BaseCapitanian ;
-  time:hasEnd isc:BaseGuadalupian ;
+  time:hasEnd isc:BaseLopingian ;
   time:intervalDuring isc:Guadalupian ;
   time:intervalIn isc:Guadalupian ;
-  time:intervalMeets isc:Guadalupian ;
-  time:intervalMeets isc:Roadian ;
+  time:intervalMeets isc:Lopingian ;
+  time:intervalMeets isc:Wuchiapingian ;
   time:intervalMetBy isc:Wordian ;
   foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Capitanian> ;
 .
@@ -12977,12 +12977,12 @@ isc:UpperMississippian
   skos:prefLabel "後期ミシシッピアン紀"@ja ;
   skos:prefLabel "晚密西西比世"@zh ;
   time:hasBeginning isc:BaseUpperMississippian ;
-  time:hasEnd isc:BasePermian ;
+  time:hasEnd isc:BasePennsylvanian ;
   time:intervalDuring isc:Mississippian ;
   time:intervalIn isc:Mississippian ;
-  time:intervalMeets isc:Asselian ;
-  time:intervalMeets isc:Cisuralian ;
-  time:intervalMeets isc:Permian ;
+  time:intervalMeets isc:Bashkirian ;
+  time:intervalMeets isc:LowerPennsylvanian ;
+  time:intervalMeets isc:Pennsylvanian ;
   time:intervalMetBy isc:MiddleMississippian ;
   time:intervalMetBy isc:Visean ;
   time:intervalStartedBy isc:Serpukhovian ;
