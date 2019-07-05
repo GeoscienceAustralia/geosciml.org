@@ -32,8 +32,8 @@
   dct:description """Temporal position expressed numerically scaled in years increasing backwards relative to 1950.
 
 Positions in archeologic and 'recent' geologic time are conventionally denoted in years, measured backwards from the present, which is fixed to 1950 when the precision requires it."""@en ;
-  rdfs:comment "Positions in archeologic and 'recent' geologic time are conventionally denoted in years, measured backwards from the present, which is fixed to 1950 when the precision requires it" ;
-  rdfs:label "Years before present (1950)" ;
+  rdfs:comment "Positions in archeologic and 'recent' geologic time are conventionally denoted in years, measured backwards from the present, which is fixed to 1950 when the precision requires it"@en ;
+  rdfs:label "Years before present (1950)"@en ;
   rdfs:seeAlso <https://en.wikipedia.org/wiki/Before_Present> ;
   skos:definition "Temporal position expressed numerically scaled in years increasing backwards relative to 1950"@en ;
   skos:prefLabel "Years before present (1950)"@en ;
@@ -41,13 +41,13 @@ Positions in archeologic and 'recent' geologic time are conventionally denoted i
 <http://resource.geosciml.org/classifier/cgi/geologicage/ma>
   a iso-trs:TM_CoordinateSystem ;
   a time:TRS ;
-  <http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem#TM_CoordinateSystem.interval> "Ma" ;
+  <http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem#TM_CoordinateSystem.interval> "Ma"@en ;
   <http://def.isotc211.org/iso19108/2006/TemporalReferenceSystem#TM_CoordinateSystem.origin> "2000-01-01T00:00:00"^^xsd:dateTime ;
   dct:description """Temporal position expressed numerically scaled in millions of years increasing backwards from the present.
 
 Positions in geologic time are conventionally denoted in millions of years, measured backwards from the present."""@en ;
-  rdfs:comment "Positions in geologic time are conventionally denoted in millions of years, measured backwards from the present. " ;
-  rdfs:label "Millions of years ago" ;
+  rdfs:comment "Positions in geologic time are conventionally denoted in millions of years, measured backwards from the present. "@en ;
+  rdfs:label "Millions of years ago"@en ;
   rdfs:seeAlso <https://doi.org/10.1351%2FPAC-REC-09-01-22> ;
   rdfs:seeAlso <https://en.wikipedia.org/wiki/Year#SI_prefix_multipliers> ;
   owl:sameAs <http://www.opengis.net/def/crs/OGC/0/ChronometricGeologicTime> ;
@@ -154,7 +154,7 @@ isc:Ages
   a xkos:ClassificationLevel ;
   a skos:Collection ;
   xkos:depth "7"^^xsd:positiveInteger ;
-  rdfs:label "GeochronologicEras of rank \"Age\"" ;
+  rdfs:label "GeochronologicEras of rank \"Age\""@en ;
   skos:member isc:Aalenian ;
   skos:member isc:Aeronian ;
   skos:member isc:Albian ;
@@ -772,7 +772,7 @@ isc:BaseAlbianSP
   a gts:StratigraphicPoint ;
   gts:correlationEvent "Candidates include: (1) calcareous nannofossil FAD of Praediscosphaera columnata (= P. cretacea of some earlier studies), (2) carbon-isotope excursion (black-shale episode), (3) ammonite"@en ;
   gts:ratifiedGSSP true ;
-  gts:status "Ratified 2016-04-08" ;
+  gts:status "Ratified 2016-04-08"@en ;
   rdfs:comment "Southeastern France"@en ;
   rdfs:label "Stratotype Point Base of Albian"@en ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
@@ -815,7 +815,7 @@ isc:BaseAquitanian-location
   a geo:Geometry ;
   a sf:Point ;
   geo:asWKT "<http://www.opengis.net/def/crs/EPSG/0/4326> POINT(44.6589 8.8364)"^^geo:wktLiteral ;
-  rdfs:label "Location of Stratotype Point Base of Aquitanian" ;
+  rdfs:label "Location of Stratotype Point Base of Aquitanian"@en ;
 .
 isc:BaseArchean
   a gts:NumericEraBoundary ;
@@ -1389,7 +1389,7 @@ isc:BaseChattianSP
   dct:source "Nanno et al. exp. 2017" ;
   gts:correlationEvent "Potentially extinction of planktonic foraminifer Chiloguembelina (Base of Foram Zone P21b) or an isotopic/climatic event"@en ;
   gts:ratifiedGSSP true ;
-  gts:status "Ratified 2016-10-01" ;
+  gts:status "Ratified 2016-10-01"@en ;
   rdfs:comment "Possibly Monte Cagnero, Umbria-Marche region, Italy"@en ;
   rdfs:label "Stratotype Point Base of Chattian"@en ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
@@ -2959,7 +2959,7 @@ isc:BaseMiaolingianSP
   a gts:StratigraphicPoint ;
   gts:correlationEvent "Trilobite, potentially FAD of Oryctocephalus indicus"@en ;
   gts:ratifiedGSSP true ;
-  gts:status "Ratified 2018-06-26" ;
+  gts:status "Ratified 2018-06-26"@en ;
   rdfs:comment "Wuliu-Zengjiayan (east Guizhou, China)"@en ;
   rdfs:label "Stratotype Point Base of Miaolingian"@en ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
@@ -4407,7 +4407,7 @@ isc:BaseUpperCretaceous
   a gts:GeochronologicBoundary ;
   a thors:EraBoundary ;
   a time:Instant ;
-  dct:isReplacedBy "isc:BaseLateCretaceous" ;
+  dct:isReplacedBy isc:BaseLateCretaceous ;
   gts:stratotype isc:BaseUpperCretaceousSP ;
   rdfs:label "Base of Upper Cretaceous"@en ;
   skos:altLabel "Base of Cenomanian"@en ;
@@ -5090,8 +5090,8 @@ isc:Boundaries
 .
 isc:Boundary-unspecified
   a skos:Concept ;
-  rdfs:comment "This skos:Concept is included to spoof the Research Vocabularies Australia UI, which wants to show all top concepts." ;
-  rdfs:label "Geochronologic Boundaries" ;
+  rdfs:comment "This skos:Concept is included to spoof the Research Vocabularies Australia UI, which wants to show all top concepts."@en ;
+  rdfs:label "Geochronologic Boundaries"@en ;
   skos:definition "Boundaries of intervals in the chronostratigraphic chart (unspecified)"@en ;
   skos:narrower isc:BaseAeronian ;
   skos:narrower isc:BaseAlbian ;
@@ -5992,13 +5992,16 @@ isc:Cenozoic
   skos:narrowerTransitive isc:Danian ;
   skos:narrowerTransitive isc:Eocene ;
   skos:narrowerTransitive isc:Gelasian ;
+  skos:narrowerTransitive isc:Greenlandian ;
   skos:narrowerTransitive isc:Holocene ;
   skos:narrowerTransitive isc:Langhian ;
   skos:narrowerTransitive isc:LatePleistocene ;
   skos:narrowerTransitive isc:Lutetian ;
+  skos:narrowerTransitive isc:Meghalayan ;
   skos:narrowerTransitive isc:Messinian ;
   skos:narrowerTransitive isc:MiddlePleistocene ;
   skos:narrowerTransitive isc:Miocene ;
+  skos:narrowerTransitive isc:Northgrippian ;
   skos:narrowerTransitive isc:Oligocene ;
   skos:narrowerTransitive isc:Paleocene ;
   skos:narrowerTransitive isc:Piacenzian ;
@@ -6445,8 +6448,8 @@ isc:Darriwilian
   a gts:GeochronologicEra ;
   a skos:Concept ;
   a time:ProperInterval ;
-  rdfs:comment "older bound 467.3 +|-1.1 Ma" ;
-  rdfs:comment "younger bound 458.4 +|-0.9 Ma" ;
+  rdfs:comment "older bound -467.3 +|-1.1 Ma"@en ;
+  rdfs:comment "younger bound -458.4 +|-0.9 Ma"@en ;
   rdfs:label "Darriwilian Age"@en ;
   owl:sameAs <http://dbpedia.org/resource/Darriwilian> ;
   skos:broader isc:MiddleOrdovician ;
@@ -7203,7 +7206,7 @@ isc:Eons
   a xkos:ClassificationLevel ;
   a skos:Collection ;
   xkos:depth "3"^^xsd:positiveInteger ;
-  rdfs:label "GeochronologicEras of rank \"Eon\"" ;
+  rdfs:label "GeochronologicEras of rank \"Eon\""@en ;
   skos:member isc:Archean ;
   skos:member isc:Hadean ;
   skos:member isc:Phanerozoic ;
@@ -7213,7 +7216,7 @@ isc:Epochs
   a xkos:ClassificationLevel ;
   a skos:Collection ;
   xkos:depth "6"^^xsd:positiveInteger ;
-  rdfs:label "GeochronologicEras of rank \"Epoch\"" ;
+  rdfs:label "GeochronologicEras of rank \"Epoch\""@en ;
   skos:member isc:CambrianSeries2 ;
   skos:member isc:Cisuralian ;
   skos:member isc:EarlyCretaceous ;
@@ -7257,7 +7260,7 @@ isc:Eras
   a xkos:ClassificationLevel ;
   a skos:Collection ;
   xkos:depth "4"^^xsd:positiveInteger ;
-  rdfs:label "GeochronologicEras of rank \"Era\"" ;
+  rdfs:label "GeochronologicEras of rank \"Era\""@en ;
   skos:member isc:Cenozoic ;
   skos:member isc:Eoarchean ;
   skos:member isc:Mesoarchean ;
@@ -8165,7 +8168,7 @@ isc:Induan
 isc:Ionian
   a gts:GeochronologicEra ;
   dct:isReplacedBy isc:MiddlePleistocene ;
-  skos:changeNote "Superseded by \"Middle Pleistocene\"" ;
+  skos:changeNote "Superseded by \"Middle Pleistocene\""@en ;
 .
 isc:Jiangshanian
   a gts:Age ;
@@ -8746,8 +8749,8 @@ isc:LateOrdovician
   a skos:Concept ;
   a time:ProperInterval ;
   dct:replaces isc:UpperOrdovician ;
-  rdfs:comment "older bound -458.4 +|-0.9 Ma" ;
-  rdfs:comment "younger bound -443.8 +|-1.5 Ma" ;
+  rdfs:comment "older bound -458.4 +|-0.9 Ma"@en ;
+  rdfs:comment "younger bound -443.8 +|-1.5 Ma"@en ;
   rdfs:label "Late Ordovician Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/LateOrdovician> ;
   skos:altLabel "Ordovicien supérieur"@fr ;
@@ -9867,7 +9870,7 @@ isc:MiddleMississippian
   skos:broaderTransitive isc:Phanerozoic ;
   skos:inScheme ts:gts2018 ;
   skos:narrower isc:Visean ;
-  skos:notation "x1.1.3.2.2.2" ;
+  skos:notation "x1.1.3.2.2.2"^^gts:EraCode ;
   skos:prefLabel "Middle Mississippian"@en ;
   skos:prefLabel "中密西西比世"@zh ;
   skos:prefLabel "中期ミシシッピアン紀"@ja ;
@@ -9886,8 +9889,8 @@ isc:MiddleOrdovician
   a gts:GeochronologicEra ;
   a skos:Concept ;
   a time:ProperInterval ;
-  rdfs:comment "older bound -470.0 +|-1.4 Ma" ;
-  rdfs:comment "younger bound -458.4 +|-0.9 Ma" ;
+  rdfs:comment "older bound -470.0 +|-1.4 Ma"@en ;
+  rdfs:comment "younger bound -458.4 +|-0.9 Ma"@en ;
   rdfs:label "Middle Ordovician Epoch"@en ;
   owl:sameAs <http://dbpedia.org/resource/MiddleOrdovician> ;
   skos:altLabel "オルドビス紀中期"@ja ;
@@ -9949,7 +9952,7 @@ isc:MiddlePennsylvanian
   skos:broaderTransitive isc:Phanerozoic ;
   skos:inScheme ts:gts2018 ;
   skos:narrower isc:Moscovian ;
-  skos:notation "x1.1.3.2.1.2" ;
+  skos:notation "x1.1.3.2.1.2"^^gts:EraCode ;
   skos:prefLabel "Middle Pennsylvanian"@en ;
   skos:prefLabel "中宾夕法尼亚世"@zh ;
   skos:prefLabel "中期ペンシルバニア紀"@ja ;
@@ -9997,7 +10000,7 @@ isc:MiddlePleistocene
   skos:broaderTransitive isc:Cenozoic ;
   skos:broaderTransitive isc:Phanerozoic ;
   skos:broaderTransitive isc:Quaternary ;
-  skos:historyNote "Previously known as 'Ionian'" ;
+  skos:historyNote "Previously known as 'Ionian'"@en ;
   skos:inScheme ts:gts2018 ;
   skos:notation "a1.1.1.1.2.2"^^gts:EraCode ;
   skos:prefLabel "Kesk-Pleistotseen"@et ;
@@ -11160,7 +11163,7 @@ isc:Pennsylvanian
 isc:Periods
   a skos:Collection ;
   xkos:depth "5"^^xsd:positiveInteger ;
-  rdfs:label "GeochronologicEras of rank \"Period\"" ;
+  rdfs:label "GeochronologicEras of rank \"Period\""@en ;
   skos:member isc:Calymmian ;
   skos:member isc:Cambrian ;
   skos:member isc:Carboniferous ;
@@ -11317,6 +11320,7 @@ isc:Phanerozoic
   skos:narrowerTransitive isc:Gelasian ;
   skos:narrowerTransitive isc:Givetian ;
   skos:narrowerTransitive isc:Gorstian ;
+  skos:narrowerTransitive isc:Greenlandian ;
   skos:narrowerTransitive isc:Guadalupian ;
   skos:narrowerTransitive isc:Guzhangian ;
   skos:narrowerTransitive isc:Gzhelian ;
@@ -11349,6 +11353,7 @@ isc:Phanerozoic
   skos:narrowerTransitive isc:Ludlow ;
   skos:narrowerTransitive isc:Lutetian ;
   skos:narrowerTransitive isc:Maastrichtian ;
+  skos:narrowerTransitive isc:Meghalayan ;
   skos:narrowerTransitive isc:Messinian ;
   skos:narrowerTransitive isc:Miaolingian ;
   skos:narrowerTransitive isc:MiddleDevonian ;
@@ -11363,6 +11368,7 @@ isc:Phanerozoic
   skos:narrowerTransitive isc:Moscovian ;
   skos:narrowerTransitive isc:Neogene ;
   skos:narrowerTransitive isc:Norian ;
+  skos:narrowerTransitive isc:Northgrippian ;
   skos:narrowerTransitive isc:Olenekian ;
   skos:narrowerTransitive isc:Oligocene ;
   skos:narrowerTransitive isc:Ordovician ;
@@ -11931,8 +11937,11 @@ isc:Quaternary
   skos:narrower isc:Pleistocene ;
   skos:narrowerTransitive isc:Calabrian ;
   skos:narrowerTransitive isc:Gelasian ;
+  skos:narrowerTransitive isc:Greenlandian ;
   skos:narrowerTransitive isc:LatePleistocene ;
+  skos:narrowerTransitive isc:Meghalayan ;
   skos:narrowerTransitive isc:MiddlePleistocene ;
+  skos:narrowerTransitive isc:Northgrippian ;
   skos:notation "a1.1.1.1"^^gts:EraCode ;
   skos:prefLabel "Cuaternario"@es ;
   skos:prefLabel "Czwartorzęd"@pl ;
@@ -12747,8 +12756,8 @@ isc:Stenian
 .
 isc:Stratotype-unspecified
   a skos:Concept ;
-  rdfs:comment "This skos:Concept is included to spoof the Research Vocabularies Australia UI, which wants to show all top concepts." ;
-  rdfs:label "Stratigraphic points" ;
+  rdfs:comment "This skos:Concept is included to spoof the Research Vocabularies Australia UI, which wants to show all top concepts."@en ;
+  rdfs:label "Stratigraphic points"@en ;
   skos:definition "Stratigraphic points providing stratotypes of boundaries in the chronostratigraphic chart (unspecified)"@en ;
   skos:narrower isc:BaseAeronianSP ;
   skos:narrower isc:BaseAlbianSP ;
@@ -12859,7 +12868,7 @@ isc:Stratotype-unspecified
 .
 isc:Stratotypes
   a skos:Collection ;
-  rdfs:label "Stratotypes of boundaries in the International Chronostratigraphic Chart" ;
+  rdfs:label "Stratotypes of boundaries in the International Chronostratigraphic Chart"@en ;
   skos:member isc:BaseAeronianSP ;
   skos:member isc:BaseAlbianSP ;
   skos:member isc:BaseAptianSP ;
@@ -12968,14 +12977,14 @@ isc:Stratotypes
 .
 isc:Sub-Periods
   a skos:Collection ;
-  rdfs:label "GeochronologicEras of rank \"Sub-Period\"" ;
+  rdfs:label "GeochronologicEras of rank \"Sub-Period\""@en ;
   skos:member isc:Mississippian ;
   skos:member isc:Pennsylvanian ;
 .
 isc:Super-Eons
   a skos:Collection ;
   xkos:depth "2"^^xsd:positiveInteger ;
-  rdfs:label "GeochronologicEras of rank \"Super-Eon\"" ;
+  rdfs:label "GeochronologicEras of rank \"Super-Eon\""@en ;
   skos:member isc:Precambrian ;
 .
 isc:Telychian
@@ -14238,20 +14247,20 @@ ts:gts2018
   skos:altLabel "International Chronostratigraphic Chart (2018)"@en ;
   skos:changeNote """1. THORS ontology updated to align with OWL-Time (instead of ISO 19108).
 2. GTS ontology updated to use sam-lite (instead of OWL implementation of ISO 19156) with a lightweight SOSA alignment
-3. Spatial data uses GeoSPARQL (instead of OWL implementation of ISO 19107)""" ;
-  skos:changeNote "2009-05-01 Introduced Holocene subdivisions, as shown in 2018 version from stratigraphy.org - see " ;
+3. Spatial data uses GeoSPARQL (instead of OWL implementation of ISO 19107)"""@en ;
+  skos:changeNote "2009-05-01 Introduced Holocene subdivisions, as shown in 2018 version from stratigraphy.org - see "@en ;
   skos:changeNote """2017-02-22 Added additional collections for eras of each rank;
 classified rank-based collections using XKOS;
 cleaned out legacy Base* instances that did not have links;
 renamed *[GS]SP individuals to *SP;
-removed all boundaries as TopConcepts, leaving on PreCambrian and Phanerozoic as TopConcepts""" ;
-  skos:changeNote "2017/02 - Paleogene: Base of Chattian: The numeric age is updated to that at the ratified GSSP (27.82 Ma; Nanno et al. exp. 2017; by request of Simonetti Monechi)" ;
-  skos:changeNote "2018-09-27 fixed some broken namespaces and prefixes, mostly related to SPARQL - some kind of search/replace error" ;
+removed all boundaries as TopConcepts, leaving on PreCambrian and Phanerozoic as TopConcepts"""@en ;
+  skos:changeNote "2017/02 - Paleogene: Base of Chattian: The numeric age is updated to that at the ratified GSSP (27.82 Ma; Nanno et al. exp. 2017; by request of Simonetti Monechi)"@en ;
+  skos:changeNote "2018-09-27 fixed some broken namespaces and prefixes, mostly related to SPARQL - some kind of search/replace error"@en ;
   skos:changeNote """2019-05-01 - Updated to 2018-08 version; 
 removed StratigraphicPoints, Ranks, TimePositions collections; 
-nested sub-collections in GeochronologicEra""" ;
+nested sub-collections in GeochronologicEra"""@en ;
   skos:changeNote """2019-06-10 - This revision adjusts the nomenclature of units to use only chronologic terminology rather than stratigraphic terminology [e.g. Cambrian-Age 2 in place of Cambrian-Stage 2; Cambrian-Epoch 2 in place of Cambrian-Series 2; Early/Late in place of Lower/Upper (namely in application to Epoch/time units rather than their equivalent Series/stratigraphic units—e.g. Early Jurassic Epoch rather than Lower Jurassic Series)]; and the whole artefact is renamed ‘Geologic Time Scale’. 
-Also: changed samfl:shape --> geo:hasGeometry""" ;
+Also: changed samfl:shape --> geo:hasGeometry"""@en ;
   skos:changeNote "Added informal definition of chronometric temporal reference system - Millions of years, counting backwards from 1950"@en ;
   skos:changeNote "See <http://stratigraphy.org/ICSchart/ChangeLog2012-2013-2014-2015-2016-2017-2018.txt> for changes from prior versions"@en ;
   skos:editorialNote """<p>This dataset is being <a href=\"https://github.com/GeoscienceAustralia/geosciml.org/blob/master/resource/static/vocabulary/timescale/\">maintained in GitHub</a></p>
