@@ -7410,13 +7410,12 @@ isc:Guadalupian
   skos:prefLabel "瓜德鲁普世"@zh ;
   time:hasBeginning isc:BaseGuadalupian ;
   time:hasEnd isc:BaseLopingian ;
-  time:intervalContains isc:Capitanian ;
   time:intervalContains isc:Wordian ;
   time:intervalDuring isc:Permian ;
+  time:intervalFinishedBy isc:Capitanian ;
   time:intervalIn isc:Permian ;
   time:intervalMeets isc:Lopingian ;
   time:intervalMeets isc:Wuchiapingian ;
-  time:intervalMetBy isc:Capitanian ;
   time:intervalMetBy isc:Cisuralian ;
   time:intervalMetBy isc:Kungurian ;
   time:intervalStartedBy isc:Roadian ;
@@ -7836,6 +7835,26 @@ isc:Ionian
   a gts:GeochronologicEra ;
   dct:isReplacedBy isc:MiddlePleistocene ;
   skos:changeNote "Superseded by \"Middle Pleistocene\""@en ;
+  skos:prefLabel "Ion"@cs ;
+  skos:prefLabel "Ion"@fi ;
+  skos:prefLabel "Ion"@pl ;
+  skos:prefLabel "Ionian"@da ;
+  skos:prefLabel "Ionian"@en ;
+  skos:prefLabel "Ioniano"@pt ;
+  skos:prefLabel "Ionien"@fr ;
+  skos:prefLabel "Ioniense"@es ;
+  skos:prefLabel "Ionium"@de ;
+  skos:prefLabel "Ionium"@no ;
+  skos:prefLabel "Iooni"@et ;
+  skos:prefLabel "ion"@sv ;
+  skos:prefLabel "ioni"@hu ;
+  skos:prefLabel "ioniano"@it ;
+  skos:prefLabel "ionij"@sl ;
+  skos:prefLabel "jonian"@sk ;
+  skos:prefLabel "lonis"@lt ;
+  skos:prefLabel "Йониан"@bg ;
+  skos:prefLabel "“爱奥尼亚”期"@zh ;
+  skos:prefLabel "イオニアン期"@ja ;
 .
 isc:Jiangshanian
   a gts:Age ;
@@ -8608,6 +8627,7 @@ isc:LowerMississippian
   skos:prefLabel "早密西西比世"@zh ;
   time:hasBeginning isc:BaseCarboniferous ;
   time:hasEnd isc:BaseMiddleMississippian ;
+  time:intervalEquals isc:Tournaisian ;
   time:intervalIn isc:Mississippian ;
   time:intervalMeets isc:MiddleMississippian ;
   time:intervalMeets isc:Visean ;
@@ -8712,6 +8732,7 @@ isc:LowerPennsylvanian
   skos:prefLabel "降低宾夕法尼亚州"@zh ;
   time:hasBeginning isc:BasePennsylvanian ;
   time:hasEnd isc:BaseMiddlePennsylvanian ;
+  time:intervalEquals isc:Bashkirian ;
   time:intervalIn isc:Pennsylvanian ;
   time:intervalMeets isc:MiddlePennsylvanian ;
   time:intervalMeets isc:Moscovian ;
@@ -9414,6 +9435,7 @@ isc:MiddleMississippian
   time:hasBeginning isc:BaseMiddleMississippian ;
   time:hasEnd isc:BaseLateMississippian ;
   time:intervalDuring isc:Mississippian ;
+  time:intervalEquals isc:Visean ;
   time:intervalIn isc:Mississippian ;
   time:intervalMeets isc:Serpukhovian ;
   time:intervalMeets isc:UpperMississippian ;
@@ -9496,6 +9518,7 @@ isc:MiddlePennsylvanian
   time:hasBeginning isc:BaseMiddlePennsylvanian ;
   time:hasEnd isc:BaseLatePennsylvanian ;
   time:intervalDuring isc:Pennsylvanian ;
+  time:intervalEquals isc:Moscovian ;
   time:intervalIn isc:Pennsylvanian ;
   time:intervalMeets isc:Kasimovian ;
   time:intervalMeets isc:UpperPennsylvanian ;
@@ -9720,7 +9743,7 @@ isc:Mississippian
   time:hasBeginning isc:BaseCarboniferous ;
   time:hasEnd isc:BasePennsylvanian ;
   time:intervalContains isc:MiddleMississippian ;
-  time:intervalContains isc:UpperMississippian ;
+  time:intervalFinishedBy isc:UpperMississippian ;
   time:intervalIn isc:Carboniferous ;
   time:intervalMeets isc:Bashkirian ;
   time:intervalMeets isc:LowerPennsylvanian ;
@@ -13232,13 +13255,13 @@ isc:UpperMississippian
   time:hasBeginning isc:BaseLateMississippian ;
   time:hasEnd isc:BasePennsylvanian ;
   time:intervalDuring isc:Mississippian ;
+  time:intervalEquals isc:Serpukhovian ;
   time:intervalIn isc:Mississippian ;
   time:intervalMeets isc:Bashkirian ;
   time:intervalMeets isc:LowerPennsylvanian ;
   time:intervalMeets isc:Pennsylvanian ;
   time:intervalMetBy isc:MiddleMississippian ;
   time:intervalMetBy isc:Visean ;
-  time:intervalStartedBy isc:Serpukhovian ;
   foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/UpperMississippian> ;
 .
 isc:UpperOrdovician
@@ -13668,6 +13691,7 @@ isc:Wuchiapingian
   time:hasEnd isc:BaseChanghsingian ;
   time:intervalIn isc:Lopingian ;
   time:intervalMeets isc:Changhsingian ;
+  time:intervalMetBy isc:Capitanian ;
   time:intervalMetBy isc:Guadalupian ;
   time:intervalStarts isc:Lopingian ;
   foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Wuchiapingian> ;
