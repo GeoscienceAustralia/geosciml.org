@@ -1,7 +1,6 @@
 # baseURI: http://resource.geosciml.org/vocabulary/timescale/gts2018
 # imports: http://resource.geosciml.org/ontology/timescale/gts/w3c
 # imports: http://www.opengis.net/ont/geosparql
-# imports: https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/19108/2006/iso19108TemporalReferenceSystem.rdf
 
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -13993,9 +13992,7 @@ ts:gts2018
   rdfs:seeAlso <http://stratigraphy.org/ICSchart/ChronostratChart2018-08.pdf> ;
   rdfs:seeAlso <http://www.episodes.co.in/contents/2013/september/p199-204.pdf> ;
   rdfs:seeAlso <http://www.stratigraphy.org/GSSP/index.html> ;
-  owl:imports <http://resource.geosciml.org/ontology/timescale/gts/w3c> ;
-  owl:imports <http://www.opengis.net/ont/geosparql> ;
-  owl:imports <https://raw.githubusercontent.com/ISO-TC211/GOM/master/isotc211_GOM_harmonizedOntology/19108/2006/iso19108TemporalReferenceSystem.rdf> ;
+
   owl:sameAs <http://resource.geosciml.org/classifierscheme/ics/2018/ischart> ;
   owl:versionInfo "isc2018:2019-06-10" ;
   skos:altLabel "International Chronostratigraphic Chart (2018)"@en ;
