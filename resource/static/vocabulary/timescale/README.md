@@ -1,3 +1,5 @@
+**Warning - do not make any changes here - this content is now being maintained at https://github.com/dr-shorthair/timescale-data**
+
 # International Chronostratigraphic Chart
 
 Multiple versions of the ISC, as published at http://stratigraphy.org/index.php/ics-chart-timescale 
