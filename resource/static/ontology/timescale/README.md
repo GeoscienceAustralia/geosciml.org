@@ -1,4 +1,4 @@
-**Warning - do not make any changes here - this content is now being maintained at https://github.com/dr-shorthair/timescale-ont**
+**Warning - do not make any changes here - this content is now being maintained at https://github.com/CGI_IUGS/timescale-ont**
 
 # GeologicTimeScale
 Initialise based on https://www.seegrid.csiro.au/subversion/xmml/ontologies/tags/final-GTS/Geoscience/GeologicTimeScale/ 
