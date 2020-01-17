@@ -1,4 +1,4 @@
-**Warning - do not make any changes here - this content is now being maintained at https://github.com/dr-shorthair/timescale-data**
+**Warning - do not make any changes here - this content is now being maintained at https://github.com/CGI-IUGS/timescale-data**
 
 # International Chronostratigraphic Chart
 
