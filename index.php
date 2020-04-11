@@ -3,15 +3,15 @@
     require $PROJECT_HOME_DIR . 'vendor/autoload.php';
     include $PROJECT_HOME_DIR . 'theme/header.inc';
 ?>
-
     <div id="container-content">
         <!--?php include $PROJECT_HOME_DIR . 'theme/right_menu.inc'; ?-->
 
         <?php
+	    include 'htmlpages/geosciml.org.html';
             // read file contents from Markdown (.md) file
-            $contents = file_get_contents($PROJECT_HOME_DIR . 'pages/geosciml.org.md');
-            $Parsedown = new Parsedown();
-            echo $Parsedown->text($contents);
+            // $contents = file_get_contents($PROJECT_HOME_DIR . 'pages/geosciml.org.md');
+            // $Parsedown = new Parsedown();
+            // echo $Parsedown->text($contents);
         ?>
 
     </div><!-- #content-container -->
