@@ -577,7 +577,6 @@ isc:Asselian
   time:intervalMetBy isc:Carboniferous ;
   time:intervalMetBy isc:Gzhelian ;
   time:intervalMetBy isc:Pennsylvanian ;
-  time:intervalMetBy isc:UpperMississippian ;
   time:intervalMetBy isc:UpperPennsylvanian ;
   time:intervalStarts isc:Cisuralian ;
   foaf:primaryTopicOf <http://sweetontology.net/stateTimeGeologic/Asselian> ;
@@ -5809,8 +5808,7 @@ isc:Capitanian
   skos:prefLabel "卡匹敦期"@zh ;
   time:hasBeginning isc:BaseCapitanian ;
   time:hasEnd isc:BaseLopingian ;
-  time:intervalDuring isc:Guadalupian ;
-  time:intervalIn isc:Guadalupian ;
+  time:intervalFinishes isc:Guadalupian ;
   time:intervalMeets isc:Lopingian ;
   time:intervalMeets isc:Wuchiapingian ;
   time:intervalMetBy isc:Wordian ;
@@ -11707,7 +11705,6 @@ isc:Roadian
   time:hasEnd isc:BaseWordian ;
   time:intervalIn isc:Guadalupian ;
   time:intervalMeets isc:Wordian ;
-  time:intervalMetBy isc:Capitanian ;
   time:intervalMetBy isc:Cisuralian ;
   time:intervalMetBy isc:Kungurian ;
   time:intervalStarts isc:Guadalupian ;
